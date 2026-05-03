@@ -48,11 +48,6 @@ function patchKanjiCanvasWhiteBackground() {
   const originalDeleteLast = KanjiCanvas.deleteLast;
   KanjiCanvas.deleteLast = function(id) {
     originalDeleteLast(id);
-    const ctx = KanjiCanvas['ctx_' + id];
-    const w = KanjiCanvas['w_' + id];
-    const h = KanjiCanvas['h_' + id];
-    ctx.fillStyle = '#fff';
-    ctx.fillRect(0, 0, w, h);
   };
 
   const originalRedraw = KanjiCanvas.redraw;
@@ -109,7 +104,23 @@ function startWrite() {
   setupCanvasSize('writeCanvas');
   KanjiCanvas.init('writeCanvas');
   patchKanjiCanvasWhiteBackground();
+  setupWriteKeyboardShortcuts();
   renderWrite();
+}
+
+function setupWriteKeyboardShortcuts() {
+  document.addEventListener('keydown', (e) => {
+    const activeScreen = document.querySelector('.screen:not(.hidden)');
+    if (!activeScreen || activeScreen.id !== 'screen-write') return;
+
+    if (e.ctrlKey && e.key === 'z') {
+      e.preventDefault();
+      KanjiCanvas.deleteLast('writeCanvas');
+    } else if (e.ctrlKey && e.key === 'e') {
+      e.preventDefault();
+      KanjiCanvas.erase('writeCanvas');
+    }
+  });
 }
 
 function renderWrite() {

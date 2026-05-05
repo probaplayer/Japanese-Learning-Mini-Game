@@ -480,6 +480,7 @@
       <div class="question-card" id="quiz-question" style="position: relative;">
         Loading...
         <button class="action-btn btn-green btn-sm hidden" id="quiz-practice-writing" onclick="showWritePracticeModal(this.dataset.word, this.dataset.romaji, this.dataset.translation)" style="position: absolute; bottom: 8px; right: 8px;">✍️ Practice</button>
+        <button type="button" id="quiz-speak-btn" class="action-btn btn-blue btn-sm" style="position: absolute; top: 8px; right: 8px;" onclick="speakQuizWord()">🔊</button>
       </div>
       <div class="progress-info">
         <span id="quiz-progress">0 / 0</span>
@@ -512,6 +513,7 @@
           <div class="card-face card-back" id="card-back">
             <div class="card-reading" id="card-reading"></div>
             <div class="card-explanation" id="card-explanation"></div>
+            <button type="button" id="flash-speak-btn" class="action-btn btn-blue btn-sm" style="position: absolute; top: 8px; right: 8px;" onclick="speakFlashWord()">🔊</button>
           </div>
         </div>
       </div>

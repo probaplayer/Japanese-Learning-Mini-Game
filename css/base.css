@@ -51,6 +51,7 @@ body.animations-disabled .choice-btn { transition: none; animation: none !import
 .btn-danger { background: var(--accent); }
 .btn-secondary { background: var(--text-dim); }
 .btn-green { background: var(--accent3); color: #000; }
+.btn-blue { background: #3399ff; color: #000; }
 .btn-sm { padding: 6px 10px; font-size: 7px; }
 .btn-row { display: flex; gap: 8px; flex-wrap: wrap; }
 

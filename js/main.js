@@ -206,13 +206,26 @@ let gameStartTime = null;
 
 /* ══════════════════════════════════════════════
    UTILS
-══════════════════════════════════════════════ */
+ ══════════════════════════════════════════════ */
 function shuffle(arr) {
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [arr[i], arr[j]] = [arr[j], arr[i]];
   }
   return arr;
+}
+
+function speakJapanese(text, statusEl) {
+  if (!text) return;
+  if (!('speechSynthesis' in window)) {
+    if (statusEl) statusEl.textContent = 'Audio not supported.';
+    return;
+  }
+  window.speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = 'ja-JP';
+  utterance.rate = 0.9;
+  window.speechSynthesis.speak(utterance);
 }
 
 function escapeHtml(value) {

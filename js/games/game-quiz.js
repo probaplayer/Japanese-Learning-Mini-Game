@@ -33,6 +33,12 @@ function startQuiz() {
   renderQuiz();
 }
 
+function speakQuizWord() {
+  if (quizIdx >= quizDeck.length) return;
+  const q = quizDeck[quizIdx];
+  speakJapanese(q.word, null);
+}
+
 let quizQuestionStartTime = 0;
 
 function renderQuiz() {
@@ -51,11 +57,16 @@ function renderQuiz() {
 
   const questionEl = document.getElementById('quiz-question');
   const practiceBtn = document.getElementById('quiz-practice-writing');
+  const speakBtn = document.getElementById('quiz-speak-btn');
   questionEl.innerHTML = q.q;
   if (practiceBtn) {
     questionEl.appendChild(practiceBtn);
     practiceBtn.classList.add('hidden');
     practiceBtn.classList.remove('practice-highlight');
+  }
+  if (speakBtn) {
+    questionEl.appendChild(speakBtn);
+    speakBtn.classList.add('hidden');
   }
   document.getElementById('quiz-progress').textContent = `${quizIdx + 1} / ${quizDeck.length}`;
   document.getElementById('quiz-explanation').classList.add('hidden');
@@ -123,6 +134,10 @@ function answerQuiz(chosen, btn, q, correctIndex) {
     exBox.classList.remove('hidden');
   }
   document.getElementById('quiz-next').classList.remove('hidden');
+
+  const speakBtn = document.getElementById('quiz-speak-btn');
+  if (speakBtn) speakBtn.classList.remove('hidden');
+
   updateQuizHUD();
 
   if (!settings.disableGameOver && quizHP <= 0) {

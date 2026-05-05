@@ -2,6 +2,12 @@
 // GAME 2: FLASHCARD
 // ================================================
 
+function speakFlashWord() {
+  if (flashIdx >= flashDeck.length) return;
+  const q = flashDeck[flashIdx];
+  speakJapanese(q.word, null);
+}
+
 let flashDeck = [];
 let flashIdx = 0;
 let flashKnown = 0;
@@ -31,6 +37,9 @@ function renderCard() {
   card.classList.remove('flipped');
   document.getElementById('flash-actions').classList.add('hidden');
 
+  const speakBtn = document.getElementById('flash-speak-btn');
+  if (speakBtn) speakBtn.classList.add('hidden');
+
   if (flashIdx >= flashDeck.length) {
     flashComplete();
     return;
@@ -48,6 +57,9 @@ function flipCard() {
   if (card.classList.contains('flipped')) return;
   card.classList.add('flipped');
   document.getElementById('flash-actions').classList.remove('hidden');
+
+  const speakBtn = document.getElementById('flash-speak-btn');
+  if (speakBtn) speakBtn.classList.remove('hidden');
 }
 
 function markCard(level) {

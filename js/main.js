@@ -29,6 +29,9 @@ let settings = {
   questionLimit: 20,
   shuffleAnswers: true,
   matchPairCount: 6,
+  fastCorrectCooldownEnabled: true,
+  fastCorrectCooldownDays: 3,
+  fastCorrectThresholdSeconds: 8,
   priority: {
     enabled: true,
     global: { incorrect: 8, timeSinceSeen: 3, learning: 2, slowResponse: 3 },
@@ -423,8 +426,7 @@ function renderStatsScreen() {
     const gameTypes = ['quiz', 'listen', 'flash', 'match', 'type', 'write'];
     
     questions.forEach((q, index) => {
-      const id = generateQuestionId(q);
-      const stats = questionStats[id];
+      const stats = getQuestionStatsEntry(q, false);
       if (!stats) {
         newItems++;
         return;

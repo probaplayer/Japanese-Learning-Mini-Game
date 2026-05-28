@@ -22,6 +22,10 @@ function startListen() {
   if (settings.questionLimitEnabled) {
     listenDeck = listenDeck.slice(0, settings.questionLimit);
   }
+  if (listenDeck.length === 0) {
+    handleEmptyGameDeck('listen');
+    return;
+  }
   listenIdx = 0;
   listenHP = 100;
   listenScore = 0;
@@ -121,6 +125,7 @@ function answerListen(choice, btn, q, correctIndex) {
   buttons.forEach(b => b.disabled = true);
 
   const isCorrect = choice === correctIndex;
+  let cooldownPrompted = false;
   if (isCorrect) {
     btn.classList.add('correct');
     listenCombo++;
@@ -129,6 +134,13 @@ function answerListen(choice, btn, q, correctIndex) {
     listenScore += points;
     playerEXP += points;
     updateQuestionStats(listenDeck[listenIdx].questionId, 'listen', true, responseTime);
+    cooldownPrompted = maybeApplyFastCorrectCooldown(listenDeck[listenIdx].questionId, 'listen', responseTime, (applied) => {
+      if (applied && listenIdx < listenDeck.length) {
+        nextListen();
+      } else {
+        document.getElementById('listen-next').classList.remove('hidden');
+      }
+    });
     showToast(`✅ Correct! +${points} EXP`, 'ok');
   } else {
     btn.classList.add('wrong');
@@ -158,7 +170,7 @@ function answerListen(choice, btn, q, correctIndex) {
   const explanation = document.getElementById('listen-explanation');
   explanation.textContent = q.ex || q.translation || 'No explanation available.';
   explanation.classList.remove('hidden');
-  document.getElementById('listen-next').classList.remove('hidden');
+  document.getElementById('listen-next').classList.toggle('hidden', isCorrect && cooldownPrompted);
   document.getElementById('listen-score').textContent = listenScore;
   document.getElementById('listen-combo').textContent = listenCombo;
   document.getElementById('listen-hpbar').style.width = `${Math.max(0, listenHP)}%`;

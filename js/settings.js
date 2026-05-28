@@ -50,6 +50,14 @@ function renderSettingsScreen() {
   if (questionLimitEnabled) questionLimitEnabled.checked = settings.questionLimitEnabled;
   if (questionLimitValue) questionLimitValue.value = settings.questionLimit;
   updateQuestionLimitUI();
+
+  const cooldownEnabled = document.getElementById('fast-correct-cooldown-enabled');
+  const cooldownDays = document.getElementById('fast-correct-cooldown-days');
+  const cooldownThreshold = document.getElementById('fast-correct-threshold-seconds');
+  if (cooldownEnabled) cooldownEnabled.checked = settings.fastCorrectCooldownEnabled !== false;
+  if (cooldownDays) cooldownDays.value = settings.fastCorrectCooldownDays || 3;
+  if (cooldownThreshold) cooldownThreshold.value = settings.fastCorrectThresholdSeconds || 8;
+  updateFastCorrectCooldownUI();
 }
 
 function updateQuestionLimitUI() {
@@ -57,6 +65,14 @@ function updateQuestionLimitUI() {
   if (questionLimitValue) {
     questionLimitValue.disabled = !settings.questionLimitEnabled;
   }
+}
+
+function updateFastCorrectCooldownUI() {
+  const enabled = settings.fastCorrectCooldownEnabled !== false;
+  const cooldownDays = document.getElementById('fast-correct-cooldown-days');
+  const cooldownThreshold = document.getElementById('fast-correct-threshold-seconds');
+  if (cooldownDays) cooldownDays.disabled = !enabled;
+  if (cooldownThreshold) cooldownThreshold.disabled = !enabled;
 }
 
 
@@ -107,6 +123,26 @@ function updateSettingsFromUI() {
     settings.questionLimit = val;
   }
   updateQuestionLimitUI();
+
+  const cooldownEnabled = document.getElementById('fast-correct-cooldown-enabled');
+  const cooldownDays = document.getElementById('fast-correct-cooldown-days');
+  const cooldownThreshold = document.getElementById('fast-correct-threshold-seconds');
+  if (cooldownEnabled) {
+    settings.fastCorrectCooldownEnabled = cooldownEnabled.checked;
+  }
+  if (cooldownDays) {
+    let days = parseInt(cooldownDays.value, 10);
+    if (isNaN(days) || days < 1) days = 1;
+    if (days > 365) days = 365;
+    settings.fastCorrectCooldownDays = days;
+  }
+  if (cooldownThreshold) {
+    let seconds = parseInt(cooldownThreshold.value, 10);
+    if (isNaN(seconds) || seconds < 1) seconds = 1;
+    if (seconds > 300) seconds = 300;
+    settings.fastCorrectThresholdSeconds = seconds;
+  }
+  updateFastCorrectCooldownUI();
   
   saveSettingsToStorage();
   applyScanlinesVisibility();
@@ -238,6 +274,9 @@ function resetSettingsToDefault() {
     animationEnabled: true,
     questionLimitEnabled: false,
     questionLimit: 20,
+    fastCorrectCooldownEnabled: true,
+    fastCorrectCooldownDays: 3,
+    fastCorrectThresholdSeconds: 8,
     priority: {
       enabled: true,
       global: { incorrect: 8, timeSinceSeen: 3, learning: 2, slowResponse: 3 },

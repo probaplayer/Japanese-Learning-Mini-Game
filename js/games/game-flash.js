@@ -24,6 +24,10 @@ function startFlash() {
   if (settings.questionLimitEnabled) {
     flashDeck = flashDeck.slice(0, settings.questionLimit);
   }
+  if (flashDeck.length === 0) {
+    handleEmptyGameDeck('flash');
+    return;
+  }
   flashIdx = 0;
   flashKnown = 0;
   flashUnknown = 0;
@@ -65,6 +69,7 @@ function flipCard() {
 function markCard(level) {
   const responseTime = Date.now() - flashQuestionStartTime;
   const q = flashDeck[flashIdx];
+  let cooldownPrompted = false;
 
   switch (level) {
     case 'new':
@@ -76,13 +81,26 @@ function markCard(level) {
       flashKnown++;
       playerEXP += Math.floor(BASE_XP_REWARD * 1.5);
       updateQuestionStats(q.questionId, 'flash', true, responseTime);
+      cooldownPrompted = maybeApplyFastCorrectCooldown(q.questionId, 'flash', responseTime, (applied) => {
+        if (applied) {
+          flashIdx++;
+          renderCard();
+        }
+      });
       break;
     case 'mastered':
       flashKnown++;
       playerEXP += Math.floor(BASE_XP_REWARD * 2.5);
       updateQuestionStats(q.questionId, 'flash', true, responseTime);
+      cooldownPrompted = maybeApplyFastCorrectCooldown(q.questionId, 'flash', responseTime, (applied) => {
+        if (applied) {
+          flashIdx++;
+          renderCard();
+        }
+      });
       break;
   }
+  if (cooldownPrompted) return;
   flashIdx++;
   renderCard();
 }

@@ -30,9 +30,13 @@ function startTyping() {
   typeCorrect = 0;
   typeWrong = 0;
   fallingWords = [];
-  typeDeck = getPrioritizedDeck(questions, 'quiz').map((q, idx) => ({ ...q, questionId: generateQuestionId(q) }));
+  typeDeck = getPrioritizedDeck(questions, 'type').map((q) => ({ ...q, questionId: generateQuestionId(q) }));
   if (settings.questionLimitEnabled) {
     typeDeck = typeDeck.slice(0, settings.questionLimit);
+  }
+  if (typeDeck.length === 0) {
+    handleEmptyGameDeck('type');
+    return;
   }
   spawnTimer = 0;
   spawnInterval = getTypeSpawnInterval();
@@ -65,7 +69,8 @@ function getTypeTarget(w) {
 }
 
 function spawnWord() {
-  if (typeDeck.length === 0) typeDeck = getPrioritizedDeck(questions, 'quiz').map((q, idx) => ({ ...q, questionId: generateQuestionId(q) }));
+  if (typeDeck.length === 0) typeDeck = getPrioritizedDeck(questions, 'type').map((q) => ({ ...q, questionId: generateQuestionId(q) }));
+  if (typeDeck.length === 0) return;
   const q = typeDeck.pop();
   const x = Math.random() * (canvasW - 140) + 20;
   fallingWords.push({
@@ -74,6 +79,7 @@ function spawnWord() {
     translation: q.translation || '',
     hint: getTypeHint(q),
     questionId: q.questionId,
+    startedAt: Date.now(),
     x,
     y: -30,
     speed: gameSpeed + Math.random() * 0.4,
@@ -138,6 +144,8 @@ function typeGameLoop() {
   fallingWords.forEach(w => {
     w.y += w.speed;
     if (w.y > canvasH + 20) {
+      const responseTime = Date.now() - (w.startedAt || Date.now());
+      updateQuestionStats(w.questionId, 'type', false, responseTime);
       if (!settings.disableGameOver) {
         typeHP = Math.max(0, typeHP - 15);
         typeCombo = 0;
@@ -231,11 +239,13 @@ function onTypeInput(e) {
   const targetHiragana = wanakana.toHiragana(targetRomaji);
   
   if (inputHiragana === targetHiragana) {
+    const responseTime = Date.now() - (target.startedAt || Date.now());
     typeCombo++;
     typeCorrect++;
     const pts = Math.floor(BASE_XP_REWARD * Math.max(1, typeCombo) * 1.5);
     typeScore += pts;
     playerEXP += pts;
+    updateQuestionStats(target.questionId, 'type', true, responseTime);
     target.done = true;
     inp.value = '';
     inp.className = 'match-ok';

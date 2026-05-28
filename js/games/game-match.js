@@ -76,10 +76,14 @@ function renderMatchBoard() {
 }
 
 function startMatch() {
-  const prioritizedItems = getPrioritizedDeck(questions, 'quiz');
+  const prioritizedItems = getPrioritizedDeck(questions, 'match');
   let items = prioritizedItems;
   if (settings.questionLimitEnabled) {
     items = items.slice(0, settings.questionLimit);
+  }
+  if (items.length === 0) {
+    handleEmptyGameDeck('match');
+    return;
   }
   pairCount = Math.min(settings.matchPairCount || 6, items.length);
   const matchItems = items.slice(0, pairCount);
@@ -104,6 +108,7 @@ function handleMatchCard(cardId) {
   const card = matchCards.find(c => c.cardId === cardId);
   if (!card || card.matched || card.revealed || matchSelection.length === 2 || !matchActive) return;
   card.revealed = true;
+  card.revealedAt = Date.now();
   matchSelection.push(card);
   renderMatchBoard();
 
@@ -117,6 +122,7 @@ function handleMatchCard(cardId) {
       renderMatchBoard();
       matchFound++;
       matchCorrect++;
+      updateQuestionStats(first.questionId, 'match', true, Math.max(0, Date.now() - Math.min(first.revealedAt || Date.now(), second.revealedAt || Date.now())));
       matchSelection = [];
       showToast('✅ Correct match!', 'ok');
       updateMatchHUD();
@@ -138,6 +144,11 @@ function handleMatchCard(cardId) {
       }
     } else {
       matchWrong++;
+      const responseTime = Math.max(0, Date.now() - Math.min(first.revealedAt || Date.now(), second.revealedAt || Date.now()));
+      updateQuestionStats(first.questionId, 'match', false, responseTime);
+      if (second.questionId !== first.questionId) {
+        updateQuestionStats(second.questionId, 'match', false, responseTime);
+      }
       setTimeout(() => {
         first.revealed = false;
         second.revealed = false;

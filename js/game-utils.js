@@ -2,7 +2,6 @@
 // 日本語 QUEST — Game Utilities Module
 // ================================================
 
-const SLOW_RESPONSE_THRESHOLD = 8000;
 const LEVEL_XP_CURVE = 1.2;
 const BASE_XP_REWARD = 5;
 
@@ -23,6 +22,36 @@ const MAX_DAYS = 30;
 const MAX_TIME_BONUS = 50;
 const DECAY_RATE = 0.85;
 const MAX_HISTORY_DAYS = 30;
+const MS_PER_DAY = 24 * 60 * 60 * 1000;
+const FAST_CORRECT_GAME_TYPES = ['quiz', 'listen', 'flash'];
+const WEAK_FAST_CORRECT_THRESHOLD = 2;
+let pendingFastCorrectCooldown = null;
+
+function getFastCorrectThresholdMs() {
+  const thresholdSeconds = Math.max(1, parseInt(settings.fastCorrectThresholdSeconds || 8, 10));
+  return thresholdSeconds * 1000;
+}
+
+function getScopedQuestionId(questionOrId) {
+  const baseId = typeof questionOrId === 'string'
+    ? questionOrId
+    : generateQuestionId(questionOrId);
+  if (baseId.includes('::')) return baseId;
+  const setId = activeSetId || 'set-default';
+  return `${setId}::${baseId}`;
+}
+
+function getQuestionStatsEntry(questionOrId, create = false) {
+  const id = getScopedQuestionId(questionOrId);
+  if (!questionStats[id] && create) {
+    questionStats[id] = {};
+  }
+  return questionStats[id];
+}
+
+function getDefaultQuestionTypeStats() {
+  return { incorrect: 0, correctCount: 0, totalAttempts: 0, lastSeen: null, correctStreak: 0, avgResponseTime: 0, slowCorrectCount: 0, incorrectHistory: [] };
+}
 
 function cleanIncorrectHistory(history) {
   if (!history || !Array.isArray(history)) return [];
@@ -53,10 +82,138 @@ function getConfidenceLevel(correctStreak, effectiveIncorrect) {
   return 'new';
 }
 
-function getPriorityScore(questionIndex, gameType, weights) {
-  const q = questions[questionIndex];
-  const id = q ? generateQuestionId(q) : `q-${questionIndex}`;
-  const stats = questionStats[id]?.[gameType];
+function getQuestionMeta(questionId) {
+  const scopedId = getScopedQuestionId(questionId);
+  if (!questionStats[scopedId]) {
+    questionStats[scopedId] = {};
+  }
+  if (!questionStats[scopedId]._meta) {
+    questionStats[scopedId]._meta = {};
+  }
+  return questionStats[scopedId]._meta;
+}
+
+function isQuestionOnCooldown(questionOrId, gameType) {
+  if (settings.fastCorrectCooldownEnabled === false) return false;
+  const entry = getQuestionStatsEntry(questionOrId, false);
+  const meta = entry?._meta;
+  if (!meta) return false;
+
+  const modeCooldown = meta.cooldowns?.[gameType];
+  const modeUntil = modeCooldown?.until ? new Date(modeCooldown.until).getTime() : NaN;
+  if (Number.isFinite(modeUntil) && modeUntil > Date.now()) return true;
+
+  if (!meta.cooldownUntil) return false;
+  if (meta.cooldownSourceGame && meta.cooldownSourceGame !== gameType) return false;
+  const legacyUntil = new Date(meta.cooldownUntil).getTime();
+  return Number.isFinite(legacyUntil) && legacyUntil > Date.now();
+}
+
+function clearExpiredCooldowns() {
+  let changed = false;
+  Object.keys(questionStats).forEach(id => {
+    const meta = questionStats[id]?._meta;
+    if (!meta) return;
+
+    if (meta.cooldowns) {
+      Object.keys(meta.cooldowns).forEach(gameType => {
+        const until = new Date(meta.cooldowns[gameType]?.until).getTime();
+        if (!Number.isFinite(until) || until <= Date.now()) {
+          delete meta.cooldowns[gameType];
+          changed = true;
+        }
+      });
+      if (Object.keys(meta.cooldowns).length === 0) {
+        delete meta.cooldowns;
+      }
+    }
+
+    if (!meta.cooldownUntil) return;
+    const legacyUntil = new Date(meta.cooldownUntil).getTime();
+    if (!Number.isFinite(legacyUntil) || legacyUntil <= Date.now()) {
+      delete meta.cooldownUntil;
+      delete meta.cooldownSetAt;
+      delete meta.cooldownSourceGame;
+      changed = true;
+    }
+  });
+  if (changed) saveQuestionStats();
+}
+
+function getAvailableQuestionsForGame(questionsArr, gameType) {
+  if (settings.fastCorrectCooldownEnabled === false) return [...questionsArr];
+  return questionsArr.filter(q => !isQuestionOnCooldown(q, gameType));
+}
+
+function applyFastCorrectCooldown(questionId, gameType, days) {
+  const now = Date.now();
+  const meta = getQuestionMeta(questionId);
+  if (!meta.cooldowns) meta.cooldowns = {};
+  meta.cooldowns[gameType] = {
+    setAt: new Date(now).toISOString(),
+    until: new Date(now + days * MS_PER_DAY).toISOString()
+  };
+  delete meta.cooldownSetAt;
+  delete meta.cooldownUntil;
+  delete meta.cooldownSourceGame;
+  saveQuestionStats();
+  return true;
+}
+
+function openFastCorrectCooldownModal(questionId, gameType, days, onClose) {
+  const modal = document.getElementById('fast-correct-cooldown-modal');
+  const message = document.getElementById('fast-correct-cooldown-message');
+  const confirmBtn = document.getElementById('fast-correct-cooldown-confirm');
+  const cancelBtn = document.getElementById('fast-correct-cooldown-cancel');
+  if (!modal || !message || !confirmBtn || !cancelBtn) {
+    return false;
+  }
+
+  const label = days === 1 ? '1 day' : `${days} days`;
+  pendingFastCorrectCooldown = { questionId, gameType, days, onClose };
+  message.textContent = `You answered this question quickly. Hide it for the next ${label}?`;
+
+  confirmBtn.onclick = () => closeFastCorrectCooldownModal(true);
+  cancelBtn.onclick = () => closeFastCorrectCooldownModal(false);
+  modal.classList.remove('hidden');
+  confirmBtn.focus();
+  return true;
+}
+
+function closeFastCorrectCooldownModal(accepted) {
+  const modal = document.getElementById('fast-correct-cooldown-modal');
+  const pending = pendingFastCorrectCooldown;
+  pendingFastCorrectCooldown = null;
+
+  if (modal) modal.classList.add('hidden');
+  if (!pending) return false;
+
+  const applied = accepted
+    ? applyFastCorrectCooldown(pending.questionId, pending.gameType, pending.days)
+    : false;
+  if (typeof pending.onClose === 'function') {
+    pending.onClose(applied);
+  }
+  return applied;
+}
+
+function maybeApplyFastCorrectCooldown(questionId, gameType, responseTime, onClose) {
+  if (settings.fastCorrectCooldownEnabled === false) return false;
+  if (!FAST_CORRECT_GAME_TYPES.includes(gameType)) return false;
+  if (responseTime === undefined || responseTime === null) return false;
+  if (pendingFastCorrectCooldown) return false;
+
+  if (responseTime > getFastCorrectThresholdMs()) return false;
+
+  const stats = getQuestionStatsEntry(questionId, false)?.[gameType];
+  if (getEffectiveIncorrect(stats) >= WEAK_FAST_CORRECT_THRESHOLD) return false;
+
+  const days = Math.max(1, parseInt(settings.fastCorrectCooldownDays || 3, 10));
+  return openFastCorrectCooldownModal(questionId, gameType, days, onClose);
+}
+
+function getPriorityScoreForQuestion(q, gameType, weights) {
+  const stats = q ? getQuestionStatsEntry(q, false)?.[gameType] : null;
   
   const effectiveIncorrect = getEffectiveIncorrect(stats);
   const correctStreak = stats?.correctStreak || 0;
@@ -66,7 +223,7 @@ function getPriorityScore(questionIndex, gameType, weights) {
   let daysSinceLastSeen = MAX_DAYS;
   if (lastSeen) {
     const now = new Date();
-    daysSinceLastSeen = Math.floor((now - lastSeen) / (1000 * 60 * 60 * 24));
+    daysSinceLastSeen = Math.floor((now - lastSeen) / MS_PER_DAY);
     if (daysSinceLastSeen < 0) daysSinceLastSeen = 0;
     if (daysSinceLastSeen > MAX_DAYS) daysSinceLastSeen = MAX_DAYS;
   }
@@ -76,6 +233,11 @@ function getPriorityScore(questionIndex, gameType, weights) {
   const slowBonus = Math.min(slowCorrectCount * (weights.slowResponse || 0), 30);
   
   return (effectiveIncorrect * weights.incorrect) + timeBonus - learningPenalty + slowBonus;
+}
+
+function getPriorityScore(questionIndex, gameType, weights) {
+  const q = questions[questionIndex];
+  return getPriorityScoreForQuestion(q, gameType, weights);
 }
 
 function getWeights(gameType) {
@@ -92,24 +254,33 @@ function getWeights(gameType) {
 }
 
 function getPrioritizedDeck(questionsArr, gameType) {
+  clearExpiredCooldowns();
+  const deckSource = getAvailableQuestionsForGame(questionsArr, gameType);
+  if (deckSource.length === 0 && questionsArr.length > 0) {
+    if (typeof showToast === 'function') {
+      showToast('No questions available right now. Try another mode or come back later.', 'info');
+    }
+    return [];
+  }
+
   const weights = getWeights(gameType);
   
   if (!weights.incorrect && !weights.timeSinceSeen && !weights.learning && !weights.slowResponse) {
-    return shuffle([...questionsArr]);
+    return shuffle([...deckSource]);
   }
   
-  const scored = questionsArr.map((q, index) => ({
+  const scored = deckSource.map((q, index) => ({
     question: q,
     index: index,
-    score: getPriorityScore(index, gameType, weights)
+    score: getPriorityScoreForQuestion(q, gameType, weights)
   }));
   
   let currentTotalWeight = scored.reduce((sum, item) => sum + Math.max(0, item.score) + 1, 0);
   
   const result = [];
-  const tempIndices = [...Array(questionsArr.length).keys()];
+  const tempIndices = [...Array(deckSource.length).keys()];
   
-  while (tempIndices.length > 0 && result.length < questionsArr.length) {
+  while (tempIndices.length > 0 && result.length < deckSource.length) {
     let rand = Math.random() * currentTotalWeight;
     let selectedIdx = -1;
     
@@ -135,32 +306,42 @@ function getPrioritizedDeck(questionsArr, gameType) {
       }
     }
     
-    result.push(questionsArr[selectedIdx]);
+    result.push(deckSource[selectedIdx]);
     const removedItem = scored.find(s => s.index === selectedIdx);
     currentTotalWeight -= (Math.max(0, removedItem.score) + 1);
     tempIndices.splice(tempIndices.indexOf(selectedIdx), 1);
   }
   
   if (result.length === 0) {
-    return shuffle([...questionsArr]);
+    return shuffle([...deckSource]);
   }
   
   return result;
 }
 
+function handleEmptyGameDeck(gameType) {
+  if (typeof showToast === 'function') {
+    showToast('No questions available right now. Try another mode or come back later.', 'info');
+  }
+  if (typeof showScreen === 'function') {
+    showScreen('screen-menu');
+  }
+  return true;
+}
+
 function updateQuestionStats(questionIdOrIndex, gameType, isCorrect, responseTime) {
   let id;
   if (typeof questionIdOrIndex === 'string') {
-    id = questionIdOrIndex;
+    id = getScopedQuestionId(questionIdOrIndex);
   } else {
     const q = questions[questionIdOrIndex];
-    id = q ? generateQuestionId(q) : `q-${questionIdOrIndex}`;
+    id = q ? getScopedQuestionId(q) : getScopedQuestionId(`q-${questionIdOrIndex}`);
   }
   if (!questionStats[id]) {
     questionStats[id] = {};
   }
   if (!questionStats[id][gameType]) {
-    questionStats[id][gameType] = { incorrect: 0, correctCount: 0, totalAttempts: 0, lastSeen: null, correctStreak: 0, avgResponseTime: 0, slowCorrectCount: 0, incorrectHistory: [] };
+    questionStats[id][gameType] = getDefaultQuestionTypeStats();
   }
   
   const stats = questionStats[id][gameType];
@@ -178,7 +359,7 @@ function updateQuestionStats(questionIdOrIndex, gameType, isCorrect, responseTim
   if (isCorrect) {
     stats.correctStreak = (stats.correctStreak || 0) + 1;
     stats.correctCount = (stats.correctCount || 0) + 1;
-    if (responseTime !== undefined && responseTime >= SLOW_RESPONSE_THRESHOLD) {
+    if (responseTime !== undefined && responseTime > getFastCorrectThresholdMs()) {
       stats.slowCorrectCount = (stats.slowCorrectCount || 0) + 1;
     }
     if (stats.correctStreak > 0 && stats.correctStreak % 3 === 0 && stats.incorrect > 0) {
@@ -336,8 +517,7 @@ function computeGameTypeStats() {
   }
   
   questions.forEach((q) => {
-    const id = generateQuestionId(q);
-    const stats = questionStats[id];
+    const stats = getQuestionStatsEntry(q, false);
     if (!stats) return;
     
     for (const gameType of gameTypes) {

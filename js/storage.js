@@ -32,6 +32,9 @@ function getActiveQuestionSet() {
 function syncQuestionsFromActiveSet() {
   const set = getActiveQuestionSet();
   questions = set ? set.questions : [];
+  if (typeof initQuestionStats === 'function') {
+    initQuestionStats(questions);
+  }
 }
 
 function updateActiveSetFromQuestions() {
@@ -101,12 +104,34 @@ function loadFromStorage() {
   normalizePlayerProgress();
 }
 
+function mergePlainObjects(defaults, overrides) {
+  const result = { ...defaults };
+  if (!overrides || typeof overrides !== 'object') return result;
+  Object.keys(overrides).forEach(key => {
+    const defaultValue = defaults ? defaults[key] : undefined;
+    const overrideValue = overrides[key];
+    if (
+      defaultValue &&
+      overrideValue &&
+      typeof defaultValue === 'object' &&
+      typeof overrideValue === 'object' &&
+      !Array.isArray(defaultValue) &&
+      !Array.isArray(overrideValue)
+    ) {
+      result[key] = mergePlainObjects(defaultValue, overrideValue);
+    } else {
+      result[key] = overrideValue;
+    }
+  });
+  return result;
+}
+
 function loadSettingsFromStorage() {
   const s = localStorage.getItem('jq_settings');
   if (s) {
     try {
       const parsed = JSON.parse(s);
-      settings = { ...settings, ...parsed };
+      settings = mergePlainObjects(settings, parsed);
     } catch (e) {
       settings = { ...settings };
     }
@@ -127,7 +152,7 @@ function migrateStatsToHashBased() {
   legacyKeys.forEach(key => {
     const index = parseInt(key.replace('q-', ''), 10);
     if (index >= 0 && index < questions.length) {
-      const newId = generateQuestionId(questions[index]);
+      const newId = getScopedQuestionId(questions[index]);
       migrated[newId] = questionStats[key];
     }
   });
@@ -167,6 +192,7 @@ function seedIncorrectHistory() {
   Object.keys(questionStats).forEach(id => {
     const qStats = questionStats[id];
     Object.keys(qStats).forEach(game => {
+      if (game.startsWith('_')) return;
       const stats = qStats[game];
       if (stats.incorrect > 0 && (!stats.incorrectHistory || stats.incorrectHistory.length === 0)) {
         stats.incorrectHistory = stats.lastSeen ? [stats.lastSeen] : [];
@@ -198,21 +224,18 @@ function saveSessionHistory() {
 
 function initQuestionStats(questionsArr) {
   const gameTypes = ['quiz', 'listen', 'flash', 'match', 'type', 'write'];
-  const usedIds = new Set(Object.keys(questionStats));
   questionsArr.forEach((q) => {
-    let id = generateQuestionId(q);
-    if (usedIds.has(id)) {
-      let suffix = 1;
-      while (usedIds.has(`${id}-${suffix}`)) suffix++;
-      id = `${id}-${suffix}`;
+    const legacyId = generateQuestionId(q);
+    const id = getScopedQuestionId(q);
+    if (!questionStats[id] && questionStats[legacyId]) {
+      questionStats[id] = questionStats[legacyId];
     }
-    usedIds.add(id);
     if (!questionStats[id]) {
       questionStats[id] = {};
     }
     gameTypes.forEach(game => {
       if (!questionStats[id][game]) {
-        questionStats[id][game] = { incorrect: 0, correctCount: 0, totalAttempts: 0, lastSeen: null, correctStreak: 0, avgResponseTime: 0, slowCorrectCount: 0, incorrectHistory: [] };
+        questionStats[id][game] = getDefaultQuestionTypeStats();
       }
     });
   });
@@ -221,7 +244,7 @@ function initQuestionStats(questionsArr) {
 function cleanupQuestionStats(deletedIndex) {
   const q = questions[deletedIndex];
   if (!q) return;
-  const id = generateQuestionId(q);
+  const id = getScopedQuestionId(q);
   delete questionStats[id];
   saveQuestionStats();
 }

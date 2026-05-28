@@ -34,6 +34,13 @@
 .modal-close:hover { color: var(--accent); }
 .modal-body { display: flex; flex-direction: column; gap: 12px; }
 .modal-buttons { display: flex; gap: 10px; justify-content: flex-end; margin-top: 8px; }
+.cooldown-modal-box { max-width: 460px; }
+.cooldown-modal-message {
+  margin: 0;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.6;
+}
 
 /* Priority Modal */
 .priority-panel {
@@ -56,6 +63,7 @@
   .modal-close { font-size: 27px; }
   .modal-body { gap: 18px; }
   .modal-buttons { gap: 15px; }
+  .cooldown-modal-message { font-size: 18px; }
   .priority-panel { max-height: 300px; padding-right: 12px; }
   .priority-weight-item { padding: 15px; }
   .weight-label { font-size: 16.5px; }

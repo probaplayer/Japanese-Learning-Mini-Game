@@ -74,6 +74,10 @@ function startWrite() {
   } else {
     writeDeck = rawDeck;
   }
+  if (writeDeck.length === 0) {
+    handleEmptyGameDeck('write');
+    return;
+  }
   
   writeKanjiQueue = [];
   let kanjiCount = 0;

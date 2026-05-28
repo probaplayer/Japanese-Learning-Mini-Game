@@ -21,6 +21,10 @@ function startQuiz() {
   if (settings.questionLimitEnabled) {
     quizDeck = quizDeck.slice(0, settings.questionLimit);
   }
+  if (quizDeck.length === 0) {
+    handleEmptyGameDeck('quiz');
+    return;
+  }
   quizIdx = 0;
   quizHP = 100;
   quizScore = 0;
@@ -97,6 +101,7 @@ function answerQuiz(chosen, btn, q, correctIndex) {
     allBtns[correctIndex].classList.add('correct');
   }
 
+  let cooldownPrompted = false;
   if (correct) {
     quizCombo++;
     quizCorrect++;
@@ -104,6 +109,13 @@ function answerQuiz(chosen, btn, q, correctIndex) {
     quizScore += pts;
     playerEXP += pts;
     updateQuestionStats(quizDeck[quizIdx].questionId, 'quiz', true, responseTime);
+    cooldownPrompted = maybeApplyFastCorrectCooldown(quizDeck[quizIdx].questionId, 'quiz', responseTime, (applied) => {
+      if (applied && quizIdx < quizDeck.length) {
+        nextQuiz();
+      } else {
+        document.getElementById('quiz-next').classList.remove('hidden');
+      }
+    });
     showToast(`✅ Correct! +${pts} EXP 🔥 x${quizCombo}`, 'ok');
     showComboPopup(`+${pts} ⭐`, btn.getBoundingClientRect().left, btn.getBoundingClientRect().top);
   } else {
@@ -133,7 +145,7 @@ function answerQuiz(chosen, btn, q, correctIndex) {
     exBox.textContent = q.ex;
     exBox.classList.remove('hidden');
   }
-  document.getElementById('quiz-next').classList.remove('hidden');
+  document.getElementById('quiz-next').classList.toggle('hidden', correct && cooldownPrompted);
 
   const speakBtn = document.getElementById('quiz-speak-btn');
   if (speakBtn) speakBtn.classList.remove('hidden');

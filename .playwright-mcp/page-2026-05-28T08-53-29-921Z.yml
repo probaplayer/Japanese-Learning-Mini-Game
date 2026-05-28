@@ -1,0 +1,70 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]: 日本語
+    - generic [ref=e6]: QUEST
+    - generic [ref=e7]: JAPANESE LEARNING MINI-GAMES
+  - generic [ref=e8]:
+    - generic [ref=e10]: ❤ HP
+    - generic [ref=e14]: ⭐ EXP
+    - generic [ref=e16]:
+      - generic [ref=e17]: 🔰 LVL
+      - generic [ref=e18]: "1"
+    - generic [ref=e19]:
+      - generic [ref=e20]: 🔥 Streak
+      - generic [ref=e21]: "0"
+  - navigation [ref=e23]:
+    - button "📝 QUIZ Multiple Choice ▶" [ref=e24] [cursor=pointer]:
+      - generic [ref=e25]: 📝
+      - generic [ref=e26]:
+        - text: QUIZ
+        - generic [ref=e27]: Multiple Choice
+      - generic [ref=e28]: ▶
+    - button "🎧 LISTENING QUIZ Hear and choose ▶" [ref=e29] [cursor=pointer]:
+      - generic [ref=e30]: 🎧
+      - generic [ref=e31]:
+        - text: LISTENING QUIZ
+        - generic [ref=e32]: Hear and choose
+      - generic [ref=e33]: ▶
+    - button "⌨ FALLING WORDS Typing Challenge ▶" [ref=e34] [cursor=pointer]:
+      - generic [ref=e35]: ⌨
+      - generic [ref=e36]:
+        - text: FALLING WORDS
+        - generic [ref=e37]: Typing Challenge
+      - generic [ref=e38]: ▶
+    - button "🧩 MATCH Pair Cards ▶" [ref=e39] [cursor=pointer]:
+      - generic [ref=e40]: 🧩
+      - generic [ref=e41]:
+        - text: MATCH
+        - generic [ref=e42]: Pair Cards
+      - generic [ref=e43]: ▶
+    - button "🃏 FLASHCARD Flip Cards ▶" [ref=e44] [cursor=pointer]:
+      - generic [ref=e45]: 🃏
+      - generic [ref=e46]:
+        - text: FLASHCARD
+        - generic [ref=e47]: Flip Cards
+      - generic [ref=e48]: ▶
+    - button "✍️ WRITING PRACTICE Type Japanese ▶" [ref=e49] [cursor=pointer]:
+      - generic [ref=e50]: ✍️
+      - generic [ref=e51]:
+        - text: WRITING PRACTICE
+        - generic [ref=e52]: Type Japanese
+      - generic [ref=e53]: ▶
+    - button "📊 LEARNING STATS Progress tracking ▶" [ref=e54] [cursor=pointer]:
+      - generic [ref=e55]: 📊
+      - generic [ref=e56]:
+        - text: LEARNING STATS
+        - generic [ref=e57]: Progress tracking
+      - generic [ref=e58]: ▶
+    - button "⚙️ SETTINGS Settings ▶" [ref=e59] [cursor=pointer]:
+      - generic [ref=e60]: ⚙️
+      - generic [ref=e61]:
+        - text: SETTINGS
+        - generic [ref=e62]: Settings
+      - generic [ref=e63]: ▶
+    - button "📦 DATA MANAGEMENT Import / Export ▶" [ref=e64] [cursor=pointer]:
+      - generic [ref=e65]: 📦
+      - generic [ref=e66]:
+        - text: DATA MANAGEMENT
+        - generic [ref=e67]: Import / Export
+      - generic [ref=e68]: ▶
+  - generic [ref=e69]: "400 loaded questions | COMBO: 0x"

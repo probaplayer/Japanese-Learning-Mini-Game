@@ -1,0 +1,3 @@
+- generic [active] [ref=e1]:
+  - heading "Playwright OK" [level=1] [ref=e2]
+  - button "Test button" [ref=e3]

@@ -16,8 +16,92 @@ const BASE_XP_WRITE = 8;
 
 let writeKanjiQueue = [];
 let writeCurrentKanjiIdx = 0;
+const WRITE_RESUME_STORAGE_KEY = 'jq_resume_write';
 
 const CANVAS_INTERNAL_SIZE = 280;
+
+function createWriteResumeState() {
+  if (!Array.isArray(writeKanjiQueue) || writeKanjiQueue.length === 0) return null;
+  if (writeCurrentKanjiIdx >= writeKanjiQueue.length) return null;
+
+  return {
+    version: 1,
+    id: `write-${Date.now()}`,
+    type: 'write',
+    activeSetId: activeSetId || 'set-default',
+    savedAt: new Date().toISOString(),
+    deck: writeDeck.map(q => ({ ...q })),
+    idx: writeIdx,
+    hp: writeHP,
+    score: writeScore,
+    combo: writeCombo,
+    correct: writeCorrect,
+    wrong: writeWrong,
+    kanjiQueue: writeKanjiQueue.map(q => (q && typeof q === 'object' ? { ...q } : q)),
+    currentKanjiIdx: writeCurrentKanjiIdx
+  };
+}
+
+function saveWriteResumeState() {
+  const state = createWriteResumeState();
+  if (!state) {
+    clearWriteResumeState();
+    return false;
+  }
+  localStorage.setItem(WRITE_RESUME_STORAGE_KEY, JSON.stringify(state));
+  return state;
+}
+
+function loadWriteResumeState() {
+  try {
+    const raw = localStorage.getItem(WRITE_RESUME_STORAGE_KEY);
+    if (!raw) return null;
+    const state = JSON.parse(raw);
+    if (!state || state.version !== 1 || state.type !== 'write') return null;
+    if (state.activeSetId !== (activeSetId || 'set-default')) return null;
+    if (!Array.isArray(state.kanjiQueue) || state.kanjiQueue.length === 0) return null;
+    if (!Number.isInteger(state.currentKanjiIdx) || state.currentKanjiIdx < 0 || state.currentKanjiIdx >= state.kanjiQueue.length) return null;
+    return state;
+  } catch (e) {
+    clearWriteResumeState();
+    return null;
+  }
+}
+
+function clearWriteResumeState() {
+  localStorage.removeItem(WRITE_RESUME_STORAGE_KEY);
+}
+
+function setupWriteCanvasForRun() {
+  setupCanvasSize('writeCanvas');
+  if (typeof KanjiCanvas !== 'undefined' && typeof KanjiCanvas.init === 'function') {
+    KanjiCanvas.init('writeCanvas');
+    patchKanjiCanvasWhiteBackground();
+  }
+  setupWriteKeyboardShortcuts();
+}
+
+function resumeWriteFromState() {
+  const state = loadWriteResumeState();
+  if (!state) return false;
+
+  showScreen('screen-write');
+  writeDeck = state.deck.map(q => ({ ...q }));
+  writeIdx = state.idx;
+  writeHP = state.hp;
+  writeScore = state.score;
+  writeCombo = state.combo;
+  writeCorrect = state.correct;
+  writeWrong = state.wrong;
+  writeKanjiQueue = state.kanjiQueue.map(q => (q && typeof q === 'object' ? { ...q } : q));
+  writeCurrentKanjiIdx = state.currentKanjiIdx;
+  writeUseFallback = false;
+  document.getElementById('modal-gameover').classList.add('hidden');
+  setupWriteCanvasForRun();
+  clearWriteResumeState();
+  renderWrite();
+  return true;
+}
 
 function setupCanvasSize(id) {
   const canvas = document.getElementById(id);
@@ -62,6 +146,7 @@ function patchKanjiCanvasWhiteBackground() {
 }
 
 function startWrite() {
+  clearWriteResumeState();
   showScreen('screen-write');
   writeHP = 100;
   writeScore = 0;
@@ -294,6 +379,7 @@ function nextWrite() {
 }
 
 function writeComplete() {
+  clearWriteResumeState();
   gameOver(writeScore, writeCombo, 'write', writeCorrect, writeWrong, true);
   saveToStorage();
   showToast(`✍️ Complete! Score: ${writeScore}`, 'ok');
@@ -364,6 +450,7 @@ let practiceKanjiList = [];
 let practiceCurrentIdx = 0;
 let practiceEnglishMeaning = '';
 let writeEnglishMeaning = '';
+let practiceCurrentReadings = [];
 
 // ================================================
 // KANJI API CACHE
@@ -461,6 +548,7 @@ async function renderPracticeKanjiPage() {
   if (readings.length === 0) {
     readings.push(practiceWriteRomaji || '---');
   }
+  practiceCurrentReadings = readings.filter(reading => reading && reading !== '---');
   document.getElementById('practice-hint-romaji').textContent = readings.join(', ');
   
   const pag = document.getElementById('practice-pagination');
@@ -618,9 +706,7 @@ function checkWritePracticeFallback() {
   
   if (!val) return;
   
-  let isCorrect = false;
-  const targetRomaji = practiceWriteRomaji || '';
-  isCorrect = wanakana.toHiragana(val.toLowerCase()) === wanakana.toHiragana(targetRomaji.trim().toLowerCase());
+  const isCorrect = isPracticeFallbackCorrect(val);
   
   feedback.classList.remove('hidden');
   if (isCorrect) {
@@ -637,6 +723,24 @@ function checkWritePracticeFallback() {
   } else {
     feedback.innerHTML = `<span style="color: #ff2d55">❌ Try again!</span><br><span style="color: #30d158">Answer: ${escapeHtml(currentKanji)}</span>`;
   }
+}
+
+function isPracticeFallbackCorrect(value) {
+  const val = (value || '').trim();
+  if (!val) return false;
+
+  const currentKanji = practiceKanjiList[practiceCurrentIdx] || '';
+  if (currentKanji && val === currentKanji) return true;
+
+  const normalizedInput = wanakana.toHiragana(val.toLowerCase());
+  if (currentKanji) {
+    return practiceCurrentReadings.some(reading =>
+      normalizedInput === wanakana.toHiragana(String(reading).trim().toLowerCase())
+    );
+  }
+
+  const targetRomaji = practiceWriteRomaji || '';
+  return normalizedInput === wanakana.toHiragana(targetRomaji.trim().toLowerCase());
 }
 
 document.addEventListener('DOMContentLoaded', () => {

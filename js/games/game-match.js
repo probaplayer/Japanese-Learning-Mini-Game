@@ -12,6 +12,90 @@ let matchTimerInterval = null;
 let matchActive = false;
 let matchCorrect = 0;
 let matchWrong = 0;
+const MATCH_RESUME_STORAGE_KEY = 'jq_resume_match';
+
+function createMatchResumeState() {
+  if (!Array.isArray(matchCards) || matchCards.length === 0) return null;
+  if (!matchActive && matchFound >= pairCount) return null;
+
+  return {
+    version: 1,
+    id: `match-${Date.now()}`,
+    type: 'match',
+    activeSetId: activeSetId || 'set-default',
+    savedAt: new Date().toISOString(),
+    cards: matchCards.map(card => ({
+      ...card,
+      revealed: card.matched ? true : false,
+      animating: false,
+      revealedAt: null
+    })),
+    selection: [],
+    attempts: matchAttempts,
+    found: matchFound,
+    pairCount,
+    timeLeft: matchTimeLeft,
+    active: matchActive,
+    score: Math.round((matchFound / matchAttempts) || 0),
+    correct: matchCorrect,
+    wrong: matchWrong
+  };
+}
+
+function saveMatchResumeState() {
+  const state = createMatchResumeState();
+  if (!state) {
+    clearMatchResumeState();
+    return false;
+  }
+  localStorage.setItem(MATCH_RESUME_STORAGE_KEY, JSON.stringify(state));
+  return state;
+}
+
+function loadMatchResumeState() {
+  try {
+    const raw = localStorage.getItem(MATCH_RESUME_STORAGE_KEY);
+    if (!raw) return null;
+    const state = JSON.parse(raw);
+    if (!state || state.version !== 1 || state.type !== 'match') return null;
+    if (state.activeSetId !== (activeSetId || 'set-default')) return null;
+    if (!Array.isArray(state.cards) || state.cards.length === 0) return null;
+    return state;
+  } catch (e) {
+    clearMatchResumeState();
+    return null;
+  }
+}
+
+function clearMatchResumeState() {
+  localStorage.removeItem(MATCH_RESUME_STORAGE_KEY);
+}
+
+function resumeMatchFromState() {
+  const state = loadMatchResumeState();
+  if (!state) return false;
+
+  matchCards = state.cards.map(card => ({
+    ...card,
+    revealed: card.matched ? true : false,
+    animating: false,
+    revealedAt: null
+  }));
+  matchSelection = [];
+  matchAttempts = state.attempts;
+  matchFound = state.found;
+  pairCount = state.pairCount;
+  matchTimeLeft = state.timeLeft;
+  matchActive = state.active;
+  matchCorrect = state.correct;
+  matchWrong = state.wrong;
+  clearMatchResumeState();
+  showScreen('screen-match');
+  renderMatchBoard();
+  updateMatchHUD();
+  startMatchTimer();
+  return true;
+}
 
 function getMatchLabel(item) {
   return item.translation || item.romaji || item.word || item.q || '---';
@@ -49,6 +133,7 @@ function stopMatchTimer() {
 
 function endMatchByTime() {
   stopMatchTimer();
+  clearMatchResumeState();
   matchActive = false;
   matchTimeLeft = 0;
   matchCards = matchCards.map(card => ({ ...card, revealed: true }));
@@ -76,6 +161,7 @@ function renderMatchBoard() {
 }
 
 function startMatch() {
+  clearMatchResumeState();
   const prioritizedItems = getPrioritizedDeck(questions, 'match');
   let items = prioritizedItems;
   if (settings.questionLimitEnabled) {
@@ -134,6 +220,7 @@ function handleMatchCard(cardId) {
       if (matchFound === pairCount) {        
         stopMatchTimer();
         matchActive = false;
+        clearMatchResumeState();
         gameOver(Math.round((matchFound / matchAttempts) || 0), 0, 'match', matchCorrect, matchWrong, true);
         setTimeout(() => showToast('🎉 Complete!', 'ok'), 300);
         saveToStorage();

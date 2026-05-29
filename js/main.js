@@ -176,12 +176,75 @@ function startGame(type) {
     return;
   }
   gameStartTime = Date.now();
+  if (typeof openGameResumeModal === 'function' && openGameResumeModal(type)) return;
+  startFreshGame(type);
+}
+
+function startFreshGame(type) {
   if (type === 'quiz') startQuiz();
   if (type === 'listen') startListen();
   if (type === 'flash') startFlash();
   if (type === 'type') startTyping();
   if (type === 'match') startMatch();
   if (type === 'write') startWrite();
+}
+
+function getGameResumeLabel(type) {
+  const labels = {
+    quiz: 'Quiz',
+    listen: 'Listening',
+    flash: 'Flashcard',
+    match: 'Match',
+    type: 'Falling Words',
+    write: 'Writing'
+  };
+  return labels[type] || 'Game';
+}
+
+function getCurrentResumeGameType() {
+  const screenMap = {
+    'screen-quiz': 'quiz',
+    'screen-listen': 'listen',
+    'screen-flash': 'flash',
+    'screen-match': 'match',
+    'screen-type': 'type',
+    'screen-write': 'write'
+  };
+  return screenMap[currentScreen] || null;
+}
+
+function openGameResumeModal(type) {
+  if (typeof loadGameResumeState !== 'function' || !loadGameResumeState(type)) return false;
+
+  const modal = document.getElementById('quiz-resume-modal');
+  const title = document.getElementById('quiz-resume-title');
+  const continueBtn = document.getElementById('quiz-resume-continue');
+  const restartBtn = document.getElementById('quiz-resume-restart');
+  if (!modal || !continueBtn || !restartBtn) return false;
+
+  const label = getGameResumeLabel(type);
+  if (title) title.textContent = `RESUME ${label.toUpperCase()}?`;
+  const message = typeof modal.querySelector === 'function' ? modal.querySelector('.cooldown-modal-message') : null;
+  if (message) message.textContent = `You have an unfinished ${label} session.`;
+
+  continueBtn.onclick = () => {
+    modal.classList.add('hidden');
+    if (typeof resumeGameFromState === 'function' && !resumeGameFromState(type)) {
+      startFreshGame(type);
+    }
+  };
+  restartBtn.onclick = () => {
+    modal.classList.add('hidden');
+    if (typeof clearGameResumeState === 'function') clearGameResumeState(type);
+    startFreshGame(type);
+  };
+  modal.classList.remove('hidden');
+  continueBtn.focus();
+  return true;
+}
+
+function openQuizResumeModal() {
+  return openGameResumeModal('quiz');
 }
 
 function exitGame() {
@@ -198,6 +261,13 @@ function exitGame() {
   if (gameStartTime) {
     const elapsed = (Date.now() - gameStartTime) / 60000;
     recordPlayTime(elapsed);
+  }
+  const resumeType = getCurrentResumeGameType();
+  if (resumeType && typeof saveGameResumeState === 'function') {
+    const resumeState = saveGameResumeState(resumeType);
+    if (resumeState && typeof recordAbandonedSession === 'function') {
+      recordAbandonedSession(resumeType, resumeState.score, resumeState.correct, resumeState.wrong, resumeState.id);
+    }
   }
   saveToStorage();
   document.getElementById('modal-gameover').classList.add('hidden');
@@ -253,6 +323,9 @@ const dictionaryGame = {
 }
 
 function gameOver(score, combo, type, correct, wrong, completed = false) {
+  if (typeof clearGameResumeState === 'function') {
+    clearGameResumeState(type);
+  }
   if (completed) {
     recordSession(type, score, correct, wrong);
     playerCombo = Math.max(playerCombo, combo);
@@ -340,12 +413,13 @@ function renderStatsScreen() {
         const date = new Date(session.timestamp);
         const formattedDate = date.toLocaleDateString('vi-VN', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
         const icon = gameIcons[session.type] || '🎮';
+        const statusLabel = session.status === 'abandoned' ? ' (Abandoned)' : '';
         const accuracyColor = accuracy >= 80 ? '#30d158' : accuracy >= 50 ? '#ffd60a' : '#ff2d55';
         historyHtml += `
           <div class="session-history-item">
             <div class="session-history-icon">${icon}</div>
             <div class="session-history-info">
-              <div class="session-history-type">${gameNames[session.type] || session.type}</div>
+              <div class="session-history-type">${gameNames[session.type] || session.type}${statusLabel}</div>
               <div class="session-history-date">${formattedDate}</div>
             </div>
             <div class="session-history-stats">

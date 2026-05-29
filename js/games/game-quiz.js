@@ -12,8 +12,125 @@ let quizTimerInterval = null;
 let quizDelayTimeout = null;
 let quizCorrect = 0;
 let quizWrong = 0;
+const QUIZ_RESUME_STORAGE_KEY = 'jq_resume_quiz';
+
+function saveGameResumeState(type) {
+  if (type === 'quiz' && typeof saveQuizResumeState === 'function') return saveQuizResumeState();
+  if (type === 'listen' && typeof saveListenResumeState === 'function') return saveListenResumeState();
+  if (type === 'flash' && typeof saveFlashResumeState === 'function') return saveFlashResumeState();
+  if (type === 'match' && typeof saveMatchResumeState === 'function') return saveMatchResumeState();
+  if (type === 'type' && typeof saveTypeResumeState === 'function') return saveTypeResumeState();
+  if (type === 'write' && typeof saveWriteResumeState === 'function') return saveWriteResumeState();
+  return false;
+}
+
+function loadGameResumeState(type) {
+  if (type === 'quiz' && typeof loadQuizResumeState === 'function') return loadQuizResumeState();
+  if (type === 'listen' && typeof loadListenResumeState === 'function') return loadListenResumeState();
+  if (type === 'flash' && typeof loadFlashResumeState === 'function') return loadFlashResumeState();
+  if (type === 'match' && typeof loadMatchResumeState === 'function') return loadMatchResumeState();
+  if (type === 'type' && typeof loadTypeResumeState === 'function') return loadTypeResumeState();
+  if (type === 'write' && typeof loadWriteResumeState === 'function') return loadWriteResumeState();
+  return null;
+}
+
+function clearGameResumeState(type) {
+  if (type === 'quiz' && typeof clearQuizResumeState === 'function') clearQuizResumeState();
+  if (type === 'listen' && typeof clearListenResumeState === 'function') clearListenResumeState();
+  if (type === 'flash' && typeof clearFlashResumeState === 'function') clearFlashResumeState();
+  if (type === 'match' && typeof clearMatchResumeState === 'function') clearMatchResumeState();
+  if (type === 'type' && typeof clearTypeResumeState === 'function') clearTypeResumeState();
+  if (type === 'write' && typeof clearWriteResumeState === 'function') clearWriteResumeState();
+}
+
+function resumeGameFromState(type) {
+  if (type === 'quiz' && typeof resumeQuizFromState === 'function') return resumeQuizFromState();
+  if (type === 'listen' && typeof resumeListenFromState === 'function') return resumeListenFromState();
+  if (type === 'flash' && typeof resumeFlashFromState === 'function') return resumeFlashFromState();
+  if (type === 'match' && typeof resumeMatchFromState === 'function') return resumeMatchFromState();
+  if (type === 'type' && typeof resumeTypeFromState === 'function') return resumeTypeFromState();
+  if (type === 'write' && typeof resumeWriteFromState === 'function') return resumeWriteFromState();
+  return false;
+}
+
+function createQuizResumeState() {
+  if (!Array.isArray(quizDeck) || quizDeck.length === 0) return null;
+  if (quizIdx >= quizDeck.length) return null;
+
+  return {
+    version: 1,
+    id: `quiz-${Date.now()}`,
+    type: 'quiz',
+    activeSetId: activeSetId || 'set-default',
+    savedAt: new Date().toISOString(),
+    deck: quizDeck.map(q => ({ ...q })),
+    idx: quizIdx,
+    hp: quizHP,
+    score: quizScore,
+    combo: quizCombo,
+    correct: quizCorrect,
+    wrong: quizWrong,
+    settingsSnapshot: {
+      quizTimeLimit: settings.quizTimeLimit,
+      quizTimerEnabled: settings.quizTimerEnabled,
+      shuffleAnswers: settings.shuffleAnswers,
+      questionLimitEnabled: settings.questionLimitEnabled,
+      questionLimit: settings.questionLimit
+    }
+  };
+}
+
+function saveQuizResumeState() {
+  const state = createQuizResumeState();
+  if (!state) {
+    clearQuizResumeState();
+    return false;
+  }
+  localStorage.setItem(QUIZ_RESUME_STORAGE_KEY, JSON.stringify(state));
+  return state;
+}
+
+function loadQuizResumeState() {
+  try {
+    const raw = localStorage.getItem(QUIZ_RESUME_STORAGE_KEY);
+    if (!raw) return null;
+    const state = JSON.parse(raw);
+    if (!state || state.version !== 1 || state.type !== 'quiz') return null;
+    if (state.activeSetId !== (activeSetId || 'set-default')) return null;
+    if (!Array.isArray(state.deck) || state.deck.length === 0) return null;
+    if (!Number.isInteger(state.idx) || state.idx < 0 || state.idx >= state.deck.length) return null;
+    return state;
+  } catch (e) {
+    clearQuizResumeState();
+    return null;
+  }
+}
+
+function clearQuizResumeState() {
+  localStorage.removeItem(QUIZ_RESUME_STORAGE_KEY);
+}
+
+function resumeQuizFromState() {
+  const state = loadQuizResumeState();
+  if (!state) return false;
+
+  quizDeck = state.deck.map(q => ({ ...q }));
+  quizIdx = state.idx;
+  quizHP = state.hp;
+  quizScore = state.score;
+  quizCombo = state.combo;
+  quizCorrect = state.correct;
+  quizWrong = state.wrong;
+  quizTimeLeft = settings.quizTimeLimit;
+  stopQuizTimer();
+  clearQuizResumeState();
+  showScreen('screen-quiz');
+  renderQuiz();
+  return true;
+}
 
 function startQuiz() {
+  clearQuizResumeState();
   quizDeck = getPrioritizedDeck(questions, 'quiz').map(q => ({
     ...q,
     questionId: generateQuestionId(q)
@@ -165,6 +282,7 @@ function nextQuiz() {
 
 function quizComplete() {
   stopQuizTimer();
+  clearQuizResumeState();
   if (!settings.disableGameOver) {
     playerHP = Math.max(0, playerHP - (100 - quizHP));
   }

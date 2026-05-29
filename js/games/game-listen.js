@@ -12,8 +12,79 @@ let listenTimerInterval = null;
 let listenDelayTimeout = null;
 let listenCorrect = 0;
 let listenWrong = 0;
+const LISTEN_RESUME_STORAGE_KEY = 'jq_resume_listen';
+
+function createListenResumeState() {
+  if (!Array.isArray(listenDeck) || listenDeck.length === 0) return null;
+  if (listenIdx >= listenDeck.length) return null;
+
+  return {
+    version: 1,
+    id: `listen-${Date.now()}`,
+    type: 'listen',
+    activeSetId: activeSetId || 'set-default',
+    savedAt: new Date().toISOString(),
+    deck: listenDeck.map(q => ({ ...q })),
+    idx: listenIdx,
+    hp: listenHP,
+    score: listenScore,
+    combo: listenCombo,
+    correct: listenCorrect,
+    wrong: listenWrong
+  };
+}
+
+function saveListenResumeState() {
+  const state = createListenResumeState();
+  if (!state) {
+    clearListenResumeState();
+    return false;
+  }
+  localStorage.setItem(LISTEN_RESUME_STORAGE_KEY, JSON.stringify(state));
+  return state;
+}
+
+function loadListenResumeState() {
+  try {
+    const raw = localStorage.getItem(LISTEN_RESUME_STORAGE_KEY);
+    if (!raw) return null;
+    const state = JSON.parse(raw);
+    if (!state || state.version !== 1 || state.type !== 'listen') return null;
+    if (state.activeSetId !== (activeSetId || 'set-default')) return null;
+    if (!Array.isArray(state.deck) || state.deck.length === 0) return null;
+    if (!Number.isInteger(state.idx) || state.idx < 0 || state.idx >= state.deck.length) return null;
+    return state;
+  } catch (e) {
+    clearListenResumeState();
+    return null;
+  }
+}
+
+function clearListenResumeState() {
+  localStorage.removeItem(LISTEN_RESUME_STORAGE_KEY);
+}
+
+function resumeListenFromState() {
+  const state = loadListenResumeState();
+  if (!state) return false;
+
+  listenDeck = state.deck.map(q => ({ ...q }));
+  listenIdx = state.idx;
+  listenHP = state.hp;
+  listenScore = state.score;
+  listenCombo = state.combo;
+  listenCorrect = state.correct;
+  listenWrong = state.wrong;
+  listenTimeLeft = settings.quizTimeLimit;
+  stopListenTimer();
+  clearListenResumeState();
+  showScreen('screen-listen');
+  renderListen();
+  return true;
+}
 
 function startListen() {
+  clearListenResumeState();
   stopListenTimer();
   listenDeck = getPrioritizedDeck(questions, 'listen').map(q => ({
     ...q,
@@ -277,6 +348,7 @@ function nextListen() {
 
 function listenComplete() {
   stopListenTimer();
+  clearListenResumeState();
   gameOver(listenScore, listenCombo, 'listen', listenCorrect, listenWrong, true);
   playerCombo = Math.max(playerCombo, listenCombo);
   saveToStorage();
@@ -290,6 +362,7 @@ function listenComplete() {
 
 function showListenGameOver() {
   stopListenTimer();
+  clearListenResumeState();
   gameOver(listenScore, listenCombo, 'listen', listenCorrect, listenWrong);
   const el = document.getElementById('listen-go-score');
   if (el) el.textContent = listenScore;

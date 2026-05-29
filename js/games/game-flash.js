@@ -12,11 +12,77 @@ let flashDeck = [];
 let flashIdx = 0;
 let flashKnown = 0;
 let flashUnknown = 0;
+const FLASH_RESUME_STORAGE_KEY = 'jq_resume_flash';
 
 
 let flashQuestionStartTime = 0;
 
+function createFlashResumeState() {
+  if (!Array.isArray(flashDeck) || flashDeck.length === 0) return null;
+  if (flashIdx >= flashDeck.length) return null;
+
+  return {
+    version: 1,
+    id: `flash-${Date.now()}`,
+    type: 'flash',
+    activeSetId: activeSetId || 'set-default',
+    savedAt: new Date().toISOString(),
+    deck: flashDeck.map(q => ({ ...q })),
+    idx: flashIdx,
+    known: flashKnown,
+    unknown: flashUnknown,
+    score: flashKnown * 5,
+    correct: flashKnown,
+    wrong: flashUnknown
+  };
+}
+
+function saveFlashResumeState() {
+  const state = createFlashResumeState();
+  if (!state) {
+    clearFlashResumeState();
+    return false;
+  }
+  localStorage.setItem(FLASH_RESUME_STORAGE_KEY, JSON.stringify(state));
+  return state;
+}
+
+function loadFlashResumeState() {
+  try {
+    const raw = localStorage.getItem(FLASH_RESUME_STORAGE_KEY);
+    if (!raw) return null;
+    const state = JSON.parse(raw);
+    if (!state || state.version !== 1 || state.type !== 'flash') return null;
+    if (state.activeSetId !== (activeSetId || 'set-default')) return null;
+    if (!Array.isArray(state.deck) || state.deck.length === 0) return null;
+    if (!Number.isInteger(state.idx) || state.idx < 0 || state.idx >= state.deck.length) return null;
+    return state;
+  } catch (e) {
+    clearFlashResumeState();
+    return null;
+  }
+}
+
+function clearFlashResumeState() {
+  localStorage.removeItem(FLASH_RESUME_STORAGE_KEY);
+}
+
+function resumeFlashFromState() {
+  const state = loadFlashResumeState();
+  if (!state) return false;
+
+  flashDeck = state.deck.map(q => ({ ...q }));
+  flashIdx = state.idx;
+  flashKnown = state.known;
+  flashUnknown = state.unknown;
+  clearFlashResumeState();
+  showScreen('screen-flash');
+  renderCard();
+  return true;
+}
+
 function startFlash() {
+  clearFlashResumeState();
   flashDeck = getPrioritizedDeck(questions, 'flash').map(q => ({
     ...q,
     questionId: generateQuestionId(q)
@@ -106,6 +172,7 @@ function markCard(level) {
 }
 
 function flashComplete() {
+  clearFlashResumeState();
   gameOver(flashKnown * 5, 0, 'flash', flashKnown, flashUnknown, true);
   saveToStorage();
   showToast(`📚 Complete! ✅${flashKnown}  ❌${flashUnknown}`, 'ok');

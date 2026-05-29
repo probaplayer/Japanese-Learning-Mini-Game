@@ -82,9 +82,17 @@ this.updateQuestionStats = updateQuestionStats;`,
   return context;
 }
 
+function recordFastCorrects(context, questionId, gameType, count) {
+  for (let i = 0; i < count; i++) {
+    context.updateQuestionStats(questionId, gameType, true, 2000);
+  }
+}
+
 function testDeclinedCooldownDoesNotHideQuestion() {
   const context = createContext();
 
+  recordFastCorrects(context, 'q-fast', 'quiz', 3);
+  const saveCountBeforePrompt = context.saveCount;
   const applied = context.maybeApplyFastCorrectCooldown('q-fast', 'quiz', 2000);
   assert.strictEqual(context.elements['fast-correct-cooldown-modal'].classList.contains('hidden'), false);
   context.elements['fast-correct-cooldown-cancel'].onclick();
@@ -92,14 +100,16 @@ function testDeclinedCooldownDoesNotHideQuestion() {
   assert.strictEqual(applied, true);
   assert.match(context.elements['fast-correct-cooldown-message'].textContent, /3 days/);
   assert.strictEqual(context.elements['fast-correct-cooldown-modal'].classList.contains('hidden'), true);
-  assert.strictEqual(context.questionStats['q-fast'], undefined);
-  assert.strictEqual(context.saveCount, 0);
+  assert.strictEqual(context.questionStats['set-a::q-fast']._meta, undefined);
+  assert.strictEqual(context.saveCount, saveCountBeforePrompt);
 }
 
 function testAcceptedCooldownHidesQuestionUntilConfiguredDate() {
   const context = createContext();
   let advanced = false;
 
+  recordFastCorrects(context, 'q-fast', 'listen', 3);
+  const saveCountBeforePrompt = context.saveCount;
   const applied = context.maybeApplyFastCorrectCooldown('q-fast', 'listen', 2000, () => {
     advanced = true;
   });
@@ -110,7 +120,7 @@ function testAcceptedCooldownHidesQuestionUntilConfiguredDate() {
   assert.strictEqual(context.elements['fast-correct-cooldown-modal'].classList.contains('hidden'), true);
   const meta = context.questionStats['set-a::q-fast']._meta;
   assert.ok(new Date(meta.cooldowns.listen.until).getTime() > Date.now());
-  assert.strictEqual(context.saveCount, 1);
+  assert.strictEqual(context.saveCount, saveCountBeforePrompt + 1);
   assert.strictEqual(advanced, true);
 }
 
@@ -118,12 +128,13 @@ function testDeclinedCooldownSignalsKeepWithoutApplying() {
   const context = createContext();
   let callbackValue = null;
 
+  recordFastCorrects(context, 'q-fast', 'quiz', 3);
   context.maybeApplyFastCorrectCooldown('q-fast', 'quiz', 2000, (applied) => {
     callbackValue = applied;
   });
   context.elements['fast-correct-cooldown-cancel'].onclick();
 
-  assert.strictEqual(context.questionStats['q-fast'], undefined);
+  assert.strictEqual(context.questionStats['set-a::q-fast']._meta, undefined);
   assert.strictEqual(callbackValue, false);
 }
 
@@ -151,6 +162,7 @@ function testCooldownIsScopedToActiveQuestionSetAndGameMode() {
   const questionId = context.generateQuestionId(question);
 
   context.activeSetId = 'set-a';
+  recordFastCorrects(context, questionId, 'quiz', 3);
   context.maybeApplyFastCorrectCooldown(questionId, 'quiz', 1000);
   context.elements['fast-correct-cooldown-confirm'].onclick();
 
@@ -197,6 +209,37 @@ function testWeakQuestionDoesNotShowFastCorrectPopup() {
   assert.strictEqual(context.elements['fast-correct-cooldown-modal'].classList.contains('hidden'), true);
 }
 
+function testFastCorrectPopupRequiresThreeConsecutiveFastCorrectAnswers() {
+  const context = createContext();
+
+  context.updateQuestionStats('q-streak', 'quiz', true, 2000);
+  assert.strictEqual(context.maybeApplyFastCorrectCooldown('q-streak', 'quiz', 2000), false);
+
+  context.updateQuestionStats('q-streak', 'quiz', true, 2000);
+  assert.strictEqual(context.maybeApplyFastCorrectCooldown('q-streak', 'quiz', 2000), false);
+
+  context.updateQuestionStats('q-streak', 'quiz', true, 2000);
+  assert.strictEqual(context.maybeApplyFastCorrectCooldown('q-streak', 'quiz', 2000), true);
+  assert.strictEqual(context.elements['fast-correct-cooldown-modal'].classList.contains('hidden'), false);
+}
+
+function testFastCorrectStreakResetsAfterSlowOrWrongAnswer() {
+  const context = createContext();
+
+  context.updateQuestionStats('q-reset', 'quiz', true, 2000);
+  context.updateQuestionStats('q-reset', 'quiz', true, 9000);
+  context.updateQuestionStats('q-reset', 'quiz', true, 2000);
+  context.updateQuestionStats('q-reset', 'quiz', true, 2000);
+  assert.strictEqual(context.maybeApplyFastCorrectCooldown('q-reset', 'quiz', 2000), false);
+
+  context.updateQuestionStats('q-reset', 'quiz', false, 2000);
+  recordFastCorrects(context, 'q-reset', 'quiz', 2);
+  assert.strictEqual(context.maybeApplyFastCorrectCooldown('q-reset', 'quiz', 2000), false);
+
+  context.updateQuestionStats('q-reset', 'quiz', true, 2000);
+  assert.strictEqual(context.maybeApplyFastCorrectCooldown('q-reset', 'quiz', 2000), true);
+}
+
 function testSlowCorrectUsesConfiguredFastThresholdWithoutOverlap() {
   const context = createContext();
   context.updateQuestionStats('q-speed', 'quiz', true, 8000);
@@ -212,6 +255,8 @@ testSlowCorrectAnswerDoesNotPrompt();
 testCooldownIsScopedToActiveQuestionSetAndGameMode();
 testFastCorrectPopupOnlyAppliesToAllowedGames();
 testWeakQuestionDoesNotShowFastCorrectPopup();
+testFastCorrectPopupRequiresThreeConsecutiveFastCorrectAnswers();
+testFastCorrectStreakResetsAfterSlowOrWrongAnswer();
 testSlowCorrectUsesConfiguredFastThresholdWithoutOverlap();
 
 console.log('fast-correct cooldown tests passed');

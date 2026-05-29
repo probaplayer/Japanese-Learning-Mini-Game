@@ -20,8 +20,106 @@ let canvasW = 0;
 let canvasH = 0;
 let isStartGame = false;
 let typeQuestionStartTime = 0;
+const TYPE_RESUME_STORAGE_KEY = 'jq_resume_type';
+
+function createTypeResumeState() {
+  if (!Array.isArray(typeDeck) || !Array.isArray(fallingWords)) return null;
+  if (typeHP <= 0 && !settings.disableGameOver) return null;
+  if (typeDeck.length === 0 && fallingWords.filter(w => !w.done).length === 0) return null;
+
+  return {
+    version: 1,
+    id: `type-${Date.now()}`,
+    type: 'type',
+    activeSetId: activeSetId || 'set-default',
+    savedAt: new Date().toISOString(),
+    deck: typeDeck.map(q => ({ ...q })),
+    fallingWords: fallingWords.filter(w => !w.done).map(w => ({ ...w, startedAt: Date.now() })),
+    hp: typeHP,
+    score: typeScore,
+    combo: typeCombo,
+    correct: typeCorrect,
+    wrong: typeWrong,
+    spawnTimer,
+    spawnInterval,
+    gameSpeed
+  };
+}
+
+function saveTypeResumeState() {
+  const state = createTypeResumeState();
+  if (!state) {
+    clearTypeResumeState();
+    return false;
+  }
+  localStorage.setItem(TYPE_RESUME_STORAGE_KEY, JSON.stringify(state));
+  return state;
+}
+
+function loadTypeResumeState() {
+  try {
+    const raw = localStorage.getItem(TYPE_RESUME_STORAGE_KEY);
+    if (!raw) return null;
+    const state = JSON.parse(raw);
+    if (!state || state.version !== 1 || state.type !== 'type') return null;
+    if (state.activeSetId !== (activeSetId || 'set-default')) return null;
+    if (!Array.isArray(state.deck) || !Array.isArray(state.fallingWords)) return null;
+    return state;
+  } catch (e) {
+    clearTypeResumeState();
+    return null;
+  }
+}
+
+function clearTypeResumeState() {
+  localStorage.removeItem(TYPE_RESUME_STORAGE_KEY);
+}
+
+function setupTypingCanvasForRun() {
+  typeCanvas = document.getElementById('type-canvas');
+  typeCtx = typeCanvas.getContext('2d');
+
+  const rect = typeCanvas.getBoundingClientRect();
+  typeCanvas.width = rect.width || 700;
+  typeCanvas.height = rect.height || 380;
+  canvasW = typeCanvas.width;
+  canvasH = typeCanvas.height;
+
+  document.getElementById('modal-gameover').classList.add('hidden');
+  document.getElementById('type-target').textContent = '---';
+
+  const inp = document.getElementById('type-input');
+  inp.value = '';
+  inp.focus();
+  inp.oninput = onTypeInput;
+}
+
+function resumeTypeFromState() {
+  const state = loadTypeResumeState();
+  if (!state) return false;
+
+  showScreen('screen-type');
+  isStartGame = true;
+  typeHP = state.hp;
+  typeScore = state.score;
+  typeCombo = state.combo;
+  typeCorrect = state.correct;
+  typeWrong = state.wrong;
+  typeDeck = state.deck.map(q => ({ ...q }));
+  fallingWords = state.fallingWords.map(w => ({ ...w, startedAt: Date.now(), done: false }));
+  spawnTimer = state.spawnTimer;
+  spawnInterval = state.spawnInterval;
+  gameSpeed = state.gameSpeed;
+  setupTypingCanvasForRun();
+  clearTypeResumeState();
+  if (typingLoop) cancelAnimationFrame(typingLoop);
+  typingLoop = requestAnimationFrame(typeGameLoop);
+  updateTypeHUD();
+  return true;
+}
 
 function startTyping() {
+  clearTypeResumeState();
   showScreen('screen-type');
   isStartGame = true;
   typeHP = 100;
@@ -272,6 +370,7 @@ function updateTypeHUD() {
 function gameOverTyping(score, combo, completed = true) {
   cancelAnimationFrame(typingLoop);
   typingLoop = null;
+  clearTypeResumeState();
   gameOver(score, combo, 'type', typeCorrect, typeWrong, completed);
   saveToStorage();
   if (gameStartTime) {

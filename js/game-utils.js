@@ -25,6 +25,7 @@ const MAX_HISTORY_DAYS = 30;
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
 const FAST_CORRECT_GAME_TYPES = ['quiz', 'listen', 'flash'];
 const WEAK_FAST_CORRECT_THRESHOLD = 2;
+const FAST_CORRECT_STREAK_THRESHOLD = 3;
 let pendingFastCorrectCooldown = null;
 
 function getFastCorrectThresholdMs() {
@@ -207,6 +208,7 @@ function maybeApplyFastCorrectCooldown(questionId, gameType, responseTime, onClo
 
   const stats = getQuestionStatsEntry(questionId, false)?.[gameType];
   if (getEffectiveIncorrect(stats) >= WEAK_FAST_CORRECT_THRESHOLD) return false;
+  if ((stats?.fastCorrectStreak || 0) < FAST_CORRECT_STREAK_THRESHOLD) return false;
 
   const days = Math.max(1, parseInt(settings.fastCorrectCooldownDays || 3, 10));
   return openFastCorrectCooldownModal(questionId, gameType, days, onClose);
@@ -359,6 +361,8 @@ function updateQuestionStats(questionIdOrIndex, gameType, isCorrect, responseTim
   if (isCorrect) {
     stats.correctStreak = (stats.correctStreak || 0) + 1;
     stats.correctCount = (stats.correctCount || 0) + 1;
+    const wasFastCorrect = responseTime !== undefined && responseTime <= getFastCorrectThresholdMs();
+    stats.fastCorrectStreak = wasFastCorrect ? (stats.fastCorrectStreak || 0) + 1 : 0;
     if (responseTime !== undefined && responseTime > getFastCorrectThresholdMs()) {
       stats.slowCorrectCount = (stats.slowCorrectCount || 0) + 1;
     }
@@ -371,6 +375,7 @@ function updateQuestionStats(questionIdOrIndex, gameType, isCorrect, responseTim
   } else {
     stats.incorrect = (stats.incorrect || 0) + 1;
     stats.correctStreak = 0;
+    stats.fastCorrectStreak = 0;
     stats.incorrectHistory.push(new Date().toISOString());
   }
   
@@ -446,6 +451,26 @@ function recordSession(type, score, correct, wrong) {
 }
 
 /* ── DAILY STREAK ── */
+function recordAbandonedSession(type, score, correct, wrong, resumeId) {
+  if (resumeId && sessionHistory.some(session => session.resumeId === resumeId)) return false;
+  const session = {
+    id: `session-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+    resumeId: resumeId || null,
+    type,
+    score,
+    correct,
+    wrong,
+    status: 'abandoned',
+    timestamp: new Date().toISOString()
+  };
+  sessionHistory.unshift(session);
+  if (sessionHistory.length > 20) {
+    sessionHistory.pop();
+  }
+  saveSessionHistory();
+  return true;
+}
+
 let dailyStreak = {
   currentStreak: 0,
   lastPlayDate: null,

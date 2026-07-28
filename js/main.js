@@ -46,22 +46,22 @@ let settings = {
   }
 };
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
   initStars();
   loadSettingsFromStorage();
-  loadFromStorage();
+  loadPlayerProgressFromStorage();
+  try {
+    await initQuestionSets();
+  } catch (e) {
+    console.error('Failed to load question sets:', e);
+    showToast('❌ Failed to load question sets', 'err');
+  }
   loadQuestionStats();
   loadSessionHistory();
   loadDailyStreak();
   applyScanlinesVisibility();
   updateAnimationBodyClass();
-  
-  const firebaseConfig = loadFirebaseConfig();
-  if (firebaseConfig) {
-    initializeFirebase(firebaseConfig);
-    showFirebaseSetsButton(true);
-  }
-  
+
   updateMenuUI();
   showScreen('screen-menu');
 });

@@ -1,0 +1,5609 @@
+{
+  "id": "n5-core",
+  "name": "N5 Core Vocabulary",
+  "description": "Default vocabulary set migrated from the original built-in sample data.",
+  "createdAt": "2026-07-28T08:59:46.370Z",
+  "updatedAt": "2026-07-28T08:59:46.370Z",
+  "questions": [
+    {
+      "word": "学生",
+      "romaji": "がくせい",
+      "translation": "Học sinh",
+      "q": "Cách đọc của '学生' là gì?",
+      "a": [
+        "がくせい",
+        "がくぜい",
+        "がっせい",
+        "かくせい"
+      ],
+      "c": 0,
+      "ex": "学生 (Học sinh). Học (学) + Sinh (生)."
+    },
+    {
+      "word": "学校",
+      "romaji": "がっこう",
+      "translation": "Trường học",
+      "q": "Cách đọc của '学校' là gì?",
+      "a": [
+        "がくこう",
+        "がっこう",
+        "かっこう",
+        "がこう"
+      ],
+      "c": 1,
+      "ex": "学校 (Trường học). Học (学) + Hiệu (校)."
+    },
+    {
+      "word": "今",
+      "romaji": "Ima",
+      "translation": "Bây giờ",
+      "q": "Chữ Hán của 'Ima' (Bây giờ) là gì?",
+      "a": [
+        "今",
+        "寺",
+        "時",
+        "金"
+      ],
+      "c": 0,
+      "ex": "今 (Kim) nghĩa là hiện tại, bây giờ."
+    },
+    {
+      "word": "毎日",
+      "romaji": "まいにち",
+      "translation": "Mỗi ngày",
+      "q": "Cách đọc của '毎日' là gì?",
+      "a": [
+        "まいにち",
+        "まいび",
+        "まいひ",
+        "まいにっじ"
+      ],
+      "c": 0,
+      "ex": "毎日 (Mỗi ngày). Mỗi (毎) + Nhật (日)."
+    },
+    {
+      "word": "水",
+      "romaji": "Mizu",
+      "translation": "Nước",
+      "q": "Chữ Hán của 'Mizu' (Nước) là gì?",
+      "a": [
+        "氷",
+        "永",
+        "水",
+        "木"
+      ],
+      "c": 2,
+      "ex": "水 (Thủy) là nước."
+    },
+    {
+      "word": "中国",
+      "romaji": "ちゅうごく",
+      "translation": "Trung Quốc",
+      "q": "Cách đọc của '中国' là gì?",
+      "a": [
+        "ちゅうごく",
+        "ちゅうくに",
+        "なかくに",
+        "ちゅうごっく"
+      ],
+      "c": 0,
+      "ex": "中国 (Trung Quốc). Trung (中) + Quốc (国)."
+    },
+    {
+      "word": "車",
+      "romaji": "Kuruma",
+      "translation": "Xe ô tô",
+      "q": "Chữ Hán của 'Kuruma' (Xe ô tô) là gì?",
+      "a": [
+        "車",
+        "東",
+        "気",
+        "電"
+      ],
+      "c": 0,
+      "ex": "車 (Xa) là xe cộ."
+    },
+    {
+      "word": "名前",
+      "romaji": "なまえ",
+      "translation": "tên",
+      "q": "Cách đọc của '名前' là gì?",
+      "a": [
+        "なまえ",
+        "めいぜん",
+        "みょうぜん",
+        "なぜん"
+      ],
+      "c": 0,
+      "ex": "名前 (Danh Tiền) nghĩa là tên."
+    },
+    {
+      "word": "外",
+      "romaji": "Soto",
+      "translation": "Bên ngoài",
+      "q": "Chữ Hán của 'Soto' (Bên ngoài) là gì?",
+      "a": [
+        "外",
+        "内",
+        "右",
+        "左"
+      ],
+      "c": 0,
+      "ex": "外 (Ngoại) là bên ngoài."
+    },
+    {
+      "word": "後半",
+      "romaji": "こうはん",
+      "translation": "nửa sau",
+      "q": "Cách đọc của '後半' là gì?",
+      "a": [
+        "こうはん",
+        "ごばん",
+        "こうばん",
+        "ごはん"
+      ],
+      "c": 0,
+      "ex": "後半 (Hậu Bán) nghĩa là nửa sau."
+    },
+    {
+      "word": "食べます",
+      "romaji": "Tabemasu",
+      "translation": "Ăn",
+      "q": "Chữ Hán của 'Tabemasu' (Ăn) là gì?",
+      "a": [
+        "飲みます",
+        "食べます",
+        "読みます",
+        "買います"
+      ],
+      "c": 1,
+      "ex": "食 (Thực) liên quan đến ăn uống."
+    },
+    {
+      "word": "見ます",
+      "romaji": "みます",
+      "translation": "nhìn, xem",
+      "q": "Cách đọc của '見ます' là gì?",
+      "a": [
+        "みます",
+        "ききます",
+        "よみます",
+        "かきます"
+      ],
+      "c": 0,
+      "ex": "見 (Kiến) là nhìn, xem."
+    },
+    {
+      "word": "暑い",
+      "romaji": "Atsui",
+      "translation": "Nóng - thời tiết",
+      "q": "Chữ Hán của 'Atsui' (Nóng - thời tiết) là gì?",
+      "a": [
+        "暑い",
+        "寒い",
+        "厚い",
+        "熱い"
+      ],
+      "c": 0,
+      "ex": "暑 (Thử) là nóng thời tiết. 熱 (Nhiệt) là nóng vật thể."
+    },
+    {
+      "word": "高い",
+      "romaji": "たかい",
+      "translation": "cao hoặc đắt",
+      "q": "Cách đọc của '高い' là gì?",
+      "a": [
+        "ひくい",
+        "たかい",
+        "おもい",
+        "かるい"
+      ],
+      "c": 1,
+      "ex": "高 (Cao) nghĩa là cao hoặc đắt."
+    },
+    {
+      "word": "新しい",
+      "romaji": "Atarashii",
+      "translation": "Mới",
+      "q": "Chữ Hán của 'Atarashii' (Mới) là gì?",
+      "a": [
+        "古い",
+        "新しい",
+        "安い",
+        "悪い"
+      ],
+      "c": 1,
+      "ex": "新 (Tân) là mới."
+    },
+    {
+      "word": "休み",
+      "romaji": "やすみ",
+      "translation": "nghỉ ngơi (Người tựa vào cây)",
+      "q": "Cách đọc của '休み' là gì?",
+      "a": [
+        "やすみ",
+        "よすみ",
+        "おすみ",
+        "はすみ"
+      ],
+      "c": 0,
+      "ex": "休 (Hưu) nghĩa là nghỉ ngơi (Người tựa vào cây)."
+    },
+    {
+      "word": "行く",
+      "romaji": "Iku",
+      "translation": "Đi",
+      "q": "Chữ Hán của 'Iku' (Đi) là gì?",
+      "a": [
+        "来る",
+        "帰る",
+        "行く",
+        "走る"
+      ],
+      "c": 2,
+      "ex": "行 (Hành) là đi."
+    },
+    {
+      "word": "飲み物",
+      "romaji": "のみもの",
+      "translation": "đồ uống",
+      "q": "Cách đọc của '飲み物' là gì?",
+      "a": [
+        "たべもの",
+        "のみもの",
+        "かいもの",
+        "よみもの"
+      ],
+      "c": 1,
+      "ex": "飲み物 (Ẩm Vật) là đồ uống."
+    },
+    {
+      "word": "長い",
+      "romaji": "Nagai",
+      "translation": "Dài",
+      "q": "Chữ Hán của 'Nagai' (Dài) là gì?",
+      "a": [
+        "短い",
+        "広い",
+        "長い",
+        "重い"
+      ],
+      "c": 2,
+      "ex": "長 (Trường) là dài."
+    },
+    {
+      "word": "会います",
+      "romaji": "あいます",
+      "translation": "gặp gỡ",
+      "q": "Cách đọc của '会います' là gì?",
+      "a": [
+        "あいます",
+        "いいます",
+        "かいます",
+        "わらいます"
+      ],
+      "c": 0,
+      "ex": "会 (Hội) nghĩa là gặp gỡ."
+    },
+    {
+      "word": "料理",
+      "romaji": "りょうり",
+      "translation": "thức ăn, nấu ăn",
+      "q": "Cách đọc của '料理' là gì?",
+      "a": [
+        "りょうじ",
+        "りょうり",
+        "りょり",
+        "りゅうり"
+      ],
+      "c": 1,
+      "ex": "料理 (Liệu Lý) là thức ăn, nấu ăn."
+    },
+    {
+      "word": "試験",
+      "romaji": "Shiken",
+      "translation": "Kỳ thi",
+      "q": "Chữ Hán của 'Shiken' (Kỳ thi) là gì?",
+      "a": [
+        "試合",
+        "経験",
+        "試験",
+        "実権"
+      ],
+      "c": 2,
+      "ex": "試験 (Thí Nghiệm) là kỳ thi."
+    },
+    {
+      "word": "図書館",
+      "romaji": "としょかん",
+      "translation": "thư viện",
+      "q": "Cách đọc của '図書館' là gì?",
+      "a": [
+        "とうしょかん",
+        "ずしょかん",
+        "としょかん",
+        "としょがん"
+      ],
+      "c": 2,
+      "ex": "図書館 (Đồ Thư Quán) là thư viện."
+    },
+    {
+      "word": "地下鉄",
+      "romaji": "Chikatetsu",
+      "translation": "Tàu điện ngầm",
+      "q": "Chữ Hán của 'Chikatetsu' (Tàu điện ngầm) là gì?",
+      "a": [
+        "地下鉄",
+        "電車",
+        "自転車",
+        "新幹線"
+      ],
+      "c": 0,
+      "ex": "地下鉄 (Địa Hạ Thiết)."
+    },
+    {
+      "word": "世界",
+      "romaji": "せかい",
+      "translation": "Thế Giới",
+      "q": "Cách đọc của '世界' là gì?",
+      "a": [
+        "せかい",
+        "せいかい",
+        "せがい",
+        "ぜかい"
+      ],
+      "c": 0,
+      "ex": "世界 (Thế Giới)."
+    },
+    {
+      "word": "反対",
+      "romaji": "Hantai",
+      "translation": "Phản đối",
+      "q": "Chữ Hán của 'Hantai' (Phản đối) là gì?",
+      "a": [
+        "反対",
+        "関係",
+        "返事",
+        "飯対"
+      ],
+      "c": 0,
+      "ex": "反対 (Phản Đối)."
+    },
+    {
+      "word": "写真",
+      "romaji": "しゃしん",
+      "translation": "ảnh",
+      "q": "Cách đọc của '写真' là gì?",
+      "a": [
+        "さしん",
+        "しゃしん",
+        "はしん",
+        "じゃしん"
+      ],
+      "c": 1,
+      "ex": "写真 (Tả Chân) là ảnh."
+    },
+    {
+      "word": "勉強",
+      "romaji": "Benkyou",
+      "translation": "Học tập",
+      "q": "Chữ Hán của 'Benkyou' (Học tập) là gì?",
+      "a": [
+        "勉強",
+        "強い",
+        "仕事",
+        "場所"
+      ],
+      "c": 0,
+      "ex": "勉強 (Miễn Cường) nghĩa là học tập."
+    },
+    {
+      "word": "注意",
+      "romaji": "ちゅうい",
+      "translation": "Chú Ý",
+      "q": "Cách đọc của '注意' là gì?",
+      "a": [
+        "ちゅうい",
+        "しゅうい",
+        "じゅうい",
+        "きゅうい"
+      ],
+      "c": 0,
+      "ex": "注意 (Chú Ý)."
+    },
+    {
+      "word": "思い出す",
+      "romaji": "Omoidasu",
+      "translation": "Nhớ ra",
+      "q": "Chữ Hán của 'Omoidasu' (Nhớ ra) là gì?",
+      "a": [
+        "思う出",
+        "思い出す",
+        "思出す",
+        "思い出"
+      ],
+      "c": 1,
+      "ex": "思い出す (Tư Xuất)."
+    },
+    {
+      "word": "経済",
+      "romaji": "けいざい",
+      "translation": "Kinh Tế",
+      "q": "Cách đọc của '経済' là gì?",
+      "a": [
+        "けいざい",
+        "けいさい",
+        "げいざい",
+        "けんざい"
+      ],
+      "c": 0,
+      "ex": "経済 (Kinh Tế)."
+    },
+    {
+      "word": "希望",
+      "romaji": "Kibou",
+      "translation": "Hy vọng",
+      "q": "Chữ Hán của 'Kibou' (Hy vọng) là gì?",
+      "a": [
+        "希望",
+        "失望",
+        "要望",
+        "未来"
+      ],
+      "c": 0,
+      "ex": "希望 (Hy Vọng)."
+    },
+    {
+      "word": "準備",
+      "romaji": "じゅんび",
+      "translation": "Chuẩn Bị",
+      "q": "Cách đọc của '準備' là gì?",
+      "a": [
+        "じゅんび",
+        "じゅんぴ",
+        "しゅんび",
+        "ぜんび"
+      ],
+      "c": 0,
+      "ex": "準備 (Chuẩn Bị)."
+    },
+    {
+      "word": "危険",
+      "romaji": "Kiken",
+      "translation": "Nguy hiểm",
+      "q": "Chữ Hán của 'Kiken' (Nguy hiểm) là gì?",
+      "a": [
+        "危険",
+        "安全",
+        "険しい",
+        "危い"
+      ],
+      "c": 0,
+      "ex": "危険 (Nguy Hiểm)."
+    },
+    {
+      "word": "最近",
+      "romaji": "さいきん",
+      "translation": "dạo gần đây",
+      "q": "Cách đọc của '最近' là gì?",
+      "a": [
+        "さいきん",
+        "さいぎん",
+        "さきん",
+        "さいき"
+      ],
+      "c": 0,
+      "ex": "最近 (Tối Cận) là dạo gần đây."
+    },
+    {
+      "word": "利用",
+      "romaji": "Riyou",
+      "translation": "Sử dụng",
+      "q": "Chữ Hán của 'Riyou' (Sử dụng) là gì?",
+      "a": [
+        "利用",
+        "使用",
+        "用途",
+        "使法"
+      ],
+      "c": 0,
+      "ex": "利用 (Lợi Dụng)."
+    },
+    {
+      "word": "興味",
+      "romaji": "きょうみ",
+      "translation": "hứng thú",
+      "q": "Cách đọc của '興味' là gì?",
+      "a": [
+        "きょうみ",
+        "きょうみち",
+        "きゅうみ",
+        "ぎょうみ"
+      ],
+      "c": 0,
+      "ex": "興味 (Hứng Vị) là hứng thú."
+    },
+    {
+      "word": "予定",
+      "romaji": "Yotei",
+      "translation": "Dự định",
+      "q": "Chữ Hán của 'Yotei' (Dự định) là gì?",
+      "a": [
+        "予定",
+        "予習",
+        "予約",
+        "定食"
+      ],
+      "c": 0,
+      "ex": "予定 (Dự Định)."
+    },
+    {
+      "word": "複雑",
+      "romaji": "ふくざつ",
+      "translation": "Phức Tạp",
+      "q": "Cách đọc của '複雑' là gì?",
+      "a": [
+        "ふくさつ",
+        "ふくざつ",
+        "ぶくざつ",
+        "ふくさ"
+      ],
+      "c": 1,
+      "ex": "複雑 (Phức Tạp)."
+    },
+    {
+      "word": "一所懸命",
+      "romaji": "いっしょけんめい",
+      "translation": "nỗ lực hết mình",
+      "q": "Cách đọc của '一所懸命' là gì?",
+      "a": [
+        "いっしょけんめい",
+        "いっしょに",
+        "いっしょげんめい",
+        "ひとしょけんめい"
+      ],
+      "c": 0,
+      "ex": "一所懸命 (Nhất Sở Huyền Mệnh) là nỗ lực hết mình."
+    },
+    {
+      "word": "山",
+      "romaji": "やま",
+      "translation": "núi",
+      "q": "Cách đọc của '山' là gì?",
+      "a": [
+        "やま",
+        "かわ",
+        "うみ",
+        "そら"
+      ],
+      "c": 0,
+      "ex": "山 (Sơn) là núi."
+    },
+    {
+      "word": "川",
+      "romaji": "Kawa",
+      "translation": "Sông",
+      "q": "Chữ Hán của 'Kawa' (Sông) là gì?",
+      "a": [
+        "山",
+        "川",
+        "海",
+        "空"
+      ],
+      "c": 1,
+      "ex": "川 (Xuyên) là sông."
+    },
+    {
+      "word": "火",
+      "romaji": "ひ",
+      "translation": "lửa",
+      "q": "Cách đọc của '火' là gì?",
+      "a": [
+        "ひ",
+        "き",
+        "み",
+        "に"
+      ],
+      "c": 0,
+      "ex": "火 (Hỏa) là lửa."
+    },
+    {
+      "word": "木",
+      "romaji": "Ki",
+      "translation": "Cây",
+      "q": "Chữ Hán của 'Ki' (Cây) là gì?",
+      "a": [
+        "花",
+        "木",
+        "草",
+        "葉"
+      ],
+      "c": 1,
+      "ex": "木 (Mộc) là cây gỗ."
+    },
+    {
+      "word": "月",
+      "romaji": "つき",
+      "translation": "mặt trăng, tháng",
+      "q": "Cách đọc của '月' là gì?",
+      "a": [
+        "つき",
+        "ほし",
+        "たいよう",
+        "そら"
+      ],
+      "c": 0,
+      "ex": "月 (Nguyệt) là mặt trăng, tháng."
+    },
+    {
+      "word": "日",
+      "romaji": "Hi",
+      "translation": "Mặt trời",
+      "q": "Chữ Hán của 'Hi' (Mặt trời) là gì?",
+      "a": [
+        "月",
+        "星",
+        "日",
+        "空"
+      ],
+      "c": 2,
+      "ex": "日 (Nhật) là mặt trời, ngày."
+    },
+    {
+      "word": "人",
+      "romaji": "ひと",
+      "translation": "người",
+      "q": "Cách đọc của '人' là gì?",
+      "a": [
+        "ひと",
+        "もの",
+        "こと",
+        "ところ"
+      ],
+      "c": 0,
+      "ex": "人 (Nhân) là người."
+    },
+    {
+      "word": "手",
+      "romaji": "Te",
+      "translation": "Tay",
+      "q": "Chữ Hán của 'Te' (Tay) là gì?",
+      "a": [
+        "手",
+        "足",
+        "目",
+        "耳"
+      ],
+      "c": 0,
+      "ex": "手 (Thủ) là tay."
+    },
+    {
+      "word": "目",
+      "romaji": "め",
+      "translation": "mắt",
+      "q": "Cách đọc của '目' là gì?",
+      "a": [
+        "め",
+        "て",
+        "みみ",
+        "はな"
+      ],
+      "c": 0,
+      "ex": "目 (Mục) là mắt."
+    },
+    {
+      "word": "足",
+      "romaji": "Ashi",
+      "translation": "Chân",
+      "q": "Chữ Hán của 'Ashi' (Chân) là gì?",
+      "a": [
+        "手",
+        "腕",
+        "足",
+        "肩"
+      ],
+      "c": 2,
+      "ex": "足 (Túc) là chân."
+    },
+    {
+      "word": "口",
+      "romaji": "くち",
+      "translation": "miệng",
+      "q": "Cách đọc của '口' là gì?",
+      "a": [
+        "くち",
+        "はな",
+        "みみ",
+        "め"
+      ],
+      "c": 0,
+      "ex": "口 (Khẩu) là miệng."
+    },
+    {
+      "word": "鼻",
+      "romaji": "Hana",
+      "translation": "Mũi",
+      "q": "Chữ Hán của 'Hana' (Mũi) là gì?",
+      "a": [
+        "口",
+        "耳",
+        "鼻",
+        "目"
+      ],
+      "c": 2,
+      "ex": "鼻 (Tị) là mũi."
+    },
+    {
+      "word": "上",
+      "romaji": "うえ",
+      "translation": "trên",
+      "q": "Cách đọc của '上' là gì?",
+      "a": [
+        "うえ",
+        "した",
+        "みぎ",
+        "ひだり"
+      ],
+      "c": 0,
+      "ex": "上 (Thượng) là trên."
+    },
+    {
+      "word": "下",
+      "romaji": "Shita",
+      "translation": "Dưới",
+      "q": "Chữ Hán của 'Shita' (Dưới) là gì?",
+      "a": [
+        "上",
+        "下",
+        "左",
+        "右"
+      ],
+      "c": 1,
+      "ex": "下 (Hạ) là dưới."
+    },
+    {
+      "word": "右",
+      "romaji": "みぎ",
+      "translation": "bên phải",
+      "q": "Cách đọc của '右' là gì?",
+      "a": [
+        "ひだり",
+        "うえ",
+        "した",
+        "みぎ"
+      ],
+      "c": 3,
+      "ex": "右 (Hữu) là bên phải."
+    },
+    {
+      "word": "左",
+      "romaji": "Hidari",
+      "translation": "Trái",
+      "q": "Chữ Hán của 'Hidari' (Trái) là gì?",
+      "a": [
+        "右",
+        "左",
+        "上",
+        "下"
+      ],
+      "c": 1,
+      "ex": "左 (Tả) là bên trái."
+    },
+    {
+      "word": "大きい",
+      "romaji": "おおきい",
+      "translation": "to, lớn",
+      "q": "Cách đọc của '大きい' là gì?",
+      "a": [
+        "おおきい",
+        "ちいさい",
+        "おもい",
+        "かるい"
+      ],
+      "c": 0,
+      "ex": "大 (Đại) là to, lớn."
+    },
+    {
+      "word": "小さい",
+      "romaji": "Chiisai",
+      "translation": "Nhỏ",
+      "q": "Chữ Hán của 'Chiisai' (Nhỏ) là gì?",
+      "a": [
+        "大きい",
+        "小さい",
+        "多い",
+        "少ない"
+      ],
+      "c": 1,
+      "ex": "小 (Tiểu) là nhỏ bé."
+    },
+    {
+      "word": "白い",
+      "romaji": "しろい",
+      "translation": "màu trắng",
+      "q": "Cách đọc của '白い' là gì?",
+      "a": [
+        "くろい",
+        "しろい",
+        "あかい",
+        "あおい"
+      ],
+      "c": 1,
+      "ex": "白 (Bạch) là màu trắng."
+    },
+    {
+      "word": "黒い",
+      "romaji": "Kuroi",
+      "translation": "Đen",
+      "q": "Chữ Hán của 'Kuroi' (Đen) là gì?",
+      "a": [
+        "白い",
+        "黒い",
+        "赤い",
+        "青い"
+      ],
+      "c": 1,
+      "ex": "黒 (Hắc) là màu đen."
+    },
+    {
+      "word": "赤い",
+      "romaji": "あかい",
+      "translation": "màu đỏ",
+      "q": "Cách đọc của '赤い' là gì?",
+      "a": [
+        "あおい",
+        "きいろい",
+        "あかい",
+        "みどりいろ"
+      ],
+      "c": 2,
+      "ex": "赤 (Xích) là màu đỏ."
+    },
+    {
+      "word": "青い",
+      "romaji": "Aoi",
+      "translation": "Xanh lam",
+      "q": "Chữ Hán của 'Aoi' (Xanh lam) là gì?",
+      "a": [
+        "赤い",
+        "青い",
+        "黄色い",
+        "緑色"
+      ],
+      "c": 1,
+      "ex": "青 (Thanh) là màu xanh."
+    },
+    {
+      "word": "一",
+      "romaji": "いち",
+      "translation": "số 1",
+      "q": "Cách đọc của '一' là gì?",
+      "a": [
+        "に",
+        "いち",
+        "さん",
+        "し"
+      ],
+      "c": 1,
+      "ex": "一 (Nhất) là số 1."
+    },
+    {
+      "word": "二",
+      "romaji": "Ni",
+      "translation": "Số 2",
+      "q": "Chữ Hán của 'Ni' (Số 2) là gì?",
+      "a": [
+        "一",
+        "三",
+        "二",
+        "四"
+      ],
+      "c": 2,
+      "ex": "二 (Nhị) là số 2."
+    },
+    {
+      "word": "三",
+      "romaji": "さん",
+      "translation": "số 3",
+      "q": "Cách đọc của '三' là gì?",
+      "a": [
+        "ろく",
+        "なな",
+        "さん",
+        "ご"
+      ],
+      "c": 2,
+      "ex": "三 (Tam) là số 3."
+    },
+    {
+      "word": "四",
+      "romaji": "Shi/Yon",
+      "translation": "Số 4",
+      "q": "Chữ Hán của 'Shi/Yon' (Số 4) là gì?",
+      "a": [
+        "三",
+        "五",
+        "四",
+        "六"
+      ],
+      "c": 2,
+      "ex": "四 (Tứ) là số 4."
+    },
+    {
+      "word": "五",
+      "romaji": "ご",
+      "translation": "số 5",
+      "q": "Cách đọc của '五' là gì?",
+      "a": [
+        "し",
+        "ご",
+        "ろく",
+        "なな"
+      ],
+      "c": 1,
+      "ex": "五 (Ngũ) là số 5."
+    },
+    {
+      "word": "六",
+      "romaji": "Roku",
+      "translation": "Số 6",
+      "q": "Chữ Hán của 'Roku' (Số 6) là gì?",
+      "a": [
+        "四",
+        "五",
+        "六",
+        "七"
+      ],
+      "c": 2,
+      "ex": "六 (Lục) là số 6."
+    },
+    {
+      "word": "七",
+      "romaji": "しち",
+      "translation": "số 7",
+      "q": "Cách đọc của '七' là gì?",
+      "a": [
+        "はち",
+        "きゅう",
+        "しち",
+        "じゅう"
+      ],
+      "c": 2,
+      "ex": "七 (Thất) là số 7."
+    },
+    {
+      "word": "八",
+      "romaji": "Hachi",
+      "translation": "Số 8",
+      "q": "Chữ Hán của 'Hachi' (Số 8) là gì?",
+      "a": [
+        "七",
+        "八",
+        "九",
+        "十"
+      ],
+      "c": 1,
+      "ex": "八 (Bát) là số 8."
+    },
+    {
+      "word": "九",
+      "romaji": "きゅう",
+      "translation": "số 9",
+      "q": "Cách đọc của '九' là gì?",
+      "a": [
+        "きゅう",
+        "じゅう",
+        "ひゃく",
+        "せん"
+      ],
+      "c": 0,
+      "ex": "九 (Cửu) là số 9."
+    },
+    {
+      "word": "十",
+      "romaji": "Juu",
+      "translation": "Số 10",
+      "q": "Chữ Hán của 'Juu' (Số 10) là gì?",
+      "a": [
+        "八",
+        "九",
+        "十",
+        "百"
+      ],
+      "c": 2,
+      "ex": "十 (Thập) là số 10."
+    },
+    {
+      "word": "百",
+      "romaji": "ひゃく",
+      "translation": "Bách",
+      "q": "Cách đọc của '百' là gì?",
+      "a": [
+        "せん",
+        "まん",
+        "ひゃく",
+        "おく"
+      ],
+      "c": 2,
+      "ex": "百 (Bách) là 100."
+    },
+    {
+      "word": "千",
+      "romaji": "Sen",
+      "translation": "Thiên",
+      "q": "Chữ Hán của 'Sen' (1000) là gì?",
+      "a": [
+        "百",
+        "千",
+        "万",
+        "億"
+      ],
+      "c": 1,
+      "ex": "千 (Thiên) là 1000."
+    },
+    {
+      "word": "年",
+      "romaji": "とし",
+      "translation": "năm",
+      "q": "Cách đọc của '年' là gì?",
+      "a": [
+        "つき",
+        "ひ",
+        "とし",
+        "じかん"
+      ],
+      "c": 2,
+      "ex": "年 (Niên) là năm."
+    },
+    {
+      "word": "月",
+      "romaji": "Tsuki",
+      "translation": "Tháng",
+      "q": "Chữ Hán của 'Tsuki' (Tháng) là gì?",
+      "a": [
+        "年",
+        "月",
+        "日",
+        "時"
+      ],
+      "c": 1,
+      "ex": "月 (Nguyệt) là tháng/mặt trăng."
+    },
+    {
+      "word": "時間",
+      "romaji": "じかん",
+      "translation": "Thời Gian",
+      "q": "Cách đọc của '時間' là gì?",
+      "a": [
+        "じかん",
+        "じこく",
+        "まいとき",
+        "じき"
+      ],
+      "c": 0,
+      "ex": "時間 (Thời Gian)."
+    },
+    {
+      "word": "今",
+      "romaji": "Ima",
+      "translation": "Bây giờ - kanji khác",
+      "q": "Chữ Hán của 'Ima' (Bây giờ - kanji khác) là gì?",
+      "a": [
+        "昔",
+        "今",
+        "後",
+        "前"
+      ],
+      "c": 1,
+      "ex": "今 (Kim) là bây giờ, hiện tại."
+    },
+    {
+      "word": "先生",
+      "romaji": "せんせい",
+      "translation": "giáo viên",
+      "q": "Cách đọc của '先生' là gì?",
+      "a": [
+        "せんせい",
+        "さきせい",
+        "まえせい",
+        "ぜんせい"
+      ],
+      "c": 0,
+      "ex": "先生 (Tiên Sinh) là giáo viên."
+    },
+    {
+      "word": "友達",
+      "romaji": "Tomodachi",
+      "translation": "Bạn bè",
+      "q": "Chữ Hán của 'Tomodachi' (Bạn bè) là gì?",
+      "a": [
+        "家族",
+        "友達",
+        "仲間",
+        "知人"
+      ],
+      "c": 1,
+      "ex": "友達 (Hữu Đạt) là bạn bè."
+    },
+    {
+      "word": "家族",
+      "romaji": "かぞく",
+      "translation": "gia đình",
+      "q": "Cách đọc của '家族' là gì?",
+      "a": [
+        "かぞく",
+        "いえぞく",
+        "やぞく",
+        "かしょく"
+      ],
+      "c": 0,
+      "ex": "家族 (Gia Tộc) là gia đình."
+    },
+    {
+      "word": "父",
+      "romaji": "Chichi",
+      "translation": "Bố",
+      "q": "Chữ Hán của 'Chichi' (Bố) là gì?",
+      "a": [
+        "母",
+        "父",
+        "兄",
+        "姉"
+      ],
+      "c": 1,
+      "ex": "父 (Phụ) là cha/bố."
+    },
+    {
+      "word": "母",
+      "romaji": "はは",
+      "translation": "mẹ",
+      "q": "Cách đọc của '母' là gì?",
+      "a": [
+        "ちち",
+        "おとうと",
+        "はは",
+        "あに"
+      ],
+      "c": 2,
+      "ex": "母 (Mẫu) là mẹ."
+    },
+    {
+      "word": "兄",
+      "romaji": "Ani",
+      "translation": "Anh trai",
+      "q": "Chữ Hán của 'Ani' (Anh trai) là gì?",
+      "a": [
+        "弟",
+        "兄",
+        "妹",
+        "姉"
+      ],
+      "c": 1,
+      "ex": "兄 (Huynh) là anh trai."
+    },
+    {
+      "word": "姉",
+      "romaji": "あね",
+      "translation": "chị gái",
+      "q": "Cách đọc của '姉' là gì?",
+      "a": [
+        "いもうと",
+        "おとうと",
+        "あに",
+        "あね"
+      ],
+      "c": 3,
+      "ex": "姉 (Tỉ) là chị gái."
+    },
+    {
+      "word": "妹",
+      "romaji": "Imouto",
+      "translation": "Em gái",
+      "q": "Chữ Hán của 'Imouto' (Em gái) là gì?",
+      "a": [
+        "姉",
+        "兄",
+        "妹",
+        "弟"
+      ],
+      "c": 2,
+      "ex": "妹 (Muội) là em gái."
+    },
+    {
+      "word": "弟",
+      "romaji": "おとうと",
+      "translation": "em trai",
+      "q": "Cách đọc của '弟' là gì?",
+      "a": [
+        "あに",
+        "あね",
+        "いもうと",
+        "おとうと"
+      ],
+      "c": 3,
+      "ex": "弟 (Đệ) là em trai."
+    },
+    {
+      "word": "花",
+      "romaji": "Hana",
+      "translation": "Hoa",
+      "q": "Chữ Hán của 'Hana' (Hoa) là gì?",
+      "a": [
+        "木",
+        "草",
+        "花",
+        "葉"
+      ],
+      "c": 2,
+      "ex": "花 (Hoa) là bông hoa."
+    },
+    {
+      "word": "草",
+      "romaji": "くさ",
+      "translation": "cỏ",
+      "q": "Cách đọc của '草' là gì?",
+      "a": [
+        "はな",
+        "き",
+        "くさ",
+        "は"
+      ],
+      "c": 2,
+      "ex": "草 (Thảo) là cỏ."
+    },
+    {
+      "word": "海",
+      "romaji": "Umi",
+      "translation": "Biển",
+      "q": "Chữ Hán của 'Umi' (Biển) là gì?",
+      "a": [
+        "山",
+        "川",
+        "海",
+        "空"
+      ],
+      "c": 2,
+      "ex": "海 (Hải) là biển."
+    },
+    {
+      "word": "空",
+      "romaji": "そら",
+      "translation": "bầu trời",
+      "q": "Cách đọc của '空' là gì?",
+      "a": [
+        "うみ",
+        "かわ",
+        "やま",
+        "そら"
+      ],
+      "c": 3,
+      "ex": "空 (Không) là bầu trời."
+    },
+    {
+      "word": "雨",
+      "romaji": "Ame",
+      "translation": "Mưa",
+      "q": "Chữ Hán của 'Ame' (Mưa) là gì?",
+      "a": [
+        "風",
+        "雨",
+        "雪",
+        "雲"
+      ],
+      "c": 1,
+      "ex": "雨 (Vũ) là mưa."
+    },
+    {
+      "word": "雪",
+      "romaji": "ゆき",
+      "translation": "tuyết",
+      "q": "Cách đọc của '雪' là gì?",
+      "a": [
+        "かぜ",
+        "あめ",
+        "くも",
+        "ゆき"
+      ],
+      "c": 3,
+      "ex": "雪 (Tuyết) là tuyết."
+    },
+    {
+      "word": "風",
+      "romaji": "Kaze",
+      "translation": "Gió",
+      "q": "Chữ Hán của 'Kaze' (Gió) là gì?",
+      "a": [
+        "雨",
+        "雪",
+        "風",
+        "雲"
+      ],
+      "c": 2,
+      "ex": "風 (Phong) là gió."
+    },
+    {
+      "word": "電話",
+      "romaji": "でんわ",
+      "translation": "điện thoại",
+      "q": "Cách đọc của '電話' là gì?",
+      "a": [
+        "でんしゃ",
+        "でんわ",
+        "でんき",
+        "でんとう"
+      ],
+      "c": 1,
+      "ex": "電話 (Điện Thoại) là điện thoại."
+    },
+    {
+      "word": "電車",
+      "romaji": "Densha",
+      "translation": "Tàu điện",
+      "q": "Chữ Hán của 'Densha' (Tàu điện) là gì?",
+      "a": [
+        "電話",
+        "電気",
+        "電車",
+        "電灯"
+      ],
+      "c": 2,
+      "ex": "電車 (Điện Xa) là tàu điện."
+    },
+    {
+      "word": "駅",
+      "romaji": "えき",
+      "translation": "nhà ga",
+      "q": "Cách đọc của '駅' là gì?",
+      "a": [
+        "みせ",
+        "えき",
+        "みち",
+        "ばしょ"
+      ],
+      "c": 1,
+      "ex": "駅 (Dịch) là nhà ga."
+    },
+    {
+      "word": "店",
+      "romaji": "Mise",
+      "translation": "Cửa hàng",
+      "q": "Chữ Hán của 'Mise' (Cửa hàng) là gì?",
+      "a": [
+        "駅",
+        "店",
+        "道",
+        "橋"
+      ],
+      "c": 1,
+      "ex": "店 (Điếm) là cửa hàng."
+    },
+    {
+      "word": "病院",
+      "romaji": "びょういん",
+      "translation": "bệnh viện",
+      "q": "Cách đọc của '病院' là gì?",
+      "a": [
+        "びょういん",
+        "びょうき",
+        "いしゃ",
+        "くすり"
+      ],
+      "c": 0,
+      "ex": "病院 (Bệnh Viện) là bệnh viện."
+    },
+    {
+      "word": "医者",
+      "romaji": "Isha",
+      "translation": "Bác sĩ",
+      "q": "Chữ Hán của 'Isha' (Bác sĩ) là gì?",
+      "a": [
+        "病院",
+        "医者",
+        "看護師",
+        "薬"
+      ],
+      "c": 1,
+      "ex": "医者 (Y Giả) là bác sĩ."
+    },
+    {
+      "word": "薬",
+      "romaji": "くすり",
+      "translation": "thuốc",
+      "q": "Cách đọc của '薬' là gì?",
+      "a": [
+        "いしゃ",
+        "びょういん",
+        "くすり",
+        "かんごし"
+      ],
+      "c": 2,
+      "ex": "薬 (Dược) là thuốc."
+    },
+    {
+      "word": "仕事",
+      "romaji": "Shigoto",
+      "translation": "Công việc",
+      "q": "Chữ Hán của 'Shigoto' (Công việc) là gì?",
+      "a": [
+        "仕事",
+        "勉強",
+        "授業",
+        "会議"
+      ],
+      "c": 0,
+      "ex": "仕事 (Sĩ Sự) là công việc."
+    },
+    {
+      "word": "会社",
+      "romaji": "かいしゃ",
+      "translation": "công ty",
+      "q": "Cách đọc của '会社' là gì?",
+      "a": [
+        "かいしゃ",
+        "かいぎ",
+        "しゃいん",
+        "かいちょう"
+      ],
+      "c": 0,
+      "ex": "会社 (Hội Xã) là công ty."
+    },
+    {
+      "word": "会議",
+      "romaji": "Kaigi",
+      "translation": "Cuộc họp",
+      "q": "Chữ Hán của 'Kaigi' (Cuộc họp) là gì?",
+      "a": [
+        "会社",
+        "会議",
+        "社員",
+        "部長"
+      ],
+      "c": 1,
+      "ex": "会議 (Hội Nghị) là cuộc họp."
+    },
+    {
+      "word": "電気",
+      "romaji": "でんき",
+      "translation": "điện",
+      "q": "Cách đọc của '電気' là gì?",
+      "a": [
+        "でんわ",
+        "でんしゃ",
+        "でんき",
+        "でんとう"
+      ],
+      "c": 2,
+      "ex": "電気 (Điện Khí) là điện."
+    },
+    {
+      "word": "道",
+      "romaji": "Michi",
+      "translation": "Con đường",
+      "q": "Chữ Hán của 'Michi' (Con đường) là gì?",
+      "a": [
+        "橋",
+        "道",
+        "駅",
+        "門"
+      ],
+      "c": 1,
+      "ex": "道 (Đạo) là con đường."
+    },
+    {
+      "word": "橋",
+      "romaji": "はし",
+      "translation": "cây cầu",
+      "q": "Cách đọc của '橋' là gì?",
+      "a": [
+        "みち",
+        "かど",
+        "はし",
+        "もん"
+      ],
+      "c": 2,
+      "ex": "橋 (Kiều) là cây cầu."
+    },
+    {
+      "word": "家",
+      "romaji": "Ie",
+      "translation": "Nhà",
+      "q": "Chữ Hán của 'Ie' (Nhà) là gì?",
+      "a": [
+        "部屋",
+        "家",
+        "学校",
+        "会社"
+      ],
+      "c": 1,
+      "ex": "家 (Gia) là nhà/gia đình."
+    },
+    {
+      "word": "部屋",
+      "romaji": "へや",
+      "translation": "căn phòng",
+      "q": "Cách đọc của '部屋' là gì?",
+      "a": [
+        "へや",
+        "うち",
+        "いえ",
+        "かいしゃ"
+      ],
+      "c": 0,
+      "ex": "部屋 (Bộ Ốc) là căn phòng."
+    },
+    {
+      "word": "肉",
+      "romaji": "Niku",
+      "translation": "Thịt",
+      "q": "Chữ Hán của 'Niku' (Thịt) là gì?",
+      "a": [
+        "魚",
+        "野菜",
+        "肉",
+        "果物"
+      ],
+      "c": 2,
+      "ex": "肉 (Nhục) là thịt."
+    },
+    {
+      "word": "魚",
+      "romaji": "さかな",
+      "translation": "cá",
+      "q": "Cách đọc của '魚' là gì?",
+      "a": [
+        "にく",
+        "さかな",
+        "やさい",
+        "くだもの"
+      ],
+      "c": 1,
+      "ex": "魚 (Ngư) là cá."
+    },
+    {
+      "word": "野菜",
+      "romaji": "Yasai",
+      "translation": "Rau",
+      "q": "Chữ Hán của 'Yasai' (Rau) là gì?",
+      "a": [
+        "肉",
+        "魚",
+        "野菜",
+        "果物"
+      ],
+      "c": 2,
+      "ex": "野菜 (Dã Thái) là rau củ."
+    },
+    {
+      "word": "果物",
+      "romaji": "くだもの",
+      "translation": "hoa quả",
+      "q": "Cách đọc của '果物' là gì?",
+      "a": [
+        "やさい",
+        "くだもの",
+        "にく",
+        "さかな"
+      ],
+      "c": 1,
+      "ex": "果物 (Quả Vật) là hoa quả."
+    },
+    {
+      "word": "ご飯",
+      "romaji": "Gohan",
+      "translation": "Cơm",
+      "q": "Chữ Hán của 'Gohan' (Cơm) là gì?",
+      "a": [
+        "パン",
+        "ご飯",
+        "うどん",
+        "そば"
+      ],
+      "c": 1,
+      "ex": "ご飯 (Phạn) là cơm/bữa ăn."
+    },
+    {
+      "word": "朝",
+      "romaji": "あさ",
+      "translation": "buổi sáng",
+      "q": "Cách đọc của '朝' là gì?",
+      "a": [
+        "よる",
+        "あさ",
+        "ひる",
+        "ゆうがた"
+      ],
+      "c": 1,
+      "ex": "朝 (Triêu) là buổi sáng."
+    },
+    {
+      "word": "昼",
+      "romaji": "Hiru",
+      "translation": "Buổi trưa",
+      "q": "Chữ Hán của 'Hiru' (Buổi trưa) là gì?",
+      "a": [
+        "朝",
+        "昼",
+        "夜",
+        "夕方"
+      ],
+      "c": 1,
+      "ex": "昼 (Trú) là buổi trưa."
+    },
+    {
+      "word": "夜",
+      "romaji": "よる",
+      "translation": "buổi tối/đêm",
+      "q": "Cách đọc của '夜' là gì?",
+      "a": [
+        "あさ",
+        "ひる",
+        "ゆうがた",
+        "よる"
+      ],
+      "c": 3,
+      "ex": "夜 (Dạ) là buổi tối/đêm."
+    },
+    {
+      "word": "昨日",
+      "romaji": "Kinoo",
+      "translation": "Hôm qua",
+      "q": "Chữ Hán của 'Kinoo' (Hôm qua) là gì?",
+      "a": [
+        "今日",
+        "明日",
+        "昨日",
+        "今週"
+      ],
+      "c": 2,
+      "ex": "昨日 (Tạc Nhật) là hôm qua."
+    },
+    {
+      "word": "今日",
+      "romaji": "きょう",
+      "translation": "hôm nay",
+      "q": "Cách đọc của '今日' là gì?",
+      "a": [
+        "きのう",
+        "きょう",
+        "あした",
+        "らいしゅう"
+      ],
+      "c": 1,
+      "ex": "今日 (Kim Nhật) là hôm nay."
+    },
+    {
+      "word": "明日",
+      "romaji": "Ashita",
+      "translation": "Ngày mai",
+      "q": "Chữ Hán của 'Ashita' (Ngày mai) là gì?",
+      "a": [
+        "昨日",
+        "今日",
+        "明日",
+        "来週"
+      ],
+      "c": 2,
+      "ex": "明日 (Minh Nhật) là ngày mai."
+    },
+    {
+      "word": "先週",
+      "romaji": "せんしゅう",
+      "translation": "tuần trước",
+      "q": "Cách đọc của '先週' là gì?",
+      "a": [
+        "こんしゅう",
+        "せんしゅう",
+        "らいしゅう",
+        "まいしゅう"
+      ],
+      "c": 1,
+      "ex": "先週 (Tiên Chu) là tuần trước."
+    },
+    {
+      "word": "今週",
+      "romaji": "Konshuu",
+      "translation": "Tuần này",
+      "q": "Chữ Hán của 'Konshuu' (Tuần này) là gì?",
+      "a": [
+        "先週",
+        "今週",
+        "来週",
+        "毎週"
+      ],
+      "c": 1,
+      "ex": "今週 (Kim Chu) là tuần này."
+    },
+    {
+      "word": "来月",
+      "romaji": "らいげつ",
+      "translation": "tháng sau",
+      "q": "Cách đọc của '来月' là gì?",
+      "a": [
+        "せんげつ",
+        "こんげつ",
+        "らいげつ",
+        "まいつき"
+      ],
+      "c": 2,
+      "ex": "来月 (Lai Nguyệt) là tháng sau."
+    },
+    {
+      "word": "先月",
+      "romaji": "Sengetsu",
+      "translation": "Tháng trước",
+      "q": "Chữ Hán của 'Sengetsu' (Tháng trước) là gì?",
+      "a": [
+        "来月",
+        "今月",
+        "先月",
+        "毎月"
+      ],
+      "c": 2,
+      "ex": "先月 (Tiên Nguyệt) là tháng trước."
+    },
+    {
+      "word": "来年",
+      "romaji": "らいねん",
+      "translation": "năm sau",
+      "q": "Cách đọc của '来年' là gì?",
+      "a": [
+        "きょねん",
+        "ことし",
+        "らいねん",
+        "まいとし"
+      ],
+      "c": 2,
+      "ex": "来年 (Lai Niên) là năm sau."
+    },
+    {
+      "word": "去年",
+      "romaji": "Kyonen",
+      "translation": "Năm ngoái",
+      "q": "Chữ Hán của 'Kyonen' (Năm ngoái) là gì?",
+      "a": [
+        "来年",
+        "今年",
+        "去年",
+        "毎年"
+      ],
+      "c": 2,
+      "ex": "去年 (Khứ Niên) là năm ngoái."
+    },
+    {
+      "word": "月曜日",
+      "romaji": "げつようび",
+      "translation": "thứ Hai (Nguyệt Diệu Nhật)",
+      "q": "Cách đọc của '月曜日' là gì?",
+      "a": [
+        "にちようび",
+        "かようび",
+        "げつようび",
+        "すいようび"
+      ],
+      "c": 2,
+      "ex": "月曜日 là thứ Hai (Nguyệt Diệu Nhật)."
+    },
+    {
+      "word": "火曜日",
+      "romaji": "Kayoobi",
+      "translation": "Thứ Ba",
+      "q": "Chữ Hán của 'Kayoobi' (Thứ Ba) là gì?",
+      "a": [
+        "月曜日",
+        "火曜日",
+        "水曜日",
+        "木曜日"
+      ],
+      "c": 1,
+      "ex": "火曜日 (Hỏa Diệu Nhật) là thứ Ba."
+    },
+    {
+      "word": "水曜日",
+      "romaji": "すいようび",
+      "translation": "thứ Tư (Thủy Diệu Nhật)",
+      "q": "Cách đọc của '水曜日' là gì?",
+      "a": [
+        "かようび",
+        "もくようび",
+        "すいようび",
+        "きんようび"
+      ],
+      "c": 2,
+      "ex": "水曜日 là thứ Tư (Thủy Diệu Nhật)."
+    },
+    {
+      "word": "木曜日",
+      "romaji": "Mokuyoobi",
+      "translation": "Thứ Năm",
+      "q": "Chữ Hán của 'Mokuyoobi' (Thứ Năm) là gì?",
+      "a": [
+        "水曜日",
+        "木曜日",
+        "金曜日",
+        "土曜日"
+      ],
+      "c": 1,
+      "ex": "木曜日 (Mộc Diệu Nhật) là thứ Năm."
+    },
+    {
+      "word": "金曜日",
+      "romaji": "きんようび",
+      "translation": "thứ Sáu (Kim Diệu Nhật)",
+      "q": "Cách đọc của '金曜日' là gì?",
+      "a": [
+        "もくようび",
+        "きんようび",
+        "どようび",
+        "にちようび"
+      ],
+      "c": 1,
+      "ex": "金曜日 là thứ Sáu (Kim Diệu Nhật)."
+    },
+    {
+      "word": "土曜日",
+      "romaji": "Doyoobi",
+      "translation": "Thứ Bảy",
+      "q": "Chữ Hán của 'Doyoobi' (Thứ Bảy) là gì?",
+      "a": [
+        "金曜日",
+        "土曜日",
+        "日曜日",
+        "月曜日"
+      ],
+      "c": 1,
+      "ex": "土曜日 (Thổ Diệu Nhật) là thứ Bảy."
+    },
+    {
+      "word": "日曜日",
+      "romaji": "にちようび",
+      "translation": "Chủ Nhật (Nhật Diệu Nhật)",
+      "q": "Cách đọc của '日曜日' là gì?",
+      "a": [
+        "どようび",
+        "にちようび",
+        "げつようび",
+        "かようび"
+      ],
+      "c": 1,
+      "ex": "日曜日 là Chủ Nhật (Nhật Diệu Nhật)."
+    },
+    {
+      "word": "一月",
+      "romaji": "Ichi-gatsu",
+      "translation": "Tháng 1",
+      "q": "Chữ Hán của 'Ichi-gatsu' (Tháng 1) là gì?",
+      "a": [
+        "二月",
+        "一月",
+        "三月",
+        "四月"
+      ],
+      "c": 1,
+      "ex": "一月 (Nhất Nguyệt) là tháng 1."
+    },
+    {
+      "word": "四月",
+      "romaji": "よんがつ",
+      "translation": "tháng 4",
+      "q": "Cách đọc của '四月' là gì?",
+      "a": [
+        "さんがつ",
+        "よんがつ",
+        "ごがつ",
+        "ろくがつ"
+      ],
+      "c": 1,
+      "ex": "四月 (Tứ Nguyệt) là tháng 4."
+    },
+    {
+      "word": "八月",
+      "romaji": "Hachi-gatsu",
+      "translation": "Tháng 8",
+      "q": "Chữ Hán của 'Hachi-gatsu' (Tháng 8) là gì?",
+      "a": [
+        "七月",
+        "八月",
+        "九月",
+        "十月"
+      ],
+      "c": 1,
+      "ex": "八月 (Bát Nguyệt) là tháng 8."
+    },
+    {
+      "word": "十二月",
+      "romaji": "じゅうにがつ",
+      "translation": "tháng 12",
+      "q": "Cách đọc của '十二月' là gì?",
+      "a": [
+        "じゅういちがつ",
+        "じゅうにがつ",
+        "じゅうさんがつ",
+        "じゅうがつ"
+      ],
+      "c": 1,
+      "ex": "十二月 (Thập Nhị Nguyệt) là tháng 12."
+    },
+    {
+      "word": "早い",
+      "romaji": "Hayai",
+      "translation": "Nhanh/Sớm",
+      "q": "Chữ Hán của 'Hayai' (Nhanh/Sớm) là gì?",
+      "a": [
+        "遅い",
+        "早い",
+        "速い",
+        "強い"
+      ],
+      "c": 1,
+      "ex": "早い (Tảo) là sớm. 速い (Tốc) là nhanh."
+    },
+    {
+      "word": "遅い",
+      "romaji": "おそい",
+      "translation": "chậm, muộn",
+      "q": "Cách đọc của '遅い' là gì?",
+      "a": [
+        "はやい",
+        "おそい",
+        "おもい",
+        "かるい"
+      ],
+      "c": 1,
+      "ex": "遅 (Trì) là chậm, muộn."
+    },
+    {
+      "word": "難しい",
+      "romaji": "Muzukashii",
+      "translation": "Khó",
+      "q": "Chữ Hán của 'Muzukashii' (Khó) là gì?",
+      "a": [
+        "易しい",
+        "難しい",
+        "面白い",
+        "楽しい"
+      ],
+      "c": 1,
+      "ex": "難しい (Nan) là khó."
+    },
+    {
+      "word": "易しい",
+      "romaji": "やさしい",
+      "translation": "dễ dàng",
+      "q": "Cách đọc của '易しい' là gì?",
+      "a": [
+        "むずかしい",
+        "やさしい",
+        "おもしろい",
+        "たのしい"
+      ],
+      "c": 1,
+      "ex": "易しい (Dị) là dễ dàng."
+    },
+    {
+      "word": "楽しい",
+      "romaji": "Tanoshii",
+      "translation": "Vui vẻ",
+      "q": "Chữ Hán của 'Tanoshii' (Vui vẻ) là gì?",
+      "a": [
+        "悲しい",
+        "楽しい",
+        "嬉しい",
+        "辛い"
+      ],
+      "c": 1,
+      "ex": "楽しい (Lạc) là vui vẻ."
+    },
+    {
+      "word": "悲しい",
+      "romaji": "かなしい",
+      "translation": "buồn bã",
+      "q": "Cách đọc của '悲しい' là gì?",
+      "a": [
+        "たのしい",
+        "うれしい",
+        "かなしい",
+        "くるしい"
+      ],
+      "c": 2,
+      "ex": "悲 (Bi) là buồn bã."
+    },
+    {
+      "word": "嬉しい",
+      "romaji": "Ureshii",
+      "translation": "Vui mừng",
+      "q": "Chữ Hán của 'Ureshii' (Vui mừng) là gì?",
+      "a": [
+        "悲しい",
+        "楽しい",
+        "嬉しい",
+        "辛い"
+      ],
+      "c": 2,
+      "ex": "嬉しい (Hi) là vui mừng, hạnh phúc."
+    },
+    {
+      "word": "怖い",
+      "romaji": "こわい",
+      "translation": "sợ hãi",
+      "q": "Cách đọc của '怖い' là gì?",
+      "a": [
+        "こわい",
+        "きつい",
+        "ひどい",
+        "つらい"
+      ],
+      "c": 0,
+      "ex": "怖 (Bố) là sợ hãi."
+    },
+    {
+      "word": "大きい",
+      "romaji": "Ookii",
+      "translation": "To lớn",
+      "q": "Chữ Hán của 'Ookii' (To lớn) là gì?",
+      "a": [
+        "小さい",
+        "大きい",
+        "長い",
+        "高い"
+      ],
+      "c": 1,
+      "ex": "大きい (Đại) là to lớn."
+    },
+    {
+      "word": "少ない",
+      "romaji": "すくない",
+      "translation": "ít",
+      "q": "Cách đọc của '少ない' là gì?",
+      "a": [
+        "おおい",
+        "すくない",
+        "ながい",
+        "みじかい"
+      ],
+      "c": 1,
+      "ex": "少 (Thiểu) là ít."
+    },
+    {
+      "word": "多い",
+      "romaji": "Ooi",
+      "translation": "Nhiều",
+      "q": "Chữ Hán của 'Ooi' (Nhiều) là gì?",
+      "a": [
+        "少ない",
+        "多い",
+        "大きい",
+        "小さい"
+      ],
+      "c": 1,
+      "ex": "多い (Đa) là nhiều."
+    },
+    {
+      "word": "重い",
+      "romaji": "おもい",
+      "translation": "nặng",
+      "q": "Cách đọc của '重い' là gì?",
+      "a": [
+        "かるい",
+        "おもい",
+        "たかい",
+        "ひくい"
+      ],
+      "c": 1,
+      "ex": "重 (Trọng) là nặng."
+    },
+    {
+      "word": "軽い",
+      "romaji": "Karui",
+      "translation": "Nhẹ",
+      "q": "Chữ Hán của 'Karui' (Nhẹ) là gì?",
+      "a": [
+        "重い",
+        "軽い",
+        "短い",
+        "広い"
+      ],
+      "c": 1,
+      "ex": "軽 (Khinh) là nhẹ."
+    },
+    {
+      "word": "狭い",
+      "romaji": "せまい",
+      "translation": "chật hẹp",
+      "q": "Cách đọc của '狭い' là gì?",
+      "a": [
+        "ひろい",
+        "せまい",
+        "なかい",
+        "みじかい"
+      ],
+      "c": 1,
+      "ex": "狭 (Hiệp) là chật hẹp."
+    },
+    {
+      "word": "広い",
+      "romaji": "Hiroi",
+      "translation": "Rộng",
+      "q": "Chữ Hán của 'Hiroi' (Rộng) là gì?",
+      "a": [
+        "狭い",
+        "広い",
+        "高い",
+        "大きい"
+      ],
+      "c": 1,
+      "ex": "広 (Quảng) là rộng rãi."
+    },
+    {
+      "word": "安い",
+      "romaji": "やすい",
+      "translation": "rẻ, an toàn",
+      "q": "Cách đọc của '安い' là gì?",
+      "a": [
+        "たかい",
+        "やすい",
+        "おもい",
+        "かるい"
+      ],
+      "c": 1,
+      "ex": "安 (An) là rẻ, an toàn."
+    },
+    {
+      "word": "古い",
+      "romaji": "Furui",
+      "translation": "Cũ",
+      "q": "Chữ Hán của 'Furui' (Cũ) là gì?",
+      "a": [
+        "新しい",
+        "古い",
+        "若い",
+        "老いた"
+      ],
+      "c": 1,
+      "ex": "古 (Cổ) là cũ, xưa."
+    },
+    {
+      "word": "若い",
+      "romaji": "わかい",
+      "translation": "trẻ trung",
+      "q": "Cách đọc của '若い' là gì?",
+      "a": [
+        "おいた",
+        "わかい",
+        "うつくしい",
+        "かわいい"
+      ],
+      "c": 1,
+      "ex": "若 (Nhược) là trẻ trung."
+    },
+    {
+      "word": "強い",
+      "romaji": "Tsuyoi",
+      "translation": "Mạnh",
+      "q": "Chữ Hán của 'Tsuyoi' (Mạnh) là gì?",
+      "a": [
+        "弱い",
+        "強い",
+        "速い",
+        "遅い"
+      ],
+      "c": 1,
+      "ex": "強 (Cường) là mạnh mẽ."
+    },
+    {
+      "word": "弱い",
+      "romaji": "よわい",
+      "translation": "yếu",
+      "q": "Cách đọc của '弱い' là gì?",
+      "a": [
+        "つよい",
+        "おもい",
+        "よわい",
+        "はやい"
+      ],
+      "c": 2,
+      "ex": "弱 (Nhược) là yếu."
+    },
+    {
+      "word": "寒い",
+      "romaji": "Samui",
+      "translation": "Lạnh - thời tiết",
+      "q": "Chữ Hán của 'Samui' (Lạnh - thời tiết) là gì?",
+      "a": [
+        "暑い",
+        "涼しい",
+        "寒い",
+        "冷たい"
+      ],
+      "c": 2,
+      "ex": "寒 (Hàn) là lạnh (thời tiết)."
+    },
+    {
+      "word": "涼しい",
+      "romaji": "すずしい",
+      "translation": "mát mẻ",
+      "q": "Cách đọc của '涼しい' là gì?",
+      "a": [
+        "さむい",
+        "あつい",
+        "すずしい",
+        "つめたい"
+      ],
+      "c": 2,
+      "ex": "涼 (Lương) là mát mẻ."
+    },
+    {
+      "word": "冷たい",
+      "romaji": "Tsumetai",
+      "translation": "Lạnh - vật",
+      "q": "Chữ Hán của 'Tsumetai' (Lạnh - vật) là gì?",
+      "a": [
+        "暖かい",
+        "涼しい",
+        "寒い",
+        "冷たい"
+      ],
+      "c": 3,
+      "ex": "冷たい (Lãnh) là lạnh (đồ vật)."
+    },
+    {
+      "word": "暖かい",
+      "romaji": "あたたかい",
+      "translation": "ấm áp",
+      "q": "Cách đọc của '暖かい' là gì?",
+      "a": [
+        "さむい",
+        "あたたかい",
+        "あつい",
+        "すずしい"
+      ],
+      "c": 1,
+      "ex": "暖 (Noãn) là ấm áp."
+    },
+    {
+      "word": "走る",
+      "romaji": "Hashiru",
+      "translation": "Chạy",
+      "q": "Chữ Hán của 'Hashiru' (Chạy) là gì?",
+      "a": [
+        "歩く",
+        "走る",
+        "飛ぶ",
+        "泳ぐ"
+      ],
+      "c": 1,
+      "ex": "走 (Tẩu) là chạy."
+    },
+    {
+      "word": "歩く",
+      "romaji": "あるく",
+      "translation": "đi bộ",
+      "q": "Cách đọc của '歩く' là gì?",
+      "a": [
+        "はしる",
+        "あるく",
+        "とぶ",
+        "およぐ"
+      ],
+      "c": 1,
+      "ex": "歩 (Bộ) là đi bộ."
+    },
+    {
+      "word": "飛ぶ",
+      "romaji": "Tobu",
+      "translation": "Bay",
+      "q": "Chữ Hán của 'Tobu' (Bay) là gì?",
+      "a": [
+        "走る",
+        "泳ぐ",
+        "飛ぶ",
+        "歩く"
+      ],
+      "c": 2,
+      "ex": "飛 (Phi) là bay."
+    },
+    {
+      "word": "泳ぐ",
+      "romaji": "およぐ",
+      "translation": "bơi lội",
+      "q": "Cách đọc của '泳ぐ' là gì?",
+      "a": [
+        "とぶ",
+        "はしる",
+        "あるく",
+        "およぐ"
+      ],
+      "c": 3,
+      "ex": "泳 (Vịnh) là bơi lội."
+    },
+    {
+      "word": "書く",
+      "romaji": "Kaku",
+      "translation": "Viết",
+      "q": "Chữ Hán của 'Kaku' (Viết) là gì?",
+      "a": [
+        "読む",
+        "書く",
+        "聞く",
+        "話す"
+      ],
+      "c": 1,
+      "ex": "書 (Thư) là viết."
+    },
+    {
+      "word": "読む",
+      "romaji": "よむ",
+      "translation": "đọc",
+      "q": "Cách đọc của '読む' là gì?",
+      "a": [
+        "かく",
+        "きく",
+        "よむ",
+        "はなす"
+      ],
+      "c": 2,
+      "ex": "読 (Đọc) là đọc."
+    },
+    {
+      "word": "聞く",
+      "romaji": "Kiku",
+      "translation": "Nghe",
+      "q": "Chữ Hán của 'Kiku' (Nghe) là gì?",
+      "a": [
+        "書く",
+        "読む",
+        "聞く",
+        "話す"
+      ],
+      "c": 2,
+      "ex": "聞 (Văn) là nghe."
+    },
+    {
+      "word": "話す",
+      "romaji": "はなす",
+      "translation": "nói chuyện",
+      "q": "Cách đọc của '話す' là gì?",
+      "a": [
+        "かく",
+        "よむ",
+        "きく",
+        "はなす"
+      ],
+      "c": 3,
+      "ex": "話 (Thoại) là nói chuyện."
+    },
+    {
+      "word": "来る",
+      "romaji": "Kuru",
+      "translation": "Đến",
+      "q": "Chữ Hán của 'Kuru' (Đến) là gì?",
+      "a": [
+        "行く",
+        "来る",
+        "帰る",
+        "出る"
+      ],
+      "c": 1,
+      "ex": "来 (Lai) là đến."
+    },
+    {
+      "word": "帰る",
+      "romaji": "かえる",
+      "translation": "trở về",
+      "q": "Cách đọc của '帰る' là gì?",
+      "a": [
+        "いく",
+        "くる",
+        "かえる",
+        "でる"
+      ],
+      "c": 2,
+      "ex": "帰 (Quy) là trở về."
+    },
+    {
+      "word": "出る",
+      "romaji": "Deru",
+      "translation": "Ra/Xuất",
+      "q": "Chữ Hán của 'Deru' (Ra/Xuất) là gì?",
+      "a": [
+        "入る",
+        "出る",
+        "帰る",
+        "来る"
+      ],
+      "c": 1,
+      "ex": "出 (Xuất) là ra, xuất hiện."
+    },
+    {
+      "word": "入る",
+      "romaji": "はいる",
+      "translation": "vào, nhập",
+      "q": "Cách đọc của '入る' là gì?",
+      "a": [
+        "でる",
+        "はいる",
+        "かえる",
+        "くる"
+      ],
+      "c": 1,
+      "ex": "入 (Nhập) là vào, nhập."
+    },
+    {
+      "word": "買う",
+      "romaji": "Kau",
+      "translation": "Mua",
+      "q": "Chữ Hán của 'Kau' (Mua) là gì?",
+      "a": [
+        "売る",
+        "買う",
+        "使う",
+        "作る"
+      ],
+      "c": 1,
+      "ex": "買 (Mãi) là mua."
+    },
+    {
+      "word": "売る",
+      "romaji": "うる",
+      "translation": "bán",
+      "q": "Cách đọc của '売る' là gì?",
+      "a": [
+        "かう",
+        "つかう",
+        "うる",
+        "つくる"
+      ],
+      "c": 2,
+      "ex": "売 (Mại) là bán."
+    },
+    {
+      "word": "作る",
+      "romaji": "Tsukuru",
+      "translation": "Làm/Tạo",
+      "q": "Chữ Hán của 'Tsukuru' (Làm/Tạo) là gì?",
+      "a": [
+        "壊す",
+        "作る",
+        "使う",
+        "買う"
+      ],
+      "c": 1,
+      "ex": "作 (Tác) là làm, tạo ra."
+    },
+    {
+      "word": "使う",
+      "romaji": "つかう",
+      "translation": "sử dụng",
+      "q": "Cách đọc của '使う' là gì?",
+      "a": [
+        "かう",
+        "うる",
+        "つかう",
+        "つくる"
+      ],
+      "c": 2,
+      "ex": "使 (Sử) là sử dụng."
+    },
+    {
+      "word": "知る",
+      "romaji": "Shiru",
+      "translation": "Biết",
+      "q": "Chữ Hán của 'Shiru' (Biết) là gì?",
+      "a": [
+        "知る",
+        "思う",
+        "考える",
+        "分かる"
+      ],
+      "c": 0,
+      "ex": "知 (Tri) là biết."
+    },
+    {
+      "word": "思う",
+      "romaji": "おもう",
+      "translation": "nghĩ, cảm thấy",
+      "q": "Cách đọc của '思う' là gì?",
+      "a": [
+        "しる",
+        "かんがえる",
+        "おもう",
+        "わかる"
+      ],
+      "c": 2,
+      "ex": "思 (Tư) là nghĩ, cảm thấy."
+    },
+    {
+      "word": "考える",
+      "romaji": "Kangaeru",
+      "translation": "Suy nghĩ",
+      "q": "Chữ Hán của 'Kangaeru' (Suy nghĩ) là gì?",
+      "a": [
+        "知る",
+        "思う",
+        "考える",
+        "分かる"
+      ],
+      "c": 2,
+      "ex": "考 (Khảo) là suy nghĩ, xem xét."
+    },
+    {
+      "word": "分かる",
+      "romaji": "わかる",
+      "translation": "hiểu, biết",
+      "q": "Cách đọc của '分かる' là gì?",
+      "a": [
+        "しる",
+        "おもう",
+        "かんがえる",
+        "わかる"
+      ],
+      "c": 3,
+      "ex": "分かる (Phân) là hiểu, biết."
+    },
+    {
+      "word": "寝る",
+      "romaji": "Neru",
+      "translation": "Ngủ",
+      "q": "Chữ Hán của 'Neru' (Ngủ) là gì?",
+      "a": [
+        "起きる",
+        "寝る",
+        "眠る",
+        "休む"
+      ],
+      "c": 1,
+      "ex": "寝 (Tẩm) là ngủ, nằm xuống."
+    },
+    {
+      "word": "起きる",
+      "romaji": "おきる",
+      "translation": "thức dậy",
+      "q": "Cách đọc của '起きる' là gì?",
+      "a": [
+        "ねる",
+        "おきる",
+        "やすむ",
+        "かえる"
+      ],
+      "c": 1,
+      "ex": "起 (Khởi) là thức dậy."
+    },
+    {
+      "word": "座る",
+      "romaji": "Suwaru",
+      "translation": "Ngồi",
+      "q": "Chữ Hán của 'Suwaru' (Ngồi) là gì?",
+      "a": [
+        "立つ",
+        "座る",
+        "走る",
+        "歩く"
+      ],
+      "c": 1,
+      "ex": "座 (Tọa) là ngồi."
+    },
+    {
+      "word": "立つ",
+      "romaji": "たつ",
+      "translation": "đứng",
+      "q": "Cách đọc của '立つ' là gì?",
+      "a": [
+        "すわる",
+        "たつ",
+        "あるく",
+        "はしる"
+      ],
+      "c": 1,
+      "ex": "立 (Lập) là đứng."
+    },
+    {
+      "word": "開ける",
+      "romaji": "Hiraku",
+      "translation": "Mở",
+      "q": "Chữ Hán của 'Hiraku' (Mở) là gì?",
+      "a": [
+        "閉める",
+        "開ける",
+        "入る",
+        "出る"
+      ],
+      "c": 1,
+      "ex": "開 (Khai) là mở ra."
+    },
+    {
+      "word": "閉める",
+      "romaji": "しめる",
+      "translation": "đóng lại",
+      "q": "Cách đọc của '閉める' là gì?",
+      "a": [
+        "あける",
+        "しめる",
+        "いれる",
+        "だす"
+      ],
+      "c": 1,
+      "ex": "閉 (Bế) là đóng lại."
+    },
+    {
+      "word": "着る",
+      "romaji": "Kiru",
+      "translation": "Mặc - quần áo",
+      "q": "Chữ Hán của 'Kiru' (Mặc - quần áo) là gì?",
+      "a": [
+        "着る",
+        "脱ぐ",
+        "履く",
+        "被る"
+      ],
+      "c": 0,
+      "ex": "着 (Trước) là mặc (áo)."
+    },
+    {
+      "word": "脱ぐ",
+      "romaji": "ぬぐ",
+      "translation": "cởi ra",
+      "q": "Cách đọc của '脱ぐ' là gì?",
+      "a": [
+        "きる",
+        "ぬぐ",
+        "はく",
+        "かぶる"
+      ],
+      "c": 1,
+      "ex": "脱 (Thoát) là cởi ra."
+    },
+    {
+      "word": "持つ",
+      "romaji": "Motsu",
+      "translation": "Cầm/Mang",
+      "q": "Chữ Hán của 'Motsu' (Cầm/Mang) là gì?",
+      "a": [
+        "置く",
+        "持つ",
+        "取る",
+        "渡す"
+      ],
+      "c": 1,
+      "ex": "持 (Trì) là cầm, mang theo."
+    },
+    {
+      "word": "置く",
+      "romaji": "おく",
+      "translation": "đặt xuống",
+      "q": "Cách đọc của '置く' là gì?",
+      "a": [
+        "もつ",
+        "おく",
+        "とる",
+        "わたす"
+      ],
+      "c": 1,
+      "ex": "置 (Trí) là đặt xuống."
+    },
+    {
+      "word": "渡す",
+      "romaji": "Watasu",
+      "translation": "Đưa/Trao",
+      "q": "Chữ Hán của 'Watasu' (Đưa/Trao) là gì?",
+      "a": [
+        "持つ",
+        "置く",
+        "取る",
+        "渡す"
+      ],
+      "c": 3,
+      "ex": "渡 (Độ) là trao, chuyển qua."
+    },
+    {
+      "word": "取る",
+      "romaji": "とる",
+      "translation": "lấy, lấy lấy",
+      "q": "Cách đọc của '取る' là gì?",
+      "a": [
+        "おく",
+        "もつ",
+        "とる",
+        "わたす"
+      ],
+      "c": 2,
+      "ex": "取 (Thủ) là lấy, lấy lấy."
+    },
+    {
+      "word": "要る",
+      "romaji": "Iru",
+      "translation": "Cần/Có",
+      "q": "Chữ Hán của 'Iru' (Cần/Có) là gì?",
+      "a": [
+        "要る",
+        "有る",
+        "居る",
+        "成る"
+      ],
+      "c": 0,
+      "ex": "要 (Yếu) là cần thiết."
+    },
+    {
+      "word": "有る",
+      "romaji": "ある",
+      "translation": "có (vật vô sinh)",
+      "q": "Cách đọc của '有る' là gì?",
+      "a": [
+        "いる",
+        "ある",
+        "なる",
+        "する"
+      ],
+      "c": 1,
+      "ex": "有 (Hữu) là có (vật vô sinh)."
+    },
+    {
+      "word": "成る",
+      "romaji": "Naru",
+      "translation": "Trở thành",
+      "q": "Chữ Hán của 'Naru' (Trở thành) là gì?",
+      "a": [
+        "有る",
+        "成る",
+        "居る",
+        "要る"
+      ],
+      "c": 1,
+      "ex": "成 (Thành) là trở thành."
+    },
+    {
+      "word": "急ぐ",
+      "romaji": "いそぐ",
+      "translation": "vội vàng",
+      "q": "Cách đọc của '急ぐ' là gì?",
+      "a": [
+        "ゆっくり",
+        "いそぐ",
+        "とまる",
+        "すすむ"
+      ],
+      "c": 1,
+      "ex": "急 (Cấp) là vội vàng."
+    },
+    {
+      "word": "止まる",
+      "romaji": "Tomaru",
+      "translation": "Dừng lại",
+      "q": "Chữ Hán của 'Tomaru' (Dừng lại) là gì?",
+      "a": [
+        "急ぐ",
+        "止まる",
+        "動く",
+        "進む"
+      ],
+      "c": 1,
+      "ex": "止 (Chỉ) là dừng, ngừng."
+    },
+    {
+      "word": "動く",
+      "romaji": "うごく",
+      "translation": "cử động, di chuyển",
+      "q": "Cách đọc của '動く' là gì?",
+      "a": [
+        "とまる",
+        "うごく",
+        "すすむ",
+        "まがる"
+      ],
+      "c": 1,
+      "ex": "動 (Động) là cử động, di chuyển."
+    },
+    {
+      "word": "進む",
+      "romaji": "Susumu",
+      "translation": "Tiến lên",
+      "q": "Chữ Hán của 'Susumu' (Tiến lên) là gì?",
+      "a": [
+        "止まる",
+        "動く",
+        "進む",
+        "曲がる"
+      ],
+      "c": 2,
+      "ex": "進 (Tiến) là tiến lên, tiến triển."
+    },
+    {
+      "word": "曲がる",
+      "romaji": "まがる",
+      "translation": "rẽ, quẹo",
+      "q": "Cách đọc của '曲がる' là gì?",
+      "a": [
+        "すすむ",
+        "うごく",
+        "まがる",
+        "とまる"
+      ],
+      "c": 2,
+      "ex": "曲 (Khúc) là rẽ, quẹo."
+    },
+    {
+      "word": "送る",
+      "romaji": "Okuru",
+      "translation": "Tặng/Gửi",
+      "q": "Chữ Hán của 'Okuru' (Tặng/Gửi) là gì?",
+      "a": [
+        "受ける",
+        "送る",
+        "貰う",
+        "渡す"
+      ],
+      "c": 1,
+      "ex": "送 (Tống) là gửi, tiễn."
+    },
+    {
+      "word": "受ける",
+      "romaji": "うける",
+      "translation": "nhận, tiếp nhận",
+      "q": "Cách đọc của '受ける' là gì?",
+      "a": [
+        "おくる",
+        "うける",
+        "もらう",
+        "わたす"
+      ],
+      "c": 1,
+      "ex": "受 (Thụ) là nhận, tiếp nhận."
+    },
+    {
+      "word": "貰う",
+      "romaji": "Morau",
+      "translation": "Nhận",
+      "q": "Chữ Hán của 'Morau' (Nhận) là gì?",
+      "a": [
+        "送る",
+        "受ける",
+        "貰う",
+        "渡す"
+      ],
+      "c": 2,
+      "ex": "貰 (Nạo) là nhận (từ bề trên)."
+    },
+    {
+      "word": "教える",
+      "romaji": "おしえる",
+      "translation": "dạy, chỉ bảo",
+      "q": "Cách đọc của '教える' là gì?",
+      "a": [
+        "おしえる",
+        "ならう",
+        "まなぶ",
+        "べんきょうする"
+      ],
+      "c": 0,
+      "ex": "教 (Giáo) là dạy, chỉ bảo."
+    },
+    {
+      "word": "習う",
+      "romaji": "Narau",
+      "translation": "Học theo",
+      "q": "Chữ Hán của 'Narau' (Học theo) là gì?",
+      "a": [
+        "教える",
+        "習う",
+        "学ぶ",
+        "知る"
+      ],
+      "c": 1,
+      "ex": "習 (Tập) là học tập, thực hành."
+    },
+    {
+      "word": "学ぶ",
+      "romaji": "まなぶ",
+      "translation": "học hỏi",
+      "q": "Cách đọc của '学ぶ' là gì?",
+      "a": [
+        "おしえる",
+        "ならう",
+        "まなぶ",
+        "しる"
+      ],
+      "c": 2,
+      "ex": "学 (Học) là học hỏi."
+    },
+    {
+      "word": "読む",
+      "romaji": "Yomu",
+      "translation": "Đọc",
+      "q": "Chữ Hán của 'Yomu' (Đọc) là gì?",
+      "a": [
+        "書く",
+        "読む",
+        "見る",
+        "聞く"
+      ],
+      "c": 1,
+      "ex": "読 (Đọc) là đọc sách."
+    },
+    {
+      "word": "数える",
+      "romaji": "かぞえる",
+      "translation": "đếm",
+      "q": "Cách đọc của '数える' là gì?",
+      "a": [
+        "かぞえる",
+        "おぼえる",
+        "わすれる",
+        "くらべる"
+      ],
+      "c": 0,
+      "ex": "数 (Số) là đếm."
+    },
+    {
+      "word": "忘れる",
+      "romaji": "Wasureru",
+      "translation": "Quên",
+      "q": "Chữ Hán của 'Wasureru' (Quên) là gì?",
+      "a": [
+        "覚える",
+        "忘れる",
+        "数える",
+        "比べる"
+      ],
+      "c": 1,
+      "ex": "忘 (Vong) là quên."
+    },
+    {
+      "word": "覚える",
+      "romaji": "おぼえる",
+      "translation": "nhớ, học thuộc",
+      "q": "Cách đọc của '覚える' là gì?",
+      "a": [
+        "わすれる",
+        "かぞえる",
+        "おぼえる",
+        "くらべる"
+      ],
+      "c": 2,
+      "ex": "覚 (Giác) là nhớ, học thuộc."
+    },
+    {
+      "word": "比べる",
+      "romaji": "Kuraberu",
+      "translation": "So sánh",
+      "q": "Chữ Hán của 'Kuraberu' (So sánh) là gì?",
+      "a": [
+        "覚える",
+        "忘れる",
+        "数える",
+        "比べる"
+      ],
+      "c": 3,
+      "ex": "比 (Tỉ) là so sánh."
+    },
+    {
+      "word": "始める",
+      "romaji": "はじめる",
+      "translation": "bắt đầu",
+      "q": "Cách đọc của '始める' là gì?",
+      "a": [
+        "おわる",
+        "はじめる",
+        "つづける",
+        "やめる"
+      ],
+      "c": 1,
+      "ex": "始 (Thủy) là bắt đầu."
+    },
+    {
+      "word": "終わる",
+      "romaji": "Owaru",
+      "translation": "Kết thúc",
+      "q": "Chữ Hán của 'Owaru' (Kết thúc) là gì?",
+      "a": [
+        "始める",
+        "終わる",
+        "続ける",
+        "止める"
+      ],
+      "c": 1,
+      "ex": "終 (Chung) là kết thúc."
+    },
+    {
+      "word": "続ける",
+      "romaji": "つづける",
+      "translation": "tiếp tục",
+      "q": "Cách đọc của '続ける' là gì?",
+      "a": [
+        "はじめる",
+        "おわる",
+        "つづける",
+        "やめる"
+      ],
+      "c": 2,
+      "ex": "続 (Tục) là tiếp tục."
+    },
+    {
+      "word": "止める",
+      "romaji": "Yameru",
+      "translation": "Bỏ/Thôi",
+      "q": "Chữ Hán của 'Yameru' (Bỏ/Thôi) là gì?",
+      "a": [
+        "始める",
+        "終わる",
+        "続ける",
+        "止める"
+      ],
+      "c": 3,
+      "ex": "止 (Chỉ) là thôi, bỏ."
+    },
+    {
+      "word": "変える",
+      "romaji": "かえる",
+      "translation": "thay đổi (chủ động)",
+      "q": "Cách đọc của '変える' là gì?",
+      "a": [
+        "かえる",
+        "かわる",
+        "なおす",
+        "なおる"
+      ],
+      "c": 0,
+      "ex": "変 (Biến) là thay đổi (chủ động)."
+    },
+    {
+      "word": "変わる",
+      "romaji": "Kawaru",
+      "translation": "Thay đổi - tự",
+      "q": "Chữ Hán của 'Kawaru' (Thay đổi - tự) là gì?",
+      "a": [
+        "変える",
+        "変わる",
+        "直す",
+        "直る"
+      ],
+      "c": 1,
+      "ex": "変わる (Biến) là thay đổi (tự nhiên)."
+    },
+    {
+      "word": "直す",
+      "romaji": "なおす",
+      "translation": "sửa chữa",
+      "q": "Cách đọc của '直す' là gì?",
+      "a": [
+        "かえる",
+        "かわる",
+        "なおす",
+        "なおる"
+      ],
+      "c": 2,
+      "ex": "直 (Trực) là sửa chữa."
+    },
+    {
+      "word": "直す",
+      "romaji": "Naosu",
+      "translation": "Sửa",
+      "q": "Chữ Hán của 'Naosu' (Sửa) là gì?",
+      "a": [
+        "変える",
+        "変わる",
+        "直す",
+        "直る"
+      ],
+      "c": 2,
+      "ex": "直す (Trực) là sửa (chủ động)."
+    },
+    {
+      "word": "集める",
+      "romaji": "あつめる",
+      "translation": "thu thập, tập hợp",
+      "q": "Cách đọc của '集める' là gì?",
+      "a": [
+        "あつめる",
+        "あつまる",
+        "くばる",
+        "わける"
+      ],
+      "c": 0,
+      "ex": "集 (Tập) là thu thập, tập hợp."
+    },
+    {
+      "word": "集まる",
+      "romaji": "Atsumaru",
+      "translation": "Tập hợp - tự",
+      "q": "Chữ Hán của 'Atsumaru' (Tập hợp - tự) là gì?",
+      "a": [
+        "集める",
+        "集まる",
+        "配る",
+        "分ける"
+      ],
+      "c": 1,
+      "ex": "集まる (Tập) là tụ tập (tự nhiên)."
+    },
+    {
+      "word": "配る",
+      "romaji": "くばる",
+      "translation": "phân phát, chia",
+      "q": "Cách đọc của '配る' là gì?",
+      "a": [
+        "あつめる",
+        "あつまる",
+        "くばる",
+        "わける"
+      ],
+      "c": 2,
+      "ex": "配 (Phối) là phân phát, chia."
+    },
+    {
+      "word": "分ける",
+      "romaji": "Wakeru",
+      "translation": "Phân chia",
+      "q": "Chữ Hán của 'Wakeru' (Phân chia) là gì?",
+      "a": [
+        "集める",
+        "集まる",
+        "配る",
+        "分ける"
+      ],
+      "c": 3,
+      "ex": "分 (Phân) là chia, phân loại."
+    },
+    {
+      "word": "気持ち",
+      "romaji": "きもち",
+      "translation": "cảm giác, tâm trạng",
+      "q": "Cách đọc của '気持ち' là gì?",
+      "a": [
+        "きもち",
+        "きまち",
+        "きぶん",
+        "きしょう"
+      ],
+      "c": 0,
+      "ex": "気持ち (Khí Trì) là cảm giác, tâm trạng."
+    },
+    {
+      "word": "気分",
+      "romaji": "Kibun",
+      "translation": "Tâm trạng",
+      "q": "Chữ Hán của 'Kibun' (Tâm trạng) là gì?",
+      "a": [
+        "気持ち",
+        "気分",
+        "感情",
+        "心"
+      ],
+      "c": 1,
+      "ex": "気分 (Khí Phận) là tâm trạng, cảm giác cơ thể."
+    },
+    {
+      "word": "感情",
+      "romaji": "かんじょう",
+      "translation": "cảm xúc",
+      "q": "Cách đọc của '感情' là gì?",
+      "a": [
+        "きもち",
+        "きぶん",
+        "かんじょう",
+        "かんしゃ"
+      ],
+      "c": 2,
+      "ex": "感情 (Cảm Tình) là cảm xúc."
+    },
+    {
+      "word": "心",
+      "romaji": "Kokoro",
+      "translation": "Tâm hồn",
+      "q": "Chữ Hán của 'Kokoro' (Tâm hồn) là gì?",
+      "a": [
+        "体",
+        "心",
+        "頭",
+        "腹"
+      ],
+      "c": 1,
+      "ex": "心 (Tâm) là trái tim, tâm hồn."
+    },
+    {
+      "word": "体",
+      "romaji": "からだ",
+      "translation": "cơ thể",
+      "q": "Cách đọc của '体' là gì?",
+      "a": [
+        "こころ",
+        "あたま",
+        "からだ",
+        "おなか"
+      ],
+      "c": 2,
+      "ex": "体 (Thể) là cơ thể."
+    },
+    {
+      "word": "頭",
+      "romaji": "Atama",
+      "translation": "Đầu",
+      "q": "Chữ Hán của 'Atama' (Đầu) là gì?",
+      "a": [
+        "体",
+        "心",
+        "頭",
+        "腹"
+      ],
+      "c": 2,
+      "ex": "頭 (Đầu) là đầu."
+    },
+    {
+      "word": "腹",
+      "romaji": "おなか",
+      "translation": "bụng",
+      "q": "Cách đọc của '腹' là gì?",
+      "a": [
+        "からだ",
+        "こころ",
+        "あたま",
+        "おなか"
+      ],
+      "c": 3,
+      "ex": "腹 (Phúc) là bụng."
+    },
+    {
+      "word": "背中",
+      "romaji": "Senaka",
+      "translation": "Lưng",
+      "q": "Chữ Hán của 'Senaka' (Lưng) là gì?",
+      "a": [
+        "胸",
+        "背中",
+        "腰",
+        "肩"
+      ],
+      "c": 1,
+      "ex": "背中 (Bội Trung) là lưng."
+    },
+    {
+      "word": "肩",
+      "romaji": "かた",
+      "translation": "vai",
+      "q": "Cách đọc của '肩' là gì?",
+      "a": [
+        "こし",
+        "せなか",
+        "むね",
+        "かた"
+      ],
+      "c": 3,
+      "ex": "肩 (Kiên) là vai."
+    },
+    {
+      "word": "腰",
+      "romaji": "Koshi",
+      "translation": "Lưng dưới",
+      "q": "Chữ Hán của 'Koshi' (Lưng dưới) là gì?",
+      "a": [
+        "背中",
+        "腰",
+        "胸",
+        "肩"
+      ],
+      "c": 1,
+      "ex": "腰 (Yêu) là thắt lưng."
+    },
+    {
+      "word": "声",
+      "romaji": "こえ",
+      "translation": "giọng nói",
+      "q": "Cách đọc của '声' là gì?",
+      "a": [
+        "こえ",
+        "おと",
+        "ねいろ",
+        "おんがく"
+      ],
+      "c": 0,
+      "ex": "声 (Thanh) là giọng nói."
+    },
+    {
+      "word": "音",
+      "romaji": "Oto",
+      "translation": "Âm thanh",
+      "q": "Chữ Hán của 'Oto' (Âm thanh) là gì?",
+      "a": [
+        "声",
+        "音",
+        "音楽",
+        "音色"
+      ],
+      "c": 1,
+      "ex": "音 (Âm) là âm thanh."
+    },
+    {
+      "word": "音楽",
+      "romaji": "おんがく",
+      "translation": "âm nhạc",
+      "q": "Cách đọc của '音楽' là gì?",
+      "a": [
+        "おんがく",
+        "おんしょく",
+        "おとがく",
+        "ねいろ"
+      ],
+      "c": 0,
+      "ex": "音楽 (Âm Nhạc) là âm nhạc."
+    },
+    {
+      "word": "映画",
+      "romaji": "Eiga",
+      "translation": "Phim",
+      "q": "Chữ Hán của 'Eiga' (Phim) là gì?",
+      "a": [
+        "音楽",
+        "映画",
+        "絵画",
+        "写真"
+      ],
+      "c": 1,
+      "ex": "映画 (Ánh Họa) là phim ảnh."
+    },
+    {
+      "word": "絵",
+      "romaji": "え",
+      "translation": "bức tranh",
+      "q": "Cách đọc của '絵' là gì?",
+      "a": [
+        "え",
+        "か",
+        "の",
+        "む"
+      ],
+      "c": 0,
+      "ex": "絵 (Họa) là bức tranh."
+    },
+    {
+      "word": "本",
+      "romaji": "Hon",
+      "translation": "Sách",
+      "q": "Chữ Hán của 'Hon' (Sách) là gì?",
+      "a": [
+        "本",
+        "文",
+        "字",
+        "紙"
+      ],
+      "c": 0,
+      "ex": "本 (Bổn) là sách."
+    },
+    {
+      "word": "字",
+      "romaji": "じ",
+      "translation": "chữ viết",
+      "q": "Cách đọc của '字' là gì?",
+      "a": [
+        "もじ",
+        "じ",
+        "ぶん",
+        "かみ"
+      ],
+      "c": 1,
+      "ex": "字 (Tự) là chữ viết."
+    },
+    {
+      "word": "紙",
+      "romaji": "Kami",
+      "translation": "Giấy",
+      "q": "Chữ Hán của 'Kami' (Giấy) là gì?",
+      "a": [
+        "本",
+        "文",
+        "字",
+        "紙"
+      ],
+      "c": 3,
+      "ex": "紙 (Chỉ) là giấy."
+    },
+    {
+      "word": "言葉",
+      "romaji": "ことば",
+      "translation": "ngôn ngữ, từ",
+      "q": "Cách đọc của '言葉' là gì?",
+      "a": [
+        "ことば",
+        "もじ",
+        "ぶんしょう",
+        "かいわ"
+      ],
+      "c": 0,
+      "ex": "言葉 (Ngôn Diệp) là ngôn ngữ, từ."
+    },
+    {
+      "word": "文章",
+      "romaji": "Bunsho",
+      "translation": "Bài văn",
+      "q": "Chữ Hán của 'Bunsho' (Bài văn) là gì?",
+      "a": [
+        "言葉",
+        "文章",
+        "文字",
+        "会話"
+      ],
+      "c": 1,
+      "ex": "文章 (Văn Chương) là bài văn, đoạn văn."
+    },
+    {
+      "word": "会話",
+      "romaji": "かいわ",
+      "translation": "hội thoại",
+      "q": "Cách đọc của '会話' là gì?",
+      "a": [
+        "ことば",
+        "ぶんしょう",
+        "もじ",
+        "かいわ"
+      ],
+      "c": 3,
+      "ex": "会話 (Hội Thoại) là hội thoại."
+    },
+    {
+      "word": "答え",
+      "romaji": "Kotae",
+      "translation": "Câu trả lời",
+      "q": "Chữ Hán của 'Kotae' (Câu trả lời) là gì?",
+      "a": [
+        "質問",
+        "答え",
+        "問題",
+        "返事"
+      ],
+      "c": 1,
+      "ex": "答え (Đáp) là câu trả lời."
+    },
+    {
+      "word": "質問",
+      "romaji": "しつもん",
+      "translation": "câu hỏi",
+      "q": "Cách đọc của '質問' là gì?",
+      "a": [
+        "しつもん",
+        "もんだい",
+        "こたえ",
+        "へんじ"
+      ],
+      "c": 0,
+      "ex": "質問 (Chất Vấn) là câu hỏi."
+    },
+    {
+      "word": "問題",
+      "romaji": "Mondai",
+      "translation": "Vấn đề",
+      "q": "Chữ Hán của 'Mondai' (Vấn đề) là gì?",
+      "a": [
+        "質問",
+        "答え",
+        "問題",
+        "返事"
+      ],
+      "c": 2,
+      "ex": "問題 (Vấn Đề) là vấn đề, bài toán."
+    },
+    {
+      "word": "返事",
+      "romaji": "へんじ",
+      "translation": "trả lời, hồi âm",
+      "q": "Cách đọc của '返事' là gì?",
+      "a": [
+        "へんじ",
+        "こたえ",
+        "しつもん",
+        "もんだい"
+      ],
+      "c": 0,
+      "ex": "返事 (Phản Sự) là trả lời, hồi âm."
+    },
+    {
+      "word": "世界",
+      "romaji": "Sekai",
+      "translation": "Thế giới",
+      "q": "Chữ Hán của 'Sekai' (Thế giới) là gì?",
+      "a": [
+        "社会",
+        "世界",
+        "国際",
+        "外国"
+      ],
+      "c": 1,
+      "ex": "世界 (Thế Giới)."
+    },
+    {
+      "word": "社会",
+      "romaji": "しゃかい",
+      "translation": "xã hội",
+      "q": "Cách đọc của '社会' là gì?",
+      "a": [
+        "せかい",
+        "しゃかい",
+        "こくさい",
+        "がいこく"
+      ],
+      "c": 1,
+      "ex": "社会 (Xã Hội) là xã hội."
+    },
+    {
+      "word": "外国",
+      "romaji": "Gaikoku",
+      "translation": "Nước ngoài",
+      "q": "Chữ Hán của 'Gaikoku' (Nước ngoài) là gì?",
+      "a": [
+        "外国",
+        "国際",
+        "社会",
+        "外来"
+      ],
+      "c": 0,
+      "ex": "外国 (Ngoại Quốc) là nước ngoài."
+    },
+    {
+      "word": "国際",
+      "romaji": "こくさい",
+      "translation": "quốc tế",
+      "q": "Cách đọc của '国際' là gì?",
+      "a": [
+        "がいこく",
+        "しゃかい",
+        "こくさい",
+        "かんけい"
+      ],
+      "c": 2,
+      "ex": "国際 (Quốc Tế) là quốc tế."
+    },
+    {
+      "word": "感謝",
+      "romaji": "Kansha",
+      "translation": "Lòng biết ơn",
+      "q": "Chữ Hán của 'Kansha' (Lòng biết ơn) là gì?",
+      "a": [
+        "感謝",
+        "感情",
+        "感心",
+        "感動"
+      ],
+      "c": 0,
+      "ex": "感謝 (Cảm Tạ) là biết ơn."
+    },
+    {
+      "word": "感動",
+      "romaji": "かんどう",
+      "translation": "xúc động",
+      "q": "Cách đọc của '感動' là gì?",
+      "a": [
+        "かんしゃ",
+        "かんじょう",
+        "かんしん",
+        "かんどう"
+      ],
+      "c": 3,
+      "ex": "感動 (Cảm Động) là xúc động."
+    },
+    {
+      "word": "感心",
+      "romaji": "Kanshin",
+      "translation": "Ấn tượng",
+      "q": "Chữ Hán của 'Kanshin' (Ấn tượng) là gì?",
+      "a": [
+        "感謝",
+        "感情",
+        "感心",
+        "感動"
+      ],
+      "c": 2,
+      "ex": "感心 (Cảm Tâm) là khâm phục, ấn tượng."
+    },
+    {
+      "word": "関係",
+      "romaji": "かんけい",
+      "translation": "mối quan hệ",
+      "q": "Cách đọc của '関係' là gì?",
+      "a": [
+        "かんけい",
+        "かんしゃ",
+        "かんどう",
+        "かんがえ"
+      ],
+      "c": 0,
+      "ex": "関係 (Quan Hệ) là mối quan hệ."
+    },
+    {
+      "word": "影響",
+      "romaji": "Eikyou",
+      "translation": "Ảnh hưởng",
+      "q": "Chữ Hán của 'Eikyou' (Ảnh hưởng) là gì?",
+      "a": [
+        "関係",
+        "影響",
+        "効果",
+        "原因"
+      ],
+      "c": 1,
+      "ex": "影響 (Ảnh Hưởng) là ảnh hưởng."
+    },
+    {
+      "word": "原因",
+      "romaji": "げんいん",
+      "translation": "nguyên nhân",
+      "q": "Cách đọc của '原因' là gì?",
+      "a": [
+        "けっか",
+        "えいきょう",
+        "げんいん",
+        "こうか"
+      ],
+      "c": 2,
+      "ex": "原因 (Nguyên Nhân) là nguyên nhân."
+    },
+    {
+      "word": "結果",
+      "romaji": "Kekka",
+      "translation": "Kết quả",
+      "q": "Chữ Hán của 'Kekka' (Kết quả) là gì?",
+      "a": [
+        "原因",
+        "影響",
+        "効果",
+        "結果"
+      ],
+      "c": 3,
+      "ex": "結果 (Kết Quả) là kết quả."
+    },
+    {
+      "word": "効果",
+      "romaji": "こうか",
+      "translation": "hiệu quả",
+      "q": "Cách đọc của '効果' là gì?",
+      "a": [
+        "げんいん",
+        "けっか",
+        "こうか",
+        "えいきょう"
+      ],
+      "c": 2,
+      "ex": "効果 (Hiệu Quả) là hiệu quả."
+    },
+    {
+      "word": "目的",
+      "romaji": "Mokuteki",
+      "translation": "Mục đích",
+      "q": "Chữ Hán của 'Mokuteki' (Mục đích) là gì?",
+      "a": [
+        "目的",
+        "目標",
+        "方法",
+        "理由"
+      ],
+      "c": 0,
+      "ex": "目的 (Mục Đích) là mục đích."
+    },
+    {
+      "word": "目標",
+      "romaji": "もくひょう",
+      "translation": "mục tiêu",
+      "q": "Cách đọc của '目標' là gì?",
+      "a": [
+        "もくてき",
+        "もくひょう",
+        "ほうほう",
+        "りゆう"
+      ],
+      "c": 1,
+      "ex": "目標 (Mục Tiêu) là mục tiêu."
+    },
+    {
+      "word": "方法",
+      "romaji": "Houhou",
+      "translation": "Phương pháp",
+      "q": "Chữ Hán của 'Houhou' (Phương pháp) là gì?",
+      "a": [
+        "目的",
+        "目標",
+        "方法",
+        "理由"
+      ],
+      "c": 2,
+      "ex": "方法 (Phương Pháp) là phương pháp."
+    },
+    {
+      "word": "理由",
+      "romaji": "りゆう",
+      "translation": "lý do",
+      "q": "Cách đọc của '理由' là gì?",
+      "a": [
+        "もくてき",
+        "もくひょう",
+        "ほうほう",
+        "りゆう"
+      ],
+      "c": 3,
+      "ex": "理由 (Lý Do) là lý do."
+    },
+    {
+      "word": "説明",
+      "romaji": "Setsumei",
+      "translation": "Giải thích",
+      "q": "Chữ Hán của 'Setsumei' (Giải thích) là gì?",
+      "a": [
+        "説明",
+        "質問",
+        "答え",
+        "報告"
+      ],
+      "c": 0,
+      "ex": "説明 (Thuyết Minh) là giải thích."
+    },
+    {
+      "word": "報告",
+      "romaji": "ほうこく",
+      "translation": "báo cáo",
+      "q": "Cách đọc của '報告' là gì?",
+      "a": [
+        "せつめい",
+        "しつもん",
+        "こたえ",
+        "ほうこく"
+      ],
+      "c": 3,
+      "ex": "報告 (Báo Cáo) là báo cáo."
+    },
+    {
+      "word": "相談",
+      "romaji": "Soudan",
+      "translation": "Tư vấn",
+      "q": "Chữ Hán của 'Soudan' (Tư vấn) là gì?",
+      "a": [
+        "相談",
+        "質問",
+        "返事",
+        "報告"
+      ],
+      "c": 0,
+      "ex": "相談 (Tương Đàm) là thảo luận, tư vấn."
+    },
+    {
+      "word": "連絡",
+      "romaji": "れんらく",
+      "translation": "liên lạc",
+      "q": "Cách đọc của '連絡' là gì?",
+      "a": [
+        "れんらく",
+        "れんさく",
+        "りんらく",
+        "れんかく"
+      ],
+      "c": 0,
+      "ex": "連絡 (Liên Lạc) là liên lạc."
+    },
+    {
+      "word": "連絡",
+      "romaji": "Renraku",
+      "translation": "Liên lạc",
+      "q": "Chữ Hán của 'Renraku' (Liên lạc) là gì?",
+      "a": [
+        "連絡",
+        "連続",
+        "続行",
+        "接触"
+      ],
+      "c": 0,
+      "ex": "連絡 (Liên Lạc)."
+    },
+    {
+      "word": "確認",
+      "romaji": "かくにん",
+      "translation": "xác nhận, kiểm tra",
+      "q": "Cách đọc của '確認' là gì?",
+      "a": [
+        "かくにん",
+        "かくしん",
+        "かくどう",
+        "かくほ"
+      ],
+      "c": 0,
+      "ex": "確認 (Xác Nhận) là xác nhận, kiểm tra."
+    },
+    {
+      "word": "参加",
+      "romaji": "Sanka",
+      "translation": "Tham gia",
+      "q": "Chữ Hán của 'Sanka' (Tham gia) là gì?",
+      "a": [
+        "参加",
+        "参考",
+        "参照",
+        "加入"
+      ],
+      "c": 0,
+      "ex": "参加 (Tham Gia) là tham gia."
+    },
+    {
+      "word": "参考",
+      "romaji": "さんこう",
+      "translation": "tham khảo",
+      "q": "Cách đọc của '参考' là gì?",
+      "a": [
+        "さんか",
+        "さんこう",
+        "さんしょう",
+        "かにゅう"
+      ],
+      "c": 1,
+      "ex": "参考 (Tham Khảo) là tham khảo."
+    },
+    {
+      "word": "注文",
+      "romaji": "Chuumon",
+      "translation": "Đặt hàng",
+      "q": "Chữ Hán của 'Chuumon' (Đặt hàng) là gì?",
+      "a": [
+        "注文",
+        "注意",
+        "注目",
+        "命令"
+      ],
+      "c": 0,
+      "ex": "注文 (Chú Văn) là đặt hàng, gọi món."
+    },
+    {
+      "word": "注目",
+      "romaji": "ちゅうもく",
+      "translation": "chú ý, chú mục",
+      "q": "Cách đọc của '注目' là gì?",
+      "a": [
+        "ちゅうもん",
+        "ちゅうい",
+        "ちゅうもく",
+        "めいれい"
+      ],
+      "c": 2,
+      "ex": "注目 (Chú Mục) là chú ý, chú mục."
+    },
+    {
+      "word": "命令",
+      "romaji": "Meirei",
+      "translation": "Lệnh",
+      "q": "Chữ Hán của 'Meirei' (Lệnh) là gì?",
+      "a": [
+        "注文",
+        "注意",
+        "注目",
+        "命令"
+      ],
+      "c": 3,
+      "ex": "命令 (Mệnh Lệnh) là mệnh lệnh."
+    },
+    {
+      "word": "許可",
+      "romaji": "きょか",
+      "translation": "cho phép",
+      "q": "Cách đọc của '許可' là gì?",
+      "a": [
+        "きょか",
+        "きょかん",
+        "きょひ",
+        "きんし"
+      ],
+      "c": 0,
+      "ex": "許可 (Hứa Khả) là cho phép."
+    },
+    {
+      "word": "禁止",
+      "romaji": "Kinshi",
+      "translation": "Cấm",
+      "q": "Chữ Hán của 'Kinshi' (Cấm) là gì?",
+      "a": [
+        "許可",
+        "拒否",
+        "禁止",
+        "命令"
+      ],
+      "c": 2,
+      "ex": "禁止 (Cấm Chỉ) là cấm đoán."
+    },
+    {
+      "word": "拒否",
+      "romaji": "きょひ",
+      "translation": "từ chối",
+      "q": "Cách đọc của '拒否' là gì?",
+      "a": [
+        "きょか",
+        "きょひ",
+        "きんし",
+        "めいれい"
+      ],
+      "c": 1,
+      "ex": "拒否 (Cự Phủ) là từ chối."
+    },
+    {
+      "word": "時間",
+      "romaji": "Jikan",
+      "translation": "Thời gian",
+      "q": "Chữ Hán của 'Jikan' (Thời gian) là gì?",
+      "a": [
+        "時間",
+        "時刻",
+        "時期",
+        "期間"
+      ],
+      "c": 0,
+      "ex": "時間 (Thời Gian) là thời gian (khoảng)."
+    },
+    {
+      "word": "時刻",
+      "romaji": "じこく",
+      "translation": "thời điểm, giờ cụ thể",
+      "q": "Cách đọc của '時刻' là gì?",
+      "a": [
+        "じかん",
+        "じこく",
+        "じき",
+        "きかん"
+      ],
+      "c": 1,
+      "ex": "時刻 (Thời Khắc) là thời điểm, giờ cụ thể."
+    },
+    {
+      "word": "期間",
+      "romaji": "Kikan",
+      "translation": "Khoảng thời gian",
+      "q": "Chữ Hán của 'Kikan' (Khoảng thời gian) là gì?",
+      "a": [
+        "時間",
+        "時刻",
+        "時期",
+        "期間"
+      ],
+      "c": 3,
+      "ex": "期間 (Kỳ Gian) là khoảng thời gian nhất định."
+    },
+    {
+      "word": "期間",
+      "romaji": "きかん",
+      "translation": "khoảng thời gian",
+      "q": "Cách đọc của '期間' là gì?",
+      "a": [
+        "じかん",
+        "じこく",
+        "じき",
+        "きかん"
+      ],
+      "c": 3,
+      "ex": "期間 (Kỳ Gian) là khoảng thời gian."
+    },
+    {
+      "word": "町",
+      "romaji": "Machi",
+      "translation": "Thị trấn",
+      "q": "Chữ Hán của 'Machi' (Thị trấn) là gì?",
+      "a": [
+        "町",
+        "市",
+        "村",
+        "都市"
+      ],
+      "c": 0,
+      "ex": "町 (Đinh) là thị trấn, khu phố."
+    },
+    {
+      "word": "村",
+      "romaji": "むら",
+      "translation": "làng",
+      "q": "Cách đọc của '村' là gì?",
+      "a": [
+        "まち",
+        "し",
+        "むら",
+        "とし"
+      ],
+      "c": 2,
+      "ex": "村 (Thôn) là làng."
+    },
+    {
+      "word": "都市",
+      "romaji": "Toshi",
+      "translation": "Thành phố lớn",
+      "q": "Chữ Hán của 'Toshi' (Thành phố lớn) là gì?",
+      "a": [
+        "町",
+        "市",
+        "村",
+        "都市"
+      ],
+      "c": 3,
+      "ex": "都市 (Đô Thị) là đô thị, thành phố lớn."
+    },
+    {
+      "word": "市",
+      "romaji": "し",
+      "translation": "thành phố",
+      "q": "Cách đọc của '市' là gì?",
+      "a": [
+        "まち",
+        "し",
+        "むら",
+        "とし"
+      ],
+      "c": 1,
+      "ex": "市 (Thị) là thành phố."
+    },
+    {
+      "word": "国",
+      "romaji": "Kuni",
+      "translation": "Quốc gia",
+      "q": "Chữ Hán của 'Kuni' (Quốc gia) là gì?",
+      "a": [
+        "町",
+        "市",
+        "国",
+        "都市"
+      ],
+      "c": 2,
+      "ex": "国 (Quốc) là quốc gia."
+    },
+    {
+      "word": "地域",
+      "romaji": "ちいき",
+      "translation": "khu vực, vùng",
+      "q": "Cách đọc của '地域' là gì?",
+      "a": [
+        "ちいき",
+        "ちほう",
+        "ちか",
+        "ちいき"
+      ],
+      "c": 0,
+      "ex": "地域 (Địa Vực) là khu vực, vùng."
+    },
+    {
+      "word": "地方",
+      "romaji": "Chihou",
+      "translation": "Địa phương",
+      "q": "Chữ Hán của 'Chihou' (Địa phương) là gì?",
+      "a": [
+        "地域",
+        "地方",
+        "地区",
+        "地名"
+      ],
+      "c": 1,
+      "ex": "地方 (Địa Phương) là địa phương."
+    },
+    {
+      "word": "場所",
+      "romaji": "ばしょ",
+      "translation": "địa điểm, nơi chốn",
+      "q": "Cách đọc của '場所' là gì?",
+      "a": [
+        "ばしょ",
+        "ところ",
+        "いち",
+        "くうかん"
+      ],
+      "c": 0,
+      "ex": "場所 (Trường Sở) là địa điểm, nơi chốn."
+    },
+    {
+      "word": "所",
+      "romaji": "Tokoro",
+      "translation": "Nơi",
+      "q": "Chữ Hán của 'Tokoro' (Nơi) là gì?",
+      "a": [
+        "場所",
+        "所",
+        "位置",
+        "空間"
+      ],
+      "c": 1,
+      "ex": "所 (Sở) là nơi, chỗ."
+    },
+    {
+      "word": "位置",
+      "romaji": "いち",
+      "translation": "vị trí",
+      "q": "Cách đọc của '位置' là gì?",
+      "a": [
+        "ばしょ",
+        "ところ",
+        "いち",
+        "くうかん"
+      ],
+      "c": 2,
+      "ex": "位置 (Vị Trí) là vị trí."
+    },
+    {
+      "word": "方向",
+      "romaji": "Houkou",
+      "translation": "Hướng",
+      "q": "Chữ Hán của 'Houkou' (Hướng) là gì?",
+      "a": [
+        "位置",
+        "方向",
+        "場所",
+        "空間"
+      ],
+      "c": 1,
+      "ex": "方向 (Phương Hướng) là phương hướng."
+    },
+    {
+      "word": "距離",
+      "romaji": "きょり",
+      "translation": "Khoảng Cách",
+      "q": "Cách đọc của '距離' là gì?",
+      "a": [
+        "きょり",
+        "きょか",
+        "きょひ",
+        "きんし"
+      ],
+      "c": 0,
+      "ex": "距離 (Khoảng Cách)."
+    },
+    {
+      "word": "自動車",
+      "romaji": "Jidousha",
+      "translation": "Ô tô",
+      "q": "Chữ Hán của 'Jidousha' (Ô tô) là gì?",
+      "a": [
+        "自動車",
+        "自転車",
+        "電車",
+        "新幹線"
+      ],
+      "c": 0,
+      "ex": "自動車 (Tự Động Xa) là xe ô tô."
+    },
+    {
+      "word": "自転車",
+      "romaji": "じてんしゃ",
+      "translation": "xe đạp",
+      "q": "Cách đọc của '自転車' là gì?",
+      "a": [
+        "じどうしゃ",
+        "じてんしゃ",
+        "でんしゃ",
+        "しんかんせん"
+      ],
+      "c": 1,
+      "ex": "自転車 (Tự Chuyển Xa) là xe đạp."
+    },
+    {
+      "word": "新幹線",
+      "romaji": "Shinkansen",
+      "translation": "Tàu cao tốc",
+      "q": "Chữ Hán của 'Shinkansen' (Tàu cao tốc) là gì?",
+      "a": [
+        "自動車",
+        "自転車",
+        "電車",
+        "新幹線"
+      ],
+      "c": 3,
+      "ex": "新幹線 (Tân Can Tuyến) là tàu cao tốc."
+    },
+    {
+      "word": "飛行機",
+      "romaji": "ひこうき",
+      "translation": "máy bay",
+      "q": "Cách đọc của '飛行機' là gì?",
+      "a": [
+        "じどうしゃ",
+        "ひこうき",
+        "ふね",
+        "バス"
+      ],
+      "c": 1,
+      "ex": "飛行機 (Phi Hành Cơ) là máy bay."
+    },
+    {
+      "word": "船",
+      "romaji": "Fune",
+      "translation": "Tàu thuyền",
+      "q": "Chữ Hán của 'Fune' (Tàu thuyền) là gì?",
+      "a": [
+        "飛行機",
+        "自動車",
+        "船",
+        "電車"
+      ],
+      "c": 2,
+      "ex": "船 (Thuyền) là tàu thuyền."
+    },
+    {
+      "word": "出発",
+      "romaji": "しゅっぱつ",
+      "translation": "khởi hành",
+      "q": "Cách đọc của '出発' là gì?",
+      "a": [
+        "しゅっぱつ",
+        "とうちゃく",
+        "しゅっせき",
+        "けっせき"
+      ],
+      "c": 0,
+      "ex": "出発 (Xuất Phát) là khởi hành."
+    },
+    {
+      "word": "到着",
+      "romaji": "Touchaku",
+      "translation": "Đến nơi",
+      "q": "Chữ Hán của 'Touchaku' (Đến nơi) là gì?",
+      "a": [
+        "出発",
+        "到着",
+        "出席",
+        "欠席"
+      ],
+      "c": 1,
+      "ex": "到着 (Đáo Trước) là đến nơi."
+    },
+    {
+      "word": "出席",
+      "romaji": "しゅっせき",
+      "translation": "có mặt, tham dự",
+      "q": "Cách đọc của '出席' là gì?",
+      "a": [
+        "しゅっぱつ",
+        "とうちゃく",
+        "しゅっせき",
+        "けっせき"
+      ],
+      "c": 2,
+      "ex": "出席 (Xuất Tịch) là có mặt, tham dự."
+    },
+    {
+      "word": "欠席",
+      "romaji": "Kesseki",
+      "translation": "Vắng mặt",
+      "q": "Chữ Hán của 'Kesseki' (Vắng mặt) là gì?",
+      "a": [
+        "出発",
+        "到着",
+        "出席",
+        "欠席"
+      ],
+      "c": 3,
+      "ex": "欠席 (Khuyết Tịch) là vắng mặt."
+    },
+    {
+      "word": "旅行",
+      "romaji": "りょこう",
+      "translation": "du lịch",
+      "q": "Cách đọc của '旅行' là gì?",
+      "a": [
+        "りょこう",
+        "よこう",
+        "たびこう",
+        "たびゆき"
+      ],
+      "c": 0,
+      "ex": "旅行 (Lữ Hành) là du lịch."
+    },
+    {
+      "word": "散歩",
+      "romaji": "Sanpo",
+      "translation": "Dạo bộ",
+      "q": "Chữ Hán của 'Sanpo' (Dạo bộ) là gì?",
+      "a": [
+        "旅行",
+        "散歩",
+        "遠足",
+        "見学"
+      ],
+      "c": 1,
+      "ex": "散歩 (Tản Bộ) là đi dạo."
+    },
+    {
+      "word": "遠足",
+      "romaji": "えんそく",
+      "translation": "dã ngoại, đi chơi xa",
+      "q": "Cách đọc của '遠足' là gì?",
+      "a": [
+        "りょこう",
+        "さんぽ",
+        "えんそく",
+        "けんがく"
+      ],
+      "c": 2,
+      "ex": "遠足 (Viễn Túc) là dã ngoại, đi chơi xa."
+    },
+    {
+      "word": "見学",
+      "romaji": "Kengaku",
+      "translation": "Tham quan học tập",
+      "q": "Chữ Hán của 'Kengaku' (Tham quan học tập) là gì?",
+      "a": [
+        "旅行",
+        "散歩",
+        "遠足",
+        "見学"
+      ],
+      "c": 3,
+      "ex": "見学 (Kiến Học) là tham quan."
+    },
+    {
+      "word": "計画",
+      "romaji": "けいかく",
+      "translation": "kế hoạch",
+      "q": "Cách đọc của '計画' là gì?",
+      "a": [
+        "けいかく",
+        "けいかん",
+        "けいぞく",
+        "けいえい"
+      ],
+      "c": 0,
+      "ex": "計画 (Kế Hoạch) là kế hoạch."
+    },
+    {
+      "word": "経営",
+      "romaji": "Keiei",
+      "translation": "Quản lý kinh doanh",
+      "q": "Chữ Hán của 'Keiei' (Quản lý kinh doanh) là gì?",
+      "a": [
+        "計画",
+        "管理",
+        "経営",
+        "経済"
+      ],
+      "c": 2,
+      "ex": "経営 (Kinh Doanh) là kinh doanh, quản lý."
+    },
+    {
+      "word": "管理",
+      "romaji": "かんり",
+      "translation": "quản lý",
+      "q": "Cách đọc của '管理' là gì?",
+      "a": [
+        "けいかく",
+        "かんり",
+        "けいえい",
+        "けいざい"
+      ],
+      "c": 1,
+      "ex": "管理 (Quản Lý) là quản lý."
+    },
+    {
+      "word": "政策",
+      "romaji": "Seisaku",
+      "translation": "Sản xuất/Chính sách",
+      "q": "Chữ Hán của 'Seisaku' (Sản xuất/Chính sách) là gì?",
+      "a": [
+        "製作",
+        "政策",
+        "生産",
+        "制作"
+      ],
+      "c": 1,
+      "ex": "政策 (Chính Sách) là chính sách."
+    },
+    {
+      "word": "生産",
+      "romaji": "せいさん",
+      "translation": "sản xuất",
+      "q": "Cách đọc của '生産' là gì?",
+      "a": [
+        "せいさく",
+        "せいさん",
+        "せいど",
+        "せいかつ"
+      ],
+      "c": 1,
+      "ex": "生産 (Sinh Sản) là sản xuất."
+    },
+    {
+      "word": "生活",
+      "romaji": "Seikatsu",
+      "translation": "Cuộc sống",
+      "q": "Chữ Hán của 'Seikatsu' (Cuộc sống) là gì?",
+      "a": [
+        "生産",
+        "生活",
+        "生命",
+        "人生"
+      ],
+      "c": 1,
+      "ex": "生活 (Sinh Hoạt) là cuộc sống hàng ngày."
+    },
+    {
+      "word": "人生",
+      "romaji": "じんせい",
+      "translation": "cuộc đời",
+      "q": "Cách đọc của '人生' là gì?",
+      "a": [
+        "せいかつ",
+        "じんせい",
+        "しんせい",
+        "にんせい"
+      ],
+      "c": 1,
+      "ex": "人生 (Nhân Sinh) là cuộc đời."
+    },
+    {
+      "word": "社会",
+      "romaji": "Shakai",
+      "translation": "Xã hội",
+      "q": "Chữ Hán của 'Shakai' (Xã hội) là gì?",
+      "a": [
+        "社会",
+        "社員",
+        "会社",
+        "組合"
+      ],
+      "c": 0,
+      "ex": "社会 (Xã Hội)."
+    },
+    {
+      "word": "文化",
+      "romaji": "ぶんか",
+      "translation": "văn hóa",
+      "q": "Cách đọc của '文化' là gì?",
+      "a": [
+        "ぶんか",
+        "ぶんがく",
+        "ぶんめい",
+        "ぶんしょう"
+      ],
+      "c": 0,
+      "ex": "文化 (Văn Hóa) là văn hóa."
+    },
+    {
+      "word": "文学",
+      "romaji": "Bungaku",
+      "translation": "Văn học",
+      "q": "Chữ Hán của 'Bungaku' (Văn học) là gì?",
+      "a": [
+        "文化",
+        "文学",
+        "文明",
+        "文章"
+      ],
+      "c": 1,
+      "ex": "文学 (Văn Học)."
+    },
+    {
+      "word": "歴史",
+      "romaji": "れきし",
+      "translation": "Lịch Sử",
+      "q": "Cách đọc của '歴史' là gì?",
+      "a": [
+        "れきし",
+        "れきか",
+        "れかし",
+        "りきし"
+      ],
+      "c": 0,
+      "ex": "歴史 (Lịch Sử)."
+    },
+    {
+      "word": "科学",
+      "romaji": "Kagaku",
+      "translation": "Khoa học",
+      "q": "Chữ Hán của 'Kagaku' (Khoa học) là gì?",
+      "a": [
+        "科学",
+        "化学",
+        "物理",
+        "数学"
+      ],
+      "c": 0,
+      "ex": "科学 (Khoa Học)."
+    },
+    {
+      "word": "数学",
+      "romaji": "すうがく",
+      "translation": "toán học",
+      "q": "Cách đọc của '数学' là gì?",
+      "a": [
+        "かがく",
+        "けんきゅう",
+        "すうがく",
+        "ぶつり"
+      ],
+      "c": 2,
+      "ex": "数学 (Số Học) là toán học."
+    },
+    {
+      "word": "研究",
+      "romaji": "Kenkyuu",
+      "translation": "Nghiên cứu",
+      "q": "Chữ Hán của 'Kenkyuu' (Nghiên cứu) là gì?",
+      "a": [
+        "研究",
+        "勉強",
+        "調査",
+        "実験"
+      ],
+      "c": 0,
+      "ex": "研究 (Nghiên Cứu) là nghiên cứu."
+    },
+    {
+      "word": "実験",
+      "romaji": "じっけん",
+      "translation": "thí nghiệm",
+      "q": "Cách đọc của '実験' là gì?",
+      "a": [
+        "けんきゅう",
+        "じっけん",
+        "ちょうさ",
+        "べんきょう"
+      ],
+      "c": 1,
+      "ex": "実験 (Thực Nghiệm) là thí nghiệm."
+    },
+    {
+      "word": "調査",
+      "romaji": "Chousa",
+      "translation": "Điều tra",
+      "q": "Chữ Hán của 'Chousa' (Điều tra) là gì?",
+      "a": [
+        "研究",
+        "勉強",
+        "調査",
+        "実験"
+      ],
+      "c": 2,
+      "ex": "調査 (Điều Tra) là điều tra, khảo sát."
+    },
+    {
+      "word": "発見",
+      "romaji": "はっけん",
+      "translation": "phát hiện",
+      "q": "Cách đọc của '発見' là gì?",
+      "a": [
+        "はっけん",
+        "はつげん",
+        "はっぱ",
+        "はつばい"
+      ],
+      "c": 0,
+      "ex": "発見 (Phát Kiến) là phát hiện."
+    },
+    {
+      "word": "発明",
+      "romaji": "Hatsumei",
+      "translation": "Phát minh",
+      "q": "Chữ Hán của 'Hatsumei' (Phát minh) là gì?",
+      "a": [
+        "発見",
+        "発明",
+        "発表",
+        "発展"
+      ],
+      "c": 1,
+      "ex": "発明 (Phát Minh) là phát minh."
+    },
+    {
+      "word": "発表",
+      "romaji": "はっぴょう",
+      "translation": "trình bày, công bố",
+      "q": "Cách đọc của '発表' là gì?",
+      "a": [
+        "はっけん",
+        "はつめい",
+        "はっぴょう",
+        "はってん"
+      ],
+      "c": 2,
+      "ex": "発表 (Phát Biểu) là trình bày, công bố."
+    },
+    {
+      "word": "発展",
+      "romaji": "Hatten",
+      "translation": "Phát triển",
+      "q": "Chữ Hán của 'Hatten' (Phát triển) là gì?",
+      "a": [
+        "発見",
+        "発明",
+        "発表",
+        "発展"
+      ],
+      "c": 3,
+      "ex": "発展 (Phát Triển)."
+    },
+    {
+      "word": "成長",
+      "romaji": "せいちょう",
+      "translation": "trưởng thành, phát triển",
+      "q": "Cách đọc của '成長' là gì?",
+      "a": [
+        "せいちょう",
+        "せいこう",
+        "しっぱい",
+        "しんぽ"
+      ],
+      "c": 0,
+      "ex": "成長 (Thành Trưởng) là trưởng thành, phát triển."
+    },
+    {
+      "word": "成功",
+      "romaji": "Seikou",
+      "translation": "Thành công",
+      "q": "Chữ Hán của 'Seikou' (Thành công) là gì?",
+      "a": [
+        "成長",
+        "成功",
+        "失敗",
+        "進歩"
+      ],
+      "c": 1,
+      "ex": "成功 (Thành Công)."
+    },
+    {
+      "word": "失敗",
+      "romaji": "しっぱい",
+      "translation": "Thất Bại",
+      "q": "Cách đọc của '失敗' là gì?",
+      "a": [
+        "せいちょう",
+        "せいこう",
+        "しっぱい",
+        "しんぽ"
+      ],
+      "c": 2,
+      "ex": "失敗 (Thất Bại)."
+    },
+    {
+      "word": "進歩",
+      "romaji": "Shinpo",
+      "translation": "Tiến bộ",
+      "q": "Chữ Hán của 'Shinpo' (Tiến bộ) là gì?",
+      "a": [
+        "成長",
+        "成功",
+        "失敗",
+        "進歩"
+      ],
+      "c": 3,
+      "ex": "進歩 (Tiến Bộ)."
+    },
+    {
+      "word": "問題",
+      "romaji": "もんだい",
+      "translation": "vấn đề, câu hỏi",
+      "q": "Cách đọc của '問題' là gì?",
+      "a": [
+        "もんだい",
+        "しつもん",
+        "こたえ",
+        "かいとう"
+      ],
+      "c": 0,
+      "ex": "問題 (Vấn Đề) là vấn đề, câu hỏi."
+    },
+    {
+      "word": "解答",
+      "romaji": "Kaitou",
+      "translation": "Giải đáp",
+      "q": "Chữ Hán của 'Kaitou' (Giải đáp) là gì?",
+      "a": [
+        "問題",
+        "質問",
+        "答え",
+        "解答"
+      ],
+      "c": 3,
+      "ex": "解答 (Giải Đáp) là đáp án, giải đáp."
+    },
+    {
+      "word": "必要",
+      "romaji": "ひつよう",
+      "translation": "cần thiết",
+      "q": "Cách đọc của '必要' là gì?",
+      "a": [
+        "ひつよう",
+        "ひつぜん",
+        "ふくざつ",
+        "じゅうよう"
+      ],
+      "c": 0,
+      "ex": "必要 (Tất Yếu) là cần thiết."
+    },
+    {
+      "word": "重要",
+      "romaji": "Juuyou",
+      "translation": "Quan trọng",
+      "q": "Chữ Hán của 'Juuyou' (Quan trọng) là gì?",
+      "a": [
+        "必要",
+        "必然",
+        "複雑",
+        "重要"
+      ],
+      "c": 3,
+      "ex": "重要 (Trọng Yếu) là quan trọng."
+    },
+    {
+      "word": "特別",
+      "romaji": "とくべつ",
+      "translation": "đặc biệt",
+      "q": "Cách đọc của '特別' là gì?",
+      "a": [
+        "とくべつ",
+        "とくい",
+        "とっきゅう",
+        "とくちょう"
+      ],
+      "c": 0,
+      "ex": "特別 (Đặc Biệt) là đặc biệt."
+    },
+    {
+      "word": "得意",
+      "romaji": "Tokui",
+      "translation": "Sở trường",
+      "q": "Chữ Hán của 'Tokui' (Sở trường) là gì?",
+      "a": [
+        "特別",
+        "得意",
+        "特急",
+        "特徴"
+      ],
+      "c": 1,
+      "ex": "得意 (Đắc Ý) là sở trường, giỏi."
+    },
+    {
+      "word": "苦手",
+      "romaji": "にがて",
+      "translation": "điểm yếu, không giỏi",
+      "q": "Cách đọc của '苦手' là gì?",
+      "a": [
+        "とくい",
+        "にがて",
+        "へた",
+        "じょうず"
+      ],
+      "c": 1,
+      "ex": "苦手 (Khổ Thủ) là điểm yếu, không giỏi."
+    },
+    {
+      "word": "上手",
+      "romaji": "Jouzu",
+      "translation": "Giỏi",
+      "q": "Chữ Hán của 'Jouzu' (Giỏi) là gì?",
+      "a": [
+        "苦手",
+        "下手",
+        "上手",
+        "得意"
+      ],
+      "c": 2,
+      "ex": "上手 (Thượng Thủ) là giỏi, khéo léo."
+    },
+    {
+      "word": "下手",
+      "romaji": "へた",
+      "translation": "vụng về, kém",
+      "q": "Cách đọc của '下手' là gì?",
+      "a": [
+        "とくい",
+        "にがて",
+        "へた",
+        "じょうず"
+      ],
+      "c": 2,
+      "ex": "下手 (Hạ Thủ) là vụng về, kém."
+    },
+    {
+      "word": "好き",
+      "romaji": "Suki",
+      "translation": "Thích",
+      "q": "Chữ Hán của 'Suki' (Thích) là gì?",
+      "a": [
+        "嫌い",
+        "好き",
+        "大好き",
+        "嫌"
+      ],
+      "c": 1,
+      "ex": "好き (Hảo) là thích."
+    },
+    {
+      "word": "嫌い",
+      "romaji": "きらい",
+      "translation": "ghét",
+      "q": "Cách đọc của '嫌い' là gì?",
+      "a": [
+        "すき",
+        "きらい",
+        "だいすき",
+        "いや"
+      ],
+      "c": 1,
+      "ex": "嫌い (Hiềm) là ghét."
+    },
+    {
+      "word": "簡単",
+      "romaji": "Kantan",
+      "translation": "Đơn giản",
+      "q": "Chữ Hán của 'Kantan' (Đơn giản) là gì?",
+      "a": [
+        "複雑",
+        "簡単",
+        "困難",
+        "面倒"
+      ],
+      "c": 1,
+      "ex": "簡単 (Giản Đơn) là đơn giản."
+    },
+    {
+      "word": "困難",
+      "romaji": "こんなん",
+      "translation": "khó khăn",
+      "q": "Cách đọc của '困難' là gì?",
+      "a": [
+        "かんたん",
+        "ふくざつ",
+        "こんなん",
+        "めんどう"
+      ],
+      "c": 2,
+      "ex": "困難 (Khốn Nan) là khó khăn."
+    },
+    {
+      "word": "面倒",
+      "romaji": "Mendou",
+      "translation": "Rắc rối",
+      "q": "Chữ Hán của 'Mendou' (Rắc rối) là gì?",
+      "a": [
+        "簡単",
+        "複雑",
+        "困難",
+        "面倒"
+      ],
+      "c": 3,
+      "ex": "面倒 (Diện Đảo) là phiền phức, rắc rối."
+    },
+    {
+      "word": "便利",
+      "romaji": "べんり",
+      "translation": "tiện lợi",
+      "q": "Cách đọc của '便利' là gì?",
+      "a": [
+        "ふべん",
+        "べんり",
+        "べんきょう",
+        "りべん"
+      ],
+      "c": 1,
+      "ex": "便利 (Tiện Lợi) là tiện lợi."
+    },
+    {
+      "word": "不便",
+      "romaji": "Fuben",
+      "translation": "Bất tiện",
+      "q": "Chữ Hán của 'Fuben' (Bất tiện) là gì?",
+      "a": [
+        "便利",
+        "不便",
+        "不満",
+        "不安"
+      ],
+      "c": 1,
+      "ex": "不便 (Bất Tiện) là bất tiện."
+    },
+    {
+      "word": "不安",
+      "romaji": "ふあん",
+      "translation": "lo lắng, bất an",
+      "q": "Cách đọc của '不安' là gì?",
+      "a": [
+        "ふまん",
+        "ふあん",
+        "ふべん",
+        "ふかのう"
+      ],
+      "c": 1,
+      "ex": "不安 (Bất An) là lo lắng, bất an."
+    },
+    {
+      "word": "不満",
+      "romaji": "Fuman",
+      "translation": "Bất mãn",
+      "q": "Chữ Hán của 'Fuman' (Bất mãn) là gì?",
+      "a": [
+        "便利",
+        "不便",
+        "不満",
+        "不安"
+      ],
+      "c": 2,
+      "ex": "不満 (Bất Mãn) là bất mãn, không hài lòng."
+    },
+    {
+      "word": "安心",
+      "romaji": "あんしん",
+      "translation": "yên tâm",
+      "q": "Cách đọc của '安心' là gì?",
+      "a": [
+        "あんしん",
+        "あんぜん",
+        "しんぱい",
+        "あんい"
+      ],
+      "c": 0,
+      "ex": "安心 (An Tâm) là yên tâm."
+    },
+    {
+      "word": "安全",
+      "romaji": "Anzen",
+      "translation": "An toàn",
+      "q": "Chữ Hán của 'Anzen' (An toàn) là gì?",
+      "a": [
+        "安心",
+        "安全",
+        "心配",
+        "安易"
+      ],
+      "c": 1,
+      "ex": "安全 (An Toàn) là an toàn."
+    },
+    {
+      "word": "心配",
+      "romaji": "しんぱい",
+      "translation": "lo lắng",
+      "q": "Cách đọc của '心配' là gì?",
+      "a": [
+        "あんしん",
+        "あんぜん",
+        "しんぱい",
+        "あんい"
+      ],
+      "c": 2,
+      "ex": "心配 (Tâm Phối) là lo lắng."
+    },
+    {
+      "word": "将来",
+      "romaji": "Shourai",
+      "translation": "Tương lai",
+      "q": "Chữ Hán của 'Shourai' (Tương lai) là gì?",
+      "a": [
+        "将来",
+        "過去",
+        "現在",
+        "未来"
+      ],
+      "c": 0,
+      "ex": "将来 (Tương Lai) là tương lai (gần)."
+    },
+    {
+      "word": "過去",
+      "romaji": "かこ",
+      "translation": "quá khứ",
+      "q": "Cách đọc của '過去' là gì?",
+      "a": [
+        "しょうらい",
+        "かこ",
+        "げんざい",
+        "みらい"
+      ],
+      "c": 1,
+      "ex": "過去 (Quá Khứ) là quá khứ."
+    },
+    {
+      "word": "現在",
+      "romaji": "Genzai",
+      "translation": "Hiện tại",
+      "q": "Chữ Hán của 'Genzai' (Hiện tại) là gì?",
+      "a": [
+        "将来",
+        "過去",
+        "現在",
+        "未来"
+      ],
+      "c": 2,
+      "ex": "現在 (Hiện Tại) là hiện tại."
+    },
+    {
+      "word": "未来",
+      "romaji": "みらい",
+      "translation": "tương lai (xa)",
+      "q": "Cách đọc của '未来' là gì?",
+      "a": [
+        "しょうらい",
+        "かこ",
+        "げんざい",
+        "みらい"
+      ],
+      "c": 3,
+      "ex": "未来 (Vị Lai) là tương lai (xa)."
+    },
+    {
+      "word": "自然",
+      "romaji": "Shizen",
+      "translation": "Tự nhiên",
+      "q": "Chữ Hán của 'Shizen' (Tự nhiên) là gì?",
+      "a": [
+        "人工",
+        "自然",
+        "環境",
+        "気候"
+      ],
+      "c": 1,
+      "ex": "自然 (Tự Nhiên)."
+    },
+    {
+      "word": "環境",
+      "romaji": "かんきょう",
+      "translation": "Hoàn Cảnh/Môi Trường",
+      "q": "Cách đọc của '環境' là gì?",
+      "a": [
+        "じんこう",
+        "しぜん",
+        "かんきょう",
+        "きこう"
+      ],
+      "c": 2,
+      "ex": "環境 (Hoàn Cảnh/Môi Trường)."
+    },
+    {
+      "word": "気候",
+      "romaji": "Kikou",
+      "translation": "Khí hậu",
+      "q": "Chữ Hán của 'Kikou' (Khí hậu) là gì?",
+      "a": [
+        "自然",
+        "環境",
+        "気候",
+        "天気"
+      ],
+      "c": 2,
+      "ex": "気候 (Khí Hậu) là khí hậu."
+    },
+    {
+      "word": "天気",
+      "romaji": "てんき",
+      "translation": "thời tiết",
+      "q": "Cách đọc của '天気' là gì?",
+      "a": [
+        "きこう",
+        "てんき",
+        "てんたい",
+        "きせつ"
+      ],
+      "c": 1,
+      "ex": "天気 (Thiên Khí) là thời tiết."
+    },
+    {
+      "word": "季節",
+      "romaji": "Kisetsu",
+      "translation": "Mùa",
+      "q": "Chữ Hán của 'Kisetsu' (Mùa) là gì?",
+      "a": [
+        "天気",
+        "気候",
+        "季節",
+        "時期"
+      ],
+      "c": 2,
+      "ex": "季節 (Quý Tiết) là mùa."
+    },
+    {
+      "word": "春",
+      "romaji": "はる",
+      "translation": "mùa xuân",
+      "q": "Cách đọc của '春' là gì?",
+      "a": [
+        "なつ",
+        "あき",
+        "ふゆ",
+        "はる"
+      ],
+      "c": 3,
+      "ex": "春 (Xuân) là mùa xuân."
+    },
+    {
+      "word": "夏",
+      "romaji": "Natsu",
+      "translation": "Mùa hè",
+      "q": "Chữ Hán của 'Natsu' (Mùa hè) là gì?",
+      "a": [
+        "春",
+        "夏",
+        "秋",
+        "冬"
+      ],
+      "c": 1,
+      "ex": "夏 (Hạ) là mùa hè."
+    },
+    {
+      "word": "秋",
+      "romaji": "あき",
+      "translation": "mùa thu",
+      "q": "Cách đọc của '秋' là gì?",
+      "a": [
+        "はる",
+        "なつ",
+        "あき",
+        "ふゆ"
+      ],
+      "c": 2,
+      "ex": "秋 (Thu) là mùa thu."
+    },
+    {
+      "word": "冬",
+      "romaji": "Fuyu",
+      "translation": "Mùa đông",
+      "q": "Chữ Hán của 'Fuyu' (Mùa đông) là gì?",
+      "a": [
+        "春",
+        "夏",
+        "秋",
+        "冬"
+      ],
+      "c": 3,
+      "ex": "冬 (Đông) là mùa đông."
+    },
+    {
+      "word": "動物",
+      "romaji": "どうぶつ",
+      "translation": "động vật",
+      "q": "Cách đọc của '動物' là gì?",
+      "a": [
+        "どうぶつ",
+        "しょくぶつ",
+        "こんちゅう",
+        "きんぎょ"
+      ],
+      "c": 0,
+      "ex": "動物 (Động Vật) là động vật."
+    },
+    {
+      "word": "植物",
+      "romaji": "Shokubutsu",
+      "translation": "Thực vật",
+      "q": "Chữ Hán của 'Shokubutsu' (Thực vật) là gì?",
+      "a": [
+        "動物",
+        "植物",
+        "昆虫",
+        "花"
+      ],
+      "c": 1,
+      "ex": "植物 (Thực Vật) là thực vật."
+    },
+    {
+      "word": "犬",
+      "romaji": "いぬ",
+      "translation": "chó",
+      "q": "Cách đọc của '犬' là gì?",
+      "a": [
+        "ねこ",
+        "いぬ",
+        "うま",
+        "とり"
+      ],
+      "c": 1,
+      "ex": "犬 (Khuyển) là chó."
+    },
+    {
+      "word": "猫",
+      "romaji": "Neko",
+      "translation": "Mèo",
+      "q": "Chữ Hán của 'Neko' (Mèo) là gì?",
+      "a": [
+        "犬",
+        "猫",
+        "馬",
+        "牛"
+      ],
+      "c": 1,
+      "ex": "猫 (Miêu) là mèo."
+    },
+    {
+      "word": "馬",
+      "romaji": "うま",
+      "translation": "con ngựa",
+      "q": "Cách đọc của '馬' là gì?",
+      "a": [
+        "いぬ",
+        "ねこ",
+        "うま",
+        "うし"
+      ],
+      "c": 2,
+      "ex": "馬 (Mã) là con ngựa."
+    },
+    {
+      "word": "牛",
+      "romaji": "Ushi",
+      "translation": "Bò",
+      "q": "Chữ Hán của 'Ushi' (Bò) là gì?",
+      "a": [
+        "犬",
+        "猫",
+        "馬",
+        "牛"
+      ],
+      "c": 3,
+      "ex": "牛 (Ngưu) là bò."
+    },
+    {
+      "word": "鳥",
+      "romaji": "とり",
+      "translation": "chim",
+      "q": "Cách đọc của '鳥' là gì?",
+      "a": [
+        "さかな",
+        "とり",
+        "むし",
+        "うま"
+      ],
+      "c": 1,
+      "ex": "鳥 (Điểu) là chim."
+    },
+    {
+      "word": "魚",
+      "romaji": "Sakana",
+      "translation": "Cá - con vật",
+      "q": "Chữ Hán của 'Sakana' (Cá - con vật) là gì?",
+      "a": [
+        "鳥",
+        "虫",
+        "魚",
+        "馬"
+      ],
+      "c": 2,
+      "ex": "魚 (Ngư) là cá."
+    },
+    {
+      "word": "色",
+      "romaji": "いろ",
+      "translation": "màu sắc",
+      "q": "Cách đọc của '色' là gì?",
+      "a": [
+        "かたち",
+        "いろ",
+        "おおきさ",
+        "かず"
+      ],
+      "c": 1,
+      "ex": "色 (Sắc) là màu sắc."
+    },
+    {
+      "word": "形",
+      "romaji": "Katachi",
+      "translation": "Hình dạng",
+      "q": "Chữ Hán của 'Katachi' (Hình dạng) là gì?",
+      "a": [
+        "色",
+        "形",
+        "大きさ",
+        "数"
+      ],
+      "c": 1,
+      "ex": "形 (Hình) là hình dạng."
+    },
+    {
+      "word": "数",
+      "romaji": "かず",
+      "translation": "con số, số lượng",
+      "q": "Cách đọc của '数' là gì?",
+      "a": [
+        "いろ",
+        "かたち",
+        "おおきさ",
+        "かず"
+      ],
+      "c": 3,
+      "ex": "数 (Số) là con số, số lượng."
+    },
+    {
+      "word": "大きさ",
+      "romaji": "Ookisa",
+      "translation": "Kích thước",
+      "q": "Chữ Hán của 'Ookisa' (Kích thước) là gì?",
+      "a": [
+        "色",
+        "形",
+        "大きさ",
+        "数"
+      ],
+      "c": 2,
+      "ex": "大きさ (Đại) là kích thước, độ lớn."
+    },
+    {
+      "word": "両方",
+      "romaji": "りょうほう",
+      "translation": "cả hai",
+      "q": "Cách đọc của '両方' là gì?",
+      "a": [
+        "りょうほう",
+        "どちらも",
+        "どちらか",
+        "かたほう"
+      ],
+      "c": 0,
+      "ex": "両方 (Lưỡng Phương) là cả hai."
+    },
+    {
+      "word": "片方",
+      "romaji": "Katahoo",
+      "translation": "Một trong hai",
+      "q": "Chữ Hán của 'Katahoo' (Một trong hai) là gì?",
+      "a": [
+        "両方",
+        "片方",
+        "どちらも",
+        "どちらか"
+      ],
+      "c": 1,
+      "ex": "片方 (Phiến Phương) là một bên, một phía."
+    },
+    {
+      "word": "全部",
+      "romaji": "ぜんぶ",
+      "translation": "tất cả, toàn bộ",
+      "q": "Cách đọc của '全部' là gì?",
+      "a": [
+        "いちぶ",
+        "ぜんぶ",
+        "おおかた",
+        "ほんの"
+      ],
+      "c": 1,
+      "ex": "全部 (Toàn Bộ) là tất cả, toàn bộ."
+    },
+    {
+      "word": "一部",
+      "romaji": "Ichibu",
+      "translation": "Một phần",
+      "q": "Chữ Hán của 'Ichibu' (Một phần) là gì?",
+      "a": [
+        "全部",
+        "一部",
+        "大体",
+        "全体"
+      ],
+      "c": 1,
+      "ex": "一部 (Nhất Bộ) là một phần."
+    },
+    {
+      "word": "全体",
+      "romaji": "ぜんたい",
+      "translation": "toàn thể, toàn bộ",
+      "q": "Cách đọc của '全体' là gì?",
+      "a": [
+        "いちぶ",
+        "ぜんぶ",
+        "ぜんたい",
+        "おおかた"
+      ],
+      "c": 2,
+      "ex": "全体 (Toàn Thể) là toàn thể, toàn bộ."
+    },
+    {
+      "word": "大方",
+      "romaji": "Okata",
+      "translation": "Phần lớn",
+      "q": "Chữ Hán của 'Okata' (Phần lớn) là gì?",
+      "a": [
+        "全部",
+        "一部",
+        "大体",
+        "大方"
+      ],
+      "c": 3,
+      "ex": "大方 (Đại Phương) là phần lớn, hầu hết."
+    },
+    {
+      "word": "大体",
+      "romaji": "だいたい",
+      "translation": "nhìn chung, đại thể",
+      "q": "Cách đọc của '大体' là gì?",
+      "a": [
+        "いちぶ",
+        "ぜんぶ",
+        "ぜんたい",
+        "だいたい"
+      ],
+      "c": 3,
+      "ex": "大体 (Đại Thể) là nhìn chung, đại thể."
+    },
+    {
+      "word": "将来",
+      "romaji": "Shourai",
+      "translation": "Tương lai - dùng khác",
+      "q": "Chữ Hán của 'Shourai' (Tương lai - dùng khác) là gì?",
+      "a": [
+        "未来",
+        "将来",
+        "現在",
+        "過去"
+      ],
+      "c": 1,
+      "ex": "将来 (Tương Lai) chỉ tương lai dự định."
+    },
+    {
+      "word": "空気",
+      "romaji": "くうき",
+      "translation": "không khí",
+      "q": "Cách đọc của '空気' là gì?",
+      "a": [
+        "そらき",
+        "くうき",
+        "からき",
+        "そらいき"
+      ],
+      "c": 1,
+      "ex": "空気 (Không Khí) là không khí."
+    },
+    {
+      "word": "水",
+      "romaji": "Mizu",
+      "translation": "Nước - khác",
+      "q": "Chữ Hán của 'Mizu' (Nước - khác) là gì?",
+      "a": [
+        "火",
+        "水",
+        "土",
+        "金"
+      ],
+      "c": 1,
+      "ex": "水 (Thủy) là nước."
+    },
+    {
+      "word": "地震",
+      "romaji": "じしん",
+      "translation": "động đất",
+      "q": "Cách đọc của '地震' là gì?",
+      "a": [
+        "じしん",
+        "ちしん",
+        "じじん",
+        "ちじん"
+      ],
+      "c": 0,
+      "ex": "地震 (Địa Chấn) là động đất."
+    },
+    {
+      "word": "台風",
+      "romaji": "Taifuu",
+      "translation": "Bão",
+      "q": "Chữ Hán của 'Taifuu' (Bão) là gì?",
+      "a": [
+        "地震",
+        "台風",
+        "大雨",
+        "洪水"
+      ],
+      "c": 1,
+      "ex": "台風 (Đài Phong) là bão."
+    },
+    {
+      "word": "洪水",
+      "romaji": "こうずい",
+      "translation": "lũ lụt",
+      "q": "Cách đọc của '洪水' là gì?",
+      "a": [
+        "じしん",
+        "たいふう",
+        "こうずい",
+        "おおあめ"
+      ],
+      "c": 2,
+      "ex": "洪水 (Hồng Thủy) là lũ lụt."
+    },
+    {
+      "word": "韓国",
+      "romaji": "Kankoku",
+      "translation": "Hàn Quốc",
+      "q": "Chữ Hán của 'Kankoku' (Hàn Quốc) là gì?",
+      "a": [
+        "中国",
+        "韓国",
+        "日本",
+        "外国"
+      ],
+      "c": 1,
+      "ex": "韓国 (Hàn Quốc)."
+    },
+    {
+      "word": "日本語",
+      "romaji": "にほんご",
+      "translation": "tiếng Nhật",
+      "q": "Cách đọc của '日本語' là gì?",
+      "a": [
+        "にほんご",
+        "にほんぐ",
+        "にっぽんご",
+        "じゃぱんご"
+      ],
+      "c": 0,
+      "ex": "日本語 (Nhật Bản Ngữ) là tiếng Nhật."
+    },
+    {
+      "word": "英語",
+      "romaji": "Eigo",
+      "translation": "Tiếng Anh",
+      "q": "Chữ Hán của 'Eigo' (Tiếng Anh) là gì?",
+      "a": [
+        "日本語",
+        "英語",
+        "中国語",
+        "韓国語"
+      ],
+      "c": 1,
+      "ex": "英語 (Anh Ngữ) là tiếng Anh."
+    },
+    {
+      "word": "外来語",
+      "romaji": "がいらいご",
+      "translation": "từ mượn",
+      "q": "Cách đọc của '外来語' là gì?",
+      "a": [
+        "がいらいご",
+        "がいこくご",
+        "にほんご",
+        "かんごご"
+      ],
+      "c": 0,
+      "ex": "外来語 (Ngoại Lai Ngữ) là từ mượn."
+    },
+    {
+      "word": "漢字",
+      "romaji": "Kanji",
+      "translation": "Chữ Hán",
+      "q": "Chữ Hán của 'Kanji' (Chữ Hán) là gì?",
+      "a": [
+        "漢字",
+        "平仮名",
+        "片仮名",
+        "ローマ字"
+      ],
+      "c": 0,
+      "ex": "漢字 (Hán Tự)."
+    },
+    {
+      "word": "辞書",
+      "romaji": "じしょ",
+      "translation": "từ điển",
+      "q": "Cách đọc của '辞書' là gì?",
+      "a": [
+        "じしょ",
+        "じてん",
+        "きょうかしょ",
+        "ノート"
+      ],
+      "c": 0,
+      "ex": "辞書 (Từ Thư) là từ điển."
+    },
+    {
+      "word": "辞典",
+      "romaji": "Jiten",
+      "translation": "Từ điển - khác",
+      "q": "Chữ Hán của 'Jiten' (Từ điển - khác) là gì?",
+      "a": [
+        "辞書",
+        "辞典",
+        "教科書",
+        "ノート"
+      ],
+      "c": 1,
+      "ex": "辞典 (Từ Điển) là từ điển."
+    },
+    {
+      "word": "教科書",
+      "romaji": "きょうかしょ",
+      "translation": "sách giáo khoa",
+      "q": "Cách đọc của '教科書' là gì?",
+      "a": [
+        "じしょ",
+        "じてん",
+        "きょうかしょ",
+        "ノート"
+      ],
+      "c": 2,
+      "ex": "教科書 (Giáo Khoa Thư) là sách giáo khoa."
+    },
+    {
+      "word": "クラス",
+      "romaji": "Kurasu",
+      "translation": "Lớp học",
+      "q": "Chữ Hán của 'Kurasu' (Lớp học) là gì?",
+      "a": [
+        "授業",
+        "教室",
+        "クラス",
+        "学年"
+      ],
+      "c": 2,
+      "ex": "クラス (Class) là lớp học."
+    }
+  ]
+}

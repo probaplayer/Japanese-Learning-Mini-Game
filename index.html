@@ -116,124 +116,26 @@
     </div>
   </div>
 
-  <!-- DATA MANAGEMENT -->
+  <!-- QUESTION SETS -->
   <div id="screen-data" class="screen screen-data">
     <div class="panel">
-      <h2 class="panel-title">📦 DATA MANAGEMENT</h2>
+      <h2 class="panel-title">📦 QUESTION SETS</h2>
       <div class="form-group">
-        <label>Question set</label>
+        <label>Choose a question set</label>
         <div class="btn-row">
           <select id="question-set-selector" onchange="switchQuestionSet(this.value)"></select>
-          <button class="action-btn btn-secondary" onclick="promptCreateQuestionSet()">+ NEW</button>
-          <button class="action-btn btn-secondary" onclick="promptRenameQuestionSet()">✏️ RENAME</button>
-          <button class="action-btn btn-danger" onclick="deleteActiveQuestionSet()">🗑 DELETE</button>
-          <button class="action-btn" id="btn-backup" onclick="backupQuestionSet()">☁️ BACKUP</button>
-          <button class="action-btn btn-secondary hidden" id="btn-firebase-sets" onclick="showFirebaseSetsModal()">📂 FIREBASE SETS</button>
         </div>
       </div>
       <div class="form-group">
-        <label>Active set: <span id="active-set-name">Default Set</span></label>
+        <label>Active set: <span id="active-set-name">-</span></label>
       </div>
       <div class="form-group">
-        <label>Press IMPORT to paste question JSON in the modal.</label>
+        <label>Questions in this set: <span id="current-count">0</span></label>
       </div>
-      <div class="btn-row">
-        <button class="action-btn" onclick="openImportModal()">✅ IMPORT</button>
-        <button class="action-btn btn-danger" onclick="clearData()">🗑 CLEAR SET</button>
-        <button class="action-btn btn-secondary" onclick="loadSampleData()">📚 SAMPLE DATA</button>
-        <button class="action-btn btn-secondary" onclick="exportData()">📤 EXPORT</button>
-      </div>
-      <div class="firebase-config-section">
-        <button type="button" class="toggle-config-btn" onclick="toggleFirebaseConfig()">🔧 FIREBASE CONFIG</button>
-        <div id="firebase-config-panel" class="firebase-config-panel hidden">
-          <div class="firebase-config-group">
-            <div class="form-group">
-              <label for="firebase-project-id">Project ID *</label>
-              <input id="firebase-project-id" type="text" placeholder="my-project-123" />
-            </div>
-            <div class="form-group">
-              <label for="firebase-bucket">Storage Bucket *</label>
-              <input id="firebase-bucket" type="text" placeholder="my-project-123.appspot.com" />
-            </div>
-          </div>
-          <div class="firebase-config-group">
-            <div class="form-group">
-              <label for="firebase-api-key">API Key</label>
-              <input id="firebase-api-key" type="text" placeholder="AIzaSy..." />
-            </div>
-            <div class="form-group">
-              <label for="firebase-auth-domain">Auth Domain</label>
-              <input id="firebase-auth-domain" type="text" placeholder="my-project.firebaseapp.com" />
-            </div>
-          </div>
-          <div class="firebase-config-group">
-            <div class="form-group">
-              <label for="firebase-messaging-sender-id">Messaging Sender ID</label>
-              <input id="firebase-messaging-sender-id" type="text" placeholder="123456789" />
-            </div>
-            <div class="form-group">
-              <label for="firebase-app-id">App ID</label>
-              <input id="firebase-app-id" type="text" placeholder="1:123456789:web:abc123..." />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="firebase-measurement-id">Measurement ID</label>
-            <input id="firebase-measurement-id" type="text" placeholder="G-XXXXXXXXXX" />
-          </div>
-          <div class="btn-row">
-            <button class="action-btn" onclick="saveFirebaseConfig()">💾 SAVE CONFIG</button>
-            <button class="action-btn btn-secondary" onclick="testFirebaseConnection()">🧪 TEST</button>
-          </div>
-        </div>
-      </div>
-      <div class="import-section">
-        <label>☁️ IMPORT</label>
-        <div class="import-toggle">
-          <input type="radio" id="import-url" name="import-mode" value="url" checked onchange="toggleImportMode()" />
-          <label for="import-url">URL</label>
-          <input type="radio" id="import-id" name="import-mode" value="id" onchange="toggleImportMode()" />
-          <label for="import-id">ID</label>
-        </div>
-        <div class="btn-row">
-          <input id="import-url-input" type="text" class="import-input" placeholder="Paste JSON URL here..." />
-          <button class="action-btn" onclick="handleGetButton()">GET</button>
-        </div>
-      </div>
-      <div id="data-status" class="status-msg"></div>
       <div class="form-group">
-        <label for="question-search">Search questions</label>
-        <input id="question-search" type="text" placeholder="Search by word, question, romaji, or translation" oninput="updateQuestionSearch()" />
-      </div>
-      <div class="current-data">
-        <h3>Current items: <span id="current-count">0</span></h3>
-        <div id="question-list" class="question-list"></div>
+        <label>Question sets are authored by Claude through the MCP server in mcp-server/ — see README.md.</label>
       </div>
       <button class="back-btn" onclick="showScreen('screen-menu')">◀ BACK TO MENU</button>
-    </div>
-  </div>
-
-  <!-- IMPORT MODAL -->
-  <div id="import-modal" class="modal-overlay hidden" onclick="if (event.target === this) closeImportModal()">
-    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="import-modal-title">
-      <h3 id="import-modal-title" class="modal-title">📥 IMPORT DATA</h3>
-      <textarea id="import-textarea" class="modal-textarea" placeholder='[{"word":"学生","q":"What's the reading?","a":["がくせい","がくぜい","がっせい","かくせい"],"c":0,"romaji":"gakusei","translation":"Student","ex":"Student"}]'></textarea>
-      <div class="modal-buttons">
-        <button class="action-btn btn-secondary" onclick="closeImportModal()">Cancel</button>
-        <button id="modal-replace-btn" class="action-btn" onclick="applyImportReplace()">Replace</button>
-        <button id="modal-append-btn" class="action-btn btn-green" onclick="applyImportAppend()">Append</button>
-        <button id="modal-edit-btn" class="action-btn btn-green hidden" onclick="applyEditQuestion()">Edit</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- FIREBASE SETS MODAL -->
-  <div id="firebase-sets-modal" class="modal-overlay hidden" onclick="if (event.target === this) closeFirebaseSetsModal()">
-    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="firebase-sets-modal-title">
-      <h3 id="firebase-sets-modal-title" class="modal-title">☁️ FIREBASE SETS</h3>
-      <div id="firebase-sets-list" class="firebase-sets-list"></div>
-      <div class="modal-buttons">
-        <button class="action-btn btn-secondary" onclick="closeFirebaseSetsModal()">Close</button>
-      </div>
     </div>
   </div>
 
@@ -743,21 +645,15 @@
   <!-- TOAST NOTIFICATION -->
   <div id="toast" class="toast hidden"></div>
 
-  <!-- Firebase SDK -->
-  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
   <!-- 3rd party libs -->
   <script src="lib/wanakana.min.js"></script>
   <script src="lib/kanji-canvas.min.js"></script>
   <script src="lib/ref-patterns.js"></script>
   <!-- Core modules -->
-  <script src="js/firebase-config.js"></script>
-  <script src="js/data.js"></script>
   <script src="js/main.js"></script>
   <script src="js/game-utils.js"></script>
   <script src="js/storage.js"></script>
   <script src="js/settings.js"></script>
-  <script src="js/data-manager.js"></script>
   <!-- Game modules -->
   <script src="js/games/game-listen.js"></script>
   <script src="js/games/game-quiz.js"></script>

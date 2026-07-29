@@ -52,7 +52,6 @@ function createContext() {
   const elements = {};
   const context = {
     console,
-    SAMPLE_DATA: [],
     Date,
     Math,
     Number,
@@ -99,12 +98,8 @@ function createContext() {
       },
       body: createElement('body')
     },
-    loadFirebaseConfig() { return null; },
-    initializeFirebase() {},
-    showFirebaseSetsButton() {},
     renderSettingsScreen() {},
     refreshQuestionSetUI() {},
-    refreshDataPreview() {},
     renderStatsScreen() {},
     startListen() {},
     startFlash() {},

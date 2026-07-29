@@ -24,8 +24,7 @@ const context = {
       return null;
     },
     setItem() {}
-  },
-  SAMPLE_DATA: []
+  }
 };
 
 vm.createContext(context);

@@ -17,7 +17,6 @@ function createContext(randomValues = []) {
   const context = {
     console,
     Math: math,
-    SAMPLE_DATA: [],
     document: {
       addEventListener() {}
     }

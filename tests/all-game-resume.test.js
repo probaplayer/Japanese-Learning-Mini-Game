@@ -78,7 +78,6 @@ function createContext() {
   const elements = {};
   const context = {
     console,
-    SAMPLE_DATA: [],
     Date,
     Math,
     Number,
@@ -154,12 +153,8 @@ function createContext() {
     Audio() {
       return { play() { return Promise.resolve(); } };
     },
-    loadFirebaseConfig() { return null; },
-    initializeFirebase() {},
-    showFirebaseSetsButton() {},
     renderSettingsScreen() {},
     refreshQuestionSetUI() {},
-    refreshDataPreview() {},
     renderStatsScreen() {},
     speakJapanese() {},
     showToast() {},

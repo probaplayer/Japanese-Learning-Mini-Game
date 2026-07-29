@@ -123,7 +123,6 @@ function showScreen(id) {
   }
   if (id === 'screen-data') {
     refreshQuestionSetUI();
-    refreshDataPreview();
   }
   if (id === 'screen-menu') updateMenuUI();
   if (id === 'screen-settings') renderSettingsScreen();

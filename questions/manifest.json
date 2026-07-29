@@ -6,6 +6,13 @@
       "name": "N5 Core Vocabulary",
       "questionCount": 400,
       "updatedAt": "2026-07-28T08:59:46.370Z"
+    },
+    {
+      "id": "n4-kanji",
+      "file": "n4-kanji.json",
+      "name": "Kanji N4",
+      "questionCount": 300,
+      "updatedAt": "2026-07-29T03:15:05.163Z"
     }
   ]
 }

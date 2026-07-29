@@ -25,13 +25,11 @@
 - **Per-game settings override** — customize difficulty per game mode
 - **Progress tracking** — HP, EXP, Level, Combo system persisted in localStorage
 
-### 📦 Data Management
+### 📦 Question Sets
 
-- Import/Export question sets as JSON
-- Multiple question sets support (create, rename, delete, switch)
-- Search & preview questions
-- Built-in sample data (Vietnamese → Japanese)
-- Bulk replace or append import modes
+- Question sets live as JSON files in `questions/`, listed in `questions/manifest.json`
+- The game only ever *reads* these files (via `fetch`) and lets you switch between them — no in-browser editing
+- Sets are authored, edited, and published through the MCP server in `mcp-server/` (see below)
 
 ### ⚙️ Customizable Settings
 
@@ -61,15 +59,16 @@ Then visit `http://localhost:8000`
 
 ```
 index.html          ← Single-page app, all screens
-style.css           ← Retro arcade theme (1190 lines)
+style.css           ← Retro arcade theme
 main.js             ← Core: state, navigation, storage, utilities
-data.js             ← Sample question data
+questions/          ← Question set data (manifest.json + one JSON file per set)
 game-quiz.js        ← Multiple choice quiz
 game-listen.js      ← TTS-based listening quiz
 game-flash.js       ← Flashcard game
 game-match.js       ← Match pairs game
 game-type.js        ← Falling words typing game
 lib/wanakana.min.js ← Japanese input library
+mcp-server/         ← MCP server for authoring/publishing question sets
 ```
 
 ## 📝 Question Data Format
@@ -111,10 +110,22 @@ lib/wanakana.min.js ← Japanese input library
 
 ## 📖 Adding Your Own Questions
 
-1. Open the app → **DATA MANAGEMENT**
-2. Click **IMPORT** and paste your JSON array
-3. Choose **Replace** or **Append**
-4. Or load **SAMPLE DATA** to get started
+Questions are authored through the MCP server in `mcp-server/`, connected to Claude Desktop:
+
+1. Install dependencies once: `cd mcp-server && npm install`
+2. Add this repo's MCP server to your Claude Desktop config (`claude_desktop_config.json`):
+   ```json
+   {
+     "mcpServers": {
+       "japanese-quest-questions": {
+         "command": "node",
+         "args": ["/absolute/path/to/mcp-server/src/index.js"]
+       }
+     }
+   }
+   ```
+3. Restart Claude Desktop, then ask Claude to create/edit question sets — it has tools to list, create, and delete sets, and to add, update, or delete individual questions.
+4. Ask Claude to **publish** when you're ready — it commits the changes under `questions/` and pushes to `main`, which GitHub Pages redeploys automatically.
 
 ## 🛠️ Tech Stack
 
@@ -123,7 +134,7 @@ lib/wanakana.min.js ← Japanese input library
 - **Vanilla JavaScript** — No frameworks, no bundlers
 - **Web Speech API** — Text-to-Speech for listening quiz
 - **WanaKana** — Japanese input/romanization library
-- **localStorage** — Persistent player data & settings
+- **localStorage** — Persistent player data & settings (question sets themselves live in `questions/`, not localStorage)
 
 ## 📄 License
 

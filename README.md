@@ -110,22 +110,62 @@ mcp-server/               ← MCP server for authoring/publishing question sets
 
 ## 📖 Adding Your Own Questions
 
-Questions are authored through the MCP server in `mcp-server/`, connected to Claude Desktop:
+Questions are authored through the MCP server in `mcp-server/`, connected to Claude Desktop.
 
-1. Install dependencies once: `cd mcp-server && npm install`
-2. Add this repo's MCP server to your Claude Desktop config (`claude_desktop_config.json`):
-   ```json
-   {
-     "mcpServers": {
-       "japanese-quest-questions": {
-         "command": "node",
-         "args": ["/absolute/path/to/mcp-server/src/index.js"]
-       }
-     }
-   }
-   ```
-3. Restart Claude Desktop, then ask Claude to create/edit question sets — it has tools to list, create, and delete sets, and to add, update, or delete individual questions.
-4. Ask Claude to **publish** when you're ready — it commits the changes under `questions/` and pushes to `main`, which GitHub Pages redeploys automatically.
+### 1. Install dependencies
+
+```bash
+cd mcp-server
+npm install
+```
+
+### 2. Locate your Claude Desktop config file
+
+| OS | Path |
+|----|------|
+| Windows | `%APPDATA%\Claude\claude_desktop_config.json` |
+| Windows (Microsoft Store build) | `%LOCALAPPDATA%\Packages\<Claude package folder>\LocalCache\Roaming\Claude\claude_desktop_config.json` |
+| macOS | `~/Library/Application Support/Claude/claude_desktop_config.json` |
+| Linux | `~/.config/Claude/claude_desktop_config.json` |
+
+If the file/folder doesn't exist yet, create it — Claude Desktop reads it on startup.
+
+### 3. Add this repo's MCP server
+
+Add a `japanese-quest-questions` entry under `mcpServers`. If the file already has other servers configured, only add this key — don't overwrite the rest of the file.
+
+```json
+{
+  "mcpServers": {
+    "japanese-quest-questions": {
+      "command": "node",
+      "args": ["/absolute/path/to/mcp-server/src/index.js"]
+    }
+  }
+}
+```
+
+Use forward slashes (`/`) in the path even on Windows — no escaping needed. `command` must be a `node` binary reachable from Claude Desktop (an absolute path to `node.exe`/`node` also works if `node` isn't on PATH for that process).
+
+### 4. Restart Claude Desktop fully
+
+Quit the app completely (from the system tray/menu bar, not just closing the window) and relaunch — config changes are only read on startup.
+
+### 5. Verify the connection
+
+- Check **Settings → Developer** (or **Extensions/Connectors**, depending on version) — `japanese-quest-questions` should be listed as connected.
+- Or start a **new** chat and ask Claude to list question sets — it should call the `list_question_sets` tool.
+- If it's not showing up, check the per-server log Claude Desktop writes (e.g. `.../logs/mcp-server-japanese-quest-questions.log` next to the config file) for the actual startup error.
+
+### 6. Author and publish
+
+Ask Claude to create/edit question sets — it has tools to list, create, and delete sets, and to add, update, or delete individual questions. Ask Claude to **publish** when you're ready — it commits the changes under `questions/` and pushes to `main`, which GitHub Pages redeploys automatically.
+
+**Publish preconditions:**
+- The repo checkout the server runs against must be on the `main` branch (the `publish` tool refuses otherwise).
+- `git config user.name` / `user.email` must be set in that repo — `publish` commits with them.
+- No uncommitted changes outside `questions/` — `publish` refuses if anything else is dirty.
+- By default the server operates on the repo containing `mcp-server/`; override with the `REPO_ROOT` / `QUESTIONS_DIR` environment variables (set them in the `mcpServers` entry's `env` field) if you need to point it elsewhere.
 
 ## 🛠️ Tech Stack
 

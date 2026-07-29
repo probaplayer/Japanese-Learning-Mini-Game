@@ -55,6 +55,14 @@ function testPublishRefusesWhenNothingChangedUnderQuestions() {
   assert.throws(() => publisher.publish('nothing to do'), /No changes under questions\//);
 }
 
+function testPublishRefusesWhenNotOnMainBranch() {
+  const { repoRoot } = makeFixtureRepoWithOrigin();
+  git(repoRoot, ['checkout', '-q', '-b', 'some-other-branch']);
+  fs.appendFileSync(path.join(repoRoot, 'questions', 'manifest.json'), '\n');
+  const publisher = createPublisher({ repoRoot });
+  assert.throws(() => publisher.publish('should fail'), /current branch is "some-other-branch", expected "main"/);
+}
+
 function testPublishCommitsAndPushesToOrigin() {
   const { repoRoot, bareOrigin } = makeFixtureRepoWithOrigin();
   fs.writeFileSync(path.join(repoRoot, 'questions', 'new-set.json'), '{"id":"new-set","questions":[]}\n');
@@ -77,6 +85,7 @@ function testPublishCommitsAndPushesToOrigin() {
 testStatusSeparatesQuestionsChangesFromOtherChanges();
 testPublishRefusesWhenUnrelatedFilesAreDirty();
 testPublishRefusesWhenNothingChangedUnderQuestions();
+testPublishRefusesWhenNotOnMainBranch();
 testPublishCommitsAndPushesToOrigin();
 
 console.log('publish tests passed');

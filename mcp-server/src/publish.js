@@ -15,6 +15,10 @@ export function createPublisher({ repoRoot, questionsRelDir = 'questions' }) {
   }
 
   function publish(message) {
+    const branch = git(repoRoot, ['rev-parse', '--abbrev-ref', 'HEAD']).trim();
+    if (branch !== 'main') {
+      throw new Error(`Refusing to publish: current branch is "${branch}", expected "main"`);
+    }
     const { questionsChanges, otherChanges } = status();
     if (questionsChanges.length === 0) {
       throw new Error(`No changes under ${questionsRelDir}/ to publish`);

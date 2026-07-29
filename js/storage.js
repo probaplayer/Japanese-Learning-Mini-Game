@@ -129,6 +129,24 @@ function saveSettingsToStorage() {
   localStorage.setItem('jq_settings', JSON.stringify(settings));
 }
 
+function detectSetIdRescopeNeeded() {
+  return Object.keys(questionStats).some(key => key.startsWith('set-default::'));
+}
+
+function migrateStatsToNewSetId() {
+  const targetSetId = activeSetId || 'set-default';
+  const legacyPrefix = 'set-default::';
+  const legacyKeys = Object.keys(questionStats).filter(key => key.startsWith(legacyPrefix));
+  legacyKeys.forEach(key => {
+    const suffix = key.slice(legacyPrefix.length);
+    const newKey = `${targetSetId}::${suffix}`;
+    if (!questionStats[newKey]) {
+      questionStats[newKey] = questionStats[key];
+    }
+    delete questionStats[key];
+  });
+}
+
 function detectLegacyStats() {
   return Object.keys(questionStats).some(key => /^q-\d+$/.test(key));
 }
@@ -152,6 +170,7 @@ function migrateStatsToHashBased() {
 }
 
 function loadQuestionStats() {
+  const alreadySetIdMigrated = localStorage.getItem('jq_setid_migrated') === 'true';
   const alreadyMigrated = localStorage.getItem('jq_stats_migrated') === 'true';
   const stored = localStorage.getItem('jq_question_stats');
   if (stored) {
@@ -160,6 +179,16 @@ function loadQuestionStats() {
       seedIncorrectHistory();
     } catch (e) {
       questionStats = {};
+    }
+  }
+  if (!alreadySetIdMigrated && detectSetIdRescopeNeeded()) {
+    try {
+      migrateStatsToNewSetId();
+      saveQuestionStats();
+      localStorage.setItem('jq_setid_migrated', 'true');
+    } catch (e) {
+      console.warn('Set-id rescope migration failed:', e);
+      localStorage.setItem('jq_setid_migrated', 'true');
     }
   }
   if (!alreadyMigrated && detectLegacyStats()) {

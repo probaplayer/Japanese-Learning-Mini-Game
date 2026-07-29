@@ -171,7 +171,7 @@ function showComboPopup(text, x, y) {
 ══════════════════════════════════════════════ */
 function startGame(type) {
   if (questions.length === 0) {
-    showToast('❌ No questions available! Please import data.', 'err');
+    showToast('❌ No questions available in this set', 'err');
     return;
   }
   gameStartTime = Date.now();

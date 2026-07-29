@@ -41,11 +41,7 @@
 
 ## 🚀 How to Run
 
-### Option 1: Direct Open
-
-Simply open `index.html` in any modern browser.
-
-### Option 2: Static Server
+Question sets are fetched over HTTP at runtime, so the game must be served — opening `index.html` directly via `file://` will fail to load any questions (browsers block `fetch()` from the `file://` origin).
 
 ```bash
 python -m http.server
@@ -53,22 +49,26 @@ python -m http.server
 
 Then visit `http://localhost:8000`
 
-**No installation, no dependencies, no build step.**
+**No installation, no dependencies, no build step** — just a static file server.
 
 ## 🏗️ Architecture
 
 ```
-index.html          ← Single-page app, all screens
-style.css           ← Retro arcade theme
-main.js             ← Core: state, navigation, storage, utilities
-questions/          ← Question set data (manifest.json + one JSON file per set)
-game-quiz.js        ← Multiple choice quiz
-game-listen.js      ← TTS-based listening quiz
-game-flash.js       ← Flashcard game
-game-match.js       ← Match pairs game
-game-type.js        ← Falling words typing game
-lib/wanakana.min.js ← Japanese input library
-mcp-server/         ← MCP server for authoring/publishing question sets
+index.html               ← Single-page app, all screens
+css/                      ← Retro arcade theme (variables, base, per-game styles)
+questions/                ← Question set data (manifest.json + one JSON file per set)
+js/main.js                ← Core: state, navigation, utilities
+js/game-utils.js          ← Question scoring/priority helpers
+js/storage.js             ← localStorage + question set loading (fetch from questions/)
+js/settings.js            ← Settings screen logic
+js/games/game-quiz.js     ← Multiple choice quiz
+js/games/game-listen.js   ← TTS-based listening quiz
+js/games/game-flash.js    ← Flashcard game
+js/games/game-match.js    ← Match pairs game
+js/games/game-type.js     ← Falling words typing game
+js/games/game-write.js    ← Writing practice game
+lib/wanakana.min.js       ← Japanese input library
+mcp-server/               ← MCP server for authoring/publishing question sets
 ```
 
 ## 📝 Question Data Format

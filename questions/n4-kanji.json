@@ -1,4187 +1,3389 @@
 {
   "id": "n4-kanji",
-  "name": "Kanji N4",
-  "description": "300 chữ Kanji N4/N3 (đã loại các chữ N5 cơ bản), câu hỏi kết hợp cả hiragana và nghĩa tiếng Việt trong đáp án.",
-  "createdAt": "2026-07-29T03:15:05.163Z",
-  "updatedAt": "2026-07-29T03:15:05.163Z",
+  "name": "Từ vựng N4",
+  "description": "Bộ từ vựng N4 (243 từ, không phải từng chữ Hán riêng lẻ). Mỗi câu hỏi là 1 từ vựng thực tế; nếu từ có 2+ chữ Hán thì phần giải thích (ex) tách ra giải nghĩa từng chữ.",
+  "createdAt": "2026-07-30T02:40:25.134Z",
+  "updatedAt": "2026-07-30T02:40:25.134Z",
   "questions": [
     {
-      "word": "族",
-      "romaji": "ぞく",
-      "translation": "họ hàng/tộc",
-      "q": "Chữ 族 đọc và nghĩa là gì?",
+      "word": "家族",
+      "romaji": "かぞく",
+      "translation": "gia đình",
+      "q": "Từ 家族 đọc và nghĩa là gì?",
       "a": [
-        "きん - căng thẳng",
-        "つれる - dẫn theo/liên tục",
-        "しょう - chứng cứ",
-        "ぞく - họ hàng/tộc"
+        "ちゅうだん - sự gián đoạn",
+        "かぞく - gia đình",
+        "かんじ - chữ Hán",
+        "ぶき - vũ khí"
       ],
-      "c": 3,
-      "ex": "家族 (かぞく): gia đình"
+      "c": 1,
+      "ex": "家 (か): nhà/gia đình; 族 (ぞく): họ hàng/tộc"
     },
     {
-      "word": "員",
-      "romaji": "いん",
-      "translation": "thành viên/nhân viên",
-      "q": "Chữ 員 đọc và nghĩa là gì?",
+      "word": "会社員",
+      "romaji": "かいしゃいん",
+      "translation": "nhân viên công ty",
+      "q": "Từ 会社員 đọc và nghĩa là gì?",
       "a": [
-        "けん - hiểm nguy",
-        "ゆたか - phong phú",
-        "いん - thành viên/nhân viên",
-        "げん - nguồn gốc"
+        "ひろう - sự mệt mỏi",
+        "かいしゃいん - nhân viên công ty",
+        "ぎむ - nghĩa vụ",
+        "いしき - ý thức"
+      ],
+      "c": 1,
+      "ex": "会 (かい): hội/gặp; 社 (しゃ): công ty/hội; 員 (いん): thành viên/nhân viên"
+    },
+    {
+      "word": "医者",
+      "romaji": "いしゃ",
+      "translation": "bác sĩ",
+      "q": "Từ 医者 đọc và nghĩa là gì?",
+      "a": [
+        "せかい - thế giới",
+        "とうあん - bài làm",
+        "いしゃ - bác sĩ",
+        "しんや - đêm khuya"
       ],
       "c": 2,
-      "ex": "会社員 (かいしゃいん): nhân viên công ty"
+      "ex": "医 (い): y học; 者 (しゃ): người (làm gì đó)"
     },
     {
-      "word": "者",
-      "romaji": "しゃ",
-      "translation": "người (làm gì đó)",
-      "q": "Chữ 者 đọc và nghĩa là gì?",
-      "a": [
-        "うたがう - nghi ngờ",
-        "こう - công lao/thành tựu",
-        "しゃ - người (làm gì đó)",
-        "かたむく - nghiêng"
-      ],
-      "c": 2,
-      "ex": "医者 (いしゃ): bác sĩ"
-    },
-    {
-      "word": "使",
-      "romaji": "つかう",
+      "word": "使用",
+      "romaji": "しよう",
       "translation": "sử dụng",
-      "q": "Chữ 使 đọc và nghĩa là gì?",
+      "q": "Từ 使用 đọc và nghĩa là gì?",
       "a": [
-        "しぬ - chết",
-        "つかう - sử dụng",
-        "かこむ - bao quanh",
-        "ぜん - toàn bộ"
+        "かんじ - chữ Hán",
+        "しよう - sử dụng",
+        "やくそく - lời hứa",
+        "せつやく - tiết kiệm"
       ],
       "c": 1,
-      "ex": "使用 (しよう): sử dụng"
+      "ex": "使 (つかう): sử dụng; 用 (よう): sử dụng/việc"
     },
     {
-      "word": "作",
-      "romaji": "つくる",
-      "translation": "làm/tạo ra",
-      "q": "Chữ 作 đọc và nghĩa là gì?",
+      "word": "作文",
+      "romaji": "さくぶん",
+      "translation": "bài văn",
+      "q": "Từ 作文 đọc và nghĩa là gì?",
       "a": [
-        "あさい - nông/cạn",
-        "きょ - căn cứ",
-        "つくる - làm/tạo ra",
-        "あまい - ngọt/dễ dãi"
-      ],
-      "c": 2,
-      "ex": "作文 (さくぶん): bài văn"
-    },
-    {
-      "word": "座",
-      "romaji": "すわる",
-      "translation": "ngồi",
-      "q": "Chữ 座 đọc và nghĩa là gì?",
-      "a": [
-        "よう - cần thiết",
-        "ひん - phẩm chất/đồ vật",
-        "うたがう - nghi ngờ",
-        "すわる - ngồi"
+        "なぐさめ - sự an ủi",
+        "きんちょう - sự căng thẳng",
+        "こうすい - lượng mưa",
+        "さくぶん - bài văn"
       ],
       "c": 3,
-      "ex": "座席 (ざせき): chỗ ngồi"
+      "ex": "作 (つくる): làm/tạo ra; 文 (ぶん): văn/câu"
     },
     {
-      "word": "始",
-      "romaji": "はじめる",
+      "word": "座席",
+      "romaji": "ざせき",
+      "translation": "chỗ ngồi",
+      "q": "Từ 座席 đọc và nghĩa là gì?",
+      "a": [
+        "ろうひ - sự lãng phí",
+        "ようい - chuẩn bị",
+        "かいぜん - cải thiện",
+        "ざせき - chỗ ngồi"
+      ],
+      "c": 3,
+      "ex": "座 (すわる): ngồi; 席 (せき): chỗ ngồi"
+    },
+    {
+      "word": "開始",
+      "romaji": "かいし",
       "translation": "bắt đầu",
-      "q": "Chữ 始 đọc và nghĩa là gì?",
+      "q": "Từ 開始 đọc và nghĩa là gì?",
       "a": [
-        "ち - đất/vùng đất",
-        "はじめる - bắt đầu",
-        "こわい - sợ hãi",
-        "ざつ - hỗn tạp"
+        "ぜつぼう - sự tuyệt vọng",
+        "かいし - bắt đầu",
+        "しげん - tài nguyên",
+        "しつもん - câu hỏi"
       ],
       "c": 1,
-      "ex": "開始 (かいし): bắt đầu"
+      "ex": "開 (ひらく): mở; 始 (はじめる): bắt đầu"
     },
     {
-      "word": "終",
-      "romaji": "おわる",
-      "translation": "kết thúc",
-      "q": "Chữ 終 đọc và nghĩa là gì?",
+      "word": "終電",
+      "romaji": "しゅうでん",
+      "translation": "tàu cuối",
+      "q": "Từ 終電 đọc và nghĩa là gì?",
       "a": [
-        "きらう - ghét",
-        "はん - phạm vi",
-        "うしなう - mất/thất bại",
-        "おわる - kết thúc"
+        "けいやく - hợp đồng",
+        "けんきゅう - nghiên cứu",
+        "ぶんか - văn hóa",
+        "しゅうでん - tàu cuối"
       ],
       "c": 3,
-      "ex": "終電 (しゅうでん): tàu cuối"
+      "ex": "終 (おわる): kết thúc; 電 (でん): điện"
     },
     {
-      "word": "働",
-      "romaji": "はたらく",
-      "translation": "làm việc",
-      "q": "Chữ 働 đọc và nghĩa là gì?",
+      "word": "労働",
+      "romaji": "ろうどう",
+      "translation": "lao động",
+      "q": "Từ 労働 đọc và nghĩa là gì?",
       "a": [
-        "はたらく - làm việc",
-        "せき - phân tích",
-        "む - nhiệm vụ",
-        "しゅん - khoảnh khắc"
-      ],
-      "c": 0,
-      "ex": "労働 (ろうどう): lao động"
-    },
-    {
-      "word": "違",
-      "romaji": "ちがう",
-      "translation": "khác nhau",
-      "q": "Chữ 違 đọc và nghĩa là gì?",
-      "a": [
-        "ぜん - tự nhiên như vậy",
-        "ちがう - khác nhau",
-        "ひびく - vang lên/ảnh hưởng",
-        "そめる - nhuộm/nhiễm"
+        "しごと - công việc",
+        "ろうどう - lao động",
+        "さいばん - xét xử",
+        "しょうかい - giới thiệu"
       ],
       "c": 1,
-      "ex": "間違い (まちがい): sai lầm"
+      "ex": "労 (ろう): lao động; 働 (はたらく): làm việc"
     },
     {
-      "word": "思",
-      "romaji": "おもう",
-      "translation": "nghĩ",
-      "q": "Chữ 思 đọc và nghĩa là gì?",
+      "word": "間違い",
+      "romaji": "まちがい",
+      "translation": "sai lầm",
+      "q": "Từ 間違い đọc và nghĩa là gì?",
       "a": [
-        "おもう - nghĩ",
+        "まちがい - sai lầm",
+        "ぎじゅつ - kỹ thuật",
+        "たにん - người khác",
+        "ひょうか - đánh giá"
+      ],
+      "c": 0,
+      "ex": "間 (かん): khoảng/giữa; 違 (ちがう): khác nhau"
+    },
+    {
+      "word": "思い出",
+      "romaji": "おもいで",
+      "translation": "kỷ niệm",
+      "q": "Từ 思い出 đọc và nghĩa là gì?",
+      "a": [
+        "かいてん - mở cửa hàng",
+        "へいし - binh sĩ",
+        "しゅうでん - tàu cuối",
+        "おもいで - kỷ niệm"
+      ],
+      "c": 3,
+      "ex": "思 (おもう): nghĩ; 出 (しゅつ): ra"
+    },
+    {
+      "word": "知識",
+      "romaji": "ちしき",
+      "translation": "kiến thức",
+      "q": "Từ 知識 đọc và nghĩa là gì?",
+      "a": [
+        "ひにく - sự châm biếm",
+        "かんじ - cảm giác",
+        "とくべつ - đặc biệt",
+        "ちしき - kiến thức"
+      ],
+      "c": 3,
+      "ex": "知 (しる): biết; 識 (しき): nhận thức"
+    },
+    {
+      "word": "感覚",
+      "romaji": "かんかく",
+      "translation": "cảm giác",
+      "q": "Từ 感覚 đọc và nghĩa là gì?",
+      "a": [
         "きびしい - nghiêm khắc",
-        "かつ - chiến thắng",
-        "ひびく - vang lên/ảnh hưởng"
+        "ちゅうしゃ - tiêm thuốc",
+        "しぼう - tử vong",
+        "かんかく - cảm giác"
       ],
-      "c": 0,
-      "ex": "思い出 (おもいで): kỷ niệm"
+      "c": 3,
+      "ex": "感 (かんじる): cảm nhận; 覚 (おぼえる): nhớ/ghi nhớ"
     },
     {
-      "word": "知",
-      "romaji": "しる",
-      "translation": "biết",
-      "q": "Chữ 知 đọc và nghĩa là gì?",
+      "word": "忘れ物",
+      "romaji": "わすれもの",
+      "translation": "đồ bỏ quên",
+      "q": "Từ 忘れ物 đọc và nghĩa là gì?",
       "a": [
-        "ちから - sức mạnh",
-        "せい - chế tạo",
-        "しる - biết",
-        "い - y học"
+        "ひょうか - đánh giá",
+        "ほうりつ - pháp luật",
+        "やくそく - lời hứa",
+        "わすれもの - đồ bỏ quên"
+      ],
+      "c": 3,
+      "ex": "忘 (わすれる): quên; 物 (ぶつ): vật"
+    },
+    {
+      "word": "気持ち",
+      "romaji": "きもち",
+      "translation": "cảm giác",
+      "q": "Từ 気持ち đọc và nghĩa là gì?",
+      "a": [
+        "せつめい - giải thích",
+        "いぞん - sự phụ thuộc",
+        "きもち - cảm giác",
+        "しんらい - sự tin cậy"
       ],
       "c": 2,
-      "ex": "知識 (ちしき): kiến thức"
+      "ex": "気 (き): khí/tinh thần; 持 (もつ): cầm/giữ"
     },
     {
-      "word": "覚",
-      "romaji": "おぼえる",
-      "translation": "nhớ/ghi nhớ",
-      "q": "Chữ 覚 đọc và nghĩa là gì?",
+      "word": "期待",
+      "romaji": "きたい",
+      "translation": "kỳ vọng",
+      "q": "Từ 期待 đọc và nghĩa là gì?",
       "a": [
-        "つれる - dẫn theo/liên tục",
-        "たしか - chắc chắn",
-        "せい - hy sinh",
-        "おぼえる - nhớ/ghi nhớ"
+        "きんし - cấm",
+        "しよう - sử dụng",
+        "しぜん - tự nhiên",
+        "きたい - kỳ vọng"
       ],
       "c": 3,
-      "ex": "感覚 (かんかく): cảm giác"
+      "ex": "期 (き): kỳ hạn/thời kỳ; 待 (まつ): chờ đợi"
     },
     {
-      "word": "忘",
-      "romaji": "わすれる",
-      "translation": "quên",
-      "q": "Chữ 忘 đọc và nghĩa là gì?",
+      "word": "乗車",
+      "romaji": "じょうしゃ",
+      "translation": "lên xe",
+      "q": "Từ 乗車 đọc và nghĩa là gì?",
       "a": [
-        "わすれる - quên",
-        "ふく - phức tạp",
-        "みとめる - công nhận",
-        "せん - chuyên môn"
-      ],
-      "c": 0,
-      "ex": "忘れ物 (わすれもの): đồ bỏ quên"
-    },
-    {
-      "word": "持",
-      "romaji": "もつ",
-      "translation": "cầm/giữ",
-      "q": "Chữ 持 đọc và nghĩa là gì?",
-      "a": [
-        "からい - cay/vất vả",
-        "む - nhiệm vụ",
-        "ほう - báo cáo",
-        "もつ - cầm/giữ"
+        "いしゃ - bác sĩ",
+        "あさい - nông",
+        "よそく - dự đoán",
+        "じょうしゃ - lên xe"
       ],
       "c": 3,
-      "ex": "気持ち (きもち): cảm giác"
+      "ex": "乗 (のる): lên (xe); 車 (しゃ): xe"
     },
     {
-      "word": "待",
-      "romaji": "まつ",
-      "translation": "chờ đợi",
-      "q": "Chữ 待 đọc và nghĩa là gì?",
+      "word": "降水",
+      "romaji": "こうすい",
+      "translation": "lượng mưa",
+      "q": "Từ 降水 đọc và nghĩa là gì?",
       "a": [
-        "まつ - chờ đợi",
-        "だん - đoàn thể",
-        "こ - lý do/sự cố",
-        "やぶれる - thua/thất bại"
-      ],
-      "c": 0,
-      "ex": "期待 (きたい): kỳ vọng"
-    },
-    {
-      "word": "乗",
-      "romaji": "のる",
-      "translation": "lên (xe)",
-      "q": "Chữ 乗 đọc và nghĩa là gì?",
-      "a": [
-        "へい - binh lính",
-        "ささえる - chống đỡ/chi",
-        "きょう - biên giới/ranh giới",
-        "のる - lên (xe)"
-      ],
-      "c": 3,
-      "ex": "乗車 (じょうしゃ): lên xe"
-    },
-    {
-      "word": "降",
-      "romaji": "おりる",
-      "translation": "xuống (xe)",
-      "q": "Chữ 降 đọc và nghĩa là gì?",
-      "a": [
-        "くすり - thuốc",
-        "ぶん - văn/câu",
-        "けん - dâng hiến",
-        "おりる - xuống (xe)"
-      ],
-      "c": 3,
-      "ex": "降水 (こうすい): lượng mưa"
-    },
-    {
-      "word": "開",
-      "romaji": "ひらく",
-      "translation": "mở",
-      "q": "Chữ 開 đọc và nghĩa là gì?",
-      "a": [
-        "じょう - tình trạng",
-        "ひらく - mở",
-        "ねむる - ngủ",
-        "きょ - căn cứ"
+        "けんさ - kiểm tra",
+        "こうすい - lượng mưa",
+        "ぶき - vũ khí",
+        "こわい - đáng sợ"
       ],
       "c": 1,
-      "ex": "開店 (かいてん): mở cửa hàng"
+      "ex": "降 (おりる): xuống (xe); 水 (すい): nước"
     },
     {
-      "word": "閉",
-      "romaji": "しめる",
-      "translation": "đóng",
-      "q": "Chữ 閉 đọc và nghĩa là gì?",
+      "word": "開店",
+      "romaji": "かいてん",
+      "translation": "mở cửa hàng",
+      "q": "Từ 開店 đọc và nghĩa là gì?",
       "a": [
-        "はん - phán đoán",
-        "かんじる - cảm nhận",
-        "しめる - đóng",
-        "うそ - lời nói dối"
-      ],
-      "c": 2,
-      "ex": "閉店 (へいてん): đóng cửa hàng"
-    },
-    {
-      "word": "重",
-      "romaji": "おもい",
-      "translation": "nặng",
-      "q": "Chữ 重 đọc và nghĩa là gì?",
-      "a": [
-        "おもい - nặng",
-        "きよい - trong sạch",
-        "ぼう - cây gậy",
-        "こと - việc/sự việc"
+        "かいてん - mở cửa hàng",
+        "かくす - che giấu",
+        "だんたい - đoàn thể",
+        "れんしゅう - luyện tập"
       ],
       "c": 0,
-      "ex": "重要 (じゅうよう): quan trọng"
+      "ex": "開 (ひらく): mở; 店 (てん): cửa hàng"
     },
     {
-      "word": "軽",
+      "word": "閉店",
+      "romaji": "へいてん",
+      "translation": "đóng cửa hàng",
+      "q": "Từ 閉店 đọc và nghĩa là gì?",
+      "a": [
+        "やくそく - lời hứa",
+        "ほうりつ - pháp luật",
+        "へいてん - đóng cửa hàng",
+        "じこ - tai nạn"
+      ],
+      "c": 2,
+      "ex": "閉 (しめる): đóng; 店 (てん): cửa hàng"
+    },
+    {
+      "word": "重要",
+      "romaji": "じゅうよう",
+      "translation": "quan trọng",
+      "q": "Từ 重要 đọc và nghĩa là gì?",
+      "a": [
+        "ちゅうだん - sự gián đoạn",
+        "しげん - tài nguyên",
+        "じゅうよう - quan trọng",
+        "ぎむ - nghĩa vụ"
+      ],
+      "c": 2,
+      "ex": "重 (おもい): nặng; 要 (よう): cần thiết"
+    },
+    {
+      "word": "軽い",
       "romaji": "かるい",
       "translation": "nhẹ",
-      "q": "Chữ 軽 đọc và nghĩa là gì?",
-      "a": [
-        "まける - thua",
-        "つれる - dẫn theo/liên tục",
-        "かるい - nhẹ",
-        "ゆう - lý do/tự do"
-      ],
-      "c": 2,
-      "ex": "軽い (かるい): nhẹ"
-    },
-    {
-      "word": "強",
-      "romaji": "つよい",
-      "translation": "mạnh",
-      "q": "Chữ 強 đọc và nghĩa là gì?",
-      "a": [
-        "つよい - mạnh",
-        "はじめる - bắt đầu",
-        "すくう - cứu giúp",
-        "かい - trung gian"
-      ],
-      "c": 0,
-      "ex": "勉強 (べんきょう): học tập"
-    },
-    {
-      "word": "弱",
-      "romaji": "よわい",
-      "translation": "yếu",
-      "q": "Chữ 弱 đọc và nghĩa là gì?",
-      "a": [
-        "よわい - yếu",
-        "しゃ - người (làm gì đó)",
-        "うたがう - nghi ngờ",
-        "じ - tự bản thân"
-      ],
-      "c": 0,
-      "ex": "弱点 (じゃくてん): điểm yếu"
-    },
-    {
-      "word": "広",
-      "romaji": "ひろい",
-      "translation": "rộng",
-      "q": "Chữ 広 đọc và nghĩa là gì?",
-      "a": [
-        "ひろい - rộng",
-        "いのち - mạng sống",
-        "なぐさめる - an ủi",
-        "いん - viện"
-      ],
-      "c": 0,
-      "ex": "広告 (こうこく): quảng cáo"
-    },
-    {
-      "word": "深",
-      "romaji": "ふかい",
-      "translation": "sâu",
-      "q": "Chữ 深 đọc và nghĩa là gì?",
-      "a": [
-        "たもつ - giữ gìn",
-        "さばく - phán xét",
-        "きょ - căn cứ",
-        "ふかい - sâu"
-      ],
-      "c": 3,
-      "ex": "深夜 (しんや): đêm khuya"
-    },
-    {
-      "word": "浅",
-      "romaji": "あさい",
-      "translation": "nông/cạn",
-      "q": "Chữ 浅 đọc và nghĩa là gì?",
-      "a": [
-        "せい - chính trị",
-        "あさい - nông/cạn",
-        "なる - trở thành",
-        "こ - lý do/sự cố"
-      ],
-      "c": 1,
-      "ex": "浅い (あさい): nông"
-    },
-    {
-      "word": "病",
-      "romaji": "びょう",
-      "translation": "bệnh",
-      "q": "Chữ 病 đọc và nghĩa là gì?",
-      "a": [
-        "げん - gốc/nguyên khí",
-        "たたかう - chiến đấu",
-        "あさい - nông/cạn",
-        "びょう - bệnh"
-      ],
-      "c": 3,
-      "ex": "病院 (びょういん): bệnh viện"
-    },
-    {
-      "word": "院",
-      "romaji": "いん",
-      "translation": "viện",
-      "q": "Chữ 院 đọc và nghĩa là gì?",
-      "a": [
-        "たつ - cắt đứt/quyết đoán",
-        "おそろしい - đáng sợ",
-        "ご - bảo vệ",
-        "いん - viện"
-      ],
-      "c": 3,
-      "ex": "病院 (びょういん): bệnh viện"
-    },
-    {
-      "word": "危",
-      "romaji": "あぶない",
-      "translation": "nguy hiểm",
-      "q": "Chữ 危 đọc và nghĩa là gì?",
-      "a": [
-        "あぶない - nguy hiểm",
-        "かく - tư cách/quy cách",
-        "くん - huấn luyện",
-        "おなじ - giống nhau"
-      ],
-      "c": 0,
-      "ex": "危険 (きけん): nguy hiểm"
-    },
-    {
-      "word": "険",
-      "romaji": "けん",
-      "translation": "hiểm nguy",
-      "q": "Chữ 険 đọc và nghĩa là gì?",
-      "a": [
-        "けん - hiểm nguy",
-        "しゃ - bắn/tiêm",
-        "だん - đoàn thể",
-        "くすり - thuốc"
-      ],
-      "c": 0,
-      "ex": "危険 (きけん): nguy hiểm"
-    },
-    {
-      "word": "全",
-      "romaji": "ぜん",
-      "translation": "toàn bộ",
-      "q": "Chữ 全 đọc và nghĩa là gì?",
-      "a": [
-        "てん - triển khai/mở rộng",
-        "やさしい - dịu dàng/ưu tú",
-        "ぜん - toàn bộ",
-        "えん - viện trợ"
-      ],
-      "c": 2,
-      "ex": "安全 (あんぜん): an toàn"
-    },
-    {
-      "word": "故",
-      "romaji": "こ",
-      "translation": "lý do/sự cố",
-      "q": "Chữ 故 đọc và nghĩa là gì?",
-      "a": [
-        "い - dựa vào",
-        "けん - kiểm tra/nghiệm",
-        "しょう - giới thiệu",
-        "こ - lý do/sự cố"
-      ],
-      "c": 3,
-      "ex": "事故 (じこ): tai nạn"
-    },
-    {
-      "word": "失",
-      "romaji": "うしなう",
-      "translation": "mất/thất bại",
-      "q": "Chữ 失 đọc và nghĩa là gì?",
-      "a": [
-        "ほか - khác",
-        "うしなう - mất/thất bại",
-        "わすれる - quên",
-        "ぜん - thiện"
-      ],
-      "c": 1,
-      "ex": "失敗 (しっぱい): thất bại"
-    },
-    {
-      "word": "敗",
-      "romaji": "やぶれる",
-      "translation": "thua/thất bại",
-      "q": "Chữ 敗 đọc và nghĩa là gì?",
-      "a": [
-        "ゆう - dũng cảm",
-        "やぶれる - thua/thất bại",
-        "げん - nguồn gốc",
-        "ざい - kinh tế/xong việc"
-      ],
-      "c": 1,
-      "ex": "失敗 (しっぱい): thất bại"
-    },
-    {
-      "word": "成",
-      "romaji": "なる",
-      "translation": "trở thành",
-      "q": "Chữ 成 đọc và nghĩa là gì?",
-      "a": [
-        "しゅん - khoảnh khắc",
-        "なる - trở thành",
-        "せめる - trách nhiệm",
-        "わかい - trẻ"
-      ],
-      "c": 1,
-      "ex": "成功 (せいこう): thành công"
-    },
-    {
-      "word": "功",
-      "romaji": "こう",
-      "translation": "công lao/thành tựu",
-      "q": "Chữ 功 đọc và nghĩa là gì?",
-      "a": [
-        "やく - hẹn/ước",
-        "はん - phán đoán",
-        "こう - công lao/thành tựu",
-        "ほう - pháp luật/cách thức"
-      ],
-      "c": 2,
-      "ex": "成功 (せいこう): thành công"
-    },
-    {
-      "word": "努",
-      "romaji": "つとめる",
-      "translation": "nỗ lực",
-      "q": "Chữ 努 đọc và nghĩa là gì?",
-      "a": [
-        "もつ - cầm/giữ",
-        "つとめる - nỗ lực",
-        "きえる - biến mất/tiêu thụ",
-        "けい - trải qua/kinh tế"
-      ],
-      "c": 1,
-      "ex": "努力 (どりょく): nỗ lực"
-    },
-    {
-      "word": "力",
-      "romaji": "ちから",
-      "translation": "sức mạnh",
-      "q": "Chữ 力 đọc và nghĩa là gì?",
-      "a": [
-        "き - dụng cụ",
-        "ふ - chính phủ",
-        "ちから - sức mạnh",
-        "まこと - chân thành"
-      ],
-      "c": 2,
-      "ex": "努力 (どりょく): nỗ lực"
-    },
-    {
-      "word": "練",
-      "romaji": "ねる",
-      "translation": "luyện tập",
-      "q": "Chữ 練 đọc và nghĩa là gì?",
-      "a": [
-        "きめる - quyết định",
-        "ねる - luyện tập",
-        "きょう - hợp tác",
-        "こわい - sợ hãi"
-      ],
-      "c": 1,
-      "ex": "練習 (れんしゅう): luyện tập"
-    },
-    {
-      "word": "競",
-      "romaji": "きそう",
-      "translation": "cạnh tranh",
-      "q": "Chữ 競 đọc và nghĩa là gì?",
-      "a": [
-        "えん - viện trợ",
-        "きそう - cạnh tranh",
-        "い - dựa vào",
-        "ぞく - họ hàng/tộc"
-      ],
-      "c": 1,
-      "ex": "競争 (きょうそう): cạnh tranh"
-    },
-    {
-      "word": "争",
-      "romaji": "あらそう",
-      "translation": "tranh giành",
-      "q": "Chữ 争 đọc và nghĩa là gì?",
-      "a": [
-        "ちょ - tích trữ",
-        "そそぐ - rót/chú ý",
-        "あらそう - tranh giành",
-        "か - có thể/cho phép"
-      ],
-      "c": 2,
-      "ex": "競争 (きょうそう): cạnh tranh"
-    },
-    {
-      "word": "勝",
-      "romaji": "かつ",
-      "translation": "chiến thắng",
-      "q": "Chữ 勝 đọc và nghĩa là gì?",
-      "a": [
-        "れい - lễ nghĩa",
-        "かつ - chiến thắng",
-        "くっする - khuất phục",
-        "しょう - chứng cứ"
-      ],
-      "c": 1,
-      "ex": "勝負 (しょうぶ): thắng thua"
-    },
-    {
-      "word": "負",
-      "romaji": "まける",
-      "translation": "thua",
-      "q": "Chữ 負 đọc và nghĩa là gì?",
-      "a": [
-        "か - biến hóa/hóa",
-        "あん - kế hoạch/phương án",
-        "ふとい - béo/to",
-        "まける - thua"
-      ],
-      "c": 3,
-      "ex": "勝負 (しょうぶ): thắng thua"
-    },
-    {
-      "word": "優",
-      "romaji": "やさしい",
-      "translation": "dịu dàng/ưu tú",
-      "q": "Chữ 優 đọc và nghĩa là gì?",
-      "a": [
-        "ぼう - buôn bán",
-        "やさしい - dịu dàng/ưu tú",
-        "だん - đoàn thể",
-        "じ - tự bản thân"
-      ],
-      "c": 1,
-      "ex": "優勝 (ゆうしょう): vô địch"
-    },
-    {
-      "word": "礼",
-      "romaji": "れい",
-      "translation": "lễ nghĩa",
-      "q": "Chữ 礼 đọc và nghĩa là gì?",
-      "a": [
-        "おわる - kết thúc",
-        "れい - lễ nghĩa",
-        "こわい - sợ hãi",
-        "おもう - nghĩ"
-      ],
-      "c": 1,
-      "ex": "失礼 (しつれい): thất lễ"
-    },
-    {
-      "word": "謝",
-      "romaji": "あやまる",
-      "translation": "xin lỗi",
-      "q": "Chữ 謝 đọc và nghĩa là gì?",
-      "a": [
-        "もつ - cầm/giữ",
-        "あやまる - xin lỗi",
-        "ならす - quen thuộc",
-        "とどく - tới nơi/giao"
-      ],
-      "c": 1,
-      "ex": "感謝 (かんしゃ): cảm ơn"
-    },
-    {
-      "word": "怒",
-      "romaji": "おこる",
-      "translation": "tức giận",
-      "q": "Chữ 怒 đọc và nghĩa là gì?",
-      "a": [
-        "はる - căng ra",
-        "しょう - chướng ngại",
-        "おこる - tức giận",
-        "ぜん - thiện"
-      ],
-      "c": 2,
-      "ex": "怒り (いかり): sự tức giận"
-    },
-    {
-      "word": "笑",
-      "romaji": "わらう",
-      "translation": "cười",
-      "q": "Chữ 笑 đọc và nghĩa là gì?",
-      "a": [
-        "ゆ - vận chuyển",
-        "わらう - cười",
-        "つげる - thông báo",
-        "ゆたか - phong phú"
-      ],
-      "c": 1,
-      "ex": "笑顔 (えがお): nụ cười"
-    },
-    {
-      "word": "泣",
-      "romaji": "なく",
-      "translation": "khóc",
-      "q": "Chữ 泣 đọc và nghĩa là gì?",
-      "a": [
-        "つれる - dẫn theo/liên tục",
-        "かわ - lớp da/vỏ",
-        "しゅん - khoảnh khắc",
-        "なく - khóc"
-      ],
-      "c": 3,
-      "ex": "泣き顔 (なきがお): gương mặt khóc"
-    },
-    {
-      "word": "悲",
-      "romaji": "かなしい",
-      "translation": "buồn bã",
-      "q": "Chữ 悲 đọc và nghĩa là gì?",
-      "a": [
-        "おなじ - giống nhau",
-        "かなしい - buồn bã",
-        "れき - lịch sử",
-        "しゃ - người (làm gì đó)"
-      ],
-      "c": 1,
-      "ex": "悲しみ (かなしみ): nỗi buồn"
-    },
-    {
-      "word": "恥",
-      "romaji": "はずかしい",
-      "translation": "xấu hổ",
-      "q": "Chữ 恥 đọc và nghĩa là gì?",
-      "a": [
-        "たん - đơn lẻ",
-        "ぜん - toàn bộ",
-        "はずかしい - xấu hổ",
-        "はる - căng ra"
-      ],
-      "c": 2,
-      "ex": "恥ずかしい (はずかしい): xấu hổ"
-    },
-    {
-      "word": "恐",
-      "romaji": "おそろしい",
-      "translation": "đáng sợ",
-      "q": "Chữ 恐 đọc và nghĩa là gì?",
-      "a": [
-        "せい - chính trị",
-        "ぜん - tự nhiên như vậy",
-        "し - phụng sự",
-        "おそろしい - đáng sợ"
-      ],
-      "c": 3,
-      "ex": "恐怖 (きょうふ): nỗi sợ hãi"
-    },
-    {
-      "word": "怖",
-      "romaji": "こわい",
-      "translation": "sợ hãi",
-      "q": "Chữ 怖 đọc và nghĩa là gì?",
-      "a": [
-        "もつ - cầm/giữ",
-        "こわい - sợ hãi",
-        "かぎる - giới hạn",
-        "こ - lý do/sự cố"
-      ],
-      "c": 1,
-      "ex": "怖い (こわい): đáng sợ"
-    },
-    {
-      "word": "驚",
-      "romaji": "おどろく",
-      "translation": "ngạc nhiên",
-      "q": "Chữ 驚 đọc và nghĩa là gì?",
-      "a": [
-        "し - phụng sự",
-        "おどろく - ngạc nhiên",
-        "みつ - kín đáo",
-        "かたよる - thiên lệch"
-      ],
-      "c": 1,
-      "ex": "驚き (おどろき): sự ngạc nhiên"
-    },
-    {
-      "word": "疲",
-      "romaji": "つかれる",
-      "translation": "mệt mỏi",
-      "q": "Chữ 疲 đọc và nghĩa là gì?",
-      "a": [
-        "しょう - chướng ngại",
-        "つかれる - mệt mỏi",
-        "ざつ - hỗn tạp",
-        "たえる - tuyệt vọng/dứt"
-      ],
-      "c": 1,
-      "ex": "疲労 (ひろう): sự mệt mỏi"
-    },
-    {
-      "word": "痛",
-      "romaji": "いたい",
-      "translation": "đau",
-      "q": "Chữ 痛 đọc và nghĩa là gì?",
-      "a": [
-        "しゃ - bắn/tiêm",
-        "いたい - đau",
-        "たのむ - nhờ vả",
-        "けい - khế ước"
-      ],
-      "c": 1,
-      "ex": "頭痛 (ずつう): đau đầu"
-    },
-    {
-      "word": "元",
-      "romaji": "げん",
-      "translation": "gốc/nguyên khí",
-      "q": "Chữ 元 đọc và nghĩa là gì?",
-      "a": [
-        "げん - gốc/nguyên khí",
-        "つとめる - nỗ lực",
-        "とう - thống nhất",
-        "そなえる - chuẩn bị"
-      ],
-      "c": 0,
-      "ex": "元気 (げんき): khỏe mạnh"
-    },
-    {
-      "word": "健",
-      "romaji": "けん",
-      "translation": "khỏe mạnh",
-      "q": "Chữ 健 đọc và nghĩa là gì?",
-      "a": [
-        "かかり - liên quan/phụ trách",
-        "けん - khỏe mạnh",
-        "げん - nguồn gốc",
-        "しゃ - bắn/tiêm"
-      ],
-      "c": 1,
-      "ex": "健康 (けんこう): sức khỏe"
-    },
-    {
-      "word": "康",
-      "romaji": "こう",
-      "translation": "khỏe mạnh",
-      "q": "Chữ 康 đọc và nghĩa là gì?",
-      "a": [
-        "しらべる - điều tra/kiểm tra",
-        "こう - khỏe mạnh",
-        "しょう - giao thiệp",
-        "わらう - cười"
-      ],
-      "c": 1,
-      "ex": "健康 (けんこう): sức khỏe"
-    },
-    {
-      "word": "薬",
-      "romaji": "くすり",
-      "translation": "thuốc",
-      "q": "Chữ 薬 đọc và nghĩa là gì?",
-      "a": [
-        "くすり - thuốc",
-        "しょう - giới thiệu",
-        "つづく - tiếp tục",
-        "きん - đồng đều"
-      ],
-      "c": 0,
-      "ex": "薬局 (やっきょく): hiệu thuốc"
-    },
-    {
-      "word": "医",
-      "romaji": "い",
-      "translation": "y học",
-      "q": "Chữ 医 đọc và nghĩa là gì?",
-      "a": [
-        "のぞむ - mong muốn",
-        "き - quy tắc",
-        "きえる - biến mất/tiêu thụ",
-        "い - y học"
-      ],
-      "c": 3,
-      "ex": "医者 (いしゃ): bác sĩ"
-    },
-    {
-      "word": "注",
-      "romaji": "そそぐ",
-      "translation": "rót/chú ý",
-      "q": "Chữ 注 đọc và nghĩa là gì?",
-      "a": [
-        "しあわせ - hạnh phúc",
-        "そそぐ - rót/chú ý",
-        "ちがう - khác nhau",
-        "かん - đơn giản"
-      ],
-      "c": 1,
-      "ex": "注意 (ちゅうい): chú ý"
-    },
-    {
-      "word": "射",
-      "romaji": "しゃ",
-      "translation": "bắn/tiêm",
-      "q": "Chữ 射 đọc và nghĩa là gì?",
-      "a": [
-        "おさめる - thu",
-        "しゃ - bắn/tiêm",
-        "はげます - khích lệ",
-        "しりぞく - rút lui"
-      ],
-      "c": 1,
-      "ex": "注射 (ちゅうしゃ): tiêm thuốc"
-    },
-    {
-      "word": "死",
-      "romaji": "しぬ",
-      "translation": "chết",
-      "q": "Chữ 死 đọc và nghĩa là gì?",
-      "a": [
-        "こわい - sợ hãi",
-        "べつ - khác/riêng biệt",
-        "げん - gốc/nguyên khí",
-        "しぬ - chết"
-      ],
-      "c": 3,
-      "ex": "死亡 (しぼう): tử vong"
-    },
-    {
-      "word": "命",
-      "romaji": "いのち",
-      "translation": "mạng sống",
-      "q": "Chữ 命 đọc và nghĩa là gì?",
-      "a": [
-        "いのち - mạng sống",
-        "ち - đất/vùng đất",
-        "こたえる - trả lời",
-        "おもい - nặng"
-      ],
-      "c": 0,
-      "ex": "運命 (うんめい): số phận"
-    },
-    {
-      "word": "太",
-      "romaji": "ふとい",
-      "translation": "béo/to",
-      "q": "Chữ 太 đọc và nghĩa là gì?",
-      "a": [
-        "ふとい - béo/to",
-        "ばつ - hình phạt",
-        "おなじ - giống nhau",
-        "たつ - cắt đứt/quyết đoán"
-      ],
-      "c": 0,
-      "ex": "太陽 (たいよう): mặt trời"
-    },
-    {
-      "word": "眠",
-      "romaji": "ねむる",
-      "translation": "ngủ",
-      "q": "Chữ 眠 đọc và nghĩa là gì?",
-      "a": [
-        "こと - việc/sự việc",
-        "ねむる - ngủ",
-        "あぶない - nguy hiểm",
-        "れい - lễ nghĩa"
-      ],
-      "c": 1,
-      "ex": "睡眠 (すいみん): giấc ngủ"
-    },
-    {
-      "word": "寝",
-      "romaji": "ねる",
-      "translation": "ngủ",
-      "q": "Chữ 寝 đọc và nghĩa là gì?",
-      "a": [
-        "だい - đề bài",
-        "れい - lễ nghĩa",
-        "ねる - ngủ",
-        "はたらく - làm việc"
-      ],
-      "c": 2,
-      "ex": "寝室 (しんしつ): phòng ngủ"
-    },
-    {
-      "word": "起",
-      "romaji": "おきる",
-      "translation": "thức dậy",
-      "q": "Chữ 起 đọc và nghĩa là gì?",
-      "a": [
-        "けん - kiểm tra/nghiệm",
-        "やぶれる - thua/thất bại",
-        "おきる - thức dậy",
-        "そそぐ - rót/chú ý"
-      ],
-      "c": 2,
-      "ex": "起床 (きしょう): thức dậy"
-    },
-    {
-      "word": "議",
-      "romaji": "ぎ",
-      "translation": "bàn bạc",
-      "q": "Chữ 議 đọc và nghĩa là gì?",
-      "a": [
-        "だい - đề bài",
-        "たのむ - nhờ vả",
-        "ぎ - bàn bạc",
-        "かん - đơn giản"
-      ],
-      "c": 2,
-      "ex": "会議 (かいぎ): cuộc họp"
-    },
-    {
-      "word": "用",
-      "romaji": "よう",
-      "translation": "sử dụng/việc",
-      "q": "Chữ 用 đọc và nghĩa là gì?",
-      "a": [
-        "いたい - đau",
-        "しょう - giới thiệu",
-        "ぎ - nghi lễ",
-        "よう - sử dụng/việc"
-      ],
-      "c": 3,
-      "ex": "用意 (ようい): chuẩn bị"
-    },
-    {
-      "word": "意",
-      "romaji": "い",
-      "translation": "ý nghĩa/ý định",
-      "q": "Chữ 意 đọc và nghĩa là gì?",
-      "a": [
-        "い - ý nghĩa/ý định",
-        "じつ - thực tế",
-        "つたえる - truyền đạt",
-        "てん - triển khai/mở rộng"
-      ],
-      "c": 0,
-      "ex": "意味 (いみ): ý nghĩa"
-    },
-    {
-      "word": "必",
-      "romaji": "かならず",
-      "translation": "nhất định",
-      "q": "Chữ 必 đọc và nghĩa là gì?",
-      "a": [
-        "こたえる - trả lời",
-        "り - lợi ích",
-        "かならず - nhất định",
-        "かい - giới/ranh giới"
-      ],
-      "c": 2,
-      "ex": "必要 (ひつよう): cần thiết"
-    },
-    {
-      "word": "要",
-      "romaji": "よう",
-      "translation": "cần thiết",
-      "q": "Chữ 要 đọc và nghĩa là gì?",
-      "a": [
-        "よう - cần thiết",
-        "ちがう - khác nhau",
-        "おわる - kết thúc",
-        "ひらく - mở"
-      ],
-      "c": 0,
-      "ex": "必要 (ひつよう): cần thiết"
-    },
-    {
-      "word": "自",
-      "romaji": "じ",
-      "translation": "tự bản thân",
-      "q": "Chữ 自 đọc và nghĩa là gì?",
-      "a": [
-        "じ - tự bản thân",
-        "たい - trạng thái",
-        "まこと - chân thành",
-        "おどろく - ngạc nhiên"
-      ],
-      "c": 0,
-      "ex": "自分 (じぶん): bản thân"
-    },
-    {
-      "word": "他",
-      "romaji": "ほか",
-      "translation": "khác",
-      "q": "Chữ 他 đọc và nghĩa là gì?",
-      "a": [
-        "よろこぶ - vui mừng",
-        "ほか - khác",
-        "さ - sự khác biệt",
-        "たもつ - giữ gìn"
-      ],
-      "c": 1,
-      "ex": "他人 (たにん): người khác"
-    },
-    {
-      "word": "同",
-      "romaji": "おなじ",
-      "translation": "giống nhau",
-      "q": "Chữ 同 đọc và nghĩa là gì?",
-      "a": [
-        "おなじ - giống nhau",
-        "ぶ - võ thuật",
-        "きょ - cho phép",
-        "べつ - khác/riêng biệt"
-      ],
-      "c": 0,
-      "ex": "同じ (おなじ): giống nhau"
-    },
-    {
-      "word": "連",
-      "romaji": "つれる",
-      "translation": "dẫn theo/liên tục",
-      "q": "Chữ 連 đọc và nghĩa là gì?",
-      "a": [
-        "おわる - kết thúc",
-        "びょう - bệnh",
-        "ふとい - béo/to",
-        "つれる - dẫn theo/liên tục"
-      ],
-      "c": 3,
-      "ex": "連絡 (れんらく): liên lạc"
-    },
-    {
-      "word": "関",
-      "romaji": "かん",
-      "translation": "liên quan",
-      "q": "Chữ 関 đọc và nghĩa là gì?",
-      "a": [
-        "いん - viện",
-        "きん - đồng đều",
-        "ば - địa điểm",
-        "かん - liên quan"
-      ],
-      "c": 3,
-      "ex": "関係 (かんけい): mối quan hệ"
-    },
-    {
-      "word": "係",
-      "romaji": "かかり",
-      "translation": "liên quan/phụ trách",
-      "q": "Chữ 係 đọc và nghĩa là gì?",
-      "a": [
-        "じゅん - chuẩn bị",
-        "さ - sự khác biệt",
-        "かかり - liên quan/phụ trách",
-        "かん - vòng/môi trường"
-      ],
-      "c": 2,
-      "ex": "関係 (かんけい): mối quan hệ"
-    },
-    {
-      "word": "説",
-      "romaji": "せつ",
-      "translation": "thuyết/giải thích",
-      "q": "Chữ 説 đọc và nghĩa là gì?",
-      "a": [
-        "かかり - liên quan/phụ trách",
-        "か - khoa/môn học",
-        "せつ - thuyết/giải thích",
-        "だい - đề bài"
-      ],
-      "c": 2,
-      "ex": "説明 (せつめい): giải thích"
-    },
-    {
-      "word": "案",
-      "romaji": "あん",
-      "translation": "kế hoạch/phương án",
-      "q": "Chữ 案 đọc và nghĩa là gì?",
-      "a": [
-        "ご - bảo vệ",
-        "きらう - ghét",
-        "あん - kế hoạch/phương án",
-        "ふるう - phấn chấn"
-      ],
-      "c": 2,
-      "ex": "案内 (あんない): hướng dẫn"
-    },
-    {
-      "word": "紹",
-      "romaji": "しょう",
-      "translation": "giới thiệu",
-      "q": "Chữ 紹 đọc và nghĩa là gì?",
-      "a": [
-        "えらぶ - lựa chọn",
-        "きえる - biến mất/tiêu thụ",
-        "しょう - giới thiệu",
-        "はつ - phát ra"
-      ],
-      "c": 2,
-      "ex": "紹介 (しょうかい): giới thiệu"
-    },
-    {
-      "word": "場",
-      "romaji": "ば",
-      "translation": "địa điểm",
-      "q": "Chữ 場 đọc và nghĩa là gì?",
-      "a": [
-        "きゅう - cấp phát",
-        "ば - địa điểm",
-        "こ - cá thể",
-        "かつ - chiến thắng"
-      ],
-      "c": 1,
-      "ex": "場所 (ばしょ): địa điểm"
-    },
-    {
-      "word": "合",
-      "romaji": "あう",
-      "translation": "hợp/phù hợp",
-      "q": "Chữ 合 đọc và nghĩa là gì?",
-      "a": [
-        "にん - trách nhiệm",
-        "しゃ - người (làm gì đó)",
-        "ぜん - tự nhiên như vậy",
-        "あう - hợp/phù hợp"
-      ],
-      "c": 3,
-      "ex": "場合 (ばあい): trường hợp"
-    },
-    {
-      "word": "感",
-      "romaji": "かんじる",
-      "translation": "cảm nhận",
-      "q": "Chữ 感 đọc và nghĩa là gì?",
-      "a": [
-        "さばく - phán xét",
-        "かならず - nhất định",
-        "かんじる - cảm nhận",
+      "q": "Từ 軽い đọc và nghĩa là gì?",
+      "a": [
+        "ひろう - sự mệt mỏi",
+        "しょうたい - lời mời",
+        "でんとう - truyền thống",
         "かるい - nhẹ"
       ],
-      "c": 2,
-      "ex": "感じ (かんじ): cảm giác"
-    },
-    {
-      "word": "文",
-      "romaji": "ぶん",
-      "translation": "văn/câu",
-      "q": "Chữ 文 đọc và nghĩa là gì?",
-      "a": [
-        "ぶん - văn/câu",
-        "まける - thua",
-        "かい - trung gian",
-        "いん - nguyên nhân"
-      ],
-      "c": 0,
-      "ex": "文化 (ぶんか): văn hóa"
-    },
-    {
-      "word": "化",
-      "romaji": "か",
-      "translation": "biến hóa/hóa",
-      "q": "Chữ 化 đọc và nghĩa là gì?",
-      "a": [
-        "はる - căng ra",
-        "か - biến hóa/hóa",
-        "ほか - khác",
-        "ぎ - đạo nghĩa"
-      ],
-      "c": 1,
-      "ex": "文化 (ぶんか): văn hóa"
-    },
-    {
-      "word": "歴",
-      "romaji": "れき",
-      "translation": "lịch sử",
-      "q": "Chữ 歴 đọc và nghĩa là gì?",
-      "a": [
-        "とう - thống nhất",
-        "れき - lịch sử",
-        "じょう - tình cảm",
-        "つよい - mạnh"
-      ],
-      "c": 1,
-      "ex": "歴史 (れきし): lịch sử"
-    },
-    {
-      "word": "史",
-      "romaji": "し",
-      "translation": "sử",
-      "q": "Chữ 史 đọc và nghĩa là gì?",
-      "a": [
-        "まける - thua",
-        "べつ - khác/riêng biệt",
-        "まつ - chờ đợi",
-        "し - sử"
-      ],
       "c": 3,
-      "ex": "歴史 (れきし): lịch sử"
+      "ex": "軽 (かるい): nhẹ"
     },
     {
-      "word": "世",
-      "romaji": "せ",
-      "translation": "đời/thế hệ",
-      "q": "Chữ 世 đọc và nghĩa là gì?",
+      "word": "勉強",
+      "romaji": "べんきょう",
+      "translation": "học tập",
+      "q": "Từ 勉強 đọc và nghĩa là gì?",
       "a": [
-        "こわい - sợ hãi",
-        "みつ - kín đáo",
-        "かく - tư cách/quy cách",
-        "せ - đời/thế hệ"
-      ],
-      "c": 3,
-      "ex": "世界 (せかい): thế giới"
-    },
-    {
-      "word": "界",
-      "romaji": "かい",
-      "translation": "giới/ranh giới",
-      "q": "Chữ 界 đọc và nghĩa là gì?",
-      "a": [
-        "せい - hy sinh",
-        "しゅん - khoảnh khắc",
-        "かい - giới/ranh giới",
-        "たい - trạng thái"
-      ],
-      "c": 2,
-      "ex": "世界 (せかい): thế giới"
-    },
-    {
-      "word": "地",
-      "romaji": "ち",
-      "translation": "đất/vùng đất",
-      "q": "Chữ 地 đọc và nghĩa là gì?",
-      "a": [
-        "なる - trở thành",
-        "たつ - cắt đứt/quyết đoán",
-        "せめる - trách nhiệm",
-        "ち - đất/vùng đất"
-      ],
-      "c": 3,
-      "ex": "地球 (ちきゅう): trái đất"
-    },
-    {
-      "word": "球",
-      "romaji": "きゅう",
-      "translation": "quả cầu",
-      "q": "Chữ 球 đọc và nghĩa là gì?",
-      "a": [
-        "だん - đoàn thể",
-        "ちから - sức mạnh",
-        "きゅう - quả cầu",
-        "くん - huấn luyện"
-      ],
-      "c": 2,
-      "ex": "地球 (ちきゅう): trái đất"
-    },
-    {
-      "word": "科",
-      "romaji": "か",
-      "translation": "khoa/môn học",
-      "q": "Chữ 科 đọc và nghĩa là gì?",
-      "a": [
-        "ていする - đề xuất",
-        "ゆう - lý do/tự do",
-        "か - khoa/môn học",
-        "けん - dâng hiến"
-      ],
-      "c": 2,
-      "ex": "科学 (かがく): khoa học"
-    },
-    {
-      "word": "技",
-      "romaji": "ぎ",
-      "translation": "kỹ thuật/kỹ năng",
-      "q": "Chữ 技 đọc và nghĩa là gì?",
-      "a": [
-        "せい - chế tạo",
-        "きょ - cho phép",
-        "よわい - yếu",
-        "ぎ - kỹ thuật/kỹ năng"
-      ],
-      "c": 3,
-      "ex": "技術 (ぎじゅつ): kỹ thuật"
-    },
-    {
-      "word": "術",
-      "romaji": "じゅつ",
-      "translation": "thuật/kỹ nghệ",
-      "q": "Chữ 術 đọc và nghĩa là gì?",
-      "a": [
-        "りつ - luật lệ",
-        "いん - nguyên nhân",
-        "じゅつ - thuật/kỹ nghệ",
-        "しりぞく - rút lui"
-      ],
-      "c": 2,
-      "ex": "技術 (ぎじゅつ): kỹ thuật"
-    },
-    {
-      "word": "政",
-      "romaji": "せい",
-      "translation": "chính trị",
-      "q": "Chữ 政 đọc và nghĩa là gì?",
-      "a": [
-        "ぜん - toàn bộ",
-        "だい - đề bài",
-        "すくう - cứu giúp",
-        "せい - chính trị"
-      ],
-      "c": 3,
-      "ex": "政治 (せいじ): chính trị"
-    },
-    {
-      "word": "治",
-      "romaji": "じ",
-      "translation": "cai trị/chữa trị",
-      "q": "Chữ 治 đọc và nghĩa là gì?",
-      "a": [
-        "じ - cai trị/chữa trị",
-        "はげます - khích lệ",
-        "せい - hy sinh",
-        "ひん - phẩm chất/đồ vật"
-      ],
-      "c": 0,
-      "ex": "政治 (せいじ): chính trị"
-    },
-    {
-      "word": "法",
-      "romaji": "ほう",
-      "translation": "pháp luật/cách thức",
-      "q": "Chữ 法 đọc và nghĩa là gì?",
-      "a": [
-        "くすり - thuốc",
-        "ほう - pháp luật/cách thức",
-        "きよい - trong sạch",
-        "ろん - luận điểm"
-      ],
-      "c": 1,
-      "ex": "方法 (ほうほう): phương pháp"
-    },
-    {
-      "word": "規",
-      "romaji": "き",
-      "translation": "quy tắc",
-      "q": "Chữ 規 đọc và nghĩa là gì?",
-      "a": [
-        "はたらく - làm việc",
-        "だん - đoàn thể",
-        "き - quy tắc",
-        "ひん - phẩm chất/đồ vật"
-      ],
-      "c": 2,
-      "ex": "規則 (きそく): quy tắc"
-    },
-    {
-      "word": "許",
-      "romaji": "きょ",
-      "translation": "cho phép",
-      "q": "Chữ 許 đọc và nghĩa là gì?",
-      "a": [
-        "おくる - gửi/tiễn",
-        "ちょ - tích trữ",
-        "きょ - cho phép",
-        "だい - đề bài"
-      ],
-      "c": 2,
-      "ex": "許可 (きょか): cho phép"
-    },
-    {
-      "word": "可",
-      "romaji": "か",
-      "translation": "có thể/cho phép",
-      "q": "Chữ 可 đọc và nghĩa là gì?",
-      "a": [
-        "ぎ - nghi lễ",
-        "い - ý nghĩa/ý định",
-        "か - có thể/cho phép",
-        "かわ - lớp da/vỏ"
-      ],
-      "c": 2,
-      "ex": "許可 (きょか): cho phép"
-    },
-    {
-      "word": "禁",
-      "romaji": "きん",
-      "translation": "cấm",
-      "q": "Chữ 禁 đọc và nghĩa là gì?",
-      "a": [
-        "きん - cấm",
-        "ご - bảo vệ",
-        "げん - gốc/nguyên khí",
-        "ゆう - lý do/tự do"
-      ],
-      "c": 0,
-      "ex": "禁止 (きんし): cấm"
-    },
-    {
-      "word": "止",
-      "romaji": "とめる",
-      "translation": "dừng lại",
-      "q": "Chữ 止 đọc và nghĩa là gì?",
-      "a": [
-        "とめる - dừng lại",
-        "おぼえる - nhớ/ghi nhớ",
-        "せつ - thuyết/giải thích",
-        "いん - thành viên/nhân viên"
-      ],
-      "c": 0,
-      "ex": "中止 (ちゅうし): hủy bỏ"
-    },
-    {
-      "word": "予",
-      "romaji": "よ",
-      "translation": "dự trù/trước",
-      "q": "Chữ 予 đọc và nghĩa là gì?",
-      "a": [
-        "よ - dự trù/trước",
-        "はら - nguyên nhân/cánh đồng",
-        "ばつ - hình phạt",
-        "い - ý nghĩa/ý định"
-      ],
-      "c": 0,
-      "ex": "予定 (よてい): dự định"
-    },
-    {
-      "word": "定",
-      "romaji": "てい",
-      "translation": "quyết định/cố định",
-      "q": "Chữ 定 đọc và nghĩa là gì?",
-      "a": [
-        "しりぞく - rút lui",
-        "い - y học",
-        "しき - nhận thức",
-        "てい - quyết định/cố định"
-      ],
-      "c": 3,
-      "ex": "予定 (よてい): dự định"
-    },
-    {
-      "word": "送",
-      "romaji": "おくる",
-      "translation": "gửi/tiễn",
-      "q": "Chữ 送 đọc và nghĩa là gì?",
-      "a": [
-        "ほう - pháp luật/cách thức",
-        "きょ - căn cứ",
-        "い - y học",
-        "おくる - gửi/tiễn"
-      ],
-      "c": 3,
-      "ex": "送料 (そうりょう): phí gửi"
-    },
-    {
-      "word": "届",
-      "romaji": "とどく",
-      "translation": "tới nơi/giao",
-      "q": "Chữ 届 đọc và nghĩa là gì?",
-      "a": [
-        "りつ - tỷ lệ",
-        "とどく - tới nơi/giao",
-        "くん - huấn luyện",
-        "うしなう - mất/thất bại"
-      ],
-      "c": 1,
-      "ex": "届け (とどけ): giấy báo/giao"
-    },
-    {
-      "word": "渡",
-      "romaji": "わたる",
-      "translation": "băng qua/trao",
-      "q": "Chữ 渡 đọc và nghĩa là gì?",
-      "a": [
-        "とう - thống nhất",
-        "じ - chữ",
-        "きたない - bẩn",
-        "わたる - băng qua/trao"
-      ],
-      "c": 3,
-      "ex": "渡航 (とこう): xuất ngoại"
-    },
-    {
-      "word": "集",
-      "romaji": "あつまる",
-      "translation": "tụ họp",
-      "q": "Chữ 集 đọc và nghĩa là gì?",
-      "a": [
-        "あつまる - tụ họp",
-        "こう - hiệu quả",
-        "ほか - khác",
-        "あさい - nông/cạn"
-      ],
-      "c": 0,
-      "ex": "集合 (しゅうごう): tập hợp"
-    },
-    {
-      "word": "選",
-      "romaji": "えらぶ",
-      "translation": "lựa chọn",
-      "q": "Chữ 選 đọc và nghĩa là gì?",
-      "a": [
-        "じゅつ - thuật/kỹ nghệ",
-        "えらぶ - lựa chọn",
-        "あやまる - sai lầm",
-        "しき - nhận thức"
-      ],
-      "c": 1,
-      "ex": "選択 (せんたく): sự lựa chọn"
-    },
-    {
-      "word": "調",
-      "romaji": "しらべる",
-      "translation": "điều tra/kiểm tra",
-      "q": "Chữ 調 đọc và nghĩa là gì?",
-      "a": [
-        "きよい - trong sạch",
-        "しらべる - điều tra/kiểm tra",
-        "かん - đơn giản",
-        "さばく - phán xét"
-      ],
-      "c": 1,
-      "ex": "調査 (ちょうさ): điều tra"
-    },
-    {
-      "word": "比",
-      "romaji": "くらべる",
-      "translation": "so sánh",
-      "q": "Chữ 比 đọc và nghĩa là gì?",
-      "a": [
-        "くらべる - so sánh",
-        "ひ - bí mật",
-        "おかす - phạm tội",
-        "ふかい - sâu"
-      ],
-      "c": 0,
-      "ex": "比較 (ひかく): so sánh"
-    },
-    {
-      "word": "続",
-      "romaji": "つづく",
-      "translation": "tiếp tục",
-      "q": "Chữ 続 đọc và nghĩa là gì?",
-      "a": [
-        "ふかい - sâu",
-        "きよい - trong sạch",
-        "つづく - tiếp tục",
-        "すくう - cứu giúp"
-      ],
-      "c": 2,
-      "ex": "続き (つづき): phần tiếp theo"
-    },
-    {
-      "word": "変",
-      "romaji": "かわる",
-      "translation": "thay đổi",
-      "q": "Chữ 変 đọc và nghĩa là gì?",
-      "a": [
-        "かわる - thay đổi",
-        "かん - vòng/môi trường",
-        "ぼう - cây gậy",
-        "ぶ - võ thuật"
-      ],
-      "c": 0,
-      "ex": "変化 (へんか): biến đổi"
-    },
-    {
-      "word": "決",
-      "romaji": "きめる",
-      "translation": "quyết định",
-      "q": "Chữ 決 đọc và nghĩa là gì?",
-      "a": [
-        "きめる - quyết định",
-        "ばつ - hình phạt",
-        "やく - hẹn/ước",
-        "はら - nguyên nhân/cánh đồng"
-      ],
-      "c": 0,
-      "ex": "決定 (けってい): quyết định"
-    },
-    {
-      "word": "別",
-      "romaji": "べつ",
-      "translation": "khác/riêng biệt",
-      "q": "Chữ 別 đọc và nghĩa là gì?",
-      "a": [
-        "あう - hợp/phù hợp",
-        "い - y học",
-        "あん - kế hoạch/phương án",
-        "べつ - khác/riêng biệt"
-      ],
-      "c": 3,
-      "ex": "特別 (とくべつ): đặc biệt"
-    },
-    {
-      "word": "由",
-      "romaji": "ゆう",
-      "translation": "lý do/tự do",
-      "q": "Chữ 由 đọc và nghĩa là gì?",
-      "a": [
-        "ゆう - lý do/tự do",
-        "みつ - kín đáo",
-        "きよい - trong sạch",
-        "えらぶ - lựa chọn"
-      ],
-      "c": 0,
-      "ex": "自由 (じゆう): tự do"
-    },
-    {
-      "word": "介",
-      "romaji": "かい",
-      "translation": "trung gian",
-      "q": "Chữ 介 đọc và nghĩa là gì?",
-      "a": [
-        "せい - chính trị",
-        "きらう - ghét",
-        "かい - trung gian",
-        "よう - sử dụng/việc"
-      ],
-      "c": 2,
-      "ex": "紹介 (しょうかい): giới thiệu"
-    },
-    {
-      "word": "招",
-      "romaji": "まねく",
-      "translation": "mời",
-      "q": "Chữ 招 đọc và nghĩa là gì?",
-      "a": [
-        "あやまる - xin lỗi",
-        "ぶ - võ thuật",
-        "まねく - mời",
-        "たん - đơn lẻ"
-      ],
-      "c": 2,
-      "ex": "招待 (しょうたい): lời mời"
-    },
-    {
-      "word": "絡",
-      "romaji": "らく",
-      "translation": "liên lạc",
-      "q": "Chữ 絡 đọc và nghĩa là gì?",
-      "a": [
-        "か - có thể/cho phép",
-        "しょう - chướng ngại",
-        "あたる - trúng/đúng",
-        "らく - liên lạc"
-      ],
-      "c": 3,
-      "ex": "連絡 (れんらく): liên lạc"
-    },
-    {
-      "word": "約",
-      "romaji": "やく",
-      "translation": "hẹn/ước",
-      "q": "Chữ 約 đọc và nghĩa là gì?",
-      "a": [
-        "やく - hẹn/ước",
-        "どろ - bùn",
-        "かわ - lớp da/vỏ",
-        "おさめる - thu"
-      ],
-      "c": 0,
-      "ex": "約束 (やくそく): lời hứa"
-    },
-    {
-      "word": "備",
-      "romaji": "そなえる",
-      "translation": "chuẩn bị",
-      "q": "Chữ 備 đọc và nghĩa là gì?",
-      "a": [
-        "そなえる - chuẩn bị",
-        "しあわせ - hạnh phúc",
-        "けん - quyền lực",
-        "ぜん - toàn bộ"
-      ],
-      "c": 0,
-      "ex": "準備 (じゅんび): chuẩn bị"
-    },
-    {
-      "word": "準",
-      "romaji": "じゅん",
-      "translation": "chuẩn bị",
-      "q": "Chữ 準 đọc và nghĩa là gì?",
-      "a": [
-        "せめる - trách nhiệm",
-        "ぞう - chế tạo",
-        "じゅん - chuẩn bị",
-        "しぬ - chết"
-      ],
-      "c": 2,
-      "ex": "準備 (じゅんび): chuẩn bị"
-    },
-    {
-      "word": "態",
-      "romaji": "たい",
-      "translation": "trạng thái",
-      "q": "Chữ 態 đọc và nghĩa là gì?",
-      "a": [
-        "たい - trạng thái",
-        "おさめる - thu",
-        "ぜん - tự nhiên như vậy",
-        "さばく - phán xét"
-      ],
-      "c": 0,
-      "ex": "状態 (じょうたい): trạng thái"
-    },
-    {
-      "word": "状",
-      "romaji": "じょう",
-      "translation": "tình trạng",
-      "q": "Chữ 状 đọc và nghĩa là gì?",
-      "a": [
-        "じょう - tình trạng",
-        "しる - biết",
-        "いのち - mạng sống",
-        "のる - lên (xe)"
-      ],
-      "c": 0,
-      "ex": "状態 (じょうたい): trạng thái"
-    },
-    {
-      "word": "然",
-      "romaji": "ぜん",
-      "translation": "tự nhiên như vậy",
-      "q": "Chữ 然 đọc và nghĩa là gì?",
-      "a": [
-        "ぜん - tự nhiên như vậy",
-        "せい - hy sinh",
-        "ぞく - họ hàng/tộc",
-        "つとめる - nỗ lực"
-      ],
-      "c": 0,
-      "ex": "自然 (しぜん): tự nhiên"
-    },
-    {
-      "word": "慣",
-      "romaji": "ならす",
-      "translation": "quen thuộc",
-      "q": "Chữ 慣 đọc và nghĩa là gì?",
-      "a": [
-        "つかれる - mệt mỏi",
-        "じょう - tình trạng",
-        "ならす - quen thuộc",
-        "うそ - lời nói dối"
-      ],
-      "c": 2,
-      "ex": "習慣 (しゅうかん): thói quen"
-    },
-    {
-      "word": "訓",
-      "romaji": "くん",
-      "translation": "huấn luyện",
-      "q": "Chữ 訓 đọc và nghĩa là gì?",
-      "a": [
-        "たえる - tuyệt vọng/dứt",
-        "つげる - thông báo",
-        "つかれる - mệt mỏi",
-        "くん - huấn luyện"
-      ],
-      "c": 3,
-      "ex": "訓練 (くんれん): huấn luyện"
-    },
-    {
-      "word": "律",
-      "romaji": "りつ",
-      "translation": "luật lệ",
-      "q": "Chữ 律 đọc và nghĩa là gì?",
-      "a": [
-        "ゆう - lý do/tự do",
-        "ぞく - họ hàng/tộc",
-        "しぬ - chết",
-        "りつ - luật lệ"
-      ],
-      "c": 3,
-      "ex": "法律 (ほうりつ): pháp luật"
-    },
-    {
-      "word": "則",
-      "romaji": "そく",
-      "translation": "quy tắc",
-      "q": "Chữ 則 đọc và nghĩa là gì?",
-      "a": [
-        "いのち - mạng sống",
-        "そく - quy tắc",
-        "ぜん - tự nhiên như vậy",
-        "ぞう - chế tạo"
-      ],
-      "c": 1,
-      "ex": "規則 (きそく): quy tắc"
-    },
-    {
-      "word": "障",
-      "romaji": "しょう",
-      "translation": "chướng ngại",
-      "q": "Chữ 障 đọc và nghĩa là gì?",
-      "a": [
-        "しょう - chướng ngại",
-        "こう - công lao/thành tựu",
-        "ひびく - vang lên/ảnh hưởng",
-        "かなしい - buồn bã"
-      ],
-      "c": 0,
-      "ex": "故障 (こしょう): hỏng hóc"
-    },
-    {
-      "word": "済",
-      "romaji": "ざい",
-      "translation": "kinh tế/xong việc",
-      "q": "Chữ 済 đọc và nghĩa là gì?",
-      "a": [
-        "ざい - kinh tế/xong việc",
-        "すわる - ngồi",
-        "くらべる - so sánh",
-        "ぞく - họ hàng/tộc"
-      ],
-      "c": 0,
-      "ex": "経済 (けいざい): kinh tế"
-    },
-    {
-      "word": "儀",
-      "romaji": "ぎ",
-      "translation": "nghi lễ",
-      "q": "Chữ 儀 đọc và nghĩa là gì?",
-      "a": [
-        "こ - cá thể",
-        "ぎ - nghi lễ",
-        "そなえる - chuẩn bị",
-        "しき - nhận thức"
-      ],
-      "c": 1,
-      "ex": "礼儀 (れいぎ): lễ nghi"
-    },
-    {
-      "word": "験",
-      "romaji": "けん",
-      "translation": "kiểm tra/nghiệm",
-      "q": "Chữ 験 đọc và nghĩa là gì?",
-      "a": [
-        "もつ - cầm/giữ",
-        "おかす - phạm tội",
-        "きゅう - nghiên cứu tường tận",
-        "けん - kiểm tra/nghiệm"
-      ],
-      "c": 3,
-      "ex": "経験 (けいけん): kinh nghiệm"
-    },
-    {
-      "word": "問",
-      "romaji": "とう",
-      "translation": "hỏi",
-      "q": "Chữ 問 đọc và nghĩa là gì?",
-      "a": [
-        "あらそう - tranh giành",
-        "けん - quyền lực",
-        "とう - hỏi",
-        "たしか - chắc chắn"
-      ],
-      "c": 2,
-      "ex": "質問 (しつもん): câu hỏi"
-    },
-    {
-      "word": "題",
-      "romaji": "だい",
-      "translation": "đề bài",
-      "q": "Chữ 題 đọc và nghĩa là gì?",
-      "a": [
-        "けん - dâng hiến",
-        "ろう - lãng phí/sóng",
-        "かわる - thay đổi",
-        "だい - đề bài"
-      ],
-      "c": 3,
-      "ex": "問題 (もんだい): vấn đề"
-    },
-    {
-      "word": "答",
-      "romaji": "こたえる",
-      "translation": "trả lời",
-      "q": "Chữ 答 đọc và nghĩa là gì?",
-      "a": [
-        "そめる - nhuộm/nhiễm",
-        "しょう - chứng cứ",
-        "こたえる - trả lời",
-        "たしか - chắc chắn"
-      ],
-      "c": 2,
-      "ex": "答案 (とうあん): bài làm"
-    },
-    {
-      "word": "漢",
-      "romaji": "かん",
-      "translation": "chữ Hán",
-      "q": "Chữ 漢 đọc và nghĩa là gì?",
-      "a": [
-        "やぶれる - thua/thất bại",
-        "にん - trách nhiệm",
-        "かん - chữ Hán",
-        "とめる - dừng lại"
-      ],
-      "c": 2,
-      "ex": "漢字 (かんじ): chữ Hán"
-    },
-    {
-      "word": "字",
-      "romaji": "じ",
-      "translation": "chữ",
-      "q": "Chữ 字 đọc và nghĩa là gì?",
-      "a": [
-        "じ - chữ",
-        "べつ - khác/riêng biệt",
-        "ろん - luận điểm",
-        "じ - cai trị/chữa trị"
-      ],
-      "c": 0,
-      "ex": "文字 (もじ): văn tự"
-    },
-    {
-      "word": "仕",
-      "romaji": "し",
-      "translation": "phụng sự",
-      "q": "Chữ 仕 đọc và nghĩa là gì?",
-      "a": [
-        "し - phụng sự",
-        "ぎ - đạo nghĩa",
-        "か - khoa/môn học",
-        "つかれる - mệt mỏi"
-      ],
-      "c": 0,
-      "ex": "仕事 (しごと): công việc"
-    },
-    {
-      "word": "事",
-      "romaji": "こと",
-      "translation": "việc/sự việc",
-      "q": "Chữ 事 đọc và nghĩa là gì?",
-      "a": [
-        "いん - viện",
-        "よう - cần thiết",
-        "たもつ - giữ gìn",
-        "こと - việc/sự việc"
-      ],
-      "c": 3,
-      "ex": "仕事 (しごと): công việc"
-    },
-    {
-      "word": "経",
-      "romaji": "けい",
-      "translation": "trải qua/kinh tế",
-      "q": "Chữ 経 đọc và nghĩa là gì?",
-      "a": [
-        "ぼう - cây gậy",
-        "い - ý nghĩa/ý định",
-        "あさい - nông/cạn",
-        "けい - trải qua/kinh tế"
-      ],
-      "c": 3,
-      "ex": "経験 (けいけん): kinh nghiệm"
-    },
-    {
-      "word": "環",
-      "romaji": "かん",
-      "translation": "vòng/môi trường",
-      "q": "Chữ 環 đọc và nghĩa là gì?",
-      "a": [
-        "みとめる - công nhận",
-        "ひ - bí mật",
-        "げん - gốc/nguyên khí",
-        "かん - vòng/môi trường"
-      ],
-      "c": 3,
-      "ex": "環境 (かんきょう): môi trường"
-    },
-    {
-      "word": "境",
-      "romaji": "きょう",
-      "translation": "biên giới/ranh giới",
-      "q": "Chữ 境 đọc và nghĩa là gì?",
-      "a": [
-        "きゅう - quả cầu",
-        "じゅつ - thuật/kỹ nghệ",
-        "きょう - biên giới/ranh giới",
-        "かわ - lớp da/vỏ"
-      ],
-      "c": 2,
-      "ex": "環境 (かんきょう): môi trường"
-    },
-    {
-      "word": "効",
-      "romaji": "こう",
-      "translation": "hiệu quả",
-      "q": "Chữ 効 đọc và nghĩa là gì?",
-      "a": [
-        "りょう - phí/nguyên liệu",
-        "か - giá trị",
-        "こう - hiệu quả",
-        "しりぞく - rút lui"
-      ],
-      "c": 2,
-      "ex": "効果 (こうか): hiệu quả"
-    },
-    {
-      "word": "製",
-      "romaji": "せい",
-      "translation": "chế tạo",
-      "q": "Chữ 製 đọc và nghĩa là gì?",
-      "a": [
-        "こと - việc/sự việc",
-        "きそう - cạnh tranh",
-        "いん - thành viên/nhân viên",
-        "せい - chế tạo"
-      ],
-      "c": 3,
-      "ex": "製品 (せいひん): sản phẩm"
-    },
-    {
-      "word": "品",
-      "romaji": "ひん",
-      "translation": "phẩm chất/đồ vật",
-      "q": "Chữ 品 đọc và nghĩa là gì?",
-      "a": [
-        "ひん - phẩm chất/đồ vật",
-        "かぎる - giới hạn",
-        "しゃ - bắn/tiêm",
-        "よ - dự trù/trước"
-      ],
-      "c": 0,
-      "ex": "製品 (せいひん): sản phẩm"
-    },
-    {
-      "word": "商",
-      "romaji": "しょう",
-      "translation": "buôn bán",
-      "q": "Chữ 商 đọc và nghĩa là gì?",
-      "a": [
-        "やさしい - dịu dàng/ưu tú",
-        "わる - chia/bẻ",
-        "しょう - buôn bán",
-        "ふかい - sâu"
-      ],
-      "c": 2,
-      "ex": "商品 (しょうひん): hàng hóa"
-    },
-    {
-      "word": "増",
-      "romaji": "ふえる",
-      "translation": "tăng lên",
-      "q": "Chữ 増 đọc và nghĩa là gì?",
-      "a": [
-        "ふえる - tăng lên",
-        "せい - chính trị",
-        "わかい - trẻ",
-        "まこと - chân thành"
-      ],
-      "c": 0,
-      "ex": "増加 (ぞうか): sự gia tăng"
-    },
-    {
-      "word": "減",
-      "romaji": "へる",
-      "translation": "giảm xuống",
-      "q": "Chữ 減 đọc và nghĩa là gì?",
-      "a": [
-        "おかす - phạm tội",
-        "まつ - chờ đợi",
-        "へる - giảm xuống",
-        "たい - trạng thái"
-      ],
-      "c": 2,
-      "ex": "減少 (げんしょう): sự giảm thiểu"
-    },
-    {
-      "word": "影",
-      "romaji": "かげ",
-      "translation": "bóng/ảnh hưởng",
-      "q": "Chữ 影 đọc và nghĩa là gì?",
-      "a": [
-        "さん - tán thành",
-        "こ - lý do/sự cố",
-        "おりる - xuống (xe)",
-        "かげ - bóng/ảnh hưởng"
-      ],
-      "c": 3,
-      "ex": "影響 (えいきょう): ảnh hưởng"
-    },
-    {
-      "word": "響",
-      "romaji": "ひびく",
-      "translation": "vang lên/ảnh hưởng",
-      "q": "Chữ 響 đọc và nghĩa là gì?",
-      "a": [
-        "そめる - nhuộm/nhiễm",
-        "ひびく - vang lên/ảnh hưởng",
-        "こ - lý do/sự cố",
-        "しあわせ - hạnh phúc"
-      ],
-      "c": 1,
-      "ex": "影響 (えいきょう): ảnh hưởng"
-    },
-    {
-      "word": "原",
-      "romaji": "はら",
-      "translation": "nguyên nhân/cánh đồng",
-      "q": "Chữ 原 đọc và nghĩa là gì?",
-      "a": [
-        "ざい - kinh tế/xong việc",
-        "じ - chữ",
-        "はら - nguyên nhân/cánh đồng",
-        "ぞう - hình ảnh/tượng"
-      ],
-      "c": 2,
-      "ex": "原因 (げんいん): nguyên nhân"
-    },
-    {
-      "word": "因",
-      "romaji": "いん",
-      "translation": "nguyên nhân",
-      "q": "Chữ 因 đọc và nghĩa là gì?",
-      "a": [
-        "いん - nguyên nhân",
-        "おぼえる - nhớ/ghi nhớ",
-        "ゆう - lý do/tự do",
-        "おどろく - ngạc nhiên"
-      ],
-      "c": 0,
-      "ex": "原因 (げんいん): nguyên nhân"
-    },
-    {
-      "word": "実",
-      "romaji": "じつ",
-      "translation": "thực tế",
-      "q": "Chữ 実 đọc và nghĩa là gì?",
-      "a": [
-        "ぜん - tự nhiên như vậy",
-        "ささえる - chống đỡ/chi",
-        "じつ - thực tế",
-        "きん - đồng đều"
-      ],
-      "c": 2,
-      "ex": "実験 (じっけん): thí nghiệm"
-    },
-    {
-      "word": "究",
-      "romaji": "きゅう",
-      "translation": "nghiên cứu tường tận",
-      "q": "Chữ 究 đọc và nghĩa là gì?",
-      "a": [
-        "はら - nguyên nhân/cánh đồng",
-        "きゅう - nghiên cứu tường tận",
-        "つくる - làm/tạo ra",
-        "ち - đất/vùng đất"
-      ],
-      "c": 1,
-      "ex": "研究 (けんきゅう): nghiên cứu"
-    },
-    {
-      "word": "発",
-      "romaji": "はつ",
-      "translation": "phát ra",
-      "q": "Chữ 発 đọc và nghĩa là gì?",
-      "a": [
-        "きょう - hứng thú",
-        "はつ - phát ra",
-        "ていする - đề xuất",
-        "のぞむ - mong muốn"
-      ],
-      "c": 1,
-      "ex": "発見 (はっけん): phát hiện"
-    },
-    {
-      "word": "展",
-      "romaji": "てん",
-      "translation": "triển khai/mở rộng",
-      "q": "Chữ 展 đọc và nghĩa là gì?",
-      "a": [
-        "き - quy tắc",
-        "けい - khế ước",
-        "てん - triển khai/mở rộng",
-        "じょう - tình cảm"
-      ],
-      "c": 2,
-      "ex": "発展 (はってん): phát triển"
-    },
-    {
-      "word": "認",
-      "romaji": "みとめる",
-      "translation": "công nhận",
-      "q": "Chữ 認 đọc và nghĩa là gì?",
-      "a": [
-        "そん - tồn tại",
-        "うしなう - mất/thất bại",
-        "みとめる - công nhận",
-        "おりる - xuống (xe)"
-      ],
-      "c": 2,
-      "ex": "確認 (かくにん): xác nhận"
-    },
-    {
-      "word": "識",
-      "romaji": "しき",
-      "translation": "nhận thức",
-      "q": "Chữ 識 đọc và nghĩa là gì?",
-      "a": [
-        "こわい - sợ hãi",
-        "こう - công lao/thành tựu",
-        "ぎ - nghi lễ",
-        "しき - nhận thức"
-      ],
-      "c": 3,
-      "ex": "意識 (いしき): ý thức"
-    },
-    {
-      "word": "像",
-      "romaji": "ぞう",
-      "translation": "hình ảnh/tượng",
-      "q": "Chữ 像 đọc và nghĩa là gì?",
-      "a": [
-        "まこと - chân thành",
-        "けん - quyền lực",
-        "ぞう - hình ảnh/tượng",
-        "たしか - chắc chắn"
-      ],
-      "c": 2,
-      "ex": "想像 (そうぞう): tưởng tượng"
-    },
-    {
-      "word": "望",
-      "romaji": "のぞむ",
-      "translation": "mong muốn",
-      "q": "Chữ 望 đọc và nghĩa là gì?",
-      "a": [
-        "かい - trung gian",
-        "ていする - đề xuất",
-        "たのむ - nhờ vả",
-        "のぞむ - mong muốn"
-      ],
-      "c": 3,
-      "ex": "希望 (きぼう): hy vọng"
-    },
-    {
-      "word": "満",
-      "romaji": "みちる",
-      "translation": "đầy đủ/thỏa mãn",
-      "q": "Chữ 満 đọc và nghĩa là gì?",
-      "a": [
-        "みちる - đầy đủ/thỏa mãn",
-        "とう - hỏi",
-        "こと - việc/sự việc",
-        "てき - thích hợp"
-      ],
-      "c": 0,
-      "ex": "満足 (まんぞく): sự hài lòng"
-    },
-    {
-      "word": "緊",
-      "romaji": "きん",
-      "translation": "căng thẳng",
-      "q": "Chữ 緊 đọc và nghĩa là gì?",
-      "a": [
-        "たい - trạng thái",
-        "ひょう - đánh giá",
-        "きん - căng thẳng",
-        "き - quy tắc"
-      ],
-      "c": 2,
-      "ex": "緊張 (きんちょう): sự căng thẳng"
-    },
-    {
-      "word": "張",
-      "romaji": "はる",
-      "translation": "căng ra",
-      "q": "Chữ 張 đọc và nghĩa là gì?",
-      "a": [
-        "けい - trải qua/kinh tế",
-        "はる - căng ra",
-        "からい - cay/vất vả",
-        "つれる - dẫn theo/liên tục"
-      ],
-      "c": 1,
-      "ex": "緊張 (きんちょう): sự căng thẳng"
-    },
-    {
-      "word": "興",
-      "romaji": "きょう",
-      "translation": "hứng thú",
-      "q": "Chữ 興 đọc và nghĩa là gì?",
-      "a": [
-        "じゅん - chuẩn bị",
-        "きょう - hứng thú",
-        "ぜん - tự nhiên như vậy",
-        "しょう - chứng cứ"
-      ],
-      "c": 1,
-      "ex": "興味 (きょうみ): sự thích thú"
-    },
-    {
-      "word": "奮",
-      "romaji": "ふるう",
-      "translation": "phấn chấn",
-      "q": "Chữ 奮 đọc và nghĩa là gì?",
-      "a": [
-        "ひらく - mở",
-        "おそろしい - đáng sợ",
-        "さん - tán thành",
-        "ふるう - phấn chấn"
-      ],
-      "c": 3,
-      "ex": "興奮 (こうふん): sự hưng phấn"
-    },
-    {
-      "word": "退",
-      "romaji": "しりぞく",
-      "translation": "rút lui",
-      "q": "Chữ 退 đọc và nghĩa là gì?",
-      "a": [
-        "うそ - lời nói dối",
-        "おもい - nặng",
-        "しりぞく - rút lui",
-        "か - giá trị"
-      ],
-      "c": 2,
-      "ex": "退屈 (たいくつ): sự nhàm chán"
-    },
-    {
-      "word": "屈",
-      "romaji": "くっする",
-      "translation": "khuất phục",
-      "q": "Chữ 屈 đọc và nghĩa là gì?",
-      "a": [
-        "じゅつ - thuật/kỹ nghệ",
-        "ゆたか - phong phú",
-        "くっする - khuất phục",
-        "ふかい - sâu"
-      ],
-      "c": 2,
-      "ex": "退屈 (たいくつ): sự nhàm chán"
-    },
-    {
-      "word": "孤",
-      "romaji": "こ",
-      "translation": "cô độc",
-      "q": "Chữ 孤 đọc và nghĩa là gì?",
-      "a": [
-        "じょう - tình cảm",
-        "こ - cô độc",
-        "うそ - lời nói dối",
-        "せ - đời/thế hệ"
-      ],
-      "c": 1,
-      "ex": "孤独 (こどく): sự cô đơn"
-    },
-    {
-      "word": "独",
-      "romaji": "ひとり",
-      "translation": "một mình",
-      "q": "Chữ 独 đọc và nghĩa là gì?",
-      "a": [
-        "あつまる - tụ họp",
-        "ぼう - buôn bán",
-        "おどろく - ngạc nhiên",
-        "ひとり - một mình"
-      ],
-      "c": 3,
-      "ex": "独立 (どくりつ): độc lập"
-    },
-    {
-      "word": "幸",
-      "romaji": "しあわせ",
-      "translation": "hạnh phúc",
-      "q": "Chữ 幸 đọc và nghĩa là gì?",
-      "a": [
-        "い - ý nghĩa/ý định",
-        "きん - cấm",
-        "しあわせ - hạnh phúc",
-        "つよい - mạnh"
-      ],
-      "c": 2,
-      "ex": "幸福 (こうふく): hạnh phúc"
-    },
-    {
-      "word": "戦",
-      "romaji": "たたかう",
-      "translation": "chiến đấu",
-      "q": "Chữ 戦 đọc và nghĩa là gì?",
-      "a": [
-        "さつ - quan sát/suy đoán",
-        "すわる - ngồi",
-        "たたかう - chiến đấu",
-        "はる - căng ra"
-      ],
-      "c": 2,
-      "ex": "戦争 (せんそう): chiến tranh"
-    },
-    {
-      "word": "武",
-      "romaji": "ぶ",
-      "translation": "võ thuật",
-      "q": "Chữ 武 đọc và nghĩa là gì?",
-      "a": [
-        "ぶ - võ thuật",
-        "ねる - luyện tập",
-        "きん - cấm",
-        "のる - lên (xe)"
-      ],
-      "c": 0,
-      "ex": "武器 (ぶき): vũ khí"
-    },
-    {
-      "word": "器",
-      "romaji": "き",
-      "translation": "dụng cụ",
-      "q": "Chữ 器 đọc và nghĩa là gì?",
-      "a": [
-        "こ - lý do/sự cố",
-        "き - dụng cụ",
-        "けい - cảnh giác",
-        "はずかしい - xấu hổ"
-      ],
-      "c": 1,
-      "ex": "武器 (ぶき): vũ khí"
-    },
-    {
-      "word": "兵",
-      "romaji": "へい",
-      "translation": "binh lính",
-      "q": "Chữ 兵 đọc và nghĩa là gì?",
-      "a": [
-        "へい - binh lính",
-        "つぐ - kế thừa",
-        "あやまる - xin lỗi",
-        "しょう - giới thiệu"
-      ],
-      "c": 0,
-      "ex": "兵士 (へいし): binh sĩ"
-    },
-    {
-      "word": "府",
-      "romaji": "ふ",
-      "translation": "chính phủ",
-      "q": "Chữ 府 đọc và nghĩa là gì?",
-      "a": [
-        "かん - vòng/môi trường",
-        "さつ - quan sát/suy đoán",
-        "ふ - chính phủ",
-        "じつ - thực tế"
-      ],
-      "c": 2,
-      "ex": "政府 (せいふ): chính phủ"
-    },
-    {
-      "word": "貿",
-      "romaji": "ぼう",
-      "translation": "buôn bán",
-      "q": "Chữ 貿 đọc và nghĩa là gì?",
-      "a": [
-        "きえる - biến mất/tiêu thụ",
-        "てき - thích hợp",
-        "ぼう - buôn bán",
-        "ぼう - cây gậy"
-      ],
-      "c": 2,
-      "ex": "貿易 (ぼうえき): mậu dịch"
-    },
-    {
-      "word": "易",
-      "romaji": "えき",
-      "translation": "dễ dàng/giao dịch",
-      "q": "Chữ 易 đọc và nghĩa là gì?",
-      "a": [
-        "けい - khế ước",
-        "ばつ - hình phạt",
-        "えき - dễ dàng/giao dịch",
-        "ほう - pháp luật/cách thức"
-      ],
-      "c": 2,
-      "ex": "貿易 (ぼうえき): mậu dịch"
-    },
-    {
-      "word": "輸",
-      "romaji": "ゆ",
-      "translation": "vận chuyển",
-      "q": "Chữ 輸 đọc và nghĩa là gì?",
-      "a": [
-        "けん - khỏe mạnh",
-        "けん - kiểm tra",
-        "かかり - liên quan/phụ trách",
-        "ゆ - vận chuyển"
-      ],
-      "c": 3,
-      "ex": "輸出 (ゆしゅつ): xuất khẩu"
-    },
-    {
-      "word": "消",
-      "romaji": "きえる",
-      "translation": "biến mất/tiêu thụ",
-      "q": "Chữ 消 đọc và nghĩa là gì?",
-      "a": [
-        "ていする - đề xuất",
-        "しょう - giới thiệu",
-        "ふとい - béo/to",
-        "きえる - biến mất/tiêu thụ"
-      ],
-      "c": 3,
-      "ex": "消費 (しょうひ): tiêu thụ"
-    },
-    {
-      "word": "費",
-      "romaji": "ひ",
-      "translation": "chi phí",
-      "q": "Chữ 費 đọc và nghĩa là gì?",
-      "a": [
-        "きょ - căn cứ",
-        "ひ - chi phí",
-        "せん - chuyên môn",
-        "れい - lễ nghĩa"
-      ],
-      "c": 1,
-      "ex": "消費 (しょうひ): tiêu thụ"
-    },
-    {
-      "word": "汚",
-      "romaji": "きたない",
-      "translation": "bẩn",
-      "q": "Chữ 汚 đọc và nghĩa là gì?",
-      "a": [
-        "かん - vòng/môi trường",
-        "きたない - bẩn",
-        "へい - binh lính",
-        "よう - cần thiết"
-      ],
-      "c": 1,
-      "ex": "汚染 (おせん): ô nhiễm"
-    },
-    {
-      "word": "染",
-      "romaji": "そめる",
-      "translation": "nhuộm/nhiễm",
-      "q": "Chữ 染 đọc và nghĩa là gì?",
-      "a": [
-        "つかれる - mệt mỏi",
-        "やぶれる - thua/thất bại",
-        "そめる - nhuộm/nhiễm",
-        "おさめる - thu"
-      ],
-      "c": 2,
-      "ex": "汚染 (おせん): ô nhiễm"
-    },
-    {
-      "word": "護",
-      "romaji": "ご",
-      "translation": "bảo vệ",
-      "q": "Chữ 護 đọc và nghĩa là gì?",
-      "a": [
-        "えん - viện trợ",
-        "しぬ - chết",
-        "ご - bảo vệ",
-        "つよい - mạnh"
-      ],
-      "c": 2,
-      "ex": "保護 (ほご): bảo vệ"
-    },
-    {
-      "word": "源",
-      "romaji": "げん",
-      "translation": "nguồn gốc",
-      "q": "Chữ 源 đọc và nghĩa là gì?",
-      "a": [
-        "やさしい - dịu dàng/ưu tú",
-        "げん - nguồn gốc",
-        "あん - kế hoạch/phương án",
-        "しらべる - điều tra/kiểm tra"
-      ],
-      "c": 1,
-      "ex": "資源 (しげん): tài nguyên"
-    },
-    {
-      "word": "節",
-      "romaji": "せつ",
-      "translation": "tiết chế/đoạn",
-      "q": "Chữ 節 đọc và nghĩa là gì?",
-      "a": [
-        "ち - đất/vùng đất",
-        "かこむ - bao quanh",
-        "せつ - tiết chế/đoạn",
-        "だん - đoàn thể"
-      ],
-      "c": 2,
-      "ex": "節約 (せつやく): tiết kiệm"
-    },
-    {
-      "word": "浪",
-      "romaji": "ろう",
-      "translation": "lãng phí/sóng",
-      "q": "Chữ 浪 đọc và nghĩa là gì?",
-      "a": [
-        "ゆう - dũng cảm",
-        "おさめる - thu",
-        "ろう - lãng phí/sóng",
-        "かかり - liên quan/phụ trách"
-      ],
-      "c": 2,
-      "ex": "浪費 (ろうひ): sự lãng phí"
-    },
-    {
-      "word": "率",
-      "romaji": "りつ",
-      "translation": "tỷ lệ",
-      "q": "Chữ 率 đọc và nghĩa là gì?",
-      "a": [
-        "かるい - nhẹ",
-        "たい - trạng thái",
-        "せい - chính trị",
-        "りつ - tỷ lệ"
-      ],
-      "c": 3,
-      "ex": "効率 (こうりつ): hiệu suất"
-    },
-    {
-      "word": "価",
-      "romaji": "か",
-      "translation": "giá trị",
-      "q": "Chữ 価 đọc và nghĩa là gì?",
-      "a": [
-        "か - giá trị",
-        "くすり - thuốc",
-        "ほう - báo cáo",
-        "かりる - mượn/vay"
-      ],
-      "c": 0,
-      "ex": "価格 (かかく): giá cả"
-    },
-    {
-      "word": "格",
-      "romaji": "かく",
-      "translation": "tư cách/quy cách",
-      "q": "Chữ 格 đọc và nghĩa là gì?",
-      "a": [
-        "かく - tư cách/quy cách",
-        "ゆたか - phong phú",
-        "じつ - thực tế",
-        "じょう - tình trạng"
-      ],
-      "c": 0,
-      "ex": "価格 (かかく): giá cả"
-    },
-    {
-      "word": "料",
-      "romaji": "りょう",
-      "translation": "phí/nguyên liệu",
-      "q": "Chữ 料 đọc và nghĩa là gì?",
-      "a": [
-        "ひょう - đánh giá",
-        "せめる - trách nhiệm",
-        "りょう - phí/nguyên liệu",
-        "まこと - chân thành"
-      ],
-      "c": 2,
-      "ex": "料金 (りょうきん): phí"
-    },
-    {
-      "word": "税",
-      "romaji": "ぜい",
-      "translation": "thuế",
-      "q": "Chữ 税 đọc và nghĩa là gì?",
-      "a": [
-        "ぜい - thuế",
-        "せい - hy sinh",
-        "ろん - luận điểm",
-        "かい - trung gian"
-      ],
-      "c": 0,
-      "ex": "税金 (ぜいきん): tiền thuế"
-    },
-    {
-      "word": "給",
-      "romaji": "きゅう",
-      "translation": "cấp phát",
-      "q": "Chữ 給 đọc và nghĩa là gì?",
-      "a": [
-        "せ - đời/thế hệ",
-        "だん - đoàn thể",
-        "さばく - phán xét",
-        "きゅう - cấp phát"
-      ],
-      "c": 3,
-      "ex": "給料 (きゅうりょう): lương"
-    },
-    {
-      "word": "収",
-      "romaji": "おさめる",
-      "translation": "thu",
-      "q": "Chữ 収 đọc và nghĩa là gì?",
-      "a": [
-        "きん - đồng đều",
-        "ご - bảo vệ",
-        "きえる - biến mất/tiêu thụ",
-        "おさめる - thu"
-      ],
-      "c": 3,
-      "ex": "収入 (しゅうにゅう): thu nhập"
-    },
-    {
-      "word": "支",
-      "romaji": "ささえる",
-      "translation": "chống đỡ/chi",
-      "q": "Chữ 支 đọc và nghĩa là gì?",
-      "a": [
-        "おもい - nặng",
-        "ささえる - chống đỡ/chi",
-        "かつ - chiến thắng",
-        "ふとい - béo/to"
-      ],
-      "c": 1,
-      "ex": "支出 (ししゅつ): chi tiêu"
-    },
-    {
-      "word": "貯",
-      "romaji": "ちょ",
-      "translation": "tích trữ",
-      "q": "Chữ 貯 đọc và nghĩa là gì?",
-      "a": [
-        "かく - tư cách/quy cách",
-        "にん - trách nhiệm",
-        "ちょ - tích trữ",
-        "びょう - bệnh"
-      ],
-      "c": 2,
-      "ex": "貯金 (ちょきん): tiền tiết kiệm"
-    },
-    {
-      "word": "借",
-      "romaji": "かりる",
-      "translation": "mượn/vay",
-      "q": "Chữ 借 đọc và nghĩa là gì?",
-      "a": [
-        "じ - cai trị/chữa trị",
-        "かりる - mượn/vay",
-        "いたい - đau",
-        "ねむる - ngủ"
-      ],
-      "c": 1,
-      "ex": "借金 (しゃっきん): nợ"
-    },
-    {
-      "word": "契",
-      "romaji": "けい",
-      "translation": "khế ước",
-      "q": "Chữ 契 đọc và nghĩa là gì?",
-      "a": [
-        "ふ - chính phủ",
-        "しらべる - điều tra/kiểm tra",
-        "けい - khế ước",
-        "うしなう - mất/thất bại"
-      ],
-      "c": 2,
-      "ex": "契約 (けいやく): hợp đồng"
-    },
-    {
-      "word": "保",
-      "romaji": "たもつ",
-      "translation": "giữ gìn",
-      "q": "Chữ 保 đọc và nghĩa là gì?",
-      "a": [
-        "たもつ - giữ gìn",
-        "かん - chữ Hán",
-        "かならず - nhất định",
-        "ほう - báo cáo"
-      ],
-      "c": 0,
-      "ex": "保険 (ほけん): bảo hiểm"
-    },
-    {
-      "word": "証",
-      "romaji": "しょう",
-      "translation": "chứng cứ",
-      "q": "Chữ 証 đọc và nghĩa là gì?",
-      "a": [
-        "しょう - chứng cứ",
-        "ざい - kinh tế/xong việc",
-        "さ - sự khác biệt",
-        "よ - dự trù/trước"
-      ],
-      "c": 0,
-      "ex": "証明 (しょうめい): chứng minh"
-    },
-    {
-      "word": "拠",
-      "romaji": "きょ",
-      "translation": "căn cứ",
-      "q": "Chữ 拠 đọc và nghĩa là gì?",
-      "a": [
-        "き - quy tắc",
-        "ひらく - mở",
-        "きょ - căn cứ",
-        "ち - đất/vùng đất"
-      ],
-      "c": 2,
-      "ex": "証拠 (しょうこ): bằng chứng"
-    },
-    {
-      "word": "裁",
-      "romaji": "さばく",
-      "translation": "phán xét",
-      "q": "Chữ 裁 đọc và nghĩa là gì?",
-      "a": [
-        "はる - căng ra",
-        "かんじる - cảm nhận",
-        "さばく - phán xét",
-        "か - giá trị"
-      ],
-      "c": 2,
-      "ex": "裁判 (さいばん): xét xử"
-    },
-    {
-      "word": "判",
-      "romaji": "はん",
-      "translation": "phán đoán",
-      "q": "Chữ 判 đọc và nghĩa là gì?",
-      "a": [
-        "たん - đơn lẻ",
-        "みつ - kín đáo",
-        "ひ - chi phí",
-        "はん - phán đoán"
-      ],
-      "c": 3,
-      "ex": "裁判 (さいばん): xét xử"
-    },
-    {
-      "word": "罪",
-      "romaji": "つみ",
-      "translation": "tội lỗi",
-      "q": "Chữ 罪 đọc và nghĩa là gì?",
-      "a": [
-        "ろう - lãng phí/sóng",
-        "つみ - tội lỗi",
-        "か - giá trị",
-        "ぎ - nghi lễ"
-      ],
-      "c": 1,
-      "ex": "犯罪 (はんざい): tội phạm"
-    },
-    {
-      "word": "罰",
-      "romaji": "ばつ",
-      "translation": "hình phạt",
-      "q": "Chữ 罰 đọc và nghĩa là gì?",
-      "a": [
-        "ひ - chi phí",
-        "ふるう - phấn chấn",
-        "ばつ - hình phạt",
-        "あらそう - tranh giành"
-      ],
-      "c": 2,
-      "ex": "罰金 (ばっきん): tiền phạt"
-    },
-    {
-      "word": "警",
-      "romaji": "けい",
-      "translation": "cảnh giác",
-      "q": "Chữ 警 đọc và nghĩa là gì?",
-      "a": [
-        "けい - cảnh giác",
-        "はげます - khích lệ",
-        "ひろい - rộng",
-        "ふえる - tăng lên"
-      ],
-      "c": 0,
-      "ex": "警察 (けいさつ): cảnh sát"
-    },
-    {
-      "word": "察",
-      "romaji": "さつ",
-      "translation": "quan sát/suy đoán",
-      "q": "Chữ 察 đọc và nghĩa là gì?",
-      "a": [
-        "さつ - quan sát/suy đoán",
-        "おりる - xuống (xe)",
-        "しらべる - điều tra/kiểm tra",
-        "ぞく - họ hàng/tộc"
-      ],
-      "c": 0,
-      "ex": "警察 (けいさつ): cảnh sát"
-    },
-    {
-      "word": "犯",
-      "romaji": "おかす",
-      "translation": "phạm tội",
-      "q": "Chữ 犯 đọc và nghĩa là gì?",
-      "a": [
-        "じょう - tình cảm",
-        "たのむ - nhờ vả",
-        "そめる - nhuộm/nhiễm",
-        "おかす - phạm tội"
-      ],
-      "c": 3,
-      "ex": "犯罪 (はんざい): tội phạm"
-    },
-    {
-      "word": "泥",
-      "romaji": "どろ",
-      "translation": "bùn",
-      "q": "Chữ 泥 đọc và nghĩa là gì?",
-      "a": [
-        "よわい - yếu",
-        "かわる - thay đổi",
-        "しる - biết",
-        "どろ - bùn"
-      ],
-      "c": 3,
-      "ex": "泥棒 (どろぼう): kẻ trộm"
-    },
-    {
-      "word": "棒",
-      "romaji": "ぼう",
-      "translation": "cây gậy",
-      "q": "Chữ 棒 đọc và nghĩa là gì?",
-      "a": [
-        "はら - nguyên nhân/cánh đồng",
-        "ぼう - cây gậy",
-        "たえる - tuyệt vọng/dứt",
-        "おどろく - ngạc nhiên"
-      ],
-      "c": 1,
-      "ex": "泥棒 (どろぼう): kẻ trộm"
-    },
-    {
-      "word": "頼",
-      "romaji": "たのむ",
-      "translation": "nhờ vả",
-      "q": "Chữ 頼 đọc và nghĩa là gì?",
-      "a": [
-        "ゆたか - phong phú",
-        "ひびく - vang lên/ảnh hưởng",
-        "たのむ - nhờ vả",
-        "おかす - phạm tội"
-      ],
-      "c": 2,
-      "ex": "信頼 (しんらい): sự tin cậy"
-    },
-    {
-      "word": "疑",
-      "romaji": "うたがう",
-      "translation": "nghi ngờ",
-      "q": "Chữ 疑 đọc và nghĩa là gì?",
-      "a": [
-        "こ - cá thể",
-        "せつ - thuyết/giải thích",
-        "ねる - ngủ",
-        "うたがう - nghi ngờ"
-      ],
-      "c": 3,
-      "ex": "疑問 (ぎもん): nghi vấn"
-    },
-    {
-      "word": "確",
-      "romaji": "たしか",
-      "translation": "chắc chắn",
-      "q": "Chữ 確 đọc và nghĩa là gì?",
-      "a": [
-        "たしか - chắc chắn",
-        "こ - lý do/sự cố",
-        "なく - khóc",
-        "ひ - bí mật"
-      ],
-      "c": 0,
-      "ex": "確認 (かくにん): xác nhận"
-    },
-    {
-      "word": "検",
-      "romaji": "けん",
-      "translation": "kiểm tra",
-      "q": "Chữ 検 đọc và nghĩa là gì?",
-      "a": [
-        "すわる - ngồi",
-        "さばく - phán xét",
-        "ぎ - nghi lễ",
-        "けん - kiểm tra"
-      ],
-      "c": 3,
-      "ex": "検査 (けんさ): kiểm tra"
-    },
-    {
-      "word": "査",
-      "romaji": "さ",
-      "translation": "điều tra",
-      "q": "Chữ 査 đọc và nghĩa là gì?",
-      "a": [
-        "からい - cay/vất vả",
-        "うやまう - kính trọng",
-        "さ - điều tra",
-        "ゆう - dũng cảm"
-      ],
-      "c": 2,
-      "ex": "検査 (けんさ): kiểm tra"
-    },
-    {
-      "word": "析",
-      "romaji": "せき",
-      "translation": "phân tích",
-      "q": "Chữ 析 đọc và nghĩa là gì?",
-      "a": [
-        "つよい - mạnh",
-        "ぜん - toàn bộ",
-        "ぞく - họ hàng/tộc",
-        "せき - phân tích"
-      ],
-      "c": 3,
-      "ex": "分析 (ぶんせき): phân tích"
-    },
-    {
-      "word": "統",
-      "romaji": "とう",
-      "translation": "thống nhất",
-      "q": "Chữ 統 đọc và nghĩa là gì?",
-      "a": [
-        "まねく - mời",
-        "せつ - thuyết/giải thích",
-        "あぶない - nguy hiểm",
-        "とう - thống nhất"
-      ],
-      "c": 3,
-      "ex": "統計 (とうけい): thống kê"
-    },
-    {
-      "word": "均",
-      "romaji": "きん",
-      "translation": "đồng đều",
-      "q": "Chữ 均 đọc và nghĩa là gì?",
-      "a": [
-        "い - ý nghĩa/ý định",
-        "きん - đồng đều",
-        "おかす - phạm tội",
-        "きょ - cho phép"
-      ],
-      "c": 1,
-      "ex": "平均 (へいきん): trung bình"
-    },
-    {
-      "word": "割",
-      "romaji": "わる",
-      "translation": "chia/bẻ",
-      "q": "Chữ 割 đọc và nghĩa là gì?",
-      "a": [
-        "かたよる - thiên lệch",
-        "わる - chia/bẻ",
-        "こ - lý do/sự cố",
-        "きゅう - nghiên cứu tường tận"
-      ],
-      "c": 1,
-      "ex": "割合 (わりあい): tỷ lệ"
-    },
-    {
-      "word": "傾",
-      "romaji": "かたむく",
-      "translation": "nghiêng",
-      "q": "Chữ 傾 đọc và nghĩa là gì?",
-      "a": [
-        "かたむく - nghiêng",
-        "かん - hoàn thành",
-        "とも - cùng nhau",
-        "つかう - sử dụng"
-      ],
-      "c": 0,
-      "ex": "傾向 (けいこう): xu hướng"
-    },
-    {
-      "word": "測",
-      "romaji": "はかる",
-      "translation": "đo lường",
-      "q": "Chữ 測 đọc và nghĩa là gì?",
-      "a": [
-        "みつ - kín đáo",
-        "れき - lịch sử",
-        "はかる - đo lường",
-        "あらそう - tranh giành"
-      ],
-      "c": 2,
-      "ex": "予測 (よそく): dự đoán"
-    },
-    {
-      "word": "評",
-      "romaji": "ひょう",
-      "translation": "đánh giá",
-      "q": "Chữ 評 đọc và nghĩa là gì?",
-      "a": [
-        "ひょう - đánh giá",
-        "べつ - khác/riêng biệt",
-        "しゃ - bắn/tiêm",
-        "しめる - đóng"
-      ],
-      "c": 0,
-      "ex": "評価 (ひょうか): đánh giá"
-    },
-    {
-      "word": "批",
-      "romaji": "ひ",
-      "translation": "phê bình",
-      "q": "Chữ 批 đọc và nghĩa là gì?",
-      "a": [
-        "ひ - phê bình",
-        "あさい - nông/cạn",
-        "けん - kiểm tra/nghiệm",
-        "かん - đơn giản"
-      ],
-      "c": 0,
-      "ex": "批判 (ひはん): phê phán"
-    },
-    {
-      "word": "尊",
-      "romaji": "とうとい",
-      "translation": "tôn quý",
-      "q": "Chữ 尊 đọc và nghĩa là gì?",
-      "a": [
-        "あつまる - tụ họp",
-        "ふえる - tăng lên",
-        "まける - thua",
-        "とうとい - tôn quý"
-      ],
-      "c": 3,
-      "ex": "尊敬 (そんけい): sự tôn kính"
-    },
-    {
-      "word": "敬",
-      "romaji": "うやまう",
-      "translation": "kính trọng",
-      "q": "Chữ 敬 đọc và nghĩa là gì?",
-      "a": [
-        "せつ - thuyết/giải thích",
-        "かい - trung gian",
-        "うやまう - kính trọng",
-        "か - có thể/cho phép"
-      ],
-      "c": 2,
-      "ex": "尊敬 (そんけい): sự tôn kính"
-    },
-    {
-      "word": "誠",
-      "romaji": "まこと",
-      "translation": "chân thành",
-      "q": "Chữ 誠 đọc và nghĩa là gì?",
-      "a": [
-        "らく - liên lạc",
-        "まこと - chân thành",
-        "きょう - hứng thú",
-        "りょう - phí/nguyên liệu"
-      ],
-      "c": 1,
-      "ex": "誠実 (せいじつ): thành thật"
-    },
-    {
-      "word": "嘘",
-      "romaji": "うそ",
-      "translation": "lời nói dối",
-      "q": "Chữ 嘘 đọc và nghĩa là gì?",
-      "a": [
-        "ゆう - lý do/tự do",
-        "わすれる - quên",
-        "うそ - lời nói dối",
-        "かたむく - nghiêng"
-      ],
-      "c": 2,
-      "ex": "嘘つき (うそつき): kẻ nói dối"
-    },
-    {
-      "word": "秘",
-      "romaji": "ひ",
-      "translation": "bí mật",
-      "q": "Chữ 秘 đọc và nghĩa là gì?",
-      "a": [
-        "ぶん - văn/câu",
-        "かこむ - bao quanh",
-        "ひ - bí mật",
-        "ねる - luyện tập"
-      ],
-      "c": 2,
-      "ex": "秘密 (ひみつ): bí mật"
-    },
-    {
-      "word": "密",
-      "romaji": "みつ",
-      "translation": "kín đáo",
-      "q": "Chữ 密 đọc và nghĩa là gì?",
-      "a": [
-        "げん - gốc/nguyên khí",
-        "あん - kế hoạch/phương án",
-        "みつ - kín đáo",
-        "おどろく - ngạc nhiên"
-      ],
-      "c": 2,
-      "ex": "秘密 (ひみつ): bí mật"
-    },
-    {
-      "word": "隠",
-      "romaji": "かくす",
-      "translation": "giấu",
-      "q": "Chữ 隠 đọc và nghĩa là gì?",
-      "a": [
-        "まつ - chờ đợi",
-        "ぎ - bàn bạc",
-        "かるい - nhẹ",
-        "かくす - giấu"
-      ],
-      "c": 3,
-      "ex": "隠す (かくす): che giấu"
-    },
-    {
-      "word": "報",
-      "romaji": "ほう",
-      "translation": "báo cáo",
-      "q": "Chữ 報 đọc và nghĩa là gì?",
-      "a": [
-        "そめる - nhuộm/nhiễm",
-        "ほう - báo cáo",
-        "うしなう - mất/thất bại",
-        "よわい - yếu"
-      ],
-      "c": 1,
-      "ex": "報告 (ほうこく): báo cáo"
-    },
-    {
-      "word": "告",
-      "romaji": "つげる",
-      "translation": "thông báo",
-      "q": "Chữ 告 đọc và nghĩa là gì?",
-      "a": [
-        "たい - trạng thái",
-        "おどろく - ngạc nhiên",
-        "つげる - thông báo",
-        "きゅう - cấp phát"
-      ],
-      "c": 2,
-      "ex": "報告 (ほうこく): báo cáo"
-    },
-    {
-      "word": "提",
-      "romaji": "ていする",
-      "translation": "đề xuất",
-      "q": "Chữ 提 đọc và nghĩa là gì?",
-      "a": [
-        "おりる - xuống (xe)",
-        "やさしい - dịu dàng/ưu tú",
-        "ていする - đề xuất",
-        "こう - hiệu quả"
-      ],
-      "c": 2,
-      "ex": "提案 (ていあん): đề xuất"
-    },
-    {
-      "word": "反",
-      "romaji": "はん",
-      "translation": "phản đối",
-      "q": "Chữ 反 đọc và nghĩa là gì?",
-      "a": [
-        "はん - phản đối",
-        "しょう - buôn bán",
-        "かなしい - buồn bã",
-        "きん - cấm"
-      ],
-      "c": 0,
-      "ex": "反対 (はんたい): phản đối"
-    },
-    {
-      "word": "賛",
-      "romaji": "さん",
-      "translation": "tán thành",
-      "q": "Chữ 賛 đọc và nghĩa là gì?",
-      "a": [
-        "ふ - chính phủ",
-        "さん - tán thành",
-        "しょう - chướng ngại",
-        "おもう - nghĩ"
-      ],
-      "c": 1,
-      "ex": "賛成 (さんせい): tán thành"
-    },
-    {
-      "word": "論",
-      "romaji": "ろん",
-      "translation": "luận điểm",
-      "q": "Chữ 論 đọc và nghĩa là gì?",
-      "a": [
-        "のぞむ - mong muốn",
-        "ろん - luận điểm",
-        "げん - nguồn gốc",
-        "せめる - trách nhiệm"
-      ],
-      "c": 1,
-      "ex": "議論 (ぎろん): cuộc tranh luận"
-    },
-    {
-      "word": "渉",
-      "romaji": "しょう",
-      "translation": "giao thiệp",
-      "q": "Chữ 渉 đọc và nghĩa là gì?",
-      "a": [
-        "かたむく - nghiêng",
-        "まつ - chờ đợi",
-        "おかす - phạm tội",
-        "しょう - giao thiệp"
-      ],
-      "c": 3,
-      "ex": "交渉 (こうしょう): đàm phán"
-    },
-    {
-      "word": "協",
-      "romaji": "きょう",
-      "translation": "hợp tác",
-      "q": "Chữ 協 đọc và nghĩa là gì?",
-      "a": [
-        "かこむ - bao quanh",
-        "きょう - hợp tác",
-        "かん - hoàn thành",
-        "ひろい - rộng"
-      ],
-      "c": 1,
-      "ex": "協力 (きょうりょく): sự hợp tác"
-    },
-    {
-      "word": "織",
-      "romaji": "おる",
-      "translation": "dệt/tổ chức",
-      "q": "Chữ 織 đọc và nghĩa là gì?",
-      "a": [
-        "きびしい - nghiêm khắc",
-        "こう - hiệu quả",
-        "おる - dệt/tổ chức",
-        "ぶん - văn/câu"
-      ],
-      "c": 2,
-      "ex": "組織 (そしき): tổ chức"
-    },
-    {
-      "word": "団",
-      "romaji": "だん",
-      "translation": "đoàn thể",
-      "q": "Chữ 団 đọc và nghĩa là gì?",
-      "a": [
-        "しゃ - người (làm gì đó)",
-        "だん - đoàn thể",
-        "こう - hiệu quả",
-        "びょう - bệnh"
-      ],
-      "c": 1,
-      "ex": "団体 (だんたい): đoàn thể"
-    },
-    {
-      "word": "個",
-      "romaji": "こ",
-      "translation": "cá thể",
-      "q": "Chữ 個 đọc và nghĩa là gì?",
-      "a": [
-        "こ - cá thể",
-        "こう - cống hiến",
-        "ぎ - đạo nghĩa",
-        "きゅう - quả cầu"
-      ],
-      "c": 0,
-      "ex": "個人 (こじん): cá nhân"
-    },
-    {
-      "word": "共",
-      "romaji": "とも",
-      "translation": "cùng nhau",
-      "q": "Chữ 共 đọc và nghĩa là gì?",
-      "a": [
-        "かん - vòng/môi trường",
-        "とも - cùng nhau",
-        "せつ - thuyết/giải thích",
-        "あまい - ngọt/dễ dãi"
-      ],
-      "c": 1,
-      "ex": "共同 (きょうどう): hợp tác chung"
-    },
-    {
-      "word": "依",
-      "romaji": "い",
-      "translation": "dựa vào",
-      "q": "Chữ 依 đọc và nghĩa là gì?",
-      "a": [
-        "ば - địa điểm",
-        "いたい - đau",
-        "けん - quyền lực",
-        "い - dựa vào"
-      ],
-      "c": 3,
-      "ex": "依存 (いぞん): sự phụ thuộc"
-    },
-    {
-      "word": "存",
-      "romaji": "そん",
-      "translation": "tồn tại",
-      "q": "Chữ 存 đọc và nghĩa là gì?",
-      "a": [
-        "ゆ - vận chuyển",
-        "そん - tồn tại",
-        "はる - căng ra",
-        "わらう - cười"
-      ],
-      "c": 1,
-      "ex": "存在 (そんざい): sự tồn tại"
-    },
-    {
-      "word": "援",
-      "romaji": "えん",
-      "translation": "viện trợ",
-      "q": "Chữ 援 đọc và nghĩa là gì?",
-      "a": [
-        "えん - viện trợ",
-        "おぼえる - nhớ/ghi nhớ",
-        "ろう - lãng phí/sóng",
-        "たしか - chắc chắn"
-      ],
-      "c": 0,
-      "ex": "援助 (えんじょ): sự viện trợ"
-    },
-    {
-      "word": "救",
-      "romaji": "すくう",
-      "translation": "cứu giúp",
-      "q": "Chữ 救 đọc và nghĩa là gì?",
-      "a": [
-        "よろこぶ - vui mừng",
-        "すくう - cứu giúp",
-        "り - lợi ích",
-        "せき - phân tích"
-      ],
-      "c": 1,
-      "ex": "救助 (きゅうじょ): cứu hộ"
-    },
-    {
-      "word": "犠",
-      "romaji": "ぎ",
-      "translation": "hy sinh",
-      "q": "Chữ 犠 đọc và nghĩa là gì?",
-      "a": [
-        "しゅん - khoảnh khắc",
-        "しぬ - chết",
-        "つげる - thông báo",
-        "ぎ - hy sinh"
-      ],
-      "c": 3,
-      "ex": "犠牲 (ぎせい): sự hy sinh"
-    },
-    {
-      "word": "牲",
-      "romaji": "せい",
-      "translation": "hy sinh",
-      "q": "Chữ 牲 đọc và nghĩa là gì?",
-      "a": [
-        "うそ - lời nói dối",
-        "たえる - tuyệt vọng/dứt",
-        "せい - hy sinh",
-        "かん - liên quan"
-      ],
-      "c": 2,
-      "ex": "犠牲 (ぎせい): sự hy sinh"
-    },
-    {
-      "word": "貢",
-      "romaji": "こう",
-      "translation": "cống hiến",
-      "q": "Chữ 貢 đọc và nghĩa là gì?",
-      "a": [
-        "りつ - luật lệ",
-        "からい - cay/vất vả",
-        "こう - cống hiến",
-        "はかる - đo lường"
-      ],
-      "c": 2,
-      "ex": "貢献 (こうけん): sự cống hiến"
-    },
-    {
-      "word": "献",
-      "romaji": "けん",
-      "translation": "dâng hiến",
-      "q": "Chữ 献 đọc và nghĩa là gì?",
-      "a": [
-        "けん - dâng hiến",
-        "まねく - mời",
-        "さ - sự khác biệt",
-        "ていする - đề xuất"
-      ],
-      "c": 0,
-      "ex": "貢献 (こうけん): sự cống hiến"
-    },
-    {
-      "word": "義",
-      "romaji": "ぎ",
-      "translation": "đạo nghĩa",
-      "q": "Chữ 義 đọc và nghĩa là gì?",
-      "a": [
-        "かん - liên quan",
-        "はる - căng ra",
-        "ぎ - đạo nghĩa",
-        "たい - trạng thái"
-      ],
-      "c": 2,
-      "ex": "義務 (ぎむ): nghĩa vụ"
-    },
-    {
-      "word": "務",
-      "romaji": "む",
-      "translation": "nhiệm vụ",
-      "q": "Chữ 務 đọc và nghĩa là gì?",
-      "a": [
-        "はる - căng ra",
-        "ぎ - kỹ thuật/kỹ năng",
-        "そく - quy tắc",
-        "む - nhiệm vụ"
-      ],
-      "c": 3,
-      "ex": "義務 (ぎむ): nghĩa vụ"
-    },
-    {
-      "word": "権",
-      "romaji": "けん",
-      "translation": "quyền lực",
-      "q": "Chữ 権 đọc và nghĩa là gì?",
-      "a": [
-        "けん - quyền lực",
-        "きゅう - cấp phát",
         "おなじ - giống nhau",
-        "ほう - pháp luật/cách thức"
-      ],
-      "c": 0,
-      "ex": "権利 (けんり): quyền lợi"
-    },
-    {
-      "word": "利",
-      "romaji": "り",
-      "translation": "lợi ích",
-      "q": "Chữ 利 đọc và nghĩa là gì?",
-      "a": [
-        "わる - chia/bẻ",
-        "ほう - pháp luật/cách thức",
-        "かん - chữ Hán",
-        "り - lợi ích"
+        "しぼう - tử vong",
+        "もんだい - vấn đề",
+        "べんきょう - học tập"
       ],
       "c": 3,
-      "ex": "権利 (けんり): quyền lợi"
+      "ex": "勉 (べん): cố gắng/chăm chỉ; 強 (つよい): mạnh"
     },
     {
-      "word": "責",
-      "romaji": "せめる",
-      "translation": "trách nhiệm",
-      "q": "Chữ 責 đọc và nghĩa là gì?",
+      "word": "弱点",
+      "romaji": "じゃくてん",
+      "translation": "điểm yếu",
+      "q": "Từ 弱点 đọc và nghĩa là gì?",
       "a": [
-        "こと - việc/sự việc",
-        "とめる - dừng lại",
-        "せめる - trách nhiệm",
-        "ささえる - chống đỡ/chi"
-      ],
-      "c": 2,
-      "ex": "責任 (せきにん): trách nhiệm"
-    },
-    {
-      "word": "任",
-      "romaji": "にん",
-      "translation": "trách nhiệm",
-      "q": "Chữ 任 đọc và nghĩa là gì?",
-      "a": [
-        "しらべる - điều tra/kiểm tra",
-        "にん - trách nhiệm",
-        "きょ - căn cứ",
-        "かたむく - nghiêng"
-      ],
-      "c": 1,
-      "ex": "責任 (せきにん): trách nhiệm"
-    },
-    {
-      "word": "差",
-      "romaji": "さ",
-      "translation": "sự khác biệt",
-      "q": "Chữ 差 đọc và nghĩa là gì?",
-      "a": [
-        "い - ý nghĩa/ý định",
-        "つみ - tội lỗi",
-        "りつ - luật lệ",
-        "さ - sự khác biệt"
+        "なぐさめ - sự an ủi",
+        "ぶんか - văn hóa",
+        "とくべつ - đặc biệt",
+        "じゃくてん - điểm yếu"
       ],
       "c": 3,
-      "ex": "差別 (さべつ): sự phân biệt"
+      "ex": "弱 (よわい): yếu; 点 (てん): điểm"
     },
     {
-      "word": "偏",
-      "romaji": "かたよる",
-      "translation": "thiên lệch",
-      "q": "Chữ 偏 đọc và nghĩa là gì?",
+      "word": "広告",
+      "romaji": "こうこく",
+      "translation": "quảng cáo",
+      "q": "Từ 広告 đọc và nghĩa là gì?",
       "a": [
-        "うたがう - nghi ngờ",
-        "かたよる - thiên lệch",
-        "せん - chuyên môn",
-        "とう - thống nhất"
-      ],
-      "c": 1,
-      "ex": "偏見 (へんけん): thành kiến"
-    },
-    {
-      "word": "誤",
-      "romaji": "あやまる",
-      "translation": "sai lầm",
-      "q": "Chữ 誤 đọc và nghĩa là gì?",
-      "a": [
-        "あやまる - sai lầm",
-        "しゃ - bắn/tiêm",
-        "かい - giới/ranh giới",
-        "みつ - kín đáo"
-      ],
-      "c": 0,
-      "ex": "誤解 (ごかい): hiểu lầm"
-    },
-    {
-      "word": "情",
-      "romaji": "じょう",
-      "translation": "tình cảm",
-      "q": "Chữ 情 đọc và nghĩa là gì?",
-      "a": [
-        "かなしい - buồn bã",
-        "じょう - tình cảm",
-        "たのむ - nhờ vả",
-        "そなえる - chuẩn bị"
-      ],
-      "c": 1,
-      "ex": "感情 (かんじょう): cảm xúc"
-    },
-    {
-      "word": "慰",
-      "romaji": "なぐさめる",
-      "translation": "an ủi",
-      "q": "Chữ 慰 đọc và nghĩa là gì?",
-      "a": [
-        "たしか - chắc chắn",
-        "ぜん - tự nhiên như vậy",
-        "なぐさめる - an ủi",
-        "そん - tồn tại"
+        "おせん - ô nhiễm",
+        "しゃっきん - nợ",
+        "こうこく - quảng cáo",
+        "ちゅうしゃ - tiêm thuốc"
       ],
       "c": 2,
-      "ex": "慰め (なぐさめ): sự an ủi"
+      "ex": "広 (ひろい): rộng; 告 (つげる): thông báo"
     },
     {
-      "word": "励",
-      "romaji": "はげます",
-      "translation": "khích lệ",
-      "q": "Chữ 励 đọc và nghĩa là gì?",
+      "word": "深夜",
+      "romaji": "しんや",
+      "translation": "đêm khuya",
+      "q": "Từ 深夜 đọc và nghĩa là gì?",
       "a": [
-        "はる - căng ra",
-        "ち - đất/vùng đất",
-        "ゆう - dũng cảm",
-        "はげます - khích lệ"
+        "しんや - đêm khuya",
+        "もじ - văn tự",
+        "しゅうにゅう - thu nhập",
+        "つづき - phần tiếp theo"
+      ],
+      "c": 0,
+      "ex": "深 (ふかい): sâu; 夜 (や): đêm"
+    },
+    {
+      "word": "浅い",
+      "romaji": "あさい",
+      "translation": "nông",
+      "q": "Từ 浅い đọc và nghĩa là gì?",
+      "a": [
+        "はげまし - sự khích lệ",
+        "ゆしゅつ - xuất khẩu",
+        "あさい - nông",
+        "きょうそう - cạnh tranh"
+      ],
+      "c": 2,
+      "ex": "浅 (あさい): nông/cạn"
+    },
+    {
+      "word": "病院",
+      "romaji": "びょういん",
+      "translation": "bệnh viện",
+      "q": "Từ 病院 đọc và nghĩa là gì?",
+      "a": [
+        "しんしつ - phòng ngủ",
+        "びょういん - bệnh viện",
+        "げんかい - giới hạn",
+        "かがく - khoa học"
+      ],
+      "c": 1,
+      "ex": "病 (びょう): bệnh; 院 (いん): viện"
+    },
+    {
+      "word": "危険",
+      "romaji": "きけん",
+      "translation": "nguy hiểm",
+      "q": "Từ 危険 đọc và nghĩa là gì?",
+      "a": [
+        "きけん - nguy hiểm",
+        "ちょきん - tiền tiết kiệm",
+        "ていあん - đề xuất",
+        "えがお - nụ cười"
+      ],
+      "c": 0,
+      "ex": "危 (あぶない): nguy hiểm; 険 (けん): hiểm nguy"
+    },
+    {
+      "word": "安全",
+      "romaji": "あんぜん",
+      "translation": "an toàn",
+      "q": "Từ 安全 đọc và nghĩa là gì?",
+      "a": [
+        "げんしょう - sự giảm thiểu",
+        "こうりつ - hiệu suất",
+        "かいぜん - cải thiện",
+        "あんぜん - an toàn"
       ],
       "c": 3,
-      "ex": "励まし (はげまし): sự khích lệ"
+      "ex": "安 (あん): an toàn/yên; 全 (ぜん): toàn bộ"
     },
     {
-      "word": "勇",
-      "romaji": "ゆう",
-      "translation": "dũng cảm",
-      "q": "Chữ 勇 đọc và nghĩa là gì?",
+      "word": "事故",
+      "romaji": "じこ",
+      "translation": "tai nạn",
+      "q": "Từ 事故 đọc và nghĩa là gì?",
       "a": [
-        "ぜん - tự nhiên như vậy",
-        "しめる - đóng",
-        "ゆう - dũng cảm",
-        "おどろく - ngạc nhiên"
+        "まちがい - sai lầm",
+        "あさい - nông",
+        "じこ - tai nạn",
+        "びょういん - bệnh viện"
       ],
       "c": 2,
-      "ex": "勇気 (ゆうき): lòng dũng cảm"
+      "ex": "事 (こと): việc/sự việc; 故 (こ): lý do/sự cố"
     },
     {
-      "word": "信",
-      "romaji": "しんじる",
-      "translation": "tin tưởng",
-      "q": "Chữ 信 đọc và nghĩa là gì?",
+      "word": "失敗",
+      "romaji": "しっぱい",
+      "translation": "thất bại",
+      "q": "Từ 失敗 đọc và nghĩa là gì?",
       "a": [
-        "はげます - khích lệ",
-        "しんじる - tin tưởng",
-        "へい - binh lính",
-        "はずかしい - xấu hổ"
+        "ほうりつ - pháp luật",
+        "しっぱい - thất bại",
+        "たにん - người khác",
+        "ごかい - hiểu lầm"
       ],
       "c": 1,
-      "ex": "信頼 (しんらい): sự tin cậy"
+      "ex": "失 (うしなう): mất/thất bại; 敗 (やぶれる): thua/thất bại"
     },
     {
-      "word": "絶",
-      "romaji": "たえる",
-      "translation": "tuyệt vọng/dứt",
-      "q": "Chữ 絶 đọc và nghĩa là gì?",
+      "word": "成功",
+      "romaji": "せいこう",
+      "translation": "thành công",
+      "q": "Từ 成功 đọc và nghĩa là gì?",
       "a": [
-        "たえる - tuyệt vọng/dứt",
-        "だん - đoàn thể",
-        "はたらく - làm việc",
-        "あやまる - sai lầm"
-      ],
-      "c": 0,
-      "ex": "絶望 (ぜつぼう): sự tuyệt vọng"
-    },
-    {
-      "word": "皮",
-      "romaji": "かわ",
-      "translation": "lớp da/vỏ",
-      "q": "Chữ 皮 đọc và nghĩa là gì?",
-      "a": [
-        "かくす - giấu",
-        "かわ - lớp da/vỏ",
-        "てい - quyết định/cố định",
-        "さつ - quan sát/suy đoán"
-      ],
-      "c": 1,
-      "ex": "皮肉 (ひにく): sự châm biếm"
-    },
-    {
-      "word": "創",
-      "romaji": "そう",
-      "translation": "sáng tạo",
-      "q": "Chữ 創 đọc và nghĩa là gì?",
-      "a": [
-        "そう - sáng tạo",
-        "ならす - quen thuộc",
-        "ゆ - vận chuyển",
-        "いん - viện"
-      ],
-      "c": 0,
-      "ex": "創造 (そうぞう): sự sáng tạo"
-    },
-    {
-      "word": "造",
-      "romaji": "ぞう",
-      "translation": "chế tạo",
-      "q": "Chữ 造 đọc và nghĩa là gì?",
-      "a": [
-        "ぞう - chế tạo",
-        "はじめる - bắt đầu",
-        "ぜん - toàn bộ",
-        "ちから - sức mạnh"
-      ],
-      "c": 0,
-      "ex": "創造 (そうぞう): sự sáng tạo"
-    },
-    {
-      "word": "伝",
-      "romaji": "つたえる",
-      "translation": "truyền đạt",
-      "q": "Chữ 伝 đọc và nghĩa là gì?",
-      "a": [
-        "つたえる - truyền đạt",
-        "ぎ - nghi lễ",
-        "つかれる - mệt mỏi",
-        "にがい - đắng/khổ"
-      ],
-      "c": 0,
-      "ex": "伝統 (でんとう): truyền thống"
-    },
-    {
-      "word": "瞬",
-      "romaji": "しゅん",
-      "translation": "khoảnh khắc",
-      "q": "Chữ 瞬 đọc và nghĩa là gì?",
-      "a": [
-        "かわ - lớp da/vỏ",
-        "えらぶ - lựa chọn",
-        "しゅん - khoảnh khắc",
-        "かりる - mượn/vay"
-      ],
-      "c": 2,
-      "ex": "瞬間 (しゅんかん): khoảnh khắc"
-    },
-    {
-      "word": "継",
-      "romaji": "つぐ",
-      "translation": "kế thừa",
-      "q": "Chữ 継 đọc và nghĩa là gì?",
-      "a": [
-        "ふとい - béo/to",
-        "つぐ - kế thừa",
-        "なる - trở thành",
-        "せい - chính trị"
-      ],
-      "c": 1,
-      "ex": "継続 (けいぞく): sự tiếp tục"
-    },
-    {
-      "word": "断",
-      "romaji": "たつ",
-      "translation": "cắt đứt/quyết đoán",
-      "q": "Chữ 断 đọc và nghĩa là gì?",
-      "a": [
-        "ぼう - buôn bán",
-        "たつ - cắt đứt/quyết đoán",
-        "よう - cần thiết",
-        "おかす - phạm tội"
-      ],
-      "c": 1,
-      "ex": "中断 (ちゅうだん): sự gián đoạn"
-    },
-    {
-      "word": "完",
-      "romaji": "かん",
-      "translation": "hoàn thành",
-      "q": "Chữ 完 đọc và nghĩa là gì?",
-      "a": [
-        "かん - hoàn thành",
-        "しょう - giao thiệp",
-        "きめる - quyết định",
-        "えき - dễ dàng/giao dịch"
-      ],
-      "c": 0,
-      "ex": "完成 (かんせい): sự hoàn thành"
-    },
-    {
-      "word": "以",
-      "romaji": "い",
-      "translation": "dùng để",
-      "q": "Chữ 以 đọc và nghĩa là gì?",
-      "a": [
-        "さ - điều tra",
-        "ならす - quen thuộc",
-        "い - dùng để",
-        "か - khoa/môn học"
-      ],
-      "c": 2,
-      "ex": "以上 (いじょう): trở lên"
-    },
-    {
-      "word": "若",
-      "romaji": "わかい",
-      "translation": "trẻ",
-      "q": "Chữ 若 đọc và nghĩa là gì?",
-      "a": [
-        "わかい - trẻ",
-        "ひびく - vang lên/ảnh hưởng",
-        "きえる - biến mất/tiêu thụ",
-        "じゅん - chuẩn bị"
-      ],
-      "c": 0,
-      "ex": "若者 (わかもの): người trẻ"
-    },
-    {
-      "word": "善",
-      "romaji": "ぜん",
-      "translation": "thiện",
-      "q": "Chữ 善 đọc và nghĩa là gì?",
-      "a": [
-        "ぜん - thiện",
-        "まける - thua",
-        "きたない - bẩn",
-        "せき - phân tích"
-      ],
-      "c": 0,
-      "ex": "改善 (かいぜん): cải thiện"
-    },
-    {
-      "word": "喜",
-      "romaji": "よろこぶ",
-      "translation": "vui mừng",
-      "q": "Chữ 喜 đọc và nghĩa là gì?",
-      "a": [
-        "かこむ - bao quanh",
-        "あぶない - nguy hiểm",
-        "よろこぶ - vui mừng",
-        "まける - thua"
-      ],
-      "c": 2,
-      "ex": "喜び (よろこび): niềm vui"
-    },
-    {
-      "word": "嫌",
-      "romaji": "きらう",
-      "translation": "ghét",
-      "q": "Chữ 嫌 đọc và nghĩa là gì?",
-      "a": [
-        "おわる - kết thúc",
-        "すわる - ngồi",
-        "きらう - ghét",
-        "ゆたか - phong phú"
-      ],
-      "c": 2,
-      "ex": "嫌い (きらい): ghét"
-    },
-    {
-      "word": "清",
-      "romaji": "きよい",
-      "translation": "trong sạch",
-      "q": "Chữ 清 đọc và nghĩa là gì?",
-      "a": [
-        "からい - cay/vất vả",
-        "はずかしい - xấu hổ",
-        "きよい - trong sạch",
-        "ぜん - tự nhiên như vậy"
-      ],
-      "c": 2,
-      "ex": "清潔 (せいけつ): sạch sẽ"
-    },
-    {
-      "word": "純",
-      "romaji": "じゅん",
-      "translation": "thuần khiết",
-      "q": "Chữ 純 đọc và nghĩa là gì?",
-      "a": [
-        "き - dụng cụ",
-        "じゅん - thuần khiết",
-        "つれる - dẫn theo/liên tục",
-        "ひ - bí mật"
-      ],
-      "c": 1,
-      "ex": "純粋 (じゅんすい): thuần túy"
-    },
-    {
-      "word": "簡",
-      "romaji": "かん",
-      "translation": "đơn giản",
-      "q": "Chữ 簡 đọc và nghĩa là gì?",
-      "a": [
-        "よろこぶ - vui mừng",
-        "かん - đơn giản",
-        "へる - giảm xuống",
-        "あやまる - xin lỗi"
-      ],
-      "c": 1,
-      "ex": "簡単 (かんたん): đơn giản"
-    },
-    {
-      "word": "単",
-      "romaji": "たん",
-      "translation": "đơn lẻ",
-      "q": "Chữ 単 đọc và nghĩa là gì?",
-      "a": [
-        "ぞう - chế tạo",
-        "はかる - đo lường",
-        "きそう - cạnh tranh",
-        "たん - đơn lẻ"
-      ],
-      "c": 3,
-      "ex": "簡単 (かんたん): đơn giản"
-    },
-    {
-      "word": "複",
-      "romaji": "ふく",
-      "translation": "phức tạp",
-      "q": "Chữ 複 đọc và nghĩa là gì?",
-      "a": [
-        "ふく - phức tạp",
-        "たのむ - nhờ vả",
-        "ゆう - lý do/tự do",
-        "ぎ - nghi lễ"
-      ],
-      "c": 0,
-      "ex": "複雑 (ふくざつ): phức tạp"
-    },
-    {
-      "word": "雑",
-      "romaji": "ざつ",
-      "translation": "hỗn tạp",
-      "q": "Chữ 雑 đọc và nghĩa là gì?",
-      "a": [
-        "あぶない - nguy hiểm",
-        "たん - đơn lẻ",
-        "ざつ - hỗn tạp",
-        "そん - tồn tại"
-      ],
-      "c": 2,
-      "ex": "複雑 (ふくざつ): phức tạp"
-    },
-    {
-      "word": "限",
-      "romaji": "かぎる",
-      "translation": "giới hạn",
-      "q": "Chữ 限 đọc và nghĩa là gì?",
-      "a": [
-        "む - nhiệm vụ",
-        "たい - trạng thái",
-        "ば - địa điểm",
-        "かぎる - giới hạn"
-      ],
-      "c": 3,
-      "ex": "限界 (げんかい): giới hạn"
-    },
-    {
-      "word": "範",
-      "romaji": "はん",
-      "translation": "phạm vi",
-      "q": "Chữ 範 đọc và nghĩa là gì?",
-      "a": [
-        "はん - phạm vi",
-        "ぎ - đạo nghĩa",
-        "ろん - luận điểm",
-        "かぎる - giới hạn"
-      ],
-      "c": 0,
-      "ex": "範囲 (はんい): phạm vi"
-    },
-    {
-      "word": "囲",
-      "romaji": "かこむ",
-      "translation": "bao quanh",
-      "q": "Chữ 囲 đọc và nghĩa là gì?",
-      "a": [
-        "かこむ - bao quanh",
-        "ちから - sức mạnh",
-        "たのむ - nhờ vả",
-        "さ - điều tra"
-      ],
-      "c": 0,
-      "ex": "範囲 (はんい): phạm vi"
-    },
-    {
-      "word": "適",
-      "romaji": "てき",
-      "translation": "thích hợp",
-      "q": "Chữ 適 đọc và nghĩa là gì?",
-      "a": [
-        "よわい - yếu",
-        "もつ - cầm/giữ",
-        "てき - thích hợp",
-        "おもう - nghĩ"
-      ],
-      "c": 2,
-      "ex": "適当 (てきとう): thích hợp"
-    },
-    {
-      "word": "当",
-      "romaji": "あたる",
-      "translation": "trúng/đúng",
-      "q": "Chữ 当 đọc và nghĩa là gì?",
-      "a": [
-        "あたる - trúng/đúng",
-        "おりる - xuống (xe)",
-        "かならず - nhất định",
-        "えん - viện trợ"
-      ],
-      "c": 0,
-      "ex": "適当 (てきとう): thích hợp"
-    },
-    {
-      "word": "互",
-      "romaji": "たがい",
-      "translation": "lẫn nhau",
-      "q": "Chữ 互 đọc và nghĩa là gì?",
-      "a": [
-        "たがい - lẫn nhau",
-        "わらう - cười",
-        "しぬ - chết",
-        "ひとり - một mình"
-      ],
-      "c": 0,
-      "ex": "互いに (たがいに): lẫn nhau"
-    },
-    {
-      "word": "専",
-      "romaji": "せん",
-      "translation": "chuyên môn",
-      "q": "Chữ 専 đọc và nghĩa là gì?",
-      "a": [
-        "せん - chuyên môn",
-        "てい - quyết định/cố định",
-        "かわ - lớp da/vỏ",
-        "じゅん - thuần khiết"
-      ],
-      "c": 0,
-      "ex": "専門 (せんもん): chuyên môn"
-    },
-    {
-      "word": "厳",
-      "romaji": "きびしい",
-      "translation": "nghiêm khắc",
-      "q": "Chữ 厳 đọc và nghĩa là gì?",
-      "a": [
-        "じゅん - thuần khiết",
-        "ぜん - tự nhiên như vậy",
-        "たしか - chắc chắn",
+        "せいじつ - thành thật",
+        "こうすい - lượng mưa",
+        "せいこう - thành công",
         "きびしい - nghiêm khắc"
       ],
-      "c": 3,
-      "ex": "厳しい (きびしい): nghiêm khắc"
+      "c": 2,
+      "ex": "成 (なる): trở thành; 功 (こう): công lao/thành tựu"
     },
     {
-      "word": "甘",
-      "romaji": "あまい",
-      "translation": "ngọt/dễ dãi",
-      "q": "Chữ 甘 đọc và nghĩa là gì?",
+      "word": "努力",
+      "romaji": "どりょく",
+      "translation": "nỗ lực",
+      "q": "Từ 努力 đọc và nghĩa là gì?",
       "a": [
-        "あまい - ngọt/dễ dãi",
-        "えき - dễ dàng/giao dịch",
-        "はん - phán đoán",
-        "こう - cống hiến"
+        "さいばん - xét xử",
+        "でんとう - truyền thống",
+        "ぶき - vũ khí",
+        "どりょく - nỗ lực"
       ],
-      "c": 0,
-      "ex": "甘い (あまい): ngọt"
+      "c": 3,
+      "ex": "努 (つとめる): nỗ lực; 力 (ちから): sức mạnh"
     },
     {
-      "word": "辛",
-      "romaji": "からい",
-      "translation": "cay/vất vả",
-      "q": "Chữ 辛 đọc và nghĩa là gì?",
+      "word": "練習",
+      "romaji": "れんしゅう",
+      "translation": "luyện tập",
+      "q": "Từ 練習 đọc và nghĩa là gì?",
       "a": [
-        "ぶ - võ thuật",
-        "にん - trách nhiệm",
-        "からい - cay/vất vả",
-        "きん - cấm"
+        "ちゅうい - chú ý",
+        "てきとう - thích hợp",
+        "さんせい - tán thành",
+        "れんしゅう - luyện tập"
+      ],
+      "c": 3,
+      "ex": "練 (ねる): luyện tập; 習 (しゅう): học tập/thói quen"
+    },
+    {
+      "word": "競争",
+      "romaji": "きょうそう",
+      "translation": "cạnh tranh",
+      "q": "Từ 競争 đọc và nghĩa là gì?",
+      "a": [
+        "しゅうかん - thói quen",
+        "とうあん - bài làm",
+        "ひつよう - cần thiết",
+        "きょうそう - cạnh tranh"
+      ],
+      "c": 3,
+      "ex": "競 (きそう): cạnh tranh; 争 (あらそう): tranh giành"
+    },
+    {
+      "word": "勝負",
+      "romaji": "しょうぶ",
+      "translation": "thắng thua",
+      "q": "Từ 勝負 đọc và nghĩa là gì?",
+      "a": [
+        "ひかく - so sánh",
+        "きんちょう - sự căng thẳng",
+        "しょうぶ - thắng thua",
+        "ばしょ - địa điểm"
       ],
       "c": 2,
-      "ex": "辛い (からい): cay"
+      "ex": "勝 (かつ): chiến thắng; 負 (まける): thua"
     },
     {
-      "word": "苦",
-      "romaji": "にがい",
-      "translation": "đắng/khổ",
-      "q": "Chữ 苦 đọc và nghĩa là gì?",
+      "word": "優勝",
+      "romaji": "ゆうしょう",
+      "translation": "vô địch",
+      "q": "Từ 優勝 đọc và nghĩa là gì?",
+      "a": [
+        "きょうそう - cạnh tranh",
+        "ゆうしょう - vô địch",
+        "かんじ - chữ Hán",
+        "せいけつ - sạch sẽ"
+      ],
+      "c": 1,
+      "ex": "優 (やさしい): dịu dàng/ưu tú; 勝 (かつ): chiến thắng"
+    },
+    {
+      "word": "失礼",
+      "romaji": "しつれい",
+      "translation": "thất lễ",
+      "q": "Từ 失礼 đọc và nghĩa là gì?",
+      "a": [
+        "せんもん - chuyên môn",
+        "ろうどう - lao động",
+        "しげん - tài nguyên",
+        "しつれい - thất lễ"
+      ],
+      "c": 3,
+      "ex": "失 (うしなう): mất/thất bại; 礼 (れい): lễ nghĩa"
+    },
+    {
+      "word": "感謝",
+      "romaji": "かんしゃ",
+      "translation": "cảm ơn",
+      "q": "Từ 感謝 đọc và nghĩa là gì?",
+      "a": [
+        "けいこう - xu hướng",
+        "ろうどう - lao động",
+        "かがく - khoa học",
+        "かんしゃ - cảm ơn"
+      ],
+      "c": 3,
+      "ex": "感 (かんじる): cảm nhận; 謝 (あやまる): xin lỗi"
+    },
+    {
+      "word": "怒り",
+      "romaji": "いかり",
+      "translation": "sự tức giận",
+      "q": "Từ 怒り đọc và nghĩa là gì?",
+      "a": [
+        "かくす - che giấu",
+        "いかり - sự tức giận",
+        "げんしょう - sự giảm thiểu",
+        "こうすい - lượng mưa"
+      ],
+      "c": 1,
+      "ex": "怒 (おこる): tức giận"
+    },
+    {
+      "word": "笑顔",
+      "romaji": "えがお",
+      "translation": "nụ cười",
+      "q": "Từ 笑顔 đọc và nghĩa là gì?",
+      "a": [
+        "かいてん - mở cửa hàng",
+        "えがお - nụ cười",
+        "かんじ - chữ Hán",
+        "へいてん - đóng cửa hàng"
+      ],
+      "c": 1,
+      "ex": "笑 (わらう): cười; 顔 (がん): mặt"
+    },
+    {
+      "word": "泣き顔",
+      "romaji": "なきがお",
+      "translation": "gương mặt khóc",
+      "q": "Từ 泣き顔 đọc và nghĩa là gì?",
+      "a": [
+        "なきがお - gương mặt khóc",
+        "からい - cay",
+        "ほうこく - báo cáo",
+        "かんたん - đơn giản"
+      ],
+      "c": 0,
+      "ex": "泣 (なく): khóc; 顔 (がん): mặt"
+    },
+    {
+      "word": "悲しみ",
+      "romaji": "かなしみ",
+      "translation": "nỗi buồn",
+      "q": "Từ 悲しみ đọc và nghĩa là gì?",
+      "a": [
+        "ぶんせき - phân tích",
+        "しょうひん - hàng hóa",
+        "かるい - nhẹ",
+        "かなしみ - nỗi buồn"
+      ],
+      "c": 3,
+      "ex": "悲 (かなしい): buồn bã"
+    },
+    {
+      "word": "恥ずかしい",
+      "romaji": "はずかしい",
+      "translation": "xấu hổ",
+      "q": "Từ 恥ずかしい đọc và nghĩa là gì?",
+      "a": [
+        "ぼうえき - mậu dịch",
+        "ちゅうだん - sự gián đoạn",
+        "けんきゅう - nghiên cứu",
+        "はずかしい - xấu hổ"
+      ],
+      "c": 3,
+      "ex": "恥 (はずかしい): xấu hổ"
+    },
+    {
+      "word": "恐怖",
+      "romaji": "きょうふ",
+      "translation": "nỗi sợ hãi",
+      "q": "Từ 恐怖 đọc và nghĩa là gì?",
+      "a": [
+        "けってい - quyết định",
+        "おせん - ô nhiễm",
+        "しよう - sử dụng",
+        "きょうふ - nỗi sợ hãi"
+      ],
+      "c": 3,
+      "ex": "恐 (おそろしい): đáng sợ; 怖 (こわい): sợ hãi"
+    },
+    {
+      "word": "怖い",
+      "romaji": "こわい",
+      "translation": "đáng sợ",
+      "q": "Từ 怖い đọc và nghĩa là gì?",
+      "a": [
+        "こわい - đáng sợ",
+        "けいやく - hợp đồng",
+        "あんぜん - an toàn",
+        "たにん - người khác"
+      ],
+      "c": 0,
+      "ex": "怖 (こわい): sợ hãi"
+    },
+    {
+      "word": "驚き",
+      "romaji": "おどろき",
+      "translation": "sự ngạc nhiên",
+      "q": "Từ 驚き đọc và nghĩa là gì?",
+      "a": [
+        "おどろき - sự ngạc nhiên",
+        "からい - cay",
+        "じゆう - tự do",
+        "ほうこく - báo cáo"
+      ],
+      "c": 0,
+      "ex": "驚 (おどろく): ngạc nhiên"
+    },
+    {
+      "word": "疲労",
+      "romaji": "ひろう",
+      "translation": "sự mệt mỏi",
+      "q": "Từ 疲労 đọc và nghĩa là gì?",
+      "a": [
+        "たいくつ - sự nhàm chán",
+        "かるい - nhẹ",
+        "ゆうき - lòng dũng cảm",
+        "ひろう - sự mệt mỏi"
+      ],
+      "c": 3,
+      "ex": "疲 (つかれる): mệt mỏi; 労 (ろう): lao động"
+    },
+    {
+      "word": "頭痛",
+      "romaji": "ずつう",
+      "translation": "đau đầu",
+      "q": "Từ 頭痛 đọc và nghĩa là gì?",
+      "a": [
+        "しんしつ - phòng ngủ",
+        "ざせき - chỗ ngồi",
+        "げんしょう - sự giảm thiểu",
+        "ずつう - đau đầu"
+      ],
+      "c": 3,
+      "ex": "頭 (とう): đầu; 痛 (いたい): đau"
+    },
+    {
+      "word": "元気",
+      "romaji": "げんき",
+      "translation": "khỏe mạnh",
+      "q": "Từ 元気 đọc và nghĩa là gì?",
+      "a": [
+        "いしゃ - bác sĩ",
+        "げんき - khỏe mạnh",
+        "たにん - người khác",
+        "じゅんすい - thuần túy"
+      ],
+      "c": 1,
+      "ex": "元 (げん): gốc/nguyên khí; 気 (き): khí/tinh thần"
+    },
+    {
+      "word": "健康",
+      "romaji": "けんこう",
+      "translation": "sức khỏe",
+      "q": "Từ 健康 đọc và nghĩa là gì?",
+      "a": [
+        "けんこう - sức khỏe",
+        "りょうきん - phí",
+        "やっきょく - hiệu thuốc",
+        "ぎもん - nghi vấn"
+      ],
+      "c": 0,
+      "ex": "健 (けん): khỏe mạnh; 康 (こう): khỏe mạnh"
+    },
+    {
+      "word": "薬局",
+      "romaji": "やっきょく",
+      "translation": "hiệu thuốc",
+      "q": "Từ 薬局 đọc và nghĩa là gì?",
+      "a": [
+        "やっきょく - hiệu thuốc",
+        "ようい - chuẩn bị",
+        "けんきゅう - nghiên cứu",
+        "せいけつ - sạch sẽ"
+      ],
+      "c": 0,
+      "ex": "薬 (くすり): thuốc; 局 (きょく): cục/tình huống"
+    },
+    {
+      "word": "注意",
+      "romaji": "ちゅうい",
+      "translation": "chú ý",
+      "q": "Từ 注意 đọc và nghĩa là gì?",
+      "a": [
+        "しゃっきん - nợ",
+        "れいぎ - lễ nghi",
+        "ちゅうい - chú ý",
+        "げんき - khỏe mạnh"
+      ],
+      "c": 2,
+      "ex": "注 (そそぐ): rót/chú ý; 意 (い): ý nghĩa/ý định"
+    },
+    {
+      "word": "注射",
+      "romaji": "ちゅうしゃ",
+      "translation": "tiêm thuốc",
+      "q": "Từ 注射 đọc và nghĩa là gì?",
+      "a": [
+        "たいよう - mặt trời",
+        "たがいに - lẫn nhau",
+        "ちゅうしゃ - tiêm thuốc",
+        "おせん - ô nhiễm"
+      ],
+      "c": 2,
+      "ex": "注 (そそぐ): rót/chú ý; 射 (しゃ): bắn/tiêm"
+    },
+    {
+      "word": "死亡",
+      "romaji": "しぼう",
+      "translation": "tử vong",
+      "q": "Từ 死亡 đọc và nghĩa là gì?",
+      "a": [
+        "れんしゅう - luyện tập",
+        "とどけ - giấy báo/giao",
+        "けんきゅう - nghiên cứu",
+        "しぼう - tử vong"
+      ],
+      "c": 3,
+      "ex": "死 (しぬ): chết; 亡 (ぼう): mất/chết"
+    },
+    {
+      "word": "運命",
+      "romaji": "うんめい",
+      "translation": "số phận",
+      "q": "Từ 運命 đọc và nghĩa là gì?",
+      "a": [
+        "かなしみ - nỗi buồn",
+        "ごかい - hiểu lầm",
+        "あんない - hướng dẫn",
+        "うんめい - số phận"
+      ],
+      "c": 3,
+      "ex": "運 (うん): vận chuyển/vận may; 命 (いのち): mạng sống"
+    },
+    {
+      "word": "太陽",
+      "romaji": "たいよう",
+      "translation": "mặt trời",
+      "q": "Từ 太陽 đọc và nghĩa là gì?",
+      "a": [
+        "たいよう - mặt trời",
+        "せんもん - chuyên môn",
+        "あんない - hướng dẫn",
+        "ちゅうしゃ - tiêm thuốc"
+      ],
+      "c": 0,
+      "ex": "太 (ふとい): béo/to; 陽 (よう): dương/mặt trời"
+    },
+    {
+      "word": "睡眠",
+      "romaji": "すいみん",
+      "translation": "giấc ngủ",
+      "q": "Từ 睡眠 đọc và nghĩa là gì?",
+      "a": [
+        "ぎじゅつ - kỹ thuật",
+        "すいみん - giấc ngủ",
+        "しんらい - sự tin cậy",
+        "そんけい - sự tôn kính"
+      ],
+      "c": 1,
+      "ex": "睡 (すい): ngủ; 眠 (ねむる): ngủ"
+    },
+    {
+      "word": "寝室",
+      "romaji": "しんしつ",
+      "translation": "phòng ngủ",
+      "q": "Từ 寝室 đọc và nghĩa là gì?",
+      "a": [
+        "しょうかい - giới thiệu",
+        "なぐさめ - sự an ủi",
+        "ろうどう - lao động",
+        "しんしつ - phòng ngủ"
+      ],
+      "c": 3,
+      "ex": "寝 (ねる): ngủ; 室 (しつ): phòng"
+    },
+    {
+      "word": "起床",
+      "romaji": "きしょう",
+      "translation": "thức dậy",
+      "q": "Từ 起床 đọc và nghĩa là gì?",
+      "a": [
+        "ぼうえき - mậu dịch",
+        "かがく - khoa học",
+        "とこう - xuất ngoại",
+        "きしょう - thức dậy"
+      ],
+      "c": 3,
+      "ex": "起 (おきる): thức dậy; 床 (しょう): giường/sàn"
+    },
+    {
+      "word": "会議",
+      "romaji": "かいぎ",
+      "translation": "cuộc họp",
+      "q": "Từ 会議 đọc và nghĩa là gì?",
+      "a": [
+        "もじ - văn tự",
+        "ひろう - sự mệt mỏi",
+        "じょうたい - trạng thái",
+        "かいぎ - cuộc họp"
+      ],
+      "c": 3,
+      "ex": "会 (かい): hội/gặp; 議 (ぎ): bàn bạc"
+    },
+    {
+      "word": "用意",
+      "romaji": "ようい",
+      "translation": "chuẩn bị",
+      "q": "Từ 用意 đọc và nghĩa là gì?",
+      "a": [
+        "いぞん - sự phụ thuộc",
+        "ぎせい - sự hy sinh",
+        "しょうぶ - thắng thua",
+        "ようい - chuẩn bị"
+      ],
+      "c": 3,
+      "ex": "用 (よう): sử dụng/việc; 意 (い): ý nghĩa/ý định"
+    },
+    {
+      "word": "意味",
+      "romaji": "いみ",
+      "translation": "ý nghĩa",
+      "q": "Từ 意味 đọc và nghĩa là gì?",
+      "a": [
+        "とうあん - bài làm",
+        "ちょきん - tiền tiết kiệm",
+        "いみ - ý nghĩa",
+        "びょういん - bệnh viện"
+      ],
+      "c": 2,
+      "ex": "意 (い): ý nghĩa/ý định; 味 (み): vị/hương vị"
+    },
+    {
+      "word": "必要",
+      "romaji": "ひつよう",
+      "translation": "cần thiết",
+      "q": "Từ 必要 đọc và nghĩa là gì?",
+      "a": [
+        "けんこう - sức khỏe",
+        "しょうひん - hàng hóa",
+        "ひつよう - cần thiết",
+        "ごかい - hiểu lầm"
+      ],
+      "c": 2,
+      "ex": "必 (かならず): nhất định; 要 (よう): cần thiết"
+    },
+    {
+      "word": "自分",
+      "romaji": "じぶん",
+      "translation": "bản thân",
+      "q": "Từ 自分 đọc và nghĩa là gì?",
+      "a": [
+        "こうしょう - đàm phán",
+        "せいひん - sản phẩm",
+        "きょうみ - sự thích thú",
+        "じぶん - bản thân"
+      ],
+      "c": 3,
+      "ex": "自 (じ): tự bản thân; 分 (ぶん): phần"
+    },
+    {
+      "word": "他人",
+      "romaji": "たにん",
+      "translation": "người khác",
+      "q": "Từ 他人 đọc và nghĩa là gì?",
+      "a": [
+        "いぞん - sự phụ thuộc",
+        "たにん - người khác",
+        "そうりょう - phí gửi",
+        "せつめい - giải thích"
+      ],
+      "c": 1,
+      "ex": "他 (ほか): khác; 人 (じん): người"
+    },
+    {
+      "word": "同じ",
+      "romaji": "おなじ",
+      "translation": "giống nhau",
+      "q": "Từ 同じ đọc và nghĩa là gì?",
+      "a": [
+        "しゅうかん - thói quen",
+        "べんきょう - học tập",
+        "おなじ - giống nhau",
+        "あまい - ngọt"
+      ],
+      "c": 2,
+      "ex": "同 (おなじ): giống nhau"
+    },
+    {
+      "word": "連絡",
+      "romaji": "れんらく",
+      "translation": "liên lạc",
+      "q": "Từ 連絡 đọc và nghĩa là gì?",
+      "a": [
+        "ししゅつ - chi tiêu",
+        "げんき - khỏe mạnh",
+        "もじ - văn tự",
+        "れんらく - liên lạc"
+      ],
+      "c": 3,
+      "ex": "連 (つれる): dẫn theo/liên tục; 絡 (らく): liên lạc"
+    },
+    {
+      "word": "関係",
+      "romaji": "かんけい",
+      "translation": "mối quan hệ",
+      "q": "Từ 関係 đọc và nghĩa là gì?",
+      "a": [
+        "しょうこ - bằng chứng",
+        "きそく - quy tắc",
+        "かんけい - mối quan hệ",
+        "かんきょう - môi trường"
+      ],
+      "c": 2,
+      "ex": "関 (かん): liên quan; 係 (かかり): liên quan/phụ trách"
+    },
+    {
+      "word": "説明",
+      "romaji": "せつめい",
+      "translation": "giải thích",
+      "q": "Từ 説明 đọc và nghĩa là gì?",
+      "a": [
+        "ようい - chuẩn bị",
+        "ちゅうしゃ - tiêm thuốc",
+        "せつめい - giải thích",
+        "かんたん - đơn giản"
+      ],
+      "c": 2,
+      "ex": "説 (せつ): thuyết/giải thích; 明 (めい): sáng/rõ ràng"
+    },
+    {
+      "word": "案内",
+      "romaji": "あんない",
+      "translation": "hướng dẫn",
+      "q": "Từ 案内 đọc và nghĩa là gì?",
+      "a": [
+        "あまい - ngọt",
+        "あんない - hướng dẫn",
+        "こうふん - sự hưng phấn",
+        "きゅうじょ - cứu hộ"
+      ],
+      "c": 1,
+      "ex": "案 (あん): kế hoạch/phương án; 内 (ない): bên trong"
+    },
+    {
+      "word": "紹介",
+      "romaji": "しょうかい",
+      "translation": "giới thiệu",
+      "q": "Từ 紹介 đọc và nghĩa là gì?",
+      "a": [
+        "かるい - nhẹ",
+        "はってん - phát triển",
+        "とどけ - giấy báo/giao",
+        "しょうかい - giới thiệu"
+      ],
+      "c": 3,
+      "ex": "紹 (しょう): giới thiệu; 介 (かい): trung gian"
+    },
+    {
+      "word": "場所",
+      "romaji": "ばしょ",
+      "translation": "địa điểm",
+      "q": "Từ 場所 đọc và nghĩa là gì?",
+      "a": [
+        "だんたい - đoàn thể",
+        "ばしょ - địa điểm",
+        "どくりつ - độc lập",
+        "ほうりつ - pháp luật"
+      ],
+      "c": 1,
+      "ex": "場 (ば): địa điểm; 所 (しょ): nơi chốn"
+    },
+    {
+      "word": "場合",
+      "romaji": "ばあい",
+      "translation": "trường hợp",
+      "q": "Từ 場合 đọc và nghĩa là gì?",
+      "a": [
+        "せきにん - trách nhiệm",
+        "かんせい - sự hoàn thành",
+        "しぼう - tử vong",
+        "ばあい - trường hợp"
+      ],
+      "c": 3,
+      "ex": "場 (ば): địa điểm; 合 (あう): hợp/phù hợp"
+    },
+    {
+      "word": "感じ",
+      "romaji": "かんじ",
+      "translation": "cảm giác",
+      "q": "Từ 感じ đọc và nghĩa là gì?",
+      "a": [
+        "きょうみ - sự thích thú",
+        "かんじ - cảm giác",
+        "きんし - cấm",
+        "はずかしい - xấu hổ"
+      ],
+      "c": 1,
+      "ex": "感 (かんじる): cảm nhận"
+    },
+    {
+      "word": "文化",
+      "romaji": "ぶんか",
+      "translation": "văn hóa",
+      "q": "Từ 文化 đọc và nghĩa là gì?",
+      "a": [
+        "かんたん - đơn giản",
+        "ぶんか - văn hóa",
+        "そうぞう - tưởng tượng",
+        "うそつき - kẻ nói dối"
+      ],
+      "c": 1,
+      "ex": "文 (ぶん): văn/câu; 化 (か): biến hóa/hóa"
+    },
+    {
+      "word": "歴史",
+      "romaji": "れきし",
+      "translation": "lịch sử",
+      "q": "Từ 歴史 đọc và nghĩa là gì?",
+      "a": [
+        "きょうりょく - sự hợp tác",
+        "れきし - lịch sử",
+        "しつもん - câu hỏi",
+        "うんめい - số phận"
+      ],
+      "c": 1,
+      "ex": "歴 (れき): lịch sử; 史 (し): sử"
+    },
+    {
+      "word": "世界",
+      "romaji": "せかい",
+      "translation": "thế giới",
+      "q": "Từ 世界 đọc và nghĩa là gì?",
+      "a": [
+        "せかい - thế giới",
+        "ぜつぼう - sự tuyệt vọng",
+        "きぼう - hy vọng",
+        "いしき - ý thức"
+      ],
+      "c": 0,
+      "ex": "世 (せ): đời/thế hệ; 界 (かい): giới/ranh giới"
+    },
+    {
+      "word": "地球",
+      "romaji": "ちきゅう",
+      "translation": "trái đất",
+      "q": "Từ 地球 đọc và nghĩa là gì?",
+      "a": [
+        "かんせい - sự hoàn thành",
+        "ちきゅう - trái đất",
+        "かんたん - đơn giản",
+        "ひにく - sự châm biếm"
+      ],
+      "c": 1,
+      "ex": "地 (ち): đất/vùng đất; 球 (きゅう): quả cầu"
+    },
+    {
+      "word": "科学",
+      "romaji": "かがく",
+      "translation": "khoa học",
+      "q": "Từ 科学 đọc và nghĩa là gì?",
+      "a": [
+        "まんぞく - sự hài lòng",
+        "こどく - sự cô đơn",
+        "かがく - khoa học",
+        "かんけい - mối quan hệ"
+      ],
+      "c": 2,
+      "ex": "科 (か): khoa/môn học; 学 (がく): học"
+    },
+    {
+      "word": "技術",
+      "romaji": "ぎじゅつ",
+      "translation": "kỹ thuật",
+      "q": "Từ 技術 đọc và nghĩa là gì?",
+      "a": [
+        "はっけん - phát hiện",
+        "こうふん - sự hưng phấn",
+        "あんぜん - an toàn",
+        "ぎじゅつ - kỹ thuật"
+      ],
+      "c": 3,
+      "ex": "技 (ぎ): kỹ thuật/kỹ năng; 術 (じゅつ): thuật/kỹ nghệ"
+    },
+    {
+      "word": "政治",
+      "romaji": "せいじ",
+      "translation": "chính trị",
+      "q": "Từ 政治 đọc và nghĩa là gì?",
+      "a": [
+        "しゅうでん - tàu cuối",
+        "せいじ - chính trị",
+        "こうふん - sự hưng phấn",
+        "ちしき - kiến thức"
+      ],
+      "c": 1,
+      "ex": "政 (せい): chính trị; 治 (じ): cai trị/chữa trị"
+    },
+    {
+      "word": "方法",
+      "romaji": "ほうほう",
+      "translation": "phương pháp",
+      "q": "Từ 方法 đọc và nghĩa là gì?",
+      "a": [
+        "じゃくてん - điểm yếu",
+        "とうけい - thống kê",
+        "ほうほう - phương pháp",
+        "げんいん - nguyên nhân"
+      ],
+      "c": 2,
+      "ex": "方 (ほう): phương pháp/hướng; 法 (ほう): pháp luật/cách thức"
+    },
+    {
+      "word": "規則",
+      "romaji": "きそく",
+      "translation": "quy tắc",
+      "q": "Từ 規則 đọc và nghĩa là gì?",
+      "a": [
+        "たがいに - lẫn nhau",
+        "きそく - quy tắc",
+        "しゅうかん - thói quen",
+        "こうけん - sự cống hiến"
+      ],
+      "c": 1,
+      "ex": "規 (き): quy tắc; 則 (そく): quy tắc"
+    },
+    {
+      "word": "許可",
+      "romaji": "きょか",
+      "translation": "cho phép",
+      "q": "Từ 許可 đọc và nghĩa là gì?",
+      "a": [
+        "きょか - cho phép",
+        "せいこう - thành công",
+        "しょうひん - hàng hóa",
+        "じっけん - thí nghiệm"
+      ],
+      "c": 0,
+      "ex": "許 (きょ): cho phép; 可 (か): có thể/cho phép"
+    },
+    {
+      "word": "禁止",
+      "romaji": "きんし",
+      "translation": "cấm",
+      "q": "Từ 禁止 đọc và nghĩa là gì?",
+      "a": [
+        "ぎじゅつ - kỹ thuật",
+        "きんし - cấm",
+        "びょういん - bệnh viện",
+        "まんぞく - sự hài lòng"
+      ],
+      "c": 1,
+      "ex": "禁 (きん): cấm; 止 (とめる): dừng lại"
+    },
+    {
+      "word": "中止",
+      "romaji": "ちゅうし",
+      "translation": "hủy bỏ",
+      "q": "Từ 中止 đọc và nghĩa là gì?",
+      "a": [
+        "せんもん - chuyên môn",
+        "たにん - người khác",
+        "どりょく - nỗ lực",
+        "ちゅうし - hủy bỏ"
+      ],
+      "c": 3,
+      "ex": "中 (ちゅう): trong/giữa; 止 (とめる): dừng lại"
+    },
+    {
+      "word": "予定",
+      "romaji": "よてい",
+      "translation": "dự định",
+      "q": "Từ 予定 đọc và nghĩa là gì?",
+      "a": [
+        "よてい - dự định",
+        "しよう - sử dụng",
+        "かんしゃ - cảm ơn",
+        "すいみん - giấc ngủ"
+      ],
+      "c": 0,
+      "ex": "予 (よ): dự trù/trước; 定 (てい): quyết định/cố định"
+    },
+    {
+      "word": "送料",
+      "romaji": "そうりょう",
+      "translation": "phí gửi",
+      "q": "Từ 送料 đọc và nghĩa là gì?",
+      "a": [
+        "きゅうりょう - lương",
+        "けんきゅう - nghiên cứu",
+        "ようい - chuẩn bị",
+        "そうりょう - phí gửi"
+      ],
+      "c": 3,
+      "ex": "送 (おくる): gửi/tiễn; 料 (りょう): phí/nguyên liệu"
+    },
+    {
+      "word": "届け",
+      "romaji": "とどけ",
+      "translation": "giấy báo/giao",
+      "q": "Từ 届け đọc và nghĩa là gì?",
+      "a": [
+        "でんとう - truyền thống",
+        "とどけ - giấy báo/giao",
+        "しゅうにゅう - thu nhập",
+        "かくにん - xác nhận"
+      ],
+      "c": 1,
+      "ex": "届 (とどく): tới nơi/giao"
+    },
+    {
+      "word": "渡航",
+      "romaji": "とこう",
+      "translation": "xuất ngoại",
+      "q": "Từ 渡航 đọc và nghĩa là gì?",
+      "a": [
+        "きんちょう - sự căng thẳng",
+        "けいこう - xu hướng",
+        "とこう - xuất ngoại",
+        "わかもの - người trẻ"
+      ],
+      "c": 2,
+      "ex": "渡 (わたる): băng qua/trao; 航 (こう): hàng hải/bay"
+    },
+    {
+      "word": "集合",
+      "romaji": "しゅうごう",
+      "translation": "tập hợp",
+      "q": "Từ 集合 đọc và nghĩa là gì?",
+      "a": [
+        "かんじょう - cảm xúc",
+        "しゅうごう - tập hợp",
+        "しゅうかん - thói quen",
+        "しゃっきん - nợ"
+      ],
+      "c": 1,
+      "ex": "集 (あつまる): tụ họp; 合 (あう): hợp/phù hợp"
+    },
+    {
+      "word": "選択",
+      "romaji": "せんたく",
+      "translation": "sự lựa chọn",
+      "q": "Từ 選択 đọc và nghĩa là gì?",
+      "a": [
+        "きょうみ - sự thích thú",
+        "せんたく - sự lựa chọn",
+        "ちょきん - tiền tiết kiệm",
+        "ちゅうだん - sự gián đoạn"
+      ],
+      "c": 1,
+      "ex": "選 (えらぶ): lựa chọn; 択 (たく): lựa chọn"
+    },
+    {
+      "word": "調査",
+      "romaji": "ちょうさ",
+      "translation": "điều tra",
+      "q": "Từ 調査 đọc và nghĩa là gì?",
+      "a": [
+        "たいくつ - sự nhàm chán",
+        "りょうきん - phí",
+        "ちょうさ - điều tra",
+        "そうぞう - sự sáng tạo"
+      ],
+      "c": 2,
+      "ex": "調 (しらべる): điều tra/kiểm tra; 査 (さ): điều tra"
+    },
+    {
+      "word": "比較",
+      "romaji": "ひかく",
+      "translation": "so sánh",
+      "q": "Từ 比較 đọc và nghĩa là gì?",
+      "a": [
+        "ふくざつ - phức tạp",
+        "かがく - khoa học",
+        "ひかく - so sánh",
+        "こわい - đáng sợ"
+      ],
+      "c": 2,
+      "ex": "比 (くらべる): so sánh; 較 (かく): so sánh"
+    },
+    {
+      "word": "続き",
+      "romaji": "つづき",
+      "translation": "phần tiếp theo",
+      "q": "Từ 続き đọc và nghĩa là gì?",
+      "a": [
+        "いぞん - sự phụ thuộc",
+        "ずつう - đau đầu",
+        "きらい - ghét",
+        "つづき - phần tiếp theo"
+      ],
+      "c": 3,
+      "ex": "続 (つづく): tiếp tục"
+    },
+    {
+      "word": "変化",
+      "romaji": "へんか",
+      "translation": "biến đổi",
+      "q": "Từ 変化 đọc và nghĩa là gì?",
+      "a": [
+        "べんきょう - học tập",
+        "へんか - biến đổi",
+        "どりょく - nỗ lực",
+        "ひみつ - bí mật"
+      ],
+      "c": 1,
+      "ex": "変 (かわる): thay đổi; 化 (か): biến hóa/hóa"
+    },
+    {
+      "word": "決定",
+      "romaji": "けってい",
+      "translation": "quyết định",
+      "q": "Từ 決定 đọc và nghĩa là gì?",
+      "a": [
+        "けいけん - kinh nghiệm",
+        "けってい - quyết định",
+        "はげまし - sự khích lệ",
+        "くるしい - đau khổ"
+      ],
+      "c": 1,
+      "ex": "決 (きめる): quyết định; 定 (てい): quyết định/cố định"
+    },
+    {
+      "word": "特別",
+      "romaji": "とくべつ",
+      "translation": "đặc biệt",
+      "q": "Từ 特別 đọc và nghĩa là gì?",
+      "a": [
+        "けんこう - sức khỏe",
+        "じょうたい - trạng thái",
+        "ししゅつ - chi tiêu",
+        "とくべつ - đặc biệt"
+      ],
+      "c": 3,
+      "ex": "特 (とく): đặc biệt; 別 (べつ): khác/riêng biệt"
+    },
+    {
+      "word": "自由",
+      "romaji": "じゆう",
+      "translation": "tự do",
+      "q": "Từ 自由 đọc và nghĩa là gì?",
+      "a": [
+        "とこう - xuất ngoại",
+        "せいふ - chính phủ",
+        "じゆう - tự do",
+        "けんさ - kiểm tra"
+      ],
+      "c": 2,
+      "ex": "自 (じ): tự bản thân; 由 (ゆう): lý do/tự do"
+    },
+    {
+      "word": "招待",
+      "romaji": "しょうたい",
+      "translation": "lời mời",
+      "q": "Từ 招待 đọc và nghĩa là gì?",
+      "a": [
+        "ぶんせき - phân tích",
+        "はげまし - sự khích lệ",
+        "しょうたい - lời mời",
+        "はっけん - phát hiện"
+      ],
+      "c": 2,
+      "ex": "招 (まねく): mời; 待 (まつ): chờ đợi"
+    },
+    {
+      "word": "約束",
+      "romaji": "やくそく",
+      "translation": "lời hứa",
+      "q": "Từ 約束 đọc và nghĩa là gì?",
+      "a": [
+        "びょういん - bệnh viện",
+        "かいし - bắt đầu",
+        "やくそく - lời hứa",
+        "まちがい - sai lầm"
+      ],
+      "c": 2,
+      "ex": "約 (やく): hẹn/ước; 束 (そく): bó/ràng buộc"
+    },
+    {
+      "word": "準備",
+      "romaji": "じゅんび",
+      "translation": "chuẩn bị",
+      "q": "Từ 準備 đọc và nghĩa là gì?",
+      "a": [
+        "あんぜん - an toàn",
+        "やっきょく - hiệu thuốc",
+        "じゅんび - chuẩn bị",
+        "おどろき - sự ngạc nhiên"
+      ],
+      "c": 2,
+      "ex": "準 (じゅん): chuẩn bị; 備 (そなえる): chuẩn bị"
+    },
+    {
+      "word": "状態",
+      "romaji": "じょうたい",
+      "translation": "trạng thái",
+      "q": "Từ 状態 đọc và nghĩa là gì?",
+      "a": [
+        "しんらい - sự tin cậy",
+        "きびしい - nghiêm khắc",
+        "こうこく - quảng cáo",
+        "じょうたい - trạng thái"
+      ],
+      "c": 3,
+      "ex": "状 (じょう): tình trạng; 態 (たい): trạng thái"
+    },
+    {
+      "word": "自然",
+      "romaji": "しぜん",
+      "translation": "tự nhiên",
+      "q": "Từ 自然 đọc và nghĩa là gì?",
+      "a": [
+        "しぜん - tự nhiên",
+        "こうこく - quảng cáo",
+        "へいてん - đóng cửa hàng",
+        "そしき - tổ chức"
+      ],
+      "c": 0,
+      "ex": "自 (じ): tự bản thân; 然 (ぜん): tự nhiên như vậy"
+    },
+    {
+      "word": "習慣",
+      "romaji": "しゅうかん",
+      "translation": "thói quen",
+      "q": "Từ 習慣 đọc và nghĩa là gì?",
+      "a": [
+        "いしき - ý thức",
+        "けいざい - kinh tế",
+        "しゅうかん - thói quen",
+        "とどけ - giấy báo/giao"
+      ],
+      "c": 2,
+      "ex": "習 (しゅう): học tập/thói quen; 慣 (ならす): quen thuộc"
+    },
+    {
+      "word": "訓練",
+      "romaji": "くんれん",
+      "translation": "huấn luyện",
+      "q": "Từ 訓練 đọc và nghĩa là gì?",
+      "a": [
+        "しよう - sử dụng",
+        "しゃっきん - nợ",
+        "けいこう - xu hướng",
+        "くんれん - huấn luyện"
+      ],
+      "c": 3,
+      "ex": "訓 (くん): huấn luyện; 練 (ねる): luyện tập"
+    },
+    {
+      "word": "法律",
+      "romaji": "ほうりつ",
+      "translation": "pháp luật",
+      "q": "Từ 法律 đọc và nghĩa là gì?",
+      "a": [
+        "しゅうごう - tập hợp",
+        "ほうりつ - pháp luật",
+        "じょうたい - trạng thái",
+        "もじ - văn tự"
+      ],
+      "c": 1,
+      "ex": "法 (ほう): pháp luật/cách thức; 律 (りつ): luật lệ"
+    },
+    {
+      "word": "故障",
+      "romaji": "こしょう",
+      "translation": "hỏng hóc",
+      "q": "Từ 故障 đọc và nghĩa là gì?",
+      "a": [
+        "なきがお - gương mặt khóc",
+        "こうこく - quảng cáo",
+        "こうりつ - hiệu suất",
+        "こしょう - hỏng hóc"
+      ],
+      "c": 3,
+      "ex": "故 (こ): lý do/sự cố; 障 (しょう): chướng ngại"
+    },
+    {
+      "word": "経済",
+      "romaji": "けいざい",
+      "translation": "kinh tế",
+      "q": "Từ 経済 đọc và nghĩa là gì?",
+      "a": [
+        "ぎむ - nghĩa vụ",
+        "けいざい - kinh tế",
+        "ぜつぼう - sự tuyệt vọng",
+        "よそく - dự đoán"
+      ],
+      "c": 1,
+      "ex": "経 (けい): trải qua/kinh tế; 済 (ざい): kinh tế/xong việc"
+    },
+    {
+      "word": "礼儀",
+      "romaji": "れいぎ",
+      "translation": "lễ nghi",
+      "q": "Từ 礼儀 đọc và nghĩa là gì?",
+      "a": [
+        "ちゅうし - hủy bỏ",
+        "れいぎ - lễ nghi",
+        "はってん - phát triển",
+        "おせん - ô nhiễm"
+      ],
+      "c": 1,
+      "ex": "礼 (れい): lễ nghĩa; 儀 (ぎ): nghi lễ"
+    },
+    {
+      "word": "経験",
+      "romaji": "けいけん",
+      "translation": "kinh nghiệm",
+      "q": "Từ 経験 đọc và nghĩa là gì?",
+      "a": [
+        "いぞん - sự phụ thuộc",
+        "はんたい - phản đối",
+        "けいけん - kinh nghiệm",
+        "いかり - sự tức giận"
+      ],
+      "c": 2,
+      "ex": "経 (けい): trải qua/kinh tế; 験 (けん): kiểm tra/nghiệm"
+    },
+    {
+      "word": "質問",
+      "romaji": "しつもん",
+      "translation": "câu hỏi",
+      "q": "Từ 質問 đọc và nghĩa là gì?",
+      "a": [
+        "へいきん - trung bình",
+        "しつもん - câu hỏi",
+        "かいぜん - cải thiện",
+        "こうふん - sự hưng phấn"
+      ],
+      "c": 1,
+      "ex": "質 (しつ): chất lượng/bản chất; 問 (とう): hỏi"
+    },
+    {
+      "word": "問題",
+      "romaji": "もんだい",
+      "translation": "vấn đề",
+      "q": "Từ 問題 đọc và nghĩa là gì?",
+      "a": [
+        "やっきょく - hiệu thuốc",
+        "せいじつ - thành thật",
+        "もんだい - vấn đề",
+        "じゅんび - chuẩn bị"
+      ],
+      "c": 2,
+      "ex": "問 (とう): hỏi; 題 (だい): đề bài"
+    },
+    {
+      "word": "答案",
+      "romaji": "とうあん",
+      "translation": "bài làm",
+      "q": "Từ 答案 đọc và nghĩa là gì?",
+      "a": [
+        "せいひん - sản phẩm",
+        "しんや - đêm khuya",
+        "れきし - lịch sử",
+        "とうあん - bài làm"
+      ],
+      "c": 3,
+      "ex": "答 (こたえる): trả lời; 案 (あん): kế hoạch/phương án"
+    },
+    {
+      "word": "漢字",
+      "romaji": "かんじ",
+      "translation": "chữ Hán",
+      "q": "Từ 漢字 đọc và nghĩa là gì?",
+      "a": [
+        "ゆたか - phong phú",
+        "かんじ - chữ Hán",
+        "しんしつ - phòng ngủ",
+        "かんけい - mối quan hệ"
+      ],
+      "c": 1,
+      "ex": "漢 (かん): chữ Hán; 字 (じ): chữ"
+    },
+    {
+      "word": "文字",
+      "romaji": "もじ",
+      "translation": "văn tự",
+      "q": "Từ 文字 đọc và nghĩa là gì?",
+      "a": [
+        "せいふ - chính phủ",
+        "もじ - văn tự",
+        "じゅんび - chuẩn bị",
+        "はんざい - tội phạm"
+      ],
+      "c": 1,
+      "ex": "文 (ぶん): văn/câu; 字 (じ): chữ"
+    },
+    {
+      "word": "仕事",
+      "romaji": "しごと",
+      "translation": "công việc",
+      "q": "Từ 仕事 đọc và nghĩa là gì?",
+      "a": [
+        "けんきゅう - nghiên cứu",
+        "しごと - công việc",
+        "いしき - ý thức",
+        "とくべつ - đặc biệt"
+      ],
+      "c": 1,
+      "ex": "仕 (し): phụng sự; 事 (こと): việc/sự việc"
+    },
+    {
+      "word": "環境",
+      "romaji": "かんきょう",
+      "translation": "môi trường",
+      "q": "Từ 環境 đọc và nghĩa là gì?",
+      "a": [
+        "そしき - tổ chức",
+        "しょうたい - lời mời",
+        "ゆしゅつ - xuất khẩu",
+        "かんきょう - môi trường"
+      ],
+      "c": 3,
+      "ex": "環 (かん): vòng/môi trường; 境 (きょう): biên giới/ranh giới"
+    },
+    {
+      "word": "効果",
+      "romaji": "こうか",
+      "translation": "hiệu quả",
+      "q": "Từ 効果 đọc và nghĩa là gì?",
+      "a": [
+        "きしょう - thức dậy",
+        "こうか - hiệu quả",
+        "ていあん - đề xuất",
+        "じぶん - bản thân"
+      ],
+      "c": 1,
+      "ex": "効 (こう): hiệu quả; 果 (か): kết quả/quả"
+    },
+    {
+      "word": "製品",
+      "romaji": "せいひん",
+      "translation": "sản phẩm",
+      "q": "Từ 製品 đọc và nghĩa là gì?",
+      "a": [
+        "きょうりょく - sự hợp tác",
+        "げんき - khỏe mạnh",
+        "せいひん - sản phẩm",
+        "しょうめい - chứng minh"
+      ],
+      "c": 2,
+      "ex": "製 (せい): chế tạo; 品 (ひん): phẩm chất/đồ vật"
+    },
+    {
+      "word": "商品",
+      "romaji": "しょうひん",
+      "translation": "hàng hóa",
+      "q": "Từ 商品 đọc và nghĩa là gì?",
+      "a": [
+        "しょうひん - hàng hóa",
+        "たにん - người khác",
+        "せつめい - giải thích",
+        "ひつよう - cần thiết"
+      ],
+      "c": 0,
+      "ex": "商 (しょう): buôn bán; 品 (ひん): phẩm chất/đồ vật"
+    },
+    {
+      "word": "増加",
+      "romaji": "ぞうか",
+      "translation": "sự gia tăng",
+      "q": "Từ 増加 đọc và nghĩa là gì?",
+      "a": [
+        "ひにく - sự châm biếm",
+        "きぼう - hy vọng",
+        "せいふ - chính phủ",
+        "ぞうか - sự gia tăng"
+      ],
+      "c": 3,
+      "ex": "増 (ふえる): tăng lên; 加 (か): thêm vào"
+    },
+    {
+      "word": "減少",
+      "romaji": "げんしょう",
+      "translation": "sự giảm thiểu",
+      "q": "Từ 減少 đọc và nghĩa là gì?",
+      "a": [
+        "しょうめい - chứng minh",
+        "へいてん - đóng cửa hàng",
+        "せきにん - trách nhiệm",
+        "げんしょう - sự giảm thiểu"
+      ],
+      "c": 3,
+      "ex": "減 (へる): giảm xuống; 少 (しょう): ít"
+    },
+    {
+      "word": "影響",
+      "romaji": "えいきょう",
+      "translation": "ảnh hưởng",
+      "q": "Từ 影響 đọc và nghĩa là gì?",
+      "a": [
+        "さん - tán thành",
+        "こ - lý do/sự cố",
+        "おりる - xuống (xe)",
+        "えいきょう - ảnh hưởng"
+      ],
+      "c": 3,
+      "ex": "影 (かげ): bóng/ảnh hưởng; 響 (ひびく): vang lên/ảnh hưởng"
+    },
+    {
+      "word": "原因",
+      "romaji": "げんいん",
+      "translation": "nguyên nhân",
+      "q": "Từ 原因 đọc và nghĩa là gì?",
+      "a": [
+        "げんいん - nguyên nhân",
+        "ゆたか - phong phú",
+        "こしょう - hỏng hóc",
+        "じっけん - thí nghiệm"
+      ],
+      "c": 0,
+      "ex": "原 (はら): nguyên nhân/cánh đồng; 因 (いん): nguyên nhân"
+    },
+    {
+      "word": "実験",
+      "romaji": "じっけん",
+      "translation": "thí nghiệm",
+      "q": "Từ 実験 đọc và nghĩa là gì?",
+      "a": [
+        "じっけん - thí nghiệm",
+        "せんたく - sự lựa chọn",
+        "ろうひ - sự lãng phí",
+        "ちきゅう - trái đất"
+      ],
+      "c": 0,
+      "ex": "実 (じつ): thực tế; 験 (けん): kiểm tra/nghiệm"
+    },
+    {
+      "word": "研究",
+      "romaji": "けんきゅう",
+      "translation": "nghiên cứu",
+      "q": "Từ 研究 đọc và nghĩa là gì?",
+      "a": [
+        "ぶき - vũ khí",
+        "しょうかい - giới thiệu",
+        "けんきゅう - nghiên cứu",
+        "きびしい - nghiêm khắc"
+      ],
+      "c": 2,
+      "ex": "研 (けん): nghiên cứu; 究 (きゅう): nghiên cứu tường tận"
+    },
+    {
+      "word": "発見",
+      "romaji": "はっけん",
+      "translation": "phát hiện",
+      "q": "Từ 発見 đọc và nghĩa là gì?",
+      "a": [
+        "こじん - cá nhân",
+        "おせん - ô nhiễm",
+        "ようい - chuẩn bị",
+        "はっけん - phát hiện"
+      ],
+      "c": 3,
+      "ex": "発 (はつ): phát ra; 見 (けん): nhìn/thấy"
+    },
+    {
+      "word": "発展",
+      "romaji": "はってん",
+      "translation": "phát triển",
+      "q": "Từ 発展 đọc và nghĩa là gì?",
+      "a": [
+        "こうしょう - đàm phán",
+        "じょうたい - trạng thái",
+        "はってん - phát triển",
+        "ぶんせき - phân tích"
+      ],
+      "c": 2,
+      "ex": "発 (はつ): phát ra; 展 (てん): triển khai/mở rộng"
+    },
+    {
+      "word": "確認",
+      "romaji": "かくにん",
+      "translation": "xác nhận",
+      "q": "Từ 確認 đọc và nghĩa là gì?",
+      "a": [
+        "さんせい - tán thành",
+        "かんかく - cảm giác",
+        "かくにん - xác nhận",
+        "しょうたい - lời mời"
+      ],
+      "c": 2,
+      "ex": "確 (たしか): chắc chắn; 認 (みとめる): công nhận"
+    },
+    {
+      "word": "意識",
+      "romaji": "いしき",
+      "translation": "ý thức",
+      "q": "Từ 意識 đọc và nghĩa là gì?",
+      "a": [
+        "こしょう - hỏng hóc",
+        "しょうひん - hàng hóa",
+        "いしき - ý thức",
+        "せいじつ - thành thật"
+      ],
+      "c": 2,
+      "ex": "意 (い): ý nghĩa/ý định; 識 (しき): nhận thức"
+    },
+    {
+      "word": "想像",
+      "romaji": "そうぞう",
+      "translation": "tưởng tượng",
+      "q": "Từ 想像 đọc và nghĩa là gì?",
+      "a": [
+        "きぼう - hy vọng",
+        "しんや - đêm khuya",
+        "そうぞう - tưởng tượng",
+        "からい - cay"
+      ],
+      "c": 2,
+      "ex": "想 (そう): suy nghĩ/tưởng; 像 (ぞう): hình ảnh/tượng"
+    },
+    {
+      "word": "希望",
+      "romaji": "きぼう",
+      "translation": "hy vọng",
+      "q": "Từ 希望 đọc và nghĩa là gì?",
+      "a": [
+        "あんぜん - an toàn",
+        "こうりつ - hiệu suất",
+        "よそく - dự đoán",
+        "きぼう - hy vọng"
+      ],
+      "c": 3,
+      "ex": "希 (き): hy vọng; 望 (のぞむ): mong muốn"
+    },
+    {
+      "word": "満足",
+      "romaji": "まんぞく",
+      "translation": "sự hài lòng",
+      "q": "Từ 満足 đọc và nghĩa là gì?",
+      "a": [
+        "じこ - tai nạn",
+        "やっきょく - hiệu thuốc",
+        "かんじ - chữ Hán",
+        "まんぞく - sự hài lòng"
+      ],
+      "c": 3,
+      "ex": "満 (みちる): đầy đủ/thỏa mãn; 足 (そく): chân/đủ"
+    },
+    {
+      "word": "緊張",
+      "romaji": "きんちょう",
+      "translation": "sự căng thẳng",
+      "q": "Từ 緊張 đọc và nghĩa là gì?",
+      "a": [
+        "きんちょう - sự căng thẳng",
+        "しつもん - câu hỏi",
+        "せんたく - sự lựa chọn",
+        "しっぱい - thất bại"
+      ],
+      "c": 0,
+      "ex": "緊 (きん): căng thẳng; 張 (はる): căng ra"
+    },
+    {
+      "word": "興味",
+      "romaji": "きょうみ",
+      "translation": "sự thích thú",
+      "q": "Từ 興味 đọc và nghĩa là gì?",
+      "a": [
+        "ろうひ - sự lãng phí",
+        "きょうみ - sự thích thú",
+        "かんじ - chữ Hán",
+        "おなじ - giống nhau"
+      ],
+      "c": 1,
+      "ex": "興 (きょう): hứng thú; 味 (み): vị/hương vị"
+    },
+    {
+      "word": "興奮",
+      "romaji": "こうふん",
+      "translation": "sự hưng phấn",
+      "q": "Từ 興奮 đọc và nghĩa là gì?",
+      "a": [
+        "かくす - che giấu",
+        "こうふん - sự hưng phấn",
+        "せいこう - thành công",
+        "ばあい - trường hợp"
+      ],
+      "c": 1,
+      "ex": "興 (きょう): hứng thú; 奮 (ふるう): phấn chấn"
+    },
+    {
+      "word": "退屈",
+      "romaji": "たいくつ",
+      "translation": "sự nhàm chán",
+      "q": "Từ 退屈 đọc và nghĩa là gì?",
+      "a": [
+        "たいくつ - sự nhàm chán",
+        "ちきゅう - trái đất",
+        "けんきゅう - nghiên cứu",
+        "せいけつ - sạch sẽ"
+      ],
+      "c": 0,
+      "ex": "退 (しりぞく): rút lui; 屈 (くっする): khuất phục"
+    },
+    {
+      "word": "孤独",
+      "romaji": "こどく",
+      "translation": "sự cô đơn",
+      "q": "Từ 孤独 đọc và nghĩa là gì?",
+      "a": [
+        "こどく - sự cô đơn",
+        "うそつき - kẻ nói dối",
+        "ぶんせき - phân tích",
+        "りょうきん - phí"
+      ],
+      "c": 0,
+      "ex": "孤 (こ): cô độc; 独 (ひとり): một mình"
+    },
+    {
+      "word": "独立",
+      "romaji": "どくりつ",
+      "translation": "độc lập",
+      "q": "Từ 独立 đọc và nghĩa là gì?",
+      "a": [
+        "ひろう - sự mệt mỏi",
+        "どくりつ - độc lập",
+        "かいぎ - cuộc họp",
+        "ぎろん - cuộc tranh luận"
+      ],
+      "c": 1,
+      "ex": "独 (ひとり): một mình; 立 (りつ): đứng/thành lập"
+    },
+    {
+      "word": "幸福",
+      "romaji": "こうふく",
+      "translation": "hạnh phúc",
+      "q": "Từ 幸福 đọc và nghĩa là gì?",
+      "a": [
+        "けんさ - kiểm tra",
+        "わかもの - người trẻ",
+        "おもいで - kỷ niệm",
+        "こうふく - hạnh phúc"
+      ],
+      "c": 3,
+      "ex": "幸 (しあわせ): hạnh phúc; 福 (ふく): phúc/hạnh phúc"
+    },
+    {
+      "word": "戦争",
+      "romaji": "せんそう",
+      "translation": "chiến tranh",
+      "q": "Từ 戦争 đọc và nghĩa là gì?",
+      "a": [
+        "たにん - người khác",
+        "ほうりつ - pháp luật",
+        "かいし - bắt đầu",
+        "せんそう - chiến tranh"
+      ],
+      "c": 3,
+      "ex": "戦 (たたかう): chiến đấu; 争 (あらそう): tranh giành"
+    },
+    {
+      "word": "武器",
+      "romaji": "ぶき",
+      "translation": "vũ khí",
+      "q": "Từ 武器 đọc và nghĩa là gì?",
+      "a": [
+        "こうふん - sự hưng phấn",
+        "かいてん - mở cửa hàng",
+        "あんない - hướng dẫn",
+        "ぶき - vũ khí"
+      ],
+      "c": 3,
+      "ex": "武 (ぶ): võ thuật; 器 (き): dụng cụ"
+    },
+    {
+      "word": "兵士",
+      "romaji": "へいし",
+      "translation": "binh sĩ",
+      "q": "Từ 兵士 đọc và nghĩa là gì?",
+      "a": [
+        "へいし - binh sĩ",
+        "ちょきん - tiền tiết kiệm",
+        "こどく - sự cô đơn",
+        "きしょう - thức dậy"
+      ],
+      "c": 0,
+      "ex": "兵 (へい): binh lính; 士 (し): sĩ/người có học"
+    },
+    {
+      "word": "政府",
+      "romaji": "せいふ",
+      "translation": "chính phủ",
+      "q": "Từ 政府 đọc và nghĩa là gì?",
+      "a": [
+        "きんし - cấm",
+        "せいふ - chính phủ",
+        "とどけ - giấy báo/giao",
+        "ちゅうい - chú ý"
+      ],
+      "c": 1,
+      "ex": "政 (せい): chính trị; 府 (ふ): chính phủ"
+    },
+    {
+      "word": "貿易",
+      "romaji": "ぼうえき",
+      "translation": "mậu dịch",
+      "q": "Từ 貿易 đọc và nghĩa là gì?",
+      "a": [
+        "かんせい - sự hoàn thành",
+        "へいてん - đóng cửa hàng",
+        "ゆうき - lòng dũng cảm",
+        "ぼうえき - mậu dịch"
+      ],
+      "c": 3,
+      "ex": "貿 (ぼう): buôn bán; 易 (えき): dễ dàng/giao dịch"
+    },
+    {
+      "word": "輸出",
+      "romaji": "ゆしゅつ",
+      "translation": "xuất khẩu",
+      "q": "Từ 輸出 đọc và nghĩa là gì?",
+      "a": [
+        "さんせい - tán thành",
+        "ゆしゅつ - xuất khẩu",
+        "しつもん - câu hỏi",
+        "ほうりつ - pháp luật"
+      ],
+      "c": 1,
+      "ex": "輸 (ゆ): vận chuyển; 出 (しゅつ): ra"
+    },
+    {
+      "word": "消費",
+      "romaji": "しょうひ",
+      "translation": "tiêu thụ",
+      "q": "Từ 消費 đọc và nghĩa là gì?",
+      "a": [
+        "さいばん - xét xử",
+        "しょうひ - tiêu thụ",
+        "ちょうさ - điều tra",
+        "かんしゃ - cảm ơn"
+      ],
+      "c": 1,
+      "ex": "消 (きえる): biến mất/tiêu thụ; 費 (ひ): chi phí"
+    },
+    {
+      "word": "汚染",
+      "romaji": "おせん",
+      "translation": "ô nhiễm",
+      "q": "Từ 汚染 đọc và nghĩa là gì?",
+      "a": [
+        "ちょうさ - điều tra",
+        "さいばん - xét xử",
+        "こしょう - hỏng hóc",
+        "おせん - ô nhiễm"
+      ],
+      "c": 3,
+      "ex": "汚 (きたない): bẩn; 染 (そめる): nhuộm/nhiễm"
+    },
+    {
+      "word": "保護",
+      "romaji": "ほご",
+      "translation": "bảo vệ",
+      "q": "Từ 保護 đọc và nghĩa là gì?",
+      "a": [
+        "ほご - bảo vệ",
+        "じゅうよう - quan trọng",
+        "たいくつ - sự nhàm chán",
+        "かるい - nhẹ"
+      ],
+      "c": 0,
+      "ex": "保 (たもつ): giữ gìn; 護 (ご): bảo vệ"
+    },
+    {
+      "word": "資源",
+      "romaji": "しげん",
+      "translation": "tài nguyên",
+      "q": "Từ 資源 đọc và nghĩa là gì?",
+      "a": [
+        "さべつ - sự phân biệt",
+        "しごと - công việc",
+        "しげん - tài nguyên",
+        "ぶんせき - phân tích"
+      ],
+      "c": 2,
+      "ex": "資 (し): tài sản/vốn; 源 (げん): nguồn gốc"
+    },
+    {
+      "word": "節約",
+      "romaji": "せつやく",
+      "translation": "tiết kiệm",
+      "q": "Từ 節約 đọc và nghĩa là gì?",
+      "a": [
+        "はんい - phạm vi",
+        "ちきゅう - trái đất",
+        "ちゅうしゃ - tiêm thuốc",
+        "せつやく - tiết kiệm"
+      ],
+      "c": 3,
+      "ex": "節 (せつ): tiết chế/đoạn; 約 (やく): hẹn/ước"
+    },
+    {
+      "word": "浪費",
+      "romaji": "ろうひ",
+      "translation": "sự lãng phí",
+      "q": "Từ 浪費 đọc và nghĩa là gì?",
+      "a": [
+        "そしき - tổ chức",
+        "ろうひ - sự lãng phí",
+        "げんいん - nguyên nhân",
+        "うそつき - kẻ nói dối"
+      ],
+      "c": 1,
+      "ex": "浪 (ろう): lãng phí/sóng; 費 (ひ): chi phí"
+    },
+    {
+      "word": "効率",
+      "romaji": "こうりつ",
+      "translation": "hiệu suất",
+      "q": "Từ 効率 đọc và nghĩa là gì?",
+      "a": [
+        "はんざい - tội phạm",
+        "こうりつ - hiệu suất",
+        "うんめい - số phận",
+        "とこう - xuất ngoại"
+      ],
+      "c": 1,
+      "ex": "効 (こう): hiệu quả; 率 (りつ): tỷ lệ"
+    },
+    {
+      "word": "価格",
+      "romaji": "かかく",
+      "translation": "giá cả",
+      "q": "Từ 価格 đọc và nghĩa là gì?",
+      "a": [
+        "かかく - giá cả",
+        "けいけん - kinh nghiệm",
+        "せいじ - chính trị",
+        "ひょうか - đánh giá"
+      ],
+      "c": 0,
+      "ex": "価 (か): giá trị; 格 (かく): tư cách/quy cách"
+    },
+    {
+      "word": "料金",
+      "romaji": "りょうきん",
+      "translation": "phí",
+      "q": "Từ 料金 đọc và nghĩa là gì?",
+      "a": [
+        "もじ - văn tự",
+        "りょうきん - phí",
+        "ぎじゅつ - kỹ thuật",
+        "うんめい - số phận"
+      ],
+      "c": 1,
+      "ex": "料 (りょう): phí/nguyên liệu; 金 (きん): tiền/vàng"
+    },
+    {
+      "word": "税金",
+      "romaji": "ぜいきん",
+      "translation": "tiền thuế",
+      "q": "Từ 税金 đọc và nghĩa là gì?",
+      "a": [
+        "なぐさめ - sự an ủi",
+        "かるい - nhẹ",
+        "ぜいきん - tiền thuế",
+        "しゅうごう - tập hợp"
+      ],
+      "c": 2,
+      "ex": "税 (ぜい): thuế; 金 (きん): tiền/vàng"
+    },
+    {
+      "word": "給料",
+      "romaji": "きゅうりょう",
+      "translation": "lương",
+      "q": "Từ 給料 đọc và nghĩa là gì?",
+      "a": [
+        "しょうたい - lời mời",
+        "ぎもん - nghi vấn",
+        "きゅうりょう - lương",
+        "しょうひ - tiêu thụ"
+      ],
+      "c": 2,
+      "ex": "給 (きゅう): cấp phát; 料 (りょう): phí/nguyên liệu"
+    },
+    {
+      "word": "収入",
+      "romaji": "しゅうにゅう",
+      "translation": "thu nhập",
+      "q": "Từ 収入 đọc và nghĩa là gì?",
+      "a": [
+        "こうふん - sự hưng phấn",
+        "しゅうにゅう - thu nhập",
+        "とくべつ - đặc biệt",
+        "こうけん - sự cống hiến"
+      ],
+      "c": 1,
+      "ex": "収 (おさめる): thu; 入 (にゅう): vào"
+    },
+    {
+      "word": "支出",
+      "romaji": "ししゅつ",
+      "translation": "chi tiêu",
+      "q": "Từ 支出 đọc và nghĩa là gì?",
+      "a": [
+        "べんきょう - học tập",
+        "ししゅつ - chi tiêu",
+        "きょうふ - nỗi sợ hãi",
+        "きょうりょく - sự hợp tác"
+      ],
+      "c": 1,
+      "ex": "支 (ささえる): chống đỡ/chi; 出 (しゅつ): ra"
+    },
+    {
+      "word": "貯金",
+      "romaji": "ちょきん",
+      "translation": "tiền tiết kiệm",
+      "q": "Từ 貯金 đọc và nghĩa là gì?",
+      "a": [
+        "ちょきん - tiền tiết kiệm",
+        "きもち - cảm giác",
+        "いしき - ý thức",
+        "うんめい - số phận"
+      ],
+      "c": 0,
+      "ex": "貯 (ちょ): tích trữ; 金 (きん): tiền/vàng"
+    },
+    {
+      "word": "借金",
+      "romaji": "しゃっきん",
+      "translation": "nợ",
+      "q": "Từ 借金 đọc và nghĩa là gì?",
+      "a": [
+        "しょうこ - bằng chứng",
+        "ざせき - chỗ ngồi",
+        "しゃっきん - nợ",
+        "ぜつぼう - sự tuyệt vọng"
+      ],
+      "c": 2,
+      "ex": "借 (かりる): mượn/vay; 金 (きん): tiền/vàng"
+    },
+    {
+      "word": "契約",
+      "romaji": "けいやく",
+      "translation": "hợp đồng",
+      "q": "Từ 契約 đọc và nghĩa là gì?",
+      "a": [
+        "かるい - nhẹ",
+        "えんじょ - sự viện trợ",
+        "けいやく - hợp đồng",
+        "たいくつ - sự nhàm chán"
+      ],
+      "c": 2,
+      "ex": "契 (けい): khế ước; 約 (やく): hẹn/ước"
+    },
+    {
+      "word": "保険",
+      "romaji": "ほけん",
+      "translation": "bảo hiểm",
+      "q": "Từ 保険 đọc và nghĩa là gì?",
+      "a": [
+        "ほうこく - báo cáo",
+        "かんたん - đơn giản",
+        "ほけん - bảo hiểm",
+        "あさい - nông"
+      ],
+      "c": 2,
+      "ex": "保 (たもつ): giữ gìn; 険 (けん): hiểm nguy"
+    },
+    {
+      "word": "証明",
+      "romaji": "しょうめい",
+      "translation": "chứng minh",
+      "q": "Từ 証明 đọc và nghĩa là gì?",
+      "a": [
+        "しょうぶ - thắng thua",
+        "ちょきん - tiền tiết kiệm",
+        "さいばん - xét xử",
+        "しょうめい - chứng minh"
+      ],
+      "c": 3,
+      "ex": "証 (しょう): chứng cứ; 明 (めい): sáng/rõ ràng"
+    },
+    {
+      "word": "証拠",
+      "romaji": "しょうこ",
+      "translation": "bằng chứng",
+      "q": "Từ 証拠 đọc và nghĩa là gì?",
+      "a": [
+        "しょうこ - bằng chứng",
+        "ようい - chuẩn bị",
+        "ひはん - phê phán",
+        "うんめい - số phận"
+      ],
+      "c": 0,
+      "ex": "証 (しょう): chứng cứ; 拠 (きょ): căn cứ"
+    },
+    {
+      "word": "裁判",
+      "romaji": "さいばん",
+      "translation": "xét xử",
+      "q": "Từ 裁判 đọc và nghĩa là gì?",
+      "a": [
+        "さいばん - xét xử",
+        "じゆう - tự do",
+        "そしき - tổ chức",
+        "もじ - văn tự"
+      ],
+      "c": 0,
+      "ex": "裁 (さばく): phán xét; 判 (はん): phán đoán"
+    },
+    {
+      "word": "犯罪",
+      "romaji": "はんざい",
+      "translation": "tội phạm",
+      "q": "Từ 犯罪 đọc và nghĩa là gì?",
+      "a": [
+        "しんらい - sự tin cậy",
+        "はんざい - tội phạm",
+        "れんしゅう - luyện tập",
+        "げんいん - nguyên nhân"
+      ],
+      "c": 1,
+      "ex": "犯 (おかす): phạm tội; 罪 (つみ): tội lỗi"
+    },
+    {
+      "word": "罰金",
+      "romaji": "ばっきん",
+      "translation": "tiền phạt",
+      "q": "Từ 罰金 đọc và nghĩa là gì?",
+      "a": [
+        "てきとう - thích hợp",
+        "ぜいきん - tiền thuế",
+        "ひょうか - đánh giá",
+        "ばっきん - tiền phạt"
+      ],
+      "c": 3,
+      "ex": "罰 (ばつ): hình phạt; 金 (きん): tiền/vàng"
+    },
+    {
+      "word": "警察",
+      "romaji": "けいさつ",
+      "translation": "cảnh sát",
+      "q": "Từ 警察 đọc và nghĩa là gì?",
+      "a": [
+        "かぞく - gia đình",
+        "でんとう - truyền thống",
+        "けいさつ - cảnh sát",
+        "けんり - quyền lợi"
+      ],
+      "c": 2,
+      "ex": "警 (けい): cảnh giác; 察 (さつ): quan sát/suy đoán"
+    },
+    {
+      "word": "泥棒",
+      "romaji": "どろぼう",
+      "translation": "kẻ trộm",
+      "q": "Từ 泥棒 đọc và nghĩa là gì?",
+      "a": [
+        "こうふん - sự hưng phấn",
+        "どろぼう - kẻ trộm",
+        "かいし - bắt đầu",
+        "しゃっきん - nợ"
+      ],
+      "c": 1,
+      "ex": "泥 (どろ): bùn; 棒 (ぼう): cây gậy"
+    },
+    {
+      "word": "信頼",
+      "romaji": "しんらい",
+      "translation": "sự tin cậy",
+      "q": "Từ 信頼 đọc và nghĩa là gì?",
+      "a": [
+        "ぎむ - nghĩa vụ",
+        "きけん - nguy hiểm",
+        "しんらい - sự tin cậy",
+        "くんれん - huấn luyện"
+      ],
+      "c": 2,
+      "ex": "信 (しんじる): tin tưởng; 頼 (たのむ): nhờ vả"
+    },
+    {
+      "word": "疑問",
+      "romaji": "ぎもん",
+      "translation": "nghi vấn",
+      "q": "Từ 疑問 đọc và nghĩa là gì?",
+      "a": [
+        "ていあん - đề xuất",
+        "ぎもん - nghi vấn",
+        "えがお - nụ cười",
+        "ちょきん - tiền tiết kiệm"
+      ],
+      "c": 1,
+      "ex": "疑 (うたがう): nghi ngờ; 問 (とう): hỏi"
+    },
+    {
+      "word": "検査",
+      "romaji": "けんさ",
+      "translation": "kiểm tra",
+      "q": "Từ 検査 đọc và nghĩa là gì?",
+      "a": [
+        "けんさ - kiểm tra",
+        "せいじ - chính trị",
+        "やっきょく - hiệu thuốc",
+        "とくべつ - đặc biệt"
+      ],
+      "c": 0,
+      "ex": "検 (けん): kiểm tra; 査 (さ): điều tra"
+    },
+    {
+      "word": "分析",
+      "romaji": "ぶんせき",
+      "translation": "phân tích",
+      "q": "Từ 分析 đọc và nghĩa là gì?",
+      "a": [
+        "よろこび - niềm vui",
+        "ぶんせき - phân tích",
+        "せつめい - giải thích",
+        "きたい - kỳ vọng"
+      ],
+      "c": 1,
+      "ex": "分 (ぶん): phần; 析 (せき): phân tích"
+    },
+    {
+      "word": "統計",
+      "romaji": "とうけい",
+      "translation": "thống kê",
+      "q": "Từ 統計 đọc và nghĩa là gì?",
+      "a": [
+        "ほけん - bảo hiểm",
+        "かんしゃ - cảm ơn",
+        "とうけい - thống kê",
+        "れきし - lịch sử"
+      ],
+      "c": 2,
+      "ex": "統 (とう): thống nhất; 計 (けい): đo lường/tính toán"
+    },
+    {
+      "word": "平均",
+      "romaji": "へいきん",
+      "translation": "trung bình",
+      "q": "Từ 平均 đọc và nghĩa là gì?",
+      "a": [
+        "しょうひ - tiêu thụ",
+        "ぞうか - sự gia tăng",
+        "さくぶん - bài văn",
+        "へいきん - trung bình"
+      ],
+      "c": 3,
+      "ex": "平 (へい): bình thường/hòa bình; 均 (きん): đồng đều"
+    },
+    {
+      "word": "割合",
+      "romaji": "わりあい",
+      "translation": "tỷ lệ",
+      "q": "Từ 割合 đọc và nghĩa là gì?",
+      "a": [
+        "とこう - xuất ngoại",
+        "わりあい - tỷ lệ",
+        "おどろき - sự ngạc nhiên",
+        "げんき - khỏe mạnh"
+      ],
+      "c": 1,
+      "ex": "割 (わる): chia/bẻ; 合 (あう): hợp/phù hợp"
+    },
+    {
+      "word": "傾向",
+      "romaji": "けいこう",
+      "translation": "xu hướng",
+      "q": "Từ 傾向 đọc và nghĩa là gì?",
+      "a": [
+        "そんけい - sự tôn kính",
+        "けいこう - xu hướng",
+        "こうか - hiệu quả",
+        "せつやく - tiết kiệm"
+      ],
+      "c": 1,
+      "ex": "傾 (かたむく): nghiêng; 向 (こう): hướng về"
+    },
+    {
+      "word": "予測",
+      "romaji": "よそく",
+      "translation": "dự đoán",
+      "q": "Từ 予測 đọc và nghĩa là gì?",
+      "a": [
+        "よそく - dự đoán",
+        "あんない - hướng dẫn",
+        "じゅんび - chuẩn bị",
+        "せいけつ - sạch sẽ"
+      ],
+      "c": 0,
+      "ex": "予 (よ): dự trù/trước; 測 (はかる): đo lường"
+    },
+    {
+      "word": "評価",
+      "romaji": "ひょうか",
+      "translation": "đánh giá",
+      "q": "Từ 評価 đọc và nghĩa là gì?",
+      "a": [
+        "たにん - người khác",
+        "ひょうか - đánh giá",
+        "でんとう - truyền thống",
+        "げんしょう - sự giảm thiểu"
+      ],
+      "c": 1,
+      "ex": "評 (ひょう): đánh giá; 価 (か): giá trị"
+    },
+    {
+      "word": "批判",
+      "romaji": "ひはん",
+      "translation": "phê phán",
+      "q": "Từ 批判 đọc và nghĩa là gì?",
+      "a": [
+        "ぞうか - sự gia tăng",
+        "けいぞく - sự tiếp tục",
+        "ひはん - phê phán",
+        "うんめい - số phận"
+      ],
+      "c": 2,
+      "ex": "批 (ひ): phê bình; 判 (はん): phán đoán"
+    },
+    {
+      "word": "尊敬",
+      "romaji": "そんけい",
+      "translation": "sự tôn kính",
+      "q": "Từ 尊敬 đọc và nghĩa là gì?",
+      "a": [
+        "そんけい - sự tôn kính",
+        "れんしゅう - luyện tập",
+        "ぎむ - nghĩa vụ",
+        "こうけん - sự cống hiến"
+      ],
+      "c": 0,
+      "ex": "尊 (とうとい): tôn quý; 敬 (うやまう): kính trọng"
+    },
+    {
+      "word": "誠実",
+      "romaji": "せいじつ",
+      "translation": "thành thật",
+      "q": "Từ 誠実 đọc và nghĩa là gì?",
+      "a": [
+        "きもち - cảm giác",
+        "さいばん - xét xử",
+        "せいじつ - thành thật",
+        "えんじょ - sự viện trợ"
+      ],
+      "c": 2,
+      "ex": "誠 (まこと): chân thành; 実 (じつ): thực tế"
+    },
+    {
+      "word": "嘘つき",
+      "romaji": "うそつき",
+      "translation": "kẻ nói dối",
+      "q": "Từ 嘘つき đọc và nghĩa là gì?",
+      "a": [
+        "うそつき - kẻ nói dối",
+        "とうあん - bài làm",
+        "ひかく - so sánh",
+        "ふくざつ - phức tạp"
+      ],
+      "c": 0,
+      "ex": "嘘 (うそ): lời nói dối"
+    },
+    {
+      "word": "秘密",
+      "romaji": "ひみつ",
+      "translation": "bí mật",
+      "q": "Từ 秘密 đọc và nghĩa là gì?",
+      "a": [
+        "いじょう - trở lên",
+        "こうりつ - hiệu suất",
+        "ひみつ - bí mật",
+        "いかり - sự tức giận"
+      ],
+      "c": 2,
+      "ex": "秘 (ひ): bí mật; 密 (みつ): kín đáo"
+    },
+    {
+      "word": "隠す",
+      "romaji": "かくす",
+      "translation": "che giấu",
+      "q": "Từ 隠す đọc và nghĩa là gì?",
+      "a": [
+        "かくす - che giấu",
+        "げんかい - giới hạn",
+        "たにん - người khác",
+        "ゆうしょう - vô địch"
+      ],
+      "c": 0,
+      "ex": "隠 (かくす): giấu"
+    },
+    {
+      "word": "報告",
+      "romaji": "ほうこく",
+      "translation": "báo cáo",
+      "q": "Từ 報告 đọc và nghĩa là gì?",
+      "a": [
+        "わすれもの - đồ bỏ quên",
+        "ほうこく - báo cáo",
+        "きんちょう - sự căng thẳng",
+        "いしき - ý thức"
+      ],
+      "c": 1,
+      "ex": "報 (ほう): báo cáo; 告 (つげる): thông báo"
+    },
+    {
+      "word": "提案",
+      "romaji": "ていあん",
+      "translation": "đề xuất",
+      "q": "Từ 提案 đọc và nghĩa là gì?",
+      "a": [
+        "ごかい - hiểu lầm",
+        "やっきょく - hiệu thuốc",
+        "ていあん - đề xuất",
+        "かぞく - gia đình"
+      ],
+      "c": 2,
+      "ex": "提 (ていする): đề xuất; 案 (あん): kế hoạch/phương án"
+    },
+    {
+      "word": "反対",
+      "romaji": "はんたい",
+      "translation": "phản đối",
+      "q": "Từ 反対 đọc và nghĩa là gì?",
+      "a": [
+        "りょうきん - phí",
+        "かんけい - mối quan hệ",
+        "とどけ - giấy báo/giao",
+        "はんたい - phản đối"
+      ],
+      "c": 3,
+      "ex": "反 (はん): phản đối; 対 (たい): đối diện/đối"
+    },
+    {
+      "word": "賛成",
+      "romaji": "さんせい",
+      "translation": "tán thành",
+      "q": "Từ 賛成 đọc và nghĩa là gì?",
+      "a": [
+        "かるい - nhẹ",
+        "おせん - ô nhiễm",
+        "さんせい - tán thành",
+        "はんたい - phản đối"
+      ],
+      "c": 2,
+      "ex": "賛 (さん): tán thành; 成 (なる): trở thành"
+    },
+    {
+      "word": "議論",
+      "romaji": "ぎろん",
+      "translation": "cuộc tranh luận",
+      "q": "Từ 議論 đọc và nghĩa là gì?",
+      "a": [
+        "ずつう - đau đầu",
+        "てきとう - thích hợp",
+        "しゅうかん - thói quen",
+        "ぎろん - cuộc tranh luận"
+      ],
+      "c": 3,
+      "ex": "議 (ぎ): bàn bạc; 論 (ろん): luận điểm"
+    },
+    {
+      "word": "交渉",
+      "romaji": "こうしょう",
+      "translation": "đàm phán",
+      "q": "Từ 交渉 đọc và nghĩa là gì?",
+      "a": [
+        "たいくつ - sự nhàm chán",
+        "まちがい - sai lầm",
+        "こうしょう - đàm phán",
+        "しぜん - tự nhiên"
+      ],
+      "c": 2,
+      "ex": "交 (こう): giao/qua lại; 渉 (しょう): giao thiệp"
+    },
+    {
+      "word": "協力",
+      "romaji": "きょうりょく",
+      "translation": "sự hợp tác",
+      "q": "Từ 協力 đọc và nghĩa là gì?",
+      "a": [
+        "じゅんび - chuẩn bị",
+        "かがく - khoa học",
+        "ちきゅう - trái đất",
+        "きょうりょく - sự hợp tác"
+      ],
+      "c": 3,
+      "ex": "協 (きょう): hợp tác; 力 (ちから): sức mạnh"
+    },
+    {
+      "word": "組織",
+      "romaji": "そしき",
+      "translation": "tổ chức",
+      "q": "Từ 組織 đọc và nghĩa là gì?",
+      "a": [
+        "ばっきん - tiền phạt",
+        "ひはん - phê phán",
+        "かんきょう - môi trường",
+        "そしき - tổ chức"
+      ],
+      "c": 3,
+      "ex": "組 (そ): tổ/nhóm; 織 (おる): dệt/tổ chức"
+    },
+    {
+      "word": "団体",
+      "romaji": "だんたい",
+      "translation": "đoàn thể",
+      "q": "Từ 団体 đọc và nghĩa là gì?",
+      "a": [
+        "だんたい - đoàn thể",
+        "けんさ - kiểm tra",
+        "きょうそう - cạnh tranh",
+        "びょういん - bệnh viện"
+      ],
+      "c": 0,
+      "ex": "団 (だん): đoàn thể; 体 (たい): cơ thể"
+    },
+    {
+      "word": "個人",
+      "romaji": "こじん",
+      "translation": "cá nhân",
+      "q": "Từ 個人 đọc và nghĩa là gì?",
+      "a": [
+        "なぐさめ - sự an ủi",
+        "はんたい - phản đối",
+        "そんざい - sự tồn tại",
+        "こじん - cá nhân"
+      ],
+      "c": 3,
+      "ex": "個 (こ): cá thể; 人 (じん): người"
+    },
+    {
+      "word": "共同",
+      "romaji": "きょうどう",
+      "translation": "hợp tác chung",
+      "q": "Từ 共同 đọc và nghĩa là gì?",
+      "a": [
+        "ちゅうだん - sự gián đoạn",
+        "しよう - sử dụng",
+        "きょうどう - hợp tác chung",
+        "つづき - phần tiếp theo"
+      ],
+      "c": 2,
+      "ex": "共 (とも): cùng nhau; 同 (おなじ): giống nhau"
+    },
+    {
+      "word": "依存",
+      "romaji": "いぞん",
+      "translation": "sự phụ thuộc",
+      "q": "Từ 依存 đọc và nghĩa là gì?",
+      "a": [
+        "ぶき - vũ khí",
+        "もじ - văn tự",
+        "あんぜん - an toàn",
+        "いぞん - sự phụ thuộc"
+      ],
+      "c": 3,
+      "ex": "依 (い): dựa vào; 存 (そん): tồn tại"
+    },
+    {
+      "word": "存在",
+      "romaji": "そんざい",
+      "translation": "sự tồn tại",
+      "q": "Từ 存在 đọc và nghĩa là gì?",
+      "a": [
+        "そんざい - sự tồn tại",
+        "かんたん - đơn giản",
+        "しつれい - thất lễ",
+        "りょうきん - phí"
+      ],
+      "c": 0,
+      "ex": "存 (そん): tồn tại; 在 (ざい): tồn tại/ở"
+    },
+    {
+      "word": "援助",
+      "romaji": "えんじょ",
+      "translation": "sự viện trợ",
+      "q": "Từ 援助 đọc và nghĩa là gì?",
+      "a": [
+        "えんじょ - sự viện trợ",
+        "はんたい - phản đối",
+        "からい - cay",
+        "こうふん - sự hưng phấn"
+      ],
+      "c": 0,
+      "ex": "援 (えん): viện trợ; 助 (じょ): giúp đỡ"
+    },
+    {
+      "word": "救助",
+      "romaji": "きゅうじょ",
+      "translation": "cứu hộ",
+      "q": "Từ 救助 đọc và nghĩa là gì?",
+      "a": [
+        "こうふく - hạnh phúc",
+        "べんきょう - học tập",
+        "きゅうじょ - cứu hộ",
+        "ばっきん - tiền phạt"
+      ],
+      "c": 2,
+      "ex": "救 (すくう): cứu giúp; 助 (じょ): giúp đỡ"
+    },
+    {
+      "word": "犠牲",
+      "romaji": "ぎせい",
+      "translation": "sự hy sinh",
+      "q": "Từ 犠牲 đọc và nghĩa là gì?",
+      "a": [
+        "ぎせい - sự hy sinh",
+        "きけん - nguy hiểm",
+        "つづき - phần tiếp theo",
+        "ひみつ - bí mật"
+      ],
+      "c": 0,
+      "ex": "犠 (ぎ): hy sinh; 牲 (せい): hy sinh"
+    },
+    {
+      "word": "貢献",
+      "romaji": "こうけん",
+      "translation": "sự cống hiến",
+      "q": "Từ 貢献 đọc và nghĩa là gì?",
+      "a": [
+        "こうけん - sự cống hiến",
+        "せいじつ - thành thật",
+        "ぶき - vũ khí",
+        "こうか - hiệu quả"
+      ],
+      "c": 0,
+      "ex": "貢 (こう): cống hiến; 献 (けん): dâng hiến"
+    },
+    {
+      "word": "義務",
+      "romaji": "ぎむ",
+      "translation": "nghĩa vụ",
+      "q": "Từ 義務 đọc và nghĩa là gì?",
+      "a": [
+        "じゃくてん - điểm yếu",
+        "あさい - nông",
+        "しょうぶ - thắng thua",
+        "ぎむ - nghĩa vụ"
+      ],
+      "c": 3,
+      "ex": "義 (ぎ): đạo nghĩa; 務 (む): nhiệm vụ"
+    },
+    {
+      "word": "権利",
+      "romaji": "けんり",
+      "translation": "quyền lợi",
+      "q": "Từ 権利 đọc và nghĩa là gì?",
+      "a": [
+        "ずつう - đau đầu",
+        "やくそく - lời hứa",
+        "こわい - đáng sợ",
+        "けんり - quyền lợi"
+      ],
+      "c": 3,
+      "ex": "権 (けん): quyền lực; 利 (り): lợi ích"
+    },
+    {
+      "word": "責任",
+      "romaji": "せきにん",
+      "translation": "trách nhiệm",
+      "q": "Từ 責任 đọc và nghĩa là gì?",
+      "a": [
+        "すいみん - giấc ngủ",
+        "ろうどう - lao động",
+        "せきにん - trách nhiệm",
+        "しんや - đêm khuya"
+      ],
+      "c": 2,
+      "ex": "責 (せめる): trách nhiệm; 任 (にん): trách nhiệm"
+    },
+    {
+      "word": "差別",
+      "romaji": "さべつ",
+      "translation": "sự phân biệt",
+      "q": "Từ 差別 đọc và nghĩa là gì?",
+      "a": [
+        "かいてん - mở cửa hàng",
+        "さべつ - sự phân biệt",
+        "じょうたい - trạng thái",
+        "だんたい - đoàn thể"
+      ],
+      "c": 1,
+      "ex": "差 (さ): sự khác biệt; 別 (べつ): khác/riêng biệt"
+    },
+    {
+      "word": "偏見",
+      "romaji": "へんけん",
+      "translation": "thành kiến",
+      "q": "Từ 偏見 đọc và nghĩa là gì?",
+      "a": [
+        "へんけん - thành kiến",
+        "そしき - tổ chức",
+        "やっきょく - hiệu thuốc",
+        "ほけん - bảo hiểm"
+      ],
+      "c": 0,
+      "ex": "偏 (かたよる): thiên lệch; 見 (けん): nhìn/thấy"
+    },
+    {
+      "word": "誤解",
+      "romaji": "ごかい",
+      "translation": "hiểu lầm",
+      "q": "Từ 誤解 đọc và nghĩa là gì?",
+      "a": [
+        "ぞうか - sự gia tăng",
+        "ごかい - hiểu lầm",
+        "きそく - quy tắc",
+        "たがいに - lẫn nhau"
+      ],
+      "c": 1,
+      "ex": "誤 (あやまる): sai lầm; 解 (かい): giải thích/tháo gỡ"
+    },
+    {
+      "word": "感情",
+      "romaji": "かんじょう",
+      "translation": "cảm xúc",
+      "q": "Từ 感情 đọc và nghĩa là gì?",
+      "a": [
+        "うそつき - kẻ nói dối",
+        "かかく - giá cả",
+        "かんじょう - cảm xúc",
+        "やくそく - lời hứa"
+      ],
+      "c": 2,
+      "ex": "感 (かんじる): cảm nhận; 情 (じょう): tình cảm"
+    },
+    {
+      "word": "慰め",
+      "romaji": "なぐさめ",
+      "translation": "sự an ủi",
+      "q": "Từ 慰め đọc và nghĩa là gì?",
+      "a": [
+        "なぐさめ - sự an ủi",
+        "ひろう - sự mệt mỏi",
+        "たにん - người khác",
+        "きそく - quy tắc"
+      ],
+      "c": 0,
+      "ex": "慰 (なぐさめる): an ủi"
+    },
+    {
+      "word": "励まし",
+      "romaji": "はげまし",
+      "translation": "sự khích lệ",
+      "q": "Từ 励まし đọc và nghĩa là gì?",
+      "a": [
+        "はげまし - sự khích lệ",
+        "つづき - phần tiếp theo",
+        "こうふく - hạnh phúc",
+        "びょういん - bệnh viện"
+      ],
+      "c": 0,
+      "ex": "励 (はげます): khích lệ"
+    },
+    {
+      "word": "勇気",
+      "romaji": "ゆうき",
+      "translation": "lòng dũng cảm",
+      "q": "Từ 勇気 đọc và nghĩa là gì?",
+      "a": [
+        "そんざい - sự tồn tại",
+        "ごかい - hiểu lầm",
+        "かんじ - cảm giác",
+        "ゆうき - lòng dũng cảm"
+      ],
+      "c": 3,
+      "ex": "勇 (ゆう): dũng cảm; 気 (き): khí/tinh thần"
+    },
+    {
+      "word": "絶望",
+      "romaji": "ぜつぼう",
+      "translation": "sự tuyệt vọng",
+      "q": "Từ 絶望 đọc và nghĩa là gì?",
+      "a": [
+        "ひつよう - cần thiết",
+        "ぜつぼう - sự tuyệt vọng",
+        "きょうみ - sự thích thú",
+        "そしき - tổ chức"
+      ],
+      "c": 1,
+      "ex": "絶 (たえる): tuyệt vọng/dứt; 望 (のぞむ): mong muốn"
+    },
+    {
+      "word": "皮肉",
+      "romaji": "ひにく",
+      "translation": "sự châm biếm",
+      "q": "Từ 皮肉 đọc và nghĩa là gì?",
+      "a": [
+        "けんきゅう - nghiên cứu",
+        "ひにく - sự châm biếm",
+        "かかく - giá cả",
+        "とどけ - giấy báo/giao"
+      ],
+      "c": 1,
+      "ex": "皮 (かわ): lớp da/vỏ; 肉 (にく): thịt"
+    },
+    {
+      "word": "創造",
+      "romaji": "そうぞう",
+      "translation": "sự sáng tạo",
+      "q": "Từ 創造 đọc và nghĩa là gì?",
+      "a": [
+        "ひはん - phê phán",
+        "そうぞう - sự sáng tạo",
+        "いしき - ý thức",
+        "あまい - ngọt"
+      ],
+      "c": 1,
+      "ex": "創 (そう): sáng tạo; 造 (ぞう): chế tạo"
+    },
+    {
+      "word": "伝統",
+      "romaji": "でんとう",
+      "translation": "truyền thống",
+      "q": "Từ 伝統 đọc và nghĩa là gì?",
+      "a": [
+        "しゅうにゅう - thu nhập",
+        "さいばん - xét xử",
+        "げんき - khỏe mạnh",
+        "でんとう - truyền thống"
+      ],
+      "c": 3,
+      "ex": "伝 (つたえる): truyền đạt; 統 (とう): thống nhất"
+    },
+    {
+      "word": "瞬間",
+      "romaji": "しゅんかん",
+      "translation": "khoảnh khắc",
+      "q": "Từ 瞬間 đọc và nghĩa là gì?",
+      "a": [
+        "しゅうかん - thói quen",
+        "しゅんかん - khoảnh khắc",
+        "しょうひん - hàng hóa",
+        "ぼうえき - mậu dịch"
+      ],
+      "c": 1,
+      "ex": "瞬 (しゅん): khoảnh khắc; 間 (かん): khoảng/giữa"
+    },
+    {
+      "word": "継続",
+      "romaji": "けいぞく",
+      "translation": "sự tiếp tục",
+      "q": "Từ 継続 đọc và nghĩa là gì?",
+      "a": [
+        "しゅうごう - tập hợp",
+        "けいぞく - sự tiếp tục",
+        "きびしい - nghiêm khắc",
+        "いじょう - trở lên"
+      ],
+      "c": 1,
+      "ex": "継 (つぐ): kế thừa; 続 (つづく): tiếp tục"
+    },
+    {
+      "word": "中断",
+      "romaji": "ちゅうだん",
+      "translation": "sự gián đoạn",
+      "q": "Từ 中断 đọc và nghĩa là gì?",
+      "a": [
+        "れんしゅう - luyện tập",
+        "ちゅうだん - sự gián đoạn",
+        "うそつき - kẻ nói dối",
+        "とうあん - bài làm"
+      ],
+      "c": 1,
+      "ex": "中 (ちゅう): trong/giữa; 断 (たつ): cắt đứt/quyết đoán"
+    },
+    {
+      "word": "完成",
+      "romaji": "かんせい",
+      "translation": "sự hoàn thành",
+      "q": "Từ 完成 đọc và nghĩa là gì?",
+      "a": [
+        "かんせい - sự hoàn thành",
+        "おなじ - giống nhau",
+        "てきとう - thích hợp",
+        "せんそう - chiến tranh"
+      ],
+      "c": 0,
+      "ex": "完 (かん): hoàn thành; 成 (なる): trở thành"
+    },
+    {
+      "word": "以上",
+      "romaji": "いじょう",
+      "translation": "trở lên",
+      "q": "Từ 以上 đọc và nghĩa là gì?",
+      "a": [
+        "しっぱい - thất bại",
+        "ゆうしょう - vô địch",
+        "せつやく - tiết kiệm",
+        "いじょう - trở lên"
+      ],
+      "c": 3,
+      "ex": "以 (い): dùng để; 上 (じょう): trên/phía trên"
+    },
+    {
+      "word": "若者",
+      "romaji": "わかもの",
+      "translation": "người trẻ",
+      "q": "Từ 若者 đọc và nghĩa là gì?",
+      "a": [
+        "かいぎ - cuộc họp",
+        "せいふ - chính phủ",
+        "わかもの - người trẻ",
+        "こうしょう - đàm phán"
+      ],
+      "c": 2,
+      "ex": "若 (わかい): trẻ; 者 (しゃ): người (làm gì đó)"
+    },
+    {
+      "word": "改善",
+      "romaji": "かいぜん",
+      "translation": "cải thiện",
+      "q": "Từ 改善 đọc và nghĩa là gì?",
+      "a": [
+        "こどく - sự cô đơn",
+        "けんり - quyền lợi",
+        "しげん - tài nguyên",
+        "かいぜん - cải thiện"
+      ],
+      "c": 3,
+      "ex": "改 (かい): sửa đổi; 善 (ぜん): thiện"
+    },
+    {
+      "word": "喜び",
+      "romaji": "よろこび",
+      "translation": "niềm vui",
+      "q": "Từ 喜び đọc và nghĩa là gì?",
+      "a": [
+        "よろこび - niềm vui",
+        "こわい - đáng sợ",
+        "いぞん - sự phụ thuộc",
+        "じゅんび - chuẩn bị"
+      ],
+      "c": 0,
+      "ex": "喜 (よろこぶ): vui mừng"
+    },
+    {
+      "word": "嫌い",
+      "romaji": "きらい",
+      "translation": "ghét",
+      "q": "Từ 嫌い đọc và nghĩa là gì?",
+      "a": [
+        "りょうきん - phí",
+        "ほご - bảo vệ",
+        "しゃっきん - nợ",
+        "きらい - ghét"
+      ],
+      "c": 3,
+      "ex": "嫌 (きらう): ghét"
+    },
+    {
+      "word": "清潔",
+      "romaji": "せいけつ",
+      "translation": "sạch sẽ",
+      "q": "Từ 清潔 đọc và nghĩa là gì?",
+      "a": [
+        "せいけつ - sạch sẽ",
+        "ろうどう - lao động",
+        "かんきょう - môi trường",
+        "しぜん - tự nhiên"
+      ],
+      "c": 0,
+      "ex": "清 (きよい): trong sạch; 潔 (けつ): sạch sẽ"
+    },
+    {
+      "word": "純粋",
+      "romaji": "じゅんすい",
+      "translation": "thuần túy",
+      "q": "Từ 純粋 đọc và nghĩa là gì?",
+      "a": [
+        "へいし - binh sĩ",
+        "じゅんすい - thuần túy",
+        "じゅんび - chuẩn bị",
+        "じこ - tai nạn"
+      ],
+      "c": 1,
+      "ex": "純 (じゅん): thuần khiết; 粋 (すい): tinh túy"
+    },
+    {
+      "word": "簡単",
+      "romaji": "かんたん",
+      "translation": "đơn giản",
+      "q": "Từ 簡単 đọc và nghĩa là gì?",
+      "a": [
+        "おなじ - giống nhau",
+        "へいし - binh sĩ",
+        "かんたん - đơn giản",
+        "ようい - chuẩn bị"
+      ],
+      "c": 2,
+      "ex": "簡 (かん): đơn giản; 単 (たん): đơn lẻ"
+    },
+    {
+      "word": "複雑",
+      "romaji": "ふくざつ",
+      "translation": "phức tạp",
+      "q": "Từ 複雑 đọc và nghĩa là gì?",
+      "a": [
+        "ふくざつ - phức tạp",
+        "けいさつ - cảnh sát",
+        "そんざい - sự tồn tại",
+        "そんけい - sự tôn kính"
+      ],
+      "c": 0,
+      "ex": "複 (ふく): phức tạp; 雑 (ざつ): hỗn tạp"
+    },
+    {
+      "word": "限界",
+      "romaji": "げんかい",
+      "translation": "giới hạn",
+      "q": "Từ 限界 đọc và nghĩa là gì?",
+      "a": [
+        "げんかい - giới hạn",
+        "こうか - hiệu quả",
+        "せつやく - tiết kiệm",
+        "あさい - nông"
+      ],
+      "c": 0,
+      "ex": "限 (かぎる): giới hạn; 界 (かい): giới/ranh giới"
+    },
+    {
+      "word": "範囲",
+      "romaji": "はんい",
+      "translation": "phạm vi",
+      "q": "Từ 範囲 đọc và nghĩa là gì?",
+      "a": [
+        "はんい - phạm vi",
+        "さんせい - tán thành",
+        "しょうかい - giới thiệu",
+        "げんしょう - sự giảm thiểu"
+      ],
+      "c": 0,
+      "ex": "範 (はん): phạm vi; 囲 (かこむ): bao quanh"
+    },
+    {
+      "word": "適当",
+      "romaji": "てきとう",
+      "translation": "thích hợp",
+      "q": "Từ 適当 đọc và nghĩa là gì?",
+      "a": [
+        "じこ - tai nạn",
+        "ごかい - hiểu lầm",
+        "れいぎ - lễ nghi",
+        "てきとう - thích hợp"
+      ],
+      "c": 3,
+      "ex": "適 (てき): thích hợp; 当 (あたる): trúng/đúng"
+    },
+    {
+      "word": "互いに",
+      "romaji": "たがいに",
+      "translation": "lẫn nhau",
+      "q": "Từ 互いに đọc và nghĩa là gì?",
+      "a": [
+        "そうぞう - tưởng tượng",
+        "きぼう - hy vọng",
+        "たがいに - lẫn nhau",
+        "けいざい - kinh tế"
+      ],
+      "c": 2,
+      "ex": "互 (たがい): lẫn nhau"
+    },
+    {
+      "word": "専門",
+      "romaji": "せんもん",
+      "translation": "chuyên môn",
+      "q": "Từ 専門 đọc và nghĩa là gì?",
+      "a": [
+        "せんもん - chuyên môn",
+        "ふくざつ - phức tạp",
+        "わすれもの - đồ bỏ quên",
+        "かんじ - cảm giác"
+      ],
+      "c": 0,
+      "ex": "専 (せん): chuyên môn; 門 (もん): cổng"
+    },
+    {
+      "word": "厳しい",
+      "romaji": "きびしい",
+      "translation": "nghiêm khắc",
+      "q": "Từ 厳しい đọc và nghĩa là gì?",
+      "a": [
+        "しげん - tài nguyên",
+        "きびしい - nghiêm khắc",
+        "さんせい - tán thành",
+        "せいじ - chính trị"
+      ],
+      "c": 1,
+      "ex": "厳 (きびしい): nghiêm khắc"
+    },
+    {
+      "word": "甘い",
+      "romaji": "あまい",
+      "translation": "ngọt",
+      "q": "Từ 甘い đọc và nghĩa là gì?",
+      "a": [
+        "しっぱい - thất bại",
+        "ようい - chuẩn bị",
+        "あまい - ngọt",
+        "ぜつぼう - sự tuyệt vọng"
+      ],
+      "c": 2,
+      "ex": "甘 (あまい): ngọt/dễ dãi"
+    },
+    {
+      "word": "辛い",
+      "romaji": "からい",
+      "translation": "cay",
+      "q": "Từ 辛い đọc và nghĩa là gì?",
+      "a": [
+        "わすれもの - đồ bỏ quên",
+        "とうけい - thống kê",
+        "せいひん - sản phẩm",
+        "からい - cay"
+      ],
+      "c": 3,
+      "ex": "辛 (からい): cay/vất vả"
+    },
+    {
+      "word": "苦しい",
+      "romaji": "くるしい",
+      "translation": "đau khổ",
+      "q": "Từ 苦しい đọc và nghĩa là gì?",
       "a": [
         "かげ - bóng/ảnh hưởng",
         "にがい - đắng/khổ",
@@ -4189,21 +3391,21 @@
         "せい - chính trị"
       ],
       "c": 1,
-      "ex": "苦しい (くるしい): đau khổ"
+      "ex": "苦 (にがい): đắng/khổ"
     },
     {
-      "word": "豊",
+      "word": "豊か",
       "romaji": "ゆたか",
       "translation": "phong phú",
-      "q": "Chữ 豊 đọc và nghĩa là gì?",
+      "q": "Từ 豊か đọc và nghĩa là gì?",
       "a": [
-        "おもい - nặng",
         "ゆたか - phong phú",
-        "きょ - căn cứ",
-        "じゅん - thuần khiết"
+        "げんかい - giới hạn",
+        "かんせい - sự hoàn thành",
+        "ひみつ - bí mật"
       ],
-      "c": 1,
-      "ex": "豊か (ゆたか): phong phú"
+      "c": 0,
+      "ex": "豊 (ゆたか): phong phú"
     }
   ]
 }

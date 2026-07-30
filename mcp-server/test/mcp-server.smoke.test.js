@@ -54,6 +54,23 @@ async function main() {
   });
   assert.strictEqual(JSON.parse(updated.content[0].text).updated, 0);
 
+  const searched = await client.callTool({ name: 'search_questions', arguments: { keyword: 'b?' } });
+  const searchResults = JSON.parse(searched.content[0].text);
+  assert.strictEqual(searchResults.length, 1);
+  assert.strictEqual(searchResults[0].setId, 'new-set');
+  assert.strictEqual(searchResults[0].index, 0);
+
+  const patched = await client.callTool({
+    name: 'patch_question',
+    arguments: { setId: 'new-set', patches: [{ index: 0, fields: { translation: 'Patched' } }] }
+  });
+  assert.deepStrictEqual(JSON.parse(patched.content[0].text).updated, [0]);
+
+  const afterPatch = await client.callTool({ name: 'get_question_set', arguments: { id: 'new-set' } });
+  const afterPatchQuestions = JSON.parse(afterPatch.content[0].text).questions;
+  assert.strictEqual(afterPatchQuestions[0].translation, 'Patched');
+  assert.strictEqual(afterPatchQuestions[0].word, 'b');
+
   const badQuestion = await client.callTool({
     name: 'add_question',
     arguments: { setId: 'new-set', question: { word: 'x', romaji: 'x', translation: 'x', q: 'x?', a: ['1', '2'], c: 0, ex: 'ex' } }

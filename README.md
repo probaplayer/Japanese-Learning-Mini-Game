@@ -159,7 +159,7 @@ Quit the app completely (from the system tray/menu bar, not just closing the win
 
 ### 6. Author and publish
 
-Ask Claude to create/edit question sets — it has tools to list, create, and delete sets, and to add, update, or delete individual questions. Ask Claude to **publish** when you're ready — it commits the changes under `questions/` and pushes to `main`, which GitHub Pages redeploys automatically.
+Ask Claude to create/edit question sets — it has tools to list, create, and delete sets, and to add, update, or delete individual questions. To change just a few questions in a large set, ask Claude to **search** for the question by keyword (`search_questions`, matches word/romaji/translation/question text/explanation/answer choices) and **patch** only the fields that need to change (`patch_question`) instead of resending the whole question or recreating the set. Ask Claude to **publish** when you're ready — it commits the changes under `questions/` and pushes to `main`, which GitHub Pages redeploys automatically.
 
 **Publish preconditions:**
 - The repo checkout the server runs against must be on the `main` branch (the `publish` tool refuses otherwise).

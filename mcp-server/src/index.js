@@ -22,6 +22,9 @@ const questionShape = {
   ex: z.string().min(1)
 };
 
+const questionPatchFieldsShape = z.object(questionShape).partial().strict()
+  .refine(fields => Object.keys(fields).length > 0, { message: 'fields must include at least one field to update' });
+
 function ok(data) {
   return { content: [{ type: 'text', text: JSON.stringify(data, null, 2) }] };
 }
@@ -52,6 +55,16 @@ server.registerTool(
   'get_question_set',
   { title: 'Get question set', description: 'Get the full contents of one question set by id', inputSchema: { id: z.string() } },
   guarded(({ id }) => repo.getQuestionSet(id))
+);
+
+server.registerTool(
+  'search_questions',
+  {
+    title: 'Search questions',
+    description: 'Find questions by keyword across one or all question sets, matching word/romaji/translation/q/ex and answer choices',
+    inputSchema: { keyword: z.string().min(1), setId: z.string().optional() }
+  },
+  guarded(({ keyword, setId }) => repo.searchQuestions(keyword, setId))
 );
 
 server.registerTool(
@@ -99,6 +112,22 @@ server.registerTool(
     repo.updateQuestion(setId, index, question);
     return { updated: index };
   })
+);
+
+server.registerTool(
+  'patch_question',
+  {
+    title: 'Patch question(s)',
+    description: 'Update only the given fields of one or more questions in a set, atomically — either every patch applies or none are written',
+    inputSchema: {
+      setId: z.string(),
+      patches: z.array(z.object({
+        index: z.number().int().min(0),
+        fields: questionPatchFieldsShape
+      })).min(1)
+    }
+  },
+  guarded(({ setId, patches }) => ({ updated: repo.patchQuestion(setId, patches) }))
 );
 
 server.registerTool(

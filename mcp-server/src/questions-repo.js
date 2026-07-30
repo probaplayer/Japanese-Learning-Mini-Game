@@ -148,6 +148,32 @@ export function createQuestionsRepo(baseDir) {
     writeManifest(manifest);
   }
 
+  function searchQuestions(keyword, setId) {
+    const needle = keyword.toLowerCase();
+    const manifest = readManifest();
+    let entries;
+    if (setId) {
+      const entry = findEntry(manifest, setId);
+      if (!entry) throw new Error(`Question set not found: ${setId}`);
+      entries = [entry];
+    } else {
+      entries = manifest.sets;
+    }
+    const results = [];
+    for (const entry of entries) {
+      const set = readSetFile(entry.file);
+      set.questions.forEach((question, index) => {
+        const haystack = [question.word, question.romaji, question.translation, question.q, question.ex, ...question.a]
+          .join('\n')
+          .toLowerCase();
+        if (haystack.includes(needle)) {
+          results.push({ setId: entry.id, index, question });
+        }
+      });
+    }
+    return results;
+  }
+
   return {
     listQuestionSets,
     getQuestionSet,
@@ -155,6 +181,7 @@ export function createQuestionsRepo(baseDir) {
     deleteQuestionSet,
     addQuestion,
     updateQuestion,
-    deleteQuestion
+    deleteQuestion,
+    searchQuestions
   };
 }

@@ -94,6 +94,63 @@ function testDeleteQuestionSetRemovesFileAndManifestEntry() {
   assert.strictEqual(repo.listQuestionSets().length, 0);
 }
 
+function testSearchQuestionsMatchesWordAndAnswerChoice() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createQuestionSet({ id: 'demo', name: 'Demo', questions: [sampleQuestion] });
+
+  const byWord = repo.searchQuestions('学生');
+  assert.strictEqual(byWord.length, 1);
+  assert.strictEqual(byWord[0].setId, 'demo');
+  assert.strictEqual(byWord[0].index, 0);
+  assert.strictEqual(byWord[0].question.word, '学生');
+
+  const byAnswerChoice = repo.searchQuestions('がっせい');
+  assert.strictEqual(byAnswerChoice.length, 1);
+  assert.strictEqual(byAnswerChoice[0].index, 0);
+}
+
+function testSearchQuestionsIsCaseInsensitiveOnTranslation() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createQuestionSet({ id: 'demo', name: 'Demo', questions: [sampleQuestion] });
+
+  const results = repo.searchQuestions('STUDENT');
+  assert.strictEqual(results.length, 1);
+}
+
+function testSearchQuestionsScopedToSetIdVsAcrossAllSets() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createQuestionSet({ id: 'set-a', name: 'Set A', questions: [sampleQuestion] });
+  repo.createQuestionSet({
+    id: 'set-b', name: 'Set B',
+    questions: [{ ...sampleQuestion, word: '先生', translation: 'Teacher' }]
+  });
+
+  const onlyA = repo.searchQuestions('Student', 'set-a');
+  assert.strictEqual(onlyA.length, 1);
+  assert.strictEqual(onlyA[0].setId, 'set-a');
+
+  const acrossAll = repo.searchQuestions('e'); // "Student" and "Teacher" both contain "e"
+  assert.strictEqual(acrossAll.length, 2);
+  const setIds = acrossAll.map(r => r.setId).sort();
+  assert.deepStrictEqual(setIds, ['set-a', 'set-b']);
+}
+
+function testSearchQuestionsErrorsOnUnknownSetId() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  assert.throws(() => repo.searchQuestions('Student', 'nope'), /Question set not found: nope/);
+}
+
+function testSearchQuestionsReturnsEmptyArrayForNoMatch() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createQuestionSet({ id: 'demo', name: 'Demo', questions: [sampleQuestion] });
+  assert.deepStrictEqual(repo.searchQuestions('zzz-no-match'), []);
+}
+
 testValidateQuestionAcceptsWellFormedQuestion();
 testValidateQuestionRejectsWrongAnswerCount();
 testValidateQuestionRejectsOutOfRangeCorrectIndex();
@@ -103,5 +160,10 @@ testCreateQuestionSetRejectsDuplicateId();
 testAddUpdateDeleteQuestion();
 testAddQuestionRejectsInvalidShape();
 testDeleteQuestionSetRemovesFileAndManifestEntry();
+testSearchQuestionsMatchesWordAndAnswerChoice();
+testSearchQuestionsIsCaseInsensitiveOnTranslation();
+testSearchQuestionsScopedToSetIdVsAcrossAllSets();
+testSearchQuestionsErrorsOnUnknownSetId();
+testSearchQuestionsReturnsEmptyArrayForNoMatch();
 
 console.log('questions-repo tests passed');

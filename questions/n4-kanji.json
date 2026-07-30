@@ -3,7 +3,7 @@
   "name": "Từ vựng N4",
   "description": "Bộ từ vựng N4 (243 từ). Phần ex hiển thị Hán Việt của từng chữ Hán trong từ (không phải nghĩa tiếng Việt).",
   "createdAt": "2026-07-30T02:58:36.646Z",
-  "updatedAt": "2026-07-30T02:58:36.646Z",
+  "updatedAt": "2026-07-30T06:45:50.143Z",
   "questions": [
     {
       "word": "家族",
@@ -2066,13 +2066,13 @@
     {
       "word": "貿易",
       "romaji": "ぼうえき",
-      "translation": "mậu dịch",
+      "translation": "buôn bán (với nước ngoài)",
       "q": "Từ 貿易 đọc và nghĩa là gì?",
       "a": [
         "かんせい - sự hoàn thành",
         "へいてん - đóng cửa hàng",
         "ゆうき - lòng dũng cảm",
-        "ぼうえき - mậu dịch"
+        "ぼうえき - buôn bán (với nước ngoài)"
       ],
       "c": 3,
       "ex": "貿 (mậu) + 易 (dịch)"

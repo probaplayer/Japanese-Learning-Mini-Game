@@ -174,6 +174,30 @@ export function createQuestionsRepo(baseDir) {
     return results;
   }
 
+  function patchQuestion(setId, patches) {
+    const manifest = readManifest();
+    const entry = findEntry(manifest, setId);
+    if (!entry) throw new Error(`Question set not found: ${setId}`);
+    const set = readSetFile(entry.file);
+
+    const merged = patches.map(({ index, fields }) => {
+      if (index < 0 || index >= set.questions.length) throw new Error(`Question index out of range: ${index}`);
+      const question = { ...set.questions[index], ...fields };
+      const error = validateQuestion(question);
+      if (error) throw new Error(`Patch for index ${index}: ${error}`);
+      return { index, question };
+    });
+
+    merged.forEach(({ index, question }) => {
+      set.questions[index] = question;
+    });
+    set.updatedAt = new Date().toISOString();
+    writeSetFile(entry.file, set);
+    updateManifestEntry(manifest, setId, set);
+    writeManifest(manifest);
+    return merged.map(m => m.index);
+  }
+
   return {
     listQuestionSets,
     getQuestionSet,
@@ -182,6 +206,7 @@ export function createQuestionsRepo(baseDir) {
     addQuestion,
     updateQuestion,
     deleteQuestion,
-    searchQuestions
+    searchQuestions,
+    patchQuestion
   };
 }

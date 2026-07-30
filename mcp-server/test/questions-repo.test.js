@@ -151,6 +151,88 @@ function testSearchQuestionsReturnsEmptyArrayForNoMatch() {
   assert.deepStrictEqual(repo.searchQuestions('zzz-no-match'), []);
 }
 
+function testPatchQuestionUpdatesOnlyGivenFields() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createQuestionSet({ id: 'demo', name: 'Demo', questions: [sampleQuestion] });
+
+  const result = repo.patchQuestion('demo', [{ index: 0, fields: { translation: 'Changed' } }]);
+  assert.deepStrictEqual(result, [0]);
+
+  const question = repo.getQuestionSet('demo').questions[0];
+  assert.strictEqual(question.translation, 'Changed');
+  assert.strictEqual(question.word, sampleQuestion.word);
+  assert.strictEqual(question.q, sampleQuestion.q);
+}
+
+function testPatchQuestionAppliesMultiplePatchesInOneCall() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createQuestionSet({
+    id: 'demo', name: 'Demo',
+    questions: [sampleQuestion, { ...sampleQuestion, word: '先生', translation: 'Teacher' }]
+  });
+
+  const result = repo.patchQuestion('demo', [
+    { index: 0, fields: { translation: 'Student (changed)' } },
+    { index: 1, fields: { translation: 'Teacher (changed)' } }
+  ]);
+  assert.deepStrictEqual(result, [0, 1]);
+
+  const questions = repo.getQuestionSet('demo').questions;
+  assert.strictEqual(questions[0].translation, 'Student (changed)');
+  assert.strictEqual(questions[1].translation, 'Teacher (changed)');
+}
+
+function testPatchQuestionIsAtomicOnInvalidIndex() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createQuestionSet({ id: 'demo', name: 'Demo', questions: [sampleQuestion] });
+
+  assert.throws(
+    () => repo.patchQuestion('demo', [
+      { index: 0, fields: { translation: 'Should not stick' } },
+      { index: 5, fields: { translation: 'Out of range' } }
+    ]),
+    /Question index out of range: 5/
+  );
+
+  const question = repo.getQuestionSet('demo').questions[0];
+  assert.strictEqual(question.translation, sampleQuestion.translation);
+}
+
+function testPatchQuestionRejectsUnknownField() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createQuestionSet({ id: 'demo', name: 'Demo', questions: [sampleQuestion] });
+
+  assert.throws(
+    () => repo.patchQuestion('demo', [{ index: 0, fields: { bogus: 'nope' } }]),
+    /unexpected fields/
+  );
+  assert.strictEqual(repo.getQuestionSet('demo').questions[0].translation, sampleQuestion.translation);
+}
+
+function testPatchQuestionRejectsOutOfRangeCorrectIndexField() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createQuestionSet({ id: 'demo', name: 'Demo', questions: [sampleQuestion] });
+
+  assert.throws(
+    () => repo.patchQuestion('demo', [{ index: 0, fields: { c: 4 } }]),
+    /between 0 and 3/
+  );
+}
+
+function testPatchQuestionErrorsOnUnknownSetId() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  assert.throws(
+    () => repo.patchQuestion('nope', [{ index: 0, fields: { translation: 'x' } }]),
+    /Question set not found: nope/
+  );
+}
+
 testValidateQuestionAcceptsWellFormedQuestion();
 testValidateQuestionRejectsWrongAnswerCount();
 testValidateQuestionRejectsOutOfRangeCorrectIndex();
@@ -165,5 +247,11 @@ testSearchQuestionsIsCaseInsensitiveOnTranslation();
 testSearchQuestionsScopedToSetIdVsAcrossAllSets();
 testSearchQuestionsErrorsOnUnknownSetId();
 testSearchQuestionsReturnsEmptyArrayForNoMatch();
+testPatchQuestionUpdatesOnlyGivenFields();
+testPatchQuestionAppliesMultiplePatchesInOneCall();
+testPatchQuestionIsAtomicOnInvalidIndex();
+testPatchQuestionRejectsUnknownField();
+testPatchQuestionRejectsOutOfRangeCorrectIndexField();
+testPatchQuestionErrorsOnUnknownSetId();
 
 console.log('questions-repo tests passed');

@@ -55,10 +55,12 @@ async function main() {
   assert.strictEqual(JSON.parse(updated.content[0].text).updated, 0);
 
   const searched = await client.callTool({ name: 'search_questions', arguments: { keyword: 'b?' } });
-  const searchResults = JSON.parse(searched.content[0].text);
-  assert.strictEqual(searchResults.length, 1);
-  assert.strictEqual(searchResults[0].setId, 'new-set');
-  assert.strictEqual(searchResults[0].index, 0);
+  const searchResponse = JSON.parse(searched.content[0].text);
+  assert.strictEqual(searchResponse.totalMatches, 1);
+  assert.strictEqual(searchResponse.truncated, false);
+  assert.strictEqual(searchResponse.results.length, 1);
+  assert.strictEqual(searchResponse.results[0].setId, 'new-set');
+  assert.strictEqual(searchResponse.results[0].index, 0);
 
   const patched = await client.callTool({
     name: 'patch_question',

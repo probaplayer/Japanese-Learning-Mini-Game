@@ -148,7 +148,7 @@ export function createQuestionsRepo(baseDir) {
     writeManifest(manifest);
   }
 
-  function searchQuestions(keyword, setId) {
+  function searchQuestions(keyword, setId, limit = 50) {
     const needle = keyword.toLowerCase();
     const manifest = readManifest();
     let entries;
@@ -159,7 +159,7 @@ export function createQuestionsRepo(baseDir) {
     } else {
       entries = manifest.sets;
     }
-    const results = [];
+    const matches = [];
     for (const entry of entries) {
       const set = readSetFile(entry.file);
       set.questions.forEach((question, index) => {
@@ -167,11 +167,13 @@ export function createQuestionsRepo(baseDir) {
           .join('\n')
           .toLowerCase();
         if (haystack.includes(needle)) {
-          results.push({ setId: entry.id, index, question });
+          matches.push({ setId: entry.id, index, question });
         }
       });
     }
-    return results;
+    const totalMatches = matches.length;
+    const truncated = totalMatches > limit;
+    return { totalMatches, truncated, results: matches.slice(0, limit) };
   }
 
   function patchQuestion(setId, patches) {

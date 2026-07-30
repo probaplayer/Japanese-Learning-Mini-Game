@@ -99,13 +99,13 @@ function testSearchQuestionsMatchesWordAndAnswerChoice() {
   const repo = createQuestionsRepo(dir);
   repo.createQuestionSet({ id: 'demo', name: 'Demo', questions: [sampleQuestion] });
 
-  const byWord = repo.searchQuestions('学生');
+  const byWord = repo.searchQuestions('学生').results;
   assert.strictEqual(byWord.length, 1);
   assert.strictEqual(byWord[0].setId, 'demo');
   assert.strictEqual(byWord[0].index, 0);
   assert.strictEqual(byWord[0].question.word, '学生');
 
-  const byAnswerChoice = repo.searchQuestions('がっせい');
+  const byAnswerChoice = repo.searchQuestions('がっせい').results;
   assert.strictEqual(byAnswerChoice.length, 1);
   assert.strictEqual(byAnswerChoice[0].index, 0);
 }
@@ -115,7 +115,7 @@ function testSearchQuestionsIsCaseInsensitiveOnTranslation() {
   const repo = createQuestionsRepo(dir);
   repo.createQuestionSet({ id: 'demo', name: 'Demo', questions: [sampleQuestion] });
 
-  const results = repo.searchQuestions('STUDENT');
+  const results = repo.searchQuestions('STUDENT').results;
   assert.strictEqual(results.length, 1);
 }
 
@@ -128,11 +128,11 @@ function testSearchQuestionsScopedToSetIdVsAcrossAllSets() {
     questions: [{ ...sampleQuestion, word: '先生', translation: 'Teacher' }]
   });
 
-  const onlyA = repo.searchQuestions('Student', 'set-a');
+  const onlyA = repo.searchQuestions('Student', 'set-a').results;
   assert.strictEqual(onlyA.length, 1);
   assert.strictEqual(onlyA[0].setId, 'set-a');
 
-  const acrossAll = repo.searchQuestions('e'); // "Student" and "Teacher" both contain "e"
+  const acrossAll = repo.searchQuestions('e').results; // "Student" and "Teacher" both contain "e"
   assert.strictEqual(acrossAll.length, 2);
   const setIds = acrossAll.map(r => r.setId).sort();
   assert.deepStrictEqual(setIds, ['set-a', 'set-b']);
@@ -148,7 +148,25 @@ function testSearchQuestionsReturnsEmptyArrayForNoMatch() {
   const dir = makeTempQuestionsDir();
   const repo = createQuestionsRepo(dir);
   repo.createQuestionSet({ id: 'demo', name: 'Demo', questions: [sampleQuestion] });
-  assert.deepStrictEqual(repo.searchQuestions('zzz-no-match'), []);
+  assert.deepStrictEqual(repo.searchQuestions('zzz-no-match').results, []);
+  assert.strictEqual(repo.searchQuestions('zzz-no-match').totalMatches, 0);
+}
+
+function testSearchQuestionsTruncatesToLimit() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  const questions = Array.from({ length: 5 }, (_, i) => ({ ...sampleQuestion, translation: `Student ${i}` }));
+  repo.createQuestionSet({ id: 'demo', name: 'Demo', questions });
+
+  const capped = repo.searchQuestions('Student', 'demo', 2);
+  assert.strictEqual(capped.totalMatches, 5);
+  assert.strictEqual(capped.truncated, true);
+  assert.strictEqual(capped.results.length, 2);
+
+  const uncapped = repo.searchQuestions('Student', 'demo', 10);
+  assert.strictEqual(uncapped.totalMatches, 5);
+  assert.strictEqual(uncapped.truncated, false);
+  assert.strictEqual(uncapped.results.length, 5);
 }
 
 function testPatchQuestionUpdatesOnlyGivenFields() {
@@ -247,6 +265,7 @@ testSearchQuestionsIsCaseInsensitiveOnTranslation();
 testSearchQuestionsScopedToSetIdVsAcrossAllSets();
 testSearchQuestionsErrorsOnUnknownSetId();
 testSearchQuestionsReturnsEmptyArrayForNoMatch();
+testSearchQuestionsTruncatesToLimit();
 testPatchQuestionUpdatesOnlyGivenFields();
 testPatchQuestionAppliesMultiplePatchesInOneCall();
 testPatchQuestionIsAtomicOnInvalidIndex();

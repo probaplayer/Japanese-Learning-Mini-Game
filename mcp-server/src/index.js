@@ -61,10 +61,14 @@ server.registerTool(
   'search_questions',
   {
     title: 'Search questions',
-    description: 'Find questions by keyword across one or all question sets, matching word/romaji/translation/q/ex and answer choices',
-    inputSchema: { keyword: z.string().min(1), setId: z.string().optional() }
+    description: 'Find questions by keyword across one or all question sets, matching word/romaji/translation/q/ex and answer choices. Results are capped (default 50, max 200) — check the returned "truncated" flag and narrow the keyword or set if true.',
+    inputSchema: {
+      keyword: z.string().min(1),
+      setId: z.string().optional(),
+      limit: z.number().int().min(1).max(200).default(50)
+    }
   },
-  guarded(({ keyword, setId }) => repo.searchQuestions(keyword, setId))
+  guarded(({ keyword, setId, limit }) => repo.searchQuestions(keyword, setId, limit))
 );
 
 server.registerTool(

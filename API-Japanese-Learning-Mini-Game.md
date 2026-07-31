@@ -32,7 +32,8 @@
   "q": "Cách đọc của '学生' là gì?", // Question text (required)
   "a": ["がくせい", "がくぜい", "がっせい", "かくせい"], // Answer options array (required)
   "c": 0,                 // Correct answer index (required)
-  "ex": "学生 (Học sinh). Học (学) + Sinh (生)." // Explanation (optional)
+  "ex": "学生 (Học sinh). Học (学) + Sinh (生).", // Explanation (optional)
+  "aTranslation": ["Học sinh", "(từ không có nghĩa)", "(từ không có nghĩa)", "(từ không có nghĩa)"] // Per-answer translations (optional)
 }
 ```
 
@@ -45,6 +46,7 @@
 | `a` | array | Yes | Array of answer options (min 2) |
 | `c` | number | Yes | Index of correct answer (0-based) |
 | `ex` | string | No | Explanation text |
+| `aTranslation` | array | No | Array of exactly 4 non-empty strings, positionally parallel to `a` — the translation shown under each choice button after answering (index i describes `a[i]`, including decoy answers, which should get a short gloss like "(từ không có nghĩa)" rather than being left blank) |
 
 ### QuestionSet Object
 

@@ -68,7 +68,8 @@ function createGameContext(questionsDir) {
 ${gameUtilsSource}
 ${storageSource}
 this.runInitQuestionSets = initQuestionSets;
-this.getState = () => ({ questions, questionSets, activeSetId });`,
+this.getState = () => ({ questions, questionSets, activeSetId });
+this.callShuffleAnswerOptions = (q) => shuffleAnswerOptions(q);`,
     context
   );
   return context;
@@ -123,7 +124,59 @@ async function testGameLoaderReadsRealMcpRepoOutput() {
   }
 }
 
+// Cross-seam test for the optional `aTranslation` field: writes a question
+// with per-answer translations through the repo layer, loads it the way the
+// game side does, and confirms the translations survive the round trip and
+// stay positionally aligned with `a` after shuffleAnswerOptions() shuffles
+// the answer order.
+async function testAnswerTranslationSurvivesRoundTrip() {
+  const questionsRepoUrl = url.pathToFileURL(
+    path.join(__dirname, '..', 'mcp-server', 'src', 'questions-repo.js')
+  ).href;
+  const { createQuestionsRepo } = await import(questionsRepoUrl);
+
+  const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'jq-mcp-game-integration-translation-'));
+  try {
+    fs.writeFileSync(path.join(tmpDir, 'manifest.json'), JSON.stringify({ sets: [] }, null, 2));
+    const repo = createQuestionsRepo(tmpDir);
+
+    const questionWithTranslation = {
+      word: '学生', romaji: 'がくせい', translation: 'Student', q: 'Reading of 学生?',
+      a: ['がくせい', 'がくぜい', 'がっせい', 'かくせい'], c: 0, ex: 'Student',
+      aTranslation: ['Học sinh', '(từ không có nghĩa)', '(từ không có nghĩa)', '(từ không có nghĩa)']
+    };
+
+    const created = repo.createQuestionSet({ id: 'n5-translation', name: 'N5 Translation', questions: [questionWithTranslation] });
+    assert.strictEqual(created.id, 'n5-translation');
+
+    const gameContext = createGameContext(tmpDir);
+    await gameContext.runInitQuestionSets();
+    const state = gameContext.getState();
+
+    assert.strictEqual(state.questions.length, 1);
+    const loadedQuestion = state.questions[0];
+    assert.deepStrictEqual(loadedQuestion.aTranslation, questionWithTranslation.aTranslation);
+
+    const { options, correctIndex, translations } = gameContext.callShuffleAnswerOptions(loadedQuestion);
+    assert.ok(translations, 'expected shuffleAnswerOptions to return non-null translations');
+    assert.strictEqual(translations.length, loadedQuestion.aTranslation.length);
+    // Translations must stay positionally parallel to the (possibly
+    // shuffled) options: each option's translation is whatever aTranslation
+    // said about that same answer text in the original, unshuffled order.
+    options.forEach((optionText, i) => {
+      const originalIndex = loadedQuestion.a.indexOf(optionText);
+      assert.strictEqual(translations[i], loadedQuestion.aTranslation[originalIndex]);
+    });
+    // The correct answer's translation must always be the real gloss,
+    // regardless of shuffle order.
+    assert.strictEqual(translations[correctIndex], loadedQuestion.aTranslation[loadedQuestion.c]);
+  } finally {
+    fs.rmSync(tmpDir, { recursive: true, force: true });
+  }
+}
+
 (async () => {
   await testGameLoaderReadsRealMcpRepoOutput();
+  await testAnswerTranslationSurvivesRoundTrip();
   console.log('mcp-game integration tests passed');
 })();

@@ -12,6 +12,7 @@ let quizTimerInterval = null;
 let quizDelayTimeout = null;
 let quizCorrect = 0;
 let quizWrong = 0;
+let quizCurrentCorrectIndex = null;
 const QUIZ_RESUME_STORAGE_KEY = 'jq_resume_quiz';
 
 function saveGameResumeState(type) {
@@ -197,6 +198,7 @@ function renderQuiz() {
   grid.innerHTML = '';
   
   const { options, correctIndex, translations } = shuffleAnswerOptions(q);
+  quizCurrentCorrectIndex = correctIndex;
   options.forEach((ans, i) => {
     const btn = document.createElement('button');
     btn.className = 'choice-btn';
@@ -209,20 +211,27 @@ function renderQuiz() {
   });
 }
 
-function answerQuiz(chosen, btn, q, correctIndex) {
-  stopQuizTimer();
-  const responseTime = Date.now() - quizQuestionStartTime;
-  const quizChoices = document.getElementById('quiz-choices');
-  const allBtns = quizChoices ? quizChoices.querySelectorAll('.choice-btn') : document.querySelectorAll('.choice-btn');
+// Reveals the per-choice translation (if any) beneath each answer button.
+// Shared by answerQuiz (answered) and handleQuizTimeout (timed out) so both
+// terminal states of a quiz question show the same translation UI.
+function revealChoiceTranslations(allBtns) {
   allBtns.forEach(b => {
-    b.disabled = true;
-    if (b.dataset.translation) {
+    if (b.dataset.translation && !b.querySelector('.choice-translation')) {
       const translationEl = document.createElement('span');
       translationEl.className = 'choice-translation';
       translationEl.textContent = b.dataset.translation;
       b.appendChild(translationEl);
     }
   });
+}
+
+function answerQuiz(chosen, btn, q, correctIndex) {
+  stopQuizTimer();
+  const responseTime = Date.now() - quizQuestionStartTime;
+  const quizChoices = document.getElementById('quiz-choices');
+  const allBtns = quizChoices ? quizChoices.querySelectorAll('.choice-btn') : document.querySelectorAll('.choice-btn');
+  allBtns.forEach(b => { b.disabled = true; });
+  revealChoiceTranslations(allBtns);
   const correct = chosen === correctIndex;
 
   if (allBtns[correctIndex]) {
@@ -355,6 +364,7 @@ function handleQuizTimeout() {
   const quizChoices = document.getElementById('quiz-choices');
   const allBtns = quizChoices ? quizChoices.querySelectorAll('.choice-btn') : document.querySelectorAll('.choice-btn');
   allBtns.forEach(b => b.disabled = true);
+  revealChoiceTranslations(allBtns);
 
   document.getElementById('screen-quiz').classList.add('shake');
   setTimeout(() => document.getElementById('screen-quiz').classList.remove('shake'), 400);
@@ -367,8 +377,11 @@ function handleQuizTimeout() {
 
   const current = quizDeck[quizIdx];
   if (current) {
-    if (allBtns[current.c]) {
-      allBtns[current.c].classList.add('correct');
+    // Highlight the SHUFFLED correct index (as rendered), not current.c
+    // (the unshuffled index) — buttons may be in shuffled order.
+    const correctBtnIndex = typeof quizCurrentCorrectIndex === 'number' ? quizCurrentCorrectIndex : current.c;
+    if (allBtns[correctBtnIndex]) {
+      allBtns[correctBtnIndex].classList.add('correct');
     }
     if (current.ex) {
       const exBox = document.getElementById('quiz-explanation');

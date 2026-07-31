@@ -73,6 +73,34 @@ async function main() {
   assert.strictEqual(afterPatchQuestions[0].translation, 'Patched');
   assert.strictEqual(afterPatchQuestions[0].word, 'b');
 
+  const addedWithTranslations = await client.callTool({
+    name: 'add_question',
+    arguments: {
+      setId: 'new-set',
+      question: {
+        word: 'c', romaji: 'c', translation: 'c', q: 'c?',
+        a: ['1', '2', '3', '4'], aTranslation: ['one', 'two', 'three', 'four'], c: 0, ex: 'ex'
+      }
+    }
+  });
+  assert.strictEqual(JSON.parse(addedWithTranslations.content[0].text).index, 1);
+
+  const afterAddWithTranslations = await client.callTool({ name: 'get_question_set', arguments: { id: 'new-set' } });
+  const questionsAfterAdd = JSON.parse(afterAddWithTranslations.content[0].text).questions;
+  assert.deepStrictEqual(questionsAfterAdd[1].aTranslation, ['one', 'two', 'three', 'four']);
+
+  const badTranslationLength = await client.callTool({
+    name: 'add_question',
+    arguments: {
+      setId: 'new-set',
+      question: {
+        word: 'd', romaji: 'd', translation: 'd', q: 'd?',
+        a: ['1', '2', '3', '4'], aTranslation: ['only', 'two'], c: 0, ex: 'ex'
+      }
+    }
+  });
+  assert.strictEqual(badTranslationLength.isError, true);
+
   const badQuestion = await client.callTool({
     name: 'add_question',
     arguments: { setId: 'new-set', question: { word: 'x', romaji: 'x', translation: 'x', q: 'x?', a: ['1', '2'], c: 0, ex: 'ex' } }

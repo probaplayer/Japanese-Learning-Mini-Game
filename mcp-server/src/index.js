@@ -19,7 +19,8 @@ const questionShape = {
   q: z.string().min(1),
   a: z.array(z.string()).length(4),
   c: z.number().int().min(0).max(3),
-  ex: z.string().min(1)
+  ex: z.string().min(1),
+  aTranslation: z.array(z.string().min(1)).length(4).optional()
 };
 
 const questionPatchFieldsShape = z.object(questionShape).partial().strict()

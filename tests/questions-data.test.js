@@ -32,6 +32,13 @@ function testEveryQuestionHasRequiredShape() {
       assert.strictEqual(typeof q.q, 'string', `${entry.id}[${i}].q`);
       assert.ok(Array.isArray(q.a) && q.a.length === 4, `${entry.id}[${i}].a`);
       assert.ok(Number.isInteger(q.c) && q.c >= 0 && q.c <= 3, `${entry.id}[${i}].c`);
+      if (q.aTranslation !== undefined) {
+        assert.ok(
+          Array.isArray(q.aTranslation) && q.aTranslation.length === 4 &&
+          q.aTranslation.every(t => typeof t === 'string' && t.length > 0),
+          `${entry.id}[${i}].aTranslation must be an array of exactly 4 non-empty strings when present`
+        );
+      }
     });
   });
 }

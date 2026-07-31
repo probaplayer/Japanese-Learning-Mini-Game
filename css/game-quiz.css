@@ -46,6 +46,14 @@
 .choice-btn.wrong { border-color: var(--accent); background: rgba(255,45,85,.15); color: var(--accent); box-shadow: var(--glow-r); }
 .choice-btn:disabled { cursor: default; }
 
+.choice-translation {
+  display: block;
+  margin-top: 4px;
+  font-family: var(--font-px);
+  font-size: 10px;
+  color: var(--text-dim);
+}
+
 .explanation-box {
   background: rgba(255,214,10,.07);
   border: 1px solid rgba(255,214,10,.3);

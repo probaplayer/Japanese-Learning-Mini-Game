@@ -196,11 +196,14 @@ function renderQuiz() {
   const grid = document.getElementById('quiz-choices');
   grid.innerHTML = '';
   
-  const { options, correctIndex } = shuffleAnswerOptions(q);
+  const { options, correctIndex, translations } = shuffleAnswerOptions(q);
   options.forEach((ans, i) => {
     const btn = document.createElement('button');
     btn.className = 'choice-btn';
     btn.textContent = ans;
+    if (translations && translations[i]) {
+      btn.dataset.translation = translations[i];
+    }
     btn.onclick = () => answerQuiz(i, btn, q, correctIndex);
     grid.appendChild(btn);
   });
@@ -211,7 +214,15 @@ function answerQuiz(chosen, btn, q, correctIndex) {
   const responseTime = Date.now() - quizQuestionStartTime;
   const quizChoices = document.getElementById('quiz-choices');
   const allBtns = quizChoices ? quizChoices.querySelectorAll('.choice-btn') : document.querySelectorAll('.choice-btn');
-  allBtns.forEach(b => b.disabled = true);
+  allBtns.forEach(b => {
+    b.disabled = true;
+    if (b.dataset.translation) {
+      const translationEl = document.createElement('span');
+      translationEl.className = 'choice-translation';
+      translationEl.textContent = b.dataset.translation;
+      b.appendChild(translationEl);
+    }
+  });
   const correct = chosen === correctIndex;
 
   if (allBtns[correctIndex]) {

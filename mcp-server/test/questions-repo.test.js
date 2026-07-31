@@ -29,6 +29,21 @@ function testValidateQuestionRejectsOutOfRangeCorrectIndex() {
   assert.match(validateQuestion(bad), /between 0 and 3/);
 }
 
+function testValidateQuestionAcceptsValidATranslation() {
+  const withTranslations = { ...sampleQuestion, aTranslation: ['Học sinh', 'sai 1', 'sai 2', 'sai 3'] };
+  assert.strictEqual(validateQuestion(withTranslations), null);
+}
+
+function testValidateQuestionRejectsWrongLengthATranslation() {
+  const bad = { ...sampleQuestion, aTranslation: ['only', 'two'] };
+  assert.match(validateQuestion(bad), /aTranslation.*exactly 4 non-empty strings/);
+}
+
+function testValidateQuestionRejectsEmptyStringInATranslation() {
+  const bad = { ...sampleQuestion, aTranslation: ['ok', '', 'ok', 'ok'] };
+  assert.match(validateQuestion(bad), /aTranslation.*exactly 4 non-empty strings/);
+}
+
 function testSlugifyNormalizesNames() {
   assert.strictEqual(slugify('N5 Vocabulary!'), 'n5-vocabulary');
   assert.strictEqual(slugify('  --Trailing--  '), 'trailing');
@@ -254,6 +269,9 @@ function testPatchQuestionErrorsOnUnknownSetId() {
 testValidateQuestionAcceptsWellFormedQuestion();
 testValidateQuestionRejectsWrongAnswerCount();
 testValidateQuestionRejectsOutOfRangeCorrectIndex();
+testValidateQuestionAcceptsValidATranslation();
+testValidateQuestionRejectsWrongLengthATranslation();
+testValidateQuestionRejectsEmptyStringInATranslation();
 testSlugifyNormalizesNames();
 testCreateListGetQuestionSet();
 testCreateQuestionSetRejectsDuplicateId();

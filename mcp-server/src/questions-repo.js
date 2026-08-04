@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-const QUESTION_FIELDS = ['word', 'romaji', 'translation', 'q', 'a', 'c', 'ex'];
+const QUESTION_FIELDS = ['word', 'romaji', 'translation', 'q', 'a', 'c', 'ex', 'aTranslation'];
 
 export function validateQuestion(question) {
   if (!question || typeof question !== 'object') {
@@ -17,6 +17,12 @@ export function validateQuestion(question) {
   }
   if (!Number.isInteger(question.c) || question.c < 0 || question.c > 3) {
     return 'Question field "c" must be an integer between 0 and 3';
+  }
+  if (question.aTranslation !== undefined) {
+    const at = question.aTranslation;
+    if (!Array.isArray(at) || at.length !== 4 || at.some(opt => typeof opt !== 'string' || opt.length === 0)) {
+      return 'Question field "aTranslation" must be an array of exactly 4 non-empty strings';
+    }
   }
   const extraFields = Object.keys(question).filter(k => !QUESTION_FIELDS.includes(k));
   if (extraFields.length > 0) {

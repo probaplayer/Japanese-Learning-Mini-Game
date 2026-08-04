@@ -150,7 +150,8 @@ Question object structure:
   "q": "Cách đọc của '学生' là gì?", // Question text
   "a": ["がくせい", "がくぜい", "がっせい", "かくせい"], // Answer options
   "c": 0,                // Correct answer index
-  "ex": "学生 (Học sinh). Học (学) + Sinh (生)." // Explanation
+  "ex": "学生 (Học sinh). Học (学) + Sinh (生).", // Explanation
+  "aTranslation": ["Học sinh", "(từ không có nghĩa)", "(từ không có nghĩa)", "(từ không có nghĩa)"] // Optional: per-answer translation, same order as "a"
 }
 ```
 

@@ -81,7 +81,8 @@ mcp-server/               ← MCP server for authoring/publishing question sets
   "q": "Cách đọc của '学生' là gì?",
   "a": ["がくせい", "がくぜい", "がっせい", "かくせい"],
   "c": 0,
-  "ex": "学生 (Học sinh). Học (学) + Sinh (生)."
+  "ex": "学生 (Học sinh). Học (学) + Sinh (生).",
+  "aTranslation": ["Học sinh", "(từ không có nghĩa)", "(từ không có nghĩa)", "(từ không có nghĩa)"]
 }
 ```
 
@@ -94,6 +95,7 @@ mcp-server/               ← MCP server for authoring/publishing question sets
 | `a` | Array of answer options |
 | `c` | Correct answer index (0-based) |
 | `ex` | Explanation shown after answering |
+| `aTranslation` | Optional array of exactly 4 non-empty strings, one per `a` entry (same order) — the Vietnamese gloss shown under each choice after answering. Give decoy answers a short gloss too (e.g. "(từ không có nghĩa)") instead of leaving them blank. |
 
 ## 🎨 Design
 

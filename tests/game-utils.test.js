@@ -104,6 +104,29 @@ function testShuffleAnswerOptionsKeepsCorrectAnswerMapping() {
   assert.strictEqual(original.correctIndex, 1);
 }
 
+function testShuffleAnswerOptionsCarriesTranslationsThroughSamePermutation() {
+  const context = createContext();
+  const question = sampleQuestion({ c: 1, aTranslation: ['A', 'B', 'C', 'D'] });
+
+  const shuffled = context.shuffleAnswerOptions(question);
+  assert.deepStrictEqual(shuffled.translations, ['D', 'C', 'B', 'A']);
+  assert.strictEqual(shuffled.translations[shuffled.correctIndex], 'B');
+
+  context.settings.shuffleAnswers = false;
+  const original = context.shuffleAnswerOptions(question);
+  assert.deepStrictEqual(original.translations, question.aTranslation);
+}
+
+function testShuffleAnswerOptionsReturnsNullTranslationsWhenAbsent() {
+  const context = createContext();
+  const question = sampleQuestion({ c: 0 });
+
+  assert.strictEqual(context.shuffleAnswerOptions(question).translations, null);
+
+  context.settings.shuffleAnswers = false;
+  assert.strictEqual(context.shuffleAnswerOptions(question).translations, null);
+}
+
 function testUpdateQuestionStatsTracksCorrectWrongAndResponseTime() {
   const context = createContext();
 
@@ -163,6 +186,8 @@ function testConfidenceAndEffectiveIncorrectUseDecayHistory() {
 testGenerateQuestionIdIsStableAndContentBased();
 testScopedQuestionIdsIncludeActiveSetOnce();
 testShuffleAnswerOptionsKeepsCorrectAnswerMapping();
+testShuffleAnswerOptionsCarriesTranslationsThroughSamePermutation();
+testShuffleAnswerOptionsReturnsNullTranslationsWhenAbsent();
 testUpdateQuestionStatsTracksCorrectWrongAndResponseTime();
 testAvailableQuestionsFiltersCooldownBySetAndMode();
 testConfidenceAndEffectiveIncorrectUseDecayHistory();

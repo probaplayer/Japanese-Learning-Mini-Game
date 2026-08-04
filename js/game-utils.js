@@ -385,15 +385,24 @@ function updateQuestionStats(questionIdOrIndex, gameType, isCorrect, responseTim
 /* ── SHUFFLE ANSWER OPTIONS ── */
 function shuffleAnswerOptions(q) {
   if (!settings.shuffleAnswers) {
-    return { options: [...q.a], correctIndex: q.c };
+    return {
+      options: [...q.a],
+      correctIndex: q.c,
+      translations: q.aTranslation ? q.aTranslation.slice() : null
+    };
   }
-  
-  const indexed = q.a.map((ans, i) => ({ text: ans, wasCorrect: i === q.c }));
+
+  const indexed = q.a.map((ans, i) => ({
+    text: ans,
+    translation: q.aTranslation ? q.aTranslation[i] : undefined,
+    wasCorrect: i === q.c
+  }));
   const shuffled = shuffle(indexed);
   const options = shuffled.map(item => item.text);
   const correctIndex = shuffled.findIndex(item => item.wasCorrect);
-  
-  return { options, correctIndex };
+  const translations = q.aTranslation ? shuffled.map(item => item.translation) : null;
+
+  return { options, correctIndex, translations };
 }
 
 /* ── LEVEL SYSTEM ── */

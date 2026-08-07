@@ -1,0 +1,22 @@
+{
+  "id": "n5-grammar",
+  "name": "N5 Grammar Basics",
+  "category": "grammar",
+  "description": "12 câu mẫu ngữ pháp N5 cơ bản: trợ từ は/を/に/で, ~ている, ~たい, ~ことができる.",
+  "createdAt": "2026-08-06T00:00:00.000Z",
+  "updatedAt": "2026-08-06T00:00:00.000Z",
+  "questions": [
+    { "sentence": "私は学生です", "chunks": ["私", "は", "学生", "です"], "translation": "Tôi là học sinh", "ex": "は đánh dấu chủ đề của câu" },
+    { "sentence": "私は水を飲みます", "chunks": ["私", "は", "水", "を", "飲みます"], "translation": "Tôi uống nước", "ex": "を đánh dấu đối tượng chịu tác động của động từ" },
+    { "sentence": "学校に行きます", "chunks": ["学校", "に", "行きます"], "translation": "Tôi đi đến trường", "ex": "に đánh dấu điểm đến của chuyển động" },
+    { "sentence": "図書館で勉強します", "chunks": ["図書館", "で", "勉強します"], "translation": "Tôi học ở thư viện", "ex": "で đánh dấu địa điểm diễn ra hành động" },
+    { "sentence": "テレビを見ています", "chunks": ["テレビ", "を", "見て", "います"], "translation": "Tôi đang xem TV", "ex": "~ている diễn tả hành động đang diễn ra" },
+    { "sentence": "日本語を勉強しています", "chunks": ["日本語", "を", "勉強して", "います"], "translation": "Tôi đang học tiếng Nhật", "ex": "~ている diễn tả hành động đang diễn ra" },
+    { "sentence": "寿司を食べたいです", "chunks": ["寿司", "を", "食べたい", "です"], "translation": "Tôi muốn ăn sushi", "ex": "~たい diễn tả mong muốn của người nói" },
+    { "sentence": "日本に行きたいです", "chunks": ["日本", "に", "行きたい", "です"], "translation": "Tôi muốn đi Nhật Bản", "ex": "~たい diễn tả mong muốn của người nói" },
+    { "sentence": "漢字を読むことができます", "chunks": ["漢字", "を", "読む", "ことができます"], "translation": "Tôi có thể đọc chữ Kanji", "ex": "~ことができる diễn tả khả năng làm việc gì" },
+    { "sentence": "車を運転することができます", "chunks": ["車", "を", "運転する", "ことができます"], "translation": "Tôi có thể lái xe", "ex": "~ことができる diễn tả khả năng làm việc gì" },
+    { "sentence": "友達と映画を見ました", "chunks": ["友達", "と", "映画", "を", "見ました"], "translation": "Tôi đã xem phim với bạn", "ex": "と đánh dấu người cùng thực hiện hành động" },
+    { "sentence": "駅から家まで歩きます", "chunks": ["駅", "から", "家", "まで", "歩きます"], "translation": "Tôi đi bộ từ nhà ga về nhà", "ex": "から/まで đánh dấu điểm bắt đầu/kết thúc" }
+  ]
+}

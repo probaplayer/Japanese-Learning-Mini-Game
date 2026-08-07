@@ -1,6 +1,7 @@
 {
   "id": "n5-core",
   "name": "N5 Core Vocabulary",
+  "category": "vocabulary",
   "description": "Default vocabulary set migrated from the original built-in sample data.",
   "createdAt": "2026-07-28T08:59:46.370Z",
   "updatedAt": "2026-07-28T08:59:46.370Z",

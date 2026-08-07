@@ -4,6 +4,7 @@
       "id": "n5-core",
       "file": "n5-core.json",
       "name": "N5 Core Vocabulary",
+      "category": "vocabulary",
       "questionCount": 400,
       "updatedAt": "2026-07-28T08:59:46.370Z"
     },
@@ -11,8 +12,17 @@
       "id": "n4-kanji",
       "file": "n4-kanji.json",
       "name": "Từ vựng N4",
+      "category": "vocabulary",
       "questionCount": 243,
       "updatedAt": "2026-07-31T04:24:53.033Z"
+    },
+    {
+      "id": "n5-grammar",
+      "file": "n5-grammar.json",
+      "name": "N5 Grammar Basics",
+      "category": "grammar",
+      "questionCount": 12,
+      "updatedAt": "2026-08-06T00:00:00.000Z"
     }
   ]
 }

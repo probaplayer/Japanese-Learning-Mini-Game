@@ -23,7 +23,7 @@ function testEachManifestEntryMatchesItsFile() {
 
 function testEveryQuestionHasRequiredShape() {
   const manifest = JSON.parse(fs.readFileSync(path.join(questionsDir, 'manifest.json'), 'utf8'));
-  manifest.sets.forEach(entry => {
+  manifest.sets.filter(entry => entry.category !== 'grammar').forEach(entry => {
     const set = JSON.parse(fs.readFileSync(path.join(questionsDir, entry.file), 'utf8'));
     set.questions.forEach((q, i) => {
       assert.strictEqual(typeof q.word, 'string', `${entry.id}[${i}].word`);
@@ -43,8 +43,32 @@ function testEveryQuestionHasRequiredShape() {
   });
 }
 
+function testEveryManifestEntryHasAKnownCategory() {
+  const manifest = JSON.parse(fs.readFileSync(path.join(questionsDir, 'manifest.json'), 'utf8'));
+  manifest.sets.forEach(entry => {
+    assert.ok(['vocabulary', 'grammar'].includes(entry.category), `${entry.id}.category must be vocabulary or grammar`);
+    const set = JSON.parse(fs.readFileSync(path.join(questionsDir, entry.file), 'utf8'));
+    assert.strictEqual(set.category, entry.category, `${entry.id}: set file category must match manifest`);
+  });
+}
+
+function testGrammarQuestionsHaveChunksMatchingSentence() {
+  const manifest = JSON.parse(fs.readFileSync(path.join(questionsDir, 'manifest.json'), 'utf8'));
+  manifest.sets.filter(entry => entry.category === 'grammar').forEach(entry => {
+    const set = JSON.parse(fs.readFileSync(path.join(questionsDir, entry.file), 'utf8'));
+    set.questions.forEach((q, i) => {
+      assert.strictEqual(typeof q.sentence, 'string', `${entry.id}[${i}].sentence`);
+      assert.ok(Array.isArray(q.chunks) && q.chunks.length >= 2, `${entry.id}[${i}].chunks`);
+      assert.strictEqual(q.chunks.join(''), q.sentence, `${entry.id}[${i}] chunks must concatenate to sentence`);
+      assert.strictEqual(typeof q.translation, 'string', `${entry.id}[${i}].translation`);
+    });
+  });
+}
+
 testManifestHasAtLeastOneSet();
 testEachManifestEntryMatchesItsFile();
 testEveryQuestionHasRequiredShape();
+testEveryManifestEntryHasAKnownCategory();
+testGrammarQuestionsHaveChunksMatchingSentence();
 
 console.log('questions data tests passed');

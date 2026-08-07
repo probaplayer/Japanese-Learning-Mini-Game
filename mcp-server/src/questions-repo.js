@@ -2,11 +2,9 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const QUESTION_FIELDS = ['word', 'romaji', 'translation', 'q', 'a', 'c', 'ex', 'aTranslation'];
+const GRAMMAR_QUESTION_FIELDS = ['sentence', 'chunks', 'translation', 'ex'];
 
-export function validateQuestion(question) {
-  if (!question || typeof question !== 'object') {
-    return 'Question must be an object';
-  }
+function validateVocabularyQuestion(question) {
   for (const field of ['word', 'romaji', 'translation', 'q', 'ex']) {
     if (typeof question[field] !== 'string' || question[field].length === 0) {
       return `Question field "${field}" must be a non-empty string`;
@@ -29,6 +27,36 @@ export function validateQuestion(question) {
     return `Question has unexpected fields: ${extraFields.join(', ')}`;
   }
   return null;
+}
+
+function validateGrammarQuestion(question) {
+  if (!Array.isArray(question.chunks) || question.chunks.length < 2 || question.chunks.some(c => typeof c !== 'string' || c.length === 0)) {
+    return 'Question field "chunks" must be an array of at least 2 non-empty strings';
+  }
+  if (typeof question.sentence !== 'string' || question.sentence.length === 0) {
+    return 'Question field "sentence" must be a non-empty string';
+  }
+  if (question.chunks.join('') !== question.sentence) {
+    return 'Question field "chunks" must concatenate to sentence';
+  }
+  if (typeof question.translation !== 'string' || question.translation.length === 0) {
+    return 'Question field "translation" must be a non-empty string';
+  }
+  if (question.ex !== undefined && (typeof question.ex !== 'string' || question.ex.length === 0)) {
+    return 'Question field "ex" must be a non-empty string when present';
+  }
+  const extraFields = Object.keys(question).filter(k => !GRAMMAR_QUESTION_FIELDS.includes(k));
+  if (extraFields.length > 0) {
+    return `Question has unexpected fields: ${extraFields.join(', ')}`;
+  }
+  return null;
+}
+
+export function validateQuestion(question, category = 'vocabulary') {
+  if (!question || typeof question !== 'object') {
+    return 'Question must be an object';
+  }
+  return category === 'grammar' ? validateGrammarQuestion(question) : validateVocabularyQuestion(question);
 }
 
 export function slugify(name) {
@@ -76,20 +104,20 @@ export function createQuestionsRepo(baseDir) {
     return readSetFile(entry.file);
   }
 
-  function createQuestionSet({ id, name, description = '', questions = [] }) {
+  function createQuestionSet({ id, name, description = '', category = 'vocabulary', questions = [] }) {
     const manifest = readManifest();
     const setId = id ? slugify(id) : slugify(name);
     if (!setId) throw new Error('Could not derive a valid id from the provided name/id');
     if (findEntry(manifest, setId)) throw new Error(`Question set id already exists: ${setId}`);
     for (const q of questions) {
-      const error = validateQuestion(q);
+      const error = validateQuestion(q, category);
       if (error) throw new Error(error);
     }
     const now = new Date().toISOString();
     const file = `${setId}.json`;
-    const set = { id: setId, name, description, createdAt: now, updatedAt: now, questions };
+    const set = { id: setId, name, description, category, createdAt: now, updatedAt: now, questions };
     writeSetFile(file, set);
-    manifest.sets.push({ id: setId, file, name, questionCount: questions.length, updatedAt: now });
+    manifest.sets.push({ id: setId, file, name, category, questionCount: questions.length, updatedAt: now });
     writeManifest(manifest);
     return set;
   }
@@ -112,12 +140,12 @@ export function createQuestionsRepo(baseDir) {
   }
 
   function addQuestion(setId, question) {
-    const error = validateQuestion(question);
-    if (error) throw new Error(error);
     const manifest = readManifest();
     const entry = findEntry(manifest, setId);
     if (!entry) throw new Error(`Question set not found: ${setId}`);
     const set = readSetFile(entry.file);
+    const error = validateQuestion(question, set.category || 'vocabulary');
+    if (error) throw new Error(error);
     set.questions.push(question);
     set.updatedAt = new Date().toISOString();
     writeSetFile(entry.file, set);
@@ -127,12 +155,12 @@ export function createQuestionsRepo(baseDir) {
   }
 
   function updateQuestion(setId, index, question) {
-    const error = validateQuestion(question);
-    if (error) throw new Error(error);
     const manifest = readManifest();
     const entry = findEntry(manifest, setId);
     if (!entry) throw new Error(`Question set not found: ${setId}`);
     const set = readSetFile(entry.file);
+    const error = validateQuestion(question, set.category || 'vocabulary');
+    if (error) throw new Error(error);
     if (index < 0 || index >= set.questions.length) throw new Error(`Question index out of range: ${index}`);
     set.questions[index] = question;
     set.updatedAt = new Date().toISOString();
@@ -191,7 +219,7 @@ export function createQuestionsRepo(baseDir) {
     const merged = patches.map(({ index, fields }) => {
       if (index < 0 || index >= set.questions.length) throw new Error(`Question index out of range: ${index}`);
       const question = { ...set.questions[index], ...fields };
-      const error = validateQuestion(question);
+      const error = validateQuestion(question, set.category || 'vocabulary');
       if (error) throw new Error(`Patch for index ${index}: ${error}`);
       return { index, question };
     });

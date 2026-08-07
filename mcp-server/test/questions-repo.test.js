@@ -266,6 +266,69 @@ function testPatchQuestionErrorsOnUnknownSetId() {
   );
 }
 
+const sampleGrammarQuestion = {
+  sentence: '私は学生です',
+  chunks: ['私', 'は', '学生', 'です'],
+  translation: 'Tôi là học sinh',
+  ex: 'は đánh dấu chủ đề câu'
+};
+
+function testValidateQuestionAcceptsWellFormedGrammarQuestion() {
+  assert.strictEqual(validateQuestion(sampleGrammarQuestion, 'grammar'), null);
+}
+
+function testValidateQuestionRejectsGrammarQuestionMissingChunks() {
+  const bad = { ...sampleGrammarQuestion, chunks: undefined };
+  assert.match(validateQuestion(bad, 'grammar'), /chunks/);
+}
+
+function testValidateQuestionRejectsGrammarQuestionWithTooFewChunks() {
+  const bad = { ...sampleGrammarQuestion, chunks: ['私'] };
+  assert.match(validateQuestion(bad, 'grammar'), /at least 2/);
+}
+
+function testValidateQuestionRejectsGrammarQuestionWhereChunksDontMatchSentence() {
+  const bad = { ...sampleGrammarQuestion, chunks: ['私', 'は', '先生', 'です'] };
+  assert.match(validateQuestion(bad, 'grammar'), /chunks.*must concatenate to sentence/);
+}
+
+function testValidateQuestionRejectsGrammarQuestionMissingTranslation() {
+  const bad = { ...sampleGrammarQuestion, translation: '' };
+  assert.match(validateQuestion(bad, 'grammar'), /translation/);
+}
+
+function testValidateQuestionGrammarExIsOptional() {
+  const { ex, ...withoutEx } = sampleGrammarQuestion;
+  assert.strictEqual(validateQuestion(withoutEx, 'grammar'), null);
+}
+
+function testCreateQuestionSetPersistsCategoryToManifestAndFile() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  const created = repo.createQuestionSet({ name: 'N5 Grammar', category: 'grammar', questions: [sampleGrammarQuestion] });
+  assert.strictEqual(created.category, 'grammar');
+
+  const manifest = JSON.parse(fs.readFileSync(path.join(dir, 'manifest.json'), 'utf8'));
+  assert.strictEqual(manifest.sets[0].category, 'grammar');
+}
+
+function testCreateQuestionSetDefaultsCategoryToVocabulary() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  const created = repo.createQuestionSet({ name: 'Plain Set' });
+  assert.strictEqual(created.category, 'vocabulary');
+}
+
+function testAddQuestionValidatesAgainstSetsOwnCategory() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createQuestionSet({ id: 'demo-grammar', name: 'Demo Grammar', category: 'grammar' });
+
+  const index = repo.addQuestion('demo-grammar', sampleGrammarQuestion);
+  assert.strictEqual(index, 0);
+  assert.throws(() => repo.addQuestion('demo-grammar', sampleQuestion), /chunks/);
+}
+
 testValidateQuestionAcceptsWellFormedQuestion();
 testValidateQuestionRejectsWrongAnswerCount();
 testValidateQuestionRejectsOutOfRangeCorrectIndex();
@@ -290,5 +353,14 @@ testPatchQuestionIsAtomicOnInvalidIndex();
 testPatchQuestionRejectsUnknownField();
 testPatchQuestionRejectsOutOfRangeCorrectIndexField();
 testPatchQuestionErrorsOnUnknownSetId();
+testValidateQuestionAcceptsWellFormedGrammarQuestion();
+testValidateQuestionRejectsGrammarQuestionMissingChunks();
+testValidateQuestionRejectsGrammarQuestionWithTooFewChunks();
+testValidateQuestionRejectsGrammarQuestionWhereChunksDontMatchSentence();
+testValidateQuestionRejectsGrammarQuestionMissingTranslation();
+testValidateQuestionGrammarExIsOptional();
+testCreateQuestionSetPersistsCategoryToManifestAndFile();
+testCreateQuestionSetDefaultsCategoryToVocabulary();
+testAddQuestionValidatesAgainstSetsOwnCategory();
 
 console.log('questions-repo tests passed');

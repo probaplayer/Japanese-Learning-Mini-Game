@@ -23,6 +23,38 @@
       "category": "grammar",
       "questionCount": 12,
       "updatedAt": "2026-08-06T00:00:00.000Z"
+    },
+    {
+      "id": "n4-l26-vocab",
+      "file": "n4-l26-vocab.json",
+      "name": "N4 Bài 26 - Từ vựng (nghĩa)",
+      "category": "vocabulary",
+      "questionCount": 20,
+      "updatedAt": "2026-08-07T09:56:42.052Z"
+    },
+    {
+      "id": "n4-l26-kanji",
+      "file": "n4-l26-kanji.json",
+      "name": "N4 Bài 26 - Từ vựng Kanji (đọc)",
+      "category": "vocabulary",
+      "questionCount": 24,
+      "updatedAt": "2026-08-07T09:57:07.694Z"
+    },
+    {
+      "id": "n4-l26-kanji-hanviet",
+      "file": "n4-l26-kanji-hanviet.json",
+      "name": "N4 Bài 26 - Hán Việt từng Kanji",
+      "category": "vocabulary",
+      "questionCount": 30,
+      "updatedAt": "2026-08-07T09:58:47.864Z"
+    },
+    {
+      "id": "n4-l26-grammar",
+      "file": "n4-l26-grammar.json",
+      "name": "N4 Bài 26 - Ngữ pháp",
+      "category": "grammar",
+      "questionCount": 10,
+      "updatedAt": "2026-08-07T10:00:33.868Z"
     }
   ]
 }

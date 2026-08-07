@@ -1,0 +1,430 @@
+{
+  "id": "n4-l26-kanji-hanviet",
+  "name": "N4 Bài 26 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 26, hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-07T09:58:10.580Z",
+  "updatedAt": "2026-08-07T09:58:47.864Z",
+  "questions": [
+    {
+      "word": "探",
+      "romaji": "thám",
+      "translation": "tìm, tìm kiếm (探します)",
+      "q": "Chữ 探 trong từ 探します mang âm Hán Việt nào?",
+      "a": [
+        "THÁM",
+        "TRÌ",
+        "THAM",
+        "GIA"
+      ],
+      "c": 0,
+      "ex": "探します: tìm, tìm kiếm"
+    },
+    {
+      "word": "遅",
+      "romaji": "trì",
+      "translation": "chậm, muộn (遅れます)",
+      "q": "Chữ 遅 trong từ 遅れます mang âm Hán Việt nào?",
+      "a": [
+        "XUẤT",
+        "TRÌ",
+        "HỢP",
+        "KHÍ"
+      ],
+      "c": 1,
+      "ex": "遅れます: đến muộn, chậm trễ"
+    },
+    {
+      "word": "参",
+      "romaji": "tham",
+      "translation": "tham gia (参加)",
+      "q": "Chữ 参 trong từ 参加 mang âm Hán Việt nào?",
+      "a": [
+        "GIA",
+        "THAM",
+        "ĐÔ",
+        "TÂN"
+      ],
+      "c": 1,
+      "ex": "参加します: tham gia"
+    },
+    {
+      "word": "加",
+      "romaji": "gia",
+      "translation": "thêm vào (参加)",
+      "q": "Chữ 加 trong từ 参加 mang âm Hán Việt nào?",
+      "a": [
+        "GIA",
+        "THÂN",
+        "VĂN",
+        "XÃ"
+      ],
+      "c": 0,
+      "ex": "参加します: tham gia"
+    },
+    {
+      "word": "申",
+      "romaji": "thân",
+      "translation": "nộp, trình (申し込みます)",
+      "q": "Chữ 申 trong từ 申し込みます mang âm Hán Việt nào?",
+      "a": [
+        "THÂN",
+        "ĐÔ",
+        "HỢP",
+        "KIM"
+      ],
+      "c": 0,
+      "ex": "申し込みます: đăng ký"
+    },
+    {
+      "word": "都",
+      "romaji": "đô",
+      "translation": "hoàn cảnh, sự việc (都合)",
+      "q": "Chữ 都 trong từ 都合 mang âm Hán Việt nào?",
+      "a": [
+        "HỢP",
+        "ĐÔ",
+        "KHÍ",
+        "PHÂN"
+      ],
+      "c": 1,
+      "ex": "都合: sự thuận tiện"
+    },
+    {
+      "word": "合",
+      "romaji": "hợp",
+      "translation": "hợp, kết hợp (都合)",
+      "q": "Chữ 合 trong từ 都合 mang âm Hán Việt nào?",
+      "a": [
+        "ĐÔ",
+        "HỢP",
+        "VẬN",
+        "ĐỘNG"
+      ],
+      "c": 1,
+      "ex": "都合: sự thuận tiện"
+    },
+    {
+      "word": "気",
+      "romaji": "khí",
+      "translation": "khí, tinh thần (気分)",
+      "q": "Chữ 気 trong từ 気分 mang âm Hán Việt nào?",
+      "a": [
+        "KHÍ",
+        "PHÂN",
+        "TÂN",
+        "VĂN"
+      ],
+      "c": 0,
+      "ex": "気分: tâm trạng, cảm giác"
+    },
+    {
+      "word": "分",
+      "romaji": "phân",
+      "translation": "phần, chia (気分)",
+      "q": "Chữ 分 trong từ 気分 mang âm Hán Việt nào?",
+      "a": [
+        "KHÍ",
+        "PHÂN",
+        "XÃ",
+        "VẬN"
+      ],
+      "c": 1,
+      "ex": "気分: tâm trạng, cảm giác"
+    },
+    {
+      "word": "新",
+      "romaji": "tân",
+      "translation": "mới (新聞社)",
+      "q": "Chữ 新 trong từ 新聞社 mang âm Hán Việt nào?",
+      "a": [
+        "TÂN",
+        "VĂN",
+        "XÃ",
+        "ĐỘNG"
+      ],
+      "c": 0,
+      "ex": "新聞社: tòa soạn báo"
+    },
+    {
+      "word": "聞",
+      "romaji": "văn",
+      "translation": "nghe, tin tức (新聞社)",
+      "q": "Chữ 聞 trong từ 新聞社 mang âm Hán Việt nào?",
+      "a": [
+        "TÂN",
+        "VĂN",
+        "XÃ",
+        "HỘI"
+      ],
+      "c": 1,
+      "ex": "新聞社: tòa soạn báo"
+    },
+    {
+      "word": "社",
+      "romaji": "xã",
+      "translation": "công ty, xã hội (新聞社)",
+      "q": "Chữ 社 trong từ 新聞社 mang âm Hán Việt nào?",
+      "a": [
+        "VĂN",
+        "XÃ",
+        "KIM",
+        "ĐỘ"
+      ],
+      "c": 1,
+      "ex": "新聞社: tòa soạn báo"
+    },
+    {
+      "word": "運",
+      "romaji": "vận",
+      "translation": "vận động, chuyển động (運動会)",
+      "q": "Chữ 運 trong từ 運動会 mang âm Hán Việt nào?",
+      "a": [
+        "VẬN",
+        "ĐỘNG",
+        "HỘI",
+        "TRỰC"
+      ],
+      "c": 0,
+      "ex": "運動会: hội thi thể thao"
+    },
+    {
+      "word": "動",
+      "romaji": "động",
+      "translation": "hoạt động, chuyển động (運動会)",
+      "q": "Chữ 動 trong từ 運動会 mang âm Hán Việt nào?",
+      "a": [
+        "VẬN",
+        "ĐỘNG",
+        "TIẾP",
+        "XUẤT"
+      ],
+      "c": 1,
+      "ex": "運動会: hội thi thể thao"
+    },
+    {
+      "word": "会",
+      "romaji": "hội",
+      "translation": "hội, tổ chức sự kiện (運動会)",
+      "q": "Chữ 会 trong từ 運動会 mang âm Hán Việt nào?",
+      "a": [
+        "VẬN",
+        "ĐỘNG",
+        "HỘI",
+        "NHIÊN"
+      ],
+      "c": 2,
+      "ex": "運動会: hội thi thể thao"
+    },
+    {
+      "word": "今",
+      "romaji": "kim",
+      "translation": "hiện nay, lần này (今度)",
+      "q": "Chữ 今 trong từ 今度 mang âm Hán Việt nào?",
+      "a": [
+        "KIM",
+        "ĐỘ",
+        "TRỰC",
+        "TIẾP"
+      ],
+      "c": 0,
+      "ex": "今度: lần tới"
+    },
+    {
+      "word": "度",
+      "romaji": "độ",
+      "translation": "lần, mức độ (今度)",
+      "q": "Chữ 度 trong từ 今度 mang âm Hán Việt nào?",
+      "a": [
+        "KIM",
+        "ĐỘ",
+        "LIÊN",
+        "LẠC"
+      ],
+      "c": 1,
+      "ex": "今度: lần tới"
+    },
+    {
+      "word": "直",
+      "romaji": "trực",
+      "translation": "thẳng, trực tiếp (直接)",
+      "q": "Chữ 直 trong từ 直接 mang âm Hán Việt nào?",
+      "a": [
+        "TRỰC",
+        "TIẾP",
+        "VŨ",
+        "TRỤ"
+      ],
+      "c": 0,
+      "ex": "直接: trực tiếp"
+    },
+    {
+      "word": "接",
+      "romaji": "tiếp",
+      "translation": "tiếp xúc, nới (直接)",
+      "q": "Chữ 接 trong từ 直接 mang âm Hán Việt nào?",
+      "a": [
+        "TRỰC",
+        "TIẾP",
+        "THUYỀN",
+        "BIỆT"
+      ],
+      "c": 1,
+      "ex": "直接: trực tiếp"
+    },
+    {
+      "word": "出",
+      "romaji": "xuất",
+      "translation": "đưa ra, đem ra (出します)",
+      "q": "Chữ 出 trong từ 出します mang âm Hán Việt nào?",
+      "a": [
+        "XUẤT",
+        "NHIÊN",
+        "HOÀNH",
+        "BÌNH"
+      ],
+      "c": 0,
+      "ex": "出します: đem đổ, để (rác)"
+    },
+    {
+      "word": "燃",
+      "romaji": "nhiên",
+      "translation": "cháy, đốt (燃えます)",
+      "q": "Chữ 燃 trong từ 燃えます mang âm Hán Việt nào?",
+      "a": [
+        "XUẤT",
+        "NHIÊN",
+        "PHẪU",
+        "LIÊN"
+      ],
+      "c": 1,
+      "ex": "燃えます: cháy được"
+    },
+    {
+      "word": "連",
+      "romaji": "liên",
+      "translation": "liên kết (連絡)",
+      "q": "Chữ 連 trong từ 連絡 mang âm Hán Việt nào?",
+      "a": [
+        "LIÊN",
+        "LẠC",
+        "VŨ",
+        "TRỤ"
+      ],
+      "c": 0,
+      "ex": "連絡します: liên lạc"
+    },
+    {
+      "word": "絡",
+      "romaji": "lạc",
+      "translation": "liên kết, mạng lưới (連絡)",
+      "q": "Chữ 絡 trong từ 連絡 mang âm Hán Việt nào?",
+      "a": [
+        "LIÊN",
+        "LẠC",
+        "THUYỀN",
+        "BIỆT"
+      ],
+      "c": 1,
+      "ex": "連絡します: liên lạc"
+    },
+    {
+      "word": "宇",
+      "romaji": "vũ",
+      "translation": "không gian, mái nhà (宇宙)",
+      "q": "Chữ 宇 trong từ 宇宙 mang âm Hán Việt nào?",
+      "a": [
+        "VŨ",
+        "TRỤ",
+        "HOÀNH",
+        "BÌNH"
+      ],
+      "c": 0,
+      "ex": "宇宙: vũ trụ"
+    },
+    {
+      "word": "宙",
+      "romaji": "trụ",
+      "translation": "không gian, thời gian (宇宙)",
+      "q": "Chữ 宙 trong từ 宇宙 mang âm Hán Việt nào?",
+      "a": [
+        "VŨ",
+        "TRỤ",
+        "PHẪU",
+        "THÁM"
+      ],
+      "c": 1,
+      "ex": "宇宙: vũ trụ"
+    },
+    {
+      "word": "船",
+      "romaji": "thuyền",
+      "translation": "thuyền, tàu (宇宙船)",
+      "q": "Chữ 船 trong từ 宇宙船 mang âm Hán Việt nào?",
+      "a": [
+        "THUYỀN",
+        "BIỆT",
+        "TRÌ",
+        "THAM"
+      ],
+      "c": 0,
+      "ex": "宇宙船: tàu vũ trụ"
+    },
+    {
+      "word": "別",
+      "romaji": "biệt",
+      "translation": "khác, riêng biệt (別の)",
+      "q": "Chữ 別 trong từ 別の mang âm Hán Việt nào?",
+      "a": [
+        "THUYỀN",
+        "BIỆT",
+        "GIA",
+        "THÂN"
+      ],
+      "c": 1,
+      "ex": "別の: khác"
+    },
+    {
+      "word": "横",
+      "romaji": "hoành",
+      "translation": "bên cạnh, chiều ngang (横)",
+      "q": "Chữ 横 mang âm Hán Việt nào?",
+      "a": [
+        "HOÀNH",
+        "BÌNH",
+        "ĐÔ",
+        "HỢP"
+      ],
+      "c": 0,
+      "ex": "横: bên cạnh"
+    },
+    {
+      "word": "瓶",
+      "romaji": "bình",
+      "translation": "cái chai (瓶)",
+      "q": "Chữ 瓶 mang âm Hán Việt nào?",
+      "a": [
+        "HOÀNH",
+        "BÌNH",
+        "KHÍ",
+        "PHÂN"
+      ],
+      "c": 1,
+      "ex": "瓶: cái chai"
+    },
+    {
+      "word": "缶",
+      "romaji": "phẫu",
+      "translation": "cái lon kim loại (缶)",
+      "q": "Chữ 缶 mang âm Hán Việt nào?",
+      "a": [
+        "PHẪU",
+        "TÂN",
+        "VĂN",
+        "XÃ"
+      ],
+      "c": 0,
+      "ex": "缶: cái lon"
+    }
+  ]
+}

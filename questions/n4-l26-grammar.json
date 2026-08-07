@@ -1,0 +1,125 @@
+{
+  "id": "n4-l26-grammar",
+  "name": "N4 Bài 26 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 26 Minna no Nihongo: ～んです, ～Vていただけませんか, ～たらいいです, kèm vài mẫu ôn tập nâng cao.",
+  "category": "grammar",
+  "createdAt": "2026-08-07T10:00:15.095Z",
+  "updatedAt": "2026-08-07T10:00:33.868Z",
+  "questions": [
+    {
+      "sentence": "大阪に住んでいたんですか",
+      "chunks": [
+        "大阪",
+        "に",
+        "住んでいた",
+        "んですか"
+      ],
+      "translation": "Anh đã từng sống ở Osaka đúng không?",
+      "ex": "んですか dùng để xác nhận lại thông tin dựa trên căn cứ đã nghe/thấy"
+    },
+    {
+      "sentence": "おなかが痛いんです",
+      "chunks": [
+        "おなか",
+        "が",
+        "痛い",
+        "んです"
+      ],
+      "translation": "Tôi bị đau bụng",
+      "ex": "んです giải thích lý do/tình huống khi trả lời câu hỏi どうしたんですか"
+    },
+    {
+      "sentence": "バスが来なかったんです",
+      "chunks": [
+        "バス",
+        "が",
+        "来なかった",
+        "んです"
+      ],
+      "translation": "Là vì xe buýt không đến",
+      "ex": "んです trình bày nguyên nhân cho việc đến muộn"
+    },
+    {
+      "sentence": "手伝いに来ていただけませんか",
+      "chunks": [
+        "手伝いに",
+        "来て",
+        "いただけません",
+        "か"
+      ],
+      "translation": "Anh có thể đến giúp tôi được không?",
+      "ex": "~ていただけませんか: nhờ vả lịch sự, lịch sự hơn ~てください, dùng với cấp trên/người lạ"
+    },
+    {
+      "sentence": "先生を紹介していただけませんか",
+      "chunks": [
+        "先生",
+        "を",
+        "紹介して",
+        "いただけません",
+        "か"
+      ],
+      "translation": "Anh có thể giới thiệu giúp tôi một thầy/cô được không?",
+      "ex": "~ていただけませんか: nhờ vả việc gì một cách lịch sự"
+    },
+    {
+      "sentence": "ごみをどこに出したらいいですか",
+      "chunks": [
+        "ごみ",
+        "を",
+        "どこに",
+        "出したら",
+        "いいですか"
+      ],
+      "translation": "Tôi nên đem rác ra đâu thì được?",
+      "ex": "~たらいいですか: dùng để hỏi xin lời khuyên"
+    },
+    {
+      "sentence": "先生に申し込んだらいいと思います",
+      "chunks": [
+        "先生",
+        "に",
+        "申し込んだら",
+        "いい",
+        "と思います"
+      ],
+      "translation": "Tôi nghĩ nên đăng ký với thầy/cô",
+      "ex": "~たらいい: đưa ra lời khuyên nên làm gì"
+    },
+    {
+      "sentence": "彼は忙しいらしいです",
+      "chunks": [
+        "彼",
+        "は",
+        "忙しい",
+        "らしい",
+        "です"
+      ],
+      "translation": "Nghe nói anh ấy bận thì phải",
+      "ex": "~らしい: suy đoán dựa trên thông tin nghe được (kiến thức nâng cao, gần N3)"
+    },
+    {
+      "sentence": "雨が降りそうです",
+      "chunks": [
+        "雨",
+        "が",
+        "降り",
+        "そう",
+        "です"
+      ],
+      "translation": "Có vẻ như sắp mưa",
+      "ex": "~そうです (thả): dự đoán dựa trên quan sát bằng mắt"
+    },
+    {
+      "sentence": "宿題をしなければなりません",
+      "chunks": [
+        "宿題",
+        "を",
+        "しなければ",
+        "なりません"
+      ],
+      "translation": "Tôi phải làm bài tập",
+      "ex": "~なければなりません: diễn tả nghĩa vụ, việc bắt buộc phải làm (ôn lại N4 quan trọng)"
+    }
+  ]
+}

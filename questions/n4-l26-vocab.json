@@ -1,0 +1,290 @@
+{
+  "id": "n4-l26-vocab",
+  "name": "N4 Bài 26 - Từ vựng (nghĩa)",
+  "description": "Từ vựng Minna no Nihongo Bài 26 (N4). Câu hỏi hỏi nghĩa tiếng Việt của từ.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-07T09:56:42.052Z",
+  "updatedAt": "2026-08-07T09:56:42.052Z",
+  "questions": [
+    {
+      "word": "探します",
+      "romaji": "さがします",
+      "translation": "tìm, tìm kiếm",
+      "q": "Từ 探します (さがします) có nghĩa là gì?",
+      "a": [
+        "tìm, tìm kiếm",
+        "tham gia",
+        "đăng ký",
+        "liên lạc"
+      ],
+      "c": 0,
+      "ex": "探 (thám) - tìm, dò xét"
+    },
+    {
+      "word": "遅れます",
+      "romaji": "おくれます",
+      "translation": "đến muộn, chậm trễ",
+      "q": "Từ 遅れます (おくれます) có nghĩa là gì?",
+      "a": [
+        "cháy được",
+        "đến muộn, chậm trễ",
+        "dọn dẹp gọn gàng",
+        "liên lạc"
+      ],
+      "c": 1,
+      "ex": "遅 (trì) - chậm, trễ"
+    },
+    {
+      "word": "参加します",
+      "romaji": "さんかします",
+      "translation": "tham gia",
+      "q": "Từ 参加します (さんかします) có nghĩa là gì?",
+      "a": [
+        "tham gia",
+        "đăng ký",
+        "tìm kiếm",
+        "cháy được"
+      ],
+      "c": 0,
+      "ex": "参 (tham) + 加 (gia)"
+    },
+    {
+      "word": "申し込みます",
+      "romaji": "もうしこみます",
+      "translation": "đăng ký",
+      "q": "Từ 申し込みます (もうしこみます) có nghĩa là gì?",
+      "a": [
+        "liên lạc",
+        "đăng ký",
+        "dọn dẹp",
+        "đến muộn"
+      ],
+      "c": 1,
+      "ex": "申 (thân) + 込 (nhập) - nộp đơn, đăng ký"
+    },
+    {
+      "word": "都合がいい",
+      "romaji": "つごうがいい",
+      "translation": "thuận tiện, có thời gian",
+      "q": "Cụm 都合がいい (つごうがいい) có nghĩa là gì?",
+      "a": [
+        "không thuận tiện, bận",
+        "thuận tiện, có thời gian",
+        "cảm thấy khỏe",
+        "cảm thấy mệt"
+      ],
+      "c": 1,
+      "ex": "都合 (đô hợp) - sự thuận tiện, hoàn cảnh"
+    },
+    {
+      "word": "都合が悪い",
+      "romaji": "つごうがわるい",
+      "translation": "không thuận tiện, bận",
+      "q": "Cụm 都合が悪い (つごうがわるい) có nghĩa là gì?",
+      "a": [
+        "thuận tiện, có thời gian",
+        "cảm thấy khỏe",
+        "không thuận tiện, bận",
+        "tòa soạn báo"
+      ],
+      "c": 2,
+      "ex": "都合 (đô hợp) - hoàn cảnh, sự thuận tiện"
+    },
+    {
+      "word": "気分がいい",
+      "romaji": "きぶんがいい",
+      "translation": "cảm thấy khỏe, thoải mái",
+      "q": "Cụm 気分がいい (きぶんがいい) có nghĩa là gì?",
+      "a": [
+        "cảm thấy khỏe, thoải mái",
+        "cảm thấy mệt, khó chịu",
+        "thuận tiện",
+        "tham gia"
+      ],
+      "c": 0,
+      "ex": "気分 (khí phân) - tâm trạng, cảm giác cơ thể"
+    },
+    {
+      "word": "気分が悪い",
+      "romaji": "きぶんがわるい",
+      "translation": "cảm thấy mệt, khó chịu",
+      "q": "Cụm 気分が悪い (きぶんがわるい) có nghĩa là gì?",
+      "a": [
+        "cảm thấy khỏe",
+        "tòa soạn báo",
+        "cảm thấy mệt, khó chịu",
+        "hội thi thể thao"
+      ],
+      "c": 2,
+      "ex": "気分 (khí phân) - tâm trạng"
+    },
+    {
+      "word": "新聞社",
+      "romaji": "しんぶんしゃ",
+      "translation": "tòa soạn báo",
+      "q": "Từ 新聞社 (しんぶんしゃ) có nghĩa là gì?",
+      "a": [
+        "tòa soạn báo",
+        "hội thi thể thao",
+        "tàu vũ trụ",
+        "nơi để"
+      ],
+      "c": 0,
+      "ex": "新聞 (tân văn) + 社 (xã)"
+    },
+    {
+      "word": "柔道",
+      "romaji": "じゅうどう",
+      "translation": "judo (nhu đạo)",
+      "q": "Từ 柔道 (じゅうどう) có nghĩa là gì?",
+      "a": [
+        "judo (nhu đạo)",
+        "vũ trụ",
+        "trực tiếp",
+        "lần tới"
+      ],
+      "c": 0,
+      "ex": "柔 (nhu) + 道 (đạo)"
+    },
+    {
+      "word": "運動会",
+      "romaji": "うんどうかい",
+      "translation": "hội thi thể thao",
+      "q": "Từ 運動会 (うんどうかい) có nghĩa là gì?",
+      "a": [
+        "nơi để",
+        "hội thi thể thao",
+        "dọn dẹp",
+        "đăng ký"
+      ],
+      "c": 1,
+      "ex": "運動 (vận động) + 会 (hội)"
+    },
+    {
+      "word": "今度",
+      "romaji": "こんど",
+      "translation": "lần tới, lần này",
+      "q": "Từ 今度 (こんど) có nghĩa là gì?",
+      "a": [
+        "lần tới, lần này",
+        "trực tiếp",
+        "vũ trụ",
+        "liên lạc"
+      ],
+      "c": 0,
+      "ex": "今 (kim) + 度 (độ)"
+    },
+    {
+      "word": "直接",
+      "romaji": "ちょくせつ",
+      "translation": "trực tiếp",
+      "q": "Từ 直接 (ちょくせつ) có nghĩa là gì?",
+      "a": [
+        "trực tiếp",
+        "gián tiếp",
+        "thuận tiện",
+        "cháy được"
+      ],
+      "c": 0,
+      "ex": "直 (trực) + 接 (tiếp)"
+    },
+    {
+      "word": "片付きます",
+      "romaji": "かたづきます",
+      "translation": "được dọn dẹp gọn gàng",
+      "q": "Từ 片付きます (かたづきます) có nghĩa là gì?",
+      "a": [
+        "cháy được",
+        "được dọn dẹp gọn gàng",
+        "tham gia",
+        "đăng ký"
+      ],
+      "c": 1,
+      "ex": "片 (phiến) + 付 (phó)"
+    },
+    {
+      "word": "出します",
+      "romaji": "だします",
+      "translation": "đem đổ, để (rác)",
+      "q": "Trong ngữ cảnh đổ rác, 出します (だします) có nghĩa là gì?",
+      "a": [
+        "đem đổ, để (rác)",
+        "dọn dẹp",
+        "cháy được",
+        "liên lạc"
+      ],
+      "c": 0,
+      "ex": "出 (xuất) - đưa ra, đem ra"
+    },
+    {
+      "word": "燃えます",
+      "romaji": "もえます",
+      "translation": "cháy được",
+      "q": "Từ 燃えます (もえます) có nghĩa là gì?",
+      "a": [
+        "cháy được",
+        "đem đổ",
+        "dọn dẹp",
+        "đăng ký"
+      ],
+      "c": 0,
+      "ex": "燃 (nhiên) - cháy, đốt"
+    },
+    {
+      "word": "置き場",
+      "romaji": "おきば",
+      "translation": "nơi để, chỗ để",
+      "q": "Từ 置き場 (おきば) có nghĩa là gì?",
+      "a": [
+        "nơi để, chỗ để",
+        "tòa soạn báo",
+        "hội thi thể thao",
+        "tàu vũ trụ"
+      ],
+      "c": 0,
+      "ex": "置 (trí) + 場 (trường)"
+    },
+    {
+      "word": "連絡します",
+      "romaji": "れんらくします",
+      "translation": "liên lạc",
+      "q": "Từ 連絡します (れんらくします) có nghĩa là gì?",
+      "a": [
+        "liên lạc",
+        "đăng ký",
+        "tham gia",
+        "tìm kiếm"
+      ],
+      "c": 0,
+      "ex": "連 (liên) + 絡 (lạc)"
+    },
+    {
+      "word": "宇宙",
+      "romaji": "うちゅう",
+      "translation": "vũ trụ",
+      "q": "Từ 宇宙 (うちゅう) có nghĩa là gì?",
+      "a": [
+        "vũ trụ",
+        "tàu vũ trụ",
+        "nhà du hành vũ trụ",
+        "trực tiếp"
+      ],
+      "c": 0,
+      "ex": "宇 (vũ) + 宙 (trụ)"
+    },
+    {
+      "word": "宇宙飛行士",
+      "romaji": "うちゅうひこうし",
+      "translation": "nhà du hành vũ trụ",
+      "q": "Từ 宇宙飛行士 (うちゅうひこうし) có nghĩa là gì?",
+      "a": [
+        "tàu vũ trụ",
+        "vũ trụ",
+        "nhà du hành vũ trụ",
+        "hội thi thể thao"
+      ],
+      "c": 2,
+      "ex": "宇宙 (vũ trụ) + 飛行 (phi hành) + 士 (sĩ)"
+    }
+  ]
+}

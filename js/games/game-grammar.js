@@ -16,6 +16,7 @@ let grammarAnswer = [];
 let grammarPoolChunks = [];
 let grammarQuestionStartTime = 0;
 let grammarDragState = null;
+let grammarAnswered = false;
 const GRAMMAR_RESUME_STORAGE_KEY = 'jq_resume_grammar';
 
 function isGrammarAnswerCorrect(submitted, correct) {
@@ -27,6 +28,15 @@ function createGrammarResumeState() {
   if (!Array.isArray(grammarDeck) || grammarDeck.length === 0) return null;
   if (grammarIdx >= grammarDeck.length) return null;
 
+  // The current question has already been graded this render (correct or wrong)
+  // but the player left before pressing "Next" / before auto-advance fired.
+  // Persisting grammarIdx/grammarAnswer as-is would resume onto an
+  // already-scored question (in the wrong-answer case, with the full correct
+  // order already placed and re-triggerable) — advance the resume pointer
+  // past it instead, as if "Next" had already been pressed.
+  const resumeIdx = grammarAnswered ? grammarIdx + 1 : grammarIdx;
+  if (resumeIdx >= grammarDeck.length) return null;
+
   return {
     version: 1,
     id: `grammar-${Date.now()}`,
@@ -34,13 +44,13 @@ function createGrammarResumeState() {
     activeSetId: activeSetId || 'set-default',
     savedAt: new Date().toISOString(),
     deck: grammarDeck.map(q => ({ ...q })),
-    idx: grammarIdx,
+    idx: resumeIdx,
     hp: grammarHP,
     score: grammarScore,
     combo: grammarCombo,
     correct: grammarCorrect,
     wrong: grammarWrong,
-    answer: [...grammarAnswer]
+    answer: grammarAnswered ? [] : [...grammarAnswer]
   };
 }
 
@@ -126,6 +136,7 @@ function renderGrammar(resuming) {
     return grammarComplete();
   }
 
+  grammarAnswered = false;
   const q = grammarDeck[grammarIdx];
   grammarQuestionStartTime = Date.now();
   document.getElementById('grammar-progress').textContent = `${grammarIdx + 1} / ${grammarDeck.length}`;
@@ -228,6 +239,7 @@ function attachGrammarDragHandlers(btn) {
 }
 
 function checkGrammarAnswer() {
+  grammarAnswered = true;
   stopGrammarTimer();
   const q = grammarDeck[grammarIdx];
   const responseTime = Date.now() - grammarQuestionStartTime;
@@ -333,6 +345,7 @@ function handleGrammarTimeout() {
   stopGrammarTimer();
   if (grammarIdx >= grammarDeck.length) return;
 
+  grammarAnswered = true;
   const q = grammarDeck[grammarIdx];
   document.querySelectorAll('.grammar-chip').forEach(b => { b.disabled = true; });
   document.getElementById('screen-grammar').classList.add('shake');

@@ -240,7 +240,7 @@ this.setWriteState = (state) => {
   writeCurrentKanjiIdx = state.currentKanjiIdx ?? writeCurrentKanjiIdx;
 };
 this.isGrammarAnswerCorrect = isGrammarAnswerCorrect;
-this.grammarState = () => ({ grammarDeck, grammarIdx, grammarHP, grammarScore, grammarCombo, grammarCorrect, grammarWrong, grammarAnswer });
+this.grammarState = () => ({ grammarDeck, grammarIdx, grammarHP, grammarScore, grammarCombo, grammarCorrect, grammarWrong, grammarAnswer, grammarAnswered });
 this.setGrammarState = (state) => {
   grammarDeck = state.deck ?? grammarDeck;
   grammarIdx = state.idx ?? grammarIdx;
@@ -250,6 +250,7 @@ this.setGrammarState = (state) => {
   grammarCorrect = state.correct ?? grammarCorrect;
   grammarWrong = state.wrong ?? grammarWrong;
   grammarAnswer = state.answer ?? grammarAnswer;
+  if (state.answered !== undefined) grammarAnswered = state.answered;
 };`,
     context
   );
@@ -406,6 +407,63 @@ function testGrammarResumeRoundTrip() {
   assert.strictEqual(context.localStorage.getItem('jq_resume_grammar'), null);
 }
 
+function testGrammarResumeAdvancesPastAlreadyGradedQuestion() {
+  const context = createContext();
+  const deck = sampleGrammarDeck();
+  context.setAppState({ activeSetId: 'set-a' });
+  // Simulate: player answered question 0 wrong, the reveal placed the full
+  // correct order into grammarAnswer, then the player exited before
+  // pressing "Next". grammarAnswered=true marks this question as graded.
+  context.setGrammarState({
+    deck,
+    idx: 0,
+    hp: 60,
+    score: 40,
+    combo: 0,
+    correct: 0,
+    wrong: 1,
+    answer: [...deck[0].chunks],
+    answered: true
+  });
+
+  const saved = context.saveGameResumeState('grammar');
+  assert.strictEqual(saved.type, 'grammar');
+  assert.strictEqual(saved.idx, 1, 'resume pointer should skip past the already-graded question');
+  assert.deepStrictEqual(Array.from(saved.answer), [], 'resume answer should be empty, not the revealed correct order');
+
+  context.setGrammarState({ deck: [], idx: 0, hp: 100, score: 0, combo: 0, correct: 0, wrong: 0, answer: [], answered: false });
+  const resumed = context.resumeGameFromState('grammar');
+  const state = context.grammarState();
+
+  assert.strictEqual(resumed, true);
+  assert.strictEqual(state.grammarIdx, 1);
+  assert.deepStrictEqual(Array.from(state.grammarAnswer), []);
+  assert.strictEqual(context.localStorage.getItem('jq_resume_grammar'), null);
+}
+
+function testGrammarResumeReturnsNullWhenGradedQuestionWasLast() {
+  const context = createContext();
+  const deck = sampleGrammarDeck();
+  context.setAppState({ activeSetId: 'set-a' });
+  // The graded question was the last one in the deck — nothing left to
+  // resume, so no resume state should be persisted (same as deck-exhausted).
+  context.setGrammarState({
+    deck,
+    idx: deck.length - 1,
+    hp: 50,
+    score: 60,
+    combo: 1,
+    correct: 1,
+    wrong: 1,
+    answer: [...deck[deck.length - 1].chunks],
+    answered: true
+  });
+
+  const saved = context.saveGameResumeState('grammar');
+  assert.strictEqual(saved, false, 'no resumable question remains, so save should report false');
+  assert.strictEqual(context.localStorage.getItem('jq_resume_grammar'), null);
+}
+
 function testStartGameShowsResumeModalForAnyGame() {
   const context = createContext();
   context.setAppState({ questions: sampleDeck() });
@@ -426,5 +484,7 @@ testWriteResumeRoundTrip();
 testStartGameShowsResumeModalForAnyGame();
 testIsGrammarAnswerCorrectComparesOrderAndLength();
 testGrammarResumeRoundTrip();
+testGrammarResumeAdvancesPastAlreadyGradedQuestion();
+testGrammarResumeReturnsNullWhenGradedQuestionWasLast();
 
 console.log('all-game resume tests passed');

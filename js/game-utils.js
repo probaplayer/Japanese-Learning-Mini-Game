@@ -5,9 +5,24 @@
 const LEVEL_XP_CURVE = 1.2;
 const BASE_XP_REWARD = 5;
 
+const GAME_CATEGORY_COMPAT = {
+  quiz: ['vocabulary'],
+  listen: ['vocabulary'],
+  type: ['vocabulary'],
+  match: ['vocabulary'],
+  flash: ['vocabulary'],
+  write: ['vocabulary'],
+  grammar: ['grammar']
+};
+
+function getVisibleGamesForCategory(category) {
+  const effectiveCategory = category || 'vocabulary';
+  return Object.keys(GAME_CATEGORY_COMPAT).filter(game => GAME_CATEGORY_COMPAT[game].includes(effectiveCategory));
+}
+
 /* ── QUESTION ID HASHING ── */
 function generateQuestionId(q) {
-  const str = `${q.word}||${q.q}||${q.romaji}||${q.translation || ''}`;
+  const str = `${q.word ?? q.sentence ?? ''}||${q.q ?? ''}||${q.romaji ?? ''}||${q.translation || ''}`;
   let hash = 0;
   for (let i = 0; i < str.length; i++) {
     const char = str.charCodeAt(i);
@@ -544,7 +559,7 @@ function checkDailyStreak() {
 
 /* ── STATS COMPUTATION ── */
 function computeGameTypeStats() {
-  const gameTypes = ['quiz', 'listen', 'flash', 'match', 'type', 'write'];
+  const gameTypes = ['quiz', 'listen', 'flash', 'match', 'type', 'write', 'grammar'];
   const result = {};
   for (const t of gameTypes) {
     result[t] = { correct: 0, wrong: 0 };

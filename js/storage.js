@@ -239,7 +239,7 @@ function saveSessionHistory() {
 }
 
 function initQuestionStats(questionsArr) {
-  const gameTypes = ['quiz', 'listen', 'flash', 'match', 'type', 'write'];
+  const gameTypes = ['quiz', 'listen', 'flash', 'match', 'type', 'write', 'grammar'];
   questionsArr.forEach((q) => {
     const legacyId = generateQuestionId(q);
     const id = getScopedQuestionId(q);

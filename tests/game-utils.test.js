@@ -54,7 +54,9 @@ this.getPrioritizedDeck = getPrioritizedDeck;
 this.shuffleAnswerOptions = shuffleAnswerOptions;
 this.updateQuestionStats = updateQuestionStats;
 this.getConfidenceLevel = getConfidenceLevel;
-this.getEffectiveIncorrect = getEffectiveIncorrect;`,
+this.getEffectiveIncorrect = getEffectiveIncorrect;
+this.getVisibleGamesForCategory = getVisibleGamesForCategory;
+this.GAME_CATEGORY_COMPAT = GAME_CATEGORY_COMPAT;`,
     context
   );
   return context;
@@ -183,6 +185,32 @@ function testConfidenceAndEffectiveIncorrectUseDecayHistory() {
   assert.strictEqual(context.getConfidenceLevel(8, 1), 'mastered');
 }
 
+function testGenerateQuestionIdHandlesGrammarShapedQuestions() {
+  const context = createContext();
+  const grammarQuestion = { sentence: '私は学生です', chunks: ['私', 'は', '学生', 'です'], translation: 'Tôi là học sinh' };
+  const sameQuestion = { ...grammarQuestion };
+  const changedQuestion = { ...grammarQuestion, translation: 'Khác' };
+
+  assert.match(context.generateQuestionId(grammarQuestion), /^q-[a-z0-9]+$/);
+  assert.strictEqual(context.generateQuestionId(grammarQuestion), context.generateQuestionId(sameQuestion));
+  assert.notStrictEqual(context.generateQuestionId(grammarQuestion), context.generateQuestionId(changedQuestion));
+}
+
+function testGetVisibleGamesForCategorySeparatesVocabularyAndGrammar() {
+  const context = createContext();
+
+  const vocabGames = context.getVisibleGamesForCategory('vocabulary');
+  assert.deepStrictEqual([...vocabGames].sort(), ['flash', 'listen', 'match', 'quiz', 'type', 'write']);
+
+  const grammarGames = context.getVisibleGamesForCategory('grammar');
+  assert.deepStrictEqual([...grammarGames].sort(), ['grammar']);
+}
+
+function testGetVisibleGamesForCategoryDefaultsUnknownCategoryToVocabulary() {
+  const context = createContext();
+  assert.deepStrictEqual([...context.getVisibleGamesForCategory(undefined)].sort(), ['flash', 'listen', 'match', 'quiz', 'type', 'write']);
+}
+
 testGenerateQuestionIdIsStableAndContentBased();
 testScopedQuestionIdsIncludeActiveSetOnce();
 testShuffleAnswerOptionsKeepsCorrectAnswerMapping();
@@ -191,5 +219,8 @@ testShuffleAnswerOptionsReturnsNullTranslationsWhenAbsent();
 testUpdateQuestionStatsTracksCorrectWrongAndResponseTime();
 testAvailableQuestionsFiltersCooldownBySetAndMode();
 testConfidenceAndEffectiveIncorrectUseDecayHistory();
+testGenerateQuestionIdHandlesGrammarShapedQuestions();
+testGetVisibleGamesForCategorySeparatesVocabularyAndGrammar();
+testGetVisibleGamesForCategoryDefaultsUnknownCategoryToVocabulary();
 
 console.log('game-utils tests passed');

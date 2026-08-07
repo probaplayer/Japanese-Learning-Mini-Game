@@ -1,0 +1,28 @@
+/* ================================================
+   Grammar Sentence Builder Styles
+   ================================================ */
+
+.grammar-container { width: 100%; max-width: 1000px; display: flex; flex-direction: column; gap: 16px; flex: 1; min-height: 0; }
+
+.grammar-translation { font-size: 16px; color: var(--text); text-align: center; }
+
+.grammar-answer-row, .grammar-pool {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  min-height: 52px;
+  padding: 10px;
+  border-radius: var(--radius);
+}
+.grammar-answer-row { border: 2px dashed var(--border); background: rgba(255,255,255,.03); }
+.grammar-pool { border: none; }
+
+.grammar-chip { font-family: var(--font-jp); font-size: 18px; padding: 10px 16px; touch-action: none; }
+.grammar-chip-placed { cursor: grab; }
+.grammar-chip-placed.dragging { opacity: 0.5; cursor: grabbing; }
+
+/* Desktop 150% scale */
+@media (min-width: 1024px) {
+  .grammar-container { gap: 24px; }
+  .grammar-translation { font-size: 24px; }
+  .grammar-answer-row, .grammar-pool { min-height: 78px; padding: 15px; gap: 12px; }
+  .grammar-chip { font-size: 27px; padding: 15px 24px; }
+}

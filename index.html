@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/game-flash.css">
   <link rel="stylesheet" href="css/game-type.css">
   <link rel="stylesheet" href="css/game-write.css">
+  <link rel="stylesheet" href="css/game-grammar.css">
   <link rel="stylesheet" href="css/game-hud.css">
   <link rel="stylesheet" href="css/game-overlays.css">
   <link rel="stylesheet" href="css/modals.css">
@@ -90,6 +91,11 @@
           <button class="menu-btn btn-write" onclick="startGame('write')">
             <span class="btn-icon">✍️</span>
             <span class="btn-text">WRITING PRACTICE<br><small>Type Japanese</small></span>
+            <span class="btn-arrow">▶</span>
+          </button>
+          <button class="menu-btn btn-grammar" onclick="startGame('grammar')">
+            <span class="btn-icon">🧩</span>
+            <span class="btn-text">SENTENCE BUILDER<br><small>Arrange the grammar</small></span>
             <span class="btn-arrow">▶</span>
           </button>
           <button class="menu-btn btn-stats" onclick="showScreen('screen-stats')">
@@ -579,6 +585,40 @@
     </div>
   </div>
 
+  <!-- GAME 7: GRAMMAR SENTENCE BUILDER -->
+  <div id="screen-grammar" class="screen">
+    <div class="game-hud">
+      <button class="hud-back" onclick="exitGame()">◀</button>
+      <div class="hud-title">🧩 SENTENCE BUILDER</div>
+      <div class="hud-stats">
+        <span>⭐ <span id="grammar-score">0</span></span>
+        <span>🔥 x<span id="grammar-combo">0</span></span>
+        <span>⏱ <span id="grammar-timer">00</span>s</span>
+        <span id="grammar-progress">0 / 0</span>
+      </div>
+    </div>
+    <div class="hp-bar-wrap"><div class="hp-bar-inner" id="grammar-hpbar"></div></div>
+
+    <div class="grammar-container">
+      <div class="question-card" id="grammar-translation-card">
+        <div id="grammar-translation" class="grammar-translation"></div>
+      </div>
+      <div class="grammar-answer-row" id="grammar-answer-row"></div>
+      <div class="grammar-pool" id="grammar-pool"></div>
+      <div class="explanation-box hidden" id="grammar-explanation"></div>
+      <button class="next-btn hidden" id="grammar-next" onclick="nextGrammar()">Next ▶</button>
+    </div>
+
+    <div class="gameover-overlay hidden" id="grammar-gameover">
+      <div class="gameover-box">
+        <div class="go-title">GAME OVER</div>
+        <div class="go-score">Score: <span id="grammar-go-score">0</span></div>
+        <button class="action-btn" onclick="restartGrammar()">▶ RESTART</button>
+        <button class="action-btn btn-secondary" onclick="exitGame()">◀ MENU</button>
+      </div>
+    </div>
+  </div>
+
   <!-- PRACTICE WRITING MODAL (Canvas) -->
   <div id="write-practice-modal" class="modal-overlay hidden" onclick="if (event.target === this) closeWritePracticeModal()">
     <div class="modal-box practice-modal-box">
@@ -661,6 +701,7 @@
   <script src="js/games/game-match.js"></script>
   <script src="js/games/game-type.js"></script>
   <script src="js/games/game-write.js"></script>
+  <script src="js/games/game-grammar.js"></script>
 
   <!-- GAME PRIORITY SETTINGS MODAL -->
   <div id="game-priority-modal" class="modal hidden">

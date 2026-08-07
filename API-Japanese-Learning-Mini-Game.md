@@ -16,7 +16,6 @@
 - [Question Stats API](#question-stats-api)
 - [Settings API](#settings-api)
 - [Game Utilities API](#game-utilities-api)
-- [Firebase API](#firebase-api)
 
 ---
 
@@ -48,16 +47,35 @@
 | `ex` | string | No | Explanation text |
 | `aTranslation` | array | No | Array of exactly 4 non-empty strings, positionally parallel to `a` — the translation shown under each choice button after answering (index i describes `a[i]`, including decoy answers, which should get a short gloss like "(từ không có nghĩa)" rather than being left blank) |
 
+### Grammar Question Object
+
+```javascript
+{
+  "sentence": "私は学生です",              // Full correct sentence (required)
+  "chunks": ["私", "は", "学生", "です"],  // Ordered pieces; must concatenate to sentence (required, min 2)
+  "translation": "Tôi là học sinh",         // Vietnamese meaning (required)
+  "ex": "は đánh dấu chủ đề câu"            // Grammar explanation (optional)
+}
+```
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `sentence` | string | Yes | Full correct Japanese sentence |
+| `chunks` | array | Yes | Ordered word/phrase pieces whose concatenation equals `sentence` |
+| `translation` | string | Yes | Vietnamese meaning |
+| `ex` | string | No | Grammar-point explanation shown after answering |
+
 ### QuestionSet Object
 
 ```javascript
 {
-  "id": "set-123456789",           // Unique set ID
-  "name": "My Question Set",     // Set name
-  "questions": [...],          // Array of Question objects
-  "createdAt": "2024-01-01T00:00:00.000Z",
-  "updatedAt": "2024-01-01T00:00:00.000Z",
-  "firestoreId": "abc123..."   // Optional: Firebase document ID
+  "id": "n5-core",           // Set ID, referenced from manifest.json
+  "name": "N5 Core Vocabulary",
+  "category": "vocabulary",  // "vocabulary" or "grammar" — determines which games unlock in the menu
+  "description": "...",
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "updatedAt": "2026-01-01T00:00:00.000Z",
+  "questions": [...]
 }
 ```
 
@@ -186,8 +204,7 @@ playerCombo = 0        // Current combo streak
 
 | Key | Type | Description |
 |-----|------|-------------|
-| `jq_question_sets` | array | All question sets |
-| `jq_active_set` | string | Active set ID |
+| `jq_active_set` | string | Currently active question set id (the sets themselves are fetched from questions/manifest.json, not stored in localStorage) |
 | `jq_hp` | number | Player HP |
 | `jq_exp` | number | Player EXP |
 | `jq_level` | number | Player level |
@@ -196,7 +213,6 @@ playerCombo = 0        // Current combo streak
 | `jq_question_stats` | object | Question statistics |
 | `jq_session_history` | array | Session history |
 | `jq_daily_streak` | object | Daily streak data |
-| `jq_firebase_config` | object | Firebase configuration |
 
 ### Functions
 
@@ -586,7 +602,7 @@ updateQuestionStats(0, "quiz", false, 5000);
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `questionIdOrIndex` | string/number | Question ID or index |
-| `gameType` | string | Game type: quiz, listen, flash, match, type, write |
+| `gameType` | string | Game type: quiz, listen, flash, match, type, write, grammar |
 | `isCorrect` | boolean | Whether answer was correct |
 | `responseTime` | number | Response time in ms (optional) |
 
@@ -905,101 +921,6 @@ const cleaned = cleanIncorrectHistory(history);
 
 ---
 
-## Firebase API
-
-### Configuration
-
-```javascript
-{
-  "apiKey": "...",
-  "authDomain": "...",
-  "projectId": "my-project",
-  "storageBucket": "...",
-  "messagingSenderId": "...",
-  "appId": "...",
-  "measurementId": "..."
-}
-```
-
-### Functions
-
-#### loadFirebaseConfig()
-
-Loads Firebase config from localStorage.
-
-```javascript
-const config = loadFirebaseConfig();
-// Returns: config object or null
-```
-
----
-
-#### saveFirebaseConfig()
-
-Saves Firebase config to localStorage.
-
-```javascript
-saveFirebaseConfig();
-// Reads from UI form elements
-```
-
----
-
-#### initializeFirebase(config)
-
-Initializes Firebase SDK.
-
-```javascript
-const initialized = initializeFirebase(config);
-// Returns: boolean
-```
-
----
-
-#### backupQuestionSet()
-
-Backs up current question set to Firebase.
-
-```javascript
-await backupQuestionSet();
-// Shows toast on success/failure
-```
-
----
-
-#### importFirebaseSet(docId)
-
-Imports a question set from Firebase.
-
-```javascript
-await importFirebaseSet("abc123");
-// Shows toast on success/failure
-```
-
----
-
-#### showFirebaseSetsModal()
-
-Shows Firebase sets management modal.
-
-```javascript
-await showFirebaseSetsModal();
-// Fetches and displays all sets
-```
-
----
-
-#### deleteFirebaseSet(docId)
-
-Deletes a question set from Firebase.
-
-```javascript
-await deleteFirebaseSet("abc123");
-// Shows confirmation dialog
-```
-
----
-
 ## Constants
 
 | Constant | Value | Description |
@@ -1025,3 +946,4 @@ await deleteFirebaseSet("abc123");
 | `match` | Match pairs game |
 | `type` | Falling words typing |
 | `write` | Writing/drawing |
+| `grammar` | Sentence Builder (grammar word-order arrangement) |

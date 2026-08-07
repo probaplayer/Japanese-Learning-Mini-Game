@@ -4,7 +4,7 @@
 
 ## ✨ Features
 
-### 🕹️ 6 Mini-Games
+### 🕹️ 7 Mini-Games
 
 | Game | Description |
 |------|-------------|
@@ -14,6 +14,7 @@
 | 🧩 **Match** | Pair Japanese words with correct readings/translations |
 | 🃏 **Flashcard** | Flip cards, self-assess with 4 levels: New / Learning / Familiar / Mastered |
 | ✍️ **Writing Practice** | Type Japanese characters from memory |
+| 🧩 **Sentence Builder** | Arrange shuffled word chunks into the correct grammar order |
 
 ### 🧠 Smart Learning System
 
@@ -30,6 +31,7 @@
 - Question sets live as JSON files in `questions/`, listed in `questions/manifest.json`
 - The game only ever *reads* these files (via `fetch`) and lets you switch between them — no in-browser editing
 - Sets are authored, edited, and published through the MCP server in `mcp-server/` (see below)
+- Each set has a `category` — `vocabulary` (unlocks Quiz/Listening/Falling Words/Match/Flashcard/Writing) or `grammar` (unlocks Sentence Builder). The main menu shows only the games that match the active set's category.
 
 ### ⚙️ Customizable Settings
 

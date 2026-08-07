@@ -326,7 +326,7 @@ function testAddQuestionValidatesAgainstSetsOwnCategory() {
 
   const index = repo.addQuestion('demo-grammar', sampleGrammarQuestion);
   assert.strictEqual(index, 0);
-  assert.throws(() => repo.addQuestion('demo-grammar', sampleQuestion), /chunks/);
+  assert.throws(() => repo.addQuestion('demo-grammar', sampleQuestion), /sentence/);
 }
 
 testValidateQuestionAcceptsWellFormedQuestion();

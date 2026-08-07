@@ -30,11 +30,11 @@ function validateVocabularyQuestion(question) {
 }
 
 function validateGrammarQuestion(question) {
-  if (!Array.isArray(question.chunks) || question.chunks.length < 2 || question.chunks.some(c => typeof c !== 'string' || c.length === 0)) {
-    return 'Question field "chunks" must be an array of at least 2 non-empty strings';
-  }
   if (typeof question.sentence !== 'string' || question.sentence.length === 0) {
     return 'Question field "sentence" must be a non-empty string';
+  }
+  if (!Array.isArray(question.chunks) || question.chunks.length < 2 || question.chunks.some(c => typeof c !== 'string' || c.length === 0)) {
+    return 'Question field "chunks" must be an array of at least 2 non-empty strings';
   }
   if (question.chunks.join('') !== question.sentence) {
     return 'Question field "chunks" must concatenate to sentence';

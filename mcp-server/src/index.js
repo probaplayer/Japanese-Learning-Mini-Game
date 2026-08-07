@@ -23,6 +23,15 @@ const questionShape = {
   aTranslation: z.array(z.string().min(1)).length(4).optional()
 };
 
+const grammarQuestionShape = {
+  sentence: z.string().min(1),
+  chunks: z.array(z.string().min(1)).min(2),
+  translation: z.string().min(1),
+  ex: z.string().min(1).optional()
+};
+
+const anyQuestionShape = z.union([z.object(questionShape), z.object(grammarQuestionShape)]);
+
 const questionPatchFieldsShape = z.object(questionShape).partial().strict()
   .refine(fields => Object.keys(fields).length > 0, { message: 'fields must include at least one field to update' });
 
@@ -81,7 +90,8 @@ server.registerTool(
       id: z.string().optional(),
       name: z.string().min(1),
       description: z.string().optional(),
-      questions: z.array(z.object(questionShape)).optional()
+      category: z.enum(['vocabulary', 'grammar']).optional(),
+      questions: z.array(anyQuestionShape).optional()
     }
   },
   guarded((args) => repo.createQuestionSet(args))
@@ -101,7 +111,7 @@ server.registerTool(
   {
     title: 'Add question',
     description: 'Append a question to an existing question set',
-    inputSchema: { setId: z.string(), question: z.object(questionShape) }
+    inputSchema: { setId: z.string(), question: anyQuestionShape }
   },
   guarded(({ setId, question }) => ({ index: repo.addQuestion(setId, question) }))
 );
@@ -111,7 +121,7 @@ server.registerTool(
   {
     title: 'Update question',
     description: 'Replace the question at the given index within a question set',
-    inputSchema: { setId: z.string(), index: z.number().int().min(0), question: z.object(questionShape) }
+    inputSchema: { setId: z.string(), index: z.number().int().min(0), question: anyQuestionShape }
   },
   guarded(({ setId, index, question }) => {
     repo.updateQuestion(setId, index, question);

@@ -116,6 +116,31 @@ async function main() {
   const finalList = await client.callTool({ name: 'list_question_sets', arguments: {} });
   assert.strictEqual(JSON.parse(finalList.content[0].text).length, 1);
 
+  const createdGrammarSet = await client.callTool({
+    name: 'create_question_set',
+    arguments: { name: 'Grammar Set', category: 'grammar', questions: [] }
+  });
+  const grammarSet = JSON.parse(createdGrammarSet.content[0].text);
+  assert.strictEqual(grammarSet.category, 'grammar');
+
+  const addedGrammarQuestion = await client.callTool({
+    name: 'add_question',
+    arguments: {
+      setId: 'grammar-set',
+      question: { sentence: '私は学生です', chunks: ['私', 'は', '学生', 'です'], translation: 'Tôi là học sinh', ex: 'は đánh dấu chủ đề' }
+    }
+  });
+  assert.strictEqual(JSON.parse(addedGrammarQuestion.content[0].text).index, 0);
+
+  const rejectedVocabQuestionInGrammarSet = await client.callTool({
+    name: 'add_question',
+    arguments: {
+      setId: 'grammar-set',
+      question: { word: 'x', romaji: 'x', translation: 'x', q: 'x?', a: ['1', '2', '3', '4'], c: 0, ex: 'ex' }
+    }
+  });
+  assert.strictEqual(rejectedVocabQuestionInGrammarSet.isError, true);
+
   await client.close();
   fs.rmSync(questionsDir, { recursive: true, force: true });
   console.log('mcp server smoke test passed');

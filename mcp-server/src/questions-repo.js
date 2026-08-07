@@ -197,7 +197,16 @@ export function createQuestionsRepo(baseDir) {
     for (const entry of entries) {
       const set = readSetFile(entry.file);
       set.questions.forEach((question, index) => {
-        const haystack = [question.word, question.romaji, question.translation, question.q, question.ex, ...question.a]
+        const haystack = [
+          question.word,
+          question.romaji,
+          question.translation,
+          question.q,
+          question.ex,
+          question.sentence,
+          question.chunks ? question.chunks.join(' ') : '',
+          ...(question.a || [])
+        ]
           .join('\n')
           .toLowerCase();
         if (haystack.includes(needle)) {

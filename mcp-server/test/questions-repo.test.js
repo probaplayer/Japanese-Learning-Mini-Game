@@ -319,6 +319,30 @@ function testCreateQuestionSetDefaultsCategoryToVocabulary() {
   assert.strictEqual(created.category, 'vocabulary');
 }
 
+function testSearchQuestionsAcrossMixedVocabularyAndGrammarSetsDoesNotThrow() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createQuestionSet({ id: 'vocab-set', name: 'Vocab Set', category: 'vocabulary', questions: [sampleQuestion] });
+  repo.createQuestionSet({ id: 'grammar-set', name: 'Grammar Set', category: 'grammar', questions: [sampleGrammarQuestion] });
+
+  // Finding 1 regression: with no setId, searchQuestions used to spread
+  // question.a (undefined on grammar questions) and throw "question.a is
+  // not iterable" before ever reaching the vocabulary matches.
+  assert.doesNotThrow(() => repo.searchQuestions('a'));
+
+  const byWord = repo.searchQuestions('学生');
+  const setIds = byWord.results.map(r => r.setId).sort();
+  assert.deepStrictEqual(setIds, ['grammar-set', 'vocab-set'], 'should find matches in both the vocabulary set (word) and the grammar set (sentence)');
+
+  const byTranslation = repo.searchQuestions('học sinh');
+  assert.strictEqual(byTranslation.results.length, 1);
+  assert.strictEqual(byTranslation.results[0].setId, 'grammar-set');
+
+  const byChunkText = repo.searchQuestions('です');
+  assert.strictEqual(byChunkText.results.length, 1);
+  assert.strictEqual(byChunkText.results[0].setId, 'grammar-set');
+}
+
 function testAddQuestionValidatesAgainstSetsOwnCategory() {
   const dir = makeTempQuestionsDir();
   const repo = createQuestionsRepo(dir);
@@ -362,5 +386,6 @@ testValidateQuestionGrammarExIsOptional();
 testCreateQuestionSetPersistsCategoryToManifestAndFile();
 testCreateQuestionSetDefaultsCategoryToVocabulary();
 testAddQuestionValidatesAgainstSetsOwnCategory();
+testSearchQuestionsAcrossMixedVocabularyAndGrammarSetsDoesNotThrow();
 
 console.log('questions-repo tests passed');

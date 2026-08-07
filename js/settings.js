@@ -152,7 +152,7 @@ function updateSettingsFromUI() {
 function openGamePrioritySettings(gameType) {
   currentGameType = gameType;
   const modal = document.getElementById('game-priority-modal');
-  const titles = { quiz: '📝 Quiz', listen: '🎧 Listening', flash: '🃏 Flashcard', match: '🧩 Match', type: '⌨ Falling Words', write: '✍️ Writing' };
+  const titles = { quiz: '📝 Quiz', listen: '🎧 Listening', flash: '🃏 Flashcard', match: '🧩 Match', type: '⌨ Falling Words', write: '✍️ Writing', grammar: '🧩 Sentence Builder' };
   document.getElementById('game-priority-title').textContent = `⚙️ ${titles[gameType]} Settings`;
   
   const perGame = settings.priority?.perGame?.[gameType];
@@ -286,7 +286,8 @@ function resetSettingsToDefault() {
         flash: { enabled: null, incorrect: 8, timeSinceSeen: 3, learning: 2, slowResponse: 3 },
         match: { enabled: null, incorrect: 8, timeSinceSeen: 3, learning: 2, slowResponse: 3 },
         type: { enabled: null, incorrect: 8, timeSinceSeen: 3, learning: 2, slowResponse: 3 },
-        write: { enabled: null, incorrect: 8, timeSinceSeen: 3, learning: 2, slowResponse: 3 }
+        write: { enabled: null, incorrect: 8, timeSinceSeen: 3, learning: 2, slowResponse: 3 },
+        grammar: { enabled: null, incorrect: 8, timeSinceSeen: 3, learning: 2, slowResponse: 3 }
       }
     }
   };

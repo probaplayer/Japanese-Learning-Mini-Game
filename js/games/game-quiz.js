@@ -22,6 +22,7 @@ function saveGameResumeState(type) {
   if (type === 'match' && typeof saveMatchResumeState === 'function') return saveMatchResumeState();
   if (type === 'type' && typeof saveTypeResumeState === 'function') return saveTypeResumeState();
   if (type === 'write' && typeof saveWriteResumeState === 'function') return saveWriteResumeState();
+  if (type === 'grammar' && typeof saveGrammarResumeState === 'function') return saveGrammarResumeState();
   return false;
 }
 
@@ -32,6 +33,7 @@ function loadGameResumeState(type) {
   if (type === 'match' && typeof loadMatchResumeState === 'function') return loadMatchResumeState();
   if (type === 'type' && typeof loadTypeResumeState === 'function') return loadTypeResumeState();
   if (type === 'write' && typeof loadWriteResumeState === 'function') return loadWriteResumeState();
+  if (type === 'grammar' && typeof loadGrammarResumeState === 'function') return loadGrammarResumeState();
   return null;
 }
 
@@ -42,6 +44,7 @@ function clearGameResumeState(type) {
   if (type === 'match' && typeof clearMatchResumeState === 'function') clearMatchResumeState();
   if (type === 'type' && typeof clearTypeResumeState === 'function') clearTypeResumeState();
   if (type === 'write' && typeof clearWriteResumeState === 'function') clearWriteResumeState();
+  if (type === 'grammar' && typeof clearGrammarResumeState === 'function') clearGrammarResumeState();
 }
 
 function resumeGameFromState(type) {
@@ -51,6 +54,7 @@ function resumeGameFromState(type) {
   if (type === 'match' && typeof resumeMatchFromState === 'function') return resumeMatchFromState();
   if (type === 'type' && typeof resumeTypeFromState === 'function') return resumeTypeFromState();
   if (type === 'write' && typeof resumeWriteFromState === 'function') return resumeWriteFromState();
+  if (type === 'grammar' && typeof resumeGrammarFromState === 'function') return resumeGrammarFromState();
   return false;
 }
 

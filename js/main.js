@@ -186,6 +186,7 @@ function startFreshGame(type) {
   if (type === 'type') startTyping();
   if (type === 'match') startMatch();
   if (type === 'write') startWrite();
+  if (type === 'grammar') startGrammar();
 }
 
 function getGameResumeLabel(type) {
@@ -195,7 +196,8 @@ function getGameResumeLabel(type) {
     flash: 'Flashcard',
     match: 'Match',
     type: 'Falling Words',
-    write: 'Writing'
+    write: 'Writing',
+    grammar: 'Sentence Builder'
   };
   return labels[type] || 'Game';
 }
@@ -207,7 +209,8 @@ function getCurrentResumeGameType() {
     'screen-flash': 'flash',
     'screen-match': 'match',
     'screen-type': 'type',
-    'screen-write': 'write'
+    'screen-write': 'write',
+    'screen-grammar': 'grammar'
   };
   return screenMap[currentScreen] || null;
 }
@@ -318,7 +321,8 @@ const dictionaryGame = {
   'flash': () => { restartGame(() => { startFlash(); }); },
   'type': () => { restartGame(() => { startTyping(); }); },
   'match': () => { restartGame(() => { startMatch(); }); },
-  'write': () => { restartGame(() => { startWrite(); }); }
+  'write': () => { restartGame(() => { startWrite(); }); },
+  'grammar': () => { restartGame(() => { startGrammar(); }); }
 }
 
 function gameOver(score, combo, type, correct, wrong, completed = false) {
@@ -373,11 +377,11 @@ function renderStatsScreen() {
   const totalAnswers = totalCorrect + totalWrong;
   const overallAccuracy = totalAnswers > 0 ? Math.round((totalCorrect / totalAnswers) * 100) : 0;
   
-  const gameNames = { quiz: '📝 Quiz', listen: '🎧 Listening', flash: '🃏 Flashcard', match: '🧩 Match', type: '⌨ Falling Words', write: '✍️ Writing' };
-  const gameColors = { quiz: '#0a84ff', listen: '#ff00c8', flash: '#bf5af2', match: '#ffd60a', type: '#ff2d55', write: '#30d158' };
-  
+  const gameNames = { quiz: '📝 Quiz', listen: '🎧 Listening', flash: '🃏 Flashcard', match: '🧩 Match', type: '⌨ Falling Words', write: '✍️ Writing', grammar: '🧩 Sentence Builder' };
+  const gameColors = { quiz: '#0a84ff', listen: '#ff00c8', flash: '#bf5af2', match: '#ffd60a', type: '#ff2d55', write: '#30d158', grammar: '#5ac8fa' };
+
   let gameTypeRows = '';
-  for (const type of ['quiz', 'listen', 'flash', 'match', 'type', 'write']) {
+  for (const type of ['quiz', 'listen', 'flash', 'match', 'type', 'write', 'grammar']) {
     const stats = gameTypeStats[type] || { correct: 0, wrong: 0 };
     const typeTotal = stats.correct + stats.wrong;
     const typeAccuracy = typeTotal > 0 ? Math.round((stats.correct / typeTotal) * 100) : 0;
@@ -404,7 +408,7 @@ function renderStatsScreen() {
       historyEl.innerHTML = '<div class="stats-empty">No sessions recorded yet.</div>';
     } else {
       const sortedSessions = [...sessionHistory].sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
-      const gameIcons = { quiz: '📝', listen: '🎧', flash: '🃏', match: '🧩', type: '⌨', write: '✍️' };
+      const gameIcons = { quiz: '📝', listen: '🎧', flash: '🃏', match: '🧩', type: '⌨', write: '✍️', grammar: '🧩' };
       let historyHtml = '<div class="session-history-list">';
       sortedSessions.forEach(session => {
         const total = session.correct + session.wrong;
@@ -496,7 +500,7 @@ function renderStatsScreen() {
   const masteryEl = document.getElementById('stats-mastery');
   if (masteryEl) {
     let mastered = 0, learning = 0, newItems = 0;
-    const gameTypes = ['quiz', 'listen', 'flash', 'match', 'type', 'write'];
+    const gameTypes = ['quiz', 'listen', 'flash', 'match', 'type', 'write', 'grammar'];
     
     questions.forEach((q, index) => {
       const stats = getQuestionStatsEntry(q, false);

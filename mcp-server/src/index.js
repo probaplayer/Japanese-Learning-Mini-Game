@@ -32,8 +32,10 @@ const grammarQuestionShape = {
 
 const anyQuestionShape = z.union([z.object(questionShape), z.object(grammarQuestionShape)]);
 
-const questionPatchFieldsShape = z.object(questionShape).partial().strict()
-  .refine(fields => Object.keys(fields).length > 0, { message: 'fields must include at least one field to update' });
+const questionPatchFieldsShape = z.union([
+  z.object(questionShape).partial().strict(),
+  z.object(grammarQuestionShape).partial().strict()
+]).refine(fields => Object.keys(fields).length > 0, { message: 'fields must include at least one field to update' });
 
 function ok(data) {
   return { content: [{ type: 'text', text: JSON.stringify(data, null, 2) }] };

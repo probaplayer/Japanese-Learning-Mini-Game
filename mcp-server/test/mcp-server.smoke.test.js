@@ -141,6 +141,35 @@ async function main() {
   });
   assert.strictEqual(rejectedVocabQuestionInGrammarSet.isError, true);
 
+  // Finding 1 regression: searching with no setId across a mix of vocabulary
+  // and grammar sets used to throw ("question.a is not iterable") because
+  // grammar questions have no "a" field. "demo" (vocabulary, word "学生")
+  // and "grammar-set" (grammar, sentence "私は学生です") both contain "学生".
+  const mixedSearch = await client.callTool({ name: 'search_questions', arguments: { keyword: '学生' } });
+  assert.strictEqual(mixedSearch.isError, undefined);
+  const mixedSearchResponse = JSON.parse(mixedSearch.content[0].text);
+  const mixedSetIds = mixedSearchResponse.results.map(r => r.setId).sort();
+  assert.deepStrictEqual(mixedSetIds, ['demo', 'grammar-set']);
+
+  // Finding 3 regression: patch_question used to reject grammar fields
+  // (sentence/chunks/translation/ex) with a Zod "unrecognized key" error
+  // because questionPatchFieldsShape only accepted vocabulary fields.
+  const patchedGrammar = await client.callTool({
+    name: 'patch_question',
+    arguments: {
+      setId: 'grammar-set',
+      patches: [{ index: 0, fields: { sentence: '私は先生です', chunks: ['私', 'は', '先生', 'です'] } }]
+    }
+  });
+  assert.strictEqual(patchedGrammar.isError, undefined);
+  assert.deepStrictEqual(JSON.parse(patchedGrammar.content[0].text).updated, [0]);
+
+  const afterGrammarPatch = await client.callTool({ name: 'get_question_set', arguments: { id: 'grammar-set' } });
+  const grammarQuestionAfterPatch = JSON.parse(afterGrammarPatch.content[0].text).questions[0];
+  assert.strictEqual(grammarQuestionAfterPatch.sentence, '私は先生です');
+  assert.deepStrictEqual(grammarQuestionAfterPatch.chunks, ['私', 'は', '先生', 'です']);
+  assert.strictEqual(grammarQuestionAfterPatch.translation, 'Tôi là học sinh');
+
   await client.close();
   fs.rmSync(questionsDir, { recursive: true, force: true });
   console.log('mcp server smoke test passed');

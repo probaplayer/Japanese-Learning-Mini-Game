@@ -42,7 +42,8 @@ function createContext(responses, storedActiveSet) {
     document: {
       addEventListener() {},
       getElementById(id) { if (!elements[id]) elements[id] = createElement(id); return elements[id]; },
-      querySelector() { return null; }
+      querySelector() { return null; },
+      querySelectorAll() { return []; }
     },
     window: { addEventListener() {} }
   };

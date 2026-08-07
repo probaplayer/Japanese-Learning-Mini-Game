@@ -142,6 +142,12 @@ function updateMenuUI() {
   document.getElementById('data-count').textContent = `${questions.length} loaded questions`;
   const streakEl = document.getElementById('menu-streak');
   if (streakEl) streakEl.textContent = dailyStreak.currentStreak;
+
+  const activeMeta = questionSets.find(s => s.id === activeSetId);
+  const visibleGames = getVisibleGamesForCategory(activeMeta ? activeMeta.category : undefined);
+  document.querySelectorAll('.menu-btn[data-game]').forEach(btn => {
+    btn.classList.toggle('hidden', !visibleGames.includes(btn.dataset.game));
+  });
 }
 
 /* ══════════════════════════════════════════════

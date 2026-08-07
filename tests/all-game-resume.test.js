@@ -12,7 +12,8 @@ const sources = [
   ['js', 'games', 'game-flash.js'],
   ['js', 'games', 'game-match.js'],
   ['js', 'games', 'game-type.js'],
-  ['js', 'games', 'game-write.js']
+  ['js', 'games', 'game-write.js'],
+  ['js', 'games', 'game-grammar.js']
 ].map(parts => fs.readFileSync(path.join(__dirname, '..', ...parts), 'utf8'));
 
 function createElement(id) {
@@ -237,6 +238,18 @@ this.setWriteState = (state) => {
   writeWrong = state.wrong ?? writeWrong;
   writeKanjiQueue = state.kanjiQueue ?? writeKanjiQueue;
   writeCurrentKanjiIdx = state.currentKanjiIdx ?? writeCurrentKanjiIdx;
+};
+this.isGrammarAnswerCorrect = isGrammarAnswerCorrect;
+this.grammarState = () => ({ grammarDeck, grammarIdx, grammarHP, grammarScore, grammarCombo, grammarCorrect, grammarWrong, grammarAnswer });
+this.setGrammarState = (state) => {
+  grammarDeck = state.deck ?? grammarDeck;
+  grammarIdx = state.idx ?? grammarIdx;
+  grammarHP = state.hp ?? grammarHP;
+  grammarScore = state.score ?? grammarScore;
+  grammarCombo = state.combo ?? grammarCombo;
+  grammarCorrect = state.correct ?? grammarCorrect;
+  grammarWrong = state.wrong ?? grammarWrong;
+  grammarAnswer = state.answer ?? grammarAnswer;
 };`,
     context
   );
@@ -357,6 +370,42 @@ function testWriteResumeRoundTrip() {
   assert.strictEqual(state.writeCurrentKanjiIdx, 1);
 }
 
+function sampleGrammarDeck() {
+  return [
+    { sentence: '私は学生です', chunks: ['私', 'は', '学生', 'です'], translation: 'Tôi là học sinh', questionId: 'q-1' },
+    { sentence: '学校に行きます', chunks: ['学校', 'に', '行きます'], translation: 'Tôi đi đến trường', questionId: 'q-2' }
+  ];
+}
+
+function testIsGrammarAnswerCorrectComparesOrderAndLength() {
+  const context = createContext();
+  assert.strictEqual(context.isGrammarAnswerCorrect(['私', 'は', '学生', 'です'], ['私', 'は', '学生', 'です']), true);
+  assert.strictEqual(context.isGrammarAnswerCorrect(['は', '私', '学生', 'です'], ['私', 'は', '学生', 'です']), false);
+  assert.strictEqual(context.isGrammarAnswerCorrect(['私', 'は'], ['私', 'は', '学生', 'です']), false);
+}
+
+function testGrammarResumeRoundTrip() {
+  const context = createContext();
+  const deck = sampleGrammarDeck();
+  context.setAppState({ activeSetId: 'set-a' });
+  context.setGrammarState({ deck, idx: 1, hp: 60, score: 40, combo: 3, correct: 2, wrong: 0, answer: ['学校'] });
+
+  const saved = context.saveGameResumeState('grammar');
+  context.setGrammarState({ deck: [], idx: 0, hp: 100, score: 0, combo: 0, correct: 0, wrong: 0, answer: [] });
+  const resumed = context.resumeGameFromState('grammar');
+  const state = context.grammarState();
+
+  assert.strictEqual(saved.type, 'grammar');
+  assert.strictEqual(resumed, true);
+  assert.strictEqual(state.grammarIdx, 1);
+  assert.strictEqual(state.grammarHP, 60);
+  assert.strictEqual(state.grammarScore, 40);
+  assert.strictEqual(state.grammarCombo, 3);
+  assert.strictEqual(state.grammarCorrect, 2);
+  assert.deepStrictEqual(Array.from(state.grammarAnswer), ['学校']);
+  assert.strictEqual(context.localStorage.getItem('jq_resume_grammar'), null);
+}
+
 function testStartGameShowsResumeModalForAnyGame() {
   const context = createContext();
   context.setAppState({ questions: sampleDeck() });
@@ -375,5 +424,7 @@ testMatchResumeRoundTrip();
 testTypeResumeRoundTrip();
 testWriteResumeRoundTrip();
 testStartGameShowsResumeModalForAnyGame();
+testIsGrammarAnswerCorrectComparesOrderAndLength();
+testGrammarResumeRoundTrip();
 
 console.log('all-game resume tests passed');

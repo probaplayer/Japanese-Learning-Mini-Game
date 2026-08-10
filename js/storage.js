@@ -8,7 +8,7 @@ async function fetchQuestionsManifest() {
   if (!res.ok) throw new Error(`Failed to load questions/manifest.json (${res.status})`);
   const manifest = await res.json();
   if (!manifest || !Array.isArray(manifest.sets)) throw new Error('Invalid manifest.json: missing "sets" array');
-  return manifest.sets;
+  return manifest;
 }
 
 async function fetchQuestionSetFile(file) {
@@ -24,7 +24,9 @@ function saveActiveSetId() {
 }
 
 async function initQuestionSets() {
-  questionSets = await fetchQuestionsManifest();
+  const manifest = await fetchQuestionsManifest();
+  questionSets = manifest.sets;
+  roadmapDefinitions = Array.isArray(manifest.roadmaps) ? manifest.roadmaps : [];
   if (questionSets.length === 0) {
     questions = [];
     activeSetId = null;

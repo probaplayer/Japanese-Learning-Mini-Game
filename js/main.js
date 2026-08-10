@@ -4,6 +4,7 @@
 
 let questions = [];
 let questionSets = [];
+let roadmapDefinitions = [];
 let activeSetId = null;
 let playerHP = 100;
 let playerEXP = 0;

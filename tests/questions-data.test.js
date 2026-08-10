@@ -62,6 +62,15 @@ function testEveryManifestEntryHasUniqueOrderAndNonEmptyLevel() {
   assert.strictEqual(new Set(orders).size, orders.length, 'manifest entry "order" values must be unique');
 }
 
+function testEverySetRoadmapIdReferencesAKnownRoadmap() {
+  const manifest = JSON.parse(fs.readFileSync(path.join(questionsDir, 'manifest.json'), 'utf8'));
+  const roadmapIds = new Set((manifest.roadmaps || []).map(r => r.id));
+  manifest.sets.forEach(entry => {
+    if (entry.roadmapId === undefined) return;
+    assert.ok(roadmapIds.has(entry.roadmapId), `${entry.id}.roadmapId "${entry.roadmapId}" must reference a known roadmap`);
+  });
+}
+
 function testGrammarQuestionsHaveChunksMatchingSentence() {
   const manifest = JSON.parse(fs.readFileSync(path.join(questionsDir, 'manifest.json'), 'utf8'));
   manifest.sets.filter(entry => entry.category === 'grammar').forEach(entry => {
@@ -81,5 +90,6 @@ testEveryQuestionHasRequiredShape();
 testEveryManifestEntryHasAKnownCategory();
 testGrammarQuestionsHaveChunksMatchingSentence();
 testEveryManifestEntryHasUniqueOrderAndNonEmptyLevel();
+testEverySetRoadmapIdReferencesAKnownRoadmap();
 
 console.log('questions data tests passed');

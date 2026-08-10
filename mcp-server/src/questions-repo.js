@@ -104,11 +104,17 @@ export function createQuestionsRepo(baseDir) {
     return readSetFile(entry.file);
   }
 
-  function createQuestionSet({ id, name, description = '', category = 'vocabulary', order, level, questions = [] }) {
+  function createQuestionSet({ id, name, description = '', category = 'vocabulary', order, level, roadmapId, questions = [] }) {
     const manifest = readManifest();
     const setId = id ? slugify(id) : slugify(name);
     if (!setId) throw new Error('Could not derive a valid id from the provided name/id');
     if (findEntry(manifest, setId)) throw new Error(`Question set id already exists: ${setId}`);
+    if (roadmapId !== undefined) {
+      const knownRoadmaps = Array.isArray(manifest.roadmaps) ? manifest.roadmaps : [];
+      if (!knownRoadmaps.some(r => r.id === roadmapId)) {
+        throw new Error(`Unknown roadmapId: ${roadmapId}. Known roadmaps: ${knownRoadmaps.map(r => r.id).join(', ') || '(none)'}`);
+      }
+    }
     for (const q of questions) {
       const error = validateQuestion(q, category);
       if (error) throw new Error(error);
@@ -119,7 +125,9 @@ export function createQuestionsRepo(baseDir) {
     writeSetFile(file, set);
     const resolvedOrder = Number.isInteger(order) ? order : Math.max(0, ...manifest.sets.map(s => s.order ?? 0)) + 1;
     const resolvedLevel = typeof level === 'string' && level.length > 0 ? level : 'N/A';
-    manifest.sets.push({ id: setId, file, name, category, order: resolvedOrder, level: resolvedLevel, questionCount: questions.length, updatedAt: now });
+    const entry = { id: setId, file, name, category, order: resolvedOrder, level: resolvedLevel, questionCount: questions.length, updatedAt: now };
+    if (roadmapId !== undefined) entry.roadmapId = roadmapId;
+    manifest.sets.push(entry);
     writeManifest(manifest);
     return set;
   }

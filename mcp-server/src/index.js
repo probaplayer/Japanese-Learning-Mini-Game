@@ -95,6 +95,7 @@ server.registerTool(
       category: z.enum(['vocabulary', 'grammar']).optional(),
       order: z.number().int().optional(),
       level: z.string().optional(),
+      roadmapId: z.string().optional(),
       questions: z.array(anyQuestionShape).optional()
     }
   },

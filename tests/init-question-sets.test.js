@@ -55,7 +55,7 @@ ${gameUtilsSource}
 ${storageSource}
 this.runInitQuestionSets = initQuestionSets;
 this.runSwitchQuestionSet = switchQuestionSet;
-this.getState = () => ({ questions, questionSets, activeSetId });`,
+this.getState = () => ({ questions, questionSets, activeSetId, roadmapDefinitions });`,
     context
   );
   context.store = store;
@@ -110,10 +110,30 @@ async function testSwitchQuestionSetUpdatesStateAndPersistsPointer() {
   assert.strictEqual(context.store['jq_active_set'], 'set-b');
 }
 
+async function testRoadmapDefinitionsDefaultsToEmptyArrayWhenManifestOmitsIt() {
+  const context = createContext(RESPONSES);
+  await context.runInitQuestionSets();
+  const state = context.getState();
+  assert.deepStrictEqual(Array.from(state.roadmapDefinitions), []);
+}
+
+async function testRoadmapDefinitionsPopulateFromManifest() {
+  const responsesWithRoadmaps = {
+    ...RESPONSES,
+    'questions/manifest.json': { ...MANIFEST, roadmaps: [{ id: 'demo-path', name: 'Demo Path' }] }
+  };
+  const context = createContext(responsesWithRoadmaps);
+  await context.runInitQuestionSets();
+  const state = context.getState();
+  assert.deepStrictEqual(state.roadmapDefinitions, [{ id: 'demo-path', name: 'Demo Path' }]);
+}
+
 (async () => {
   await testLoadsFirstSetWhenNoStoredActiveId();
   await testRespectsStoredActiveId();
   await testFallsBackToFirstSetWhenStoredIdIsUnknown();
   await testSwitchQuestionSetUpdatesStateAndPersistsPointer();
+  await testRoadmapDefinitionsDefaultsToEmptyArrayWhenManifestOmitsIt();
+  await testRoadmapDefinitionsPopulateFromManifest();
   console.log('init question sets tests passed');
 })();

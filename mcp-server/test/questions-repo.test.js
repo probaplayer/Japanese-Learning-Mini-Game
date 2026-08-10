@@ -358,6 +358,31 @@ function testCreateQuestionSetOrderDoesNotCollideAfterDeleteThenCreate() {
   assert.strictEqual(manifest.sets.find(s => s.id === 'd').order, 4);
 }
 
+function testCreateQuestionSetPersistsValidRoadmapId() {
+  const dir = makeTempQuestionsDir();
+  fs.writeFileSync(path.join(dir, 'manifest.json'), JSON.stringify({ roadmaps: [{ id: 'demo-path', name: 'Demo Path' }], sets: [] }, null, 2));
+  const repo = createQuestionsRepo(dir);
+  repo.createQuestionSet({ id: 'demo', name: 'Demo', roadmapId: 'demo-path' });
+
+  const manifest = JSON.parse(fs.readFileSync(path.join(dir, 'manifest.json'), 'utf8'));
+  assert.strictEqual(manifest.sets[0].roadmapId, 'demo-path');
+}
+
+function testCreateQuestionSetRejectsUnknownRoadmapId() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  assert.throws(() => repo.createQuestionSet({ id: 'demo', name: 'Demo', roadmapId: 'nope' }), /Unknown roadmapId: nope/);
+}
+
+function testCreateQuestionSetLeavesRoadmapIdUnsetWhenOmitted() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createQuestionSet({ id: 'demo', name: 'Demo' });
+
+  const manifest = JSON.parse(fs.readFileSync(path.join(dir, 'manifest.json'), 'utf8'));
+  assert.strictEqual('roadmapId' in manifest.sets[0], false);
+}
+
 function testSearchQuestionsAcrossMixedVocabularyAndGrammarSetsDoesNotThrow() {
   const dir = makeTempQuestionsDir();
   const repo = createQuestionsRepo(dir);
@@ -429,5 +454,8 @@ testSearchQuestionsAcrossMixedVocabularyAndGrammarSetsDoesNotThrow();
 testCreateQuestionSetDefaultsOrderToEndOfManifestAndLevelToNA();
 testCreateQuestionSetPersistsExplicitOrderAndLevel();
 testCreateQuestionSetOrderDoesNotCollideAfterDeleteThenCreate();
+testCreateQuestionSetPersistsValidRoadmapId();
+testCreateQuestionSetRejectsUnknownRoadmapId();
+testCreateQuestionSetLeavesRoadmapIdUnsetWhenOmitted();
 
 console.log('questions-repo tests passed');

@@ -43,6 +43,61 @@ async function getRoadmapQuestionsForSet(meta) {
   return set.questions;
 }
 
+function getSetsForRoadmap(roadmapId) {
+  return questionSets.filter(s => s.roadmapId === roadmapId).sort((a, b) => (b.order ?? 0) - (a.order ?? 0));
+}
+
+async function computeRoadmapProgress(setsForRoadmap) {
+  const progressById = new Map();
+  await Promise.all(setsForRoadmap.map(async meta => {
+    const setQuestions = await getRoadmapQuestionsForSet(meta);
+    const progress = computeSetProgress(meta.id, setQuestions);
+    progressById.set(meta.id, { progress, stars: starsForProgress(progress) });
+  }));
+  return progressById;
+}
+
+function buildRoadmapNodesHtml(setsForRoadmap, progressById, { highlightSetId, compact, clickHandler }) {
+  let html = '';
+  setsForRoadmap.forEach((meta, i) => {
+    const entry = progressById.get(meta.id) || { progress: { total: 0 }, stars: 0 };
+    const { progress, stars } = entry;
+    const side = compact ? '' : (i % 2 === 0 ? 'roadmap-node-left' : 'roadmap-node-right');
+    const playedClass = progress.total > 0 ? 'roadmap-node-played' : '';
+    const isHighlighted = meta.id === highlightSetId;
+    const highlightClass = isHighlighted ? 'roadmap-node-highlighted' : '';
+    const showAvatar = isHighlighted && !compact;
+    const categoryIcon = meta.category === 'grammar' ? '🧩' : '📖';
+    const styleAttr = compact ? '' : ` style="--i:${i}"`;
+    html += `
+      <button class="roadmap-node ${side} ${playedClass} ${highlightClass}"${styleAttr} data-set-id="${escapeHtml(meta.id)}" onclick="${clickHandler}('${escapeHtml(meta.id)}')">
+        ${showAvatar ? '<span class="roadmap-avatar" aria-hidden="true">🚀</span>' : ''}
+        <span class="roadmap-node-icon">${categoryIcon}</span>
+        <span class="roadmap-node-body">
+          <span class="roadmap-node-name">${escapeHtml(meta.name)}</span>
+          <span class="roadmap-node-meta">${meta.questionCount} questions · ${renderStarString(stars)}</span>
+        </span>
+      </button>`;
+  });
+  return html;
+}
+
+function renderRoadmapChipsHtml(definitions, selectedId, onSelectFnName) {
+  return definitions.map(def => {
+    const activeClass = def.id === selectedId ? 'roadmap-tab-active' : '';
+    return `<button class="roadmap-tab ${activeClass}" onclick="${onSelectFnName}('${escapeHtml(def.id)}')">${escapeHtml(def.name)}</button>`;
+  }).join('');
+}
+
+function pickDefaultRoadmapId(fallbackId) {
+  if (fallbackId && roadmapDefinitions.some(d => d.id === fallbackId)) return fallbackId;
+  const activeMeta = questionSets.find(s => s.id === activeSetId);
+  if (activeMeta && activeMeta.roadmapId && roadmapDefinitions.some(d => d.id === activeMeta.roadmapId)) {
+    return activeMeta.roadmapId;
+  }
+  return roadmapDefinitions.length > 0 ? roadmapDefinitions[0].id : null;
+}
+
 async function renderRoadmap() {
   const track = document.getElementById('roadmap-track');
   if (!track) return;

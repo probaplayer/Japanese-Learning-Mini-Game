@@ -102,3 +102,6 @@
   .roadmap-node-meta { font-size: 15px; }
   .roadmap-section-label { font-size: 15px; }
 }
+
+.roadmap-node-launch .roadmap-avatar { animation: avatarLaunch .3s ease-out forwards; }
+.roadmap-node.roadmap-node-launch { transform: scale(1.08); box-shadow: var(--glow-g); }

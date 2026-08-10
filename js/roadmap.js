@@ -87,3 +87,10 @@ async function renderRoadmap() {
     if (activeEl) activeEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
   });
 }
+
+function launchRoadmapNode(id) {
+  const nodeEl = document.querySelector(`.roadmap-node[data-set-id="${id}"]`);
+  if (nodeEl) nodeEl.classList.add('roadmap-node-launch');
+  switchQuestionSet(id);
+  setTimeout(() => showScreen('screen-menu'), 220);
+}

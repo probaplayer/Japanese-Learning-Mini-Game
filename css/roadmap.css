@@ -121,3 +121,21 @@
   text-shadow: var(--glow-y);
   background: rgba(255, 214, 10, 0.08);
 }
+
+/* ─── Highlighted Node ────────────────────────────── */
+.roadmap-node-highlighted { border-color: var(--accent2); box-shadow: var(--glow-y); }
+
+/* ─── Mini Roadmap (Library previews) ────────────── */
+.roadmap-track-mini { gap: 14px; padding: 10px 0; }
+.roadmap-track-mini .roadmap-node {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 8px 10px;
+  animation: none;
+}
+.roadmap-track-mini .roadmap-node::after { height: 14px; bottom: -14px; }
+.roadmap-track-mini .roadmap-avatar { top: -20px; font-size: 18px; }
+.roadmap-track-mini .roadmap-node-icon { font-size: 16px; }
+.roadmap-track-mini .roadmap-node-name { font-size: 11px; }
+.roadmap-track-mini .roadmap-node-meta { font-size: 8px; }

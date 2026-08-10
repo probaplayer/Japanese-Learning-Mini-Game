@@ -71,6 +71,7 @@ function refreshQuestionSetUI() {
   if (document.getElementById('current-count')) {
     document.getElementById('current-count').textContent = questions.length;
   }
+  if (typeof refreshLibraryRoadmapPreview === 'function') refreshLibraryRoadmapPreview();
 }
 
 /* ── PLAYER PROGRESS ── */

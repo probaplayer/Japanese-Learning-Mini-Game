@@ -124,8 +124,9 @@ function showScreen(id) {
   if (prevScreen === 'screen-match' && id !== 'screen-match') {
     if (typeof stopMatchTimer === 'function') stopMatchTimer();
   }
-  if (id === 'screen-data') {
+  if (id === 'screen-library') {
     refreshQuestionSetUI();
+    selectLibraryTab('sets');
   }
   if (id === 'screen-menu') {
     updateMenuUI();

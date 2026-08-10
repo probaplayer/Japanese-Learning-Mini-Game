@@ -1291,3 +1291,24 @@
   .screen-settings .weight-slider::-webkit-slider-thumb { width: 24px; height: 24px; }
   .screen-stats .panel { max-width: 1080px; }
 }
+
+/* ─── Library Tabs ────────────────────────────────── */
+.screen-data .library-tabs { display: flex; gap: 8px; margin-bottom: 4px; }
+.screen-data .library-tab-btn {
+  flex: 1;
+  font-family: var(--font-px);
+  font-size: 8px;
+  padding: 10px;
+  background: var(--panel);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: all .15s;
+}
+.screen-data .library-tab-btn:hover { border-color: var(--accent3); color: var(--text); }
+.screen-data .library-tab-btn.library-tab-active {
+  border-color: var(--accent3);
+  color: var(--accent3);
+  text-shadow: var(--glow-g);
+}

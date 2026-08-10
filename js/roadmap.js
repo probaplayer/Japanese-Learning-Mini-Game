@@ -149,3 +149,50 @@ function launchRoadmapNode(id) {
   switchQuestionSet(id);
   setTimeout(() => showScreen('screen-menu'), 300);
 }
+
+async function renderLibrarySetsTab() {
+  const container = document.getElementById('library-set-roadmap');
+  if (!container) return;
+  const meta = questionSets.find(s => s.id === activeSetId);
+  if (!meta || !meta.roadmapId) {
+    container.innerHTML = '<div class="roadmap-loading">This set isn\'t part of a roadmap yet.</div>';
+    return;
+  }
+  container.innerHTML = '<div class="roadmap-loading">Loading roadmap…</div>';
+  try {
+    const sets = getSetsForRoadmap(meta.roadmapId);
+    const progressById = await computeRoadmapProgress(sets);
+    container.innerHTML = buildRoadmapNodesHtml(sets, progressById, { highlightSetId: activeSetId, compact: true, clickHandler: 'selectRoadmapNodeInPlace' });
+  } catch (e) {
+    console.error('Failed to render library set roadmap:', e);
+    container.innerHTML = '<div class="roadmap-loading">❌ Failed to load the roadmap. Please try again.</div>';
+  }
+}
+
+function selectRoadmapNodeInPlace(id) {
+  const nodeEl = document.querySelector(`.roadmap-node[data-set-id="${id}"]`);
+  if (nodeEl) nodeEl.classList.add('roadmap-node-launch');
+  const avatarEl = document.querySelector('.roadmap-avatar');
+  if (avatarEl) avatarEl.classList.add('roadmap-avatar-launch');
+  switchQuestionSet(id);
+}
+
+function selectLibraryTab(tab) {
+  const setsTab = document.getElementById('library-sets-tab');
+  const roadmapsTab = document.getElementById('library-roadmaps-tab');
+  const setsBtn = document.getElementById('library-tab-btn-sets');
+  const roadmapsBtn = document.getElementById('library-tab-btn-roadmaps');
+  if (setsTab) setsTab.classList.toggle('hidden', tab !== 'sets');
+  if (roadmapsTab) roadmapsTab.classList.toggle('hidden', tab !== 'roadmaps');
+  if (setsBtn) setsBtn.classList.toggle('library-tab-active', tab === 'sets');
+  if (roadmapsBtn) roadmapsBtn.classList.toggle('library-tab-active', tab === 'roadmaps');
+  if (tab === 'sets') renderLibrarySetsTab();
+  if (tab === 'roadmaps' && typeof renderLibraryRoadmapsTab === 'function') renderLibraryRoadmapsTab();
+}
+
+function refreshLibraryRoadmapPreview() {
+  const setsTab = document.getElementById('library-sets-tab');
+  const roadmapsTab = document.getElementById('library-roadmaps-tab');
+  if (setsTab && !setsTab.classList.contains('hidden')) renderLibrarySetsTab();
+  if (roadmapsTab && !roadmapsTab.classList.contains('hidden') && typeof renderLibraryRoadmapsTab === 'function') renderLibraryRoadmapsTab();
+}

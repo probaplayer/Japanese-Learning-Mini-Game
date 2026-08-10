@@ -114,9 +114,9 @@
             <span class="btn-text">SETTINGS<br><small>Settings</small></span>
             <span class="btn-arrow">▶</span>
           </button>
-          <button class="menu-btn btn-data" onclick="showScreen('screen-data')">
-            <span class="btn-icon">📦</span>
-            <span class="btn-text">QUESTION SETS<br><small>Choose a set</small></span>
+          <button class="menu-btn btn-data" onclick="showScreen('screen-library')">
+            <span class="btn-icon">📚</span>
+            <span class="btn-text">LIBRARY<br><small>Choose a set</small></span>
             <span class="btn-arrow">▶</span>
           </button>
         </nav>
@@ -128,24 +128,35 @@
     </div>
   </div>
 
-  <!-- QUESTION SETS -->
-  <div id="screen-data" class="screen screen-data">
+  <!-- LIBRARY -->
+  <div id="screen-library" class="screen screen-data">
     <div class="panel">
-      <h2 class="panel-title">📦 QUESTION SETS</h2>
-      <div class="form-group">
-        <label>Choose a question set</label>
-        <div class="btn-row">
-          <select id="question-set-selector" onchange="switchQuestionSet(this.value)"></select>
+      <h2 class="panel-title">📚 LIBRARY</h2>
+      <div class="library-tabs">
+        <button id="library-tab-btn-sets" class="library-tab-btn library-tab-active" onclick="selectLibraryTab('sets')">Sets</button>
+        <button id="library-tab-btn-roadmaps" class="library-tab-btn" onclick="selectLibraryTab('roadmaps')">Roadmaps</button>
+      </div>
+      <div id="library-sets-tab">
+        <div class="form-group">
+          <label>Choose a question set</label>
+          <div class="btn-row">
+            <select id="question-set-selector" onchange="switchQuestionSet(this.value)"></select>
+          </div>
         </div>
+        <div class="form-group">
+          <label>Active set: <span id="active-set-name">-</span></label>
+        </div>
+        <div class="form-group">
+          <label>Questions in this set: <span id="current-count">0</span></label>
+        </div>
+        <div class="form-group">
+          <label>Question sets are authored by Claude through the MCP server in mcp-server/ — see README.md.</label>
+        </div>
+        <div class="roadmap-track roadmap-track-mini" id="library-set-roadmap"></div>
       </div>
-      <div class="form-group">
-        <label>Active set: <span id="active-set-name">-</span></label>
-      </div>
-      <div class="form-group">
-        <label>Questions in this set: <span id="current-count">0</span></label>
-      </div>
-      <div class="form-group">
-        <label>Question sets are authored by Claude through the MCP server in mcp-server/ — see README.md.</label>
+      <div id="library-roadmaps-tab" class="hidden">
+        <div id="library-roadmap-chips" class="roadmap-tabs"></div>
+        <div class="roadmap-track roadmap-track-mini" id="library-roadmap-preview"></div>
       </div>
       <button class="back-btn" onclick="showScreen('screen-menu')">◀ BACK TO MENU</button>
     </div>

@@ -57,7 +57,7 @@
   text-align: left;
   font-family: var(--font-jp);
   transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
-  animation: cardEnter .4s ease both;
+  animation: cardEnter .4s ease backwards;
   animation-delay: calc(var(--i, 0) * 0.06s);
 }
 .roadmap-node:hover { transform: scale(1.04); box-shadow: var(--glow-b); }
@@ -103,5 +103,5 @@
   .roadmap-section-label { font-size: 15px; }
 }
 
-.roadmap-node-launch .roadmap-avatar { animation: avatarLaunch .3s ease-out forwards; }
+.roadmap-avatar.roadmap-avatar-launch { animation: avatarLaunch .3s ease-out forwards; }
 .roadmap-node.roadmap-node-launch { transform: scale(1.08); box-shadow: var(--glow-g); }

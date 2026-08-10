@@ -342,6 +342,22 @@ function testCreateQuestionSetPersistsExplicitOrderAndLevel() {
   assert.strictEqual(manifest.sets[0].level, 'N4');
 }
 
+function testCreateQuestionSetOrderDoesNotCollideAfterDeleteThenCreate() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createQuestionSet({ id: 'a', name: 'A' });
+  repo.createQuestionSet({ id: 'b', name: 'B' });
+  repo.createQuestionSet({ id: 'c', name: 'C' });
+  repo.deleteQuestionSet('b');
+
+  repo.createQuestionSet({ id: 'd', name: 'D' });
+
+  const manifest = JSON.parse(fs.readFileSync(path.join(dir, 'manifest.json'), 'utf8'));
+  const orders = manifest.sets.map(s => s.order);
+  assert.strictEqual(new Set(orders).size, orders.length, 'order values must remain unique after delete-then-create');
+  assert.strictEqual(manifest.sets.find(s => s.id === 'd').order, 4);
+}
+
 function testSearchQuestionsAcrossMixedVocabularyAndGrammarSetsDoesNotThrow() {
   const dir = makeTempQuestionsDir();
   const repo = createQuestionsRepo(dir);
@@ -412,5 +428,6 @@ testAddQuestionValidatesAgainstSetsOwnCategory();
 testSearchQuestionsAcrossMixedVocabularyAndGrammarSetsDoesNotThrow();
 testCreateQuestionSetDefaultsOrderToEndOfManifestAndLevelToNA();
 testCreateQuestionSetPersistsExplicitOrderAndLevel();
+testCreateQuestionSetOrderDoesNotCollideAfterDeleteThenCreate();
 
 console.log('questions-repo tests passed');

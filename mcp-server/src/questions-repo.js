@@ -117,7 +117,7 @@ export function createQuestionsRepo(baseDir) {
     const file = `${setId}.json`;
     const set = { id: setId, name, description, category, createdAt: now, updatedAt: now, questions };
     writeSetFile(file, set);
-    const resolvedOrder = Number.isInteger(order) ? order : manifest.sets.length + 1;
+    const resolvedOrder = Number.isInteger(order) ? order : Math.max(0, ...manifest.sets.map(s => s.order ?? 0)) + 1;
     const resolvedLevel = typeof level === 'string' && level.length > 0 ? level : 'N/A';
     manifest.sets.push({ id: setId, file, name, category, order: resolvedOrder, level: resolvedLevel, questionCount: questions.length, updatedAt: now });
     writeManifest(manifest);

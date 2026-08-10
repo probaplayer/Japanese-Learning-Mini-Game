@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/roadmap.css">
   <link rel="stylesheet" href="css/game-quiz.css">
   <link rel="stylesheet" href="css/game-listen.css">
   <link rel="stylesheet" href="css/game-flash.css">
@@ -63,6 +64,11 @@
 
       <div class="menu-btn-container scrollbar-hide">
         <nav class="main-nav">
+          <button class="menu-btn btn-roadmap" onclick="showScreen('screen-roadmap')">
+            <span class="btn-icon">🌌</span>
+            <span class="btn-text">LỘ TRÌNH<br><small>Hành trình học tập</small></span>
+            <span class="btn-arrow">▶</span>
+          </button>
           <button class="menu-btn btn-quiz" data-game="quiz" onclick="startGame('quiz')">
             <span class="btn-icon">📝</span>
             <span class="btn-text">QUIZ<br><small>Multiple Choice</small></span>
@@ -141,6 +147,15 @@
       <div class="form-group">
         <label>Question sets are authored by Claude through the MCP server in mcp-server/ — see README.md.</label>
       </div>
+      <button class="back-btn" onclick="showScreen('screen-menu')">◀ BACK TO MENU</button>
+    </div>
+  </div>
+
+  <!-- ROADMAP -->
+  <div id="screen-roadmap" class="screen screen-roadmap">
+    <div class="panel roadmap-panel">
+      <h2 class="panel-title">🌌 LỘ TRÌNH</h2>
+      <div class="roadmap-track" id="roadmap-track"></div>
       <button class="back-btn" onclick="showScreen('screen-menu')">◀ BACK TO MENU</button>
     </div>
   </div>
@@ -705,6 +720,7 @@
   <script src="js/main.js"></script>
   <script src="js/game-utils.js"></script>
   <script src="js/storage.js"></script>
+  <script src="js/roadmap.js"></script>
   <script src="js/settings.js"></script>
   <!-- Game modules -->
   <script src="js/games/game-listen.js"></script>

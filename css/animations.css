@@ -92,3 +92,14 @@
 /* ─── Utility Classes ────────────────────────────── */
 .shake { animation: shake 0.4s ease; }
 .tile-card.match-success { animation: matchSuccess 0.6s ease forwards; }
+
+/* ─── Roadmap ─────────────────────────────────────── */
+@keyframes avatarFloat {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-6px); }
+}
+
+@keyframes connectorGlow {
+  0%, 100% { opacity: .6; }
+  50% { opacity: 1; }
+}

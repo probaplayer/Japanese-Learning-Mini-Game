@@ -42,3 +42,48 @@ async function getRoadmapQuestionsForSet(meta) {
   roadmapQuestionsCache.set(meta.id, set.questions);
   return set.questions;
 }
+
+async function renderRoadmap() {
+  const track = document.getElementById('roadmap-track');
+  if (!track) return;
+  track.innerHTML = '<div class="roadmap-loading">Đang tải lộ trình…</div>';
+
+  const sorted = [...questionSets].sort((a, b) => (b.order ?? 0) - (a.order ?? 0));
+  const entries = await Promise.all(sorted.map(async meta => {
+    const setQuestions = await getRoadmapQuestionsForSet(meta);
+    const progress = computeSetProgress(meta.id, setQuestions);
+    return { meta, progress, stars: starsForProgress(progress) };
+  }));
+
+  let html = '';
+  let lastLevel = null;
+  entries.forEach((entry, i) => {
+    const { meta, progress, stars } = entry;
+    const level = meta.level || 'N/A';
+    if (level !== lastLevel) {
+      const levelIcon = ROADMAP_LEVEL_ICONS[level] || ROADMAP_DEFAULT_LEVEL_ICON;
+      html += `<div class="roadmap-section-label">${levelIcon} ${escapeHtml(level)}</div>`;
+      lastLevel = level;
+    }
+    const side = i % 2 === 0 ? 'roadmap-node-left' : 'roadmap-node-right';
+    const playedClass = progress.total > 0 ? 'roadmap-node-played' : '';
+    const isActive = meta.id === activeSetId;
+    const categoryIcon = meta.category === 'grammar' ? '🧩' : '📖';
+    html += `
+      <button class="roadmap-node ${side} ${playedClass}" style="--i:${i}" data-set-id="${escapeHtml(meta.id)}" onclick="launchRoadmapNode('${escapeHtml(meta.id)}')">
+        ${isActive ? '<span class="roadmap-avatar" aria-hidden="true">🚀</span>' : ''}
+        <span class="roadmap-node-icon">${categoryIcon}</span>
+        <span class="roadmap-node-body">
+          <span class="roadmap-node-name">${escapeHtml(meta.name)}</span>
+          <span class="roadmap-node-meta">${meta.questionCount} câu · ${renderStarString(stars)}</span>
+        </span>
+      </button>`;
+  });
+
+  track.innerHTML = html;
+
+  requestAnimationFrame(() => {
+    const activeEl = track.querySelector(`.roadmap-node[data-set-id="${activeSetId}"]`) || track.querySelector('.roadmap-node:last-child');
+    if (activeEl) activeEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+}

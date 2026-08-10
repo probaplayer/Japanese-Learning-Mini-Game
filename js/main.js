@@ -136,6 +136,7 @@ function showScreen(id) {
   }
   if (id === 'screen-settings') renderSettingsScreen();
   if (id === 'screen-stats') renderStatsScreen();
+  if (id === 'screen-roadmap') renderRoadmap();
 }
 
 /* ══════════════════════════════════════════════

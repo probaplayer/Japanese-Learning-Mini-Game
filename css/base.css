@@ -35,6 +35,9 @@ body.animations-disabled .tile-card,
 body.animations-disabled .action-btn,
 body.animations-disabled .menu-btn,
 body.animations-disabled .choice-btn { transition: none; animation: none !important; }
+body.animations-disabled .roadmap-node { animation: none !important; transition: none; }
+body.animations-disabled .roadmap-avatar { animation: none !important; }
+body.animations-disabled .roadmap-node-played::after { animation: none !important; }
 
 /* Buttons */
 .action-btn, .menu-btn, .choice-btn { transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; }

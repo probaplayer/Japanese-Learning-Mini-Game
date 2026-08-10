@@ -319,6 +319,45 @@ function testCreateQuestionSetDefaultsCategoryToVocabulary() {
   assert.strictEqual(created.category, 'vocabulary');
 }
 
+function testCreateQuestionSetDefaultsOrderToEndOfManifestAndLevelToNA() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createQuestionSet({ id: 'first', name: 'First' });
+  repo.createQuestionSet({ id: 'second', name: 'Second' });
+
+  const manifest = JSON.parse(fs.readFileSync(path.join(dir, 'manifest.json'), 'utf8'));
+  assert.strictEqual(manifest.sets[0].order, 1);
+  assert.strictEqual(manifest.sets[0].level, 'N/A');
+  assert.strictEqual(manifest.sets[1].order, 2);
+  assert.strictEqual(manifest.sets[1].level, 'N/A');
+}
+
+function testCreateQuestionSetPersistsExplicitOrderAndLevel() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createQuestionSet({ id: 'demo', name: 'Demo', order: 5, level: 'N4' });
+
+  const manifest = JSON.parse(fs.readFileSync(path.join(dir, 'manifest.json'), 'utf8'));
+  assert.strictEqual(manifest.sets[0].order, 5);
+  assert.strictEqual(manifest.sets[0].level, 'N4');
+}
+
+function testCreateQuestionSetOrderDoesNotCollideAfterDeleteThenCreate() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createQuestionSet({ id: 'a', name: 'A' });
+  repo.createQuestionSet({ id: 'b', name: 'B' });
+  repo.createQuestionSet({ id: 'c', name: 'C' });
+  repo.deleteQuestionSet('b');
+
+  repo.createQuestionSet({ id: 'd', name: 'D' });
+
+  const manifest = JSON.parse(fs.readFileSync(path.join(dir, 'manifest.json'), 'utf8'));
+  const orders = manifest.sets.map(s => s.order);
+  assert.strictEqual(new Set(orders).size, orders.length, 'order values must remain unique after delete-then-create');
+  assert.strictEqual(manifest.sets.find(s => s.id === 'd').order, 4);
+}
+
 function testSearchQuestionsAcrossMixedVocabularyAndGrammarSetsDoesNotThrow() {
   const dir = makeTempQuestionsDir();
   const repo = createQuestionsRepo(dir);
@@ -387,5 +426,8 @@ testCreateQuestionSetPersistsCategoryToManifestAndFile();
 testCreateQuestionSetDefaultsCategoryToVocabulary();
 testAddQuestionValidatesAgainstSetsOwnCategory();
 testSearchQuestionsAcrossMixedVocabularyAndGrammarSetsDoesNotThrow();
+testCreateQuestionSetDefaultsOrderToEndOfManifestAndLevelToNA();
+testCreateQuestionSetPersistsExplicitOrderAndLevel();
+testCreateQuestionSetOrderDoesNotCollideAfterDeleteThenCreate();
 
 console.log('questions-repo tests passed');

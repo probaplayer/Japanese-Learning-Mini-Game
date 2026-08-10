@@ -52,6 +52,16 @@ function testEveryManifestEntryHasAKnownCategory() {
   });
 }
 
+function testEveryManifestEntryHasUniqueOrderAndNonEmptyLevel() {
+  const manifest = JSON.parse(fs.readFileSync(path.join(questionsDir, 'manifest.json'), 'utf8'));
+  const orders = manifest.sets.map(entry => entry.order);
+  manifest.sets.forEach(entry => {
+    assert.ok(Number.isInteger(entry.order), `${entry.id}.order must be an integer`);
+    assert.ok(typeof entry.level === 'string' && entry.level.length > 0, `${entry.id}.level must be a non-empty string`);
+  });
+  assert.strictEqual(new Set(orders).size, orders.length, 'manifest entry "order" values must be unique');
+}
+
 function testGrammarQuestionsHaveChunksMatchingSentence() {
   const manifest = JSON.parse(fs.readFileSync(path.join(questionsDir, 'manifest.json'), 'utf8'));
   manifest.sets.filter(entry => entry.category === 'grammar').forEach(entry => {
@@ -70,5 +80,6 @@ testEachManifestEntryMatchesItsFile();
 testEveryQuestionHasRequiredShape();
 testEveryManifestEntryHasAKnownCategory();
 testGrammarQuestionsHaveChunksMatchingSentence();
+testEveryManifestEntryHasUniqueOrderAndNonEmptyLevel();
 
 console.log('questions data tests passed');

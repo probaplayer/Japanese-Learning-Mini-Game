@@ -5,30 +5,38 @@
       "file": "n5-core.json",
       "name": "N5 Core Vocabulary",
       "category": "vocabulary",
+      "order": 1,
+      "level": "N5",
       "questionCount": 400,
       "updatedAt": "2026-07-28T08:59:46.370Z"
-    },
-    {
-      "id": "n4-kanji",
-      "file": "n4-kanji.json",
-      "name": "Từ vựng N4",
-      "category": "vocabulary",
-      "questionCount": 243,
-      "updatedAt": "2026-07-31T04:24:53.033Z"
     },
     {
       "id": "n5-grammar",
       "file": "n5-grammar.json",
       "name": "N5 Grammar Basics",
       "category": "grammar",
+      "order": 2,
+      "level": "N5",
       "questionCount": 12,
       "updatedAt": "2026-08-06T00:00:00.000Z"
+    },
+    {
+      "id": "n4-kanji",
+      "file": "n4-kanji.json",
+      "name": "Từ vựng N4",
+      "category": "vocabulary",
+      "order": 3,
+      "level": "N4",
+      "questionCount": 243,
+      "updatedAt": "2026-07-31T04:24:53.033Z"
     },
     {
       "id": "n4-l26-vocab",
       "file": "n4-l26-vocab.json",
       "name": "N4 Bài 26 - Từ vựng (nghĩa)",
       "category": "vocabulary",
+      "order": 4,
+      "level": "N4",
       "questionCount": 20,
       "updatedAt": "2026-08-07T09:56:42.052Z"
     },
@@ -37,6 +45,8 @@
       "file": "n4-l26-kanji.json",
       "name": "N4 Bài 26 - Từ vựng Kanji (đọc)",
       "category": "vocabulary",
+      "order": 5,
+      "level": "N4",
       "questionCount": 24,
       "updatedAt": "2026-08-07T09:57:07.694Z"
     },
@@ -45,6 +55,8 @@
       "file": "n4-l26-kanji-hanviet.json",
       "name": "N4 Bài 26 - Hán Việt từng Kanji",
       "category": "vocabulary",
+      "order": 6,
+      "level": "N4",
       "questionCount": 30,
       "updatedAt": "2026-08-07T09:58:47.864Z"
     },
@@ -53,6 +65,8 @@
       "file": "n4-l26-grammar.json",
       "name": "N4 Bài 26 - Ngữ pháp",
       "category": "grammar",
+      "order": 7,
+      "level": "N4",
       "questionCount": 10,
       "updatedAt": "2026-08-07T10:00:33.868Z"
     }

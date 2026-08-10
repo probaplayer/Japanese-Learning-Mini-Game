@@ -93,6 +93,8 @@ server.registerTool(
       name: z.string().min(1),
       description: z.string().optional(),
       category: z.enum(['vocabulary', 'grammar']).optional(),
+      order: z.number().int().optional(),
+      level: z.string().optional(),
       questions: z.array(anyQuestionShape).optional()
     }
   },

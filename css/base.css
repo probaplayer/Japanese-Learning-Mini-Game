@@ -18,20 +18,27 @@
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-.screen.active { 
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-  justify-content: flex-start; 
+.screen.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   opacity: 1;
   min-height: 0;
 }
+.screen.screen-transitioning { animation: screenFadeUp .35s ease; }
 
 body.animations-disabled .screen { transition: none; opacity: 1; }
+body.animations-disabled .screen.screen-transitioning { animation: none !important; }
+body.animations-disabled .main-nav.menu-nav-animate .menu-btn { animation: none !important; opacity: 1; }
 body.animations-disabled .tile-card,
 body.animations-disabled .action-btn,
 body.animations-disabled .menu-btn,
 body.animations-disabled .choice-btn { transition: none; animation: none !important; }
+body.animations-disabled .roadmap-node { animation: none !important; transition: none; }
+body.animations-disabled .roadmap-avatar { animation: none !important; }
+body.animations-disabled .roadmap-node-played::after { animation: none !important; }
+body.animations-disabled .roadmap-avatar.roadmap-avatar-launch { animation: none !important; }
 
 /* Buttons */
 .action-btn, .menu-btn, .choice-btn { transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; }

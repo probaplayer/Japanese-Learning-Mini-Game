@@ -63,6 +63,13 @@ export function slugify(name) {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 }
 
+function assertKnownRoadmapId(manifest, roadmapId) {
+  const knownRoadmaps = Array.isArray(manifest.roadmaps) ? manifest.roadmaps : [];
+  if (!knownRoadmaps.some(r => r.id === roadmapId)) {
+    throw new Error(`Unknown roadmapId: ${roadmapId}. Known roadmaps: ${knownRoadmaps.map(r => r.id).join(', ') || '(none)'}`);
+  }
+}
+
 export function createQuestionsRepo(baseDir) {
   const manifestPath = path.join(baseDir, 'manifest.json');
 
@@ -109,12 +116,7 @@ export function createQuestionsRepo(baseDir) {
     const setId = id ? slugify(id) : slugify(name);
     if (!setId) throw new Error('Could not derive a valid id from the provided name/id');
     if (findEntry(manifest, setId)) throw new Error(`Question set id already exists: ${setId}`);
-    if (roadmapId !== undefined) {
-      const knownRoadmaps = Array.isArray(manifest.roadmaps) ? manifest.roadmaps : [];
-      if (!knownRoadmaps.some(r => r.id === roadmapId)) {
-        throw new Error(`Unknown roadmapId: ${roadmapId}. Known roadmaps: ${knownRoadmaps.map(r => r.id).join(', ') || '(none)'}`);
-      }
-    }
+    if (roadmapId !== undefined) assertKnownRoadmapId(manifest, roadmapId);
     for (const q of questions) {
       const error = validateQuestion(q, category);
       if (error) throw new Error(error);
@@ -140,6 +142,33 @@ export function createQuestionsRepo(baseDir) {
     if (fs.existsSync(filePath)) fs.unlinkSync(filePath);
     manifest.sets = manifest.sets.filter(s => s.id !== id);
     writeManifest(manifest);
+  }
+
+  function updateQuestionSetMetadata(id, { roadmapId, order, level } = {}) {
+    const manifest = readManifest();
+    const entry = findEntry(manifest, id);
+    if (!entry) throw new Error(`Question set not found: ${id}`);
+
+    if (roadmapId !== undefined) {
+      if (roadmapId === null) {
+        delete entry.roadmapId;
+      } else {
+        assertKnownRoadmapId(manifest, roadmapId);
+        entry.roadmapId = roadmapId;
+      }
+    }
+    if (order !== undefined) {
+      if (!Number.isInteger(order)) throw new Error('order must be an integer');
+      entry.order = order;
+    }
+    if (level !== undefined) {
+      if (typeof level !== 'string' || level.length === 0) throw new Error('level must be a non-empty string');
+      entry.level = level;
+    }
+
+    entry.updatedAt = new Date().toISOString();
+    writeManifest(manifest);
+    return entry;
   }
 
   function updateManifestEntry(manifest, id, set) {
@@ -258,6 +287,7 @@ export function createQuestionsRepo(baseDir) {
     getQuestionSet,
     createQuestionSet,
     deleteQuestionSet,
+    updateQuestionSetMetadata,
     addQuestion,
     updateQuestion,
     deleteQuestion,

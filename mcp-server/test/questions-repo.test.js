@@ -383,6 +383,67 @@ function testCreateQuestionSetLeavesRoadmapIdUnsetWhenOmitted() {
   assert.strictEqual('roadmapId' in manifest.sets[0], false);
 }
 
+function testUpdateQuestionSetMetadataPersistsRoadmapIdOrderLevel() {
+  const dir = makeTempQuestionsDir();
+  fs.writeFileSync(path.join(dir, 'manifest.json'), JSON.stringify({ roadmaps: [{ id: 'demo-path', name: 'Demo Path' }], sets: [] }, null, 2));
+  const repo = createQuestionsRepo(dir);
+  repo.createQuestionSet({ id: 'demo', name: 'Demo' });
+
+  const updated = repo.updateQuestionSetMetadata('demo', { roadmapId: 'demo-path', order: 5, level: 'N3' });
+  assert.strictEqual(updated.roadmapId, 'demo-path');
+  assert.strictEqual(updated.order, 5);
+  assert.strictEqual(updated.level, 'N3');
+
+  const manifest = JSON.parse(fs.readFileSync(path.join(dir, 'manifest.json'), 'utf8'));
+  assert.strictEqual(manifest.sets[0].roadmapId, 'demo-path');
+  assert.strictEqual(manifest.sets[0].order, 5);
+  assert.strictEqual(manifest.sets[0].level, 'N3');
+}
+
+function testUpdateQuestionSetMetadataRejectsUnknownRoadmapId() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createQuestionSet({ id: 'demo', name: 'Demo' });
+  assert.throws(() => repo.updateQuestionSetMetadata('demo', { roadmapId: 'nope' }), /Unknown roadmapId: nope/);
+}
+
+function testUpdateQuestionSetMetadataClearsRoadmapIdWithNull() {
+  const dir = makeTempQuestionsDir();
+  fs.writeFileSync(path.join(dir, 'manifest.json'), JSON.stringify({ roadmaps: [{ id: 'demo-path', name: 'Demo Path' }], sets: [] }, null, 2));
+  const repo = createQuestionsRepo(dir);
+  repo.createQuestionSet({ id: 'demo', name: 'Demo', roadmapId: 'demo-path' });
+
+  repo.updateQuestionSetMetadata('demo', { roadmapId: null });
+
+  const manifest = JSON.parse(fs.readFileSync(path.join(dir, 'manifest.json'), 'utf8'));
+  assert.strictEqual('roadmapId' in manifest.sets[0], false);
+}
+
+function testUpdateQuestionSetMetadataLeavesUnspecifiedFieldsUnchanged() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createQuestionSet({ id: 'demo', name: 'Demo', order: 3, level: 'N4' });
+
+  repo.updateQuestionSetMetadata('demo', { level: 'N3' });
+
+  const manifest = JSON.parse(fs.readFileSync(path.join(dir, 'manifest.json'), 'utf8'));
+  assert.strictEqual(manifest.sets[0].order, 3);
+  assert.strictEqual(manifest.sets[0].level, 'N3');
+}
+
+function testUpdateQuestionSetMetadataErrorsOnUnknownSetId() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  assert.throws(() => repo.updateQuestionSetMetadata('nope', { order: 1 }), /Question set not found: nope/);
+}
+
+function testUpdateQuestionSetMetadataRejectsNonIntegerOrder() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createQuestionSet({ id: 'demo', name: 'Demo' });
+  assert.throws(() => repo.updateQuestionSetMetadata('demo', { order: 'first' }), /order must be an integer/);
+}
+
 function testSearchQuestionsAcrossMixedVocabularyAndGrammarSetsDoesNotThrow() {
   const dir = makeTempQuestionsDir();
   const repo = createQuestionsRepo(dir);
@@ -457,5 +518,11 @@ testCreateQuestionSetOrderDoesNotCollideAfterDeleteThenCreate();
 testCreateQuestionSetPersistsValidRoadmapId();
 testCreateQuestionSetRejectsUnknownRoadmapId();
 testCreateQuestionSetLeavesRoadmapIdUnsetWhenOmitted();
+testUpdateQuestionSetMetadataPersistsRoadmapIdOrderLevel();
+testUpdateQuestionSetMetadataRejectsUnknownRoadmapId();
+testUpdateQuestionSetMetadataClearsRoadmapIdWithNull();
+testUpdateQuestionSetMetadataLeavesUnspecifiedFieldsUnchanged();
+testUpdateQuestionSetMetadataErrorsOnUnknownSetId();
+testUpdateQuestionSetMetadataRejectsNonIntegerOrder();
 
 console.log('questions-repo tests passed');

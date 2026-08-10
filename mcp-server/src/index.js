@@ -112,6 +112,21 @@ server.registerTool(
 );
 
 server.registerTool(
+  'update_question_set_metadata',
+  {
+    title: 'Update question set metadata',
+    description: 'Update the roadmapId, order, or level of an existing question set in the manifest. Does not touch the set\'s questions or file. Pass roadmapId: null to remove the set from its roadmap; omit a field to leave it unchanged.',
+    inputSchema: {
+      id: z.string(),
+      roadmapId: z.string().nullable().optional(),
+      order: z.number().int().optional(),
+      level: z.string().optional()
+    }
+  },
+  guarded(({ id, roadmapId, order, level }) => repo.updateQuestionSetMetadata(id, { roadmapId, order, level }))
+);
+
+server.registerTool(
   'add_question',
   {
     title: 'Add question',

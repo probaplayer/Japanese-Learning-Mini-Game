@@ -1,0 +1,402 @@
+{
+  "id": "n4-l27-kanji-hanviet",
+  "name": "N4 Bài 27 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 27, hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-10T09:28:25.862Z",
+  "updatedAt": "2026-08-10T09:28:53.535Z",
+  "questions": [
+    {
+      "word": "飼",
+      "romaji": "tự",
+      "translation": "nuôi (飼います)",
+      "q": "Chữ 飼 trong từ 飼います mang âm Hán Việt nào?",
+      "a": [
+        "TỰ",
+        "KIẾN",
+        "TẨU",
+        "THỦ"
+      ],
+      "c": 0,
+      "ex": "飼います: nuôi (động vật)"
+    },
+    {
+      "word": "建",
+      "romaji": "kiến",
+      "translation": "xây (建てます)",
+      "q": "Chữ 建 trong từ 建てます mang âm Hán Việt nào?",
+      "a": [
+        "TỰ",
+        "KIẾN",
+        "TẨU",
+        "VĂN"
+      ],
+      "c": 1,
+      "ex": "建てます: xây, xây dựng"
+    },
+    {
+      "word": "走",
+      "romaji": "tẩu",
+      "translation": "chạy (走ります)",
+      "q": "Chữ 走 trong từ 走ります mang âm Hán Việt nào?",
+      "a": [
+        "KIẾN",
+        "THỦ",
+        "TẨU",
+        "KHAI"
+      ],
+      "c": 2,
+      "ex": "走ります: chạy (trên đường)"
+    },
+    {
+      "word": "取",
+      "romaji": "thủ",
+      "translation": "lấy, xin (取ります)",
+      "q": "Chữ 取 trong từ 取ります mang âm Hán Việt nào?",
+      "a": [
+        "THỦ",
+        "TỰ",
+        "ĐIỂU",
+        "THANH"
+      ],
+      "c": 0,
+      "ex": "取ります: xin (nghỉ)"
+    },
+    {
+      "word": "見",
+      "romaji": "kiến",
+      "translation": "nhìn (見えます)",
+      "q": "Chữ 見 trong từ 見えます mang âm Hán Việt nào?",
+      "a": [
+        "KIẾN",
+        "VĂN",
+        "KHAI",
+        "BA"
+      ],
+      "c": 0,
+      "ex": "見えます: nhìn thấy"
+    },
+    {
+      "word": "聞",
+      "romaji": "văn",
+      "translation": "nghe (聞こえます)",
+      "q": "Chữ 聞 trong từ 聞こえます mang âm Hán Việt nào?",
+      "a": [
+        "KIẾN",
+        "VĂN",
+        "KHAI",
+        "HOA"
+      ],
+      "c": 1,
+      "ex": "聞こえます: nghe thấy"
+    },
+    {
+      "word": "開",
+      "romaji": "khai",
+      "translation": "mở (開きます)",
+      "q": "Chữ 開 trong từ 開きます mang âm Hán Việt nào?",
+      "a": [
+        "THANH",
+        "TẨU",
+        "KHAI",
+        "HỮA"
+      ],
+      "c": 2,
+      "ex": "開きます: mở (lớp học)"
+    },
+    {
+      "word": "鳥",
+      "romaji": "điểu",
+      "translation": "chim (鳥)",
+      "q": "Chữ 鳥 mang âm Hán Việt nào?",
+      "a": [
+        "ĐIỂU",
+        "BA",
+        "THANH",
+        "TÍCH"
+      ],
+      "c": 0,
+      "ex": "鳥: chim"
+    },
+    {
+      "word": "声",
+      "romaji": "thanh",
+      "translation": "giọng nói (声)",
+      "q": "Chữ 声 mang âm Hán Việt nào?",
+      "a": [
+        "BA",
+        "THANH",
+        "ĐẮO",
+        "CỤ"
+      ],
+      "c": 1,
+      "ex": "声: giọng nói"
+    },
+    {
+      "word": "波",
+      "romaji": "ba",
+      "translation": "sóng (波)",
+      "q": "Chữ 波 mang âm Hán Việt nào?",
+      "a": [
+        "THANH",
+        "BA",
+        "TRÚ",
+        "GIAN"
+      ],
+      "c": 1,
+      "ex": "波: sóng"
+    },
+    {
+      "word": "花",
+      "romaji": "hoa",
+      "translation": "hoa (花火)",
+      "q": "Chữ 花 trong từ 花火 mang âm Hán Việt nào?",
+      "a": [
+        "HOA",
+        "HỮA",
+        "CẢNH",
+        "SẮC"
+      ],
+      "c": 0,
+      "ex": "花火: pháo hoa"
+    },
+    {
+      "word": "火",
+      "romaji": "hỏa",
+      "translation": "lửa (花火)",
+      "q": "Chữ 火 trong từ 花火 mang âm Hán Việt nào?",
+      "a": [
+        "HOA",
+        "HỮA",
+        "ĐÀI",
+        "SỞ"
+      ],
+      "c": 1,
+      "ex": "花火: pháo hoa"
+    },
+    {
+      "word": "景",
+      "romaji": "cảnh",
+      "translation": "cảnh (景色)",
+      "q": "Chữ 景 trong từ 景色 mang âm Hán Việt nào?",
+      "a": [
+        "CẢNH",
+        "SẮC",
+        "TRÚ",
+        "GIAN"
+      ],
+      "c": 0,
+      "ex": "景色: phong cảnh"
+    },
+    {
+      "word": "色",
+      "romaji": "sắc",
+      "translation": "sắc, màu (景色)",
+      "q": "Chữ 色 trong từ 景色 mang âm Hán Việt nào?",
+      "a": [
+        "CẢNH",
+        "SẮC",
+        "TÍCH",
+        "MỘNG"
+      ],
+      "c": 1,
+      "ex": "景色: phong cảnh"
+    },
+    {
+      "word": "昼",
+      "romaji": "trú",
+      "translation": "ban ngày (昼間)",
+      "q": "Chữ 昼 trong từ 昼間 mang âm Hán Việt nào?",
+      "a": [
+        "TRÚ",
+        "GIAN",
+        "ĐẮO",
+        "CỤ"
+      ],
+      "c": 0,
+      "ex": "昼間: thời gian ban ngày"
+    },
+    {
+      "word": "間",
+      "romaji": "gian",
+      "translation": "khoảng (昼間)",
+      "q": "Chữ 間 trong từ 昼間 mang âm Hán Việt nào?",
+      "a": [
+        "TRÚ",
+        "GIAN",
+        "TÍCH",
+        "GIA"
+      ],
+      "c": 1,
+      "ex": "昼間: thời gian ban ngày"
+    },
+    {
+      "word": "昔",
+      "romaji": "tích",
+      "translation": "ngày xưa (昔)",
+      "q": "Chữ 昔 mang âm Hán Việt nào?",
+      "a": [
+        "TÍCH",
+        "TRÚ",
+        "MỘNG",
+        "GIA"
+      ],
+      "c": 0,
+      "ex": "昔: ngày xưa"
+    },
+    {
+      "word": "道",
+      "romaji": "đạo",
+      "translation": "đường, đạo (道具)",
+      "q": "Chữ 道 trong từ 道具 mang âm Hán Việt nào?",
+      "a": [
+        "ĐẮO",
+        "CỤ",
+        "ĐÀI",
+        "SỞ"
+      ],
+      "c": 0,
+      "ex": "道具: dụng cụ"
+    },
+    {
+      "word": "具",
+      "romaji": "cụ",
+      "translation": "dụng cụ (道具)",
+      "q": "Chữ 具 trong từ 道具 mang âm Hán Việt nào?",
+      "a": [
+        "ĐẮO",
+        "CỤ",
+        "BỆNH",
+        "BẰNG"
+      ],
+      "c": 1,
+      "ex": "道具: dụng cụ"
+    },
+    {
+      "word": "台",
+      "romaji": "đài",
+      "translation": "bất, nền (台所)",
+      "q": "Chữ 台 trong từ 台所 mang âm Hán Việt nào?",
+      "a": [
+        "ĐÀI",
+        "SỞ",
+        "TRÚ",
+        "GIAN"
+      ],
+      "c": 0,
+      "ex": "台所: bếp"
+    },
+    {
+      "word": "所",
+      "romaji": "sở",
+      "translation": "nơi, chỗ (台所)",
+      "q": "Chữ 所 trong từ 台所 mang âm Hán Việt nào?",
+      "a": [
+        "ĐÀI",
+        "SỞ",
+        "ĐẮO",
+        "CỤ"
+      ],
+      "c": 1,
+      "ex": "台所: bếp"
+    },
+    {
+      "word": "本",
+      "romaji": "bổn",
+      "translation": "gốc, sách (本棚)",
+      "q": "Chữ 本 trong từ 本棚 mang âm Hán Việt nào?",
+      "a": [
+        "BỔN",
+        "BẰNG",
+        "MỘNG",
+        "GIA"
+      ],
+      "c": 0,
+      "ex": "本棚: giá sách"
+    },
+    {
+      "word": "棚",
+      "romaji": "bằng",
+      "translation": "giá, kệ (本棚)",
+      "q": "Chữ 棚 trong từ 本棚 mang âm Hán Việt nào?",
+      "a": [
+        "BỔN",
+        "BẰNG",
+        "ĐÀI",
+        "SỞ"
+      ],
+      "c": 1,
+      "ex": "本棚: giá sách"
+    },
+    {
+      "word": "夢",
+      "romaji": "mộng",
+      "translation": "giấc mơ (夢)",
+      "q": "Chữ 夢 mang âm Hán Việt nào?",
+      "a": [
+        "GIA",
+        "MỘNG",
+        "TÍCH",
+        "HÌNH"
+      ],
+      "c": 1,
+      "ex": "夢: giấc mơ"
+    },
+    {
+      "word": "家",
+      "romaji": "gia",
+      "translation": "nhà (家)",
+      "q": "Chữ 家 mang âm Hán Việt nào?",
+      "a": [
+        "MỘNG",
+        "GIA",
+        "HÌNH",
+        "TỰ"
+      ],
+      "c": 1,
+      "ex": "家: nhà"
+    },
+    {
+      "word": "漫",
+      "romaji": "mạn",
+      "translation": "tản mạn, tự do (漫画)",
+      "q": "Chữ 漫 trong từ 漫画 mang âm Hán Việt nào?",
+      "a": [
+        "MẠN",
+        "HỮA",
+        "CHỦ",
+        "NHÂN"
+      ],
+      "c": 0,
+      "ex": "漫画: truyện tranh"
+    },
+    {
+      "word": "画",
+      "romaji": "họa",
+      "translation": "tranh, vẽ (漫画)",
+      "q": "Chữ 画 trong từ 漫画 mang âm Hán Việt nào?",
+      "a": [
+        "MẠN",
+        "HỮA",
+        "CHỦ",
+        "NHÂN"
+      ],
+      "c": 1,
+      "ex": "漫画: truyện tranh"
+    },
+    {
+      "word": "形",
+      "romaji": "hình",
+      "translation": "hình, dạng (形)",
+      "q": "Chữ 形 mang âm Hán Việt nào?",
+      "a": [
+        "HÌNH",
+        "MẠN",
+        "HỮA",
+        "MỘNG"
+      ],
+      "c": 0,
+      "ex": "形: hình, dạng"
+    }
+  ]
+}

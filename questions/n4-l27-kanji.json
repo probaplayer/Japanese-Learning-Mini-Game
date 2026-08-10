@@ -1,0 +1,346 @@
+{
+  "id": "n4-l27-kanji",
+  "name": "N4 Bài 27 - Từ vựng Kanji (đọc)",
+  "description": "Từ vựng có kanji Bài 27 Minna no Nihongo (N4). Đáp án chỉ hiện hiragana.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-10T09:27:31.084Z",
+  "updatedAt": "2026-08-10T09:27:31.084Z",
+  "questions": [
+    {
+      "word": "飼います",
+      "romaji": "かいます",
+      "translation": "nuôi (động vật)",
+      "q": "Từ 飼います đọc là gì?",
+      "a": [
+        "かいます",
+        "たてます",
+        "とります",
+        "ひらきます"
+      ],
+      "c": 0,
+      "ex": "nuôi | 飼 (tự)"
+    },
+    {
+      "word": "建てます",
+      "romaji": "たてます",
+      "translation": "xây, xây dựng",
+      "q": "Từ 建てます đọc là gì?",
+      "a": [
+        "はしります",
+        "たてます",
+        "みえます",
+        "きこえます"
+      ],
+      "c": 1,
+      "ex": "xây | 建 (kiến)"
+    },
+    {
+      "word": "走ります",
+      "romaji": "はしります",
+      "translation": "chạy (trên đường)",
+      "q": "Từ 走ります đọc là gì?",
+      "a": [
+        "とります",
+        "はしります",
+        "ひらきます",
+        "とびます"
+      ],
+      "c": 1,
+      "ex": "chạy | 走 (tẩu)"
+    },
+    {
+      "word": "取ります",
+      "romaji": "とります",
+      "translation": "xin (nghỉ)",
+      "q": "Từ 取ります đọc là gì?",
+      "a": [
+        "とります",
+        "かいます",
+        "つけます",
+        "はしります"
+      ],
+      "c": 0,
+      "ex": "xin nghỉ | 取 (thủ)"
+    },
+    {
+      "word": "見えます",
+      "romaji": "みえます",
+      "translation": "nhìn thấy, có thể nhìn thấy",
+      "q": "Từ 見えます đọc là gì?",
+      "a": [
+        "きこえます",
+        "みえます",
+        "ひらきます",
+        "とびます"
+      ],
+      "c": 1,
+      "ex": "nhìn thấy | 見 (kiến)"
+    },
+    {
+      "word": "聞こえます",
+      "romaji": "きこえます",
+      "translation": "nghe thấy, có thể nghe thấy",
+      "q": "Từ 聞こえます đọc là gì?",
+      "a": [
+        "みえます",
+        "きこえます",
+        "はしります",
+        "ひらきます"
+      ],
+      "c": 1,
+      "ex": "nghe thấy | 聞 (văn)"
+    },
+    {
+      "word": "開きます",
+      "romaji": "ひらきます",
+      "translation": "mở (lớp học)",
+      "q": "Từ 開きます đọc là gì?",
+      "a": [
+        "ひらきます",
+        "とります",
+        "かいます",
+        "つけます"
+      ],
+      "c": 0,
+      "ex": "mở | 開 (khai)"
+    },
+    {
+      "word": "鳥",
+      "romaji": "とり",
+      "translation": "chim",
+      "q": "Từ 鳥 đọc là gì?",
+      "a": [
+        "とり",
+        "こえ",
+        "なみ",
+        "ゆめ"
+      ],
+      "c": 0,
+      "ex": "chim | 鳥 (điểu)"
+    },
+    {
+      "word": "声",
+      "romaji": "こえ",
+      "translation": "tiếng nói, giọng nói",
+      "q": "Từ 声 đọc là gì?",
+      "a": [
+        "なみ",
+        "こえ",
+        "むかし",
+        "いえ"
+      ],
+      "c": 1,
+      "ex": "giọng nói | 声 (thanh)"
+    },
+    {
+      "word": "波",
+      "romaji": "なみ",
+      "translation": "sóng",
+      "q": "Từ 波 đọc là gì?",
+      "a": [
+        "こえ",
+        "なみ",
+        "ゆめ",
+        "そら"
+      ],
+      "c": 1,
+      "ex": "sóng | 波 (ba)"
+    },
+    {
+      "word": "花火",
+      "romaji": "はなび",
+      "translation": "pháo hoa",
+      "q": "Từ 花火 đọc là gì?",
+      "a": [
+        "はなび",
+        "けしき",
+        "ひるま",
+        "だいどころ"
+      ],
+      "c": 0,
+      "ex": "pháo hoa | 花火 (hoa hỏa)"
+    },
+    {
+      "word": "景色",
+      "romaji": "けしき",
+      "translation": "phong cảnh",
+      "q": "Từ 景色 đọc là gì?",
+      "a": [
+        "ひるま",
+        "けしき",
+        "ゆめ",
+        "いえ"
+      ],
+      "c": 1,
+      "ex": "phong cảnh | 景色 (cảnh sắc)"
+    },
+    {
+      "word": "昼間",
+      "romaji": "ひるま",
+      "translation": "thời gian ban ngày",
+      "q": "Từ 昼間 đọc là gì?",
+      "a": [
+        "ひるま",
+        "むかし",
+        "どうぐ",
+        "いえ"
+      ],
+      "c": 0,
+      "ex": "thời gian ban ngày | 昼間 (trú gian)"
+    },
+    {
+      "word": "昔",
+      "romaji": "むかし",
+      "translation": "ngày xưa, trước đây",
+      "q": "Từ 昔 đọc là gì?",
+      "a": [
+        "むかし",
+        "ひるま",
+        "しょうらい",
+        "いえ"
+      ],
+      "c": 0,
+      "ex": "ngày xưa | 昔 (tích)"
+    },
+    {
+      "word": "道具",
+      "romaji": "どうぐ",
+      "translation": "dụng cụ, công cụ",
+      "q": "Từ 道具 đọc là gì?",
+      "a": [
+        "どうぐ",
+        "ほんだな",
+        "だいどころ",
+        "ゆめ"
+      ],
+      "c": 0,
+      "ex": "dụng cụ | 道具 (đạo cụ)"
+    },
+    {
+      "word": "自動販売機",
+      "romaji": "じどうはんばいき",
+      "translation": "máy bán tự động",
+      "q": "Từ 自動販売機 đọc là gì?",
+      "a": [
+        "じどうはんばいき",
+        "つうしんはんばい",
+        "だいどころ",
+        "ほんだな"
+      ],
+      "c": 0,
+      "ex": "máy bán tự động | 自動販売機"
+    },
+    {
+      "word": "台所",
+      "romaji": "だいどころ",
+      "translation": "bếp",
+      "q": "Từ 台所 đọc là gì?",
+      "a": [
+        "だいどころ",
+        "ほんだな",
+        "ゆめ",
+        "いえ"
+      ],
+      "c": 0,
+      "ex": "bếp | 台所 (đài sở)"
+    },
+    {
+      "word": "本棚",
+      "romaji": "ほんだな",
+      "translation": "giá sách",
+      "q": "Từ 本棚 đọc là gì?",
+      "a": [
+        "ほんだな",
+        "だいどころ",
+        "どうぐ",
+        "いえ"
+      ],
+      "c": 0,
+      "ex": "giá sách | 本棚 (bổn bằng)"
+    },
+    {
+      "word": "夢",
+      "romaji": "ゆめ",
+      "translation": "giấc mơ, ước mơ",
+      "q": "Từ 夢 đọc là gì?",
+      "a": [
+        "いえ",
+        "ゆめ",
+        "しょうらい",
+        "じぶん"
+      ],
+      "c": 1,
+      "ex": "giấc mơ | 夢 (mộng)"
+    },
+    {
+      "word": "家",
+      "romaji": "いえ",
+      "translation": "nhà",
+      "q": "Từ 家 đọc là gì?",
+      "a": [
+        "いえ",
+        "ゆめ",
+        "しょうらい",
+        "じぶん"
+      ],
+      "c": 0,
+      "ex": "nhà | 家 (gia)"
+    },
+    {
+      "word": "漫画",
+      "romaji": "まんが",
+      "translation": "truyện tranh",
+      "q": "Từ 漫画 đọc là gì?",
+      "a": [
+        "まんが",
+        "しゅじんこう",
+        "かたち",
+        "しょうらい"
+      ],
+      "c": 0,
+      "ex": "truyện tranh | 漫画 (mạn họa)"
+    },
+    {
+      "word": "主人公",
+      "romaji": "しゅじんこう",
+      "translation": "nhân vật chính",
+      "q": "Từ 主人公 đọc là gì?",
+      "a": [
+        "しゅじんこう",
+        "まんが",
+        "かたち",
+        "ふしぎ"
+      ],
+      "c": 0,
+      "ex": "nhân vật chính | 主人公 (chủ nhân công)"
+    },
+    {
+      "word": "形",
+      "romaji": "かたち",
+      "translation": "hình, dạng",
+      "q": "Từ 形 đọc là gì?",
+      "a": [
+        "かたち",
+        "しゅじんこう",
+        "ゆめ",
+        "しょうらい"
+      ],
+      "c": 0,
+      "ex": "hình, dạng | 形 (hình)"
+    },
+    {
+      "word": "将来",
+      "romaji": "しょうらい",
+      "translation": "tương lai",
+      "q": "Từ 将来 đọc là gì?",
+      "a": [
+        "しょうらい",
+        "じぶん",
+        "かたち",
+        "いえ"
+      ],
+      "c": 0,
+      "ex": "tương lai | 将来 (tương lai)"
+    }
+  ]
+}

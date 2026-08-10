@@ -1,0 +1,346 @@
+{
+  "id": "n4-l27-vocab",
+  "name": "N4 Bài 27 - Từ vựng (nghĩa)",
+  "description": "Từ vựng Minna no Nihongo Bài 27 (N4). Câu hỏi hỏi nghĩa tiếng Việt của từ.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-10T09:25:48.468Z",
+  "updatedAt": "2026-08-10T09:26:03.818Z",
+  "questions": [
+    {
+      "word": "飼います",
+      "romaji": "かいます",
+      "translation": "nuôi (động vật)",
+      "q": "Từ 飼います (かいます) có nghĩa là gì?",
+      "a": [
+        "nuôi (động vật)",
+        "xây, xây dựng",
+        "chạy",
+        "xin nghỉ"
+      ],
+      "c": 0,
+      "ex": "飼 (tự) - nuôi"
+    },
+    {
+      "word": "建てます",
+      "romaji": "たてます",
+      "translation": "xây, xây dựng",
+      "q": "Từ 建てます (たてます) có nghĩa là gì?",
+      "a": [
+        "chạy",
+        "xây, xây dựng",
+        "mở (lớp học)",
+        "nghe thấy"
+      ],
+      "c": 1,
+      "ex": "建 (kiến) - xây"
+    },
+    {
+      "word": "走ります",
+      "romaji": "はしります",
+      "translation": "chạy (trên đường)",
+      "q": "Từ 走ります (はしります) có nghĩa là gì?",
+      "a": [
+        "nhìn thấy",
+        "chạy (trên đường)",
+        "xin nghỉ",
+        "bay"
+      ],
+      "c": 1,
+      "ex": "走 (tẩu) - chạy"
+    },
+    {
+      "word": "取ります",
+      "romaji": "とります",
+      "translation": "xin (nghỉ)",
+      "q": "Từ 取ります (とります) trong câu 休みを取ります có nghĩa là gì?",
+      "a": [
+        "xin (nghỉ)",
+        "mở (lớp học)",
+        "nuôi",
+        "lắp, ghép thêm"
+      ],
+      "c": 0,
+      "ex": "取 (thủ) - lấy, xin"
+    },
+    {
+      "word": "見えます",
+      "romaji": "みえます",
+      "translation": "nhìn thấy, có thể nhìn thấy",
+      "q": "Từ 見えます (みえます) có nghĩa là gì?",
+      "a": [
+        "nghe thấy",
+        "nhìn thấy, có thể nhìn thấy",
+        "bay",
+        "xây"
+      ],
+      "c": 1,
+      "ex": "見 (kiến) - nhìn"
+    },
+    {
+      "word": "聞こえます",
+      "romaji": "きこえます",
+      "translation": "nghe thấy, có thể nghe thấy",
+      "q": "Từ 聞こえます (きこえます) có nghĩa là gì?",
+      "a": [
+        "nhìn thấy",
+        "nghe thấy, có thể nghe thấy",
+        "chạy",
+        "mở"
+      ],
+      "c": 1,
+      "ex": "聞 (văn) - nghe"
+    },
+    {
+      "word": "開きます",
+      "romaji": "ひらきます",
+      "translation": "mở (lớp học)",
+      "q": "Từ 開きます (ひらきます) có nghĩa là gì?",
+      "a": [
+        "mở (lớp học)",
+        "đóng",
+        "xin nghỉ",
+        "nuôi"
+      ],
+      "c": 0,
+      "ex": "開 (khai) - mở"
+    },
+    {
+      "word": "鳥",
+      "romaji": "とり",
+      "translation": "chim",
+      "q": "Từ 鳥 (とり) có nghĩa là gì?",
+      "a": [
+        "chim",
+        "sóng",
+        "pháo hoa",
+        "phong cảnh"
+      ],
+      "c": 0,
+      "ex": "鳥 (điểu)"
+    },
+    {
+      "word": "声",
+      "romaji": "こえ",
+      "translation": "tiếng nói, giọng nói",
+      "q": "Từ 声 (こえ) có nghĩa là gì?",
+      "a": [
+        "tiếng nói, giọng nói",
+        "sóng",
+        "ngày xưa",
+        "dụng cụ"
+      ],
+      "c": 0,
+      "ex": "声 (thanh)"
+    },
+    {
+      "word": "波",
+      "romaji": "なみ",
+      "translation": "sóng",
+      "q": "Từ 波 (なみ) có nghĩa là gì?",
+      "a": [
+        "pháo hoa",
+        "sóng",
+        "chim",
+        "giá sách"
+      ],
+      "c": 1,
+      "ex": "波 (ba)"
+    },
+    {
+      "word": "花火",
+      "romaji": "はなび",
+      "translation": "pháo hoa",
+      "q": "Từ 花火 (はなび) có nghĩa là gì?",
+      "a": [
+        "pháo hoa",
+        "phong cảnh",
+        "ngày xưa",
+        "bếp"
+      ],
+      "c": 0,
+      "ex": "花火 (hoa hỏa)"
+    },
+    {
+      "word": "景色",
+      "romaji": "けしき",
+      "translation": "phong cảnh",
+      "q": "Từ 景色 (けしき) có nghĩa là gì?",
+      "a": [
+        "phong cảnh",
+        "pháo hoa",
+        "giấc mơ",
+        "bản thân"
+      ],
+      "c": 0,
+      "ex": "景色 (cảnh sắc)"
+    },
+    {
+      "word": "昼間",
+      "romaji": "ひるま",
+      "translation": "thời gian ban ngày",
+      "q": "Từ 昼間 (ひるま) có nghĩa là gì?",
+      "a": [
+        "thời gian ban ngày",
+        "ngày xưa",
+        "bếp",
+        "giá sách"
+      ],
+      "c": 0,
+      "ex": "昼間 (trú gian)"
+    },
+    {
+      "word": "昔",
+      "romaji": "むかし",
+      "translation": "ngày xưa, trước đây",
+      "q": "Từ 昔 (むかし) có nghĩa là gì?",
+      "a": [
+        "ngày xưa, trước đây",
+        "thời gian ban ngày",
+        "tương lai",
+        "nhà"
+      ],
+      "c": 0,
+      "ex": "昔 (tích)"
+    },
+    {
+      "word": "道具",
+      "romaji": "どうぐ",
+      "translation": "dụng cụ, công cụ",
+      "q": "Từ 道具 (どうぐ) có nghĩa là gì?",
+      "a": [
+        "dụng cụ, công cụ",
+        "giá sách",
+        "máy bán tự động",
+        "bếp"
+      ],
+      "c": 0,
+      "ex": "道具 (đạo cụ)"
+    },
+    {
+      "word": "自動販売機",
+      "romaji": "じどうはんばいき",
+      "translation": "máy bán tự động",
+      "q": "Từ 自動販売機 (じどうはんばいき) có nghĩa là gì?",
+      "a": [
+        "máy bán tự động",
+        "dụng cụ",
+        "bếp",
+        "giấc mơ"
+      ],
+      "c": 0,
+      "ex": "自動販売機 (tự động phiến mại cơ)"
+    },
+    {
+      "word": "台所",
+      "romaji": "だいどころ",
+      "translation": "bếp",
+      "q": "Từ 台所 (だいどころ) có nghĩa là gì?",
+      "a": [
+        "bếp",
+        "giá sách",
+        "nhà",
+        "tương lai"
+      ],
+      "c": 0,
+      "ex": "台所 (đài sở)"
+    },
+    {
+      "word": "本棚",
+      "romaji": "ほんだな",
+      "translation": "giá sách",
+      "q": "Từ 本棚 (ほんだな) có nghĩa là gì?",
+      "a": [
+        "giá sách",
+        "bếp",
+        "dụng cụ",
+        "nhà"
+      ],
+      "c": 0,
+      "ex": "本棚 (bổn bằng)"
+    },
+    {
+      "word": "夢",
+      "romaji": "ゆめ",
+      "translation": "giấc mơ, ước mơ",
+      "q": "Từ 夢 (ゆめ) có nghĩa là gì?",
+      "a": [
+        "giấc mơ, ước mơ",
+        "tương lai",
+        "bản thân",
+        "nhà"
+      ],
+      "c": 0,
+      "ex": "夢 (mộng)"
+    },
+    {
+      "word": "家",
+      "romaji": "いえ",
+      "translation": "nhà",
+      "q": "Từ 家 (いえ) có nghĩa là gì?",
+      "a": [
+        "nhà",
+        "giấc mơ",
+        "tương lai",
+        "hình, dạng"
+      ],
+      "c": 0,
+      "ex": "家 (gia)"
+    },
+    {
+      "word": "漫画",
+      "romaji": "まんが",
+      "translation": "truyện tranh",
+      "q": "Từ 漫画 (まんが) có nghĩa là gì?",
+      "a": [
+        "truyện tranh",
+        "nhân vật chính",
+        "hình, dạng",
+        "tương lai"
+      ],
+      "c": 0,
+      "ex": "漫画 (mạn họa)"
+    },
+    {
+      "word": "主人公",
+      "romaji": "しゅじんこう",
+      "translation": "nhân vật chính",
+      "q": "Từ 主人公 (しゅじんこう) có nghĩa là gì?",
+      "a": [
+        "nhân vật chính",
+        "truyện tranh",
+        "bí ẩn",
+        "hình, dạng"
+      ],
+      "c": 0,
+      "ex": "主人公 (chủ nhân công)"
+    },
+    {
+      "word": "形",
+      "romaji": "かたち",
+      "translation": "hình, dạng",
+      "q": "Từ 形 (かたち) có nghĩa là gì?",
+      "a": [
+        "hình, dạng",
+        "nhân vật chính",
+        "giấc mơ",
+        "tương lai"
+      ],
+      "c": 0,
+      "ex": "形 (hình)"
+    },
+    {
+      "word": "将来",
+      "romaji": "しょうらい",
+      "translation": "tương lai",
+      "q": "Từ 将来 (しょうらい) có nghĩa là gì?",
+      "a": [
+        "tương lai",
+        "bản thân",
+        "hình, dạng",
+        "nhà"
+      ],
+      "c": 0,
+      "ex": "将来 (tương lai)"
+    }
+  ]
+}

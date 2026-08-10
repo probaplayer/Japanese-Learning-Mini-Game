@@ -1,7 +1,13 @@
 {
   "roadmaps": [
-    { "id": "n5-path", "name": "N5 Path" },
-    { "id": "n4-path", "name": "N4 Path" }
+    {
+      "id": "n5-path",
+      "name": "N5 Path"
+    },
+    {
+      "id": "n4-path",
+      "name": "N4 Path"
+    }
   ],
   "sets": [
     {
@@ -80,6 +86,46 @@
       "roadmapId": "n4-path",
       "questionCount": 10,
       "updatedAt": "2026-08-07T10:00:33.868Z"
+    },
+    {
+      "id": "n4-l27-vocab",
+      "file": "n4-l27-vocab.json",
+      "name": "N4 Bài 27 - Từ vựng (nghĩa)",
+      "category": "vocabulary",
+      "order": 8,
+      "level": "N/A",
+      "questionCount": 24,
+      "updatedAt": "2026-08-10T09:26:03.818Z"
+    },
+    {
+      "id": "n4-l27-kanji",
+      "file": "n4-l27-kanji.json",
+      "name": "N4 Bài 27 - Từ vựng Kanji (đọc)",
+      "category": "vocabulary",
+      "order": 9,
+      "level": "N/A",
+      "questionCount": 24,
+      "updatedAt": "2026-08-10T09:27:31.084Z"
+    },
+    {
+      "id": "n4-l27-kanji-hanviet",
+      "file": "n4-l27-kanji-hanviet.json",
+      "name": "N4 Bài 27 - Hán Việt từng Kanji",
+      "category": "vocabulary",
+      "order": 10,
+      "level": "N/A",
+      "questionCount": 28,
+      "updatedAt": "2026-08-10T09:28:53.535Z"
+    },
+    {
+      "id": "n4-l27-grammar",
+      "file": "n4-l27-grammar.json",
+      "name": "N4 Bài 27 - Ngữ pháp",
+      "category": "grammar",
+      "order": 11,
+      "level": "N/A",
+      "questionCount": 10,
+      "updatedAt": "2026-08-10T09:30:23.370Z"
     }
   ]
 }

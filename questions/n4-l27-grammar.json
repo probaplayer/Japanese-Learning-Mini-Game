@@ -1,0 +1,131 @@
+{
+  "id": "n4-l27-grammar",
+  "name": "N4 Bài 27 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 27 Minna no Nihongo: Thể khả năng (可能形), みえます/きこえます, できます, も nhấn mạnh, は...が đối chiếu, しか.",
+  "category": "grammar",
+  "createdAt": "2026-08-10T09:29:39.794Z",
+  "updatedAt": "2026-08-10T09:30:23.370Z",
+  "questions": [
+    {
+      "sentence": "私はビールが飲めません",
+      "chunks": [
+        "私",
+        "は",
+        "ビール",
+        "が",
+        "飲めません"
+      ],
+      "translation": "Tôi không thể uống bia",
+      "ex": "Thể khả năng (可能形): 飲みます→飲めます. Trợ từ を đổi thành が"
+    },
+    {
+      "sentence": "忙しいですからいなかへ帰れません",
+      "chunks": [
+        "忙しいですから",
+        "いなか",
+        "へ",
+        "帰れません"
+      ],
+      "translation": "Vì bận nên tôi không thể về quê",
+      "ex": "帰ります→帰れます (thể khả năng nhóm 1)"
+    },
+    {
+      "sentence": "新幹線から富士山が見えます",
+      "chunks": [
+        "新幹線",
+        "から",
+        "富士山",
+        "が",
+        "見えます"
+      ],
+      "translation": "Từ tàu Shinkansen có thể nhìn thấy núi Phú Sĩ",
+      "ex": "見えます: nhìn thấy mà không cần chủ ý (khác với 見られます - khả năng có chủ ý)"
+    },
+    {
+      "sentence": "電話でラジオが聞けます",
+      "chunks": [
+        "電話",
+        "で",
+        "ラジオ",
+        "が",
+        "聞けます"
+      ],
+      "translation": "Có thể nghe radio qua điện thoại",
+      "ex": "聞けます (thể khả năng của 聞きます): nói về khả năng được phép nghe"
+    },
+    {
+      "sentence": "ここからラジオの音が聞こえます",
+      "chunks": [
+        "ここ",
+        "から",
+        "ラジオ",
+        "の",
+        "音",
+        "が",
+        "聞こえます"
+      ],
+      "translation": "Từ đây nghe được tiếng radio",
+      "ex": "聞こえます: âm thanh tự động lọt vào tai, không phụ thuộc chủ ý"
+    },
+    {
+      "sentence": "晚ご飯がもうできました",
+      "chunks": [
+        "晚ご飯",
+        "が",
+        "もう",
+        "できました"
+      ],
+      "translation": "Cơm tối đã xong",
+      "ex": "できました: nói về việc gì đã hoàn thành"
+    },
+    {
+      "sentence": "駅の前に大きいスーパーができました",
+      "chunks": [
+        "駅の前",
+        "に",
+        "大きい",
+        "スーパー",
+        "が",
+        "できました"
+      ],
+      "translation": "Có 1 siêu thị lớn đã được xây lên trước nhà ga",
+      "ex": "できました: cũng dùng cho việc mới được xây dựng xong"
+    },
+    {
+      "sentence": "山田さんにも会いましたよ",
+      "chunks": [
+        "山田さん",
+        "にも",
+        "会いました",
+        "よ"
+      ],
+      "translation": "Cũng đã gặp anh Yamada đó",
+      "ex": "にも: trợ từ も đặt sau trợ từ khác (に, で, から) mang nghĩa \"cũng\" nhấn mạnh"
+    },
+    {
+      "sentence": "肉は食べますが魚は食べません",
+      "chunks": [
+        "肉",
+        "は",
+        "食べますが",
+        "魚",
+        "は",
+        "食べません"
+      ],
+      "translation": "Thịt thì tôi ăn còn cá thì tôi không",
+      "ex": "N1は~KHẲNG ĐịNHが, N2は~PHỦ ĐịNH: nhấn mạnh sự đối chiếu"
+    },
+    {
+      "sentence": "冷蔵庫にりんごしかありません",
+      "chunks": [
+        "冷蔵庫",
+        "に",
+        "りんご",
+        "しか",
+        "ありません"
+      ],
+      "translation": "Trong tủ lạnh chỉ có táo thôi",
+      "ex": "しか~ない: chỉ, chỉ có ~ thôi (thay thế trực tiếp cho を/が, luôn đi với thể phủ định)"
+    }
+  ]
+}

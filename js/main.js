@@ -113,12 +113,13 @@ function showScreen(id) {
   const prevScreen = currentScreen;
   currentScreen = id;
   document.querySelectorAll('.screen').forEach(s => {
-    s.classList.remove('active');
+    s.classList.remove('active', 'screen-transitioning');
     s.style.display = 'none';
   });
   const el = document.getElementById(id);
   el.style.display = 'flex';
   el.classList.add('active');
+  requestAnimationFrame(() => el.classList.add('screen-transitioning'));
   if (prevScreen === 'screen-match' && id !== 'screen-match') {
     if (typeof stopMatchTimer === 'function') stopMatchTimer();
   }

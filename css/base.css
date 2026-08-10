@@ -30,6 +30,7 @@
 
 body.animations-disabled .screen { transition: none; opacity: 1; }
 body.animations-disabled .screen.screen-transitioning { animation: none !important; }
+body.animations-disabled .main-nav.menu-nav-animate .menu-btn { animation: none !important; opacity: 1; }
 body.animations-disabled .tile-card,
 body.animations-disabled .action-btn,
 body.animations-disabled .menu-btn,

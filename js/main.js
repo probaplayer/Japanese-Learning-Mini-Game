@@ -126,7 +126,14 @@ function showScreen(id) {
   if (id === 'screen-data') {
     refreshQuestionSetUI();
   }
-  if (id === 'screen-menu') updateMenuUI();
+  if (id === 'screen-menu') {
+    updateMenuUI();
+    const nav = document.querySelector('.main-nav');
+    if (nav) {
+      nav.classList.remove('menu-nav-animate');
+      requestAnimationFrame(() => nav.classList.add('menu-nav-animate'));
+    }
+  }
   if (id === 'screen-settings') renderSettingsScreen();
   if (id === 'screen-stats') renderStatsScreen();
 }

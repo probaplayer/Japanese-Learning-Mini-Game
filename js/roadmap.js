@@ -71,7 +71,7 @@ function buildRoadmapNodesHtml(setsForRoadmap, progressById, { highlightSetId, c
     const categoryIcon = meta.category === 'grammar' ? '🧩' : '📖';
     const styleAttr = compact ? '' : ` style="--i:${i}"`;
     html += `
-      <button class="roadmap-node ${side} ${playedClass} ${highlightClass}"${styleAttr} data-set-id="${escapeHtml(meta.id)}" onclick="${clickHandler}('${escapeHtml(meta.id)}')">
+      <button class="roadmap-node ${side} ${playedClass} ${highlightClass}"${styleAttr} data-set-id="${escapeHtml(meta.id)}" onclick="${clickHandler}(this, '${escapeHtml(meta.id)}')">
         ${showAvatar ? '<span class="roadmap-avatar" aria-hidden="true">🚀</span>' : ''}
         <span class="roadmap-node-icon">${categoryIcon}</span>
         <span class="roadmap-node-body">
@@ -107,7 +107,7 @@ async function renderRoadmap() {
   if (tabsEl) tabsEl.innerHTML = '';
 
   try {
-    activeRoadmapTabId = pickDefaultRoadmapId(activeRoadmapTabId);
+    activeRoadmapTabId = pickDefaultRoadmapId(null);
     if (!activeRoadmapTabId) {
       track.innerHTML = '<div class="roadmap-loading">No roadmaps configured yet.</div>';
       return;
@@ -142,10 +142,9 @@ function selectRoadmapTab(id) {
   renderRoadmapTrack();
 }
 
-function launchRoadmapNode(id) {
-  const nodeEl = document.querySelector(`.roadmap-node[data-set-id="${id}"]`);
+function launchRoadmapNode(nodeEl, id) {
   if (nodeEl) nodeEl.classList.add('roadmap-node-launch');
-  const avatarEl = document.querySelector('.roadmap-avatar');
+  const avatarEl = document.querySelector('#roadmap-track .roadmap-avatar');
   if (avatarEl) avatarEl.classList.add('roadmap-avatar-launch');
   switchQuestionSet(id);
   setTimeout(() => showScreen('screen-menu'), 300);
@@ -170,11 +169,8 @@ async function renderLibrarySetsTab() {
   }
 }
 
-function selectRoadmapNodeInPlace(id) {
-  const nodeEl = document.querySelector(`.roadmap-node[data-set-id="${id}"]`);
+function selectRoadmapNodeInPlace(nodeEl, id) {
   if (nodeEl) nodeEl.classList.add('roadmap-node-launch');
-  const avatarEl = document.querySelector('.roadmap-avatar');
-  if (avatarEl) avatarEl.classList.add('roadmap-avatar-launch');
   switchQuestionSet(id);
 }
 

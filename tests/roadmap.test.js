@@ -118,7 +118,7 @@ function testBuildRoadmapNodesHtmlHighlightsMatchingSetAndEmbedsClickHandler() {
   const html = context.buildRoadmapNodesHtml(sets, progressById, { highlightSetId: 'a', compact: false, clickHandler: 'launchRoadmapNode' });
   assert.ok(html.includes('roadmap-avatar'));
   assert.ok(html.includes('roadmap-node-highlighted'));
-  assert.ok(html.includes("launchRoadmapNode('a')"));
+  assert.ok(html.includes("launchRoadmapNode(this, 'a')"));
   assert.ok(html.includes('roadmap-node-left'));
 }
 
@@ -132,7 +132,7 @@ function testBuildRoadmapNodesHtmlCompactModeOmitsZigzagStaggerAndAvatarButKeeps
   assert.ok(!html.includes('--i:'));
   assert.ok(!html.includes('roadmap-avatar'));
   assert.ok(html.includes('roadmap-node-highlighted'));
-  assert.ok(html.includes("selectRoadmapNodeInPlace('a')"));
+  assert.ok(html.includes("selectRoadmapNodeInPlace(this, 'a')"));
 }
 
 function testRenderRoadmapChipsHtmlMarksSelectedChipActive() {

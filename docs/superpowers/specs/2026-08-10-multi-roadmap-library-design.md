@@ -139,9 +139,12 @@ differ.
 
 1. Compute progress for **every** set once (`computeRoadmapProgress(questionSets)`), same
    loading/try-catch pattern as today.
-2. Pick `activeRoadmapTabId`: keep the current value if still valid; otherwise default to the
+2. Pick `activeRoadmapTabId`: every fresh entry re-derives the default from the current
+   `activeSetId` (ignoring whatever tab was showing on a previous visit), defaulting to the
    roadmap containing `activeSetId`, falling back to `roadmapDefinitions[0]?.id`, falling back to
-   `null` if there are zero roadmap definitions. When `null`, leave `#roadmap-tabs` empty and render
+   `null` if there are zero roadmap definitions. Tab switches *within* a visit are handled
+   separately by `selectRoadmapTab`, which sets `activeRoadmapTabId` directly and is unaffected by
+   this re-derivation. When `null`, leave `#roadmap-tabs` empty and render
    `<div class="roadmap-loading">No roadmaps configured yet.</div>` into `#roadmap-track` instead of
    step 3-4 below (reuses the existing `.roadmap-loading` class, no new CSS needed for this state).
 3. Render the tab bar (one chip per `roadmapDefinitions` entry, active chip styled) into a new

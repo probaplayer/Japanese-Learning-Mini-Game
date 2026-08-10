@@ -66,7 +66,7 @@
         <nav class="main-nav">
           <button class="menu-btn btn-roadmap" onclick="showScreen('screen-roadmap')">
             <span class="btn-icon">🌌</span>
-            <span class="btn-text">LỘ TRÌNH<br><small>Hành trình học tập</small></span>
+            <span class="btn-text">ROADMAP<br><small>Your learning journey</small></span>
             <span class="btn-arrow">▶</span>
           </button>
           <button class="menu-btn btn-quiz" data-game="quiz" onclick="startGame('quiz')">
@@ -154,7 +154,8 @@
   <!-- ROADMAP -->
   <div id="screen-roadmap" class="screen screen-roadmap">
     <div class="panel roadmap-panel">
-      <h2 class="panel-title">🌌 LỘ TRÌNH</h2>
+      <h2 class="panel-title">🌌 ROADMAP</h2>
+      <div class="roadmap-tabs" id="roadmap-tabs"></div>
       <div class="roadmap-track" id="roadmap-track"></div>
       <button class="back-btn" onclick="showScreen('screen-menu')">◀ BACK TO MENU</button>
     </div>

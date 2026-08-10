@@ -31,16 +31,6 @@
   padding: 24px 0;
 }
 
-.roadmap-section-label {
-  align-self: center;
-  font-family: var(--font-px);
-  font-size: 10px;
-  color: var(--accent2);
-  text-shadow: var(--glow-y);
-  letter-spacing: 2px;
-  margin: 8px 0 -10px;
-}
-
 .roadmap-node {
   position: relative;
   width: 78%;
@@ -100,8 +90,34 @@
   .roadmap-node-icon { font-size: 33px; }
   .roadmap-node-name { font-size: 19.5px; }
   .roadmap-node-meta { font-size: 15px; }
-  .roadmap-section-label { font-size: 15px; }
 }
 
 .roadmap-avatar.roadmap-avatar-launch { animation: avatarLaunch .3s ease-out forwards; }
 .roadmap-node.roadmap-node-launch { transform: scale(1.08); box-shadow: var(--glow-g); }
+
+/* ─── Roadmap Tabs / Chips ───────────────────────── */
+.roadmap-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.roadmap-tab {
+  font-family: var(--font-px);
+  font-size: 8px;
+  padding: 8px 14px;
+  background: var(--panel);
+  border: 2px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: all .15s;
+}
+.roadmap-tab:hover { border-color: var(--accent2); color: var(--text); }
+.roadmap-tab-active {
+  border-color: var(--accent2);
+  color: var(--accent2);
+  text-shadow: var(--glow-y);
+  background: rgba(255, 214, 10, 0.08);
+}

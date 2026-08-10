@@ -104,7 +104,7 @@ export function createQuestionsRepo(baseDir) {
     return readSetFile(entry.file);
   }
 
-  function createQuestionSet({ id, name, description = '', category = 'vocabulary', questions = [] }) {
+  function createQuestionSet({ id, name, description = '', category = 'vocabulary', order, level, questions = [] }) {
     const manifest = readManifest();
     const setId = id ? slugify(id) : slugify(name);
     if (!setId) throw new Error('Could not derive a valid id from the provided name/id');
@@ -117,7 +117,9 @@ export function createQuestionsRepo(baseDir) {
     const file = `${setId}.json`;
     const set = { id: setId, name, description, category, createdAt: now, updatedAt: now, questions };
     writeSetFile(file, set);
-    manifest.sets.push({ id: setId, file, name, category, questionCount: questions.length, updatedAt: now });
+    const resolvedOrder = Number.isInteger(order) ? order : manifest.sets.length + 1;
+    const resolvedLevel = typeof level === 'string' && level.length > 0 ? level : 'N/A';
+    manifest.sets.push({ id: setId, file, name, category, order: resolvedOrder, level: resolvedLevel, questionCount: questions.length, updatedAt: now });
     writeManifest(manifest);
     return set;
   }

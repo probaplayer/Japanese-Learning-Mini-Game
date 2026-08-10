@@ -4,6 +4,7 @@
 
 const roadmapQuestionsCache = new Map();
 let activeRoadmapTabId = null;
+let activeLibraryRoadmapId = null;
 let roadmapProgressCache = new Map();
 
 function computeSetProgress(setId, questionsArr) {
@@ -195,4 +196,31 @@ function refreshLibraryRoadmapPreview() {
   const roadmapsTab = document.getElementById('library-roadmaps-tab');
   if (setsTab && !setsTab.classList.contains('hidden')) renderLibrarySetsTab();
   if (roadmapsTab && !roadmapsTab.classList.contains('hidden') && typeof renderLibraryRoadmapsTab === 'function') renderLibraryRoadmapsTab();
+}
+
+async function renderLibraryRoadmapsTab() {
+  const chipsEl = document.getElementById('library-roadmap-chips');
+  const container = document.getElementById('library-roadmap-preview');
+  if (!container) return;
+  activeLibraryRoadmapId = pickDefaultRoadmapId(activeLibraryRoadmapId);
+  if (!activeLibraryRoadmapId) {
+    if (chipsEl) chipsEl.innerHTML = '';
+    container.innerHTML = '<div class="roadmap-loading">No roadmaps configured yet.</div>';
+    return;
+  }
+  if (chipsEl) chipsEl.innerHTML = renderRoadmapChipsHtml(roadmapDefinitions, activeLibraryRoadmapId, 'selectLibraryRoadmap');
+  container.innerHTML = '<div class="roadmap-loading">Loading roadmap…</div>';
+  try {
+    const sets = getSetsForRoadmap(activeLibraryRoadmapId);
+    const progressById = await computeRoadmapProgress(sets);
+    container.innerHTML = buildRoadmapNodesHtml(sets, progressById, { highlightSetId: activeSetId, compact: true, clickHandler: 'selectRoadmapNodeInPlace' });
+  } catch (e) {
+    console.error('Failed to render library roadmaps tab:', e);
+    container.innerHTML = '<div class="roadmap-loading">❌ Failed to load the roadmap. Please try again.</div>';
+  }
+}
+
+function selectLibraryRoadmap(id) {
+  activeLibraryRoadmapId = id;
+  renderLibraryRoadmapsTab();
 }

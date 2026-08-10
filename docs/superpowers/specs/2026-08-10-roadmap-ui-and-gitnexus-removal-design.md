@@ -144,11 +144,16 @@ Per-node markup (rendered, not static):
    `fetchQuestionSetFile(set.file)` and cache the result in a module-level
    `const roadmapQuestionsCache = new Map()` keyed by set id, so re-entering the roadmap screen
    doesn't refetch.
-3. For each set's question list, compute accuracy using the existing `getQuestionStatsEntry(q,
-   false)` per question (same helper `computeGameTypeStats()` already uses) summed across all
-   game types: `accuracy = correct / (correct + wrong)`, `0` if no attempts. Map to stars:
-   `0` attempts → 0★; `<50%` → 1★; `<80%` → 2★; `≥80%` → 3★ (same 50/80 thresholds already used for
-   coloring in `renderStatsScreen`).
+3. For each set's question list, compute accuracy **without** calling `getQuestionStatsEntry`
+   directly — that helper scopes lookups through `getScopedQuestionId()`, which prefixes with the
+   *global* `activeSetId`, not the set actually being examined. Looking up a non-active set's
+   stats through it would silently read the wrong (or empty) bucket. Instead build the storage key
+   the same way `getScopedQuestionId` does, but with the target set's own id:
+   `` `${targetSetId}::${generateQuestionId(q)}` ``, and read `questionStats[thatKey]` directly.
+   Sum `correctCount`/`incorrect` across all game-type sub-objects (skip the `_meta` key) to get
+   `accuracy = correct / (correct + wrong)`, `0` if no attempts. Map to stars: `0` attempts → 0★;
+   `<50%` → 1★; `<80%` → 2★; `≥80%` → 3★ (same 50/80 thresholds already used for coloring in
+   `renderStatsScreen`).
 4. Build the `#roadmap-track` innerHTML: section label whenever `level` changes, then one
    `.roadmap-node` per set (alternating `roadmap-node-left`/`roadmap-node-right` by index),
    a category icon (📖 for `category === 'vocabulary'`, 🧩 for `category === 'grammar'` — the
@@ -207,10 +212,12 @@ All new keyframes live in `css/animations.css` (existing file); all new selector
 2. **Menu button stagger-in** — `.main-nav .menu-btn` gets `animation: slideIn .3s ease both;` with
    `animation-delay` set via `nth-child(n)` steps (existing `slideIn` keyframe, no new one needed),
    triggered every time `screen-menu` becomes active.
-3. **Stat bar transitions** — `.bar-fill` (`menu-hp`, `menu-exp`) and `.mastery-circle` gain
-   `transition: width .4s ease` / a CSS custom-property-driven transition for the `--progress`
-   conic-gradient, so `updateMenuUI()`/`renderStatsScreen()` value updates animate instead of
-   snapping.
+3. **Stat bar transitions** — `.bar-fill` (`menu-hp`, `menu-exp`, `css/menu.css:20`) already has
+   `transition: width .5s ease`, so no change needed there. `.mastery-circle`'s `--progress`
+   conic-gradient (`css/extra.css:737-745`) is excluded from this pass: `renderStatsScreen()`
+   rebuilds its container via full `innerHTML` replacement on every render, so there is no
+   persistent element for a CSS transition to animate from — fixing that would require restructuring
+   that render function, which is out of scope here.
 4. **Roadmap node entrance** — `.roadmap-node` gets `animation: cardEnter .4s ease both;` with a
    staggered `animation-delay` per index (reuses the existing `cardEnter` keyframe verbatim).
 5. **Avatar idle + travel** — `.roadmap-avatar` gets a continuous `avatarFloat` keyframe (small

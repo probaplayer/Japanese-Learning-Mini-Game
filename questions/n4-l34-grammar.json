@@ -1,0 +1,125 @@
+{
+  "id": "n4-l34-grammar",
+  "name": "N4 Bài 34 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 34 Minna no Nihongo: ~とおりに (làm theo), ~たあとで (sau khi), V1てV2 (nối tiếp hành động), ~V1ないでV2 (không làm V1 mà làm V2).",
+  "category": "grammar",
+  "createdAt": "2026-08-12T10:21:39.618Z",
+  "updatedAt": "2026-08-12T10:21:39.618Z",
+  "questions": [
+    {
+      "sentence": "あなたが言うとおりに書きます",
+      "chunks": [
+        "あなた",
+        "が",
+        "言うとおりに",
+        "書きます"
+      ],
+      "translation": "Tôi viết theo đúng như bạn nói",
+      "ex": "~とおりに~: làm theo như~"
+    },
+    {
+      "sentence": "黒板に書いたとおりに書いてみてください",
+      "chunks": [
+        "黒板",
+        "に",
+        "書いたとおりに",
+        "書いてみてください"
+      ],
+      "translation": "Hãy viết thử theo đúng như đã viết trên bảng",
+      "ex": "N/V+とおりに: theo đúng như đã nhìn, nghe, học"
+    },
+    {
+      "sentence": "友達が帰ったあとで12時まで片付けました",
+      "chunks": [
+        "友達",
+        "が",
+        "帰ったあとで",
+        "12時まで",
+        "片付けました"
+      ],
+      "translation": "Sau khi bạn về, tôi dọn dẹp đến 12 giờ",
+      "ex": "V1た+あとで+V2: V2 chỉ xảy ra sau khi V1 xảy ra"
+    },
+    {
+      "sentence": "授業のあとで何をしますか",
+      "chunks": [
+        "授業",
+        "のあとで",
+        "何",
+        "を",
+        "しますか"
+      ],
+      "translation": "Sau giờ học bạn làm gì?",
+      "ex": "N+のあとで: sau khi ~"
+    },
+    {
+      "sentence": "ご飯を食べて学校へ行きます",
+      "chunks": [
+        "ご飯",
+        "を",
+        "食べて",
+        "学校",
+        "へ",
+        "行きます"
+      ],
+      "translation": "Tôi ăn cơm rồi đến trường",
+      "ex": "V1てV2: nối tiếp hành động, làm V1 rồi làm V2"
+    },
+    {
+      "sentence": "授業が終わって図書館に行きます",
+      "chunks": [
+        "授業",
+        "が",
+        "終わって",
+        "図書館",
+        "に",
+        "行きます"
+      ],
+      "translation": "Giờ học kết thúc rồi tôi tới thư viện",
+      "ex": "V1てV2: giờ học kết thúc rồi đi thư viện"
+    },
+    {
+      "sentence": "かさをもたないででかけます",
+      "chunks": [
+        "かさ",
+        "を",
+        "もたないで",
+        "でかけます"
+      ],
+      "translation": "Ra ngoài không mang theo ô",
+      "ex": "V1ないでV2: không làm V1 mà làm V2 (do không thể làm cả hai)"
+    },
+    {
+      "sentence": "日曜日出かけないで家にいます",
+      "chunks": [
+        "日曜日",
+        "出かけないで",
+        "家",
+        "に",
+        "います"
+      ],
+      "translation": "Chủ nhật tôi không ra ngoài mà ở nhà",
+      "ex": "V1ないでV2: chủ nhật không đi ra ngoài mà ở nhà"
+    },
+    {
+      "sentence": "なにか食べに行きましょう",
+      "chunks": [
+        "なにか",
+        "食べに",
+        "行きましょう"
+      ],
+      "translation": "Đi ăn cái gì đi",
+      "ex": "Câu mời đề nghị, thường dùng sau khi hỏi “...のあとで何をしますか”"
+    },
+    {
+      "sentence": "よし君の言うとおりにやりましょう",
+      "chunks": [
+        "よし",
+        "君の言うとおりに",
+        "やりましょう"
+      ],
+      "translation": "Được, làm theo đúng như bạn nói đi",
+      "ex": "とおりに: theo đúng như lời ai nói"
+    }
+  ]
+}

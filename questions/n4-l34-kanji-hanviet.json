@@ -1,0 +1,402 @@
+{
+  "id": "n4-l34-kanji-hanviet",
+  "name": "N4 Bài 34 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 34, hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-12T10:20:45.458Z",
+  "updatedAt": "2026-08-12T10:20:57.936Z",
+  "questions": [
+    {
+      "word": "磨",
+      "romaji": "ma",
+      "translation": "mài (磨きます)",
+      "q": "Chữ 磨 trong từ 磨きます mang âm Hán Việt nào?",
+      "a": [
+        "MA",
+        "TỔ",
+        "LẬP",
+        "TRIẾT"
+      ],
+      "c": 0,
+      "ex": "磨きます: mài răng"
+    },
+    {
+      "word": "組",
+      "romaji": "tổ",
+      "translation": "nhóm, ghép (組み立てます)",
+      "q": "Chữ 組 trong từ 組み立てます mang âm Hán Việt nào?",
+      "a": [
+        "MA",
+        "LẬP",
+        "TRIẾT",
+        "TỔ"
+      ],
+      "c": 3,
+      "ex": "組み立てます: lắp ráp"
+    },
+    {
+      "word": "立",
+      "romaji": "lập",
+      "translation": "dựng, lắp (組み立てます)",
+      "q": "Chữ 立 trong từ 組み立てます mang âm Hán Việt nào?",
+      "a": [
+        "TRIẾT",
+        "TỔ",
+        "MA",
+        "LẬP"
+      ],
+      "c": 3,
+      "ex": "組み立てます: lắp ráp"
+    },
+    {
+      "word": "折",
+      "romaji": "triết",
+      "translation": "gập, bẻ (折ります)",
+      "q": "Chữ 折 trong từ 折ります mang âm Hán Việt nào?",
+      "a": [
+        "TỔ",
+        "LẬP",
+        "MA",
+        "TRIẾT"
+      ],
+      "c": 3,
+      "ex": "折ります: gấp"
+    },
+    {
+      "word": "気",
+      "romaji": "khí",
+      "translation": "nhận ra (気がつきます)",
+      "q": "Chữ 気 trong từ 気がつきます mang âm Hán Việt nào?",
+      "a": [
+        "KHÍ",
+        "KIẾN",
+        "CHẤT",
+        "VẤN"
+      ],
+      "c": 0,
+      "ex": "気がつきます: nhận thấy"
+    },
+    {
+      "word": "見",
+      "romaji": "kiến",
+      "translation": "tìm, nhìn (見つかります)",
+      "q": "Chữ 見 trong từ 見つかります mang âm Hán Việt nào?",
+      "a": [
+        "KIẾN",
+        "CHẤT",
+        "VẤN",
+        "KHÍ"
+      ],
+      "c": 0,
+      "ex": "見つかります: được tìm thấy"
+    },
+    {
+      "word": "質",
+      "romaji": "chất",
+      "translation": "chất vấn (質問)",
+      "q": "Chữ 質 trong từ 質問 mang âm Hán Việt nào?",
+      "a": [
+        "CHẤT",
+        "VẤN",
+        "KHÍ",
+        "KIẾN"
+      ],
+      "c": 0,
+      "ex": "質問します: hỏi"
+    },
+    {
+      "word": "問",
+      "romaji": "vấn",
+      "translation": "hỏi (質問)",
+      "q": "Chữ 問 trong từ 質問 mang âm Hán Việt nào?",
+      "a": [
+        "VẤN",
+        "KHÍ",
+        "KIẾN",
+        "CHẤT"
+      ],
+      "c": 0,
+      "ex": "質問します: hỏi"
+    },
+    {
+      "word": "細",
+      "romaji": "tế",
+      "translation": "nhỏ, mỏng (細い)",
+      "q": "Chữ 細 trong từ 細い mang âm Hán Việt nào?",
+      "a": [
+        "TẾ",
+        "THÁI",
+        "BỐN",
+        "DŨNG"
+      ],
+      "c": 0,
+      "ex": "細い: gầy, hẹp"
+    },
+    {
+      "word": "太",
+      "romaji": "thái",
+      "translation": "to, lớn (太い)",
+      "q": "Chữ 太 trong từ 太い mang âm Hán Việt nào?",
+      "a": [
+        "THÁI",
+        "BỐN",
+        "DŨNG",
+        "TẾ"
+      ],
+      "c": 0,
+      "ex": "太い: béo, to"
+    },
+    {
+      "word": "盆",
+      "romaji": "bồn",
+      "translation": "lễ Bon (盆踊り)",
+      "q": "Chữ 盆 trong từ 盆踊り mang âm Hán Việt nào?",
+      "a": [
+        "BỐN",
+        "DŨNG",
+        "TẾ",
+        "THÁI"
+      ],
+      "c": 0,
+      "ex": "盆踊り: múa hội Bon"
+    },
+    {
+      "word": "踊",
+      "romaji": "dũng",
+      "translation": "múa (盆踊り)",
+      "q": "Chữ 踊 trong từ 盆踊り mang âm Hán Việt nào?",
+      "a": [
+        "DŨNG",
+        "TẾ",
+        "THÁI",
+        "BỐN"
+      ],
+      "c": 0,
+      "ex": "盆踊り: múa hội Bon"
+    },
+    {
+      "word": "家",
+      "romaji": "gia",
+      "translation": "nhà (家具)",
+      "q": "Chữ 家 trong từ 家具 mang âm Hán Việt nào?",
+      "a": [
+        "GIA",
+        "CỤ",
+        "THUYẾT",
+        "MINH"
+      ],
+      "c": 0,
+      "ex": "家具: đồ nội thất"
+    },
+    {
+      "word": "具",
+      "romaji": "cụ",
+      "translation": "dụng cụ, đồ dùng (家具)",
+      "q": "Chữ 具 trong từ 家具 mang âm Hán Việt nào?",
+      "a": [
+        "CỤ",
+        "THUYẾT",
+        "MINH",
+        "GIA"
+      ],
+      "c": 0,
+      "ex": "家具: đồ nội thất"
+    },
+    {
+      "word": "説",
+      "romaji": "thuyết",
+      "translation": "giải thích (説明書)",
+      "q": "Chữ 説 trong từ 説明書 mang âm Hán Việt nào?",
+      "a": [
+        "THUYẾT",
+        "MINH",
+        "GIA",
+        "THƯ"
+      ],
+      "c": 0,
+      "ex": "説明書: quyển hướng dẫn"
+    },
+    {
+      "word": "明",
+      "romaji": "minh",
+      "translation": "sáng rõ (説明書)",
+      "q": "Chữ 明 trong từ 説明書 mang âm Hán Việt nào?",
+      "a": [
+        "MINH",
+        "GIA",
+        "THƯ",
+        "THUYẾT"
+      ],
+      "c": 0,
+      "ex": "説明書: quyển hướng dẫn"
+    },
+    {
+      "word": "書",
+      "romaji": "thư",
+      "translation": "sách, giấy tờ (説明書)",
+      "q": "Chữ 書 trong từ 説明書 mang âm Hán Việt nào?",
+      "a": [
+        "THƯ",
+        "THUYẾT",
+        "MINH",
+        "ĐỔ"
+      ],
+      "c": 0,
+      "ex": "説明書: quyển hướng dẫn"
+    },
+    {
+      "word": "図",
+      "romaji": "đồ",
+      "translation": "sơ đồ, hình vẽ (図)",
+      "q": "Chữ 図 mang âm Hán Việt nào?",
+      "a": [
+        "ĐỔ",
+        "TUYẾN",
+        "THỈ",
+        "ẤN"
+      ],
+      "c": 0,
+      "ex": "図: sơ đồ"
+    },
+    {
+      "word": "線",
+      "romaji": "tuyến",
+      "translation": "đường, tuyến (線)",
+      "q": "Chữ 線 mang âm Hán Việt nào?",
+      "a": [
+        "TUYẾN",
+        "THỈ",
+        "ẤN",
+        "ĐỔ"
+      ],
+      "c": 0,
+      "ex": "線: đường"
+    },
+    {
+      "word": "矢",
+      "romaji": "thỉ",
+      "translation": "mũi tên (矢印)",
+      "q": "Chữ 矢 trong từ 矢印 mang âm Hán Việt nào?",
+      "a": [
+        "THỈ",
+        "ẤN",
+        "ĐỔ",
+        "TUYẾN"
+      ],
+      "c": 0,
+      "ex": "矢印: dấu mũi tên"
+    },
+    {
+      "word": "印",
+      "romaji": "ấn",
+      "translation": "dấu, in (矢印)",
+      "q": "Chữ 印 trong từ 矢印 mang âm Hán Việt nào?",
+      "a": [
+        "ẤN",
+        "ĐỔ",
+        "TUYẾN",
+        "THỈ"
+      ],
+      "c": 0,
+      "ex": "矢印: dấu mũi tên"
+    },
+    {
+      "word": "黒",
+      "romaji": "hắc",
+      "translation": "đen (黒)",
+      "q": "Chữ 黒 mang âm Hán Việt nào?",
+      "a": [
+        "HẮC",
+        "BẠCH",
+        "XÍCH",
+        "THANH"
+      ],
+      "c": 0,
+      "ex": "黒: màu đen"
+    },
+    {
+      "word": "白",
+      "romaji": "bạch",
+      "translation": "trắng (白)",
+      "q": "Chữ 白 mang âm Hán Việt nào?",
+      "a": [
+        "BẠCH",
+        "XÍCH",
+        "THANH",
+        "HẮC"
+      ],
+      "c": 0,
+      "ex": "白: màu trắng"
+    },
+    {
+      "word": "赤",
+      "romaji": "xích",
+      "translation": "đỏ (赤)",
+      "q": "Chữ 赤 mang âm Hán Việt nào?",
+      "a": [
+        "XÍCH",
+        "THANH",
+        "HẮC",
+        "BẠCH"
+      ],
+      "c": 0,
+      "ex": "赤: màu đỏ"
+    },
+    {
+      "word": "青",
+      "romaji": "thanh",
+      "translation": "xanh (青)",
+      "q": "Chữ 青 mang âm Hán Việt nào?",
+      "a": [
+        "THANH",
+        "HẮC",
+        "BẠCH",
+        "XÍCH"
+      ],
+      "c": 0,
+      "ex": "青: màu xanh da trời"
+    },
+    {
+      "word": "茶",
+      "romaji": "trà",
+      "translation": "trà (茶道)",
+      "q": "Chữ 茶 trong từ 茶道 mang âm Hán Việt nào?",
+      "a": [
+        "TRÀ",
+        "ĐẠO",
+        "TẢI",
+        "KHỔ"
+      ],
+      "c": 0,
+      "ex": "茶道: trà đạo"
+    },
+    {
+      "word": "道",
+      "romaji": "đạo",
+      "translation": "đạo (茶道)",
+      "q": "Chữ 道 trong từ 茶道 mang âm Hán Việt nào?",
+      "a": [
+        "ĐẠO",
+        "TẢI",
+        "KHỔ",
+        "TRÀ"
+      ],
+      "c": 0,
+      "ex": "茶道: trà đạo"
+    },
+    {
+      "word": "載",
+      "romaji": "tải",
+      "translation": "chở, đặt lên (載せます)",
+      "q": "Chữ 載 trong từ 載せます mang âm Hán Việt nào?",
+      "a": [
+        "TẢI",
+        "KHỔ",
+        "TRÀ",
+        "ĐẠO"
+      ],
+      "c": 0,
+      "ex": "載せます: để lên"
+    }
+  ]
+}

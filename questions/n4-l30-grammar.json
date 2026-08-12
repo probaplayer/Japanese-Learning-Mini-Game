@@ -1,0 +1,128 @@
+{
+  "id": "n4-l30-grammar",
+  "name": "N4 Bài 30 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 30 Minna no Nihongo: ~てある (trạng thái có chủ ý), phân biệt V他てある/V自ている, ~ておく (3 nghĩa), まだ~ている.",
+  "category": "grammar",
+  "createdAt": "2026-08-12T06:29:41.164Z",
+  "updatedAt": "2026-08-12T06:29:41.164Z",
+  "questions": [
+    {
+      "sentence": "ドアがあけてあります",
+      "chunks": [
+        "ドア",
+        "が",
+        "あけてあります"
+      ],
+      "translation": "Cửa được mở (sẵn)",
+      "ex": "V tha + てあります: trạng thái có mục đích, kết quả của hành động (cửa được mở sẵn)"
+    },
+    {
+      "sentence": "ふうとうに切手がはってあります",
+      "chunks": [
+        "ふうとう",
+        "に",
+        "切手",
+        "が",
+        "はってあります"
+      ],
+      "translation": "Trên phong bì có dán tém",
+      "ex": "V tha + てあります: có tém đã dán sẵn trên phong bì"
+    },
+    {
+      "sentence": "お皿に魚がきってありますからこれからさしみを作りましょう",
+      "chunks": [
+        "お皿",
+        "に",
+        "魚",
+        "が",
+        "きってありますから",
+        "これから",
+        "さしみ",
+        "を",
+        "作りましょう"
+      ],
+      "translation": "Vì trên đĩa có cá đã cắt sẵn nên chúng ta hãy làm sởi đây",
+      "ex": "So sánh V tha てあります (cá đã cắt sẵn có chủ ý) với V tự ています"
+    },
+    {
+      "sentence": "ケーキはもうテーブルにおいてありますよ",
+      "chunks": [
+        "ケーキ",
+        "は",
+        "もう",
+        "テーブル",
+        "に",
+        "おいてありますよ"
+      ],
+      "translation": "Bánh kem để sẵn ở trên bàn rồi đó",
+      "ex": "V tha + てあります thường đi kèm もう khi diễn tả sự chuẩn bị đã xong"
+    },
+    {
+      "sentence": "会議の前に資料をコピーしておきます",
+      "chunks": [
+        "会議",
+        "の前に",
+        "資料",
+        "を",
+        "コピーしておきます"
+      ],
+      "translation": "Tôi sẽ photo sẵn tài liệu trước buổi họp",
+      "ex": "Vておく ý nghĩa 1: chuẩn bị sẵn cho việc gì sắp xảy ra"
+    },
+    {
+      "sentence": "ホテルを予約しておいたらいいですよ",
+      "chunks": [
+        "ホテル",
+        "を",
+        "予約しておいたら",
+        "いいですよ"
+      ],
+      "translation": "Nên đặt phòng trước đó",
+      "ex": "Vておいたらいい: lời khuyên nên chuẩn bị sẵn việc gì"
+    },
+    {
+      "sentence": "読んだら本棚に戻しておいてください",
+      "chunks": [
+        "読んだら",
+        "本棚",
+        "に",
+        "戻しておいてください"
+      ],
+      "translation": "Sau khi đọc xong xin hãy trả về kệ sách",
+      "ex": "Vておく ý nghĩa 2: xử lý tình huống sau khi thực hiện hành động"
+    },
+    {
+      "sentence": "もうすぐ会社に行く時間ですからそのままにしておいてください",
+      "chunks": [
+        "もうすぐ",
+        "会社",
+        "に",
+        "行く時間ですから",
+        "そのままに",
+        "しておいてください"
+      ],
+      "translation": "Vì sắp đến giờ đi làm rồi nên xin cứ để nguyên như vậy",
+      "ex": "Vておく ý nghĩa 3: giữ nguyên, duy trì trạng thái hiện tại"
+    },
+    {
+      "sentence": "あめはもうやみましたか",
+      "chunks": [
+        "あめ",
+        "は",
+        "もうやみましたか"
+      ],
+      "translation": "Mưa đã tạnh chưa?",
+      "ex": "Câu hỏi để dẫn vào ý vẫn còn ở câu trả lời"
+    },
+    {
+      "sentence": "いいえまだふっていますよ",
+      "chunks": [
+        "いいえ",
+        "まだ",
+        "ふっていますよ"
+      ],
+      "translation": "Không, vẫn đang mưa đây",
+      "ex": "まだ + Vています: diễn tả trạng thái/hành động vẫn còn đang tiếp diễn"
+    }
+  ]
+}

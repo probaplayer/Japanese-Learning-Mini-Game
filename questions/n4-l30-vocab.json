@@ -1,0 +1,346 @@
+{
+  "id": "n4-l30-vocab",
+  "name": "N4 Bài 30 - Từ vựng (nghĩa)",
+  "description": "Từ vựng Minna no Nihongo Bài 30 (N4). Câu hỏi hỏi nghĩa tiếng Việt của từ.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-12T06:25:36.070Z",
+  "updatedAt": "2026-08-12T06:25:45.809Z",
+  "questions": [
+    {
+      "word": "貼ります",
+      "romaji": "はります",
+      "translation": "dán, dán lên",
+      "q": "Từ 貼ります (はります) có nghĩa là gì?",
+      "a": [
+        "dán, dán lên",
+        "treo",
+        "trang trí",
+        "xếp hàng"
+      ],
+      "c": 0,
+      "ex": "貼 (thiếp) - dán"
+    },
+    {
+      "word": "掛けます",
+      "romaji": "かけます",
+      "translation": "treo",
+      "q": "Từ 掛けます (かけます) có nghĩa là gì?",
+      "a": [
+        "dán",
+        "treo",
+        "trang trí",
+        "trồng (cây)"
+      ],
+      "c": 1,
+      "ex": "掛 (quải) - treo"
+    },
+    {
+      "word": "飾ります",
+      "romaji": "かざります",
+      "translation": "trang trí",
+      "q": "Từ 飾ります (かざります) có nghĩa là gì?",
+      "a": [
+        "treo",
+        "trang trí",
+        "xếp hàng",
+        "trả về"
+      ],
+      "c": 1,
+      "ex": "飾 (sức) - trang trí"
+    },
+    {
+      "word": "並べます",
+      "romaji": "ならべます",
+      "translation": "xếp thành hàng",
+      "q": "Từ 並べます (ならべます) có nghĩa là gì?",
+      "a": [
+        "trang trí",
+        "xếp thành hàng",
+        "trồng cây",
+        "trả về"
+      ],
+      "c": 1,
+      "ex": "並 (tịnh) - xếp hàng"
+    },
+    {
+      "word": "植えます",
+      "romaji": "うえます",
+      "translation": "trồng (cây)",
+      "q": "Từ 植えます (うえます) có nghĩa là gì?",
+      "a": [
+        "xếp hàng",
+        "trồng (cây)",
+        "trả về",
+        "dọn dẹp"
+      ],
+      "c": 1,
+      "ex": "植 (thực) - trồng"
+    },
+    {
+      "word": "戻します",
+      "romaji": "もどします",
+      "translation": "trả về, đưa về (vị trí cũ)",
+      "q": "Từ 戻します (もどします) có nghĩa là gì?",
+      "a": [
+        "trồng cây",
+        "trả về, đưa về",
+        "dọn dẹp",
+        "quyết định"
+      ],
+      "c": 1,
+      "ex": "戻 (lệ) - trả về"
+    },
+    {
+      "word": "片づけます",
+      "romaji": "かたづけます",
+      "translation": "dọn dẹp, sắp xếp",
+      "q": "Từ 片づけます (かたづけます) có nghĩa là gì?",
+      "a": [
+        "trả về",
+        "dọn dẹp, sắp xếp",
+        "quyết định",
+        "thông báo"
+      ],
+      "c": 1,
+      "ex": "片 (phiến) - dọn dẹp"
+    },
+    {
+      "word": "決めます",
+      "romaji": "きめます",
+      "translation": "quyết định",
+      "q": "Từ 決めます (きめます) có nghĩa là gì?",
+      "a": [
+        "dọn dẹp",
+        "quyết định",
+        "thông báo",
+        "trao đổi"
+      ],
+      "c": 1,
+      "ex": "決 (quyết) - quyết định"
+    },
+    {
+      "word": "知らせます",
+      "romaji": "しらせます",
+      "translation": "thông báo, báo",
+      "q": "Từ 知らせます (しらせます) có nghĩa là gì?",
+      "a": [
+        "quyết định",
+        "thông báo, báo",
+        "trao đổi",
+        "ôn bài"
+      ],
+      "c": 1,
+      "ex": "知 (tri) - biết, báo"
+    },
+    {
+      "word": "相談します",
+      "romaji": "そうだんします",
+      "translation": "trao đổi, bàn bạc",
+      "q": "Từ 相談します (そうだんします) có nghĩa là gì?",
+      "a": [
+        "thông báo",
+        "trao đổi, bàn bạc",
+        "ôn bài",
+        "chuẩn bị bài mới"
+      ],
+      "c": 1,
+      "ex": "相 (tương) + 談 (đàm)"
+    },
+    {
+      "word": "予習します",
+      "romaji": "よしゅうします",
+      "translation": "chuẩn bị bài mới",
+      "q": "Từ 予習します (よしゅうします) có nghĩa là gì?",
+      "a": [
+        "ôn bài cũ",
+        "chuẩn bị bài mới",
+        "trao đổi",
+        "quyết định"
+      ],
+      "c": 1,
+      "ex": "予 (dự) + 習 (tập)"
+    },
+    {
+      "word": "復習します",
+      "romaji": "ふくしゅうします",
+      "translation": "ôn bài cũ",
+      "q": "Từ 復習します (ふくしゅうします) có nghĩa là gì?",
+      "a": [
+        "chuẩn bị bài mới",
+        "ôn bài cũ",
+        "trao đổi",
+        "quyết định"
+      ],
+      "c": 1,
+      "ex": "復 (phục) + 習 (tập)"
+    },
+    {
+      "word": "お子さん",
+      "romaji": "おこさん",
+      "translation": "con (dùng cho người khác)",
+      "q": "Từ お子さん (おこさん) có nghĩa là gì?",
+      "a": [
+        "con (dùng cho người khác)",
+        "giờ học",
+        "bài giảng",
+        "kế hoạch"
+      ],
+      "c": 0,
+      "ex": "子 (tử)"
+    },
+    {
+      "word": "授業",
+      "romaji": "じゅぎょう",
+      "translation": "giờ học",
+      "q": "Từ 授業 (じゅぎょう) có nghĩa là gì?",
+      "a": [
+        "con",
+        "giờ học",
+        "bài giảng",
+        "kế hoạch"
+      ],
+      "c": 1,
+      "ex": "授 (thụ) + 業 (nghiệp)"
+    },
+    {
+      "word": "講義",
+      "romaji": "こうぎ",
+      "translation": "bài giảng",
+      "q": "Từ 講義 (こうぎ) có nghĩa là gì?",
+      "a": [
+        "giờ học",
+        "bài giảng",
+        "kế hoạch",
+        "sách hướng dẫn"
+      ],
+      "c": 1,
+      "ex": "講 (giảng) + 義 (nghĩa)"
+    },
+    {
+      "word": "予定",
+      "romaji": "よてい",
+      "translation": "kế hoạch, dự định",
+      "q": "Từ 予定 (よてい) có nghĩa là gì?",
+      "a": [
+        "bài giảng",
+        "kế hoạch, dự định",
+        "sách hướng dẫn",
+        "búp bê"
+      ],
+      "c": 1,
+      "ex": "予 (dự) + 定 (định)"
+    },
+    {
+      "word": "案内書",
+      "romaji": "あんないしょ",
+      "translation": "sách/tài liệu hướng dẫn",
+      "q": "Từ 案内書 (あんないしょ) có nghĩa là gì?",
+      "a": [
+        "kế hoạch",
+        "sách hướng dẫn",
+        "búp bê",
+        "lọ hoa"
+      ],
+      "c": 1,
+      "ex": "案 (án) + 内 (nội) + 書 (thư)"
+    },
+    {
+      "word": "人形",
+      "romaji": "にんぎょう",
+      "translation": "búp bê, con rối",
+      "q": "Từ 人形 (にんぎょう) có nghĩa là gì?",
+      "a": [
+        "sách hướng dẫn",
+        "búp bê, con rối",
+        "lọ hoa",
+        "cái gương"
+      ],
+      "c": 1,
+      "ex": "人 (nhân) + 形 (hình)"
+    },
+    {
+      "word": "花瓶",
+      "romaji": "かびん",
+      "translation": "lọ hoa",
+      "q": "Từ 花瓶 (かびん) có nghĩa là gì?",
+      "a": [
+        "búp bê",
+        "lọ hoa",
+        "cái gương",
+        "ngăn kéo"
+      ],
+      "c": 1,
+      "ex": "花 (hoa) + 瓶 (bình)"
+    },
+    {
+      "word": "鏡",
+      "romaji": "かがみ",
+      "translation": "cái gương",
+      "q": "Từ 鏡 (かがみ) có nghĩa là gì?",
+      "a": [
+        "lọ hoa",
+        "cái gương",
+        "ngăn kéo",
+        "cửa vào"
+      ],
+      "c": 1,
+      "ex": "鏡 (kính)"
+    },
+    {
+      "word": "引き出し",
+      "romaji": "ひきだし",
+      "translation": "ngăn kéo",
+      "q": "Từ 引き出し (ひきだし) có nghĩa là gì?",
+      "a": [
+        "cái gương",
+        "ngăn kéo",
+        "cửa vào",
+        "hành lang"
+      ],
+      "c": 1,
+      "ex": "引 (dẫn) + 出 (xuất)"
+    },
+    {
+      "word": "玄関",
+      "romaji": "げんかん",
+      "translation": "cửa vào",
+      "q": "Từ 玄関 (げんかん) có nghĩa là gì?",
+      "a": [
+        "ngăn kéo",
+        "cửa vào",
+        "hành lang",
+        "hy vọng"
+      ],
+      "c": 1,
+      "ex": "玄 (huyền) + 関 (quan)"
+    },
+    {
+      "word": "廊下",
+      "romaji": "ろうか",
+      "translation": "hành lang",
+      "q": "Từ 廊下 (ろうか) có nghĩa là gì?",
+      "a": [
+        "cửa vào",
+        "hành lang",
+        "hy vọng",
+        "búp bê"
+      ],
+      "c": 1,
+      "ex": "廊 (lang) + 下 (hạ)"
+    },
+    {
+      "word": "希望",
+      "romaji": "きぼう",
+      "translation": "hy vọng, nguyện vọng",
+      "q": "Từ 希望 (きぼう) có nghĩa là gì?",
+      "a": [
+        "hành lang",
+        "cửa vào",
+        "búp bê",
+        "hy vọng, nguyện vọng"
+      ],
+      "c": 3,
+      "ex": "希 (hy) + 望 (vọng)"
+    }
+  ]
+}

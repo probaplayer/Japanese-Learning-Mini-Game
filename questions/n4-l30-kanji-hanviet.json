@@ -1,0 +1,402 @@
+{
+  "id": "n4-l30-kanji-hanviet",
+  "name": "N4 Bài 30 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 30, hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-12T06:27:41.988Z",
+  "updatedAt": "2026-08-12T06:27:49.084Z",
+  "questions": [
+    {
+      "word": "貼",
+      "romaji": "thiếp",
+      "translation": "dán (貼ります)",
+      "q": "Chữ 貼 trong từ 貼ります mang âm Hán Việt nào?",
+      "a": [
+        "THIẾP",
+        "QUẢI",
+        "SỨC",
+        "TỊNH"
+      ],
+      "c": 0,
+      "ex": "貼ります: dán"
+    },
+    {
+      "word": "掛",
+      "romaji": "quải",
+      "translation": "treo (掛けます)",
+      "q": "Chữ 掛 trong từ 掛けます mang âm Hán Việt nào?",
+      "a": [
+        "THIẾP",
+        "QUẢI",
+        "SỨC",
+        "THỰC"
+      ],
+      "c": 1,
+      "ex": "掛けます: treo"
+    },
+    {
+      "word": "飾",
+      "romaji": "sức",
+      "translation": "trang trí (飾ります)",
+      "q": "Chữ 飾 trong từ 飾ります mang âm Hán Việt nào?",
+      "a": [
+        "TỊNH",
+        "THỰC",
+        "SỨC",
+        "LỆ"
+      ],
+      "c": 2,
+      "ex": "飾ります: trang trí"
+    },
+    {
+      "word": "並",
+      "romaji": "tịnh",
+      "translation": "xếp hàng (並べます)",
+      "q": "Chữ 並 trong từ 並べます mang âm Hán Việt nào?",
+      "a": [
+        "SỨC",
+        "LỆ",
+        "THỰC",
+        "TỊNH"
+      ],
+      "c": 3,
+      "ex": "並べます: xếp hàng"
+    },
+    {
+      "word": "植",
+      "romaji": "thực",
+      "translation": "trồng (植えます)",
+      "q": "Chữ 植 trong từ 植えます mang âm Hán Việt nào?",
+      "a": [
+        "TỊNH",
+        "LỆ",
+        "THỰC",
+        "PHIẾN"
+      ],
+      "c": 2,
+      "ex": "植えます: trồng cây"
+    },
+    {
+      "word": "戻",
+      "romaji": "lệ",
+      "translation": "trả về (戻します)",
+      "q": "Chữ 戻 trong từ 戻します mang âm Hán Việt nào?",
+      "a": [
+        "THỰC",
+        "PHIẾN",
+        "QUYẾT",
+        "LỆ"
+      ],
+      "c": 3,
+      "ex": "戻します: trả về"
+    },
+    {
+      "word": "片",
+      "romaji": "phiến",
+      "translation": "dọn dẹp (片づけます)",
+      "q": "Chữ 片 trong từ 片づけます mang âm Hán Việt nào?",
+      "a": [
+        "LỆ",
+        "QUYẾT",
+        "TRI",
+        "PHIẾN"
+      ],
+      "c": 3,
+      "ex": "片づけます: dọn dẹp"
+    },
+    {
+      "word": "決",
+      "romaji": "quyết",
+      "translation": "quyết định (決めます)",
+      "q": "Chữ 決 trong từ 決めます mang âm Hán Việt nào?",
+      "a": [
+        "PHIẾN",
+        "TRI",
+        "QUYẾT",
+        "TƯƠNG"
+      ],
+      "c": 2,
+      "ex": "決めます: quyết định"
+    },
+    {
+      "word": "知",
+      "romaji": "tri",
+      "translation": "biết, báo (知らせます)",
+      "q": "Chữ 知 trong từ 知らせます mang âm Hán Việt nào?",
+      "a": [
+        "QUYẾT",
+        "TƯƠNG",
+        "ĐÀM",
+        "TRI"
+      ],
+      "c": 3,
+      "ex": "知らせます: thông báo"
+    },
+    {
+      "word": "相",
+      "romaji": "tương",
+      "translation": "lẫn nhau (相談)",
+      "q": "Chữ 相 trong từ 相談 mang âm Hán Việt nào?",
+      "a": [
+        "TRI",
+        "TƯƠNG",
+        "ĐÀM",
+        "DỊ"
+      ],
+      "c": 1,
+      "ex": "相談します: trao đổi"
+    },
+    {
+      "word": "談",
+      "romaji": "đàm",
+      "translation": "nói chuyện (相談)",
+      "q": "Chữ 談 trong từ 相談 mang âm Hán Việt nào?",
+      "a": [
+        "TƠNG",
+        "ĐÀM",
+        "DỊ",
+        "TẬP"
+      ],
+      "c": 1,
+      "ex": "相談します: trao đổi"
+    },
+    {
+      "word": "予",
+      "romaji": "dự",
+      "translation": "dự trước, trước (予習)",
+      "q": "Chữ 予 trong từ 予習 mang âm Hán Việt nào?",
+      "a": [
+        "DỊ",
+        "TẬP",
+        "PHỤC",
+        "TỬ"
+      ],
+      "c": 0,
+      "ex": "予習します: chuẩn bị bài mới"
+    },
+    {
+      "word": "習",
+      "romaji": "tập",
+      "translation": "học, luyện (予習/復習)",
+      "q": "Chữ 習 trong từ 予習 mang âm Hán Việt nào?",
+      "a": [
+        "TẬP",
+        "PHỤC",
+        "DỊ",
+        "TỬ"
+      ],
+      "c": 0,
+      "ex": "予習します / 復習します: chuẩn bị bài mới / ôn bài cũ"
+    },
+    {
+      "word": "復",
+      "romaji": "phục",
+      "translation": "lặp lại, trả lại (復習)",
+      "q": "Chữ 復 trong từ 復習 mang âm Hán Việt nào?",
+      "a": [
+        "PHỤC",
+        "DỊ",
+        "TẬP",
+        "TỬ"
+      ],
+      "c": 0,
+      "ex": "復習します: ôn bài cũ"
+    },
+    {
+      "word": "子",
+      "romaji": "tử",
+      "translation": "con (お子さん)",
+      "q": "Chữ 子 trong từ お子さん mang âm Hán Việt nào?",
+      "a": [
+        "TỬ",
+        "THỤ",
+        "NGHIỆP",
+        "GIẢNG"
+      ],
+      "c": 0,
+      "ex": "お子さん: con"
+    },
+    {
+      "word": "授",
+      "romaji": "thụ",
+      "translation": "trao, dạy (授業)",
+      "q": "Chữ 授 trong từ 授業 mang âm Hán Việt nào?",
+      "a": [
+        "THỤ",
+        "NGHIỆP",
+        "GIẢNG",
+        "NGHĨA"
+      ],
+      "c": 0,
+      "ex": "授業: giờ học"
+    },
+    {
+      "word": "業",
+      "romaji": "nghiệp",
+      "translation": "nghề, sự nghiệp (授業)",
+      "q": "Chữ 業 trong từ 授業 mang âm Hán Việt nào?",
+      "a": [
+        "NGHIỆP",
+        "GIẢNG",
+        "NGHĨA",
+        "THỤ"
+      ],
+      "c": 0,
+      "ex": "授業: giờ học"
+    },
+    {
+      "word": "講",
+      "romaji": "giảng",
+      "translation": "giảng bài (講義)",
+      "q": "Chữ 講 trong từ 講義 mang âm Hán Việt nào?",
+      "a": [
+        "GIẢNG",
+        "NGHĨA",
+        "THỤ",
+        "NGHIỆP"
+      ],
+      "c": 0,
+      "ex": "講義: bài giảng"
+    },
+    {
+      "word": "義",
+      "romaji": "nghĩa",
+      "translation": "nghĩa, ý (講義)",
+      "q": "Chữ 義 trong từ 講義 mang âm Hán Việt nào?",
+      "a": [
+        "NGHĨA",
+        "GIẢNG",
+        "THỤ",
+        "NGHIỆP"
+      ],
+      "c": 0,
+      "ex": "講義: bài giảng"
+    },
+    {
+      "word": "定",
+      "romaji": "định",
+      "translation": "ấn định (予定)",
+      "q": "Chữ 定 trong từ 予定 mang âm Hán Việt nào?",
+      "a": [
+        "ĐỊNH",
+        "ÁN",
+        "NỘI",
+        "THƯ"
+      ],
+      "c": 0,
+      "ex": "予定: kế hoạch"
+    },
+    {
+      "word": "案",
+      "romaji": "án",
+      "translation": "hồ sơ, dẫn giải (案内書)",
+      "q": "Chữ 案 trong từ 案内書 mang âm Hán Việt nào?",
+      "a": [
+        "ÁN",
+        "NỘI",
+        "THƯ",
+        "ĐỊNH"
+      ],
+      "c": 0,
+      "ex": "案内書: sách hướng dẫn"
+    },
+    {
+      "word": "内",
+      "romaji": "nội",
+      "translation": "bên trong, nội dung (案内書)",
+      "q": "Chữ 内 trong từ 案内書 mang âm Hán Việt nào?",
+      "a": [
+        "NỘI",
+        "THƯ",
+        "ÁN",
+        "ĐỊNH"
+      ],
+      "c": 0,
+      "ex": "案内書: sách hướng dẫn"
+    },
+    {
+      "word": "書",
+      "romaji": "thư",
+      "translation": "sách, giấy tờ (案内書)",
+      "q": "Chữ 書 trong từ 案内書 mang âm Hán Việt nào?",
+      "a": [
+        "THƯ",
+        "ÁN",
+        "NỘI",
+        "ĐỊNH"
+      ],
+      "c": 0,
+      "ex": "案内書: sách hướng dẫn"
+    },
+    {
+      "word": "人",
+      "romaji": "nhân",
+      "translation": "người (人形)",
+      "q": "Chữ 人 trong từ 人形 mang âm Hán Việt nào?",
+      "a": [
+        "NHÂN",
+        "HÌNH",
+        "HOA",
+        "BÌNH"
+      ],
+      "c": 0,
+      "ex": "人形: búp bê"
+    },
+    {
+      "word": "形",
+      "romaji": "hình",
+      "translation": "hình dáng (人形)",
+      "q": "Chữ 形 trong từ 人形 mang âm Hán Việt nào?",
+      "a": [
+        "HÌNH",
+        "HOA",
+        "BÌNH",
+        "NHÂN"
+      ],
+      "c": 0,
+      "ex": "人形: búp bê"
+    },
+    {
+      "word": "花",
+      "romaji": "hoa",
+      "translation": "hoa (花瓶)",
+      "q": "Chữ 花 trong từ 花瓶 mang âm Hán Việt nào?",
+      "a": [
+        "HOA",
+        "BÌNH",
+        "NHÂN",
+        "HÌNH"
+      ],
+      "c": 0,
+      "ex": "花瓶: lọ hoa"
+    },
+    {
+      "word": "瓶",
+      "romaji": "bình",
+      "translation": "lọ, chai (花瓶)",
+      "q": "Chữ 瓶 trong từ 花瓶 mang âm Hán Việt nào?",
+      "a": [
+        "BÌNH",
+        "NHÂN",
+        "HÌNH",
+        "HOA"
+      ],
+      "c": 0,
+      "ex": "花瓶: lọ hoa"
+    },
+    {
+      "word": "鏡",
+      "romaji": "kính",
+      "translation": "gương (鏡)",
+      "q": "Chữ 鏡 mang âm Hán Việt nào?",
+      "a": [
+        "KÍNH",
+        "HOA",
+        "BÌNH",
+        "NHÂN"
+      ],
+      "c": 0,
+      "ex": "鏡: cái gương"
+    }
+  ]
+}

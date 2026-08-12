@@ -1,0 +1,402 @@
+{
+  "id": "n4-l32-kanji-hanviet",
+  "name": "N4 Bài 32 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 32, hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-12T09:13:16.941Z",
+  "updatedAt": "2026-08-12T09:13:38.927Z",
+  "questions": [
+    {
+      "word": "運",
+      "romaji": "vận",
+      "translation": "vận động (運動)",
+      "q": "Chữ 運 trong từ 運動 mang âm Hán Việt nào?",
+      "a": [
+        "VẬN",
+        "ĐỘNG",
+        "THÀNH",
+        "CÔNG"
+      ],
+      "c": 0,
+      "ex": "運動します: vận động"
+    },
+    {
+      "word": "動",
+      "romaji": "động",
+      "translation": "chuyển động (運動)",
+      "q": "Chữ 動 trong từ 運動 mang âm Hán Việt nào?",
+      "a": [
+        "ĐỘNG",
+        "THÀNH",
+        "CÔNG",
+        "THẤT"
+      ],
+      "c": 0,
+      "ex": "運動します: vận động"
+    },
+    {
+      "word": "成",
+      "romaji": "thành",
+      "translation": "thành (成功)",
+      "q": "Chữ 成 trong từ 成功 mang âm Hán Việt nào?",
+      "a": [
+        "THÀNH",
+        "CÔNG",
+        "THẤT",
+        "BẠI"
+      ],
+      "c": 0,
+      "ex": "成功します: thành công"
+    },
+    {
+      "word": "功",
+      "romaji": "công",
+      "translation": "công, thành tựu (成功)",
+      "q": "Chữ 功 trong từ 成功 mang âm Hán Việt nào?",
+      "a": [
+        "CÔNG",
+        "THẤT",
+        "BẠI",
+        "HỢP"
+      ],
+      "c": 0,
+      "ex": "成功します: thành công"
+    },
+    {
+      "word": "失",
+      "romaji": "thất",
+      "translation": "mất, thất bại (失敗)",
+      "q": "Chữ 失 trong từ 失敗 mang âm Hán Việt nào?",
+      "a": [
+        "THẤT",
+        "BẠI",
+        "HỢP",
+        "CÁCH"
+      ],
+      "c": 0,
+      "ex": "失敗します: thất bại"
+    },
+    {
+      "word": "敗",
+      "romaji": "bại",
+      "translation": "thất bại (失敗)",
+      "q": "Chữ 敗 trong từ 失敗 mang âm Hán Việt nào?",
+      "a": [
+        "BẠI",
+        "HỢP",
+        "CÁCH",
+        "LỆ"
+      ],
+      "c": 0,
+      "ex": "失敗します: thất bại"
+    },
+    {
+      "word": "合",
+      "romaji": "hợp",
+      "translation": "đợ, đạt chuẩn (合格)",
+      "q": "Chữ 合 trong từ 合格 mang âm Hán Việt nào?",
+      "a": [
+        "HỢP",
+        "CÁCH",
+        "LỆ",
+        "TÌNH"
+      ],
+      "c": 0,
+      "ex": "合格します: đỗ (thi)"
+    },
+    {
+      "word": "格",
+      "romaji": "cách",
+      "translation": "tiêu chuẩn (合格)",
+      "q": "Chữ 格 trong từ 合格 mang âm Hán Việt nào?",
+      "a": [
+        "CÁCH",
+        "LỆ",
+        "TÌNH",
+        "ĐÀM"
+      ],
+      "c": 0,
+      "ex": "合格します: đỗ (thi)"
+    },
+    {
+      "word": "戻",
+      "romaji": "lệ",
+      "translation": "quay lại (戻ります)",
+      "q": "Chữ 戻 trong từ 戻ります mang âm Hán Việt nào?",
+      "a": [
+        "LỆ",
+        "TÌNH",
+        "ĐÀM",
+        "XÚY"
+      ],
+      "c": 0,
+      "ex": "戻ります: quay lại"
+    },
+    {
+      "word": "晴",
+      "romaji": "tình",
+      "translation": "nắng, quang đãng (晴れます)",
+      "q": "Chữ 晴 trong từ 晴れます mang âm Hán Việt nào?",
+      "a": [
+        "TÌNH",
+        "ĐÀM",
+        "XÚY",
+        "TRỊ"
+      ],
+      "c": 0,
+      "ex": "晴れます: nắng"
+    },
+    {
+      "word": "曇",
+      "romaji": "đàm",
+      "translation": "mây (曇ります)",
+      "q": "Chữ 曇 trong từ 曇ります mang âm Hán Việt nào?",
+      "a": [
+        "ĐÀM",
+        "XÚY",
+        "TRỊ",
+        "TỤC"
+      ],
+      "c": 0,
+      "ex": "曇ります: có mây"
+    },
+    {
+      "word": "吹",
+      "romaji": "xúy",
+      "translation": "thổi (吹きます)",
+      "q": "Chữ 吹 trong từ 吹きます mang âm Hán Việt nào?",
+      "a": [
+        "XÚY",
+        "TRỊ",
+        "TỤC",
+        "LÃNH"
+      ],
+      "c": 0,
+      "ex": "吹きます: thổi gió"
+    },
+    {
+      "word": "治",
+      "romaji": "trị",
+      "translation": "chữa bệnh (治ります)",
+      "q": "Chữ 治 trong từ 治ります mang âm Hán Việt nào?",
+      "a": [
+        "TRỊ",
+        "TỤC",
+        "LÃNH",
+        "TÂM"
+      ],
+      "c": 0,
+      "ex": "治ります: khỏi bệnh"
+    },
+    {
+      "word": "続",
+      "romaji": "tục",
+      "translation": "tiếp tục (続きます)",
+      "q": "Chữ 続 trong từ 続きます mang âm Hán Việt nào?",
+      "a": [
+        "TỤC",
+        "LÃNH",
+        "TÂM",
+        "PHỐI"
+      ],
+      "c": 0,
+      "ex": "続きます: tiếp diễn"
+    },
+    {
+      "word": "冷",
+      "romaji": "lãnh",
+      "translation": "lạnh (冷やします)",
+      "q": "Chữ 冷 trong từ 冷やします mang âm Hán Việt nào?",
+      "a": [
+        "LÃNH",
+        "TÂM",
+        "PHỐI",
+        "THẬP"
+      ],
+      "c": 0,
+      "ex": "冷やします: làm lạnh"
+    },
+    {
+      "word": "心",
+      "romaji": "tâm",
+      "translation": "tâm, lòng (心配)",
+      "q": "Chữ 心 trong từ 心配 mang âm Hán Việt nào?",
+      "a": [
+        "TÂM",
+        "PHỐI",
+        "THẬP",
+        "PHÂN"
+      ],
+      "c": 0,
+      "ex": "心配: lo lắng"
+    },
+    {
+      "word": "配",
+      "romaji": "phối",
+      "translation": "sắp đặt, lo (心配)",
+      "q": "Chữ 配 trong từ 心配 mang âm Hán Việt nào?",
+      "a": [
+        "PHỐI",
+        "THẬP",
+        "PHÂN",
+        "QUÁI"
+      ],
+      "c": 0,
+      "ex": "心配: lo lắng"
+    },
+    {
+      "word": "十",
+      "romaji": "thập",
+      "translation": "mời, đầy đủ (十分)",
+      "q": "Chữ 十 trong từ 十分 mang âm Hán Việt nào?",
+      "a": [
+        "THẬP",
+        "PHÂN",
+        "QUÁI",
+        "NGÃ"
+      ],
+      "c": 0,
+      "ex": "十分: đủ"
+    },
+    {
+      "word": "分",
+      "romaji": "phân",
+      "translation": "phần (十分)",
+      "q": "Chữ 分 trong từ 十分 mang âm Hán Việt nào?",
+      "a": [
+        "PHÂN",
+        "QUÁI",
+        "NGÃ",
+        "KHÁI"
+      ],
+      "c": 0,
+      "ex": "十分: đủ"
+    },
+    {
+      "word": "怪",
+      "romaji": "quái",
+      "translation": "lạ, quái (怪我)",
+      "q": "Chữ 怪 trong từ 怪我 mang âm Hán Việt nào?",
+      "a": [
+        "QUÁI",
+        "NGÃ",
+        "KHÁI",
+        "THÁI"
+      ],
+      "c": 0,
+      "ex": "怪我: vết thương"
+    },
+    {
+      "word": "我",
+      "romaji": "ngã",
+      "translation": "tôi, bản thân (怪我)",
+      "q": "Chữ 我 trong từ 怪我 mang âm Hán Việt nào?",
+      "a": [
+        "NGÃ",
+        "KHÁI",
+        "THÁI",
+        "DƯƠNG"
+      ],
+      "c": 0,
+      "ex": "怪我: vết thương"
+    },
+    {
+      "word": "咳",
+      "romaji": "khái",
+      "translation": "ho (咳)",
+      "q": "Chữ 咳 mang âm Hán Việt nào?",
+      "a": [
+        "KHÁI",
+        "THÁI",
+        "DƯƠNG",
+        "TINH"
+      ],
+      "c": 0,
+      "ex": "咳: ho"
+    },
+    {
+      "word": "太",
+      "romaji": "thái",
+      "translation": "lớn (太陽)",
+      "q": "Chữ 太 trong từ 太陽 mang âm Hán Việt nào?",
+      "a": [
+        "THÁI",
+        "DƯƠNG",
+        "TINH",
+        "THỦY"
+      ],
+      "c": 0,
+      "ex": "太陽: mặt trời"
+    },
+    {
+      "word": "陽",
+      "romaji": "dương",
+      "translation": "dương, mặt trời (太陽)",
+      "q": "Chữ 陽 trong từ 太陽 mang âm Hán Việt nào?",
+      "a": [
+        "DƯƠNG",
+        "TINH",
+        "THỦY",
+        "ĐẠO"
+      ],
+      "c": 0,
+      "ex": "太陽: mặt trời"
+    },
+    {
+      "word": "星",
+      "romaji": "tinh",
+      "translation": "sao (星)",
+      "q": "Chữ 星 mang âm Hán Việt nào?",
+      "a": [
+        "TINH",
+        "THỦY",
+        "ĐẠO",
+        "NGUYÊN"
+      ],
+      "c": 0,
+      "ex": "星: sao"
+    },
+    {
+      "word": "水",
+      "romaji": "thủy",
+      "translation": "nước (水道)",
+      "q": "Chữ 水 trong từ 水道 mang âm Hán Việt nào?",
+      "a": [
+        "THỦY",
+        "ĐẠO",
+        "NGUYÊN",
+        "KHÍ"
+      ],
+      "c": 0,
+      "ex": "水道: nước máy"
+    },
+    {
+      "word": "道",
+      "romaji": "đạo",
+      "translation": "đường, kênh dẫn (水道)",
+      "q": "Chữ 道 trong từ 水道 mang âm Hán Việt nào?",
+      "a": [
+        "ĐẠO",
+        "NGUYÊN",
+        "KHÍ",
+        "VÔ"
+      ],
+      "c": 0,
+      "ex": "水道: nước máy"
+    },
+    {
+      "word": "元",
+      "romaji": "nguyên",
+      "translation": "gốc, ban đầu (元気)",
+      "q": "Chữ 元 trong từ 元気 mang âm Hán Việt nào?",
+      "a": [
+        "NGUYÊN",
+        "KHÍ",
+        "VÔ",
+        "LÝ"
+      ],
+      "c": 0,
+      "ex": "元気: khỏe mạnh"
+    }
+  ]
+}

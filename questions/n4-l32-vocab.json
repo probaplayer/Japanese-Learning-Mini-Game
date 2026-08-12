@@ -1,0 +1,332 @@
+{
+  "id": "n4-l32-vocab",
+  "name": "N4 Bài 32 - Từ vựng (nghĩa)",
+  "description": "Từ vựng Minna no Nihongo Bài 32 (N4). Câu hỏi hỏi nghĩa tiếng Việt của từ.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-12T09:11:12.898Z",
+  "updatedAt": "2026-08-12T09:11:24.863Z",
+  "questions": [
+    {
+      "word": "運動します",
+      "romaji": "うんどうします",
+      "translation": "vận động, tập thể thao",
+      "q": "Từ 運動します (うんどうします) có nghĩa là gì?",
+      "a": [
+        "vận động, tập thể thao",
+        "thành công",
+        "thất bại",
+        "đỗ (thi)"
+      ],
+      "c": 0,
+      "ex": "運 (vận) + 動 (động)"
+    },
+    {
+      "word": "成功します",
+      "romaji": "せいこうします",
+      "translation": "thành công",
+      "q": "Từ 成功します (せいこうします) có nghĩa là gì?",
+      "a": [
+        "vận động",
+        "thành công",
+        "thất bại",
+        "đỗ (thi)"
+      ],
+      "c": 1,
+      "ex": "成 (thành) + 功 (công)"
+    },
+    {
+      "word": "失敗します",
+      "romaji": "しっぱいします",
+      "translation": "thất bại, trượt (thi)",
+      "q": "Từ 失敗します (しっぱいします) trong câu về kỳ thi có nghĩa là gì?",
+      "a": [
+        "thành công",
+        "thất bại, trượt (thi)",
+        "đỗ (thi)",
+        "khỏi bệnh"
+      ],
+      "c": 1,
+      "ex": "失 (thất) + 敗 (bại)"
+    },
+    {
+      "word": "合格します",
+      "romaji": "ごうかくします",
+      "translation": "đỗ (thi)",
+      "q": "Từ 合格します (ごうかくします) có nghĩa là gì?",
+      "a": [
+        "trượt (thi)",
+        "đỗ (thi)",
+        "khỏi bệnh",
+        "quay lại"
+      ],
+      "c": 1,
+      "ex": "合 (hợp) + 格 (cách)"
+    },
+    {
+      "word": "戻ります",
+      "romaji": "もどります",
+      "translation": "quay lại, trở lại",
+      "q": "Từ 戻ります (もどります) có nghĩa là gì?",
+      "a": [
+        "đỗ (thi)",
+        "quay lại, trở lại",
+        "nắng",
+        "có mây"
+      ],
+      "c": 1,
+      "ex": "戻 (lệ) - trả về"
+    },
+    {
+      "word": "晴れます",
+      "romaji": "はれます",
+      "translation": "nắng, quang đãng",
+      "q": "Từ 晴れます (はれます) có nghĩa là gì?",
+      "a": [
+        "quay lại",
+        "nắng, quang đãng",
+        "có mây",
+        "thổi (gió)"
+      ],
+      "c": 1,
+      "ex": "晴 (tình) - trời nắng"
+    },
+    {
+      "word": "曇ります",
+      "romaji": "くもります",
+      "translation": "có mây, mây mù",
+      "q": "Từ 曇ります (くもります) có nghĩa là gì?",
+      "a": [
+        "nắng",
+        "có mây, mây mù",
+        "thổi gió",
+        "khỏi bệnh"
+      ],
+      "c": 1,
+      "ex": "曇 (đàm) - mây"
+    },
+    {
+      "word": "吹きます",
+      "romaji": "ふきます",
+      "translation": "thổi (gió)",
+      "q": "Từ 吹きます (ふきます) trong câu về gió có nghĩa là gì?",
+      "a": [
+        "có mây",
+        "thổi (gió)",
+        "khỏi bệnh",
+        "làm lạnh"
+      ],
+      "c": 1,
+      "ex": "吹 (xúy) - thổi"
+    },
+    {
+      "word": "治ります",
+      "romaji": "なおります",
+      "translation": "khỏi (bệnh)",
+      "q": "Từ 治ります (なおります) trong câu về bệnh có nghĩa là gì?",
+      "a": [
+        "thổi gió",
+        "khỏi (bệnh)",
+        "làm lạnh",
+        "tiếp diễn"
+      ],
+      "c": 1,
+      "ex": "治 (trị) - chữa bệnh"
+    },
+    {
+      "word": "続きます",
+      "romaji": "つづきます",
+      "translation": "tiếp diễn, tiếp tục",
+      "q": "Từ 続きます (つづきます) trong câu về cơn sốt có nghĩa là gì?",
+      "a": [
+        "khỏi bệnh",
+        "làm lạnh",
+        "tiếp diễn, tiếp tục",
+        "lo lắng"
+      ],
+      "c": 2,
+      "ex": "続 (tục) - tiếp tục"
+    },
+    {
+      "word": "冷やします",
+      "romaji": "ひやします",
+      "translation": "làm lạnh",
+      "q": "Từ 冷やします (ひやします) có nghĩa là gì?",
+      "a": [
+        "tiếp diễn",
+        "lo lắng",
+        "làm lạnh",
+        "đủ"
+      ],
+      "c": 2,
+      "ex": "冷 (lãnh) - lạnh"
+    },
+    {
+      "word": "心配な",
+      "romaji": "しんぱい",
+      "translation": "lo lắng",
+      "q": "Từ 心配[な] (しんぱい) có nghĩa là gì?",
+      "a": [
+        "làm lạnh",
+        "lo lắng",
+        "đủ",
+        "ồn ào"
+      ],
+      "c": 1,
+      "ex": "心 (tâm) + 配 (phới)"
+    },
+    {
+      "word": "十分な",
+      "romaji": "じゅうぶん",
+      "translation": "đủ",
+      "q": "Từ 十分[な] (じゅうぶん) có nghĩa là gì?",
+      "a": [
+        "lo lắng",
+        "đủ",
+        "ồn ào",
+        "vết thương"
+      ],
+      "c": 1,
+      "ex": "十 (thập) + 分 (phân)"
+    },
+    {
+      "word": "うるさい",
+      "romaji": "うるさい",
+      "translation": "ồn ào",
+      "q": "Từ うるさい có nghĩa là gì?",
+      "a": [
+        "đủ",
+        "ồn ào",
+        "vết thương",
+        "ho"
+      ],
+      "c": 1,
+      "ex": "煩 (phiền) - ồn ào"
+    },
+    {
+      "word": "怪我",
+      "romaji": "けが",
+      "translation": "vết thương",
+      "q": "Từ 怪我 (けが) có nghĩa là gì?",
+      "a": [
+        "ồn ào",
+        "vết thương",
+        "ho",
+        "mặt trời"
+      ],
+      "c": 1,
+      "ex": "怪 (quái) + 我 (ngã)"
+    },
+    {
+      "word": "咳",
+      "romaji": "せき",
+      "translation": "ho",
+      "q": "Từ 咳 (せき) có nghĩa là gì?",
+      "a": [
+        "vết thương",
+        "ho",
+        "mặt trời",
+        "sao"
+      ],
+      "c": 1,
+      "ex": "咳 (khái) - ho"
+    },
+    {
+      "word": "太陽",
+      "romaji": "たいよう",
+      "translation": "mặt trời",
+      "q": "Từ 太陽 (たいよう) có nghĩa là gì?",
+      "a": [
+        "ho",
+        "mặt trời",
+        "sao",
+        "nước máy"
+      ],
+      "c": 1,
+      "ex": "太 (thái) + 陽 (dương)"
+    },
+    {
+      "word": "星",
+      "romaji": "ほし",
+      "translation": "sao, ngôi sao",
+      "q": "Từ 星 (ほし) có nghĩa là gì?",
+      "a": [
+        "mặt trời",
+        "sao, ngôi sao",
+        "nước máy",
+        "khỏe mạnh"
+      ],
+      "c": 1,
+      "ex": "星 (tinh)"
+    },
+    {
+      "word": "水道",
+      "romaji": "すいどう",
+      "translation": "nước máy",
+      "q": "Từ 水道 (すいどう) có nghĩa là gì?",
+      "a": [
+        "sao",
+        "nước máy",
+        "khỏe mạnh",
+        "làm quá sức"
+      ],
+      "c": 1,
+      "ex": "水 (thủy) + 道 (đạo)"
+    },
+    {
+      "word": "元気",
+      "romaji": "げんき",
+      "translation": "khỏe, khỏe mạnh",
+      "q": "Từ 元気 (げんき) có nghĩa là gì?",
+      "a": [
+        "nước máy",
+        "khỏe mạnh",
+        "làm quá sức",
+        "sức khỏe"
+      ],
+      "c": 1,
+      "ex": "元 (nguyên) + 気 (khí)"
+    },
+    {
+      "word": "無理をします",
+      "romaji": "むりをします",
+      "translation": "làm quá sức, làm quá khả năng",
+      "q": "Từ 無理をします (むりをします) có nghĩa là gì?",
+      "a": [
+        "khỏe mạnh",
+        "làm quá sức, làm quá khả năng",
+        "sức khỏe",
+        "tình yêu"
+      ],
+      "c": 1,
+      "ex": "無 (vô) + 理 (lý)"
+    },
+    {
+      "word": "健康",
+      "romaji": "けんこう",
+      "translation": "sức khỏe, khỏe mạnh, an khang",
+      "q": "Từ 健康 (けんこう) có nghĩa là gì?",
+      "a": [
+        "làm quá sức",
+        "sức khỏe, khỏe mạnh, an khang",
+        "tình yêu",
+        "người yêu"
+      ],
+      "c": 1,
+      "ex": "健 (kiện) + 康 (khang)"
+    },
+    {
+      "word": "恋愛",
+      "romaji": "れんあい",
+      "translation": "tình yêu",
+      "q": "Từ 恋愛 (れんあい) có nghĩa là gì?",
+      "a": [
+        "sức khỏe",
+        "tình yêu",
+        "người yêu",
+        "người giàu có"
+      ],
+      "c": 1,
+      "ex": "恋 (luyến) + 愛 (ái)"
+    }
+  ]
+}

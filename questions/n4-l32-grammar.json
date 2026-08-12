@@ -1,0 +1,116 @@
+{
+  "id": "n4-l32-grammar",
+  "name": "N4 Bài 32 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 32 Minna no Nihongo: ~ほうがいいです (lời khuyên), ~でしょう (phán đoán), ~かもしれません (không chừng), trợ từ で (giới hạn số lượng/thời gian/tiền bạc).",
+  "category": "grammar",
+  "createdAt": "2026-08-12T09:15:22.773Z",
+  "updatedAt": "2026-08-12T09:15:22.773Z",
+  "questions": [
+    {
+      "sentence": "野菜も食べたほうがいいですよ",
+      "chunks": [
+        "野菜",
+        "も",
+        "食べたほうがいいですよ"
+      ],
+      "translation": "Nên ăn cả rau nữa đấy",
+      "ex": "Vた+ほうがいいです: lời khuyên nên làm gì"
+    },
+    {
+      "sentence": "はやく行ったほうがいいですよ",
+      "chunks": [
+        "はやく",
+        "行ったほうがいいですよ"
+      ],
+      "translation": "Nên đi nhanh đấy",
+      "ex": "~たほうがいいです: lời khuyên nên làm gì, hạn chế dùng với cấp trên"
+    },
+    {
+      "sentence": "毎日水を飲んだほうがいいですよ",
+      "chunks": [
+        "毎日",
+        "水",
+        "を",
+        "飲んだほうがいいですよ"
+      ],
+      "translation": "Mỗi ngày nên uống nước",
+      "ex": "Vた+ほうがいいです: nên làm gì"
+    },
+    {
+      "sentence": "疲れたでしょうね",
+      "chunks": [
+        "疲れた",
+        "でしょう",
+        "ね"
+      ],
+      "translation": "Chắc là bạn mệt rồi đúng không?",
+      "ex": "V普通形+でしょう: phán đoán dựa trên yếu tố khách quan, kinh nghiệm"
+    },
+    {
+      "sentence": "まだ寝ているでしょう",
+      "chunks": [
+        "まだ",
+        "寝ている",
+        "でしょう"
+      ],
+      "translation": "Chắc là bạn vẫn đang ngủ",
+      "ex": "Vている+でしょう: phán đoán về trạng thái đang diễn ra"
+    },
+    {
+      "sentence": "私と彼は別れるかもしれません",
+      "chunks": [
+        "私",
+        "と",
+        "彼",
+        "は",
+        "別れる",
+        "かもしれません"
+      ],
+      "translation": "Không chừng là tôi và anh ấy sẽ chia tay",
+      "ex": "かもしれません: không chừng là~, mức độ chính xác thấp hơn でしょう (khoảng 50%)"
+    },
+    {
+      "sentence": "それは聞き間違いかもしれません",
+      "chunks": [
+        "それ",
+        "は",
+        "聞き間違い",
+        "かもしれません"
+      ],
+      "translation": "Không chừng là bạn nghe nhầm việc đó",
+      "ex": "N+かもしれません: trình bày phán đoán có thể xảy ra"
+    },
+    {
+      "sentence": "学校までごふんで行けますか",
+      "chunks": [
+        "学校",
+        "まで",
+        "ごふん",
+        "で",
+        "行けますか"
+      ],
+      "translation": "Trong 5 phút có đến trường được không?",
+      "ex": "Trợ từ で sau lượng từ biểu thị mức giới hạn thời gian cần thiết để việc gì xảy ra"
+    },
+    {
+      "sentence": "これで足りますか",
+      "chunks": [
+        "これ",
+        "で",
+        "足りますか"
+      ],
+      "translation": "Bằng này có đủ không?",
+      "ex": "Trợ từ で: giới hạn về số lượng"
+    },
+    {
+      "sentence": "ビデオが買えますか",
+      "chunks": [
+        "ビデオ",
+        "が",
+        "買えますか"
+      ],
+      "translation": "Có thể mua được video không?",
+      "ex": "Trợ từ で: giới hạn về tiền bạc (ví dụ: 3万円で買えますか)"
+    }
+  ]
+}

@@ -1,0 +1,416 @@
+{
+  "id": "n4-l31-kanji-hanviet",
+  "name": "N4 Bài 31 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 31, hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-12T07:13:31.279Z",
+  "updatedAt": "2026-08-12T07:13:52.692Z",
+  "questions": [
+    {
+      "word": "始",
+      "romaji": "thủy",
+      "translation": "bắt đầu (始まります)",
+      "q": "Chữ 始 trong từ 始まります mang âm Hán Việt nào?",
+      "a": [
+        "THỦY",
+        "TỤC",
+        "KIẾN",
+        "THỤ"
+      ],
+      "c": 0,
+      "ex": "始まります: bắt đầu"
+    },
+    {
+      "word": "続",
+      "romaji": "tục",
+      "translation": "tiếp tục (続けます)",
+      "q": "Chữ 続 trong từ 続けます mang âm Hán Việt nào?",
+      "a": [
+        "THỦY",
+        "KIẾN",
+        "THỤ",
+        "TỤC"
+      ],
+      "c": 3,
+      "ex": "続けます: tiếp tục"
+    },
+    {
+      "word": "見",
+      "romaji": "kiến",
+      "translation": "nhìn, tìm (見つけます)",
+      "q": "Chữ 見 trong từ 見つけます mang âm Hán Việt nào?",
+      "a": [
+        "KIẾN",
+        "THỤ",
+        "NHẬP",
+        "HỌC"
+      ],
+      "c": 0,
+      "ex": "見つけます: tìm thấy"
+    },
+    {
+      "word": "受",
+      "romaji": "thụ",
+      "translation": "nhận, thi (受けます)",
+      "q": "Chữ 受 trong từ 受けます mang âm Hán Việt nào?",
+      "a": [
+        "NHẬP",
+        "HỌC",
+        "THỤ",
+        "TỐT"
+      ],
+      "c": 2,
+      "ex": "受けます: thi"
+    },
+    {
+      "word": "入",
+      "romaji": "nhập",
+      "translation": "vào (入学)",
+      "q": "Chữ 入 trong từ 入学 mang âm Hán Việt nào?",
+      "a": [
+        "NHẬP",
+        "HỌC",
+        "TỐT",
+        "NGHIỆP"
+      ],
+      "c": 0,
+      "ex": "入学します: nhập học"
+    },
+    {
+      "word": "学",
+      "romaji": "học",
+      "translation": "học (入学)",
+      "q": "Chữ 学 trong từ 入学 mang âm Hán Việt nào?",
+      "a": [
+        "HỌC",
+        "TỐT",
+        "NGHIỆP",
+        "XUẤT"
+      ],
+      "c": 0,
+      "ex": "入学します: nhập học"
+    },
+    {
+      "word": "卒",
+      "romaji": "tốt",
+      "translation": "hoàn tất, tốt (卒業)",
+      "q": "Chữ 卒 trong từ 卒業 mang âm Hán Việt nào?",
+      "a": [
+        "TỐT",
+        "NGHIỆP",
+        "XUẤT",
+        "TỌCH"
+      ],
+      "c": 0,
+      "ex": "卒業します: tốt nghiệp"
+    },
+    {
+      "word": "業",
+      "romaji": "nghiệp",
+      "translation": "nghề, sự nghiệp (卒業)",
+      "q": "Chữ 業 trong từ 卒業 mang âm Hán Việt nào?",
+      "a": [
+        "NGHIỆP",
+        "XUẤT",
+        "TỌCH",
+        "TỐT"
+      ],
+      "c": 0,
+      "ex": "卒業します / 授業: tốt nghiệp / giờ học"
+    },
+    {
+      "word": "出",
+      "romaji": "xuất",
+      "translation": "đi ra, tham gia (出席)",
+      "q": "Chữ 出 trong từ 出席 mang âm Hán Việt nào?",
+      "a": [
+        "XUẤT",
+        "TỌCH",
+        "TỐT",
+        "HƯU"
+      ],
+      "c": 0,
+      "ex": "出席します: tham dự"
+    },
+    {
+      "word": "席",
+      "romaji": "tịch",
+      "translation": "chỗ, chủ đề (出席)",
+      "q": "Chữ 席 trong từ 出席 mang âm Hán Việt nào?",
+      "a": [
+        "TỌCH",
+        "XUẤT",
+        "HƯU",
+        "KHẾ"
+      ],
+      "c": 0,
+      "ex": "出席します: tham dự"
+    },
+    {
+      "word": "休",
+      "romaji": "hưu",
+      "translation": "nghỉ (休憩)",
+      "q": "Chữ 休 trong từ 休憩 mang âm Hán Việt nào?",
+      "a": [
+        "HƯU",
+        "KHẾ",
+        "LIÊN",
+        "TÁC"
+      ],
+      "c": 0,
+      "ex": "休憩します: nghỉ giải lao"
+    },
+    {
+      "word": "憩",
+      "romaji": "khế",
+      "translation": "nghỉ ngơi, giải lao (休憩)",
+      "q": "Chữ 憩 trong từ 休憩 mang âm Hán Việt nào?",
+      "a": [
+        "KHẾ",
+        "LIÊN",
+        "TÁC",
+        "VĂN"
+      ],
+      "c": 0,
+      "ex": "休憩します: nghỉ giải lao"
+    },
+    {
+      "word": "連",
+      "romaji": "liên",
+      "translation": "liên tục (連休)",
+      "q": "Chữ 連 trong từ 連休 mang âm Hán Việt nào?",
+      "a": [
+        "LIÊN",
+        "TÁC",
+        "VĂN",
+        "HƯU"
+      ],
+      "c": 0,
+      "ex": "連休: ngày nghỉ liền nhau"
+    },
+    {
+      "word": "作",
+      "romaji": "tác",
+      "translation": "làm, sáng tác (作文)",
+      "q": "Chữ 作 trong từ 作文 mang âm Hán Việt nào?",
+      "a": [
+        "TÁC",
+        "VĂN",
+        "HƯU",
+        "TRIỂN"
+      ],
+      "c": 0,
+      "ex": "作文: bài văn"
+    },
+    {
+      "word": "文",
+      "romaji": "văn",
+      "translation": "văn chương, chữ viết (作文)",
+      "q": "Chữ 文 trong từ 作文 mang âm Hán Việt nào?",
+      "a": [
+        "VĂN",
+        "HƯU",
+        "TRIỂN",
+        "LÃM"
+      ],
+      "c": 0,
+      "ex": "作文: bài văn"
+    },
+    {
+      "word": "展",
+      "romaji": "triển",
+      "translation": "trưng bày (展覧会)",
+      "q": "Chữ 展 trong từ 展覧会 mang âm Hán Việt nào?",
+      "a": [
+        "TRIỂN",
+        "LÃM",
+        "HỘI",
+        "KẾT"
+      ],
+      "c": 0,
+      "ex": "展覧会: triển lãm"
+    },
+    {
+      "word": "覧",
+      "romaji": "lãm",
+      "translation": "xem, ngắm (展覧会)",
+      "q": "Chữ 覧 trong từ 展覧会 mang âm Hán Việt nào?",
+      "a": [
+        "LÃM",
+        "HỘI",
+        "KẾT",
+        "HÔN"
+      ],
+      "c": 0,
+      "ex": "展覧会: triển lãm"
+    },
+    {
+      "word": "婚",
+      "romaji": "hôn",
+      "translation": "kết hôn (結婚式)",
+      "q": "Chữ 婚 trong từ 結婚式 mang âm Hán Việt nào?",
+      "a": [
+        "KẾT",
+        "HÔN",
+        "THỨC",
+        "TÁNG"
+      ],
+      "c": 1,
+      "ex": "結婚式: lễ cưới"
+    },
+    {
+      "word": "結",
+      "romaji": "kết",
+      "translation": "gắn kết (結婚式)",
+      "q": "Chữ 結 trong từ 結婚式 mang âm Hán Việt nào?",
+      "a": [
+        "HÔN",
+        "THỨC",
+        "TÁNG",
+        "KẾT"
+      ],
+      "c": 3,
+      "ex": "結婚式: lễ cưới"
+    },
+    {
+      "word": "葬",
+      "romaji": "táng",
+      "translation": "chôn cất, tang lễ (お葬式)",
+      "q": "Chữ 葬 trong từ お葬式 mang âm Hán Việt nào?",
+      "a": [
+        "THỨC",
+        "TÁNG",
+        "KẾT",
+        "HÔN"
+      ],
+      "c": 1,
+      "ex": "お葬式: lễ tang"
+    },
+    {
+      "word": "式",
+      "romaji": "thức",
+      "translation": "lễ, kiểu (式)",
+      "q": "Chữ 式 mang âm Hán Việt nào?",
+      "a": [
+        "TÁNG",
+        "KẾT",
+        "HÔN",
+        "THỨC"
+      ],
+      "c": 3,
+      "ex": "式: lễ, đám"
+    },
+    {
+      "word": "本",
+      "romaji": "bản",
+      "translation": "gốc, chính (本社)",
+      "q": "Chữ 本 trong từ 本社 mang âm Hán Việt nào?",
+      "a": [
+        "BẢN",
+        "XÃ",
+        "CHI",
+        "ĐIỆM"
+      ],
+      "c": 0,
+      "ex": "本社: trụ sở chính"
+    },
+    {
+      "word": "社",
+      "romaji": "xã",
+      "translation": "công ty (本社)",
+      "q": "Chữ 社 trong từ 本社 mang âm Hán Việt nào?",
+      "a": [
+        "XÃ",
+        "CHI",
+        "ĐIỆM",
+        "GIÁO"
+      ],
+      "c": 0,
+      "ex": "本社: trụ sở chính"
+    },
+    {
+      "word": "支",
+      "romaji": "chi",
+      "translation": "chi nhánh (支店)",
+      "q": "Chữ 支 trong từ 支店 mang âm Hán Việt nào?",
+      "a": [
+        "CHI",
+        "ĐIỆM",
+        "GIÁO",
+        "HỘI"
+      ],
+      "c": 0,
+      "ex": "支店: chi nhánh"
+    },
+    {
+      "word": "店",
+      "romaji": "điệm",
+      "translation": "cửa hàng (支店)",
+      "q": "Chữ 店 trong từ 支店 mang âm Hán Việt nào?",
+      "a": [
+        "ĐIỆM",
+        "GIÁO",
+        "HỘI",
+        "CHI"
+      ],
+      "c": 0,
+      "ex": "支店: chi nhánh"
+    },
+    {
+      "word": "教",
+      "romaji": "giáo",
+      "translation": "tôn giáo, dạy (教会)",
+      "q": "Chữ 教 trong từ 教会 mang âm Hán Việt nào?",
+      "a": [
+        "GIÁO",
+        "HỘI",
+        "CHI",
+        "VIỆN"
+      ],
+      "c": 0,
+      "ex": "教会: nhà thờ"
+    },
+    {
+      "word": "院",
+      "romaji": "viện",
+      "translation": "viện (大学院)",
+      "q": "Chữ 院 trong từ 大学院 mang âm Hán Việt nào?",
+      "a": [
+        "VIỆN",
+        "ÔN",
+        "TUYỀN",
+        "NÔNG"
+      ],
+      "c": 0,
+      "ex": "大学院: cao học"
+    },
+    {
+      "word": "温",
+      "romaji": "ôn",
+      "translation": "ấm (温泉)",
+      "q": "Chữ 温 trong từ 温泉 mang âm Hán Việt nào?",
+      "a": [
+        "ÔN",
+        "TUYỀN",
+        "VIỆN",
+        "GIÁO"
+      ],
+      "c": 0,
+      "ex": "温泉: suối nước nóng"
+    },
+    {
+      "word": "泉",
+      "romaji": "tuyền",
+      "translation": "suối (温泉)",
+      "q": "Chữ 泉 trong từ 温泉 mang âm Hán Việt nào?",
+      "a": [
+        "TUYỀN",
+        "ÔN",
+        "VIỆN",
+        "GIÁO"
+      ],
+      "c": 0,
+      "ex": "温泉: suối nước nóng"
+    }
+  ]
+}

@@ -1,0 +1,346 @@
+{
+  "id": "n4-l31-vocab",
+  "name": "N4 Bài 31 - Từ vựng (nghĩa)",
+  "description": "Từ vựng Minna no Nihongo Bài 31 (N4). Câu hỏi hỏi nghĩa tiếng Việt của từ.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-12T07:10:56.459Z",
+  "updatedAt": "2026-08-12T07:11:08.993Z",
+  "questions": [
+    {
+      "word": "始まります",
+      "romaji": "はじまります",
+      "translation": "bắt đầu",
+      "q": "Từ 始まります (はじまります) có nghĩa là gì?",
+      "a": [
+        "bắt đầu",
+        "tiếp tục",
+        "tìm thấy",
+        "thi"
+      ],
+      "c": 0,
+      "ex": "始 (thủy) - bắt đầu"
+    },
+    {
+      "word": "続けます",
+      "romaji": "つづけます",
+      "translation": "tiếp tục",
+      "q": "Từ 続けます (つづけます) có nghĩa là gì?",
+      "a": [
+        "bắt đầu",
+        "tiếp tục",
+        "tìm thấy",
+        "nhập học"
+      ],
+      "c": 1,
+      "ex": "続 (tục) - tiếp tục"
+    },
+    {
+      "word": "見つけます",
+      "romaji": "みつけます",
+      "translation": "tìm, tìm thấy",
+      "q": "Từ 見つけます (みつけます) có nghĩa là gì?",
+      "a": [
+        "tiếp tục",
+        "tìm, tìm thấy",
+        "thi",
+        "tốt nghiệp"
+      ],
+      "c": 1,
+      "ex": "見 (kiến) - nhìn, tìm"
+    },
+    {
+      "word": "受けます",
+      "romaji": "うけます",
+      "translation": "thi",
+      "q": "Từ 受けます (うけます) trong câu về kỳ thi có nghĩa là gì?",
+      "a": [
+        "tìm thấy",
+        "thi",
+        "tốt nghiệp",
+        "tham dự"
+      ],
+      "c": 1,
+      "ex": "受 (thụ) - nhận, thi"
+    },
+    {
+      "word": "入学します",
+      "romaji": "にゅうがくします",
+      "translation": "nhập học, vào (đại học)",
+      "q": "Từ 入学します (にゅぅがくします) có nghĩa là gì?",
+      "a": [
+        "thi",
+        "nhập học, vào (đại học)",
+        "tốt nghiệp",
+        "tham dự"
+      ],
+      "c": 1,
+      "ex": "入 (nhập) + 学 (học)"
+    },
+    {
+      "word": "卒業します",
+      "romaji": "そつぎょうします",
+      "translation": "tốt nghiệp",
+      "q": "Từ 卒業します (そつぎょうします) có nghĩa là gì?",
+      "a": [
+        "nhập học",
+        "tốt nghiệp",
+        "tham dự",
+        "nghỉ giải lao"
+      ],
+      "c": 1,
+      "ex": "卒 (tốt) + 業 (nghiệp)"
+    },
+    {
+      "word": "出席します",
+      "romaji": "しゅっせきします",
+      "translation": "tham dự, tham gia",
+      "q": "Từ 出席します (しゅっせきします) có nghĩa là gì?",
+      "a": [
+        "tốt nghiệp",
+        "tham dự, tham gia",
+        "nghỉ giải lao",
+        "ngày nghỉ liền"
+      ],
+      "c": 1,
+      "ex": "出 (xuất) + 席 (tịch)"
+    },
+    {
+      "word": "休憩します",
+      "romaji": "きゅうけいします",
+      "translation": "nghỉ, giải lao",
+      "q": "Từ 休憩します (きゅうけいします) có nghĩa là gì?",
+      "a": [
+        "tham dự",
+        "nghỉ, giải lao",
+        "ngày nghỉ liền",
+        "bài văn"
+      ],
+      "c": 1,
+      "ex": "休 (hưu) + 憩 (khế)"
+    },
+    {
+      "word": "連休",
+      "romaji": "れんきゅう",
+      "translation": "ngày nghỉ liền nhau",
+      "q": "Từ 連休 (れんきゅう) có nghĩa là gì?",
+      "a": [
+        "nghỉ giải lao",
+        "ngày nghỉ liền nhau",
+        "bài văn",
+        "triển lãm"
+      ],
+      "c": 1,
+      "ex": "連 (liên) + 休 (hưu)"
+    },
+    {
+      "word": "作文",
+      "romaji": "さくぶん",
+      "translation": "bài văn",
+      "q": "Từ 作文 (さくぶん) có nghĩa là gì?",
+      "a": [
+        "ngày nghỉ liền",
+        "bài văn",
+        "triển lãm",
+        "lễ cưới"
+      ],
+      "c": 1,
+      "ex": "作 (tác) + 文 (văn)"
+    },
+    {
+      "word": "展覧会",
+      "romaji": "てんらんかい",
+      "translation": "triển lãm",
+      "q": "Từ 展覧会 (てんらんかい) có nghĩa là gì?",
+      "a": [
+        "bài văn",
+        "triển lãm",
+        "lễ cưới",
+        "lễ tang"
+      ],
+      "c": 1,
+      "ex": "展 (triển) + 覧 (lãm) + 会 (hội)"
+    },
+    {
+      "word": "結婚式",
+      "romaji": "けっこんしき",
+      "translation": "lễ cưới, đám cưới",
+      "q": "Từ 結婚式 (けっこんしき) có nghĩa là gì?",
+      "a": [
+        "triển lãm",
+        "lễ cưới, đám cưới",
+        "lễ tang",
+        "trụ sở chính"
+      ],
+      "c": 1,
+      "ex": "結 (kết) + 婚 (hôn) + 式 (thức)"
+    },
+    {
+      "word": "お葬式",
+      "romaji": "おそうしき",
+      "translation": "lễ tang, đám tang",
+      "q": "Từ お葬式 (おそうしき) có nghĩa là gì?",
+      "a": [
+        "lễ cưới",
+        "lễ tang, đám tang",
+        "trụ sở chính",
+        "chi nhánh"
+      ],
+      "c": 1,
+      "ex": "葬 (táng) + 式 (thức)"
+    },
+    {
+      "word": "式",
+      "romaji": "しき",
+      "translation": "lễ, đám",
+      "q": "Từ 式 (しき) có nghĩa là gì?",
+      "a": [
+        "lễ, đám",
+        "trụ sở chính",
+        "chi nhánh",
+        "nhà thờ"
+      ],
+      "c": 0,
+      "ex": "式 (thức)"
+    },
+    {
+      "word": "本社",
+      "romaji": "ほんしゃ",
+      "translation": "trụ sở chính",
+      "q": "Từ 本社 (ほんしゃ) có nghĩa là gì?",
+      "a": [
+        "trụ sở chính",
+        "chi nhánh",
+        "nhà thờ",
+        "cao học"
+      ],
+      "c": 0,
+      "ex": "本 (bản) + 社 (xã)"
+    },
+    {
+      "word": "支店",
+      "romaji": "してん",
+      "translation": "chi nhánh",
+      "q": "Từ 支店 (してん) có nghĩa là gì?",
+      "a": [
+        "trụ sở chính",
+        "chi nhánh",
+        "nhà thờ",
+        "vườn thú"
+      ],
+      "c": 1,
+      "ex": "支 (chi) + 店 (điệm)"
+    },
+    {
+      "word": "教会",
+      "romaji": "きょうかい",
+      "translation": "nhà thờ",
+      "q": "Từ 教会 (きょうかい) có nghĩa là gì?",
+      "a": [
+        "chi nhánh",
+        "nhà thờ",
+        "vườn thú",
+        "cao học"
+      ],
+      "c": 1,
+      "ex": "教 (giáo) + 会 (hội)"
+    },
+    {
+      "word": "大学院",
+      "romaji": "だいがくいん",
+      "translation": "cao học, sau đại học",
+      "q": "Từ 大学院 (だいがくいん) có nghĩa là gì?",
+      "a": [
+        "nhà thờ",
+        "cao học",
+        "vườn thú",
+        "suối nước nóng"
+      ],
+      "c": 1,
+      "ex": "大学 (đại học) + 院 (viện)"
+    },
+    {
+      "word": "動物園",
+      "romaji": "どうぶつえん",
+      "translation": "vườn thú",
+      "q": "Từ 動物園 (どうぶつえん) có nghĩa là gì?",
+      "a": [
+        "cao học",
+        "vườn thú",
+        "suối nước nóng",
+        "khách hàng"
+      ],
+      "c": 1,
+      "ex": "動物 (động vật) + 園 (viên)"
+    },
+    {
+      "word": "温泉",
+      "romaji": "おんせん",
+      "translation": "suối nước nóng",
+      "q": "Từ 温泉 (おんせん) có nghĩa là gì?",
+      "a": [
+        "vườn thú",
+        "suối nước nóng",
+        "khách hàng",
+        "ở lại"
+      ],
+      "c": 1,
+      "ex": "温 (ôn) + 泉 (tuyền)"
+    },
+    {
+      "word": "お客さん",
+      "romaji": "おきゃくさん",
+      "translation": "khách hàng",
+      "q": "Từ お客さん (おきゃくさん) có nghĩa là gì?",
+      "a": [
+        "suối nước nóng",
+        "khách hàng",
+        "ở lại",
+        "làng"
+      ],
+      "c": 1,
+      "ex": "お客 (khách)"
+    },
+    {
+      "word": "残ります",
+      "romaji": "のこります",
+      "translation": "ở lại",
+      "q": "Từ 残ります (のこります) có nghĩa là gì?",
+      "a": [
+        "khách hàng",
+        "ở lại",
+        "làng",
+        "thường, thông thường"
+      ],
+      "c": 1,
+      "ex": "残 (tàn) - còn lại"
+    },
+    {
+      "word": "普通の",
+      "romaji": "ふつうの",
+      "translation": "thường, thông thường",
+      "q": "Từ 普通の (ふつうの) có nghĩa là gì?",
+      "a": [
+        "ở lại",
+        "thường, thông thường",
+        "làng",
+        "khách hàng"
+      ],
+      "c": 1,
+      "ex": "普通 (phổ thông)"
+    },
+    {
+      "word": "村",
+      "romaji": "むら",
+      "translation": "làng",
+      "q": "Từ 村 (むら) có nghĩa là gì?",
+      "a": [
+        "thường, thông thường",
+        "ở lại",
+        "làng",
+        "suối nước nóng"
+      ],
+      "c": 2,
+      "ex": "村 (thôn)"
+    }
+  ]
+}

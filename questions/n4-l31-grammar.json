@@ -1,0 +1,126 @@
+{
+  "id": "n4-l31-grammar",
+  "name": "N4 Bài 31 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 31 Minna no Nihongo: Thể ý chí (意向形), V意向形 rủ rê, V意向形と思っています, ~つもり, ~予定.",
+  "category": "grammar",
+  "createdAt": "2026-08-12T07:14:35.825Z",
+  "updatedAt": "2026-08-12T09:07:12.566Z",
+  "questions": [
+    {
+      "sentence": "映画を見に行こう",
+      "chunks": [
+        "映画",
+        "を",
+        "見に",
+        "行こう"
+      ],
+      "translation": "Cùng đi xem phim đi",
+      "ex": "Thể ý chí dùng để rủ rê, yêu cầu người nghe đồng ý (=行きましょう)"
+    },
+    {
+      "sentence": "少し休もう",
+      "chunks": [
+        "少し",
+        "休もう"
+      ],
+      "translation": "Cùng nghỉ ngơi một chút đi",
+      "ex": "休む→休もう (thể ý chí nhóm I): cùng nghỉ ngơi một chút đi"
+    },
+    {
+      "sentence": "英語を練習しようか",
+      "chunks": [
+        "英語",
+        "を",
+        "練習しよう",
+        "か"
+      ],
+      "translation": "Cùng luyện tập tiếng Anh một chút đi",
+      "ex": "練習する→練習しよう (thể ý chí nhóm III)"
+    },
+    {
+      "sentence": "友達とテニスをしようと思っています",
+      "chunks": [
+        "友達",
+        "と",
+        "テニス",
+        "を",
+        "しようと",
+        "思っています"
+      ],
+      "translation": "Tôi định cùng bạn chơi tennis",
+      "ex": "V意向形+と思っています: quyết định có từ trước và vẫn duy trì đến hiện tại"
+    },
+    {
+      "sentence": "夏休みにうみへ行こうと思っています",
+      "chunks": [
+        "夏休み",
+        "に",
+        "うみ",
+        "へ",
+        "行こうと",
+        "思っています"
+      ],
+      "translation": "Tôi định đi biển vào nghỉ hè",
+      "ex": "V意向形+と思っています: diễn tả ý định đã có từ trước"
+    },
+    {
+      "sentence": "コンサートへ行くつもりです",
+      "chunks": [
+        "コンサート",
+        "へ",
+        "行く",
+        "つもりです"
+      ],
+      "translation": "Tôi định đi xem hòa nhạc",
+      "ex": "V(từ điển)+つもりです: dự định với chí hướng rõ rệt của người nói"
+    },
+    {
+      "sentence": "私は27歳まで結婚するつもりです",
+      "chunks": [
+        "私",
+        "は",
+        "27歳まで",
+        "結婚する",
+        "つもりです"
+      ],
+      "translation": "Tôi định kết hôn trước 27 tuổi",
+      "ex": "つもりです: quyết định chắc chắn của người nói"
+    },
+    {
+      "sentence": "来週の金曜日に帰る予定です",
+      "chunks": [
+        "来週",
+        "の金曜日",
+        "に",
+        "帰る",
+        "予定です"
+      ],
+      "translation": "Dự định là thứ sáu tuần sau sẽ về",
+      "ex": "V(từ điển)+予定です: kế hoạch đã được lên một cách chắc chắn"
+    },
+    {
+      "sentence": "ぼくは大学に入る予定です",
+      "chunks": [
+        "ぼく",
+        "は",
+        "大学",
+        "に",
+        "入る",
+        "予定です"
+      ],
+      "translation": "Tôi dự định học đại học",
+      "ex": "V予定です: kế hoạch tương lai đã xác định"
+    },
+    {
+      "sentence": "甜いものを食べないつもりです",
+      "chunks": [
+        "甜いもの",
+        "を",
+        "食べない",
+        "つもりです"
+      ],
+      "translation": "Tôi quyết định sẽ không ăn đồ ngọt",
+      "ex": "つもりです có thể dùng ở dạng phủ định để nói quyết định không làm gì"
+    }
+  ]
+}

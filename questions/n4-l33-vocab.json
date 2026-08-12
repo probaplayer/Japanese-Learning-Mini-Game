@@ -1,0 +1,346 @@
+{
+  "id": "n4-l33-vocab",
+  "name": "N4 Bài 33 - Từ vựng (nghĩa)",
+  "description": "Từ vựng Minna no Nihongo Bài 33 (N4). Câu hỏi hỏi nghĩa tiếng Việt của từ.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-12T09:42:34.173Z",
+  "updatedAt": "2026-08-12T09:42:55.027Z",
+  "questions": [
+    {
+      "word": "逃げます",
+      "romaji": "にげます",
+      "translation": "chạy trốn, bỏ chạy",
+      "q": "Từ 逃げます (にげます) có nghĩa là gì?",
+      "a": [
+        "chạy trốn, bỏ chạy",
+        "làm ồn",
+        "ném",
+        "bảo vệ"
+      ],
+      "c": 0,
+      "ex": "逃 (đào) - trốn"
+    },
+    {
+      "word": "騒ぎます",
+      "romaji": "さわぎます",
+      "translation": "làm ồn, làm rùm beng",
+      "q": "Từ 騒ぎます (さわぎます) có nghĩa là gì?",
+      "a": [
+        "chạy trốn",
+        "làm ồn, làm rùm beng",
+        "ném",
+        "nâng lên"
+      ],
+      "c": 1,
+      "ex": "騒 (tao) - ồn ào"
+    },
+    {
+      "word": "投げます",
+      "romaji": "なげます",
+      "translation": "ném",
+      "q": "Từ 投げます (なげます) có nghĩa là gì?",
+      "a": [
+        "làm ồn",
+        "ném",
+        "bảo vệ",
+        "hạ xuống"
+      ],
+      "c": 1,
+      "ex": "投 (đầu) - ném"
+    },
+    {
+      "word": "守ります",
+      "romaji": "まもります",
+      "translation": "bảo vệ, tuân thủ, giụ",
+      "q": "Từ 守ります (まもります) có nghĩa là gì?",
+      "a": [
+        "ném",
+        "bảo vệ, tuân thủ, giụ",
+        "nâng lên",
+        "hạ xuống"
+      ],
+      "c": 1,
+      "ex": "守 (thủ) - bảo vệ"
+    },
+    {
+      "word": "上げます",
+      "romaji": "あげます",
+      "translation": "nâng, nâng lên, tăng lên",
+      "q": "Từ 上げます (あげます) có nghĩa là gì?",
+      "a": [
+        "bảo vệ",
+        "nâng, nâng lên, tăng lên",
+        "hạ xuống",
+        "truyền đạt"
+      ],
+      "c": 1,
+      "ex": "上 (thượng) - lên"
+    },
+    {
+      "word": "下げます",
+      "romaji": "さげます",
+      "translation": "hạ, hạ xuống, giảm xuống",
+      "q": "Từ 下げます (さげます) có nghĩa là gì?",
+      "a": [
+        "nâng lên",
+        "hạ, hạ xuống, giảm xuống",
+        "truyền đạt",
+        "chú ý"
+      ],
+      "c": 1,
+      "ex": "下 (hạ) - xuống"
+    },
+    {
+      "word": "伝えます",
+      "romaji": "つたえます",
+      "translation": "truyền, truyền đạt",
+      "q": "Từ 伝えます (つたえます) có nghĩa là gì?",
+      "a": [
+        "hạ xuống",
+        "truyền, truyền đạt",
+        "chú ý",
+        "rời (chỗ ngồi)"
+      ],
+      "c": 1,
+      "ex": "伝 (truyền) - truyền đạt"
+    },
+    {
+      "word": "注意します",
+      "romaji": "ちゅういします",
+      "translation": "chú ý",
+      "q": "Từ 注意します (ちゅういします) trong câu về ô tô có nghĩa là gì?",
+      "a": [
+        "truyền đạt",
+        "chú ý",
+        "rời (chỗ ngồi)",
+        "chỗ ngồi"
+      ],
+      "c": 1,
+      "ex": "注意 (chú ý)"
+    },
+    {
+      "word": "外します",
+      "romaji": "はずします",
+      "translation": "rời, không có ở (chỗ ngồi)",
+      "q": "Từ 外します (はずします) trong câu về chỗ ngồi có nghĩa là gì?",
+      "a": [
+        "chú ý",
+        "rời, không có ở (chỗ ngồi)",
+        "chỗ ngồi",
+        "quy tắc"
+      ],
+      "c": 1,
+      "ex": "外 (ngoại) - bên ngoài"
+    },
+    {
+      "word": "席",
+      "romaji": "せき",
+      "translation": "chỗ ngồi, ghế",
+      "q": "Từ 席 (せき) có nghĩa là gì?",
+      "a": [
+        "rời khỏi",
+        "chỗ ngồi, ghế",
+        "quy tắc",
+        "máy giặt"
+      ],
+      "c": 1,
+      "ex": "席 (tịch)"
+    },
+    {
+      "word": "洗濇機",
+      "romaji": "せんたくき",
+      "translation": "máy giặt",
+      "q": "Từ 洗濇機 (せんたくき) có nghĩa là gì?",
+      "a": [
+        "chỗ ngồi",
+        "máy giặt",
+        "quy tắc",
+        "cấm sử dụng"
+      ],
+      "c": 1,
+      "ex": "洗 (tẩy) + 濇 (trạc) + 機 (cơ)"
+    },
+    {
+      "word": "規則",
+      "romaji": "きそく",
+      "translation": "quy tắc, kỷ luật",
+      "q": "Từ 規則 (きそく) có nghĩa là gì?",
+      "a": [
+        "máy giặt",
+        "quy tắc, kỷ luật",
+        "cấm sử dụng",
+        "cấm vào"
+      ],
+      "c": 1,
+      "ex": "規 (quy) + 則 (tắc)"
+    },
+    {
+      "word": "使用禁止",
+      "romaji": "しようきんし",
+      "translation": "cấm sử dụng",
+      "q": "Từ 使用禁止 (しようきんし) có nghĩa là gì?",
+      "a": [
+        "quy tắc",
+        "cấm sử dụng",
+        "cấm vào",
+        "cửa vào"
+      ],
+      "c": 1,
+      "ex": "使用 (sử dụng) + 禁止 (cấm chỉ)"
+    },
+    {
+      "word": "立入禁止",
+      "romaji": "たちいりきんし",
+      "translation": "cấm vào",
+      "q": "Từ 立入禁止 (たちいりきんし) có nghĩa là gì?",
+      "a": [
+        "cấm sử dụng",
+        "cấm vào",
+        "cửa vào",
+        "cửa ra"
+      ],
+      "c": 1,
+      "ex": "立入 (lập nhập) + 禁止 (cấm chỉ)"
+    },
+    {
+      "word": "入口",
+      "romaji": "いりぐち",
+      "translation": "cửa vào",
+      "q": "Từ 入口 (いりぐち) có nghĩa là gì?",
+      "a": [
+        "cấm vào",
+        "cửa vào",
+        "cửa ra",
+        "cửa thoát hiểm"
+      ],
+      "c": 1,
+      "ex": "入 (nhập) + 口 (khẩu)"
+    },
+    {
+      "word": "出口",
+      "romaji": "でぐち",
+      "translation": "cửa ra",
+      "q": "Từ 出口 (でぐち) có nghĩa là gì?",
+      "a": [
+        "cửa vào",
+        "cửa ra",
+        "cửa thoát hiểm",
+        "đang mở cửa"
+      ],
+      "c": 1,
+      "ex": "出 (xuất) + 口 (khẩu)"
+    },
+    {
+      "word": "非常口",
+      "romaji": "ひじょうぐち",
+      "translation": "cửa thoát hiểm",
+      "q": "Từ 非常口 (ひじょうぐち) có nghĩa là gì?",
+      "a": [
+        "cửa ra",
+        "cửa thoát hiểm",
+        "đang mở cửa",
+        "đỗ xe trái phép"
+      ],
+      "c": 1,
+      "ex": "非常 (phi thường) + 口 (khẩu)"
+    },
+    {
+      "word": "営業中",
+      "romaji": "えいぎょうちゅう",
+      "translation": "đang mở cửa",
+      "q": "Từ 営業中 (えいぎょうちゅう) có nghĩa là gì?",
+      "a": [
+        "cửa thoát hiểm",
+        "đang mở cửa",
+        "đỗ xe trái phép",
+        "cảnh sát"
+      ],
+      "c": 1,
+      "ex": "営業 (doanh nghiệp) + 中 (trung)"
+    },
+    {
+      "word": "駐車違反",
+      "romaji": "ちゅうしゃいはん",
+      "translation": "đỗ xe trái phép",
+      "q": "Từ 駐車違反 (ちゅうしゃいはん) có nghĩa là gì?",
+      "a": [
+        "đang mở cửa",
+        "đỗ xe trái phép",
+        "cảnh sát",
+        "tiền phạt"
+      ],
+      "c": 1,
+      "ex": "駐車 (trú xa) + 違反 (vi phản)"
+    },
+    {
+      "word": "警察",
+      "romaji": "けいさつ",
+      "translation": "cảnh sát",
+      "q": "Từ 警察 (けいさつ) có nghĩa là gì?",
+      "a": [
+        "đỗ xe trái phép",
+        "cảnh sát",
+        "tiền phạt",
+        "điện báo"
+      ],
+      "c": 1,
+      "ex": "警察 (cảnh sát)"
+    },
+    {
+      "word": "罰金",
+      "romaji": "ばっきん",
+      "translation": "tiền phạt",
+      "q": "Từ 罰金 (ばっきん) có nghĩa là gì?",
+      "a": [
+        "cảnh sát",
+        "tiền phạt",
+        "điện báo",
+        "vắng nhà"
+      ],
+      "c": 1,
+      "ex": "罰 (phạt) + 金 (kim)"
+    },
+    {
+      "word": "電報",
+      "romaji": "でんぽう",
+      "translation": "điện báo, bức điện",
+      "q": "Từ 電報 (でんぱう) có nghĩa là gì?",
+      "a": [
+        "tiền phạt",
+        "điện báo, bức điện",
+        "vắng nhà",
+        "sử dụng"
+      ],
+      "c": 1,
+      "ex": "電 (điện) + 報 (báo)"
+    },
+    {
+      "word": "留守",
+      "romaji": "るす",
+      "translation": "vắng nhà",
+      "q": "Từ 留守 (るす) có nghĩa là gì?",
+      "a": [
+        "điện báo",
+        "vắng nhà",
+        "sử dụng, lợi dụng",
+        "tiền phạt"
+      ],
+      "c": 1,
+      "ex": "留 (lưu) + 守 (thủ)"
+    },
+    {
+      "word": "利用します",
+      "romaji": "りようします",
+      "translation": "sử dụng, lợi dụng, tận dụng",
+      "q": "Từ 利用します (りようします) có nghĩa là gì?",
+      "a": [
+        "vắng nhà",
+        "sử dụng, lợi dụng, tận dụng",
+        "tiền phạt",
+        "điện báo"
+      ],
+      "c": 1,
+      "ex": "利 (lợi) + 用 (dụng)"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "id": "n4-l33-grammar",
+  "name": "N4 Bài 33 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 33 Minna no Nihongo: Thể mệnh lệnh (命令形), thể cấm chỉ, ~なさい, ~と読みます/~と書いてあります, ~という意味です, ~と言っていました, ~と伝えていただけませんか.",
+  "category": "grammar",
+  "createdAt": "2026-08-12T09:47:21.238Z",
+  "updatedAt": "2026-08-12T09:47:35.659Z",
+  "questions": [
+    {
+      "sentence": "はやく逃げろ",
+      "chunks": [
+        "はやく",
+        "逃げろ"
+      ],
+      "translation": "Chạy trốn nhanh đi!",
+      "ex": "Thể mệnh lệnh (命令形): 逃げます→逃げろ, dùng trong tình huống khẩn cấp"
+    },
+    {
+      "sentence": "ここにさわるな",
+      "chunks": [
+        "ここに",
+        "さわるな"
+      ],
+      "translation": "Cấm sờ vào đây",
+      "ex": "Thể cấm chỉ: V(từ điển) + な, thường dùng trên biển báo"
+    },
+    {
+      "sentence": "勉強しなさい",
+      "chunks": [
+        "勉強",
+        "しなさい"
+      ],
+      "translation": "Hãy học bài đi",
+      "ex": "V(bỏ ます)+なさい: mệnh lệnh nhẹ nhàng hơn thể mệnh lệnh, phụ nự hay dùng"
+    },
+    {
+      "sentence": "使用禁止と書いてあります",
+      "chunks": [
+        "使用禁止",
+        "と",
+        "書いてあります"
+      ],
+      "translation": "Có viết là “cấm sử dụng”",
+      "ex": "~と書いてあります: có viết là ~"
+    },
+    {
+      "sentence": "営業中と読みます",
+      "chunks": [
+        "営業中",
+        "と",
+        "読みます"
+      ],
+      "translation": "Đọc là “đang mở cửa”",
+      "ex": "~と読みます: đọc là ~"
+    },
+    {
+      "sentence": "この漢字はどういう意味ですか",
+      "chunks": [
+        "この漢字",
+        "は",
+        "どういう",
+        "意味ですか"
+      ],
+      "translation": "Chữ Hán này nghĩa là gì?",
+      "ex": "どういう+N+ですか: hỏi nghĩa của một ký hiệu/chứ viết nào đó"
+    },
+    {
+      "sentence": "洗濯機で洗えるという意味です",
+      "chunks": [
+        "洗濯機",
+        "で",
+        "洗えるという",
+        "意味です"
+      ],
+      "translation": "Có nghĩa là có thể giặt bằng máy giặt",
+      "ex": "~という意味です: nghĩa là ~, dùng để giải thích"
+    },
+    {
+      "sentence": "田中さんはお弁当を買いに行くと言っていました",
+      "chunks": [
+        "田中さん",
+        "は",
+        "お弁当",
+        "を",
+        "買いに行くと",
+        "言っていました"
+      ],
+      "translation": "Anh Tanaka nói anh ấy đi mua cơm",
+      "ex": "普通形+と言っていました: truyền đạt lại lời của người thứ ba"
+    },
+    {
+      "sentence": "30分ぐらいで戻ると言っていました",
+      "chunks": [
+        "30分ぐらいで",
+        "戻る",
+        "と",
+        "言っていました"
+      ],
+      "translation": "Anh ấy nói sẽ trở lại sau khoảng 30 phút",
+      "ex": "と言っていました: nhắn lời lại của ai đó"
+    },
+    {
+      "sentence": "パーティーは6時からだと伝えていただけませんか",
+      "chunks": [
+        "パーティー",
+        "は",
+        "6時からだと",
+        "伝えていただけませんか"
+      ],
+      "translation": "Có thể nhắn lại rằng buổi tiệc bắt đầu từ 6 giờ được không?",
+      "ex": "~と伝えていただけませんか: xin nhắn lại giúp tôi rằng ~ được không, lịch sự"
+    }
+  ]
+}

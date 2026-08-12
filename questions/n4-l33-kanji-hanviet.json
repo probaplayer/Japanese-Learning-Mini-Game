@@ -1,0 +1,388 @@
+{
+  "id": "n4-l33-kanji-hanviet",
+  "name": "N4 Bài 33 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 33, hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-12T09:45:05.808Z",
+  "updatedAt": "2026-08-12T09:46:35.116Z",
+  "questions": [
+    {
+      "word": "逃",
+      "romaji": "đào",
+      "translation": "trốn (逃げます)",
+      "q": "Chữ 逃 trong từ 逃げます mang âm Hán Việt nào?",
+      "a": [
+        "ĐÀO",
+        "TAO",
+        "ĐẦU",
+        "THỦ"
+      ],
+      "c": 0,
+      "ex": "逃げます: chạy trốn"
+    },
+    {
+      "word": "騒",
+      "romaji": "tao",
+      "translation": "ồn ào (騒ぎます)",
+      "q": "Chữ 騒 trong từ 騒ぎます mang âm Hán Việt nào?",
+      "a": [
+        "ĐÀO",
+        "ĐẦU",
+        "THỦ",
+        "TAO"
+      ],
+      "c": 3,
+      "ex": "騒ぎます: làm ồn"
+    },
+    {
+      "word": "投",
+      "romaji": "đầu",
+      "translation": "ném (投げます)",
+      "q": "Chữ 投 trong từ 投げます mang âm Hán Việt nào?",
+      "a": [
+        "TAO",
+        "THỦ",
+        "ĐẦU",
+        "THƯỢNG"
+      ],
+      "c": 2,
+      "ex": "投げます: ném"
+    },
+    {
+      "word": "守",
+      "romaji": "thủ",
+      "translation": "bảo vệ, giữ (守ります)",
+      "q": "Chữ 守 trong từ 守ります mang âm Hán Việt nào?",
+      "a": [
+        "THỦ",
+        "THƯỢNG",
+        "HẠ",
+        "TRUYỀN"
+      ],
+      "c": 0,
+      "ex": "守ります: bảo vệ"
+    },
+    {
+      "word": "上",
+      "romaji": "thượng",
+      "translation": "lên (上げます)",
+      "q": "Chữ 上 trong từ 上げます mang âm Hán Việt nào?",
+      "a": [
+        "THƯỢNG",
+        "HẠ",
+        "TRUYỀN",
+        "CHÚ"
+      ],
+      "c": 0,
+      "ex": "上げます: nâng lên"
+    },
+    {
+      "word": "下",
+      "romaji": "hạ",
+      "translation": "xuống (下げます)",
+      "q": "Chữ 下 trong từ 下げます mang âm Hán Việt nào?",
+      "a": [
+        "HẠ",
+        "TRUYỀN",
+        "CHÚ",
+        "Ý"
+      ],
+      "c": 0,
+      "ex": "下げます: hạ xuống"
+    },
+    {
+      "word": "伝",
+      "romaji": "truyền",
+      "translation": "truyền đạt (伝えます)",
+      "q": "Chữ 伝 trong từ 伝えます mang âm Hán Việt nào?",
+      "a": [
+        "TRUYỀN",
+        "CHÚ",
+        "Ý",
+        "NGOẠI"
+      ],
+      "c": 0,
+      "ex": "伝えます: truyền đạt"
+    },
+    {
+      "word": "注",
+      "romaji": "chú",
+      "translation": "chú ý, rót (注意)",
+      "q": "Chữ 注 trong từ 注意 mang âm Hán Việt nào?",
+      "a": [
+        "CHÚ",
+        "Ý",
+        "NGOẠI",
+        "TỊCH"
+      ],
+      "c": 0,
+      "ex": "注意: chú ý"
+    },
+    {
+      "word": "意",
+      "romaji": "ý",
+      "translation": "ý, nghĩa (注意)",
+      "q": "Chữ 意 trong từ 注意 mang âm Hán Việt nào?",
+      "a": [
+        "Ý",
+        "NGOẠI",
+        "TỊCH",
+        "TẨY"
+      ],
+      "c": 0,
+      "ex": "注意: chú ý"
+    },
+    {
+      "word": "外",
+      "romaji": "ngoại",
+      "translation": "bên ngoài (外します)",
+      "q": "Chữ 外 trong từ 外します mang âm Hán Việt nào?",
+      "a": [
+        "NGOẠI",
+        "TỊCH",
+        "TẨY",
+        "TRẠC"
+      ],
+      "c": 0,
+      "ex": "外します: rời khỏi"
+    },
+    {
+      "word": "席",
+      "romaji": "tịch",
+      "translation": "chỗ ngồi (席)",
+      "q": "Chữ 席 mang âm Hán Việt nào?",
+      "a": [
+        "TỊCH",
+        "TẨY",
+        "TRẠC",
+        "CƠ"
+      ],
+      "c": 0,
+      "ex": "席: chỗ ngồi"
+    },
+    {
+      "word": "洗",
+      "romaji": "tẩy",
+      "translation": "giặt, rửa (洗濯機)",
+      "q": "Chữ 洗 trong từ 洗濯機 mang âm Hán Việt nào?",
+      "a": [
+        "TẨY",
+        "TRẠC",
+        "CƠ",
+        "QUY"
+      ],
+      "c": 0,
+      "ex": "洗濯機: máy giặt"
+    },
+    {
+      "word": "濯",
+      "romaji": "trạc",
+      "translation": "giặt (洗濯機)",
+      "q": "Chữ 濯 trong từ 洗濯機 mang âm Hán Việt nào?",
+      "a": [
+        "TRẠC",
+        "CƠ",
+        "QUY",
+        "TẮC"
+      ],
+      "c": 0,
+      "ex": "洗濯機: máy giặt"
+    },
+    {
+      "word": "機",
+      "romaji": "cơ",
+      "translation": "máy (洗濇機)",
+      "q": "Chữ 機 trong từ 洗濯機 mang âm Hán Việt nào?",
+      "a": [
+        "CƠ",
+        "QUY",
+        "TẮC",
+        "SỬ"
+      ],
+      "c": 0,
+      "ex": "洗濯機: máy giặt"
+    },
+    {
+      "word": "規",
+      "romaji": "quy",
+      "translation": "quy tắc (規則)",
+      "q": "Chữ 規 trong từ 規則 mang âm Hán Việt nào?",
+      "a": [
+        "QUY",
+        "TẮC",
+        "NHẬP",
+        "KHẨU"
+      ],
+      "c": 0,
+      "ex": "規則: quy tắc"
+    },
+    {
+      "word": "則",
+      "romaji": "tắc",
+      "translation": "luật lệ (規則)",
+      "q": "Chữ 則 trong từ 規則 mang âm Hán Việt nào?",
+      "a": [
+        "TẮC",
+        "NHẬP",
+        "KHẨU",
+        "XUẤT"
+      ],
+      "c": 0,
+      "ex": "規則: quy tắc"
+    },
+    {
+      "word": "入",
+      "romaji": "nhập",
+      "translation": "vào (入口)",
+      "q": "Chữ 入 trong từ 入口 mang âm Hán Việt nào?",
+      "a": [
+        "NHẬP",
+        "KHẨU",
+        "XUẤT",
+        "SỬ"
+      ],
+      "c": 0,
+      "ex": "入口: cửa vào"
+    },
+    {
+      "word": "口",
+      "romaji": "khẩu",
+      "translation": "miệng, cửa (入口/出口)",
+      "q": "Chữ 口 trong từ 入口 mang âm Hán Việt nào?",
+      "a": [
+        "KHẨU",
+        "XUẤT",
+        "SỬ",
+        "CẤM"
+      ],
+      "c": 0,
+      "ex": "入口 / 出口: cửa vào / cửa ra"
+    },
+    {
+      "word": "出",
+      "romaji": "xuất",
+      "translation": "ra (出口)",
+      "q": "Chữ 出 trong từ 出口 mang âm Hán Việt nào?",
+      "a": [
+        "XUẤT",
+        "SỬ",
+        "CẤM",
+        "CHỈ"
+      ],
+      "c": 0,
+      "ex": "出口: cửa ra"
+    },
+    {
+      "word": "使",
+      "romaji": "sử",
+      "translation": "dùng (使用)",
+      "q": "Chữ 使 trong từ 使用 mang âm Hán Việt nào?",
+      "a": [
+        "SỬ",
+        "CẤM",
+        "CHỈ",
+        "THƯỜNG"
+      ],
+      "c": 0,
+      "ex": "使用: sử dụng"
+    },
+    {
+      "word": "禁",
+      "romaji": "cấm",
+      "translation": "cấm (禁止)",
+      "q": "Chữ 禁 trong từ 使用禁止 mang âm Hán Việt nào?",
+      "a": [
+        "CẤM",
+        "CHỈ",
+        "THƯỜNG",
+        "DOANH"
+      ],
+      "c": 0,
+      "ex": "使用禁止: cấm sử dụng"
+    },
+    {
+      "word": "止",
+      "romaji": "chỉ",
+      "translation": "ngăn, chặn (禁止)",
+      "q": "Chữ 止 trong từ 使用禁止 mang âm Hán Việt nào?",
+      "a": [
+        "CHỈ",
+        "THƯỜNG",
+        "DOANH",
+        "NGHIỆP"
+      ],
+      "c": 0,
+      "ex": "使用禁止: cấm sử dụng"
+    },
+    {
+      "word": "常",
+      "romaji": "thường",
+      "translation": "bình thường (非常口 - phi thường)",
+      "q": "Chữ 常 trong từ 非常口 mang âm Hán Việt nào?",
+      "a": [
+        "THƯỜNG",
+        "DOANH",
+        "NGHIỆP",
+        "TRÚ"
+      ],
+      "c": 0,
+      "ex": "非常口: cửa thoát hiểm"
+    },
+    {
+      "word": "営",
+      "romaji": "doanh",
+      "translation": "kinh doanh (営業)",
+      "q": "Chữ 営 trong từ 営業中 mang âm Hán Việt nào?",
+      "a": [
+        "DOANH",
+        "NGHIỆP",
+        "TRÚ",
+        "VI"
+      ],
+      "c": 0,
+      "ex": "営業中: đang mở cửa"
+    },
+    {
+      "word": "業",
+      "romaji": "nghiệp",
+      "translation": "kinh doanh, nghề (営業)",
+      "q": "Chữ 業 trong từ 営業中 mang âm Hán Việt nào?",
+      "a": [
+        "NGHIỆP",
+        "TRÚ",
+        "VI",
+        "GIẢ"
+      ],
+      "c": 0,
+      "ex": "営業中: đang mở cửa"
+    },
+    {
+      "word": "駐",
+      "romaji": "trú",
+      "translation": "đỗ (xe) (駐車)",
+      "q": "Chữ 駐 trong từ 駐車違反 mang âm Hán Việt nào?",
+      "a": [
+        "TRÚ",
+        "VI",
+        "GIẢ",
+        "PHẠT"
+      ],
+      "c": 0,
+      "ex": "駐車違反: đỗ xe trái phép"
+    },
+    {
+      "word": "違",
+      "romaji": "vi",
+      "translation": "trái, vi phạm (違反)",
+      "q": "Chữ 違 trong từ 駐車違反 mang âm Hán Việt nào?",
+      "a": [
+        "VI",
+        "GIẢ",
+        "PHẠT",
+        "KIM"
+      ],
+      "c": 0,
+      "ex": "駐車違反: đỗ xe trái phép"
+    }
+  ]
+}

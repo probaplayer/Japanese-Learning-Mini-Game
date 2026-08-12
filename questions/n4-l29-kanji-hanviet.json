@@ -1,0 +1,402 @@
+{
+  "id": "n4-l29-kanji-hanviet",
+  "name": "N4 Bài 29 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 29, hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-12T04:12:27.725Z",
+  "updatedAt": "2026-08-12T04:12:33.634Z",
+  "questions": [
+    {
+      "word": "開",
+      "romaji": "khai",
+      "translation": "mở (開きます)",
+      "q": "Chữ 開 trong từ 開きます mang âm Hán Việt nào?",
+      "a": [
+        "KHAI",
+        "BẾ",
+        "TIÊU",
+        "HOẠI"
+      ],
+      "c": 0,
+      "ex": "開きます: mở"
+    },
+    {
+      "word": "閉",
+      "romaji": "bế",
+      "translation": "đóng (閉まります)",
+      "q": "Chữ 閉 trong từ 閉まります mang âm Hán Việt nào?",
+      "a": [
+        "KHAI",
+        "BẾ",
+        "TIÊU",
+        "CÁT"
+      ],
+      "c": 1,
+      "ex": "閉まります: đóng"
+    },
+    {
+      "word": "消",
+      "romaji": "tiêu",
+      "translation": "tắt, biến mất (消えます)",
+      "q": "Chữ 消 trong từ 消えます mang âm Hán Việt nào?",
+      "a": [
+        "HOẠI",
+        "CÁT",
+        "TIÊU",
+        "TRIẾT"
+      ],
+      "c": 2,
+      "ex": "消えます: tắt"
+    },
+    {
+      "word": "壊",
+      "romaji": "hoại",
+      "translation": "hỏng, hư (壊れます)",
+      "q": "Chữ 壊 trong từ 壊れます mang âm Hán Việt nào?",
+      "a": [
+        "CÁT",
+        "TRIẾT",
+        "PHÁ",
+        "HOẠI"
+      ],
+      "c": 3,
+      "ex": "壊れます: hỏng"
+    },
+    {
+      "word": "割",
+      "romaji": "cát",
+      "translation": "chia, vỡ (割れます)",
+      "q": "Chữ 割 trong từ 割れます mang âm Hán Việt nào?",
+      "a": [
+        "CÁT",
+        "HOẠI",
+        "TRIẾT",
+        "PHÁ"
+      ],
+      "c": 0,
+      "ex": "割れます: vỡ"
+    },
+    {
+      "word": "折",
+      "romaji": "triết",
+      "translation": "bẻ, gãy (折れます)",
+      "q": "Chữ 折 trong từ 折れます mang âm Hán Việt nào?",
+      "a": [
+        "PHÁ",
+        "Ô",
+        "TRIẾT",
+        "CÁT"
+      ],
+      "c": 2,
+      "ex": "折れます: gãy"
+    },
+    {
+      "word": "破",
+      "romaji": "phá",
+      "translation": "rách, phá (破れます)",
+      "q": "Chữ 破 trong từ 破れます mang âm Hán Việt nào?",
+      "a": [
+        "TRIẾT",
+        "Ô",
+        "PHÁ",
+        "CÁT"
+      ],
+      "c": 2,
+      "ex": "破れます: rách"
+    },
+    {
+      "word": "汚",
+      "romaji": "ô",
+      "translation": "bẩn, dơ (汚れます)",
+      "q": "Chữ 汚 trong từ 汚れます mang âm Hán Việt nào?",
+      "a": [
+        "PHÁ",
+        "TRIẾT",
+        "CÁT",
+        "Ô"
+      ],
+      "c": 3,
+      "ex": "汚れます: bẩn"
+    },
+    {
+      "word": "付",
+      "romaji": "phó",
+      "translation": "gắn, kèm (付きます)",
+      "q": "Chữ 付 trong từ 付きます mang âm Hán Việt nào?",
+      "a": [
+        "PHÓ",
+        "NGOẠI",
+        "CHỈ",
+        "LẠC"
+      ],
+      "c": 0,
+      "ex": "付きます: có gắn"
+    },
+    {
+      "word": "外",
+      "romaji": "ngoại",
+      "translation": "bên ngoài, tuột ra (外れます)",
+      "q": "Chữ 外 trong từ 外れます mang âm Hán Việt nào?",
+      "a": [
+        "PHÓ",
+        "NGOẠI",
+        "CHỈ",
+        "QUẢI"
+      ],
+      "c": 1,
+      "ex": "外れます: tuột, bung"
+    },
+    {
+      "word": "止",
+      "romaji": "chỉ",
+      "translation": "dừng, ngăn (止まります)",
+      "q": "Chữ 止 trong từ 止まります mang âm Hán Việt nào?",
+      "a": [
+        "NGOẠI",
+        "LẠC",
+        "CHỈ",
+        "QUẢI"
+      ],
+      "c": 2,
+      "ex": "止まります: dừng"
+    },
+    {
+      "word": "落",
+      "romaji": "lạc",
+      "translation": "rơi, rớt (落とします)",
+      "q": "Chữ 落 trong từ 落とします mang âm Hán Việt nào?",
+      "a": [
+        "CHỈ",
+        "QUẢI",
+        "LẠC",
+        "NGOẠI"
+      ],
+      "c": 2,
+      "ex": "落とします: đánh rơi"
+    },
+    {
+      "word": "掛",
+      "romaji": "quải",
+      "translation": "treo, khóa (掛かります)",
+      "q": "Chữ 掛 trong từ 掛かります mang âm Hán Việt nào?",
+      "a": [
+        "LẠC",
+        "CHỈ",
+        "QUẢI",
+        "NGOẠI"
+      ],
+      "c": 2,
+      "ex": "掛かります: khóa"
+    },
+    {
+      "word": "皿",
+      "romaji": "mãnh",
+      "translation": "cái đĩa (皿)",
+      "q": "Chữ 皿 mang âm Hán Việt nào?",
+      "a": [
+        "MÃNH",
+        "ĐẠI",
+        "TÀI",
+        "BỐ"
+      ],
+      "c": 0,
+      "ex": "皿: cái đĩa"
+    },
+    {
+      "word": "袋",
+      "romaji": "đại",
+      "translation": "cái túi (袋)",
+      "q": "Chữ 袋 mang âm Hán Việt nào?",
+      "a": [
+        "MÃNH",
+        "TÀI",
+        "BỐ",
+        "ĐẠI"
+      ],
+      "c": 3,
+      "ex": "袋: cái túi"
+    },
+    {
+      "word": "財",
+      "romaji": "tài",
+      "translation": "tài sản (財布)",
+      "q": "Chữ 財 trong từ 財布 mang âm Hán Việt nào?",
+      "a": [
+        "ĐẠI",
+        "TÀI",
+        "BỐ",
+        "CHI"
+      ],
+      "c": 1,
+      "ex": "財布: cái ví"
+    },
+    {
+      "word": "布",
+      "romaji": "bố",
+      "translation": "vải, tiền (財布)",
+      "q": "Chữ 布 trong từ 財布 mang âm Hán Việt nào?",
+      "a": [
+        "TÀI",
+        "BỐ",
+        "ĐẠI",
+        "CHI"
+      ],
+      "c": 1,
+      "ex": "財布: cái ví"
+    },
+    {
+      "word": "枝",
+      "romaji": "chi",
+      "translation": "cành cây (枝)",
+      "q": "Chữ 枝 mang âm Hán Việt nào?",
+      "a": [
+        "BỐ",
+        "TÀI",
+        "CHI",
+        "DỊCH"
+      ],
+      "c": 2,
+      "ex": "枝: cành cây"
+    },
+    {
+      "word": "駅",
+      "romaji": "dịch",
+      "translation": "nhà ga (駅員)",
+      "q": "Chữ 駅 trong từ 駅員 mang âm Hán Việt nào?",
+      "a": [
+        "DỊCH",
+        "VIÊN",
+        "VONG",
+        "VẬT"
+      ],
+      "c": 0,
+      "ex": "駅員: nhân viên nhà ga"
+    },
+    {
+      "word": "員",
+      "romaji": "viên",
+      "translation": "nhân viên (駅員)",
+      "q": "Chữ 員 trong từ 駅員 mang âm Hán Việt nào?",
+      "a": [
+        "DỊCH",
+        "VIÊN",
+        "VONG",
+        "VẬT"
+      ],
+      "c": 1,
+      "ex": "駅員: nhân viên nhà ga"
+    },
+    {
+      "word": "忘",
+      "romaji": "vong",
+      "translation": "quên (忘れ物)",
+      "q": "Chữ 忘 trong từ 忘れ物 mang âm Hán Việt nào?",
+      "a": [
+        "VIÊN",
+        "DỊCH",
+        "VONG",
+        "VẬT"
+      ],
+      "c": 2,
+      "ex": "忘れ物: vật để quên"
+    },
+    {
+      "word": "物",
+      "romaji": "vật",
+      "translation": "sự vật (忘れ物)",
+      "q": "Chữ 物 trong từ 忘れ物 mang âm Hán Việt nào?",
+      "a": [
+        "VIÊN",
+        "VONG",
+        "VẬT",
+        "DỊCH"
+      ],
+      "c": 2,
+      "ex": "忘れ物: vật để quên"
+    },
+    {
+      "word": "地",
+      "romaji": "địa",
+      "translation": "đất (地震)",
+      "q": "Chữ 地 trong từ 地震 mang âm Hán Việt nào?",
+      "a": [
+        "ĐỊA",
+        "CHẤN",
+        "BÍCH",
+        "CHÂM"
+      ],
+      "c": 0,
+      "ex": "地震: động đất"
+    },
+    {
+      "word": "震",
+      "romaji": "chấn",
+      "translation": "rung, chấn động (地震)",
+      "q": "Chữ 震 trong từ 地震 mang âm Hán Việt nào?",
+      "a": [
+        "ĐỊA",
+        "CHẤN",
+        "BÍCH",
+        "CHÂM"
+      ],
+      "c": 1,
+      "ex": "地震: động đất"
+    },
+    {
+      "word": "壁",
+      "romaji": "bích",
+      "translation": "bức tường (壁)",
+      "q": "Chữ 壁 mang âm Hán Việt nào?",
+      "a": [
+        "CHẤN",
+        "ĐỊA",
+        "BÍCH",
+        "CHÂM"
+      ],
+      "c": 2,
+      "ex": "壁: bức tường"
+    },
+    {
+      "word": "針",
+      "romaji": "châm",
+      "translation": "kim, châm (針)",
+      "q": "Chữ 針 mang âm Hán Việt nào?",
+      "a": [
+        "BÍCH",
+        "ĐỊA",
+        "CHẮN",
+        "CHÂM"
+      ],
+      "c": 3,
+      "ex": "針: kim đồng hồ"
+    },
+    {
+      "word": "指",
+      "romaji": "chỉ",
+      "translation": "chỉ tay, kim chỉ (指します)",
+      "q": "Chữ 指 trong từ 指します mang âm Hán Việt nào?",
+      "a": [
+        "CHỈ",
+        "ĐẢO",
+        "CHÂM",
+        "BÍCH"
+      ],
+      "c": 0,
+      "ex": "指します: chỉ"
+    },
+    {
+      "word": "倒",
+      "romaji": "đảo",
+      "translation": "ngã, đổ (倒れます)",
+      "q": "Chữ 倒 trong từ 倒れます mang âm Hán Việt nào?",
+      "a": [
+        "CHỈ",
+        "CHÂM",
+        "ĐẢO",
+        "BÍCH"
+      ],
+      "c": 2,
+      "ex": "倒れます: đổ"
+    }
+  ]
+}

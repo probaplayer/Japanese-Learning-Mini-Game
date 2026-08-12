@@ -1,0 +1,115 @@
+{
+  "id": "n4-l29-grammar",
+  "name": "N4 Bài 29 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 29 Minna no Nihongo: Tự động từ + ている (diễn tả trạng thái), ~てしまう (làm xong/hoàn thành/tiếc nuối).",
+  "category": "grammar",
+  "createdAt": "2026-08-12T04:13:14.542Z",
+  "updatedAt": "2026-08-12T04:13:20.868Z",
+  "questions": [
+    {
+      "sentence": "窓が割れています",
+      "chunks": [
+        "窓",
+        "が",
+        "割れています"
+      ],
+      "translation": "Cửa sổ đang bị vỡ",
+      "ex": "Tự động từ + ています: diễn tả trạng thái hiện tại của sự vật, chủ thể đi với が"
+    },
+    {
+      "sentence": "その皿は割れています",
+      "chunks": [
+        "その",
+        "皿",
+        "は",
+        "割れています"
+      ],
+      "translation": "Cái đĩa đó thì bị vỡ rồi",
+      "ex": "Khi muốn nhấn mạnh sự vật được đề cập, thay が bằng は"
+    },
+    {
+      "sentence": "いすが壊れています",
+      "chunks": [
+        "いす",
+        "が",
+        "壊れています"
+      ],
+      "translation": "Cái ghế bị hỏng",
+      "ex": "Tự động từ + ています: trạng thái kết quả của hành động/hiện tượng"
+    },
+    {
+      "sentence": "ドアが閉まっています",
+      "chunks": [
+        "ドア",
+        "が",
+        "閉まっています"
+      ],
+      "translation": "Cửa đang đóng",
+      "ex": "閉まります→閉まっています: trạng thái đóng"
+    },
+    {
+      "sentence": "電気が消えています",
+      "chunks": [
+        "電気",
+        "が",
+        "消えています"
+      ],
+      "translation": "Điện đang tắt",
+      "ex": "消えます→消えています: trạng thái tắt"
+    },
+    {
+      "sentence": "財布をどこかでなくしてしまいました",
+      "chunks": [
+        "財布",
+        "を",
+        "どこかで",
+        "なくしてしまいました"
+      ],
+      "translation": "Tôi lỡ làm mất cái ví ở đâu đó rồi",
+      "ex": "~てしまいました: diễn tả sự bối rối, nuối tiếc về việc đã xảy ra"
+    },
+    {
+      "sentence": "指を切ってしまったんです",
+      "chunks": [
+        "指",
+        "を",
+        "切ってしまった",
+        "んです"
+      ],
+      "translation": "Tôi lỡ cắt trúng ngón tay rồi",
+      "ex": "~てしまったんです: nuối tiếc về sự cố ngoài ý muốn"
+    },
+    {
+      "sentence": "全部読んでしまいました",
+      "chunks": [
+        "全部",
+        "読んでしまいました"
+      ],
+      "translation": "Tôi đã đọc xong toàn bộ rồi",
+      "ex": "~てしまいました: diễn tả việc đã hoàn thành xong (không nuối tiếc)"
+    },
+    {
+      "sentence": "今これをコピーしてしまいますから",
+      "chunks": [
+        "今",
+        "これ",
+        "を",
+        "コピーしてしまいますから"
+      ],
+      "translation": "Vì bây giờ tôi đang đi photo cái này cho xong",
+      "ex": "~てしまいます: đang làm và định sẽ làm cho xong"
+    },
+    {
+      "sentence": "木の枝が折れています",
+      "chunks": [
+        "木",
+        "の",
+        "枝",
+        "が",
+        "折れています"
+      ],
+      "translation": "Cành cây bị gãy",
+      "ex": "折れます→折れています: trạng thái gãy"
+    }
+  ]
+}

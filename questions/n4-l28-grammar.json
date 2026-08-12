@@ -1,0 +1,139 @@
+{
+  "id": "n4-l28-grammar",
+  "name": "N4 Bài 28 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 28 Minna no Nihongo: ～ながら (vừa...vừa), ～ています (thói quen), ～し～し...それに/それで (không những...mà còn).",
+  "category": "grammar",
+  "createdAt": "2026-08-12T04:08:05.280Z",
+  "updatedAt": "2026-08-12T04:08:29.695Z",
+  "questions": [
+    {
+      "sentence": "私は部屋をそうじしながら音楽を聞きます",
+      "chunks": [
+        "私",
+        "は",
+        "部屋",
+        "を",
+        "そうじしながら",
+        "音楽",
+        "を",
+        "聞きます"
+      ],
+      "translation": "Tôi vừa dọn phòng vừa nghe nhạc",
+      "ex": "~V(bỏ ます)ながら, V2: vừa~vừa~. Hành động V2 (聞きます) quan trọng hơn V1"
+    },
+    {
+      "sentence": "パンを食べながら新聞を読まないでください",
+      "chunks": [
+        "パン",
+        "を",
+        "食べながら",
+        "新聞",
+        "を",
+        "読まないでください"
+      ],
+      "translation": "Xin đừng vừa ăn bánh mì vừa đọc báo",
+      "ex": "~ながら dùng được cả với câu phủ định/yêu cầu"
+    },
+    {
+      "sentence": "おふろにはいりながら本を読んでいます",
+      "chunks": [
+        "おふろ",
+        "に",
+        "はいりながら",
+        "本",
+        "を",
+        "読んでいます"
+      ],
+      "translation": "Tôi thường vừa ngâm bồn vừa đọc sách",
+      "ex": "~ています diễn tả thói quen, kết hợp với ながら"
+    },
+    {
+      "sentence": "毎週の土曜日に家を掃除しています",
+      "chunks": [
+        "毎週の土曜日",
+        "に",
+        "家",
+        "を",
+        "掃除しています"
+      ],
+      "translation": "Mỗi thứ 7 hàng tuần tôi thường dọn dẹp nhà cửa",
+      "ex": "~ています: diễn tả thói quen (không phải đang diễn ra)"
+    },
+    {
+      "sentence": "ワット先生は熱心だし真面目だしそれに経験もあると思います",
+      "chunks": [
+        "ワット先生",
+        "は",
+        "熱心だし",
+        "真面目だし",
+        "それに",
+        "経験もあると思います"
+      ],
+      "translation": "Tôi nghĩ thầy Watt không những nhiệt tình, đứng đắn mà còn có kinh nghiệm",
+      "ex": "~し~し~それに: không những~mà còn~, ngoài ra~ (liệt kê tăng dần)"
+    },
+    {
+      "sentence": "熱もあるしあたまもいたいし今日は会社を休みました",
+      "chunks": [
+        "熱もあるし",
+        "あたまもいたいし",
+        "今日",
+        "は",
+        "会社",
+        "を",
+        "休みました"
+      ],
+      "translation": "Không những bị sốt mà còn nhức đầu nên hôm nay tôi đã nghỉ làm",
+      "ex": "~し~し~それで: liệt kê lý do dẫn đến kết quả"
+    },
+    {
+      "sentence": "毎晚何をしていますか",
+      "chunks": [
+        "毎晚",
+        "何",
+        "を",
+        "していますか"
+      ],
+      "translation": "Mỗi tối bạn thường làm gì?",
+      "ex": "~ていますか: hỏi về thói quen"
+    },
+    {
+      "sentence": "息子は毎日図書館に通っています",
+      "chunks": [
+        "息子",
+        "は",
+        "毎日",
+        "図書館",
+        "に",
+        "通っています"
+      ],
+      "translation": "Con trai tôi ngày nào cũng đi thư viện",
+      "ex": "通います→通っています: thói quen đi định kỳ"
+    },
+    {
+      "sentence": "彼女は優しいし頭もいいし人気があります",
+      "chunks": [
+        "彼女",
+        "は",
+        "優しいし",
+        "頭もいいし",
+        "人気があります"
+      ],
+      "translation": "Cô ấy hiền lành lại thông minh nên được yêu thích",
+      "ex": "~し~し: liệt kê nhiều đặc điểm tương đồng"
+    },
+    {
+      "sentence": "テレビを見ながらご飯を食べます",
+      "chunks": [
+        "テレビ",
+        "を",
+        "見ながら",
+        "ご飯",
+        "を",
+        "食べます"
+      ],
+      "translation": "Vừa xem TV vừa ăn cơm",
+      "ex": "~ながら: vừa~vừa~ (hành động chính là 食べます)"
+    }
+  ]
+}

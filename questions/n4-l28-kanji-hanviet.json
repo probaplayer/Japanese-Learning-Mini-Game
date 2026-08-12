@@ -1,0 +1,402 @@
+{
+  "id": "n4-l28-kanji-hanviet",
+  "name": "N4 Bài 28 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 28, hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-12T04:07:06.393Z",
+  "updatedAt": "2026-08-12T04:07:15.588Z",
+  "questions": [
+    {
+      "word": "売",
+      "romaji": "mại",
+      "translation": "bán (売れます)",
+      "q": "Chữ 売 trong từ 売れます mang âm Hán Việt nào?",
+      "a": [
+        "MẠI",
+        "DŨNG",
+        "GIẢO",
+        "TUYỂN"
+      ],
+      "c": 0,
+      "ex": "売れます: bán chạy"
+    },
+    {
+      "word": "踊",
+      "romaji": "dũng",
+      "translation": "nhảy múa (踊ります)",
+      "q": "Chữ 踊 trong từ 踊ります mang âm Hán Việt nào?",
+      "a": [
+        "MẠI",
+        "DŨNG",
+        "VI",
+        "THÔNG"
+      ],
+      "c": 1,
+      "ex": "踊ります: nhảy, khiêu vũ"
+    },
+    {
+      "word": "噛",
+      "romaji": "giảo",
+      "translation": "nhai, cắn (噛みます)",
+      "q": "Chữ 噛 trong từ 噛みます mang âm Hán Việt nào?",
+      "a": [
+        "TUYỂN",
+        "GIẢO",
+        "VI",
+        "THÔNG"
+      ],
+      "c": 1,
+      "ex": "噛みます: nhai"
+    },
+    {
+      "word": "選",
+      "romaji": "tuyển",
+      "translation": "chọn (選びます)",
+      "q": "Chữ 選 trong từ 選びます mang âm Hán Việt nào?",
+      "a": [
+        "GIẢO",
+        "TUYỂN",
+        "VI",
+        "DŨNG"
+      ],
+      "c": 1,
+      "ex": "選びます: chọn"
+    },
+    {
+      "word": "違",
+      "romaji": "vi",
+      "translation": "khác, sai (違います)",
+      "q": "Chữ 違 trong từ 違います mang âm Hán Việt nào?",
+      "a": [
+        "THÔNG",
+        "TUYỂN",
+        "VI",
+        "MẠI"
+      ],
+      "c": 2,
+      "ex": "違います: khác"
+    },
+    {
+      "word": "通",
+      "romaji": "thông",
+      "translation": "đi qua, thông suốt (通います)",
+      "q": "Chữ 通 trong từ 通います mang âm Hán Việt nào?",
+      "a": [
+        "VI",
+        "GIẢO",
+        "THÔNG",
+        "DŨNG"
+      ],
+      "c": 2,
+      "ex": "通います: đi đi về về"
+    },
+    {
+      "word": "熱",
+      "romaji": "nhiệt",
+      "translation": "nóng, nhiệt tình (熱心)",
+      "q": "Chữ 熱 trong từ 熱心 mang âm Hán Việt nào?",
+      "a": [
+        "NHIỆT",
+        "TÂM",
+        "ƯU",
+        "VĨ"
+      ],
+      "c": 0,
+      "ex": "熱心: nhiệt tình"
+    },
+    {
+      "word": "心",
+      "romaji": "tâm",
+      "translation": "tâm, lòng (熱心)",
+      "q": "Chữ 心 trong từ 熱心 mang âm Hán Việt nào?",
+      "a": [
+        "NHIỆT",
+        "TÂM",
+        "TẬP",
+        "QUÁN"
+      ],
+      "c": 1,
+      "ex": "熱心: nhiệt tình"
+    },
+    {
+      "word": "優",
+      "romaji": "ưu",
+      "translation": "dịu dàng (優しい)",
+      "q": "Chữ 優 trong từ 優しい mang âm Hán Việt nào?",
+      "a": [
+        "VĨ",
+        "ƯU",
+        "NHIỆT",
+        "TÂM"
+      ],
+      "c": 1,
+      "ex": "優しい: hiền lành"
+    },
+    {
+      "word": "偉",
+      "romaji": "vĩ",
+      "translation": "vĩ đại (偉い)",
+      "q": "Chữ 偉 trong từ 偉い mang âm Hán Việt nào?",
+      "a": [
+        "ƯU",
+        "VĨ",
+        "TẬP",
+        "QUÁN"
+      ],
+      "c": 1,
+      "ex": "偉い: vĩ đại"
+    },
+    {
+      "word": "習",
+      "romaji": "tập",
+      "translation": "tập luyện (習慣)",
+      "q": "Chữ 習 trong từ 習慣 mang âm Hán Việt nào?",
+      "a": [
+        "TẬP",
+        "QUÁN",
+        "KINH",
+        "NGHIỆM"
+      ],
+      "c": 0,
+      "ex": "習慣: tập quán"
+    },
+    {
+      "word": "慣",
+      "romaji": "quán",
+      "translation": "thói quen (習慣)",
+      "q": "Chữ 慣 trong từ 習慣 mang âm Hán Việt nào?",
+      "a": [
+        "TẬP",
+        "QUÁN",
+        "LỰC",
+        "HÌNH"
+      ],
+      "c": 1,
+      "ex": "習慣: tập quán"
+    },
+    {
+      "word": "経",
+      "romaji": "kinh",
+      "translation": "kinh qua (経験)",
+      "q": "Chữ 経 trong từ 経験 mang âm Hán Việt nào?",
+      "a": [
+        "KINH",
+        "NGHIỆM",
+        "TẬP",
+        "QUÁN"
+      ],
+      "c": 0,
+      "ex": "経験: kinh nghiệm"
+    },
+    {
+      "word": "験",
+      "romaji": "nghiệm",
+      "translation": "thử nghiệm (経験)",
+      "q": "Chữ 験 trong từ 経験 mang âm Hán Việt nào?",
+      "a": [
+        "KINH",
+        "NGHIỆM",
+        "SẮC",
+        "VỊ"
+      ],
+      "c": 1,
+      "ex": "経験: kinh nghiệm"
+    },
+    {
+      "word": "力",
+      "romaji": "lực",
+      "translation": "sức lực (力)",
+      "q": "Chữ 力 mang âm Hán Việt nào?",
+      "a": [
+        "HÌNH",
+        "LỰC",
+        "SẮC",
+        "VỊ"
+      ],
+      "c": 1,
+      "ex": "力: sức lực"
+    },
+    {
+      "word": "形",
+      "romaji": "hình",
+      "translation": "hình dáng (形)",
+      "q": "Chữ 形 mang âm Hán Việt nào?",
+      "a": [
+        "LỰC",
+        "HÌNH",
+        "SẮC",
+        "VỊ"
+      ],
+      "c": 1,
+      "ex": "形: hình dáng"
+    },
+    {
+      "word": "色",
+      "romaji": "sắc",
+      "translation": "màu (色)",
+      "q": "Chữ 色 mang âm Hán Việt nào?",
+      "a": [
+        "HÌNH",
+        "LỮC",
+        "SẮC",
+        "VỊ"
+      ],
+      "c": 2,
+      "ex": "色: màu"
+    },
+    {
+      "word": "味",
+      "romaji": "vị",
+      "translation": "vị (味)",
+      "q": "Chữ 味 mang âm Hán Việt nào?",
+      "a": [
+        "SẮC",
+        "HÌNH",
+        "LỮC",
+        "VỊ"
+      ],
+      "c": 3,
+      "ex": "味: vị"
+    },
+    {
+      "word": "品",
+      "romaji": "phẩm",
+      "translation": "hàng hóa (品物)",
+      "q": "Chữ 品 trong từ 品物 mang âm Hán Việt nào?",
+      "a": [
+        "PHẨM",
+        "VẬT",
+        "TRỊ",
+        "ĐOẠN"
+      ],
+      "c": 0,
+      "ex": "品物: hàng hóa"
+    },
+    {
+      "word": "物",
+      "romaji": "vật",
+      "translation": "sự vật (品物)",
+      "q": "Chữ 物 trong từ 品物 mang âm Hán Việt nào?",
+      "a": [
+        "PHẨM",
+        "VẬT",
+        "TRỊ",
+        "ĐOẠN"
+      ],
+      "c": 1,
+      "ex": "品物: hàng hóa"
+    },
+    {
+      "word": "値",
+      "romaji": "trị",
+      "translation": "giá trị (値段)",
+      "q": "Chữ 値 trong từ 値段 mang âm Hán Việt nào?",
+      "a": [
+        "PHẨM",
+        "VẬT",
+        "TRỊ",
+        "ĐOẠN"
+      ],
+      "c": 2,
+      "ex": "値段: giá"
+    },
+    {
+      "word": "段",
+      "romaji": "đoạn",
+      "translation": "đoạn, mặt (値段)",
+      "q": "Chữ 段 trong từ 値段 mang âm Hán Việt nào?",
+      "a": [
+        "TRỊ",
+        "ĐOẠN",
+        "PHẨM",
+        "VẬT"
+      ],
+      "c": 1,
+      "ex": "値段: giá"
+    },
+    {
+      "word": "給",
+      "romaji": "cấp",
+      "translation": "cấp, phát (給料)",
+      "q": "Chữ 給 trong từ 給料 mang âm Hán Việt nào?",
+      "a": [
+        "CẤP",
+        "LIỆU",
+        "PHIÊN",
+        "TỔ"
+      ],
+      "c": 0,
+      "ex": "給料: lương"
+    },
+    {
+      "word": "料",
+      "romaji": "liệu",
+      "translation": "nguyên liệu (給料)",
+      "q": "Chữ 料 trong từ 給料 mang âm Hán Việt nào?",
+      "a": [
+        "CẤP",
+        "LIỆU",
+        "PHIÊN",
+        "TỔ"
+      ],
+      "c": 1,
+      "ex": "給料: lương"
+    },
+    {
+      "word": "番",
+      "romaji": "phiên",
+      "translation": "thứ tự, phiên (番組)",
+      "q": "Chữ 番 trong từ 番組 mang âm Hán Việt nào?",
+      "a": [
+        "CẤP",
+        "LIỆU",
+        "PHIÊN",
+        "TỔ"
+      ],
+      "c": 2,
+      "ex": "番組: chương trình"
+    },
+    {
+      "word": "組",
+      "romaji": "tổ",
+      "translation": "tổ, nhóm (番組)",
+      "q": "Chữ 組 trong từ 番組 mang âm Hán Việt nào?",
+      "a": [
+        "PHIÊN",
+        "TỔ",
+        "CẤP",
+        "LIỆU"
+      ],
+      "c": 1,
+      "ex": "番組: chương trình"
+    },
+    {
+      "word": "小",
+      "romaji": "tiểu",
+      "translation": "nhỏ (小説)",
+      "q": "Chữ 小 trong từ 小説 mang âm Hán Việt nào?",
+      "a": [
+        "TIỂU",
+        "THUYẾT",
+        "PHẨM",
+        "VẬT"
+      ],
+      "c": 0,
+      "ex": "小説: tiểu thuyết"
+    },
+    {
+      "word": "説",
+      "romaji": "thuyết",
+      "translation": "thuyết, kể (小説)",
+      "q": "Chữ 説 trong từ 小説 mang âm Hán Việt nào?",
+      "a": [
+        "TIỂU",
+        "THUYẾT",
+        "PHẨM",
+        "VẬT"
+      ],
+      "c": 1,
+      "ex": "小説: tiểu thuyết"
+    }
+  ]
+}

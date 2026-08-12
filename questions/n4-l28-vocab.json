@@ -1,0 +1,346 @@
+{
+  "id": "n4-l28-vocab",
+  "name": "N4 Bài 28 - Từ vựng (nghĩa)",
+  "description": "Từ vựng Minna no Nihongo Bài 28 (N4). Câu hỏi hỏi nghĩa tiếng Việt của từ.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-12T04:05:20.975Z",
+  "updatedAt": "2026-08-12T04:05:20.975Z",
+  "questions": [
+    {
+      "word": "売れます",
+      "romaji": "うれます",
+      "translation": "bán chạy, được bán",
+      "q": "Từ 売れます (うれます) có nghĩa là gì?",
+      "a": [
+        "bán chạy, được bán",
+        "nhảy, khiêu vũ",
+        "nhai",
+        "chọn"
+      ],
+      "c": 0,
+      "ex": "売 (mại) - bán"
+    },
+    {
+      "word": "踊ります",
+      "romaji": "おどります",
+      "translation": "nhảy, khiêu vũ",
+      "q": "Từ 踊ります (おどります) có nghĩa là gì?",
+      "a": [
+        "chọn",
+        "nhảy, khiêu vũ",
+        "khác",
+        "nhai"
+      ],
+      "c": 1,
+      "ex": "踊 (dũng) - nhảy múa"
+    },
+    {
+      "word": "噛みます",
+      "romaji": "かみます",
+      "translation": "nhai",
+      "q": "Từ 噛みます (かみます) có nghĩa là gì?",
+      "a": [
+        "nhai",
+        "chọn",
+        "khác",
+        "đi đi về về"
+      ],
+      "c": 0,
+      "ex": "噛 (giảo) - nhai, cắn"
+    },
+    {
+      "word": "選びます",
+      "romaji": "えらびます",
+      "translation": "chọn",
+      "q": "Từ 選びます (えらびます) có nghĩa là gì?",
+      "a": [
+        "nhai",
+        "chọn",
+        "khác",
+        "nhảy"
+      ],
+      "c": 1,
+      "ex": "選 (tuyển) - chọn"
+    },
+    {
+      "word": "違います",
+      "romaji": "ちがいます",
+      "translation": "khác",
+      "q": "Từ 違います (ちがいます) có nghĩa là gì?",
+      "a": [
+        "chọn",
+        "nhai",
+        "khác",
+        "đi đi về về"
+      ],
+      "c": 2,
+      "ex": "違 (vi) - khác, sai"
+    },
+    {
+      "word": "通います",
+      "romaji": "かよいます",
+      "translation": "đi đi về về",
+      "q": "Từ 通います (かよいます) trong câu 大学に通います có nghĩa là gì?",
+      "a": [
+        "đi đi về về",
+        "khác",
+        "chọn",
+        "nhai"
+      ],
+      "c": 0,
+      "ex": "通 (thông) - đi qua, thông suốt"
+    },
+    {
+      "word": "熱心な",
+      "romaji": "ねっしん",
+      "translation": "nhiệt tình, hết lòng",
+      "q": "Từ 熱心[な] (ねっしん) có nghĩa là gì?",
+      "a": [
+        "nhiệt tình, hết lòng",
+        "hiền lành",
+        "vĩ đại",
+        "tập quán"
+      ],
+      "c": 0,
+      "ex": "熱心 (nhiệt tâm)"
+    },
+    {
+      "word": "優しい",
+      "romaji": "やさしい",
+      "translation": "hiền lành, tình cảm",
+      "q": "Từ 優しい (やさしい) có nghĩa là gì?",
+      "a": [
+        "nhiệt tình",
+        "hiền lành, tình cảm",
+        "vĩ đại",
+        "kinh nghiệm"
+      ],
+      "c": 1,
+      "ex": "優 (ưu) - dịu dàng"
+    },
+    {
+      "word": "偉い",
+      "romaji": "えらい",
+      "translation": "vĩ đại, đáng khâm phục",
+      "q": "Từ 偉い (えらい) có nghĩa là gì?",
+      "a": [
+        "hiền lành",
+        "nhiệt tình",
+        "vĩ đại, đáng khâm phục",
+        "tập quán"
+      ],
+      "c": 2,
+      "ex": "偉 (vĩ) - vĩ đại"
+    },
+    {
+      "word": "習慣",
+      "romaji": "しゅうかん",
+      "translation": "tập quán",
+      "q": "Từ 習慣 (しゅうかん) có nghĩa là gì?",
+      "a": [
+        "tập quán",
+        "kinh nghiệm",
+        "sức lực",
+        "hình dáng"
+      ],
+      "c": 0,
+      "ex": "習 (tập) + 慣 (quán)"
+    },
+    {
+      "word": "経験",
+      "romaji": "けいけん",
+      "translation": "kinh nghiệm",
+      "q": "Từ 経験 (けいけん) có nghĩa là gì?",
+      "a": [
+        "tập quán",
+        "kinh nghiệm",
+        "màu",
+        "vị"
+      ],
+      "c": 1,
+      "ex": "経 (kinh) + 験 (nghiệm)"
+    },
+    {
+      "word": "力",
+      "romaji": "ちから",
+      "translation": "sức lực, năng lực",
+      "q": "Từ 力 (ちから) có nghĩa là gì?",
+      "a": [
+        "sức lực, năng lực",
+        "hình dáng",
+        "màu",
+        "vị"
+      ],
+      "c": 0,
+      "ex": "力 (lực)"
+    },
+    {
+      "word": "形",
+      "romaji": "かたち",
+      "translation": "hình, hình dáng",
+      "q": "Từ 形 (かたち) có nghĩa là gì?",
+      "a": [
+        "sức lực",
+        "hình, hình dáng",
+        "màu",
+        "vị"
+      ],
+      "c": 1,
+      "ex": "形 (hình)"
+    },
+    {
+      "word": "色",
+      "romaji": "いろ",
+      "translation": "màu",
+      "q": "Từ 色 (いろ) có nghĩa là gì?",
+      "a": [
+        "hình dáng",
+        "sức lực",
+        "màu",
+        "vị"
+      ],
+      "c": 2,
+      "ex": "色 (sắc)"
+    },
+    {
+      "word": "味",
+      "romaji": "あじ",
+      "translation": "vị",
+      "q": "Từ 味 (あじ) có nghĩa là gì?",
+      "a": [
+        "màu",
+        "hình dáng",
+        "sức lực",
+        "vị"
+      ],
+      "c": 3,
+      "ex": "味 (vị)"
+    },
+    {
+      "word": "品物",
+      "romaji": "しなもの",
+      "translation": "hàng hóa, mặt hàng",
+      "q": "Từ 品物 (しなもの) có nghĩa là gì?",
+      "a": [
+        "hàng hóa, mặt hàng",
+        "giá",
+        "lương",
+        "chương trình"
+      ],
+      "c": 0,
+      "ex": "品 (phẩm) + 物 (vật)"
+    },
+    {
+      "word": "値段",
+      "romaji": "ねだん",
+      "translation": "giá",
+      "q": "Từ 値段 (ねだん) có nghĩa là gì?",
+      "a": [
+        "hàng hóa",
+        "giá",
+        "lương",
+        "chương trình"
+      ],
+      "c": 1,
+      "ex": "値 (trị) + 段 (đoạn)"
+    },
+    {
+      "word": "給料",
+      "romaji": "きゅうりょう",
+      "translation": "lương",
+      "q": "Từ 給料 (きゅうりょう) có nghĩa là gì?",
+      "a": [
+        "giá",
+        "hàng hóa",
+        "lương",
+        "chương trình"
+      ],
+      "c": 2,
+      "ex": "給 (cấp) + 料 (liệu)"
+    },
+    {
+      "word": "番組",
+      "romaji": "ばんぐみ",
+      "translation": "chương trình (phát thanh, truyền hình)",
+      "q": "Từ 番組 (ばんぐみ) có nghĩa là gì?",
+      "a": [
+        "giá",
+        "lương",
+        "hàng hóa",
+        "chương trình (phát thanh, truyền hình)"
+      ],
+      "c": 3,
+      "ex": "番 (phiên) + 組 (tổ)"
+    },
+    {
+      "word": "小説",
+      "romaji": "しょうせつ",
+      "translation": "tiểu thuyết",
+      "q": "Từ 小説 (しょうせつ) có nghĩa là gì?",
+      "a": [
+        "tiểu thuyết",
+        "nhà văn",
+        "ca sĩ",
+        "người quản lý"
+      ],
+      "c": 0,
+      "ex": "小 (tiểu) + 説 (thuyết)"
+    },
+    {
+      "word": "小説家",
+      "romaji": "しょうせつか",
+      "translation": "tiểu thuyết gia, nhà văn",
+      "q": "Từ 小説家 (しょうせつか) có nghĩa là gì?",
+      "a": [
+        "tiểu thuyết",
+        "nhà văn",
+        "ca sĩ",
+        "người quản lý"
+      ],
+      "c": 1,
+      "ex": "小説 (tiểu thuyết) + 家 (gia)"
+    },
+    {
+      "word": "歌手",
+      "romaji": "かしゅ",
+      "translation": "ca sĩ",
+      "q": "Từ 歌手 (かしゅ) có nghĩa là gì?",
+      "a": [
+        "nhà văn",
+        "tiểu thuyết",
+        "ca sĩ",
+        "người quản lý"
+      ],
+      "c": 2,
+      "ex": "歌 (ca) + 手 (thủ)"
+    },
+    {
+      "word": "息子",
+      "romaji": "むすこ",
+      "translation": "con trai (dùng cho mình)",
+      "q": "Từ 息子 (むすこ) có nghĩa là gì?",
+      "a": [
+        "con gái (dùng cho mình)",
+        "ca sĩ",
+        "con trai (dùng cho mình)",
+        "nhà văn"
+      ],
+      "c": 2,
+      "ex": "息 (tức) + 子 (tử)"
+    },
+    {
+      "word": "娘",
+      "romaji": "むすめ",
+      "translation": "con gái (dùng cho mình)",
+      "q": "Từ 娘 (むすめ) có nghĩa là gì?",
+      "a": [
+        "con trai (dùng cho mình)",
+        "con gái (dùng cho mình)",
+        "ca sĩ",
+        "nhà văn"
+      ],
+      "c": 1,
+      "ex": "娘 (nương)"
+    }
+  ]
+}

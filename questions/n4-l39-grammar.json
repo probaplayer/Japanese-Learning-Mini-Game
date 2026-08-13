@@ -1,0 +1,131 @@
+{
+  "id": "n4-l39-grammar",
+  "name": "N4 Bài 39 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 39 Minna no Nihongo: ~て (chỉ nguyên nhân), ~ので (vì, lý do nhẹ nhàng), ~途中で (trên đường, giữa lúc).",
+  "category": "grammar",
+  "createdAt": "2026-08-13T06:57:36.731Z",
+  "updatedAt": "2026-08-13T06:57:46.052Z",
+  "questions": [
+    {
+      "sentence": "財布をとられて困りました",
+      "chunks": [
+        "財布",
+        "を",
+        "とられて",
+        "困りました"
+      ],
+      "translation": "Vì bị lấy mất ví nên tôi đã gặp khó khăn",
+      "ex": "Vて: chỉ nguyên nhân, mệnh đề sau là cảm giác/tâm trạng (không thể hiện chủ ý)"
+    },
+    {
+      "sentence": "地震でビルが倒れました",
+      "chunks": [
+        "地震",
+        "で",
+        "ビル",
+        "が",
+        "倒れました"
+      ],
+      "translation": "Do động đất nên tòa nhà bị đổ",
+      "ex": "Nで: danh từ chỉ hiện tượng tự nhiên (地震, 台風...) + で chỉ nguyên nhân"
+    },
+    {
+      "sentence": "気分が悪いので早退してもいいですか",
+      "chunks": [
+        "気分",
+        "が",
+        "悪いので",
+        "早退しても",
+        "いいですか"
+      ],
+      "translation": "Vì không khỏe, tôi xin phép về sớm được không?",
+      "ex": "普通形+ので: đưa ra lý do nhẹ nhàng để xin phép, không dùng mệnh lệnh/cấm chỉ sau ので"
+    },
+    {
+      "sentence": "鳥の声を聞くのが好きなので田舎に引っ越しました",
+      "chunks": [
+        "鳥",
+        "の声",
+        "を",
+        "聞くのが",
+        "好きなので",
+        "田舎",
+        "に",
+        "引っ越しました"
+      ],
+      "translation": "Vì tôi thích nghe tiếng chim hót nên tôi đã chuyển về quê sống",
+      "ex": "N/Aな+なので: vế sau là danh từ/tính từ đuôi な thì thêm なので"
+    },
+    {
+      "sentence": "ミラーさんは会社に行く途中で事故にあいました",
+      "chunks": [
+        "ミラーさん",
+        "は",
+        "会社に行く途中で",
+        "事故",
+        "に",
+        "あいました"
+      ],
+      "translation": "Anh Miller trên đường đến công ty đã gặp tai nạn",
+      "ex": "Vる+途中で: trên đường đang làm gì thì xảy ra việc khác"
+    },
+    {
+      "sentence": "アジア旅行の途中でベトナムに寄りました",
+      "chunks": [
+        "アジア旅行の途中で",
+        "ベトナム",
+        "に",
+        "寄りました"
+      ],
+      "translation": "Trong chuyến du lịch châu Á, tôi đã ghé qua Việt Nam",
+      "ex": "Nの+途中で: trong lúc đang N thì xảy ra việc khác"
+    },
+    {
+      "sentence": "メールを読んで安心しました",
+      "chunks": [
+        "メール",
+        "を",
+        "読んで",
+        "安心しました"
+      ],
+      "translation": "Tôi đã đọc mail và cảm thấy yên tâm",
+      "ex": "Vて: đọc mail rồi cảm thấy yên tâm (nguyên nhân - kết quả)"
+    },
+    {
+      "sentence": "うちが火事で焼けました",
+      "chunks": [
+        "うち",
+        "が",
+        "火事で",
+        "焼けました"
+      ],
+      "translation": "Nhà bị cháy do hỏa hoạn",
+      "ex": "Nで: hỏa hoạn là nguyên nhân làm nhà cháy"
+    },
+    {
+      "sentence": "レポートを書かなければなりませんので今日は早く帰ります",
+      "chunks": [
+        "レポート",
+        "を",
+        "書かなければなりませんので",
+        "今日",
+        "は",
+        "早く帰ります"
+      ],
+      "translation": "Vì phải viết báo cáo nên hôm nay tôi sẽ về sớm",
+      "ex": "丁寧形+ので: dùng thể lịch sự + ので để tăng phần trang trọng"
+    },
+    {
+      "sentence": "台風で電車が遅れました",
+      "chunks": [
+        "台風",
+        "で",
+        "電車",
+        "が",
+        "遅れました"
+      ],
+      "translation": "Do bão nên tàu điện bị chậm",
+      "ex": "Nで: bão là nguyên nhân làm tàu điện chậm"
+    }
+  ]
+}

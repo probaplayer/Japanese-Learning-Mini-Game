@@ -1,0 +1,346 @@
+{
+  "id": "n4-l39-vocab",
+  "name": "N4 Bài 39 - Từ vựng (nghĩa)",
+  "description": "Từ vựng Minna no Nihongo Bài 39 (N4). Câu hỏi hỏi nghĩa tiếng Việt của từ.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-13T06:53:35.456Z",
+  "updatedAt": "2026-08-13T06:54:30.099Z",
+  "questions": [
+    {
+      "word": "答えます",
+      "romaji": "こたえます",
+      "translation": "trả lời",
+      "q": "Từ 答えます (こたえます) có nghĩa là gì?",
+      "a": [
+        "trả lời",
+        "đổ",
+        "cháy",
+        "đi qua"
+      ],
+      "c": 0,
+      "ex": "答 (đáp) - trả lời"
+    },
+    {
+      "word": "倒れます",
+      "romaji": "たおれます",
+      "translation": "đổ (nhà cao tầng)",
+      "q": "Từ 倒れます (たおれます) có nghĩa là gì?",
+      "a": [
+        "trả lời",
+        "đổ (nhà cao tầng)",
+        "cháy",
+        "chết"
+      ],
+      "c": 1,
+      "ex": "倒 (đảo) - đổ"
+    },
+    {
+      "word": "焼けます",
+      "romaji": "やけます",
+      "translation": "cháy, được nướng",
+      "q": "Từ 焼けます (やけます) có nghĩa là gì?",
+      "a": [
+        "đổ",
+        "cháy, được nướng",
+        "chết",
+        "đi qua"
+      ],
+      "c": 1,
+      "ex": "焼 (thiêu) - cháy, nướng"
+    },
+    {
+      "word": "通ります",
+      "romaji": "とおります",
+      "translation": "đi qua (đường)",
+      "q": "Từ 通ります (とおります) có nghĩa là gì?",
+      "a": [
+        "cháy",
+        "đi qua (đường)",
+        "chết",
+        "yên tâm"
+      ],
+      "c": 1,
+      "ex": "通 (thông) - đi qua"
+    },
+    {
+      "word": "死にます",
+      "romaji": "しにます",
+      "translation": "chết",
+      "q": "Từ 死にます (しにます) có nghĩa là gì?",
+      "a": [
+        "đi qua",
+        "chết",
+        "yên tâm",
+        "đến muộn"
+      ],
+      "c": 1,
+      "ex": "死 (tử) - chết"
+    },
+    {
+      "word": "安心します",
+      "romaji": "あんしんします",
+      "translation": "yên tâm",
+      "q": "Từ 安心します (あんしんします) có nghĩa là gì?",
+      "a": [
+        "chết",
+        "yên tâm",
+        "đến muộn",
+        "về sớm"
+      ],
+      "c": 1,
+      "ex": "安心 (an tâm)"
+    },
+    {
+      "word": "遅刻します",
+      "romaji": "ちこくします",
+      "translation": "đến muộn, đến chậm",
+      "q": "Từ 遅刻します (ちこくします) có nghĩa là gì?",
+      "a": [
+        "yên tâm",
+        "đến muộn, đến chậm",
+        "về sớm",
+        "ly hôn"
+      ],
+      "c": 1,
+      "ex": "遅刻 (trì khắc)"
+    },
+    {
+      "word": "早退します",
+      "romaji": "そうたいします",
+      "translation": "về sớm, ra sớm",
+      "q": "Từ 早退します (そうたいします) có nghĩa là gì?",
+      "a": [
+        "đến muộn",
+        "về sớm, ra sớm",
+        "ly hôn",
+        "phức tạp"
+      ],
+      "c": 1,
+      "ex": "早退 (tảo thoái)"
+    },
+    {
+      "word": "離婚します",
+      "romaji": "りこんします",
+      "translation": "ly dị, ly hôn",
+      "q": "Từ 離婚します (りこんします) có nghĩa là gì?",
+      "a": [
+        "về sớm",
+        "ly dị, ly hôn",
+        "phức tạp",
+        "cản trở"
+      ],
+      "c": 1,
+      "ex": "離婚 (ly hôn)"
+    },
+    {
+      "word": "複雑な",
+      "romaji": "ふくざつ",
+      "translation": "phức tạp",
+      "q": "Từ 複雑[な] (ふくざつ) có nghĩa là gì?",
+      "a": [
+        "ly hôn",
+        "phức tạp",
+        "cản trở",
+        "bẩn"
+      ],
+      "c": 1,
+      "ex": "複雑 (phức tạp)"
+    },
+    {
+      "word": "邪魔な",
+      "romaji": "じゃま",
+      "translation": "cản trở, chiếm diện tích",
+      "q": "Từ 邪魔[な] (じゃま) có nghĩa là gì?",
+      "a": [
+        "phức tạp",
+        "cản trở, chiếm diện tích",
+        "bẩn",
+        "buồn"
+      ],
+      "c": 1,
+      "ex": "邪魔 (tà ma)"
+    },
+    {
+      "word": "汚い",
+      "romaji": "きたない",
+      "translation": "bẩn",
+      "q": "Từ 汚い (きたない) có nghĩa là gì?",
+      "a": [
+        "cản trở",
+        "bẩn",
+        "buồn, đau thương",
+        "xấu hổ"
+      ],
+      "c": 1,
+      "ex": "汚 (ô) - bẩn"
+    },
+    {
+      "word": "悲しい",
+      "romaji": "かなしい",
+      "translation": "buồn, đau thương",
+      "q": "Từ 悲しい (かなしい) có nghĩa là gì?",
+      "a": [
+        "bẩn",
+        "buồn, đau thương",
+        "xấu hổ",
+        "động đất"
+      ],
+      "c": 1,
+      "ex": "悲 (bi) - buồn"
+    },
+    {
+      "word": "恥ずかしい",
+      "romaji": "はずかしい",
+      "translation": "xấu hổ, thẹn",
+      "q": "Từ 恥ずかしい (はずかしい) có nghĩa là gì?",
+      "a": [
+        "buồn",
+        "xấu hổ, thẹn",
+        "động đất",
+        "bão"
+      ],
+      "c": 1,
+      "ex": "恥 (sỉ) - xấu hổ"
+    },
+    {
+      "word": "地震",
+      "romaji": "じしん",
+      "translation": "động đất",
+      "q": "Từ 地震 (じしん) có nghĩa là gì?",
+      "a": [
+        "xấu hổ",
+        "động đất",
+        "bão",
+        "hỏa hoạn"
+      ],
+      "c": 1,
+      "ex": "地 (địa) + 震 (chấn)"
+    },
+    {
+      "word": "台風",
+      "romaji": "たいふう",
+      "translation": "bão",
+      "q": "Từ 台風 (たいふう) có nghĩa là gì?",
+      "a": [
+        "động đất",
+        "bão",
+        "hỏa hoạn",
+        "tai nạn"
+      ],
+      "c": 1,
+      "ex": "台 (đài) + 風 (phong)"
+    },
+    {
+      "word": "火事",
+      "romaji": "かじ",
+      "translation": "hỏa hoạn",
+      "q": "Từ 火事 (かじ) có nghĩa là gì?",
+      "a": [
+        "bão",
+        "hỏa hoạn",
+        "tai nạn, sự cố",
+        "tiền điện thoại"
+      ],
+      "c": 1,
+      "ex": "火 (hỏa) + 事 (sự)"
+    },
+    {
+      "word": "事故",
+      "romaji": "じこ",
+      "translation": "tai nạn, sự cố",
+      "q": "Từ 事故 (じこ) có nghĩa là gì?",
+      "a": [
+        "hỏa hoạn",
+        "tai nạn, sự cố",
+        "tiền điện thoại",
+        "mồ hôi"
+      ],
+      "c": 1,
+      "ex": "事 (sự) + 故 (cố)"
+    },
+    {
+      "word": "電話代",
+      "romaji": "でんわだい",
+      "translation": "tiền điện thoại, phí điện thoại",
+      "q": "Từ 電話代 (でんわだい) có nghĩa là gì?",
+      "a": [
+        "tai nạn",
+        "tiền điện thoại",
+        "mồ hôi",
+        "nhiều người"
+      ],
+      "c": 1,
+      "ex": "電話 (điện thoại) + 代 (đại)"
+    },
+    {
+      "word": "汗",
+      "romaji": "あせ",
+      "translation": "mồ hôi",
+      "q": "Từ 汗 (あせ) có nghĩa là gì?",
+      "a": [
+        "tiền điện thoại",
+        "mồ hôi",
+        "nhiều người",
+        "giữa đường"
+      ],
+      "c": 1,
+      "ex": "汗 (hãn)"
+    },
+    {
+      "word": "大勢",
+      "romaji": "おおぜい",
+      "translation": "nhiều người",
+      "q": "Từ 大勢 (おおぜい) có nghĩa là gì?",
+      "a": [
+        "mồ hôi",
+        "nhiều người",
+        "giữa đường",
+        "xếp hàng"
+      ],
+      "c": 1,
+      "ex": "大 (đại) + 勢 (thế)"
+    },
+    {
+      "word": "途中で",
+      "romaji": "とちゅうで",
+      "translation": "giữa đường, dọc đường, giữa chừng",
+      "q": "Từ 途中で (とちゅうで) có nghĩa là gì?",
+      "a": [
+        "nhiều người",
+        "giữa đường, dọc đường",
+        "xếp hàng",
+        "người lớn"
+      ],
+      "c": 1,
+      "ex": "途 (đồ - từng đi qua) + 中 (trung)"
+    },
+    {
+      "word": "並びます",
+      "romaji": "ならびます",
+      "translation": "xếp hàng",
+      "q": "Từ 並びます (ならびます) có nghĩa là gì?",
+      "a": [
+        "giữa đường",
+        "xếp hàng",
+        "người lớn",
+        "đâm, va chạm"
+      ],
+      "c": 1,
+      "ex": "並 (tịnh) - xếp hàng"
+    },
+    {
+      "word": "大人",
+      "romaji": "おとな",
+      "translation": "người lớn",
+      "q": "Từ 大人 (おとな) có nghĩa là gì?",
+      "a": [
+        "xếp hàng",
+        "người lớn",
+        "đâm, va chạm",
+        "quần áo kiểu Tây Âu"
+      ],
+      "c": 1,
+      "ex": "大 (đại) + 人 (nhân)"
+    }
+  ]
+}

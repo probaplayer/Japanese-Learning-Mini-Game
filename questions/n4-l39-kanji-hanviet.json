@@ -1,0 +1,388 @@
+{
+  "id": "n4-l39-kanji-hanviet",
+  "name": "N4 Bài 39 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 39, hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-13T06:56:37.711Z",
+  "updatedAt": "2026-08-13T06:56:45.295Z",
+  "questions": [
+    {
+      "word": "答",
+      "romaji": "đáp",
+      "translation": "trả lời (答えます)",
+      "q": "Chữ 答 trong từ 答えます mang âm Hán Việt nào?",
+      "a": [
+        "ĐÁP",
+        "ĐẢO",
+        "THIÊU",
+        "THÔNG"
+      ],
+      "c": 0,
+      "ex": "答えます: trả lời"
+    },
+    {
+      "word": "倒",
+      "romaji": "đảo",
+      "translation": "đổ (倒れます)",
+      "q": "Chữ 倒 trong từ 倒れます mang âm Hán Việt nào?",
+      "a": [
+        "ĐÁP",
+        "THIÊU",
+        "THÔNG",
+        "ĐẢO"
+      ],
+      "c": 3,
+      "ex": "倒れます: đổ"
+    },
+    {
+      "word": "焼",
+      "romaji": "thiêu",
+      "translation": "cháy, nướng (焼けます)",
+      "q": "Chữ 焼 trong từ 焼けます mang âm Hán Việt nào?",
+      "a": [
+        "THÔNG",
+        "ĐẢO",
+        "TỬ",
+        "THIÊU"
+      ],
+      "c": 3,
+      "ex": "焼けます: cháy, được nướng"
+    },
+    {
+      "word": "通",
+      "romaji": "thông",
+      "translation": "đi qua, thông suốt (通ります)",
+      "q": "Chữ 通 trong từ 通ります mang âm Hán Việt nào?",
+      "a": [
+        "ĐẢO",
+        "TỬ",
+        "THIÊU",
+        "THÔNG"
+      ],
+      "c": 3,
+      "ex": "通ります: đi qua"
+    },
+    {
+      "word": "死",
+      "romaji": "tử",
+      "translation": "chết (死にます)",
+      "q": "Chữ 死 trong từ 死にます mang âm Hán Việt nào?",
+      "a": [
+        "THIÊU",
+        "THÔNG",
+        "AN",
+        "TỬ"
+      ],
+      "c": 3,
+      "ex": "死にます: chết"
+    },
+    {
+      "word": "安",
+      "romaji": "an",
+      "translation": "yên (安心)",
+      "q": "Chữ 安 trong từ 安心 mang âm Hán Việt nào?",
+      "a": [
+        "TỬ",
+        "AN",
+        "TÂM",
+        "TRÌ"
+      ],
+      "c": 1,
+      "ex": "安心します: yên tâm"
+    },
+    {
+      "word": "心",
+      "romaji": "tâm",
+      "translation": "lòng, tâm (安心)",
+      "q": "Chữ 心 trong từ 安心 mang âm Hán Việt nào?",
+      "a": [
+        "AN",
+        "TÂM",
+        "TRÌ",
+        "KHẮC"
+      ],
+      "c": 1,
+      "ex": "安心します: yên tâm"
+    },
+    {
+      "word": "遅",
+      "romaji": "trì",
+      "translation": "chậm, muộn (遅刻)",
+      "q": "Chữ 遅 trong từ 遅刻 mang âm Hán Việt nào?",
+      "a": [
+        "TÂM",
+        "TRÌ",
+        "KHẮC",
+        "TẢO"
+      ],
+      "c": 1,
+      "ex": "遅刻します: đến muộn"
+    },
+    {
+      "word": "刻",
+      "romaji": "khắc",
+      "translation": "khoảnh khắc, muộn (遅刻)",
+      "q": "Chữ 刻 trong từ 遅刻 mang âm Hán Việt nào?",
+      "a": [
+        "TRÌ",
+        "KHẮC",
+        "TẢO",
+        "THOÁI"
+      ],
+      "c": 1,
+      "ex": "遅刻します: đến muộn"
+    },
+    {
+      "word": "早",
+      "romaji": "tảo",
+      "translation": "sớm (早退)",
+      "q": "Chữ 早 trong từ 早退 mang âm Hán Việt nào?",
+      "a": [
+        "KHẮC",
+        "TẢO",
+        "THOÁI",
+        "LY"
+      ],
+      "c": 1,
+      "ex": "早退します: về sớm"
+    },
+    {
+      "word": "退",
+      "romaji": "thoái",
+      "translation": "rút, rời đi (早退)",
+      "q": "Chữ 退 trong từ 早退 mang âm Hán Việt nào?",
+      "a": [
+        "TẢO",
+        "THOÁI",
+        "LY",
+        "HÔN"
+      ],
+      "c": 1,
+      "ex": "早退します: về sớm"
+    },
+    {
+      "word": "離",
+      "romaji": "ly",
+      "translation": "chia rời (離婚)",
+      "q": "Chữ 離 trong từ 離婚 mang âm Hán Việt nào?",
+      "a": [
+        "THOÁI",
+        "LY",
+        "HÔN",
+        "PHỨC"
+      ],
+      "c": 1,
+      "ex": "離婚します: ly hôn"
+    },
+    {
+      "word": "婚",
+      "romaji": "hôn",
+      "translation": "hôn nhân (離婚)",
+      "q": "Chữ 婚 trong từ 離婚 mang âm Hán Việt nào?",
+      "a": [
+        "LY",
+        "HÔN",
+        "PHỨC",
+        "TẠP"
+      ],
+      "c": 1,
+      "ex": "離婚します: ly hôn"
+    },
+    {
+      "word": "複",
+      "romaji": "phức",
+      "translation": "phức tạp, lỗi (複雑)",
+      "q": "Chữ 複 trong từ 複雑 mang âm Hán Việt nào?",
+      "a": [
+        "HÔN",
+        "PHỨC",
+        "TẠP",
+        "TÀ"
+      ],
+      "c": 1,
+      "ex": "複雑: phức tạp"
+    },
+    {
+      "word": "雑",
+      "romaji": "tạp",
+      "translation": "lẫn tạp (複雑)",
+      "q": "Chữ 雑 trong từ 複雑 mang âm Hán Việt nào?",
+      "a": [
+        "PHỨC",
+        "TẠP",
+        "TÀ",
+        "MA"
+      ],
+      "c": 1,
+      "ex": "複雑: phức tạp"
+    },
+    {
+      "word": "邪",
+      "romaji": "tà",
+      "translation": "tà, xấu (邪魔)",
+      "q": "Chữ 邪 trong từ 邪魔 mang âm Hán Việt nào?",
+      "a": [
+        "TẠP",
+        "TÀ",
+        "MA",
+        "Ô"
+      ],
+      "c": 1,
+      "ex": "邪魔: cản trở"
+    },
+    {
+      "word": "魔",
+      "romaji": "ma",
+      "translation": "ma, yêu quái (邪魔)",
+      "q": "Chữ 魔 trong từ 邪魔 mang âm Hán Việt nào?",
+      "a": [
+        "TÀ",
+        "MA",
+        "Ô",
+        "BI"
+      ],
+      "c": 1,
+      "ex": "邪魔: cản trở"
+    },
+    {
+      "word": "汚",
+      "romaji": "ô",
+      "translation": "bẩn (汚い)",
+      "q": "Chữ 汚 mang âm Hán Việt nào?",
+      "a": [
+        "MA",
+        "Ô",
+        "BI",
+        "SỈ"
+      ],
+      "c": 1,
+      "ex": "汚い: bẩn"
+    },
+    {
+      "word": "悲",
+      "romaji": "bi",
+      "translation": "buồn (悲しい)",
+      "q": "Chữ 悲 mang âm Hán Việt nào?",
+      "a": [
+        "Ô",
+        "BI",
+        "SỈ",
+        "ĐỊA"
+      ],
+      "c": 1,
+      "ex": "悲しい: buồn"
+    },
+    {
+      "word": "恥",
+      "romaji": "sỉ",
+      "translation": "xấu hổ (恥ずかしい)",
+      "q": "Chữ 恥 mang âm Hán Việt nào?",
+      "a": [
+        "BI",
+        "SỈ",
+        "ĐỊA",
+        "CHẤN"
+      ],
+      "c": 1,
+      "ex": "恥ずかしい: xấu hổ"
+    },
+    {
+      "word": "地",
+      "romaji": "địa",
+      "translation": "đất (地震)",
+      "q": "Chữ 地 trong từ 地震 mang âm Hán Việt nào?",
+      "a": [
+        "SỈ",
+        "ĐỊA",
+        "CHẤN",
+        "ĐÀI"
+      ],
+      "c": 1,
+      "ex": "地震: động đất"
+    },
+    {
+      "word": "震",
+      "romaji": "chấn",
+      "translation": "rung, chấn (地震)",
+      "q": "Chữ 震 trong từ 地震 mang âm Hán Việt nào?",
+      "a": [
+        "ĐỊA",
+        "CHẤN",
+        "ĐÀI",
+        "PHONG"
+      ],
+      "c": 1,
+      "ex": "地震: động đất"
+    },
+    {
+      "word": "台",
+      "romaji": "đài",
+      "translation": "bất, nền (台風)",
+      "q": "Chữ 台 trong từ 台風 mang âm Hán Việt nào?",
+      "a": [
+        "CHẤN",
+        "ĐÀI",
+        "PHONG",
+        "HỌA"
+      ],
+      "c": 1,
+      "ex": "台風: bão"
+    },
+    {
+      "word": "風",
+      "romaji": "phong",
+      "translation": "gió (台風)",
+      "q": "Chữ 風 trong từ 台風 mang âm Hán Việt nào?",
+      "a": [
+        "ĐÀI",
+        "PHONG",
+        "HỌA",
+        "SỰ"
+      ],
+      "c": 1,
+      "ex": "台風: bão"
+    },
+    {
+      "word": "火",
+      "romaji": "hỏa",
+      "translation": "lửa (火事)",
+      "q": "Chữ 火 trong từ 火事 mang âm Hán Việt nào?",
+      "a": [
+        "PHONG",
+        "HỌA",
+        "SỰ",
+        "CỐ"
+      ],
+      "c": 1,
+      "ex": "火事: hỏa hoạn"
+    },
+    {
+      "word": "事",
+      "romaji": "sự",
+      "translation": "việc, sự việc (火事)",
+      "q": "Chữ 事 trong từ 火事 mang âm Hán Việt nào?",
+      "a": [
+        "HỊA",
+        "SỰ",
+        "CỐ",
+        "ĐIỆN"
+      ],
+      "c": 1,
+      "ex": "火事 / 事故: hỏa hoạn / tai nạn"
+    },
+    {
+      "word": "故",
+      "romaji": "cố",
+      "translation": "sự cố (事故)",
+      "q": "Chữ 故 trong từ 事故 mang âm Hán Việt nào?",
+      "a": [
+        "SỰ",
+        "CỐ",
+        "ĐIỆN",
+        "THOẠI"
+      ],
+      "c": 1,
+      "ex": "事故: tai nạn"
+    }
+  ]
+}

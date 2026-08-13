@@ -1,0 +1,402 @@
+{
+  "id": "n4-l41-kanji-hanviet",
+  "name": "N4 Bài 41 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 41, hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-13T07:13:52.665Z",
+  "updatedAt": "2026-08-13T07:14:01.960Z",
+  "questions": [
+    {
+      "word": "呼",
+      "romaji": "hô",
+      "translation": "gọi (呼びます)",
+      "q": "Chữ 呼 trong từ 呼びます mang âm Hán Việt nào?",
+      "a": [
+        "HÔ",
+        "THỦ",
+        "THẾ",
+        "THÂN"
+      ],
+      "c": 0,
+      "ex": "呼びます: mời, gọi"
+    },
+    {
+      "word": "取",
+      "romaji": "thủ",
+      "translation": "lấy (取り替えます)",
+      "q": "Chữ 取 trong từ 取り替えます mang âm Hán Việt nào?",
+      "a": [
+        "HÔ",
+        "THỦ",
+        "THẾ",
+        "THÂN"
+      ],
+      "c": 1,
+      "ex": "取り替えます: đổi, thay"
+    },
+    {
+      "word": "替",
+      "romaji": "thế",
+      "translation": "thay thế (取り替えます)",
+      "q": "Chữ 替 trong từ 取り替えます mang âm Hán Việt nào?",
+      "a": [
+        "THỦ",
+        "THẾ",
+        "THÂN",
+        "THIẾT"
+      ],
+      "c": 1,
+      "ex": "取り替えます: đổi, thay"
+    },
+    {
+      "word": "親",
+      "romaji": "thân",
+      "translation": "gần gũi, người thân (親切)",
+      "q": "Chữ 親 trong từ 親切 mang âm Hán Việt nào?",
+      "a": [
+        "THẾ",
+        "THÂN",
+        "THIẾT",
+        "CHÚC"
+      ],
+      "c": 1,
+      "ex": "親切にします: đối xử tốt"
+    },
+    {
+      "word": "切",
+      "romaji": "thiết",
+      "translation": "thân thiết (親切)",
+      "q": "Chữ 切 trong từ 親切 mang âm Hán Việt nào?",
+      "a": [
+        "THÂN",
+        "THIẾT",
+        "CHÚC",
+        "NIÊN"
+      ],
+      "c": 1,
+      "ex": "親切にします: đối xử tốt"
+    },
+    {
+      "word": "祝",
+      "romaji": "chúc",
+      "translation": "chúc mừng (お祝い)",
+      "q": "Chữ 祝 trong từ お祝い mang âm Hán Việt nào?",
+      "a": [
+        "THIẾT",
+        "CHÚC",
+        "NIÊN",
+        "NGỌC"
+      ],
+      "c": 1,
+      "ex": "お祝い: quà mừng"
+    },
+    {
+      "word": "年",
+      "romaji": "niên",
+      "translation": "năm (年玉)",
+      "q": "Chữ 年 trong từ 年玉 mang âm Hán Việt nào?",
+      "a": [
+        "CHÚC",
+        "NIÊN",
+        "NGỌC",
+        "KIẾN"
+      ],
+      "c": 1,
+      "ex": "お年玉: tiền mừng tuổi"
+    },
+    {
+      "word": "玉",
+      "romaji": "ngọc",
+      "translation": "ngọc, đồng tiền (年玉)",
+      "q": "Chữ 玉 trong từ 年玉 mang âm Hán Việt nào?",
+      "a": [
+        "NIÊN",
+        "NGỌC",
+        "KIẾN",
+        "VŨ"
+      ],
+      "c": 1,
+      "ex": "お年玉: tiền mừng tuổi"
+    },
+    {
+      "word": "見",
+      "romaji": "kiến",
+      "translation": "nhìn, thấy (見舞)",
+      "q": "Chữ 見 trong từ 見舞 mang âm Hán Việt nào?",
+      "a": [
+        "NGỌC",
+        "KIẾN",
+        "VŨ",
+        "HƯNG"
+      ],
+      "c": 1,
+      "ex": "見舞い: thăm người ốm"
+    },
+    {
+      "word": "舞",
+      "romaji": "vũ",
+      "translation": "múa, thăm hỏi (見舞)",
+      "q": "Chữ 舞 trong từ 見舞 mang âm Hán Việt nào?",
+      "a": [
+        "KIẾN",
+        "VŨ",
+        "HƯNG",
+        "VỊ"
+      ],
+      "c": 1,
+      "ex": "見舞い: thăm người ốm"
+    },
+    {
+      "word": "興",
+      "romaji": "hưng",
+      "translation": "hưng thú, thích thú (興味)",
+      "q": "Chữ 興 trong từ 興味 mang âm Hán Việt nào?",
+      "a": [
+        "Vũ",
+        "HƯNG",
+        "VỊ",
+        "TÌNH"
+      ],
+      "c": 1,
+      "ex": "興味: sở thích"
+    },
+    {
+      "word": "味",
+      "romaji": "vị",
+      "translation": "vị, mùi vị (興味)",
+      "q": "Chữ 味 trong từ 興味 mang âm Hán Việt nào?",
+      "a": [
+        "HƯNG",
+        "VỊ",
+        "TÌNH",
+        "BÁO"
+      ],
+      "c": 1,
+      "ex": "興味: sở thích"
+    },
+    {
+      "word": "情",
+      "romaji": "tình",
+      "translation": "tình hình (情報)",
+      "q": "Chữ 情 trong từ 情報 mang âm Hán Việt nào?",
+      "a": [
+        "VỊ",
+        "TÌNH",
+        "BÁO",
+        "VĂN"
+      ],
+      "c": 1,
+      "ex": "情報: thông tin"
+    },
+    {
+      "word": "報",
+      "romaji": "báo",
+      "translation": "báo cáo, tin (情報)",
+      "q": "Chữ 報 trong từ 情報 mang âm Hán Việt nào?",
+      "a": [
+        "TÌNH",
+        "BÁO",
+        "VĂN",
+        "PHÁP"
+      ],
+      "c": 1,
+      "ex": "情報: thông tin"
+    },
+    {
+      "word": "文",
+      "romaji": "văn",
+      "translation": "văn chương (文法)",
+      "q": "Chữ 文 trong từ 文法 mang âm Hán Việt nào?",
+      "a": [
+        "BÁO",
+        "VĂN",
+        "PHÁP",
+        "ÂM"
+      ],
+      "c": 1,
+      "ex": "文法: ngữ pháp"
+    },
+    {
+      "word": "法",
+      "romaji": "pháp",
+      "translation": "phép, quy tắc (文法)",
+      "q": "Chữ 法 trong từ 文法 mang âm Hán Việt nào?",
+      "a": [
+        "VĂN",
+        "PHÁP",
+        "ÂM",
+        "PHÁT"
+      ],
+      "c": 1,
+      "ex": "文法: ngữ pháp"
+    },
+    {
+      "word": "発",
+      "romaji": "phát",
+      "translation": "phát ra (発音)",
+      "q": "Chữ 発 trong từ 発音 mang âm Hán Việt nào?",
+      "a": [
+        "PHÁP",
+        "ÂM",
+        "PHÁT",
+        "VIÊN"
+      ],
+      "c": 2,
+      "ex": "発音: phát âm"
+    },
+    {
+      "word": "音",
+      "romaji": "âm",
+      "translation": "âm thanh (発音)",
+      "q": "Chữ 音 trong từ 発音 mang âm Hán Việt nào?",
+      "a": [
+        "PHÁT",
+        "VIÊN",
+        "ÂM",
+        "NGOA"
+      ],
+      "c": 2,
+      "ex": "発音: phát âm"
+    },
+    {
+      "word": "猿",
+      "romaji": "viên",
+      "translation": "con khỉ (猿)",
+      "q": "Chữ 猿 mang âm Hán Việt nào?",
+      "a": [
+        "ÂM",
+        "NGOA",
+        "ĐẠI",
+        "VIÊN"
+      ],
+      "c": 3,
+      "ex": "猿: con khỉ"
+    },
+    {
+      "word": "靴",
+      "romaji": "ngoa",
+      "translation": "giày (靴下)",
+      "q": "Chữ 靴 trong từ 靴下 mang âm Hán Việt nào?",
+      "a": [
+        "VIÊN",
+        "NGOA",
+        "ĐẠI",
+        "CHỈ"
+      ],
+      "c": 1,
+      "ex": "靴下: cái tất"
+    },
+    {
+      "word": "袋",
+      "romaji": "đại",
+      "translation": "túi (手袋)",
+      "q": "Chữ 袋 trong từ 手袋 mang âm Hán Việt nào?",
+      "a": [
+        "NGOA",
+        "ĐẠI",
+        "CHỈ",
+        "LUÂN"
+      ],
+      "c": 1,
+      "ex": "手袋: găng tay"
+    },
+    {
+      "word": "指",
+      "romaji": "chỉ",
+      "translation": "ngón tay, chỉ (指輪)",
+      "q": "Chữ 指 trong từ 指輪 mang âm Hán Việt nào?",
+      "a": [
+        "ĐẠI",
+        "CHỈ",
+        "LUÂN",
+        "TỔ"
+      ],
+      "c": 1,
+      "ex": "指輪: cái nhẫn"
+    },
+    {
+      "word": "輪",
+      "romaji": "luân",
+      "translation": "vòng (指輪)",
+      "q": "Chữ 輪 trong từ 指輪 mang âm Hán Việt nào?",
+      "a": [
+        "CHỈ",
+        "LUÂN",
+        "TỔ",
+        "PHỤ"
+      ],
+      "c": 1,
+      "ex": "指輪: cái nhẫn"
+    },
+    {
+      "word": "祖",
+      "romaji": "tổ",
+      "translation": "tổ tiên, ông bà (祖父/祖母)",
+      "q": "Chữ 祖 trong từ 祖父 mang âm Hán Việt nào?",
+      "a": [
+        "LUÂN",
+        "TỔ",
+        "PHỤ",
+        "MẪU"
+      ],
+      "c": 1,
+      "ex": "祖父: ông"
+    },
+    {
+      "word": "父",
+      "romaji": "phụ",
+      "translation": "cha, người cha (祖父)",
+      "q": "Chữ 父 trong từ 祖父 mang âm Hán Việt nào?",
+      "a": [
+        "TỔ",
+        "PHỤ",
+        "MẪU",
+        "TÔN"
+      ],
+      "c": 1,
+      "ex": "祖父: ông"
+    },
+    {
+      "word": "母",
+      "romaji": "mẫu",
+      "translation": "mẹ, người mẹ (祖母)",
+      "q": "Chữ 母 trong từ 祖母 mang âm Hán Việt nào?",
+      "a": [
+        "PHỤ",
+        "MẪU",
+        "TÔN",
+        "TRỢ"
+      ],
+      "c": 1,
+      "ex": "祖母: bà"
+    },
+    {
+      "word": "孫",
+      "romaji": "tôn",
+      "translation": "cháu (孫)",
+      "q": "Chữ 孫 mang âm Hán Việt nào?",
+      "a": [
+        "MẪU",
+        "TÔN",
+        "TRỢ",
+        "NAM"
+      ],
+      "c": 1,
+      "ex": "孫: cháu"
+    },
+    {
+      "word": "助",
+      "romaji": "trợ",
+      "translation": "giúp đỡ (助けます/助かります)",
+      "q": "Chữ 助 trong từ 助けます mang âm Hán Việt nào?",
+      "a": [
+        "TÔN",
+        "TRỢ",
+        "NAM",
+        "DỰ"
+      ],
+      "c": 1,
+      "ex": "助けます: giúp đỡ"
+    }
+  ]
+}

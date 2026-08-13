@@ -1,0 +1,346 @@
+{
+  "id": "n4-l41-vocab",
+  "name": "N4 Bài 41 - Từ vựng (nghĩa)",
+  "description": "Từ vựng Minna no Nihongo Bài 41 (N4). Câu hỏi hỏi nghĩa tiếng Việt của từ.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-13T07:11:59.249Z",
+  "updatedAt": "2026-08-13T07:11:59.249Z",
+  "questions": [
+    {
+      "word": "呼びます",
+      "romaji": "よびます",
+      "translation": "mời, gọi",
+      "q": "Từ 呼びます (よびます) có nghĩa là gì?",
+      "a": [
+        "mời, gọi",
+        "đổi, thay",
+        "đối xử tốt",
+        "quà mừng"
+      ],
+      "c": 0,
+      "ex": "呼 (hô) - gọi"
+    },
+    {
+      "word": "取り替えます",
+      "romaji": "とりかえます",
+      "translation": "đổi, thay",
+      "q": "Từ 取り替えます (とりかえます) có nghĩa là gì?",
+      "a": [
+        "mời",
+        "đổi, thay",
+        "đối xử tốt",
+        "quà mừng"
+      ],
+      "c": 1,
+      "ex": "取 (thủ) + 替 (thế)"
+    },
+    {
+      "word": "親切にします",
+      "romaji": "しんせつにします",
+      "translation": "đối xử tốt, giúp đỡ",
+      "q": "Từ 親切にします (しんせつにします) có nghĩa là gì?",
+      "a": [
+        "đổi",
+        "đối xử tốt, giúp đỡ",
+        "quà mừng",
+        "tiền mừng tuổi"
+      ],
+      "c": 1,
+      "ex": "親切 (thân thiết)"
+    },
+    {
+      "word": "お祝い",
+      "romaji": "おいわい",
+      "translation": "quà mừng, lời chúc mừng",
+      "q": "Từ お祝い (おいわい) có nghĩa là gì?",
+      "a": [
+        "đối xử tốt",
+        "quà mừng, lời chúc mừng",
+        "tiền mừng tuổi",
+        "thăm người ốm"
+      ],
+      "c": 1,
+      "ex": "祝 (chúc)"
+    },
+    {
+      "word": "お年玉",
+      "romaji": "おとしだま",
+      "translation": "tiền mừng tuổi",
+      "q": "Từ お年玉 (おとしだま) có nghĩa là gì?",
+      "a": [
+        "quà mừng",
+        "tiền mừng tuổi",
+        "thăm người ốm",
+        "sở thích"
+      ],
+      "c": 1,
+      "ex": "年玉 (niên ngọc)"
+    },
+    {
+      "word": "お見舞い",
+      "romaji": "おみまい",
+      "translation": "thăm người ốm",
+      "q": "Từ お見舞い (おみまい) có nghĩa là gì?",
+      "a": [
+        "tiền mừng tuổi",
+        "thăm người ốm",
+        "sở thích",
+        "thông tin"
+      ],
+      "c": 1,
+      "ex": "見舞 (kiến vũ)"
+    },
+    {
+      "word": "興味",
+      "romaji": "きょうみ",
+      "translation": "sở thích, quan tâm",
+      "q": "Từ 興味 (きょうみ) có nghĩa là gì?",
+      "a": [
+        "thăm người ốm",
+        "sở thích, quan tâm",
+        "thông tin",
+        "ngữ pháp"
+      ],
+      "c": 1,
+      "ex": "興味 (hưng vị)"
+    },
+    {
+      "word": "情報",
+      "romaji": "じょうほう",
+      "translation": "thông tin",
+      "q": "Từ 情報 (じょうほう) có nghĩa là gì?",
+      "a": [
+        "sở thích",
+        "thông tin",
+        "ngữ pháp",
+        "phát âm"
+      ],
+      "c": 1,
+      "ex": "情報 (tình báo)"
+    },
+    {
+      "word": "文法",
+      "romaji": "ぶんぽう",
+      "translation": "ngữ pháp",
+      "q": "Từ 文法 (ぶんぽう) có nghĩa là gì?",
+      "a": [
+        "thông tin",
+        "ngữ pháp",
+        "phát âm",
+        "con khỉ"
+      ],
+      "c": 1,
+      "ex": "文法 (văn pháp)"
+    },
+    {
+      "word": "発音",
+      "romaji": "はつおん",
+      "translation": "phát âm",
+      "q": "Từ 発音 (はつおん) có nghĩa là gì?",
+      "a": [
+        "ngữ pháp",
+        "phát âm",
+        "con khỉ",
+        "cái tất"
+      ],
+      "c": 1,
+      "ex": "発音 (phát âm)"
+    },
+    {
+      "word": "猿",
+      "romaji": "さる",
+      "translation": "con khỉ",
+      "q": "Từ 猿 (さる) có nghĩa là gì?",
+      "a": [
+        "phát âm",
+        "con khỉ",
+        "cái tất",
+        "găng tay"
+      ],
+      "c": 1,
+      "ex": "猿 (viên)"
+    },
+    {
+      "word": "靴下",
+      "romaji": "くつした",
+      "translation": "cái tất",
+      "q": "Từ 靴下 (くつした) có nghĩa là gì?",
+      "a": [
+        "con khỉ",
+        "cái tất",
+        "găng tay",
+        "cái nhẫn"
+      ],
+      "c": 1,
+      "ex": "靴下 (ngoa hạ)"
+    },
+    {
+      "word": "手袋",
+      "romaji": "てぶくろ",
+      "translation": "găng tay",
+      "q": "Từ 手袋 (てぶくろ) có nghĩa là gì?",
+      "a": [
+        "cái tất",
+        "găng tay",
+        "cái nhẫn",
+        "ông"
+      ],
+      "c": 1,
+      "ex": "手袋 (thủ đại)"
+    },
+    {
+      "word": "指輪",
+      "romaji": "ゆびわ",
+      "translation": "cái nhẫn",
+      "q": "Từ 指輪 (ゆびわ) có nghĩa là gì?",
+      "a": [
+        "găng tay",
+        "cái nhẫn",
+        "ông",
+        "bà"
+      ],
+      "c": 1,
+      "ex": "指輪 (chỉ luân)"
+    },
+    {
+      "word": "祖父",
+      "romaji": "そふ",
+      "translation": "ông (dùng cho bản thân)",
+      "q": "Từ 祖父 (そふ) có nghĩa là gì?",
+      "a": [
+        "cái nhẫn",
+        "ông (dùng cho bản thân)",
+        "bà",
+        "cháu"
+      ],
+      "c": 1,
+      "ex": "祖父 (tổ phụ)"
+    },
+    {
+      "word": "祖母",
+      "romaji": "そぼ",
+      "translation": "bà (dùng cho bản thân)",
+      "q": "Từ 祖母 (そぼ) có nghĩa là gì?",
+      "a": [
+        "ông",
+        "bà (dùng cho bản thân)",
+        "cháu",
+        "người đàn ông"
+      ],
+      "c": 1,
+      "ex": "祖母 (tổ mẫu)"
+    },
+    {
+      "word": "孫",
+      "romaji": "まご",
+      "translation": "cháu",
+      "q": "Từ 孫 (まご) có nghĩa là gì?",
+      "a": [
+        "bà",
+        "cháu",
+        "xin lỗi",
+        "giữ hộ"
+      ],
+      "c": 1,
+      "ex": "孫 (tôn)"
+    },
+    {
+      "word": "申し訳ありません",
+      "romaji": "もうしわけありません",
+      "translation": "xin lỗi",
+      "q": "Từ 申し訳ありません (もうしわけありません) có nghĩa là gì?",
+      "a": [
+        "cháu",
+        "xin lỗi",
+        "giữ hộ",
+        "hôm trước"
+      ],
+      "c": 1,
+      "ex": "申し訳 (thân dịch)"
+    },
+    {
+      "word": "預かります",
+      "romaji": "あずかります",
+      "translation": "giữ, giữ hộ",
+      "q": "Từ 預かります (あずかります) có nghĩa là gì?",
+      "a": [
+        "xin lỗi",
+        "giữ, giữ hộ",
+        "hôm trước",
+        "được giúp"
+      ],
+      "c": 1,
+      "ex": "預 (dự) - giữ"
+    },
+    {
+      "word": "先日",
+      "romaji": "せんじつ",
+      "translation": "hôm trước, mấy hôm trước",
+      "q": "Từ 先日 (せんじつ) có nghĩa là gì?",
+      "a": [
+        "giữ hộ",
+        "hôm trước, mấy hôm trước",
+        "được giúp",
+        "chuyện cổ tích"
+      ],
+      "c": 1,
+      "ex": "先日 (tiên nhật)"
+    },
+    {
+      "word": "助かります",
+      "romaji": "たすかります",
+      "translation": "được giúp, may có người giúp",
+      "q": "Từ 助かります (たすかります) có nghĩa là gì?",
+      "a": [
+        "hôm trước",
+        "được giúp, may có người giúp",
+        "chuyện cổ tích",
+        "giúp đỡ"
+      ],
+      "c": 1,
+      "ex": "助 (trợ) - giúp"
+    },
+    {
+      "word": "昔話",
+      "romaji": "むかしばなし",
+      "translation": "chuyện cổ tích",
+      "q": "Từ 昔話 (むかしばなし) có nghĩa là gì?",
+      "a": [
+        "được giúp",
+        "chuyện cổ tích",
+        "giúp, giúp đỡ",
+        "người đàn ông"
+      ],
+      "c": 1,
+      "ex": "昔話 (tích thoại)"
+    },
+    {
+      "word": "助けます",
+      "romaji": "たすけます",
+      "translation": "giúp, giúp đỡ",
+      "q": "Từ 助けます (たすけます) có nghĩa là gì?",
+      "a": [
+        "chuyện cổ tích",
+        "giúp, giúp đỡ",
+        "người đàn ông",
+        "trẻ con"
+      ],
+      "c": 1,
+      "ex": "助 (trợ) - giúp"
+    },
+    {
+      "word": "男",
+      "romaji": "おとこ",
+      "translation": "người đàn ông, nam giới",
+      "q": "Từ 男 (おとこ) có nghĩa là gì?",
+      "a": [
+        "giúp đỡ",
+        "người đàn ông, nam giới",
+        "trẻ con",
+        "con rùa"
+      ],
+      "c": 1,
+      "ex": "男 (nam)"
+    }
+  ]
+}

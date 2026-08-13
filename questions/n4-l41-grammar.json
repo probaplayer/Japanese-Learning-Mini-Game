@@ -1,0 +1,135 @@
+{
+  "id": "n4-l41-grammar",
+  "name": "N4 Bài 41 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 41 Minna no Nihongo: Cho-nhận nâng cao (いただきます khiêm nhường, くださいます tôn kính, やります cho người dưới), ~Vてくださいませんか, N/V+のに để làm.",
+  "category": "grammar",
+  "createdAt": "2026-08-13T07:14:59.380Z",
+  "updatedAt": "2026-08-13T07:15:31.527Z",
+  "questions": [
+    {
+      "sentence": "私は先生にお土産をいただきました",
+      "chunks": [
+        "私",
+        "は",
+        "先生",
+        "に",
+        "お土産",
+        "を",
+        "いただきました"
+      ],
+      "translation": "Tôi đã nhận quà từ thầy (khiêm nhường ngữ)",
+      "ex": "いただきます: khiêm nhường ngữ của もらいます, dùng khi nhận từ người trên"
+    },
+    {
+      "sentence": "先生は私に本をくださいました",
+      "chunks": [
+        "先生",
+        "は",
+        "私",
+        "に",
+        "本",
+        "を",
+        "くださいました"
+      ],
+      "translation": "Thầy đã cho tôi quyển sách (tôn kính ngữ)",
+      "ex": "くださいます: tôn kính ngữ của くれます, dùng khi người trên cho mình"
+    },
+    {
+      "sentence": "私は子供に本をやりました",
+      "chunks": [
+        "私",
+        "は",
+        "子供",
+        "に",
+        "本",
+        "を",
+        "やりました"
+      ],
+      "translation": "Tôi đã cho đứa trẻ quyển sách",
+      "ex": "やります: dùng khi cho người dưới hoặc động vật, thực vật"
+    },
+    {
+      "sentence": "荷物を預かってくださいませんか",
+      "chunks": [
+        "荷物",
+        "を",
+        "預かってくださいませんか"
+      ],
+      "translation": "Có thể giữ hộ hành lý cho tôi được không?",
+      "ex": "Vてくださいませんか: cách hỏi nhờ lịch sự hơn てください"
+    },
+    {
+      "sentence": "これは何をするのに使いますか",
+      "chunks": [
+        "これ",
+        "は",
+        "何をするのに",
+        "使いますか"
+      ],
+      "translation": "Cái này dùng để làm gì?",
+      "ex": "V+のに: dùng để làm gì, mục đích sử dụng"
+    },
+    {
+      "sentence": "京都へお祭りを見に行きます",
+      "chunks": [
+        "京都",
+        "へ",
+        "お祭り",
+        "を",
+        "見に行きます"
+      ],
+      "translation": "Tôi đi Kyoto để xem lễ hội",
+      "ex": "Vます形+に行きます: đi để làm gì"
+    },
+    {
+      "sentence": "この機械は肉を切るのに使います",
+      "chunks": [
+        "この機械",
+        "は",
+        "肉",
+        "を",
+        "切るのに",
+        "使います"
+      ],
+      "translation": "Máy này dùng để cắt thịt",
+      "ex": "V+のに+使います: dùng để làm gì"
+    },
+    {
+      "sentence": "部長は私に有名なレストランを紹介してくださいました",
+      "chunks": [
+        "部長",
+        "は",
+        "私",
+        "に",
+        "有名なレストラン",
+        "を",
+        "紹介してくださいました"
+      ],
+      "translation": "Trưởng phòng đã giới thiệu cho tôi một nhà hàng nổi tiếng",
+      "ex": "Vてくださいました: tôn kính ngữ, người trên làm giúp mình"
+    },
+    {
+      "sentence": "猿にえさをやってもいいですか",
+      "chunks": [
+        "猿",
+        "に",
+        "えさ",
+        "を",
+        "やっても",
+        "いいですか"
+      ],
+      "translation": "Cho khỉ ăn mồi có được không?",
+      "ex": "やってもいいですか: xin phép cho động vật/người dưới ăn/làm gì"
+    },
+    {
+      "sentence": "助けてくださいませんか",
+      "chunks": [
+        "助けて",
+        "くださいません",
+        "か"
+      ],
+      "translation": "Có thể giúp tôi được không?",
+      "ex": "Vてくださいませんか: nhờ giúp một cách lịch sự"
+    }
+  ]
+}

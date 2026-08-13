@@ -1,0 +1,332 @@
+{
+  "id": "n4-l38-vocab",
+  "name": "N4 Bài 38 - Từ vựng (nghĩa)",
+  "description": "Từ vựng Minna no Nihongo Bài 38 (N4). Câu hỏi hỏi nghĩa tiếng Việt của từ.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-13T06:45:06.124Z",
+  "updatedAt": "2026-08-13T06:45:06.124Z",
+  "questions": [
+    {
+      "word": "育てます",
+      "romaji": "そだてます",
+      "translation": "nuôi, trồng",
+      "q": "Từ 育てます (そだてます) có nghĩa là gì?",
+      "a": [
+        "nuôi, trồng",
+        "chở, vận chuyển",
+        "mất, qua đời",
+        "nhập viện"
+      ],
+      "c": 0,
+      "ex": "育 (dục) - nuôi dậy"
+    },
+    {
+      "word": "運びます",
+      "romaji": "はこびます",
+      "translation": "chở, vận chuyển",
+      "q": "Từ 運びます (はこびます) có nghĩa là gì?",
+      "a": [
+        "nuôi, trồng",
+        "chở, vận chuyển",
+        "mất, qua đời",
+        "xuất viện"
+      ],
+      "c": 1,
+      "ex": "運 (vận) - vận chuyển"
+    },
+    {
+      "word": "亡くなります",
+      "romaji": "なくなります",
+      "translation": "mất, qua đời",
+      "q": "Từ 亡くなります (なくなります) có nghĩa là gì?",
+      "a": [
+        "chở, vận chuyển",
+        "mất, qua đời",
+        "nhập viện",
+        "xuất viện"
+      ],
+      "c": 1,
+      "ex": "亡 (vong) - mất đi (cách nói gián tiếp của しにます)"
+    },
+    {
+      "word": "入院します",
+      "romaji": "にゅういんします",
+      "translation": "nhập viện",
+      "q": "Từ 入院します (にゅういんします) có nghĩa là gì?",
+      "a": [
+        "mất, qua đời",
+        "nhập viện",
+        "xuất viện",
+        "khóa (chìa khóa)"
+      ],
+      "c": 1,
+      "ex": "入 (nhập) + 院 (viện)"
+    },
+    {
+      "word": "退院します",
+      "romaji": "たいいんします",
+      "translation": "xuất viện",
+      "q": "Từ 退院します (たいいんします) có nghĩa là gì?",
+      "a": [
+        "nhập viện",
+        "xuất viện",
+        "khóa",
+        "nguồn điện"
+      ],
+      "c": 1,
+      "ex": "退 (thoái) + 院 (viện)"
+    },
+    {
+      "word": "電源",
+      "romaji": "でんげん",
+      "translation": "nguồn điện, công tắc điện",
+      "q": "Từ 電源 (でんげん) có nghĩa là gì?",
+      "a": [
+        "xuất viện",
+        "nguồn điện, công tắc điện",
+        "khóa",
+        "dễ chịu"
+      ],
+      "c": 1,
+      "ex": "電 (điện) + 源 (nguồn)"
+    },
+    {
+      "word": "掛けます",
+      "romaji": "かけます",
+      "translation": "khóa (chìa khóa)",
+      "q": "Từ 掛けます (かけます) trong câu về chìa khóa có nghĩa là gì?",
+      "a": [
+        "nguồn điện",
+        "khóa (chìa khóa)",
+        "dễ chịu",
+        "khó chịu"
+      ],
+      "c": 1,
+      "ex": "掛 (quải) - treo, khóa"
+    },
+    {
+      "word": "気持ちがいい",
+      "romaji": "きもちがいい",
+      "translation": "dễ chịu, thoải mái",
+      "q": "Từ 気持ちがいい (きもちがいい) có nghĩa là gì?",
+      "a": [
+        "khóa",
+        "dễ chịu, thoải mái",
+        "khó chịu",
+        "to, lớn"
+      ],
+      "c": 1,
+      "ex": "気持ち (khí trì) - tâm trạng"
+    },
+    {
+      "word": "気持ちが悪い",
+      "romaji": "きもちがわるい",
+      "translation": "khó chịu, bị bệnh",
+      "q": "Từ 気持ちが悪い (きもちがわるい) có nghĩa là gì?",
+      "a": [
+        "dễ chịu",
+        "khó chịu, bị bệnh",
+        "to, lớn",
+        "nhỏ, bé"
+      ],
+      "c": 1,
+      "ex": "気持ち (khí trì) + 悪 (ác)"
+    },
+    {
+      "word": "大きな",
+      "romaji": "おおきな",
+      "translation": "to, lớn",
+      "q": "Từ 大きな (おおきな) có nghĩa là gì?",
+      "a": [
+        "khó chịu",
+        "to, lớn",
+        "nhỏ, bé",
+        "em bé"
+      ],
+      "c": 1,
+      "ex": "大 (đại) - to"
+    },
+    {
+      "word": "小さな",
+      "romaji": "ちいさな",
+      "translation": "nhỏ, bé",
+      "q": "Từ 小さな (ちいさな) có nghĩa là gì?",
+      "a": [
+        "to, lớn",
+        "nhỏ, bé",
+        "em bé",
+        "trường tiểu học"
+      ],
+      "c": 1,
+      "ex": "小 (tiểu) - nhỏ"
+    },
+    {
+      "word": "赤ちゃん",
+      "romaji": "あかちゃん",
+      "translation": "em bé",
+      "q": "Từ 赤ちゃん (あかちゃん) có nghĩa là gì?",
+      "a": [
+        "nhỏ, bé",
+        "em bé",
+        "trường tiểu học",
+        "trường trung học"
+      ],
+      "c": 1,
+      "ex": "赤 (xích) - đỏ (da em bé hồng)"
+    },
+    {
+      "word": "小学校",
+      "romaji": "しょうがっこう",
+      "translation": "trường tiểu học",
+      "q": "Từ 小学校 (しょうがっこう) có nghĩa là gì?",
+      "a": [
+        "em bé",
+        "trường tiểu học",
+        "trường trung học",
+        "bờ biển"
+      ],
+      "c": 1,
+      "ex": "小学 (tiểu học) + 校 (hiệu)"
+    },
+    {
+      "word": "中学校",
+      "romaji": "ちゅうがっこう",
+      "translation": "trường trung học cơ sở",
+      "q": "Từ 中学校 (ちゅうがっこう) có nghĩa là gì?",
+      "a": [
+        "trường tiểu học",
+        "trường trung học",
+        "bờ biển",
+        "giấy tờ"
+      ],
+      "c": 1,
+      "ex": "中学 (trung học) + 校 (hiệu)"
+    },
+    {
+      "word": "海岸",
+      "romaji": "かいがん",
+      "translation": "bờ biển",
+      "q": "Từ 海岸 (かいがん) có nghĩa là gì?",
+      "a": [
+        "trường trung học",
+        "bờ biển",
+        "giấy tờ",
+        "tập thông báo"
+      ],
+      "c": 1,
+      "ex": "海 (hải) + 岸 (ngạn)"
+    },
+    {
+      "word": "書類",
+      "romaji": "しょるい",
+      "translation": "giấy tờ, tài liệu",
+      "q": "Từ 書類 (しょるい) có nghĩa là gì?",
+      "a": [
+        "bờ biển",
+        "giấy tờ, tài liệu",
+        "tập thông báo",
+        "phòng nghiên cứu"
+      ],
+      "c": 1,
+      "ex": "書 (thư) + 類 (loại)"
+    },
+    {
+      "word": "回覧",
+      "romaji": "かいらん",
+      "translation": "tập thông báo",
+      "q": "Từ 回覧 (かいらん) có nghĩa là gì?",
+      "a": [
+        "giấy tờ",
+        "tập thông báo",
+        "phòng nghiên cứu",
+        "đóng dấu"
+      ],
+      "c": 1,
+      "ex": "回 (hồi) + 覧 (lãm)"
+    },
+    {
+      "word": "研究室",
+      "romaji": "けんきゅうしつ",
+      "translation": "phòng nghiên cứu",
+      "q": "Từ 研究室 (けんきゅうしつ) có nghĩa là gì?",
+      "a": [
+        "tập thông báo",
+        "phòng nghiên cứu",
+        "đóng dấu",
+        "cặp sinh đôi"
+      ],
+      "c": 1,
+      "ex": "研究 (nghiên cứu) + 室 (thất)"
+    },
+    {
+      "word": "押します",
+      "romaji": "おします",
+      "translation": "đóng (dấu)",
+      "q": "Từ 押します (おします) trong câu về con dấu có nghĩa là gì?",
+      "a": [
+        "phòng nghiên cứu",
+        "đóng (dấu)",
+        "cặp sinh đôi",
+        "chị em"
+      ],
+      "c": 1,
+      "ex": "押 (áp) - ấn, đóng"
+    },
+    {
+      "word": "双子",
+      "romaji": "ふたご",
+      "translation": "cặp sinh đôi",
+      "q": "Từ 双子 (ふたご) có nghĩa là gì?",
+      "a": [
+        "đóng dấu",
+        "cặp sinh đôi",
+        "chị em",
+        "giống"
+      ],
+      "c": 1,
+      "ex": "双 (song) + 子 (tử)"
+    },
+    {
+      "word": "姉妹",
+      "romaji": "しまい",
+      "translation": "chị em",
+      "q": "Từ 姉妹 (しまい) có nghĩa là gì?",
+      "a": [
+        "cặp sinh đôi",
+        "chị em",
+        "giống",
+        "tính cách"
+      ],
+      "c": 1,
+      "ex": "姉 (tỷ) + 妹 (muội)"
+    },
+    {
+      "word": "似ています",
+      "romaji": "にています",
+      "translation": "giống",
+      "q": "Từ 似ています (にています) có nghĩa là gì?",
+      "a": [
+        "chị em",
+        "giống",
+        "tính cách, tính tình",
+        "chăm sóc"
+      ],
+      "c": 1,
+      "ex": "似 (tự) - giống"
+    },
+    {
+      "word": "性格",
+      "romaji": "せいかく",
+      "translation": "tính cách, tính tình",
+      "q": "Từ 性格 (せいかく) có nghĩa là gì?",
+      "a": [
+        "giống",
+        "tính cách, tính tình",
+        "chăm sóc",
+        "rất thích"
+      ],
+      "c": 1,
+      "ex": "性 (tính) + 格 (cách)"
+    }
+  ]
+}

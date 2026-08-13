@@ -1,0 +1,374 @@
+{
+  "id": "n4-l38-kanji-hanviet",
+  "name": "N4 Bài 38 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 38, hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-13T06:47:01.827Z",
+  "updatedAt": "2026-08-13T06:47:09.449Z",
+  "questions": [
+    {
+      "word": "育",
+      "romaji": "dục",
+      "translation": "nuôi dậy (育てます)",
+      "q": "Chữ 育 trong từ 育てます mang âm Hán Việt nào?",
+      "a": [
+        "DỤC",
+        "VẬN",
+        "VONG",
+        "NHẬP"
+      ],
+      "c": 0,
+      "ex": "育てます: nuôi, trồng"
+    },
+    {
+      "word": "運",
+      "romaji": "vận",
+      "translation": "vận chuyển (運びます)",
+      "q": "Chữ 運 trong từ 運びます mang âm Hán Việt nào?",
+      "a": [
+        "DỤC",
+        "VONG",
+        "NHẬP",
+        "VẬN"
+      ],
+      "c": 3,
+      "ex": "運びます: vận chuyển"
+    },
+    {
+      "word": "亡",
+      "romaji": "vong",
+      "translation": "mất đi (亡くなります)",
+      "q": "Chữ 亡 trong từ 亡くなります mang âm Hán Việt nào?",
+      "a": [
+        "VẬN",
+        "NHẬP",
+        "VIỆN",
+        "VONG"
+      ],
+      "c": 3,
+      "ex": "亡くなります: mất, qua đời"
+    },
+    {
+      "word": "入",
+      "romaji": "nhập",
+      "translation": "vào (入院)",
+      "q": "Chữ 入 trong từ 入院 mang âm Hán Việt nào?",
+      "a": [
+        "NHẬP",
+        "VIỆN",
+        "VONG",
+        "THOÁI"
+      ],
+      "c": 0,
+      "ex": "入院: nhập viện"
+    },
+    {
+      "word": "院",
+      "romaji": "viện",
+      "translation": "viện, bệnh viện (入院/退院)",
+      "q": "Chữ 院 trong từ 入院 mang âm Hán Việt nào?",
+      "a": [
+        "VIỆN",
+        "VONG",
+        "THOÁI",
+        "ĐIỆN"
+      ],
+      "c": 0,
+      "ex": "入院 / 退院: nhập viện / xuất viện"
+    },
+    {
+      "word": "退",
+      "romaji": "thoái",
+      "translation": "rút ra (退院)",
+      "q": "Chữ 退 trong từ 退院 mang âm Hán Việt nào?",
+      "a": [
+        "VONG",
+        "THOÁI",
+        "ĐIỆN",
+        "NGUỒN"
+      ],
+      "c": 1,
+      "ex": "退院: xuất viện"
+    },
+    {
+      "word": "電",
+      "romaji": "điện",
+      "translation": "điện (電源)",
+      "q": "Chữ 電 trong từ 電源 mang âm Hán Việt nào?",
+      "a": [
+        "THOÁI",
+        "ĐIỆN",
+        "NGUỒN",
+        "QUẢI"
+      ],
+      "c": 1,
+      "ex": "電源: nguồn điện"
+    },
+    {
+      "word": "源",
+      "romaji": "nguyên",
+      "translation": "nguồn (電源)",
+      "q": "Chữ 源 trong từ 電源 mang âm Hán Việt nào?",
+      "a": [
+        "ĐIỆN",
+        "NGUỒN",
+        "QUẢI",
+        "KHÍ"
+      ],
+      "c": 1,
+      "ex": "電源: nguồn điện"
+    },
+    {
+      "word": "掛",
+      "romaji": "quải",
+      "translation": "treo, khóa (掛けます)",
+      "q": "Chữ 掛 trong từ 掛けます mang âm Hán Việt nào?",
+      "a": [
+        "NGUỒN",
+        "QUẢI",
+        "KHÍ",
+        "TRÌ"
+      ],
+      "c": 1,
+      "ex": "掛けます: khóa"
+    },
+    {
+      "word": "気",
+      "romaji": "khí",
+      "translation": "khí, tinh thần (気持ち)",
+      "q": "Chữ 気 trong từ 気持ち mang âm Hán Việt nào?",
+      "a": [
+        "QUẢI",
+        "KHÍ",
+        "TRÌ",
+        "ĐẠI"
+      ],
+      "c": 1,
+      "ex": "気持ち: tâm trạng"
+    },
+    {
+      "word": "持",
+      "romaji": "trì",
+      "translation": "giụ, mang (気持ち)",
+      "q": "Chữ 持 trong từ 気持ち mang âm Hán Việt nào?",
+      "a": [
+        "KHÍ",
+        "TRÌ",
+        "ĐẠI",
+        "TIỂU"
+      ],
+      "c": 1,
+      "ex": "気持ち: tâm trạng"
+    },
+    {
+      "word": "大",
+      "romaji": "đại",
+      "translation": "to (大きな)",
+      "q": "Chữ 大 trong từ 大きな mang âm Hán Việt nào?",
+      "a": [
+        "TRÌ",
+        "ĐẠI",
+        "TIỂU",
+        "XÍCH"
+      ],
+      "c": 1,
+      "ex": "大きな: to, lớn"
+    },
+    {
+      "word": "小",
+      "romaji": "tiểu",
+      "translation": "nhỏ (小さな)",
+      "q": "Chữ 小 trong từ 小さな mang âm Hán Việt nào?",
+      "a": [
+        "ĐẠI",
+        "TIỂU",
+        "XÍCH",
+        "HỌC"
+      ],
+      "c": 1,
+      "ex": "小さな: nhỏ, bé"
+    },
+    {
+      "word": "赤",
+      "romaji": "xích",
+      "translation": "đỏ (赤ちゃん)",
+      "q": "Chữ 赤 trong từ 赤ちゃん mang âm Hán Việt nào?",
+      "a": [
+        "TIỂU",
+        "XÍCH",
+        "HỌC",
+        "HIỆU"
+      ],
+      "c": 1,
+      "ex": "赤ちゃん: em bé"
+    },
+    {
+      "word": "学",
+      "romaji": "học",
+      "translation": "học (小学校)",
+      "q": "Chữ 学 trong từ 小学校 mang âm Hán Việt nào?",
+      "a": [
+        "XÍCH",
+        "HỌC",
+        "HIỆU",
+        "TRUNG"
+      ],
+      "c": 1,
+      "ex": "小学校: trường tiểu học"
+    },
+    {
+      "word": "校",
+      "romaji": "hiệu",
+      "translation": "trường học (小学校)",
+      "q": "Chữ 校 trong từ 小学校 mang âm Hán Việt nào?",
+      "a": [
+        "HỌC",
+        "HIỆU",
+        "TRUNG",
+        "HẢI"
+      ],
+      "c": 1,
+      "ex": "小学校: trường tiểu học"
+    },
+    {
+      "word": "中",
+      "romaji": "trung",
+      "translation": "trung, giờa (中学校)",
+      "q": "Chữ 中 trong từ 中学校 mang âm Hán Việt nào?",
+      "a": [
+        "HIỆU",
+        "TRUNG",
+        "HẢI",
+        "NGẠN"
+      ],
+      "c": 1,
+      "ex": "中学校: trường trung học"
+    },
+    {
+      "word": "海",
+      "romaji": "hải",
+      "translation": "biển (海岸)",
+      "q": "Chữ 海 trong từ 海岸 mang âm Hán Việt nào?",
+      "a": [
+        "TRUNG",
+        "HẢI",
+        "NGẠN",
+        "THƯ"
+      ],
+      "c": 1,
+      "ex": "海岸: bờ biển"
+    },
+    {
+      "word": "岸",
+      "romaji": "ngạn",
+      "translation": "bờ (海岸)",
+      "q": "Chữ 岸 trong từ 海岸 mang âm Hán Việt nào?",
+      "a": [
+        "HẢI",
+        "NGẠN",
+        "THƯ",
+        "LOẠI"
+      ],
+      "c": 1,
+      "ex": "海岸: bờ biển"
+    },
+    {
+      "word": "書",
+      "romaji": "thư",
+      "translation": "sách, chữ viết (書類)",
+      "q": "Chữ 書 trong từ 書類 mang âm Hán Việt nào?",
+      "a": [
+        "NGẠN",
+        "THƯ",
+        "LOẠI",
+        "HỒI"
+      ],
+      "c": 1,
+      "ex": "書類: giấy tờ"
+    },
+    {
+      "word": "類",
+      "romaji": "loại",
+      "translation": "loại (書類)",
+      "q": "Chữ 類 trong từ 書類 mang âm Hán Việt nào?",
+      "a": [
+        "THƯ",
+        "LOẠI",
+        "HỒI",
+        "LÃM"
+      ],
+      "c": 1,
+      "ex": "書類: giấy tờ"
+    },
+    {
+      "word": "回",
+      "romaji": "hồi",
+      "translation": "quay về, lượt (回覧)",
+      "q": "Chữ 回 trong từ 回覧 mang âm Hán Việt nào?",
+      "a": [
+        "LOẠI",
+        "HỒI",
+        "LÃM",
+        "NGHIÊN"
+      ],
+      "c": 1,
+      "ex": "回覧: tập thông báo"
+    },
+    {
+      "word": "覧",
+      "romaji": "lãm",
+      "translation": "xem (回覧)",
+      "q": "Chữ 覧 trong từ 回覧 mang âm Hán Việt nào?",
+      "a": [
+        "HỒI",
+        "LÃM",
+        "NGHIÊN",
+        "CỨU"
+      ],
+      "c": 1,
+      "ex": "回覧: tập thông báo"
+    },
+    {
+      "word": "研",
+      "romaji": "nghiên",
+      "translation": "nghiên cứu (研究室)",
+      "q": "Chữ 研 trong từ 研究室 mang âm Hán Việt nào?",
+      "a": [
+        "LÃM",
+        "NGHIÊN",
+        "CỨU",
+        "THẤT"
+      ],
+      "c": 1,
+      "ex": "研究室: phòng nghiên cứu"
+    },
+    {
+      "word": "究",
+      "romaji": "cứu",
+      "translation": "tìm tòi (研究室)",
+      "q": "Chữ 究 trong từ 研究室 mang âm Hán Việt nào?",
+      "a": [
+        "NGHIÊN",
+        "CỨU",
+        "THẤT",
+        "ÁP"
+      ],
+      "c": 1,
+      "ex": "研究室: phòng nghiên cứu"
+    },
+    {
+      "word": "室",
+      "romaji": "thất",
+      "translation": "phòng (研究室)",
+      "q": "Chữ 室 trong từ 研究室 mang âm Hán Việt nào?",
+      "a": [
+        "CỨU",
+        "THẤT",
+        "ÁP",
+        "TỰ"
+      ],
+      "c": 1,
+      "ex": "研究室: phòng nghiên cứu"
+    }
+  ]
+}

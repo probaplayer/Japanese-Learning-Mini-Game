@@ -1,0 +1,123 @@
+{
+  "id": "n4-l38-grammar",
+  "name": "N4 Bài 38 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 38 Minna no Nihongo: Trợ từ の dùng để thay thế danh từ, ~のは (chủ đề), ~のが (thích/giỏi việc gì), ~のを (động từ + việc gì).",
+  "category": "grammar",
+  "createdAt": "2026-08-13T06:47:47.751Z",
+  "updatedAt": "2026-08-13T06:47:54.950Z",
+  "questions": [
+    {
+      "sentence": "私が生まれたのは海に近くてきれいな町です",
+      "chunks": [
+        "私",
+        "が",
+        "生まれたのは",
+        "海に近くて",
+        "きれいな町です"
+      ],
+      "translation": "Nơi tôi sinh ra là một thị trấn đẹp và gần biển",
+      "ex": "~のは~: の thay thế danh từ chủ đề, vế sau là mệnh đề giải thích"
+    },
+    {
+      "sentence": "1年で一番忙しいのは12月です",
+      "chunks": [
+        "1年で",
+        "一番",
+        "忙しいのは",
+        "12月です"
+      ],
+      "translation": "Tháng bận nhất trong một năm là tháng 12",
+      "ex": "~のは~: nêu chủ đề là tháng bận nhất"
+    },
+    {
+      "sentence": "私は海岸を散歩するのが好きです",
+      "chunks": [
+        "私",
+        "は",
+        "海岸",
+        "を",
+        "散歩するのが",
+        "好きです"
+      ],
+      "translation": "Tôi thích (việc) đi dạo ở bờ biển",
+      "ex": "~のが~: vế sau のが thường là tính từ (好きです)"
+    },
+    {
+      "sentence": "彼はうそをいうのが上手です",
+      "chunks": [
+        "彼",
+        "は",
+        "うそ",
+        "を",
+        "いうのが",
+        "上手です"
+      ],
+      "translation": "Việc nói dối của cậu ta rất giỏi",
+      "ex": "~のが~: việc nói dối của cậu ta rất giỏi"
+    },
+    {
+      "sentence": "卵を買うのを忘れました",
+      "chunks": [
+        "卵",
+        "を",
+        "買うのを",
+        "忘れました"
+      ],
+      "translation": "Tôi quên việc mua trứng",
+      "ex": "~のを~: vế sau のを thường là động từ (忘れました)"
+    },
+    {
+      "sentence": "田中さんが会社をやめたのを知っていますか",
+      "chunks": [
+        "田中さん",
+        "が",
+        "会社",
+        "を",
+        "やめたのを",
+        "知っていますか"
+      ],
+      "translation": "Bạn có biết việc anh Tanaka đã nghỉ việc không?",
+      "ex": "~のを~: hỏi có biết việc gì không"
+    },
+    {
+      "sentence": "赤いのをください",
+      "chunks": [
+        "赤いの",
+        "を",
+        "ください"
+      ],
+      "translation": "Xin cho tôi cái màu đỏ",
+      "ex": "の dùng để thay thế danh từ, tránh lặp lại (thay cho 赤いセーター)"
+    },
+    {
+      "sentence": "大きいのがいいです",
+      "chunks": [
+        "大きいの",
+        "が",
+        "いいです"
+      ],
+      "translation": "Cái to thì tốt hơn",
+      "ex": "の thay thế danh từ đã nhắc đến trước đó"
+    },
+    {
+      "sentence": "走るのは楽しいです",
+      "chunks": [
+        "走るのは",
+        "楽しいです"
+      ],
+      "translation": "Việc chạy bộ rất vui",
+      "ex": "~のは~: nêu chủ đề là việc chạy bộ"
+    },
+    {
+      "sentence": "音楽を聞くのが好きです",
+      "chunks": [
+        "音楽",
+        "を",
+        "聞くのが",
+        "好きです"
+      ],
+      "translation": "Tôi thích (việc) nghe nhạc",
+      "ex": "~のが~: thích (việc) nghe nhạc"
+    }
+  ]
+}

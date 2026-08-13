@@ -1,0 +1,135 @@
+{
+  "id": "n4-l37-grammar",
+  "name": "N4 Bài 37 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 37 Minna no Nihongo: Thể bị động (受身形), N1はN2にV受身 (bị/được), sự kiện được biết đến rộng rãi, ~によって (do bởi), ~から/で作られます.",
+  "category": "grammar",
+  "createdAt": "2026-08-13T06:36:55.428Z",
+  "updatedAt": "2026-08-13T06:37:16.360Z",
+  "questions": [
+    {
+      "sentence": "私は先生にほめられました",
+      "chunks": [
+        "私",
+        "は",
+        "先生",
+        "に",
+        "ほめられました"
+      ],
+      "translation": "Tôi được thầy giáo khen",
+      "ex": "Thể bị động (受身形): ほめます→ほめられます, diễn tả được ai đó khen"
+    },
+    {
+      "sentence": "私は母に手紙を読まれました",
+      "chunks": [
+        "私",
+        "は",
+        "母",
+        "に",
+        "手紙",
+        "を",
+        "読まれました"
+      ],
+      "translation": "Tôi bị (được) mẹ đọc thư của tôi",
+      "ex": "Thể bị động dùng khi người nói cảm thấy phiền toái (ở đây mang nghĩa được/bị mẹ đọc thư của mình)"
+    },
+    {
+      "sentence": "私はいぬにかまれました",
+      "chunks": [
+        "私",
+        "は",
+        "いぬ",
+        "に",
+        "かまれました"
+      ],
+      "translation": "Tôi bị chó cắn",
+      "ex": "N1(người)はN2(vật/con vật)にV受身形: bị động vật làm gì (phá)"
+    },
+    {
+      "sentence": "わたしはだれかにあしをふまれました",
+      "chunks": [
+        "わたし",
+        "は",
+        "だれか",
+        "に",
+        "あし",
+        "を",
+        "ふまれました"
+      ],
+      "translation": "Tôi đã bị ai đó giẻm chân",
+      "ex": "V受身形 diễn tả sự phiền toái khi bị ai đó làm gì lên mình"
+    },
+    {
+      "sentence": "わたしはぶちょうにしごとをたのまれました",
+      "chunks": [
+        "わたし",
+        "は",
+        "ぶちょう",
+        "に",
+        "しごと",
+        "を",
+        "たのまれました"
+      ],
+      "translation": "Tôi được trưởng phòng nhờ làm việc",
+      "ex": "V受身形 cũng có thể mang nghĩa được (không phải lúc nào cũng phiền toái)"
+    },
+    {
+      "sentence": "フランスで昔の日本の絵が発見されました",
+      "chunks": [
+        "フランス",
+        "で",
+        "昔",
+        "の日本の絵",
+        "が",
+        "発見されました"
+      ],
+      "translation": "Tại Pháp, đã phát hiện ra bức tranh cổ của Nhật Bản",
+      "ex": "NがV受身形: nói về sự kiện được biết đến rộng rãi (không cần nêu người thực hiện)"
+    },
+    {
+      "sentence": "日本の電子製品は世界中へ輸出されています",
+      "chunks": [
+        "日本の電子製品",
+        "は",
+        "世界中",
+        "へ",
+        "輸出されています"
+      ],
+      "translation": "Hàng điện tử Nhật Bản được xuất khẩu đi khắp nơi trên thế giới",
+      "ex": "NはV受身形: nói về hiện tượng được biết đến rộng rãi"
+    },
+    {
+      "sentence": "源氏物語は絫式部によって書かれました",
+      "chunks": [
+        "源氏物語",
+        "は",
+        "絫式部によって",
+        "書かれました"
+      ],
+      "translation": "Truyện Genji được viết bởi Tử Thức Bộ",
+      "ex": "Nは~によってV受身形: do bởi ai làm gì (chủ thể hành động)"
+    },
+    {
+      "sentence": "飛行機はライト兄弟によって発明されました",
+      "chunks": [
+        "飛行機",
+        "は",
+        "ライト兄弟によって",
+        "発明されました"
+      ],
+      "translation": "Máy bay được phát minh bởi anh em nhà Wright",
+      "ex": "Nは~によってV受身形: máy bay được phát minh bởi anh em nhà Wright"
+    },
+    {
+      "sentence": "紙は木からつくられます",
+      "chunks": [
+        "紙",
+        "は",
+        "木",
+        "から",
+        "つくられます"
+      ],
+      "translation": "Giấy được làm từ gỗ",
+      "ex": "N1からつくられます: nguyên liệu bị thay đổi tính chất rõ ràng khi thành sản phẩm (giấy từ gỗ)"
+    }
+  ]
+}

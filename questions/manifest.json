@@ -526,6 +526,50 @@
       "questionCount": 10,
       "updatedAt": "2026-08-13T06:26:44.279Z",
       "roadmapId": "n4-path"
+    },
+    {
+      "id": "n4-l37-vocab",
+      "file": "n4-l37-vocab.json",
+      "name": "N4 Bài 37 - Từ vựng (nghĩa)",
+      "category": "vocabulary",
+      "order": 48,
+      "level": "N4",
+      "questionCount": 24,
+      "updatedAt": "2026-08-13T06:33:52.763Z",
+      "roadmapId": "n4-path"
+    },
+    {
+      "id": "n4-l37-kanji",
+      "file": "n4-l37-kanji.json",
+      "name": "N4 Bài 37 - Từ vựng Kanji (đọc)",
+      "category": "vocabulary",
+      "order": 49,
+      "level": "N4",
+      "questionCount": 24,
+      "updatedAt": "2026-08-13T06:34:56.891Z",
+      "roadmapId": "n4-path"
+    },
+    {
+      "id": "n4-l37-kanji-hanviet",
+      "file": "n4-l37-kanji-hanviet.json",
+      "name": "N4 Bài 37 - Hán Việt từng Kanji",
+      "category": "vocabulary",
+      "order": 50,
+      "level": "N4",
+      "questionCount": 28,
+      "updatedAt": "2026-08-13T06:36:07.088Z",
+      "roadmapId": "n4-path"
+    },
+    {
+      "id": "n4-l37-grammar",
+      "file": "n4-l37-grammar.json",
+      "name": "N4 Bài 37 - Ngữ pháp",
+      "category": "grammar",
+      "order": 51,
+      "level": "N4",
+      "questionCount": 10,
+      "updatedAt": "2026-08-13T06:37:16.360Z",
+      "roadmapId": "n4-path"
     }
   ]
 }

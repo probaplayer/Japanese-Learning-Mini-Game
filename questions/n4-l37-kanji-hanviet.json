@@ -1,0 +1,402 @@
+{
+  "id": "n4-l37-kanji-hanviet",
+  "name": "N4 Bài 37 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 37, hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-13T06:35:49.201Z",
+  "updatedAt": "2026-08-13T06:36:07.088Z",
+  "questions": [
+    {
+      "word": "褒",
+      "romaji": "bao",
+      "translation": "khen (褒めます)",
+      "q": "Chữ 褒 trong từ 褒めます mang âm Hán Việt nào?",
+      "a": [
+        "BAO",
+        "DỤ",
+        "KHỞI",
+        "CHIÊU"
+      ],
+      "c": 0,
+      "ex": "褒めます: khen"
+    },
+    {
+      "word": "誘",
+      "romaji": "dụ",
+      "translation": "rủ rê (誘います)",
+      "q": "Chữ 誘 trong từ 誘います mang âm Hán Việt nào?",
+      "a": [
+        "BAO",
+        "KHỞI",
+        "CHIÊU",
+        "DỤ"
+      ],
+      "c": 3,
+      "ex": "誘います: mời, rủ"
+    },
+    {
+      "word": "起",
+      "romaji": "khởi",
+      "translation": "dậy (起こします)",
+      "q": "Chữ 起 trong từ 起こします mang âm Hán Việt nào?",
+      "a": [
+        "DỤ",
+        "CHIÊU",
+        "ĐÃI",
+        "KHỞI"
+      ],
+      "c": 3,
+      "ex": "起こします: đánh thức"
+    },
+    {
+      "word": "招",
+      "romaji": "chiêu",
+      "translation": "chiêu đãi (招待)",
+      "q": "Chữ 招 trong từ 招待 mang âm Hán Việt nào?",
+      "a": [
+        "CHIÊU",
+        "ĐÃI",
+        "KHỞI",
+        "LẠI"
+      ],
+      "c": 0,
+      "ex": "招待: mời"
+    },
+    {
+      "word": "待",
+      "romaji": "đãi",
+      "translation": "đãi (招待)",
+      "q": "Chữ 待 trong từ 招待 mang âm Hán Việt nào?",
+      "a": [
+        "ĐÃI",
+        "KHỞỪ",
+        "LẠI",
+        "ĐẠP"
+      ],
+      "c": 0,
+      "ex": "招待: mời"
+    },
+    {
+      "word": "頼",
+      "romaji": "lại",
+      "translation": "nhờ vả (頼みます)",
+      "q": "Chữ 頼 trong từ 頼みます mang âm Hán Việt nào?",
+      "a": [
+        "KHỞỪ",
+        "LẠI",
+        "ĐẠP",
+        "HOẠI"
+      ],
+      "c": 1,
+      "ex": "頼みます: nhờ"
+    },
+    {
+      "word": "踏",
+      "romaji": "đạp",
+      "translation": "giẻm (踏みます)",
+      "q": "Chữ 踏 trong từ 踏みます mang âm Hán Việt nào?",
+      "a": [
+        "LẠI",
+        "ĐẠP",
+        "HOẠI",
+        "Ô"
+      ],
+      "c": 1,
+      "ex": "踏みます: giẻm lên"
+    },
+    {
+      "word": "壊",
+      "romaji": "hoại",
+      "translation": "hỏng (壊します)",
+      "q": "Chữ 壊 trong từ 壊します mang âm Hán Việt nào?",
+      "a": [
+        "ĐẠP",
+        "HOẠI",
+        "Ô",
+        "HÀNH"
+      ],
+      "c": 1,
+      "ex": "踏みます: giẻm lên"
+    },
+    {
+      "word": "汚",
+      "romaji": "ô",
+      "translation": "bẩn (汚します)",
+      "q": "Chữ 汚 trong từ 汚します mang âm Hán Việt nào?",
+      "a": [
+        "HOẠI",
+        "Ô",
+        "HÀNH",
+        "THÂU"
+      ],
+      "c": 1,
+      "ex": "汚します: làm bẩn"
+    },
+    {
+      "word": "行",
+      "romaji": "hành",
+      "translation": "thực hiện (行います)",
+      "q": "Chữ 行 trong từ 行います mang âm Hán Việt nào?",
+      "a": [
+        "Ô",
+        "HÀNH",
+        "THÂU",
+        "XUẤT"
+      ],
+      "c": 1,
+      "ex": "行います: thực hiện"
+    },
+    {
+      "word": "輸",
+      "romaji": "thâu",
+      "translation": "vận chuyển (輸出/輸入)",
+      "q": "Chữ 輸 trong từ 輸出 mang âm Hán Việt nào?",
+      "a": [
+        "HÀNH",
+        "THÂU",
+        "XUẤT",
+        "NHẬP"
+      ],
+      "c": 1,
+      "ex": "輸出: xuất khẩu"
+    },
+    {
+      "word": "出",
+      "romaji": "xuất",
+      "translation": "ra (輸出)",
+      "q": "Chữ 出 trong từ 輸出 mang âm Hán Việt nào?",
+      "a": [
+        "THÂU",
+        "XUẤT",
+        "NHẬP",
+        "PHIÊN"
+      ],
+      "c": 1,
+      "ex": "輸出: xuất khẩu"
+    },
+    {
+      "word": "入",
+      "romaji": "nhập",
+      "translation": "vào (輸入)",
+      "q": "Chữ 入 trong từ 輸入 mang âm Hán Việt nào?",
+      "a": [
+        "XUẤT",
+        "NHẬP",
+        "PHIÊN",
+        "DỊCH"
+      ],
+      "c": 1,
+      "ex": "輸入: nhập khẩu"
+    },
+    {
+      "word": "翻",
+      "romaji": "phiên",
+      "translation": "dịch (翻訳)",
+      "q": "Chữ 翻 trong từ 翻訳 mang âm Hán Việt nào?",
+      "a": [
+        "NHẬP",
+        "PHIÊN",
+        "DỊCH",
+        "PHÁT"
+      ],
+      "c": 1,
+      "ex": "翻訳: dịch"
+    },
+    {
+      "word": "訳",
+      "romaji": "dịch",
+      "translation": "dịch (翻訳)",
+      "q": "Chữ 訳 trong từ 翻訳 mang âm Hán Việt nào?",
+      "a": [
+        "PHIÊN",
+        "DỊCH",
+        "PHÁT",
+        "MINH"
+      ],
+      "c": 1,
+      "ex": "翻訳: dịch"
+    },
+    {
+      "word": "発",
+      "romaji": "phát",
+      "translation": "phát ra (発明/発見)",
+      "q": "Chữ 発 trong từ 発明 mang âm Hán Việt nào?",
+      "a": [
+        "DỌCH",
+        "PHÁT",
+        "MINH",
+        "KIẾN"
+      ],
+      "c": 1,
+      "ex": "発明: phát minh"
+    },
+    {
+      "word": "明",
+      "romaji": "minh",
+      "translation": "sáng, rõ (発明)",
+      "q": "Chữ 明 trong từ 発明 mang âm Hán Việt nào?",
+      "a": [
+        "PHÁT",
+        "MINH",
+        "KIẾN",
+        "THIẾT"
+      ],
+      "c": 1,
+      "ex": "発明: phát minh"
+    },
+    {
+      "word": "見",
+      "romaji": "kiến",
+      "translation": "nhìn, thấy (発見)",
+      "q": "Chữ 見 trong từ 発見 mang âm Hán Việt nào?",
+      "a": [
+        "MINH",
+        "KIẾN",
+        "THIẾT",
+        "KẾ"
+      ],
+      "c": 1,
+      "ex": "発見: phát hiện"
+    },
+    {
+      "word": "設",
+      "romaji": "thiết",
+      "translation": "sắp đặt (設計)",
+      "q": "Chữ 設 trong từ 設計 mang âm Hán Việt nào?",
+      "a": [
+        "KIẾN",
+        "THIẾT",
+        "KẾ",
+        "MỄ"
+      ],
+      "c": 1,
+      "ex": "設計: thiết kế"
+    },
+    {
+      "word": "計",
+      "romaji": "kế",
+      "translation": "tính toán, kế hoạch (設計)",
+      "q": "Chữ 計 trong từ 設計 mang âm Hán Việt nào?",
+      "a": [
+        "KẾ",
+        "MỄ",
+        "MẠCH",
+        "THẠCH"
+      ],
+      "c": 1,
+      "ex": "設計: thiết kế"
+    },
+    {
+      "word": "米",
+      "romaji": "mễ",
+      "translation": "gạo (米)",
+      "q": "Chữ 米 mang âm Hán Việt nào?",
+      "a": [
+        "MỄ",
+        "MẠCH",
+        "THẠCH",
+        "DU"
+      ],
+      "c": 1,
+      "ex": "米: gạo"
+    },
+    {
+      "word": "麦",
+      "romaji": "mạch",
+      "translation": "lúa mạch (麦)",
+      "q": "Chữ 麦 mang âm Hán Việt nào?",
+      "a": [
+        "MẠCH",
+        "THẠCH",
+        "DU",
+        "NGUYÊN"
+      ],
+      "c": 1,
+      "ex": "麦: lúa mạch"
+    },
+    {
+      "word": "石",
+      "romaji": "thạch",
+      "translation": "đá (石油)",
+      "q": "Chữ 石 trong từ 石油 mang âm Hán Việt nào?",
+      "a": [
+        "MẮCH",
+        "THẠCH",
+        "DU",
+        "NGUYÊN"
+      ],
+      "c": 1,
+      "ex": "石油: dầu mỏ"
+    },
+    {
+      "word": "油",
+      "romaji": "du",
+      "translation": "dầu (石油)",
+      "q": "Chữ 油 trong từ 石油 mang âm Hán Việt nào?",
+      "a": [
+        "THẠCH",
+        "DU",
+        "NGUYÊN",
+        "LIỆU"
+      ],
+      "c": 1,
+      "ex": "石油: dầu mỏ"
+    },
+    {
+      "word": "原",
+      "romaji": "nguyên",
+      "translation": "gốc, nguyên bản (原料)",
+      "q": "Chữ 原 trong từ 原料 mang âm Hán Việt nào?",
+      "a": [
+        "DU",
+        "NGUYÊN",
+        "LIỆU",
+        "KỸ"
+      ],
+      "c": 1,
+      "ex": "原料: nguyên liệu"
+    },
+    {
+      "word": "料",
+      "romaji": "liệu",
+      "translation": "vật liệu (原料)",
+      "q": "Chữ 料 trong từ 原料 mang âm Hán Việt nào?",
+      "a": [
+        "NGUYÊN",
+        "LIỆU",
+        "KỸ",
+        "THUẬT"
+      ],
+      "c": 1,
+      "ex": "原料: nguyên liệu"
+    },
+    {
+      "word": "技",
+      "romaji": "kỹ",
+      "translation": "kỹ năng (技術)",
+      "q": "Chữ 技 trong từ 技術 mang âm Hán Việt nào?",
+      "a": [
+        "LIỆU",
+        "KỸ",
+        "THUẬT",
+        "THỔ"
+      ],
+      "c": 1,
+      "ex": "技術: kỹ thuật"
+    },
+    {
+      "word": "術",
+      "romaji": "thuật",
+      "translation": "thuật, phương pháp (技術)",
+      "q": "Chữ 術 trong từ 技術 mang âm Hán Việt nào?",
+      "a": [
+        "KỸ",
+        "THUẬT",
+        "THỔ",
+        "ĐỊA"
+      ],
+      "c": 1,
+      "ex": "技術: kỹ thuật"
+    }
+  ]
+}

@@ -1,0 +1,346 @@
+{
+  "id": "n4-l37-vocab",
+  "name": "N4 Bài 37 - Từ vựng (nghĩa)",
+  "description": "Từ vựng Minna no Nihongo Bài 37 (N4). Câu hỏi hỏi nghĩa tiếng Việt của từ.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-13T06:33:39.997Z",
+  "updatedAt": "2026-08-13T06:33:52.763Z",
+  "questions": [
+    {
+      "word": "褒めます",
+      "romaji": "ほめます",
+      "translation": "khen",
+      "q": "Từ 褒めます (ほめます) có nghĩa là gì?",
+      "a": [
+        "khen",
+        "mời, rủ",
+        "đánh thức",
+        "mời"
+      ],
+      "c": 0,
+      "ex": "褒 (bao) - khen"
+    },
+    {
+      "word": "誘います",
+      "romaji": "さそいます",
+      "translation": "mời, rủ",
+      "q": "Từ 誘います (さそいます) có nghĩa là gì?",
+      "a": [
+        "khen",
+        "mời, rủ",
+        "đánh thức",
+        "nhờ"
+      ],
+      "c": 1,
+      "ex": "誘 (dụ) - rủ rê"
+    },
+    {
+      "word": "起こします",
+      "romaji": "おこします",
+      "translation": "đánh thức",
+      "q": "Từ 起こします (おこします) có nghĩa là gì?",
+      "a": [
+        "mời, rủ",
+        "đánh thức",
+        "nhờ",
+        "giẻm lên"
+      ],
+      "c": 1,
+      "ex": "起 (khởi) - dậy"
+    },
+    {
+      "word": "招待します",
+      "romaji": "しょうたいします",
+      "translation": "mời (trang trọng)",
+      "q": "Từ 招待します (しょうたいします) có nghĩa là gì?",
+      "a": [
+        "đánh thức",
+        "mời (trang trọng)",
+        "nhờ",
+        "giẻm lên"
+      ],
+      "c": 1,
+      "ex": "招待 (chiêu đãi)"
+    },
+    {
+      "word": "頼みます",
+      "romaji": "たのみます",
+      "translation": "nhờ",
+      "q": "Từ 頼みます (たのみます) có nghĩa là gì?",
+      "a": [
+        "mời",
+        "nhờ",
+        "giẻm lên",
+        "phá, làm hỏng"
+      ],
+      "c": 1,
+      "ex": "頼 (lại) - nhờ vả"
+    },
+    {
+      "word": "踏みます",
+      "romaji": "ふみます",
+      "translation": "giẻm, giẻm lên, giẻm vào",
+      "q": "Từ 踏みます (ふみます) có nghĩa là gì?",
+      "a": [
+        "nhờ",
+        "giẻm, giẻm lên, giẻm vào",
+        "phá, làm hỏng",
+        "làm bẩn"
+      ],
+      "c": 1,
+      "ex": "踏 (đạp) - giịm"
+    },
+    {
+      "word": "壊します",
+      "romaji": "こわします",
+      "translation": "phá, làm hỏng",
+      "q": "Từ 壊します (こわします) có nghĩa là gì?",
+      "a": [
+        "giẻm lên",
+        "phá, làm hỏng",
+        "làm bẩn",
+        "thực hiện"
+      ],
+      "c": 1,
+      "ex": "壊 (hoại) - hỏng"
+    },
+    {
+      "word": "汚します",
+      "romaji": "よごします",
+      "translation": "làm bẩn",
+      "q": "Từ 汚します (よごします) có nghĩa là gì?",
+      "a": [
+        "phá, làm hỏng",
+        "làm bẩn",
+        "thực hiện, tiến hành",
+        "xuất khẩu"
+      ],
+      "c": 1,
+      "ex": "汚 (ô) - bẩn"
+    },
+    {
+      "word": "行います",
+      "romaji": "おこないます",
+      "translation": "thực hiện, tiến hành",
+      "q": "Từ 行います (おこないます) có nghĩa là gì?",
+      "a": [
+        "làm bẩn",
+        "thực hiện, tiến hành",
+        "xuất khẩu",
+        "nhập khẩu"
+      ],
+      "c": 1,
+      "ex": "行 (hành) - thực hiện"
+    },
+    {
+      "word": "輸出します",
+      "romaji": "ゆしゅつします",
+      "translation": "xuất khẩu",
+      "q": "Từ 輸出します (ゆしゅつします) có nghĩa là gì?",
+      "a": [
+        "thực hiện",
+        "xuất khẩu",
+        "nhập khẩu",
+        "dịch (sách)"
+      ],
+      "c": 1,
+      "ex": "輸 (thâu) + 出 (xuất)"
+    },
+    {
+      "word": "輸入します",
+      "romaji": "ゆにゅうします",
+      "translation": "nhập khẩu",
+      "q": "Từ 輸入します (ゆにゅうします) có nghĩa là gì?",
+      "a": [
+        "xuất khẩu",
+        "nhập khẩu",
+        "dịch (sách)",
+        "phát minh"
+      ],
+      "c": 1,
+      "ex": "輸 (thâu) + 入 (nhập)"
+    },
+    {
+      "word": "翻訳します",
+      "romaji": "ほんやくします",
+      "translation": "dịch (sách, tài liệu)",
+      "q": "Từ 翻訳します (ほんやくします) có nghĩa là gì?",
+      "a": [
+        "nhập khẩu",
+        "dịch (sách, tài liệu)",
+        "phát minh",
+        "phát hiện"
+      ],
+      "c": 1,
+      "ex": "翻 (phiên) + 訳 (dịch)"
+    },
+    {
+      "word": "発明します",
+      "romaji": "はつめいします",
+      "translation": "phát minh",
+      "q": "Từ 発明します (はつめいします) có nghĩa là gì?",
+      "a": [
+        "dịch",
+        "phát minh",
+        "phát hiện, tìm ra",
+        "thiết kế"
+      ],
+      "c": 1,
+      "ex": "発 (phát) + 明 (minh)"
+    },
+    {
+      "word": "発見します",
+      "romaji": "はっけんします",
+      "translation": "phát hiện, tìm ra",
+      "q": "Từ 発見します (はっけんします) có nghĩa là gì?",
+      "a": [
+        "phát minh",
+        "phát hiện, tìm ra",
+        "thiết kế",
+        "gạo"
+      ],
+      "c": 1,
+      "ex": "発 (phát) + 見 (kiến)"
+    },
+    {
+      "word": "設計します",
+      "romaji": "せっけいします",
+      "translation": "thiết kế",
+      "q": "Từ 設計します (せっけいします) có nghĩa là gì?",
+      "a": [
+        "phát hiện",
+        "thiết kế",
+        "gạo",
+        "lúa mạch"
+      ],
+      "c": 1,
+      "ex": "設 (thiết) + 計 (kế)"
+    },
+    {
+      "word": "米",
+      "romaji": "こめ",
+      "translation": "gạo",
+      "q": "Từ 米 (こめ) có nghĩa là gì?",
+      "a": [
+        "thiết kế",
+        "gạo",
+        "lúa mạch",
+        "dầu mỏ"
+      ],
+      "c": 1,
+      "ex": "米 (mễ)"
+    },
+    {
+      "word": "麦",
+      "romaji": "むぎ",
+      "translation": "lúa mạch",
+      "q": "Từ 麦 (むぎ) có nghĩa là gì?",
+      "a": [
+        "gạo",
+        "lúa mạch",
+        "dầu mỏ",
+        "nguyên liệu"
+      ],
+      "c": 1,
+      "ex": "麦 (mạch)"
+    },
+    {
+      "word": "石油",
+      "romaji": "せきゆ",
+      "translation": "dầu mỏ",
+      "q": "Từ 石油 (せきゆ) có nghĩa là gì?",
+      "a": [
+        "lúa mạch",
+        "dầu mỏ",
+        "nguyên liệu",
+        "kẻ trộm"
+      ],
+      "c": 1,
+      "ex": "石 (thạch) + 油 (du)"
+    },
+    {
+      "word": "原料",
+      "romaji": "げんりょう",
+      "translation": "nguyên liệu",
+      "q": "Từ 原料 (げんりょう) có nghĩa là gì?",
+      "a": [
+        "dầu mỏ",
+        "nguyên liệu",
+        "kẻ trộm",
+        "cảnh sát"
+      ],
+      "c": 1,
+      "ex": "原 (nguyên) + 料 (liệu)"
+    },
+    {
+      "word": "泥棒",
+      "romaji": "どろぼう",
+      "translation": "kẻ trộm",
+      "q": "Từ 泥棒 (どろぼう) có nghĩa là gì?",
+      "a": [
+        "nguyên liệu",
+        "kẻ trộm",
+        "cảnh sát",
+        "kỹ thuật"
+      ],
+      "c": 1,
+      "ex": "泥棒 (nê bổng)"
+    },
+    {
+      "word": "警官",
+      "romaji": "けいかん",
+      "translation": "cảnh sát",
+      "q": "Từ 警官 (けいかん) có nghĩa là gì?",
+      "a": [
+        "kẻ trộm",
+        "cảnh sát",
+        "kỹ thuật",
+        "đất, diện tích đất"
+      ],
+      "c": 1,
+      "ex": "警 (cảnh) + 官 (quan)"
+    },
+    {
+      "word": "技術",
+      "romaji": "ぎじゅつ",
+      "translation": "kỹ thuật",
+      "q": "Từ 技術 (ぎじゅつ) có nghĩa là gì?",
+      "a": [
+        "cảnh sát",
+        "kỹ thuật",
+        "đất, diện tích đất",
+        "tiếng ồn"
+      ],
+      "c": 1,
+      "ex": "技 (kỹ) + 術 (thuật)"
+    },
+    {
+      "word": "土地",
+      "romaji": "とち",
+      "translation": "đất, diện tích đất",
+      "q": "Từ 土地 (とち) có nghĩa là gì?",
+      "a": [
+        "kỹ thuật",
+        "đất, diện tích đất",
+        "tiếng ồn",
+        "gạo"
+      ],
+      "c": 1,
+      "ex": "土 (thổ) + 地 (địa)"
+    },
+    {
+      "word": "騒音",
+      "romaji": "そうおん",
+      "translation": "tiếng ồn",
+      "q": "Từ 騒音 (そうおん) có nghĩa là gì?",
+      "a": [
+        "đất",
+        "tiếng ồn",
+        "gạo",
+        "lúa mạch"
+      ],
+      "c": 1,
+      "ex": "騒 (tao) + 音 (âm)"
+    }
+  ]
+}

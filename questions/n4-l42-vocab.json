@@ -1,0 +1,346 @@
+{
+  "id": "n4-l42-vocab",
+  "name": "N4 Bài 42 - Từ vựng (nghĩa)",
+  "description": "Từ vựng Minna no Nihongo Bài 42 (N4). Câu hỏi hỏi nghĩa tiếng Việt của từ.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-13T07:19:54.308Z",
+  "updatedAt": "2026-08-13T07:19:54.308Z",
+  "questions": [
+    {
+      "word": "包みます",
+      "romaji": "つつみます",
+      "translation": "bọc, gói",
+      "q": "Từ 包みます (つつみます) có nghĩa là gì?",
+      "a": [
+        "bọc, gói",
+        "đun sôi",
+        "trộn, khuấy",
+        "tính toán"
+      ],
+      "c": 0,
+      "ex": "包 (bao) - gói"
+    },
+    {
+      "word": "沸かします",
+      "romaji": "わかします",
+      "translation": "đun sôi",
+      "q": "Từ 沸かします (わかします) có nghĩa là gì?",
+      "a": [
+        "bọc, gói",
+        "đun sôi",
+        "trộn, khuấy",
+        "tính toán"
+      ],
+      "c": 1,
+      "ex": "沸 (phí) - sôi"
+    },
+    {
+      "word": "混ぜます",
+      "romaji": "まぜます",
+      "translation": "trộn, khuấy",
+      "q": "Từ 混ぜます (まぜます) có nghĩa là gì?",
+      "a": [
+        "đun sôi",
+        "trộn, khuấy",
+        "tính toán",
+        "dày"
+      ],
+      "c": 1,
+      "ex": "混 (hỗn) - trộn"
+    },
+    {
+      "word": "計算します",
+      "romaji": "けいさんします",
+      "translation": "tính toán",
+      "q": "Từ 計算します (けいさんします) có nghĩa là gì?",
+      "a": [
+        "trộn",
+        "tính toán",
+        "dày",
+        "mỏng"
+      ],
+      "c": 1,
+      "ex": "計 (kế) + 算 (toán)"
+    },
+    {
+      "word": "厚い",
+      "romaji": "あつい",
+      "translation": "dày",
+      "q": "Từ 厚い (あつい) có nghĩa là gì?",
+      "a": [
+        "tính toán",
+        "dày",
+        "mỏng",
+        "luật sư"
+      ],
+      "c": 1,
+      "ex": "厚 (hậu) - dày"
+    },
+    {
+      "word": "薄い",
+      "romaji": "うすい",
+      "translation": "mỏng",
+      "q": "Từ 薄い (うすい) có nghĩa là gì?",
+      "a": [
+        "dày",
+        "mỏng",
+        "luật sư",
+        "nhạc sĩ"
+      ],
+      "c": 1,
+      "ex": "薄 (bạc) - mỏng"
+    },
+    {
+      "word": "弁護士",
+      "romaji": "べんごし",
+      "translation": "luật sư",
+      "q": "Từ 弁護士 (べんごし) có nghĩa là gì?",
+      "a": [
+        "mỏng",
+        "luật sư",
+        "nhạc sĩ",
+        "giáo dục"
+      ],
+      "c": 1,
+      "ex": "弁護士 (biện hộ sĩ)"
+    },
+    {
+      "word": "音楽家",
+      "romaji": "おんがくか",
+      "translation": "nhạc sĩ",
+      "q": "Từ 音楽家 (おんがくか) có nghĩa là gì?",
+      "a": [
+        "luật sư",
+        "nhạc sĩ",
+        "giáo dục",
+        "lịch sử"
+      ],
+      "c": 1,
+      "ex": "音楽 (âm nhạc) + 家 (gia)"
+    },
+    {
+      "word": "教育",
+      "romaji": "きょういく",
+      "translation": "giáo dục, việc học hành",
+      "q": "Từ 教育 (きょういく) có nghĩa là gì?",
+      "a": [
+        "nhạc sĩ",
+        "giáo dục, việc học hành",
+        "lịch sử",
+        "văn hóa"
+      ],
+      "c": 1,
+      "ex": "教育 (giáo dục)"
+    },
+    {
+      "word": "歴史",
+      "romaji": "れきし",
+      "translation": "lịch sử",
+      "q": "Từ 歴史 (れきし) có nghĩa là gì?",
+      "a": [
+        "giáo dục",
+        "lịch sử",
+        "văn hóa",
+        "xã hội"
+      ],
+      "c": 1,
+      "ex": "歴史 (lịch sử)"
+    },
+    {
+      "word": "文化",
+      "romaji": "ぶんか",
+      "translation": "văn hóa",
+      "q": "Từ 文化 (ぶんか) có nghĩa là gì?",
+      "a": [
+        "lịch sử",
+        "văn hóa",
+        "xã hội",
+        "pháp luật"
+      ],
+      "c": 1,
+      "ex": "文化 (văn hóa)"
+    },
+    {
+      "word": "社会",
+      "romaji": "しゃかい",
+      "translation": "xã hội",
+      "q": "Từ 社会 (しゃかい) có nghĩa là gì?",
+      "a": [
+        "văn hóa",
+        "xã hội",
+        "pháp luật",
+        "chiến tranh"
+      ],
+      "c": 1,
+      "ex": "社会 (xã hội)"
+    },
+    {
+      "word": "法律",
+      "romaji": "ほうりつ",
+      "translation": "pháp luật",
+      "q": "Từ 法律 (ほうりつ) có nghĩa là gì?",
+      "a": [
+        "xã hội",
+        "pháp luật",
+        "chiến tranh",
+        "hòa bình"
+      ],
+      "c": 1,
+      "ex": "法律 (pháp luật)"
+    },
+    {
+      "word": "戦争",
+      "romaji": "せんそう",
+      "translation": "chiến tranh",
+      "q": "Từ 戦争 (せんそう) có nghĩa là gì?",
+      "a": [
+        "pháp luật",
+        "chiến tranh",
+        "hòa bình",
+        "mục đích"
+      ],
+      "c": 1,
+      "ex": "戦争 (chiến tranh)"
+    },
+    {
+      "word": "平和",
+      "romaji": "へいわ",
+      "translation": "hòa bình",
+      "q": "Từ 平和 (へいわ) có nghĩa là gì?",
+      "a": [
+        "chiến tranh",
+        "hòa bình",
+        "mục đích",
+        "an toàn"
+      ],
+      "c": 1,
+      "ex": "平和 (bình hòa)"
+    },
+    {
+      "word": "目的",
+      "romaji": "もくてき",
+      "translation": "mục đích",
+      "q": "Từ 目的 (もくてき) có nghĩa là gì?",
+      "a": [
+        "hòa bình",
+        "mục đích",
+        "an toàn",
+        "luận văn"
+      ],
+      "c": 1,
+      "ex": "目的 (mục đích)"
+    },
+    {
+      "word": "安全",
+      "romaji": "あんぜん",
+      "translation": "an toàn",
+      "q": "Từ 安全 (あんぜん) có nghĩa là gì?",
+      "a": [
+        "mục đích",
+        "an toàn",
+        "luận văn",
+        "quan hệ"
+      ],
+      "c": 1,
+      "ex": "安全 (an toàn)"
+    },
+    {
+      "word": "論文",
+      "romaji": "ろんぶん",
+      "translation": "luận văn",
+      "q": "Từ 論文 (ろんぶん) có nghĩa là gì?",
+      "a": [
+        "an toàn",
+        "luận văn",
+        "quan hệ",
+        "mở nút chai"
+      ],
+      "c": 1,
+      "ex": "論文 (luận văn)"
+    },
+    {
+      "word": "関係",
+      "romaji": "かんけい",
+      "translation": "quan hệ",
+      "q": "Từ 関係 (かんけい) có nghĩa là gì?",
+      "a": [
+        "luận văn",
+        "quan hệ",
+        "mở nút chai",
+        "mở đồ hộp"
+      ],
+      "c": 1,
+      "ex": "関係 (quan hệ)"
+    },
+    {
+      "word": "栓抜き",
+      "romaji": "せんぬき",
+      "translation": "dụng cụ mở nút chai",
+      "q": "Từ 栓抜き (せんぬき) có nghĩa là gì?",
+      "a": [
+        "quan hệ",
+        "mở nút chai",
+        "mở đồ hộp",
+        "đồ hộp"
+      ],
+      "c": 1,
+      "ex": "栓抜 (thuyên bạt)"
+    },
+    {
+      "word": "缶切り",
+      "romaji": "かんきり",
+      "translation": "dụng cụ mở đồ hộp",
+      "q": "Từ 缶切り (かんきり) có nghĩa là gì?",
+      "a": [
+        "mở nút chai",
+        "dụng cụ mở đồ hộp",
+        "đồ hộp",
+        "nhiệt kế"
+      ],
+      "c": 1,
+      "ex": "缶切 (phẫu thiết)"
+    },
+    {
+      "word": "缶詰",
+      "romaji": "かんづめ",
+      "translation": "đồ hộp",
+      "q": "Từ 缶詰 (かんづめ) có nghĩa là gì?",
+      "a": [
+        "dụng cụ mở đồ hộp",
+        "đồ hộp",
+        "nhiệt kế",
+        "hai người"
+      ],
+      "c": 1,
+      "ex": "缶詰 (phẫu cất)"
+    },
+    {
+      "word": "体温計",
+      "romaji": "たいおんけい",
+      "translation": "nhiệt kế",
+      "q": "Từ 体温計 (たいおんけい) có nghĩa là gì?",
+      "a": [
+        "đồ hộp",
+        "nhiệt kế",
+        "hai người",
+        "trộn"
+      ],
+      "c": 1,
+      "ex": "体温 (thể ôn) + 計 (kế)"
+    },
+    {
+      "word": "二人",
+      "romaji": "ふたり",
+      "translation": "hai người",
+      "q": "Từ 二人 (ふたり) có nghĩa là gì?",
+      "a": [
+        "nhiệt kế",
+        "hai người",
+        "trộn",
+        "giáo dục"
+      ],
+      "c": 1,
+      "ex": "二 (nhị) + 人 (nhân)"
+    }
+  ]
+}

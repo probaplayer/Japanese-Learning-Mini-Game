@@ -1,0 +1,416 @@
+{
+  "id": "n4-l42-kanji-hanviet",
+  "name": "N4 Bài 42 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 42, hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-13T07:22:56.532Z",
+  "updatedAt": "2026-08-13T07:23:12.655Z",
+  "questions": [
+    {
+      "word": "包",
+      "romaji": "bao",
+      "translation": "gói (包みます)",
+      "q": "Chữ 包 trong từ 包みます mang âm Hán Việt nào?",
+      "a": [
+        "BAO",
+        "PHÍ",
+        "HỄN",
+        "KẾ"
+      ],
+      "c": 0,
+      "ex": "包みます: bọc, gói"
+    },
+    {
+      "word": "沸",
+      "romaji": "phí",
+      "translation": "sôi (沸かします)",
+      "q": "Chữ 沸 trong từ 沸かします mang âm Hán Việt nào?",
+      "a": [
+        "BAO",
+        "HỄN",
+        "KẾ",
+        "TOÁN"
+      ],
+      "c": 1,
+      "ex": "沸かします: đun sôi"
+    },
+    {
+      "word": "混",
+      "romaji": "hỗn",
+      "translation": "trộn lẫn (混ぜます)",
+      "q": "Chữ 混 trong từ 混ぜます mang âm Hán Việt nào?",
+      "a": [
+        "HỄN",
+        "KẾ",
+        "TOÁN",
+        "HẬU"
+      ],
+      "c": 0,
+      "ex": "混ぜます: trộn"
+    },
+    {
+      "word": "計",
+      "romaji": "kế",
+      "translation": "tính, kế (計算)",
+      "q": "Chữ 計 trong từ 計算 mang âm Hán Việt nào?",
+      "a": [
+        "KẾ",
+        "TOÁN",
+        "HẬU",
+        "BẠC"
+      ],
+      "c": 0,
+      "ex": "計算します: tính toán"
+    },
+    {
+      "word": "算",
+      "romaji": "toán",
+      "translation": "tính toán (計算)",
+      "q": "Chữ 算 trong từ 計算 mang âm Hán Việt nào?",
+      "a": [
+        "TOÁN",
+        "HẬU",
+        "BẠC",
+        "BIỆN"
+      ],
+      "c": 0,
+      "ex": "計算します: tính toán"
+    },
+    {
+      "word": "厚",
+      "romaji": "hậu",
+      "translation": "dày (厚い)",
+      "q": "Chữ 厚 mang âm Hán Việt nào?",
+      "a": [
+        "HẬU",
+        "BẠC",
+        "BIỆN",
+        "HỘ"
+      ],
+      "c": 0,
+      "ex": "厚い: dày"
+    },
+    {
+      "word": "薄",
+      "romaji": "bạc",
+      "translation": "mỏng (薄い)",
+      "q": "Chữ 薄 mang âm Hán Việt nào?",
+      "a": [
+        "BẠC",
+        "BIỆN",
+        "HỘ",
+        "SĨ"
+      ],
+      "c": 0,
+      "ex": "薄い: mỏng"
+    },
+    {
+      "word": "弁",
+      "romaji": "biện",
+      "translation": "biện hộ (弁護士)",
+      "q": "Chữ 弁 trong từ 弁護士 mang âm Hán Việt nào?",
+      "a": [
+        "BIỆN",
+        "HỘ",
+        "SĨ",
+        "ÂM"
+      ],
+      "c": 0,
+      "ex": "弁護士: luật sư"
+    },
+    {
+      "word": "護",
+      "romaji": "hộ",
+      "translation": "bảo vệ (弁護士)",
+      "q": "Chữ 護 trong từ 弁護士 mang âm Hán Việt nào?",
+      "a": [
+        "HỘ",
+        "SĨ",
+        "ÂM",
+        "NHẠC"
+      ],
+      "c": 0,
+      "ex": "弁護士: luật sư"
+    },
+    {
+      "word": "士",
+      "romaji": "sĩ",
+      "translation": "người có chuyên môn (弁護士)",
+      "q": "Chữ 士 trong từ 弁護士 mang âm Hán Việt nào?",
+      "a": [
+        "SĨ",
+        "ÂM",
+        "NHẠC",
+        "GIA"
+      ],
+      "c": 0,
+      "ex": "弁護士: luật sư"
+    },
+    {
+      "word": "音",
+      "romaji": "âm",
+      "translation": "âm thanh (音楽)",
+      "q": "Chữ 音 trong từ 音楽 mang âm Hán Việt nào?",
+      "a": [
+        "ÂM",
+        "NHẠC",
+        "GIA",
+        "GIÁO"
+      ],
+      "c": 0,
+      "ex": "音楽家: nhạc sĩ"
+    },
+    {
+      "word": "楽",
+      "romaji": "nhạc",
+      "translation": "âm nhạc (音楽)",
+      "q": "Chữ 楽 trong từ 音楽 mang âm Hán Việt nào?",
+      "a": [
+        "NHẠC",
+        "GIA",
+        "GIÁO",
+        "DỤC"
+      ],
+      "c": 0,
+      "ex": "音楽家: nhạc sĩ"
+    },
+    {
+      "word": "家",
+      "romaji": "gia",
+      "translation": "người chuyên môn (音楽家)",
+      "q": "Chữ 家 trong từ 音楽家 mang âm Hán Việt nào?",
+      "a": [
+        "GIA",
+        "GIÁO",
+        "DỤC",
+        "LỌCH"
+      ],
+      "c": 0,
+      "ex": "音楽家: nhạc sĩ"
+    },
+    {
+      "word": "教",
+      "romaji": "giáo",
+      "translation": "dạy (教育)",
+      "q": "Chữ 教 trong từ 教育 mang âm Hán Việt nào?",
+      "a": [
+        "GIÁO",
+        "DỤC",
+        "LỌCH",
+        "SỪ"
+      ],
+      "c": 0,
+      "ex": "教育: giáo dục"
+    },
+    {
+      "word": "育",
+      "romaji": "dục",
+      "translation": "nuôi dậy (教育)",
+      "q": "Chữ 育 trong từ 教育 mang âm Hán Việt nào?",
+      "a": [
+        "DỤC",
+        "LỌCH",
+        "SỪ",
+        "VĂN"
+      ],
+      "c": 0,
+      "ex": "教育: giáo dục"
+    },
+    {
+      "word": "歴",
+      "romaji": "lịch",
+      "translation": "lịch (歴史)",
+      "q": "Chữ 歴 trong từ 歴史 mang âm Hán Việt nào?",
+      "a": [
+        "LỌCH",
+        "SỪ",
+        "VĂN",
+        "HÓA"
+      ],
+      "c": 0,
+      "ex": "歴史: lịch sử"
+    },
+    {
+      "word": "史",
+      "romaji": "sử",
+      "translation": "sử (歴史)",
+      "q": "Chữ 史 trong từ 歴史 mang âm Hán Việt nào?",
+      "a": [
+        "SỪ",
+        "VĂN",
+        "HÓA",
+        "XÃ"
+      ],
+      "c": 0,
+      "ex": "歴史: lịch sử"
+    },
+    {
+      "word": "文",
+      "romaji": "văn",
+      "translation": "văn chương (文化)",
+      "q": "Chữ 文 trong từ 文化 mang âm Hán Việt nào?",
+      "a": [
+        "VĂN",
+        "HÓA",
+        "XÃ",
+        "HỘI"
+      ],
+      "c": 0,
+      "ex": "文化: văn hóa"
+    },
+    {
+      "word": "化",
+      "romaji": "hóa",
+      "translation": "biến hóa (文化)",
+      "q": "Chữ 化 trong từ 文化 mang âm Hán Việt nào?",
+      "a": [
+        "HÓA",
+        "XÃ",
+        "HỘI",
+        "PHÁP"
+      ],
+      "c": 0,
+      "ex": "文化: văn hóa"
+    },
+    {
+      "word": "社",
+      "romaji": "xã",
+      "translation": "cộng đồng (社会)",
+      "q": "Chữ 社 trong từ 社会 mang âm Hán Việt nào?",
+      "a": [
+        "XÃ",
+        "HỘI",
+        "PHÁP",
+        "LUẬT"
+      ],
+      "c": 0,
+      "ex": "社会: xã hội"
+    },
+    {
+      "word": "会",
+      "romaji": "hội",
+      "translation": "hội, tất cả (社会)",
+      "q": "Chữ 会 trong từ 社会 mang âm Hán Việt nào?",
+      "a": [
+        "HỘI",
+        "PHÁP",
+        "LUẬT",
+        "CHIẾN"
+      ],
+      "c": 0,
+      "ex": "社会: xã hội"
+    },
+    {
+      "word": "法",
+      "romaji": "pháp",
+      "translation": "phép (法律)",
+      "q": "Chữ 法 trong từ 法律 mang âm Hán Việt nào?",
+      "a": [
+        "PHÁP",
+        "LUẬT",
+        "CHIẾN",
+        "TRANH"
+      ],
+      "c": 0,
+      "ex": "法律: pháp luật"
+    },
+    {
+      "word": "律",
+      "romaji": "luật",
+      "translation": "luật lệ (法律)",
+      "q": "Chữ 律 trong từ 法律 mang âm Hán Việt nào?",
+      "a": [
+        "LUẬT",
+        "CHIẾN",
+        "TRANH",
+        "BÌNH"
+      ],
+      "c": 0,
+      "ex": "法律: pháp luật"
+    },
+    {
+      "word": "戦",
+      "romaji": "chiến",
+      "translation": "chiến đấu (戦争)",
+      "q": "Chữ 戦 trong từ 戦争 mang âm Hán Việt nào?",
+      "a": [
+        "CHIẾN",
+        "TRANH",
+        "BÌNH",
+        "HÒA"
+      ],
+      "c": 0,
+      "ex": "戦争: chiến tranh"
+    },
+    {
+      "word": "争",
+      "romaji": "tranh",
+      "translation": "tranh giành (戦争)",
+      "q": "Chữ 争 trong từ 戦争 mang âm Hán Việt nào?",
+      "a": [
+        "TRANH",
+        "BÌNH",
+        "HÒA",
+        "ĐÍCH"
+      ],
+      "c": 0,
+      "ex": "戦争: chiến tranh"
+    },
+    {
+      "word": "平",
+      "romaji": "bình",
+      "translation": "bình yên (平和)",
+      "q": "Chữ 平 trong từ 平和 mang âm Hán Việt nào?",
+      "a": [
+        "BÌNH",
+        "HÒA",
+        "ĐÍCH",
+        "MỤC"
+      ],
+      "c": 0,
+      "ex": "平和: hòa bình"
+    },
+    {
+      "word": "和",
+      "romaji": "hòa",
+      "translation": "hòa thuận (平和)",
+      "q": "Chữ 和 trong từ 平和 mang âm Hán Việt nào?",
+      "a": [
+        "HÒA",
+        "ĐÍCH",
+        "MỤC",
+        "AN"
+      ],
+      "c": 0,
+      "ex": "平和: hòa bình"
+    },
+    {
+      "word": "目",
+      "romaji": "mục",
+      "translation": "mắt, mục tiêu (目的)",
+      "q": "Chữ 目 trong từ 目的 mang âm Hán Việt nào?",
+      "a": [
+        "ĐÍCH",
+        "MỤC",
+        "AN",
+        "TOÀN"
+      ],
+      "c": 1,
+      "ex": "目的: mục đích"
+    },
+    {
+      "word": "的",
+      "romaji": "đích",
+      "translation": "đích, mục tiêu (目的)",
+      "q": "Chữ 的 trong từ 目的 mang âm Hán Việt nào?",
+      "a": [
+        "MỤC",
+        "AN",
+        "TOÀN",
+        "ĐÍCH"
+      ],
+      "c": 3,
+      "ex": "目的: mục đích"
+    }
+  ]
+}

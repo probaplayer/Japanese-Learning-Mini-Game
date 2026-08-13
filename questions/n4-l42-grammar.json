@@ -1,0 +1,137 @@
+{
+  "id": "n4-l42-grammar",
+  "name": "N4 Bài 42 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 42 Minna no Nihongo: Tổng hợp các cách nói biểu thị mục đích - Nの/Vために (vì lợi ích, để làm), V+のに (dùng để), は lượng từ tối thiểu.",
+  "category": "grammar",
+  "createdAt": "2026-08-13T07:24:00.009Z",
+  "updatedAt": "2026-08-13T07:24:00.009Z",
+  "questions": [
+    {
+      "sentence": "自分の店を持つために貯金しています",
+      "chunks": [
+        "自分",
+        "の店",
+        "を",
+        "持つために",
+        "貯金しています"
+      ],
+      "translation": "Tôi tiết kiệm tiền để mở cửa hàng riêng",
+      "ex": "Vる+ために: để làm gì (mục đích cần nặng lời hơn に)"
+    },
+    {
+      "sentence": "家族のために家を建てます",
+      "chunks": [
+        "家族",
+        "のために",
+        "家",
+        "を",
+        "建てます"
+      ],
+      "translation": "Tôi xây nhà vì gia đình",
+      "ex": "Nの+ために: vì lợi ích của N"
+    },
+    {
+      "sentence": "このはさみは花を切るのに使います",
+      "chunks": [
+        "このはさみ",
+        "は",
+        "花",
+        "を",
+        "切るのに",
+        "使います"
+      ],
+      "translation": "Cái kéo này dùng để cắt hoa",
+      "ex": "Vる+のに: dùng để làm gì (mục đích nhẹ hơn ために)"
+    },
+    {
+      "sentence": "このかばんは大きくて旅行に便利です",
+      "chunks": [
+        "このかばん",
+        "は",
+        "大きくて",
+        "旅行",
+        "に",
+        "便利です"
+      ],
+      "translation": "Cái túi này to nên tiện cho việc đi du lịch",
+      "ex": "Aいくて+便利です: nguyên nhân - kết quả tiện lợi"
+    },
+    {
+      "sentence": "電話番号を調べるのに時間がかかりました",
+      "chunks": [
+        "電話番号",
+        "を",
+        "調べるのに",
+        "時間",
+        "が",
+        "かかりました"
+      ],
+      "translation": "Tôi mất thời gian để tìm số điện thoại",
+      "ex": "Vる+のに+かかります: mất thời gian để làm gì"
+    },
+    {
+      "sentence": "日本で結婚式をするのに200万円はいります",
+      "chunks": [
+        "日本で",
+        "結婚式",
+        "を",
+        "するのに",
+        "200万円",
+        "は",
+        "いります"
+      ],
+      "translation": "Để làm đám cưới ở Nhật thì cần không dưới 2 triệu yên",
+      "ex": "Số lượng+は+いります: は nhấn mạnh mức độ tối thiểu ước lượng"
+    },
+    {
+      "sentence": "平和のために戦争をやめてください",
+      "chunks": [
+        "平和",
+        "のために",
+        "戦争",
+        "を",
+        "やめてください"
+      ],
+      "translation": "Xin hãy dừng chiến tranh vì hòa bình",
+      "ex": "Nの+ために: vì lợi ích của hòa bình"
+    },
+    {
+      "sentence": "この論文は経済を勉強するために書きました",
+      "chunks": [
+        "この論文",
+        "は",
+        "経済",
+        "を",
+        "勉強するために",
+        "書きました"
+      ],
+      "translation": "Luận văn này được viết để nghiên cứu kinh tế",
+      "ex": "Vる+ために: luận văn này được viết để nghiên cứu kinh tế"
+    },
+    {
+      "sentence": "安全のためにヘルメットをかぶってください",
+      "chunks": [
+        "安全",
+        "のために",
+        "ヘルメット",
+        "を",
+        "かぶってください"
+      ],
+      "translation": "Xin hãy đội mũ bảo hiểm vì an toàn",
+      "ex": "Nの+ために: vì lợi ích của an toàn"
+    },
+    {
+      "sentence": "日本語を勉強するために日本へ来ました",
+      "chunks": [
+        "日本語",
+        "を",
+        "勉強するために",
+        "日本",
+        "へ",
+        "来ました"
+      ],
+      "translation": "Tôi đã đến Nhật để học tiếng Nhật",
+      "ex": "Vる+ために: đến để làm gì"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "id": "n4-l36-grammar",
+  "name": "N4 Bài 36 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 36 Minna no Nihongo: ~ように (để sao cho), ~ようにします (cố gắng), ~ようにしてください, ~ようになりました (đã trở nên), ~V可能形なくなりました, ~とか~とか.",
+  "category": "grammar",
+  "createdAt": "2026-08-13T06:26:19.532Z",
+  "updatedAt": "2026-08-13T06:26:44.279Z",
+  "questions": [
+    {
+      "sentence": "新聞が読めるように漢字を勉強します",
+      "chunks": [
+        "新聞",
+        "が",
+        "読めるように",
+        "漢字",
+        "を",
+        "勉強します"
+      ],
+      "translation": "Để đọc được báo, tôi học chữ Hán",
+      "ex": "V可能形+ように, V2: để làm V1, thì làm V2 (biểu thị mục tiêu)"
+    },
+    {
+      "sentence": "風をひかないようにセーターを着ます",
+      "chunks": [
+        "風",
+        "を",
+        "ひかないように",
+        "セーター",
+        "を",
+        "着ます"
+      ],
+      "translation": "Để không bị cảm, tôi mặc áo len",
+      "ex": "Vない形+ように, V2: để không làm V1, thì làm V2"
+    },
+    {
+      "sentence": "野菜は体に良いですから食べるようにします",
+      "chunks": [
+        "野菜",
+        "は",
+        "体に良いですから",
+        "食べるようにします"
+      ],
+      "translation": "Vì rau tốt cho cơ thể nên tôi cố gắng ăn",
+      "ex": "Vる+ようにします: cố gắng duy trì việc làm gì"
+    },
+    {
+      "sentence": "最近吸わないようにしています",
+      "chunks": [
+        "最近",
+        "吸わないようにしています"
+      ],
+      "translation": "Gần đây tôi cố gắng không hút thuốc",
+      "ex": "Vない+ようにしています: duy trì thói quen không làm gì"
+    },
+    {
+      "sentence": "毎日運動するようにしてください",
+      "chunks": [
+        "毎日",
+        "運動するようにしてください"
+      ],
+      "translation": "Xin hãy cố gắng vận động mỗi ngày",
+      "ex": "Vる+ようにしてください: xin hãy cố gắng làm gì, nhẹ hơn てください"
+    },
+    {
+      "sentence": "絶対時間に遅れないようにしてください",
+      "chunks": [
+        "絶対",
+        "時間",
+        "に",
+        "遅れないようにしてください"
+      ],
+      "translation": "Xin hãy cố gắng tuyệt đối không đến muộn",
+      "ex": "Vない+ようにしてください: xin hãy cố gắng không làm gì"
+    },
+    {
+      "sentence": "野菜を食べるようになりました",
+      "chunks": [
+        "野菜",
+        "を",
+        "食べるようになりました"
+      ],
+      "translation": "Tôi đã trở nên ăn được rau",
+      "ex": "Vる+ようになりました: đã trở nên làm gì (thay đổi, thói quen mới)"
+    },
+    {
+      "sentence": "たばこを吸わないようになりました",
+      "chunks": [
+        "たばこ",
+        "を",
+        "吸わないようになりました"
+      ],
+      "translation": "Tôi đã trở nên không hút thuốc nữa",
+      "ex": "Vない+ようになりました: đã trở nên không làm gì nỹa"
+    },
+    {
+      "sentence": "日本語の新聞が読めるようになりました",
+      "chunks": [
+        "日本語",
+        "の新聞",
+        "が",
+        "読めるようになりました"
+      ],
+      "translation": "Tôi đã có thể đọc được báo tiếng Nhật",
+      "ex": "V可能形+るようになりました: đã trở nên có thể làm gì sau quá trình luyện tập"
+    },
+    {
+      "sentence": "その服が着られなくなりました",
+      "chunks": [
+        "その服",
+        "が",
+        "着られなくなりました"
+      ],
+      "translation": "Tôi đã không thể mặc được bộ đồ đó nữa",
+      "ex": "V可能形ない+くなりました: đã trở nên không thể làm gì nỹa (trước đây làm được)"
+    }
+  ]
+}

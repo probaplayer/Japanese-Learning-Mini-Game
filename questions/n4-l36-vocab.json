@@ -1,0 +1,346 @@
+{
+  "id": "n4-l36-vocab",
+  "name": "N4 Bài 36 - Từ vựng (nghĩa)",
+  "description": "Từ vựng Minna no Nihongo Bài 36 (N4). Câu hỏi hỏi nghĩa tiếng Việt của từ.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-13T06:21:53.126Z",
+  "updatedAt": "2026-08-13T06:22:21.040Z",
+  "questions": [
+    {
+      "word": "届きます",
+      "romaji": "とどきます",
+      "translation": "được gửi đến, được chuyển đến",
+      "q": "Từ 届きます (とどきます) trong câu về hành lý có nghĩa là gì?",
+      "a": [
+        "được gửi đến, được chuyển đến",
+        "tham gia (trận đấu)",
+        "đánh (máy chữ)",
+        "tiết kiệm tiền"
+      ],
+      "c": 0,
+      "ex": "届 (giới) - đạt đến"
+    },
+    {
+      "word": "出ます",
+      "romaji": "でます",
+      "translation": "tham gia, tham dự (trận đấu)",
+      "q": "Từ 出ます (でます) trong câu về trận đấu có nghĩa là gì?",
+      "a": [
+        "được gửi đến",
+        "tham gia, tham dự (trận đấu)",
+        "đánh (máy chữ)",
+        "béo lên"
+      ],
+      "c": 1,
+      "ex": "出 (xuất) - ra, tham gia"
+    },
+    {
+      "word": "打ちます",
+      "romaji": "うちます",
+      "translation": "đánh (máy chữ)",
+      "q": "Từ 打ちます (うちます) có nghĩa là gì?",
+      "a": [
+        "tham gia",
+        "đánh (máy chữ)",
+        "béo lên",
+        "quá, qua"
+      ],
+      "c": 1,
+      "ex": "打 (đả) - đánh"
+    },
+    {
+      "word": "貯金します",
+      "romaji": "ちょきんします",
+      "translation": "tiết kiệm tiền, để dành tiền",
+      "q": "Từ 貯金します (ちょきんします) có nghĩa là gì?",
+      "a": [
+        "đánh máy",
+        "tiết kiệm tiền, để dành tiền",
+        "béo lên",
+        "quá, qua"
+      ],
+      "c": 1,
+      "ex": "貯 (trữ) + 金 (kim)"
+    },
+    {
+      "word": "太ります",
+      "romaji": "ふとります",
+      "translation": "béo lên, tăng cân",
+      "q": "Từ 太ります (ふとります) có nghĩa là gì?",
+      "a": [
+        "tiết kiệm",
+        "béo lên, tăng cân",
+        "quá, qua",
+        "làm quen"
+      ],
+      "c": 1,
+      "ex": "太 (thái) - to"
+    },
+    {
+      "word": "過ぎます",
+      "romaji": "すぎます",
+      "translation": "quá, qua (7 giờ)",
+      "q": "Từ 過きます (すぎます) trong câu về giờ giấc có nghĩa là gì?",
+      "a": [
+        "béo lên",
+        "quá, qua (7 giờ)",
+        "làm quen",
+        "cứng"
+      ],
+      "c": 1,
+      "ex": "過 (quá) - quá, vượt qua"
+    },
+    {
+      "word": "慣れます",
+      "romaji": "なれます",
+      "translation": "làm quen với (tập quán)",
+      "q": "Từ 慣れます (なれます) trong câu về tập quán có nghĩa là gì?",
+      "a": [
+        "quá giờ",
+        "làm quen với (tập quán)",
+        "cặp, cứng",
+        "mềm"
+      ],
+      "c": 1,
+      "ex": "慣 (quán) - thói quen"
+    },
+    {
+      "word": "硬い",
+      "romaji": "かたい",
+      "translation": "cặp, cứng",
+      "q": "Từ 硬い (かたい) có nghĩa là gì?",
+      "a": [
+        "làm quen",
+        "cặp, cứng",
+        "mềm, mềm dẹo",
+        "nhà máy"
+      ],
+      "c": 1,
+      "ex": "硬 (ngạnh) - cứng"
+    },
+    {
+      "word": "軟らかい",
+      "romaji": "やわらかい",
+      "translation": "mềm, mềm dẹo",
+      "q": "Từ 軟らかい (やわらかい) có nghĩa là gì?",
+      "a": [
+        "cặp, cứng",
+        "mềm, mềm dẹo",
+        "nhà máy",
+        "kiếm đạo"
+      ],
+      "c": 1,
+      "ex": "軟 (nhuyễn) - mềm"
+    },
+    {
+      "word": "工場",
+      "romaji": "こうじょう",
+      "translation": "nhà máy, phân xưởng",
+      "q": "Từ 工場 (こうじょう) có nghĩa là gì?",
+      "a": [
+        "mềm",
+        "nhà máy, phân xưởng",
+        "kiếm đạo",
+        "hàng tuần"
+      ],
+      "c": 1,
+      "ex": "工 (công) + 場 (trường)"
+    },
+    {
+      "word": "剣道",
+      "romaji": "けんどう",
+      "translation": "kiếm đạo",
+      "q": "Từ 剣道 (けんどう) có nghĩa là gì?",
+      "a": [
+        "nhà máy",
+        "kiếm đạo",
+        "hàng tuần",
+        "hàng tháng"
+      ],
+      "c": 1,
+      "ex": "剣 (kiếm) + 道 (đạo)"
+    },
+    {
+      "word": "毎週",
+      "romaji": "まいしゅう",
+      "translation": "hàng tuần",
+      "q": "Từ 毎週 (まいしゅう) có nghĩa là gì?",
+      "a": [
+        "kiếm đạo",
+        "hàng tuần",
+        "hàng tháng",
+        "hàng năm"
+      ],
+      "c": 1,
+      "ex": "毎 (mỗi) + 週 (chu)"
+    },
+    {
+      "word": "毎月",
+      "romaji": "まいつき",
+      "translation": "hàng tháng",
+      "q": "Từ 毎月 (まいつき) có nghĩa là gì?",
+      "a": [
+        "hàng tuần",
+        "hàng tháng",
+        "hàng năm",
+        "nhất định"
+      ],
+      "c": 1,
+      "ex": "毎 (mỗi) + 月 (nguyệt)"
+    },
+    {
+      "word": "毎年",
+      "romaji": "まいとし",
+      "translation": "hàng năm",
+      "q": "Từ 毎年 (まいとし) có nghĩa là gì?",
+      "a": [
+        "hàng tháng",
+        "hàng năm",
+        "nhất định",
+        "tuyệt đối"
+      ],
+      "c": 1,
+      "ex": "毎 (mỗi) + 年 (niên)"
+    },
+    {
+      "word": "必ず",
+      "romaji": "かならず",
+      "translation": "nhất định, chắc chắn",
+      "q": "Từ 必ず (かならず) có nghĩa là gì?",
+      "a": [
+        "hàng năm",
+        "nhất định, chắc chắn",
+        "tuyệt đối",
+        "giỏi, khéo"
+      ],
+      "c": 1,
+      "ex": "必 (tất) - nhất định"
+    },
+    {
+      "word": "絶対に",
+      "romaji": "ぜったいに",
+      "translation": "tuyệt đối, nhất định",
+      "q": "Từ 絶対に (ぜったいに) có nghĩa là gì?",
+      "a": [
+        "nhất định",
+        "tuyệt đối, nhất định",
+        "giỏi, khéo",
+        "đặc biệt"
+      ],
+      "c": 1,
+      "ex": "絶 (tuyệt) + 対 (đối)"
+    },
+    {
+      "word": "上手に",
+      "romaji": "じょうずに",
+      "translation": "giỏi, khéo",
+      "q": "Từ 上手に (じょうずに) có nghĩa là gì?",
+      "a": [
+        "tuyệt đối",
+        "giỏi, khéo",
+        "đặc biệt",
+        "bơi"
+      ],
+      "c": 1,
+      "ex": "上手 (thượng thủ) - giỏi"
+    },
+    {
+      "word": "特別な",
+      "romaji": "とくべつ",
+      "translation": "đặc biệt",
+      "q": "Từ 特別[な] (とくべつ) có nghĩa là gì?",
+      "a": [
+        "giỏi, khéo",
+        "đặc biệt",
+        "bơi, môn bơi",
+        "tâm trạng"
+      ],
+      "c": 1,
+      "ex": "特 (đặc) + 別 (biệt)"
+    },
+    {
+      "word": "水泳",
+      "romaji": "すいえい",
+      "translation": "bơi, môn bơi",
+      "q": "Từ 水泳 (すいえい) có nghĩa là gì?",
+      "a": [
+        "đặc biệt",
+        "bơi, môn bơi",
+        "tâm trạng",
+        "phương tiện đi lại"
+      ],
+      "c": 1,
+      "ex": "水 (thủy) + 泳 (vĩnh)"
+    },
+    {
+      "word": "気持ち",
+      "romaji": "きもち",
+      "translation": "tâm trạng, cảm giác",
+      "q": "Từ 気持ち (きもち) có nghĩa là gì?",
+      "a": [
+        "bơi",
+        "tâm trạng, cảm giác",
+        "phương tiện đi lại",
+        "lịch sử"
+      ],
+      "c": 1,
+      "ex": "気 (khí) + 持 (trì)"
+    },
+    {
+      "word": "乗り物",
+      "romaji": "のりもの",
+      "translation": "phương tiện đi lại",
+      "q": "Từ 乗り物 (のりもの) có nghĩa là gì?",
+      "a": [
+        "tâm trạng",
+        "phương tiện đi lại",
+        "lịch sử",
+        "an toàn"
+      ],
+      "c": 1,
+      "ex": "乗 (thừa) + 物 (vật)"
+    },
+    {
+      "word": "歴史",
+      "romaji": "れきし",
+      "translation": "lịch sử",
+      "q": "Từ 歴史 (れきし) có nghĩa là gì?",
+      "a": [
+        "phương tiện đi lại",
+        "lịch sử",
+        "an toàn",
+        "địa cầu"
+      ],
+      "c": 1,
+      "ex": "歴 (lịch) + 史 (sử)"
+    },
+    {
+      "word": "安全",
+      "romaji": "あんぜん",
+      "translation": "an toàn",
+      "q": "Từ 安全 (あんぜん) có nghĩa là gì?",
+      "a": [
+        "lịch sử",
+        "an toàn",
+        "địa cầu, trái đất",
+        "xa"
+      ],
+      "c": 1,
+      "ex": "安 (an) + 全 (toàn)"
+    },
+    {
+      "word": "地球",
+      "romaji": "ちきゅう",
+      "translation": "địa cầu, trái đất",
+      "q": "Từ 地球 (ちきゅう) có nghĩa là gì?",
+      "a": [
+        "an toàn",
+        "địa cầu, trái đất",
+        "xa",
+        "vũ trụ"
+      ],
+      "c": 1,
+      "ex": "地 (địa) + 球 (cầu)"
+    }
+  ]
+}

@@ -1,0 +1,388 @@
+{
+  "id": "n4-l36-kanji-hanviet",
+  "name": "N4 Bài 36 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 36, hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-13T06:24:14.068Z",
+  "updatedAt": "2026-08-13T06:25:37.364Z",
+  "questions": [
+    {
+      "word": "届",
+      "romaji": "giới",
+      "translation": "đạt đến (届きます)",
+      "q": "Chữ 届 trong từ 届きます mang âm Hán Việt nào?",
+      "a": [
+        "GIỚI",
+        "XUẤT",
+        "ĐẢ",
+        "TRỮ"
+      ],
+      "c": 0,
+      "ex": "届きます: được gửi đến"
+    },
+    {
+      "word": "出",
+      "romaji": "xuất",
+      "translation": "ra, tham gia (出ます)",
+      "q": "Chữ 出 trong từ 出ます mang âm Hán Việt nào?",
+      "a": [
+        "GIỚI",
+        "ĐẢ",
+        "TRỮ",
+        "XUẤT"
+      ],
+      "c": 3,
+      "ex": "出ます: tham gia"
+    },
+    {
+      "word": "打",
+      "romaji": "đả",
+      "translation": "đánh (打ちます)",
+      "q": "Chữ 打 trong từ 打ちます mang âm Hán Việt nào?",
+      "a": [
+        "TRỮ",
+        "XUẤT",
+        "THÁI",
+        "ĐẢ"
+      ],
+      "c": 3,
+      "ex": "打ちます: đánh máy"
+    },
+    {
+      "word": "貯",
+      "romaji": "trữ",
+      "translation": "trữ, cất (貯金)",
+      "q": "Chữ 貯 trong từ 貯金 mang âm Hán Việt nào?",
+      "a": [
+        "XUẤT",
+        "THÁI",
+        "TRỮ",
+        "KIM"
+      ],
+      "c": 2,
+      "ex": "貯金します: tiết kiệm"
+    },
+    {
+      "word": "金",
+      "romaji": "kim",
+      "translation": "tiền, vàng (貯金)",
+      "q": "Chữ 金 trong từ 貯金 mang âm Hán Việt nào?",
+      "a": [
+        "THÁI",
+        "TRỮ",
+        "KIM",
+        "QUÁ"
+      ],
+      "c": 2,
+      "ex": "貯金します: tiết kiệm"
+    },
+    {
+      "word": "太",
+      "romaji": "thái",
+      "translation": "to (太ります)",
+      "q": "Chữ 太 trong từ 太ります mang âm Hán Việt nào?",
+      "a": [
+        "TRỮ",
+        "KIM",
+        "QUÁ",
+        "QUÁN"
+      ],
+      "c": 0,
+      "ex": "太ります: béo lên"
+    },
+    {
+      "word": "過",
+      "romaji": "quá",
+      "translation": "quá, vượt qua (過ぎます)",
+      "q": "Chữ 過 trong từ 過ぎます mang âm Hán Việt nào?",
+      "a": [
+        "KIM",
+        "QUÁ",
+        "QUÁN",
+        "NGẠNH"
+      ],
+      "c": 1,
+      "ex": "過ぎます: quá, qua"
+    },
+    {
+      "word": "慣",
+      "romaji": "quán",
+      "translation": "thói quen (慣れます)",
+      "q": "Chữ 慣 trong từ 慣れます mang âm Hán Việt nào?",
+      "a": [
+        "QUÁ",
+        "QUÁN",
+        "NGẠNH",
+        "NHUYỄN"
+      ],
+      "c": 1,
+      "ex": "慣れます: làm quen"
+    },
+    {
+      "word": "硬",
+      "romaji": "ngạnh",
+      "translation": "cứng (硬い)",
+      "q": "Chữ 硬 trong từ 硬い mang âm Hán Việt nào?",
+      "a": [
+        "QUÁN",
+        "NGẠNH",
+        "NHUYỄN",
+        "CÔNG"
+      ],
+      "c": 1,
+      "ex": "硬い: cứng"
+    },
+    {
+      "word": "軟",
+      "romaji": "nhuyễn",
+      "translation": "mềm (軟らかい)",
+      "q": "Chữ 軟 trong từ 軟らかい mang âm Hán Việt nào?",
+      "a": [
+        "NHUYỄN",
+        "CÔNG",
+        "TRƯỜNG",
+        "KIẾM"
+      ],
+      "c": 1,
+      "ex": "軟らかい: mềm"
+    },
+    {
+      "word": "工",
+      "romaji": "công",
+      "translation": "công việc (工場)",
+      "q": "Chữ 工 trong từ 工場 mang âm Hán Việt nào?",
+      "a": [
+        "CÔNG",
+        "TRƯỜNG",
+        "KIẾM",
+        "ĐẠO"
+      ],
+      "c": 1,
+      "ex": "工場: nhà máy"
+    },
+    {
+      "word": "場",
+      "romaji": "trường",
+      "translation": "nơi, xưởng (工場)",
+      "q": "Chữ 場 trong từ 工場 mang âm Hán Việt nào?",
+      "a": [
+        "TRƯỜNG",
+        "KIẾM",
+        "ĐẠO",
+        "MỖI"
+      ],
+      "c": 1,
+      "ex": "工場: nhà máy"
+    },
+    {
+      "word": "剣",
+      "romaji": "kiếm",
+      "translation": "kiếm (剣道)",
+      "q": "Chữ 剣 trong từ 剣道 mang âm Hán Việt nào?",
+      "a": [
+        "TRƯỜNG",
+        "KIẾM",
+        "ĐẠO",
+        "MỖI"
+      ],
+      "c": 1,
+      "ex": "剣道: kiếm đạo"
+    },
+    {
+      "word": "道",
+      "romaji": "đạo",
+      "translation": "đạo (剣道)",
+      "q": "Chữ 道 trong từ 剣道 mang âm Hán Việt nào?",
+      "a": [
+        "KIẾM",
+        "ĐẠO",
+        "MỖI",
+        "CHU"
+      ],
+      "c": 1,
+      "ex": "剣道: kiếm đạo"
+    },
+    {
+      "word": "毎",
+      "romaji": "mỗi",
+      "translation": "mỗi (毎週)",
+      "q": "Chữ 毎 trong từ 毎週 mang âm Hán Việt nào?",
+      "a": [
+        "ĐẠO",
+        "MỖI",
+        "CHU",
+        "NGUYỆT"
+      ],
+      "c": 1,
+      "ex": "毎週: hàng tuần"
+    },
+    {
+      "word": "週",
+      "romaji": "chu",
+      "translation": "tuần (毎週)",
+      "q": "Chữ 週 trong từ 毎週 mang âm Hán Việt nào?",
+      "a": [
+        "MỖI",
+        "CHU",
+        "NGUYỆT",
+        "NIÊN"
+      ],
+      "c": 1,
+      "ex": "毎週: hàng tuần"
+    },
+    {
+      "word": "月",
+      "romaji": "nguyệt",
+      "translation": "tháng (毎月)",
+      "q": "Chữ 月 trong từ 毎月 mang âm Hán Việt nào?",
+      "a": [
+        "CHU",
+        "NGUYỆT",
+        "NIÊN",
+        "TẤT"
+      ],
+      "c": 1,
+      "ex": "毎月: hàng tháng"
+    },
+    {
+      "word": "年",
+      "romaji": "niên",
+      "translation": "năm (毎年)",
+      "q": "Chữ 年 trong từ 毎年 mang âm Hán Việt nào?",
+      "a": [
+        "NGUYỆT",
+        "NIÊN",
+        "TẤT",
+        "TUYỆT"
+      ],
+      "c": 1,
+      "ex": "毎年: hàng năm"
+    },
+    {
+      "word": "必",
+      "romaji": "tất",
+      "translation": "nhất định (必ず)",
+      "q": "Chữ 必 mang âm Hán Việt nào?",
+      "a": [
+        "NIÊN",
+        "TẤT",
+        "TUYỆT",
+        "ĐỐI"
+      ],
+      "c": 1,
+      "ex": "必ず: nhất định"
+    },
+    {
+      "word": "絶",
+      "romaji": "tuyệt",
+      "translation": "tuyệt đối (絶対)",
+      "q": "Chữ 絶 trong từ 絶対 mang âm Hán Việt nào?",
+      "a": [
+        "TẤT",
+        "TUYỆT",
+        "ĐỐI",
+        "THỌC"
+      ],
+      "c": 1,
+      "ex": "絶対に: tuyệt đối"
+    },
+    {
+      "word": "対",
+      "romaji": "đối",
+      "translation": "đối, đắi (絶対)",
+      "q": "Chữ 対 trong từ 絶対 mang âm Hán Việt nào?",
+      "a": [
+        "TUYỆT",
+        "ĐỐI",
+        "THẮNG",
+        "THỦ"
+      ],
+      "c": 1,
+      "ex": "絶対に: tuyệt đối"
+    },
+    {
+      "word": "手",
+      "romaji": "thủ",
+      "translation": "tay, kỹ năng (上手)",
+      "q": "Chữ 手 trong từ 上手 mang âm Hán Việt nào?",
+      "a": [
+        "ĐỐI",
+        "THẮNG",
+        "THỦ",
+        "ĐẶC"
+      ],
+      "c": 1,
+      "ex": "上手: giỏi, khéo"
+    },
+    {
+      "word": "特",
+      "romaji": "đặc",
+      "translation": "đặc biệt (特別)",
+      "q": "Chữ 特 trong từ 特別 mang âm Hán Việt nào?",
+      "a": [
+        "THắNG",
+        "ĐẶC",
+        "BIỆT",
+        "THỦY"
+      ],
+      "c": 1,
+      "ex": "特別: đặc biệt"
+    },
+    {
+      "word": "別",
+      "romaji": "biệt",
+      "translation": "khác biệt (特別)",
+      "q": "Chữ 別 trong từ 特別 mang âm Hán Việt nào?",
+      "a": [
+        "ĐẶC",
+        "BIỆT",
+        "THỦY",
+        "VĨNH"
+      ],
+      "c": 1,
+      "ex": "特別: đặc biệt"
+    },
+    {
+      "word": "水",
+      "romaji": "thủy",
+      "translation": "nước (水泳)",
+      "q": "Chữ 水 trong từ 水泳 mang âm Hán Việt nào?",
+      "a": [
+        "BIỆT",
+        "THỦY",
+        "VĨNH",
+        "LỊCH"
+      ],
+      "c": 1,
+      "ex": "水泳: bơi"
+    },
+    {
+      "word": "泳",
+      "romaji": "vĩnh",
+      "translation": "bơi (水泳)",
+      "q": "Chữ 泳 trong từ 水泳 mang âm Hán Việt nào?",
+      "a": [
+        "THỦY",
+        "VĨNH",
+        "LỊCH",
+        "SỬ"
+      ],
+      "c": 1,
+      "ex": "水泳: bơi"
+    },
+    {
+      "word": "歴",
+      "romaji": "lịch",
+      "translation": "lịch (歴史)",
+      "q": "Chữ 歴 trong từ 歴史 mang âm Hán Việt nào?",
+      "a": [
+        "VĨNH",
+        "LỊCH",
+        "SỬ",
+        "AN"
+      ],
+      "c": 1,
+      "ex": "歴史: lịch sử"
+    }
+  ]
+}

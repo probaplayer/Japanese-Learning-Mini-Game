@@ -1,0 +1,126 @@
+{
+  "id": "n4-l40-grammar",
+  "name": "N4 Bài 40 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 40 Minna no Nihongo: Lồng câu nghi vấn có từ hỏi (V/A/N+疑問詞+か) và không có từ hỏi (~かどうか) vào trong câu.",
+  "category": "grammar",
+  "createdAt": "2026-08-13T07:06:32.718Z",
+  "updatedAt": "2026-08-13T07:06:46.077Z",
+  "questions": [
+    {
+      "sentence": "JL107便は何時に到着するか調べてください",
+      "chunks": [
+        "JL107便",
+        "は",
+        "何時",
+        "に",
+        "到着するか",
+        "調べてください"
+      ],
+      "translation": "Hãy kiểm tra xem chuyến bay JL107 đến lúc mấy giờ",
+      "ex": "V+疑問詞+か: lồng câu nghi vấn có từ hỏi vào trong câu"
+    },
+    {
+      "sentence": "わたしたちがはじめて会ったのはいつか覚えていますか",
+      "chunks": [
+        "わたしたち",
+        "が",
+        "はじめて会ったのは",
+        "いつか",
+        "覚えていますか"
+      ],
+      "translation": "Bạn có nhớ lần đầu chúng ta gặp nhau là khi nào không?",
+      "ex": "のは+いつか: lồng câu nghi vấn thời gian vào câu hỏi"
+    },
+    {
+      "sentence": "その話は本当かどうかわかりません",
+      "chunks": [
+        "その話",
+        "は",
+        "本当かどうか",
+        "わかりません"
+      ],
+      "translation": "Tôi không biết chuyện đó có thật hay không",
+      "ex": "N+かどうか: lồng câu nghi vấn không có từ hỏi (đúng/sai, có/không) vào câu"
+    },
+    {
+      "sentence": "間違いがないかどうか調べてください",
+      "chunks": [
+        "間違い",
+        "が",
+        "ないかどうか",
+        "調べてください"
+      ],
+      "translation": "Hãy kiểm tra xem có sai sót gì không",
+      "ex": "A/V+かどうか: lồng câu nghi vấn có/không vào câu"
+    },
+    {
+      "sentence": "どちらのサイズが合うか確かめてください",
+      "chunks": [
+        "どちらのサイズ",
+        "が",
+        "合うか",
+        "確かめてください"
+      ],
+      "translation": "Hãy xác nhận xem cỡ nào vừa",
+      "ex": "V+か: lồng câu nghi vấn hỏi cái nào vào câu"
+    },
+    {
+      "sentence": "電車は何時に出発するか教えてください",
+      "chunks": [
+        "電車",
+        "は",
+        "何時",
+        "に",
+        "出発するか",
+        "教えてください"
+      ],
+      "translation": "Hãy cho tôi biết mấy giờ tàu khởi hành",
+      "ex": "V+何時+か: hỏi thời gian lồng vào câu nhờ"
+    },
+    {
+      "sentence": "荷物の重さがどれくらいか測ってください",
+      "chunks": [
+        "荷物の重さ",
+        "が",
+        "どれくらいか",
+        "測ってください"
+      ],
+      "translation": "Hãy đo xem hành lý nặng bao nhiêu",
+      "ex": "N+どれくらい+か: hỏi mức độ lồng vào câu nhờ"
+    },
+    {
+      "sentence": "危険かどうか確かめてから行きます",
+      "chunks": [
+        "危険かどうか",
+        "確かめてから",
+        "行きます"
+      ],
+      "translation": "Tôi sẽ xác nhận xem có nguy hiểm không rồi mới đi",
+      "ex": "Aな+かどうか: lồng câu hỏi có/không nguy hiểm vào câu"
+    },
+    {
+      "sentence": "誰がその事件を起こしたかまだわかりません",
+      "chunks": [
+        "誰",
+        "が",
+        "その事件",
+        "を",
+        "起こしたか",
+        "まだわかりません"
+      ],
+      "translation": "Vẫn chưa biết ai đã gây ra vụ án đó",
+      "ex": "誰+が+V+か: hỏi chủ thể lồng vào câu chưa biết"
+    },
+    {
+      "sentence": "成績がどうだったか心配です",
+      "chunks": [
+        "成績",
+        "が",
+        "どうだったか",
+        "心配です"
+      ],
+      "translation": "Tôi lo lắng không biết kết quả thế nào",
+      "ex": "N+どう+だったか: hỏi tình hình quá khữ lồng vào câu lo lắng"
+    }
+  ]
+}

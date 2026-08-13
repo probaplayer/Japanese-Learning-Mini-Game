@@ -1,0 +1,332 @@
+{
+  "id": "n4-l40-vocab",
+  "name": "N4 Bài 40 - Từ vựng (nghĩa)",
+  "description": "Từ vựng Minna no Nihongo Bài 40 (N4). Câu hỏi hỏi nghĩa tiếng Việt của từ.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-13T07:02:39.466Z",
+  "updatedAt": "2026-08-13T07:03:49.237Z",
+  "questions": [
+    {
+      "word": "数えます",
+      "romaji": "かぞえます",
+      "translation": "đếm",
+      "q": "Từ 数えます (かぞえます) có nghĩa là gì?",
+      "a": [
+        "đếm",
+        "đo, cân",
+        "xác nhận",
+        "vừa, hợp"
+      ],
+      "c": 0,
+      "ex": "数 (số) - đếm"
+    },
+    {
+      "word": "測ります",
+      "romaji": "はかります",
+      "translation": "đo, cân",
+      "q": "Từ 測ります (はかります) có nghĩa là gì?",
+      "a": [
+        "đếm",
+        "đo, cân",
+        "xác nhận",
+        "xuất phát"
+      ],
+      "c": 1,
+      "ex": "測 (trắc) / 量 (lượng) - đo"
+    },
+    {
+      "word": "確かめます",
+      "romaji": "たしかめます",
+      "translation": "xác nhận",
+      "q": "Từ 確かめます (たしかめます) có nghĩa là gì?",
+      "a": [
+        "đo, cân",
+        "xác nhận",
+        "vừa, hợp",
+        "xuất phát"
+      ],
+      "c": 1,
+      "ex": "確 (xác) - xác nhận"
+    },
+    {
+      "word": "合います",
+      "romaji": "あいます",
+      "translation": "vừa, hợp (kích thước)",
+      "q": "Từ 合います (あいます) trong câu về kích cỡ có nghĩa là gì?",
+      "a": [
+        "xác nhận",
+        "vừa, hợp (kích thước)",
+        "xuất phát",
+        "đến nơi"
+      ],
+      "c": 1,
+      "ex": "合 (hợp) - vừa"
+    },
+    {
+      "word": "出発します",
+      "romaji": "しゅっぱつします",
+      "translation": "xuất phát, khởi hành",
+      "q": "Từ 出発します (しゅっばつします) có nghĩa là gì?",
+      "a": [
+        "vừa, hợp",
+        "xuất phát, khởi hành",
+        "đến nơi",
+        "say"
+      ],
+      "c": 1,
+      "ex": "出発 (xuất phát)"
+    },
+    {
+      "word": "到着します",
+      "romaji": "とうちゃくします",
+      "translation": "đến, đến nơi",
+      "q": "Từ 到着します (とうちゃくします) có nghĩa là gì?",
+      "a": [
+        "xuất phát",
+        "đến, đến nơi",
+        "say",
+        "nguy hiểm"
+      ],
+      "c": 1,
+      "ex": "到着 (đáo trước)"
+    },
+    {
+      "word": "酔います",
+      "romaji": "よいます",
+      "translation": "say",
+      "q": "Từ 酔います (よいます) có nghĩa là gì?",
+      "a": [
+        "đến nơi",
+        "say",
+        "nguy hiểm",
+        "cần thiết"
+      ],
+      "c": 1,
+      "ex": "酔 (túy) - say"
+    },
+    {
+      "word": "危険な",
+      "romaji": "きけん",
+      "translation": "nguy hiểm",
+      "q": "Từ 危険[な] (きけん) có nghĩa là gì?",
+      "a": [
+        "say",
+        "nguy hiểm",
+        "cần thiết",
+        "tiệc tất niên"
+      ],
+      "c": 1,
+      "ex": "危険 (nguy hiểm)"
+    },
+    {
+      "word": "必要な",
+      "romaji": "ひつよう",
+      "translation": "cần thiết",
+      "q": "Từ 必要[な] (ひつよう) có nghĩa là gì?",
+      "a": [
+        "nguy hiểm",
+        "cần thiết",
+        "tiệc tất niên",
+        "tiệc tân niên"
+      ],
+      "c": 1,
+      "ex": "必要 (tất yếu)"
+    },
+    {
+      "word": "忘年会",
+      "romaji": "ぼうねんかい",
+      "translation": "tiệc tất niên",
+      "q": "Từ 忘年会 (ぼうねんかい) có nghĩa là gì?",
+      "a": [
+        "cần thiết",
+        "tiệc tất niên",
+        "tiệc tân niên",
+        "đại hội"
+      ],
+      "c": 1,
+      "ex": "忘年会 (vong niên hội)"
+    },
+    {
+      "word": "新年会",
+      "romaji": "しんねんかい",
+      "translation": "tiệc tân niên",
+      "q": "Từ 新年会 (しんねんかい) có nghĩa là gì?",
+      "a": [
+        "tiệc tất niên",
+        "tiệc tân niên",
+        "đại hội",
+        "mặt trước"
+      ],
+      "c": 1,
+      "ex": "新年会 (tân niên hội)"
+    },
+    {
+      "word": "大会",
+      "romaji": "たいかい",
+      "translation": "đại hội, cuộc thi",
+      "q": "Từ 大会 (たいかい) có nghĩa là gì?",
+      "a": [
+        "tiệc tân niên",
+        "đại hội, cuộc thi",
+        "mặt trước",
+        "mặt sau"
+      ],
+      "c": 1,
+      "ex": "大会 (đại hội)"
+    },
+    {
+      "word": "表",
+      "romaji": "おもて",
+      "translation": "mặt trước",
+      "q": "Từ 表 (おもて) có nghĩa là gì?",
+      "a": [
+        "đại hội",
+        "mặt trước",
+        "mặt sau",
+        "hồi âm"
+      ],
+      "c": 1,
+      "ex": "表 (biểu) - mặt trước"
+    },
+    {
+      "word": "裏",
+      "romaji": "うら",
+      "translation": "mặt sau",
+      "q": "Từ 裏 (うら) có nghĩa là gì?",
+      "a": [
+        "mặt trước",
+        "mặt sau",
+        "hồi âm",
+        "đăng ký"
+      ],
+      "c": 1,
+      "ex": "裏 (lý) - mặt sau"
+    },
+    {
+      "word": "返事",
+      "romaji": "へんじ",
+      "translation": "hồi âm, trả lời",
+      "q": "Từ 返事 (へんじ) có nghĩa là gì?",
+      "a": [
+        "mặt sau",
+        "hồi âm, trả lời",
+        "đăng ký",
+        "vết thương"
+      ],
+      "c": 1,
+      "ex": "返事 (phản sự)"
+    },
+    {
+      "word": "申し込み",
+      "romaji": "もうしこみ",
+      "translation": "đăng ký",
+      "q": "Từ 申し込み (もうしこみ) có nghĩa là gì?",
+      "a": [
+        "hồi âm",
+        "đăng ký",
+        "vết thương",
+        "chiều dài"
+      ],
+      "c": 1,
+      "ex": "申し込み (thân vào) - đăng ký"
+    },
+    {
+      "word": "傷",
+      "romaji": "きず",
+      "translation": "vết thương",
+      "q": "Từ 傷 (きず) có nghĩa là gì?",
+      "a": [
+        "đăng ký",
+        "vết thương",
+        "chiều dài",
+        "cân nặng"
+      ],
+      "c": 1,
+      "ex": "傷 (thương) - vết thương"
+    },
+    {
+      "word": "長さ",
+      "romaji": "ながさ",
+      "translation": "chiều dài",
+      "q": "Từ 長さ (ながさ) có nghĩa là gì?",
+      "a": [
+        "vết thương",
+        "chiều dài",
+        "cân nặng",
+        "chiều cao"
+      ],
+      "c": 1,
+      "ex": "長 (trường) - dài"
+    },
+    {
+      "word": "重さ",
+      "romaji": "おもさ",
+      "translation": "cân nặng, trọng lượng",
+      "q": "Từ 重さ (おもさ) có nghĩa là gì?",
+      "a": [
+        "chiều dài",
+        "cân nặng, trọng lượng",
+        "chiều cao",
+        "kích thước"
+      ],
+      "c": 1,
+      "ex": "重 (trọng) - nặng"
+    },
+    {
+      "word": "高さ",
+      "romaji": "たかさ",
+      "translation": "chiều cao",
+      "q": "Từ 高さ (たかさ) có nghĩa là gì?",
+      "a": [
+        "cân nặng",
+        "chiều cao",
+        "kích thước",
+        "kết quả"
+      ],
+      "c": 1,
+      "ex": "高 (cao)"
+    },
+    {
+      "word": "大きさ",
+      "romaji": "おおきさ",
+      "translation": "kích thước, cỡ",
+      "q": "Từ 大きさ (おおきさ) có nghĩa là gì?",
+      "a": [
+        "chiều cao",
+        "kích thước, cỡ",
+        "kết quả",
+        "vụ án"
+      ],
+      "c": 1,
+      "ex": "大きさ (đại)"
+    },
+    {
+      "word": "成績",
+      "romaji": "せいせき",
+      "translation": "kết quả, thành tích",
+      "q": "Từ 成績 (せいせき) có nghĩa là gì?",
+      "a": [
+        "kích thước",
+        "kết quả, thành tích",
+        "vụ án",
+        "nguy hiểm"
+      ],
+      "c": 1,
+      "ex": "成績 (thành tích)"
+    },
+    {
+      "word": "事件",
+      "romaji": "じけん",
+      "translation": "vụ án, vụ việc",
+      "q": "Từ 事件 (じけん) có nghĩa là gì?",
+      "a": [
+        "kết quả",
+        "vụ án, vụ việc",
+        "nguy hiểm",
+        "đăng ký"
+      ],
+      "c": 1,
+      "ex": "事件 (sự kiện)"
+    }
+  ]
+}

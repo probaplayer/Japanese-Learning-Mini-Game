@@ -1,0 +1,360 @@
+{
+  "id": "n4-l40-kanji-hanviet",
+  "name": "N4 Bài 40 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 40, hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-13T07:05:39.325Z",
+  "updatedAt": "2026-08-13T07:05:47.343Z",
+  "questions": [
+    {
+      "word": "数",
+      "romaji": "số",
+      "translation": "số, đếm (数えます)",
+      "q": "Chữ 数 trong từ 数えます mang âm Hán Việt nào?",
+      "a": [
+        "SỐ",
+        "TRẮC",
+        "LƯỢNG",
+        "XÁC"
+      ],
+      "c": 0,
+      "ex": "数えます: đếm"
+    },
+    {
+      "word": "測",
+      "romaji": "trắc",
+      "translation": "đo (測ります)",
+      "q": "Chữ 測 trong từ 測ります mang âm Hán Việt nào?",
+      "a": [
+        "SỐ",
+        "TRẮC",
+        "LƯỢNG",
+        "HỢP"
+      ],
+      "c": 1,
+      "ex": "測ります: đo, cân"
+    },
+    {
+      "word": "量",
+      "romaji": "lượng",
+      "translation": "đo lượng, cân (量ります)",
+      "q": "Chữ 量 trong từ 量ります mang âm Hán Việt nào?",
+      "a": [
+        "TRẮC",
+        "LƯỢNG",
+        "HỢP",
+        "XÁC"
+      ],
+      "c": 1,
+      "ex": "量ります: đo, cân"
+    },
+    {
+      "word": "確",
+      "romaji": "xác",
+      "translation": "xác định, chắc chắn (確かめます)",
+      "q": "Chữ 確 trong từ 確かめます mang âm Hán Việt nào?",
+      "a": [
+        "LƯỢNG",
+        "HỢP",
+        "XÁC",
+        "XUẤT"
+      ],
+      "c": 2,
+      "ex": "確かめます: xác nhận"
+    },
+    {
+      "word": "合",
+      "romaji": "hợp",
+      "translation": "vừa, hợp (合います)",
+      "q": "Chữ 合 trong từ 合います mang âm Hán Việt nào?",
+      "a": [
+        "HỢP",
+        "XÁC",
+        "XUẤT",
+        "PHÁT"
+      ],
+      "c": 0,
+      "ex": "合います: vừa, hợp"
+    },
+    {
+      "word": "出",
+      "romaji": "xuất",
+      "translation": "ra, xuất (出発)",
+      "q": "Chữ 出 trong từ 出発 mang âm Hán Việt nào?",
+      "a": [
+        "XÁC",
+        "XUẤT",
+        "PHÁT",
+        "ĐÁO"
+      ],
+      "c": 1,
+      "ex": "出発します: xuất phát"
+    },
+    {
+      "word": "発",
+      "romaji": "phát",
+      "translation": "phát, xuất phát (出発)",
+      "q": "Chữ 発 trong từ 出発 mang âm Hán Việt nào?",
+      "a": [
+        "XUẤT",
+        "PHÁT",
+        "ĐÁO",
+        "TRƯỚC"
+      ],
+      "c": 1,
+      "ex": "出発します: xuất phát"
+    },
+    {
+      "word": "到",
+      "romaji": "đáo",
+      "translation": "đạt đến (到着)",
+      "q": "Chữ 到 trong từ 到着 mang âm Hán Việt nào?",
+      "a": [
+        "PHÁT",
+        "ĐÁO",
+        "TRƯỚC",
+        "TÚY"
+      ],
+      "c": 1,
+      "ex": "到着します: đến nơi"
+    },
+    {
+      "word": "着",
+      "romaji": "trước",
+      "translation": "đến, mặc (到着)",
+      "q": "Chữ 着 trong từ 到着 mang âm Hán Việt nào?",
+      "a": [
+        "ĐÁO",
+        "TRƯỚC",
+        "TÚY",
+        "NGUY"
+      ],
+      "c": 1,
+      "ex": "到着します: đến nơi"
+    },
+    {
+      "word": "酔",
+      "romaji": "túy",
+      "translation": "say (酔います)",
+      "q": "Chữ 酔 trong từ 酔います mang âm Hán Việt nào?",
+      "a": [
+        "TRƯỚC",
+        "TÚY",
+        "NGUY",
+        "HIỂM"
+      ],
+      "c": 1,
+      "ex": "酔います: say"
+    },
+    {
+      "word": "危",
+      "romaji": "nguy",
+      "translation": "nguy hiểm (危険)",
+      "q": "Chữ 危 trong từ 危険 mang âm Hán Việt nào?",
+      "a": [
+        "TÚY",
+        "NGUY",
+        "HIỂM",
+        "TẤT"
+      ],
+      "c": 1,
+      "ex": "危険: nguy hiểm"
+    },
+    {
+      "word": "険",
+      "romaji": "hiểm",
+      "translation": "hiểm, nguy hiểm (危険)",
+      "q": "Chữ 険 trong từ 危険 mang âm Hán Việt nào?",
+      "a": [
+        "NGUY",
+        "HIỂM",
+        "TẤT",
+        "YẾU"
+      ],
+      "c": 1,
+      "ex": "危険: nguy hiểm"
+    },
+    {
+      "word": "必",
+      "romaji": "tất",
+      "translation": "nhất định (必要)",
+      "q": "Chữ 必 trong từ 必要 mang âm Hán Việt nào?",
+      "a": [
+        "HIỂM",
+        "TẤT",
+        "YẾU",
+        "VONG"
+      ],
+      "c": 1,
+      "ex": "必要: tất yếu"
+    },
+    {
+      "word": "要",
+      "romaji": "yếu",
+      "translation": "cần thiết (必要)",
+      "q": "Chữ 要 trong từ 必要 mang âm Hán Việt nào?",
+      "a": [
+        "TẤT",
+        "YẾU",
+        "VONG",
+        "NIÊN"
+      ],
+      "c": 1,
+      "ex": "必要: tất yếu"
+    },
+    {
+      "word": "忘",
+      "romaji": "vong",
+      "translation": "quên (忘年会)",
+      "q": "Chữ 忘 trong từ 忘年会 mang âm Hán Việt nào?",
+      "a": [
+        "YẾU",
+        "VONG",
+        "NIÊN",
+        "HỘI"
+      ],
+      "c": 1,
+      "ex": "忘年会: tiệc tất niên"
+    },
+    {
+      "word": "年",
+      "romaji": "niên",
+      "translation": "năm (忘年会)",
+      "q": "Chữ 年 trong từ 忘年会 mang âm Hán Việt nào?",
+      "a": [
+        "VONG",
+        "NIÊN",
+        "HỘI",
+        "TÂN"
+      ],
+      "c": 1,
+      "ex": "忘年会: tiệc tất niên"
+    },
+    {
+      "word": "会",
+      "romaji": "hội",
+      "translation": "hội, buổi gặp (忘年会)",
+      "q": "Chữ 会 trong từ 忘年会 mang âm Hán Việt nào?",
+      "a": [
+        "NIÊN",
+        "HỘI",
+        "TÂN",
+        "ĐẠI"
+      ],
+      "c": 1,
+      "ex": "忘年会 / 大会: tiệc tất niên / đại hội"
+    },
+    {
+      "word": "新",
+      "romaji": "tân",
+      "translation": "mới (新年会)",
+      "q": "Chữ 新 trong từ 新年会 mang âm Hán Việt nào?",
+      "a": [
+        "HỘI",
+        "TÂN",
+        "ĐẠI",
+        "BIỂU"
+      ],
+      "c": 1,
+      "ex": "新年会: tiệc tân niên"
+    },
+    {
+      "word": "大",
+      "romaji": "đại",
+      "translation": "lớn (大会)",
+      "q": "Chữ 大 trong từ 大会 mang âm Hán Việt nào?",
+      "a": [
+        "TÂN",
+        "ĐẠI",
+        "BIỂU",
+        "LÝ"
+      ],
+      "c": 1,
+      "ex": "大会: đại hội"
+    },
+    {
+      "word": "表",
+      "romaji": "biểu",
+      "translation": "bề mặt, mặt trước (表)",
+      "q": "Chữ 表 mang âm Hán Việt nào?",
+      "a": [
+        "ĐẠI",
+        "BIỂU",
+        "LÝ",
+        "PHẢN"
+      ],
+      "c": 1,
+      "ex": "表: mặt trước"
+    },
+    {
+      "word": "裏",
+      "romaji": "lý",
+      "translation": "bên trong, mặt sau (裏)",
+      "q": "Chữ 裏 mang âm Hán Việt nào?",
+      "a": [
+        "BIỂU",
+        "LÝ",
+        "PHẢN",
+        "SỰ"
+      ],
+      "c": 1,
+      "ex": "裏: mặt sau"
+    },
+    {
+      "word": "返",
+      "romaji": "phản",
+      "translation": "quay lại, phản hồi (返事)",
+      "q": "Chữ 返 trong từ 返事 mang âm Hán Việt nào?",
+      "a": [
+        "LÝ",
+        "PHẢN",
+        "SỰ",
+        "THÂN"
+      ],
+      "c": 1,
+      "ex": "返事: hồi âm"
+    },
+    {
+      "word": "事",
+      "romaji": "sự",
+      "translation": "việc (返事)",
+      "q": "Chữ 事 trong từ 返事 mang âm Hán Việt nào?",
+      "a": [
+        "PHẢN",
+        "SỰ",
+        "THÂN",
+        "THƯƠNG"
+      ],
+      "c": 1,
+      "ex": "返事: hồi âm"
+    },
+    {
+      "word": "長",
+      "romaji": "trường",
+      "translation": "dài (長さ)",
+      "q": "Chữ 長 mang âm Hán Việt nào?",
+      "a": [
+        "SỰ",
+        "THÂN",
+        "THƯƠNG",
+        "TRƯỜNG"
+      ],
+      "c": 3,
+      "ex": "長さ: chiều dài"
+    },
+    {
+      "word": "重",
+      "romaji": "trọng",
+      "translation": "nặng (重さ)",
+      "q": "Chữ 重 mang âm Hán Việt nào?",
+      "a": [
+        "TRƯỜNG",
+        "TRỌNG",
+        "CAO",
+        "ĐẠI"
+      ],
+      "c": 1,
+      "ex": "重さ: cân nặng"
+    }
+  ]
+}

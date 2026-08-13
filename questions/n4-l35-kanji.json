@@ -1,0 +1,332 @@
+{
+  "id": "n4-l35-kanji",
+  "name": "N4 Bài 35 - Từ vựng Kanji (đọc)",
+  "description": "Từ vựng có kanji Bài 35 Minna no Nihongo (N4). Đáp án chỉ hiện hiragana.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-13T04:56:20.327Z",
+  "updatedAt": "2026-08-13T04:56:26.891Z",
+  "questions": [
+    {
+      "word": "咲きます",
+      "romaji": "さきます",
+      "translation": "nở (hoa)",
+      "q": "Từ 咲きます đọc là gì?",
+      "a": [
+        "さきます",
+        "かわります",
+        "こまります",
+        "つけます"
+      ],
+      "c": 0,
+      "ex": "nở hoa | 咲 (tiếu)"
+    },
+    {
+      "word": "変わります",
+      "romaji": "かわります",
+      "translation": "thay đổi",
+      "q": "Từ 変わります đọc là gì?",
+      "a": [
+        "さきます",
+        "こまります",
+        "かわります",
+        "ひろいます"
+      ],
+      "c": 2,
+      "ex": "thay đổi | 変 (biến)"
+    },
+    {
+      "word": "困ります",
+      "romaji": "こまります",
+      "translation": "rắc rối, khó xử",
+      "q": "Từ 困ります đọc là gì?",
+      "a": [
+        "かわります",
+        "つけます",
+        "こまります",
+        "ひろいます"
+      ],
+      "c": 2,
+      "ex": "rắc rối | 困 (khốn)"
+    },
+    {
+      "word": "付けます",
+      "romaji": "つけます",
+      "translation": "vẽ, đánh dấu",
+      "q": "Từ 付けます đọc là gì?",
+      "a": [
+        "ひろいます",
+        "こまります",
+        "つけます",
+        "ただしい"
+      ],
+      "c": 2,
+      "ex": "đánh dấu | 付 (phó)"
+    },
+    {
+      "word": "拾います",
+      "romaji": "ひろいます",
+      "translation": "nhặt, nhặt lên",
+      "q": "Từ 拾います đọc là gì?",
+      "a": [
+        "つけます",
+        "ただしい",
+        "めずらしい",
+        "ひろいます"
+      ],
+      "c": 3,
+      "ex": "nhặt | 拾 (thập)"
+    },
+    {
+      "word": "正しい",
+      "romaji": "ただしい",
+      "translation": "đúng, chính xác",
+      "q": "Từ 正しい đọc là gì?",
+      "a": [
+        "ひろいます",
+        "めずらしい",
+        "かた",
+        "ただしい"
+      ],
+      "c": 3,
+      "ex": "đúng | 正 (chính)"
+    },
+    {
+      "word": "珍しい",
+      "romaji": "めずらしい",
+      "translation": "hiếm, hiếm có",
+      "q": "Từ 珍しい đọc là gì?",
+      "a": [
+        "ただしい",
+        "かた",
+        "めずらしい",
+        "むこう"
+      ],
+      "c": 2,
+      "ex": "hiếm | 珍 (trân)"
+    },
+    {
+      "word": "方",
+      "romaji": "かた",
+      "translation": "vị, người (kính trọng)",
+      "q": "Từ 方 đọc là gì?",
+      "a": [
+        "めずらしい",
+        "むこう",
+        "しま",
+        "かた"
+      ],
+      "c": 3,
+      "ex": "vị, người | 方 (phương)"
+    },
+    {
+      "word": "向こう",
+      "romaji": "むこう",
+      "translation": "bên kia, phía đằng kia",
+      "q": "Từ 向こう đọc là gì?",
+      "a": [
+        "かた",
+        "しま",
+        "みなと",
+        "むこう"
+      ],
+      "c": 3,
+      "ex": "bên kia | 向 (hướng)"
+    },
+    {
+      "word": "島",
+      "romaji": "しま",
+      "translation": "đảo, hòn đảo",
+      "q": "Từ 島 đọc là gì?",
+      "a": [
+        "むこう",
+        "みなと",
+        "きんじょ",
+        "しま"
+      ],
+      "c": 3,
+      "ex": "đảo | 島 (đảo)"
+    },
+    {
+      "word": "港",
+      "romaji": "みなと",
+      "translation": "cảng, bến cảng",
+      "q": "Từ 港 đọc là gì?",
+      "a": [
+        "しま",
+        "きんじょ",
+        "おくじょう",
+        "みなと"
+      ],
+      "c": 3,
+      "ex": "cảng | 港 (cảng)"
+    },
+    {
+      "word": "近所",
+      "romaji": "きんじょ",
+      "translation": "hàng xóm, khu vực lân cận",
+      "q": "Từ 近所 đọc là gì?",
+      "a": [
+        "みなと",
+        "おくじょう",
+        "かいがい",
+        "きんじょ"
+      ],
+      "c": 3,
+      "ex": "hàng xóm | 近 (cận) + 所 (sở)"
+    },
+    {
+      "word": "屋上",
+      "romaji": "おくじょう",
+      "translation": "mái nhà, nóc nhà",
+      "q": "Từ 屋上 đọc là gì?",
+      "a": [
+        "きんじょ",
+        "かいがい",
+        "やまのぼり",
+        "おくじょう"
+      ],
+      "c": 3,
+      "ex": "mái nhà | 屋 (ốc) + 上 (thượng)"
+    },
+    {
+      "word": "海外",
+      "romaji": "かいがい",
+      "translation": "nước ngoài, hải ngoại",
+      "q": "Từ 海外 đọc là gì?",
+      "a": [
+        "おくじょう",
+        "やまのぼり",
+        "きかい",
+        "かいがい"
+      ],
+      "c": 3,
+      "ex": "nước ngoài | 海 (hải) + 外 (ngoại)"
+    },
+    {
+      "word": "山登り",
+      "romaji": "やまのぼり",
+      "translation": "leo núi",
+      "q": "Từ 山登り đọc là gì?",
+      "a": [
+        "かいがい",
+        "きかい",
+        "きょか",
+        "やまのぼり"
+      ],
+      "c": 3,
+      "ex": "leo núi | 山 (sơn) + 登 (đăng)"
+    },
+    {
+      "word": "機会",
+      "romaji": "きかい",
+      "translation": "cơ hội",
+      "q": "Từ 機会 đọc là gì?",
+      "a": [
+        "やまのぼり",
+        "きょか",
+        "まる",
+        "きかい"
+      ],
+      "c": 3,
+      "ex": "cơ hội | 機 (cơ) + 会 (hội)"
+    },
+    {
+      "word": "許可",
+      "romaji": "きょか",
+      "translation": "giấy phép",
+      "q": "Từ 許可 đọc là gì?",
+      "a": [
+        "きかい",
+        "まる",
+        "ほうほう",
+        "きょか"
+      ],
+      "c": 3,
+      "ex": "giấy phép | 許 (hữa) + 可 (khả)"
+    },
+    {
+      "word": "丸",
+      "romaji": "まる",
+      "translation": "tròn, vòng tròn",
+      "q": "Từ 丸 đọc là gì?",
+      "a": [
+        "きょか",
+        "ほうほう",
+        "せつび",
+        "まる"
+      ],
+      "c": 3,
+      "ex": "tròn | 丸 (hoàn)"
+    },
+    {
+      "word": "方法",
+      "romaji": "ほうほう",
+      "translation": "phương pháp",
+      "q": "Từ 方法 đọc là gì?",
+      "a": [
+        "まる",
+        "せつび",
+        "は",
+        "ほうほう"
+      ],
+      "c": 3,
+      "ex": "phương pháp | 方 (phương) + 法 (pháp)"
+    },
+    {
+      "word": "設備",
+      "romaji": "せつび",
+      "translation": "thiết bị",
+      "q": "Từ 設備 đọc là gì?",
+      "a": [
+        "ほうほう",
+        "は",
+        "きょく",
+        "せつび"
+      ],
+      "c": 3,
+      "ex": "thiết bị | 設 (thiết) + 備 (bị)"
+    },
+    {
+      "word": "葉",
+      "romaji": "は",
+      "translation": "lá",
+      "q": "Từ 葉 đọc là gì?",
+      "a": [
+        "せつび",
+        "きょく",
+        "ひつよう",
+        "は"
+      ],
+      "c": 3,
+      "ex": "lá | 葉 (diệp)"
+    },
+    {
+      "word": "曲",
+      "romaji": "きょく",
+      "translation": "bài hát, bản nhạc",
+      "q": "Từ 曲 đọc là gì?",
+      "a": [
+        "は",
+        "ひつよう",
+        "まる",
+        "きょく"
+      ],
+      "c": 3,
+      "ex": "bài hát | 曲 (khúc)"
+    },
+    {
+      "word": "必要な",
+      "romaji": "ひつよう",
+      "translation": "cần thiết",
+      "q": "Từ 必要[な] đọc là gì?",
+      "a": [
+        "きょく",
+        "まる",
+        "さきます",
+        "ひつよう"
+      ],
+      "c": 3,
+      "ex": "cần thiết | 必 (tất) + 要 (yếu)"
+    }
+  ]
+}

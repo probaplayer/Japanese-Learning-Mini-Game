@@ -1,0 +1,388 @@
+{
+  "id": "n4-l35-kanji-hanviet",
+  "name": "N4 Bài 35 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 35, hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-13T04:57:21.194Z",
+  "updatedAt": "2026-08-13T04:57:42.270Z",
+  "questions": [
+    {
+      "word": "咲",
+      "romaji": "tiếu",
+      "translation": "nở (咲きます)",
+      "q": "Chữ 咲 trong từ 咲きます mang âm Hán Việt nào?",
+      "a": [
+        "TIẾU",
+        "BIẾN",
+        "KHỐN",
+        "PHÓ"
+      ],
+      "c": 0,
+      "ex": "咲きます: nở hoa"
+    },
+    {
+      "word": "変",
+      "romaji": "biến",
+      "translation": "thay đổi (変わります)",
+      "q": "Chữ 変 trong từ 変わります mang âm Hán Việt nào?",
+      "a": [
+        "TIẾU",
+        "KHỐN",
+        "PHÓ",
+        "BIẾN"
+      ],
+      "c": 3,
+      "ex": "変わります: thay đổi"
+    },
+    {
+      "word": "困",
+      "romaji": "khốn",
+      "translation": "khó khăn (困ります)",
+      "q": "Chữ 困 trong từ 困ります mang âm Hán Việt nào?",
+      "a": [
+        "PHÓ",
+        "BIẾN",
+        "THẬP",
+        "KHỐN"
+      ],
+      "c": 3,
+      "ex": "困ります: rắc rối"
+    },
+    {
+      "word": "付",
+      "romaji": "phó",
+      "translation": "gắn vào (付けます)",
+      "q": "Chữ 付 trong từ 付けます mang âm Hán Việt nào?",
+      "a": [
+        "BIẾN",
+        "THẬP",
+        "KHỐN",
+        "PHÓ"
+      ],
+      "c": 3,
+      "ex": "付けます: đánh dấu"
+    },
+    {
+      "word": "拾",
+      "romaji": "thập",
+      "translation": "nhặt (拾います)",
+      "q": "Chữ 拾 trong từ 拾います mang âm Hán Việt nào?",
+      "a": [
+        "KHỐN",
+        "PHÓ",
+        "CHÍNH",
+        "THẬP"
+      ],
+      "c": 3,
+      "ex": "拾います: nhặt"
+    },
+    {
+      "word": "正",
+      "romaji": "chính",
+      "translation": "đúng (正しい)",
+      "q": "Chữ 正 trong từ 正しい mang âm Hán Việt nào?",
+      "a": [
+        "PHÓ",
+        "THẬP",
+        "TRÂN",
+        "CHÍNH"
+      ],
+      "c": 3,
+      "ex": "正しい: đúng"
+    },
+    {
+      "word": "珍",
+      "romaji": "trân",
+      "translation": "quý hiếm (珍しい)",
+      "q": "Chữ 珍 trong từ 珍しい mang âm Hán Việt nào?",
+      "a": [
+        "THẬP",
+        "CHÍNH",
+        "PHƯƠNG",
+        "TRÂN"
+      ],
+      "c": 3,
+      "ex": "珍しい: hiếm"
+    },
+    {
+      "word": "方",
+      "romaji": "phương",
+      "translation": "cách nói kính trọng của ひと (方)",
+      "q": "Chữ 方 mang âm Hán Việt nào?",
+      "a": [
+        "CHÍNH",
+        "TRÂN",
+        "HƯỚNG",
+        "PHƯƠNG"
+      ],
+      "c": 3,
+      "ex": "方: vị, người"
+    },
+    {
+      "word": "向",
+      "romaji": "hướng",
+      "translation": "hướng về (向こう)",
+      "q": "Chữ 向 trong từ 向こう mang âm Hán Việt nào?",
+      "a": [
+        "TRÂN",
+        "PHƯƠNG",
+        "ĐẢO",
+        "HƯỚNG"
+      ],
+      "c": 3,
+      "ex": "向こう: bên kia"
+    },
+    {
+      "word": "島",
+      "romaji": "đảo",
+      "translation": "đảo (島)",
+      "q": "Chữ 島 mang âm Hán Việt nào?",
+      "a": [
+        "PHƯƠNG",
+        "HƯỚNG",
+        "THÔN",
+        "ĐẢO"
+      ],
+      "c": 3,
+      "ex": "島: đảo"
+    },
+    {
+      "word": "港",
+      "romaji": "cảng",
+      "translation": "cảng (港)",
+      "q": "Chữ 港 mang âm Hán Việt nào?",
+      "a": [
+        "HƯỚNG",
+        "ĐẢO",
+        "CẢNG",
+        "THÔN"
+      ],
+      "c": 2,
+      "ex": "港: cảng"
+    },
+    {
+      "word": "近",
+      "romaji": "cận",
+      "translation": "gần (近所)",
+      "q": "Chữ 近 trong từ 近所 mang âm Hán Việt nào?",
+      "a": [
+        "ĐẢO",
+        "CẢNG",
+        "CẬN",
+        "SỞ"
+      ],
+      "c": 2,
+      "ex": "近所: hàng xóm"
+    },
+    {
+      "word": "所",
+      "romaji": "sở",
+      "translation": "nơi, chỗ (近所)",
+      "q": "Chữ 所 trong từ 近所 mang âm Hán Việt nào?",
+      "a": [
+        "CẢNG",
+        "CẬN",
+        "SỞ",
+        "ỐC"
+      ],
+      "c": 2,
+      "ex": "近所: hàng xóm"
+    },
+    {
+      "word": "屋",
+      "romaji": "ốc",
+      "translation": "nhà (屋上)",
+      "q": "Chữ 屋 trong từ 屋上 mang âm Hán Việt nào?",
+      "a": [
+        "CẬN",
+        "SỞ",
+        "ỐC",
+        "THƯỢNG"
+      ],
+      "c": 2,
+      "ex": "屋上: mái nhà"
+    },
+    {
+      "word": "上",
+      "romaji": "thượng",
+      "translation": "trên (屋上)",
+      "q": "Chữ 上 trong từ 屋上 mang âm Hán Việt nào?",
+      "a": [
+        "SỞ",
+        "ỐC",
+        "THƯỢNG",
+        "HẢI"
+      ],
+      "c": 2,
+      "ex": "屋上: mái nhà"
+    },
+    {
+      "word": "海",
+      "romaji": "hải",
+      "translation": "biển (海外)",
+      "q": "Chữ 海 trong từ 海外 mang âm Hán Việt nào?",
+      "a": [
+        "ỐC",
+        "THƯỢNG",
+        "HẢI",
+        "NGOẠI"
+      ],
+      "c": 2,
+      "ex": "海外: nước ngoài"
+    },
+    {
+      "word": "外",
+      "romaji": "ngoại",
+      "translation": "ngoài (海外)",
+      "q": "Chữ 外 trong từ 海外 mang âm Hán Việt nào?",
+      "a": [
+        "THƯỢNG",
+        "HẢI",
+        "NGOẠI",
+        "SƠN"
+      ],
+      "c": 2,
+      "ex": "海外: nước ngoài"
+    },
+    {
+      "word": "山",
+      "romaji": "sơn",
+      "translation": "núi (山登り)",
+      "q": "Chữ 山 trong từ 山登り mang âm Hán Việt nào?",
+      "a": [
+        "HẢI",
+        "NGOẠI",
+        "SƠN",
+        "ĐĂNG"
+      ],
+      "c": 2,
+      "ex": "山登り: leo núi"
+    },
+    {
+      "word": "登",
+      "romaji": "đăng",
+      "translation": "leo, lên (山登り)",
+      "q": "Chữ 登 trong từ 山登り mang âm Hán Việt nào?",
+      "a": [
+        "NGOẠI",
+        "SƠN",
+        "ĐĂNG",
+        "CƠ"
+      ],
+      "c": 2,
+      "ex": "山登り: leo núi"
+    },
+    {
+      "word": "機",
+      "romaji": "cơ",
+      "translation": "dịp (機会)",
+      "q": "Chữ 機 trong từ 機会 mang âm Hán Việt nào?",
+      "a": [
+        "SƠN",
+        "ĐĂNG",
+        "CƠ",
+        "HỘI"
+      ],
+      "c": 2,
+      "ex": "機会: cơ hội"
+    },
+    {
+      "word": "会",
+      "romaji": "hội",
+      "translation": "dịp, gặp (機会)",
+      "q": "Chữ 会 trong từ 機会 mang âm Hán Việt nào?",
+      "a": [
+        "ĐĂNG",
+        "CƠ",
+        "HỘI",
+        "HỨA"
+      ],
+      "c": 2,
+      "ex": "機会: cơ hội"
+    },
+    {
+      "word": "許",
+      "romaji": "hứa",
+      "translation": "cho phép (許可)",
+      "q": "Chữ 許 trong từ 許可 mang âm Hán Việt nào?",
+      "a": [
+        "CƠ",
+        "HỘI",
+        "HỨA",
+        "KHẢ"
+      ],
+      "c": 2,
+      "ex": "許可: giấy phép"
+    },
+    {
+      "word": "可",
+      "romaji": "khả",
+      "translation": "được, khả dĩ (許可)",
+      "q": "Chữ 可 trong từ 許可 mang âm Hán Việt nào?",
+      "a": [
+        "HỘI",
+        "HỨA",
+        "KHẢ",
+        "HOÀN"
+      ],
+      "c": 2,
+      "ex": "許可: giấy phép"
+    },
+    {
+      "word": "丸",
+      "romaji": "hoàn",
+      "translation": "tròn (丸)",
+      "q": "Chữ 丸 mang âm Hán Việt nào?",
+      "a": [
+        "HỮA",
+        "KHẢ",
+        "HOÀN",
+        "PHÁP"
+      ],
+      "c": 2,
+      "ex": "丸: tròn"
+    },
+    {
+      "word": "法",
+      "romaji": "pháp",
+      "translation": "phép (方法)",
+      "q": "Chữ 法 trong từ 方法 mang âm Hán Việt nào?",
+      "a": [
+        "KHẢ",
+        "HOÀN",
+        "PHÁP",
+        "THIẾT"
+      ],
+      "c": 2,
+      "ex": "方法: phương pháp"
+    },
+    {
+      "word": "設",
+      "romaji": "thiết",
+      "translation": "sắp đặt (設備)",
+      "q": "Chữ 設 trong từ 設備 mang âm Hán Việt nào?",
+      "a": [
+        "HOÀN",
+        "PHÁP",
+        "THIẾT",
+        "BỊ"
+      ],
+      "c": 2,
+      "ex": "設備: thiết bị"
+    },
+    {
+      "word": "備",
+      "romaji": "bị",
+      "translation": "chuẩn bị, thiết bị (設備)",
+      "q": "Chữ 備 trong từ 設備 mang âm Hán Việt nào?",
+      "a": [
+        "PHÁP",
+        "THIẾT",
+        "BỊ",
+        "DIỆP"
+      ],
+      "c": 2,
+      "ex": "設備: thiết bị"
+    }
+  ]
+}

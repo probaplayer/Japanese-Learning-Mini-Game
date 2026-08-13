@@ -1,0 +1,127 @@
+{
+  "id": "n4-l35-grammar",
+  "name": "N4 Bài 35 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 35 Minna no Nihongo: Thể điều kiện (条件形 ば), ~Nなら, ~Vばいいです, ~ば~ほど (càng...càng).",
+  "category": "grammar",
+  "createdAt": "2026-08-13T04:59:06.069Z",
+  "updatedAt": "2026-08-13T04:59:06.069Z",
+  "questions": [
+    {
+      "sentence": "秋になれば木の葉の色が変わります",
+      "chunks": [
+        "秋",
+        "になれば",
+        "木の葉",
+        "の",
+        "色",
+        "が",
+        "変わります"
+      ],
+      "translation": "Nếu mùa thu đến, màu lá cây sẽ thay đổi",
+      "ex": "Thể điều kiện (条件形 ば): nếu~thì~. なる→なれば"
+    },
+    {
+      "sentence": "このボタンを押せばお湯が出ますよ",
+      "chunks": [
+        "このボタン",
+        "を",
+        "押せば",
+        "お湯",
+        "が",
+        "出ますよ"
+      ],
+      "translation": "Nếu ấn nút này thì nước nóng sẽ chảy ra",
+      "ex": "押す→押せば: nếu ấn thì~"
+    },
+    {
+      "sentence": "電話ならNokiaのがいいですよ",
+      "chunks": [
+        "電話",
+        "なら",
+        "Nokiaの",
+        "が",
+        "いいですよ"
+      ],
+      "translation": "Nếu mà điện thoại thì của hãng Nokia cũng được đấy",
+      "ex": "N+なら: nếu mà N thì~, dùng nối tiếp chủ đề đối phương đã nêu"
+    },
+    {
+      "sentence": "海ならVungtauがいいと思いますよ",
+      "chunks": [
+        "海",
+        "なら",
+        "Vungtau",
+        "が",
+        "いいと",
+        "思いますよ"
+      ],
+      "translation": "Nếu là biển thì biển Vũng Tàu được đấy",
+      "ex": "N+なら: nếu là biển thì~"
+    },
+    {
+      "sentence": "どうすればいいですか",
+      "chunks": [
+        "どう",
+        "すれば",
+        "いいですか"
+      ],
+      "translation": "Nên làm thế nào ạ?",
+      "ex": "どう+V条件形+いいですか: hỏi xin lời khuyên nên làm thế nào"
+    },
+    {
+      "sentence": "ワインをあげればいいですよ",
+      "chunks": [
+        "ワイン",
+        "を",
+        "あげれば",
+        "いいですよ"
+      ],
+      "translation": "Tặng rượu vang cũng được đấy",
+      "ex": "V条件形+いいです: nếu làm~thì được đó, dùng để cho lời khuyên"
+    },
+    {
+      "sentence": "パソコンは使えば使うほど上手になります",
+      "chunks": [
+        "パソコン",
+        "は",
+        "使えば使うほど",
+        "上手になります"
+      ],
+      "translation": "Càng dùng máy tính thì càng giỏi",
+      "ex": "条件形+ほど: càng~càng~"
+    },
+    {
+      "sentence": "結婚式のスピーチは短ければ短いほどいいです",
+      "chunks": [
+        "結婚式のスピーチ",
+        "は",
+        "短ければ短いほど",
+        "いいです"
+      ],
+      "translation": "Bài phát biểu trong lễ kết hôn càng ngắn càng tốt",
+      "ex": "条件形+ほど: bài phát biểu càng ngắn càng tốt"
+    },
+    {
+      "sentence": "高ければ買いません",
+      "chunks": [
+        "高ければ",
+        "買いません"
+      ],
+      "translation": "Nếu đắt thì tôi sẽ không mua",
+      "ex": "高い→高ければ (tính từ đuôi い): nếu đắt thì~"
+    },
+    {
+      "sentence": "天気がよければ山に登ります",
+      "chunks": [
+        "天気",
+        "が",
+        "よければ",
+        "山",
+        "に",
+        "登ります"
+      ],
+      "translation": "Nếu thời tiết đẹp tôi sẽ leo núi",
+      "ex": "いい→よければ (bất quy tắc): nếu thời tiết đẹp thì~"
+    }
+  ]
+}

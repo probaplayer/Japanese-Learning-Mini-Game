@@ -1,0 +1,332 @@
+{
+  "id": "n4-l35-vocab",
+  "name": "N4 Bài 35 - Từ vựng (nghĩa)",
+  "description": "Từ vựng Minna no Nihongo Bài 35 (N4). Câu hỏi hỏi nghĩa tiếng Việt của từ.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-13T04:55:21.432Z",
+  "updatedAt": "2026-08-13T04:55:26.916Z",
+  "questions": [
+    {
+      "word": "咲きます",
+      "romaji": "さきます",
+      "translation": "nở (hoa)",
+      "q": "Từ 咲きます (さきます) có nghĩa là gì?",
+      "a": [
+        "nở (hoa)",
+        "thay đổi",
+        "rắc rối",
+        "đánh dấu"
+      ],
+      "c": 0,
+      "ex": "咲 (tiếu) - nở"
+    },
+    {
+      "word": "変わります",
+      "romaji": "かわります",
+      "translation": "thay đổi, đổi",
+      "q": "Từ 変わります (かわります) có nghĩa là gì?",
+      "a": [
+        "nở hoa",
+        "thay đổi, đổi",
+        "rắc rối",
+        "nhặt"
+      ],
+      "c": 1,
+      "ex": "変 (biến) - thay đổi"
+    },
+    {
+      "word": "困ります",
+      "romaji": "こまります",
+      "translation": "rắc rối, khó xử",
+      "q": "Từ 困ります (こまります) có nghĩa là gì?",
+      "a": [
+        "thay đổi",
+        "rắc rối, khó xử",
+        "nhặt",
+        "đúng"
+      ],
+      "c": 1,
+      "ex": "困 (khốn) - khó khăn"
+    },
+    {
+      "word": "付けます",
+      "romaji": "つけます",
+      "translation": "vẽ, đánh dấu (vòng tròn)",
+      "q": "Từ 付けます (つけます) trong câu về khoanh tròn có nghĩa là gì?",
+      "a": [
+        "rắc rối",
+        "vẽ, đánh dấu (vòng tròn)",
+        "nhặt",
+        "đúng"
+      ],
+      "c": 1,
+      "ex": "付 (phó) - gắn vào"
+    },
+    {
+      "word": "拾います",
+      "romaji": "ひろいます",
+      "translation": "nhặt, nhặt lên",
+      "q": "Từ 拾います (ひろいます) có nghĩa là gì?",
+      "a": [
+        "đánh dấu",
+        "nhặt, nhặt lên",
+        "đúng",
+        "hiếm"
+      ],
+      "c": 1,
+      "ex": "拾 (thập) - nhặt"
+    },
+    {
+      "word": "正しい",
+      "romaji": "ただしい",
+      "translation": "đúng, chính xác",
+      "q": "Từ 正しい (ただしい) có nghĩa là gì?",
+      "a": [
+        "nhặt",
+        "đúng, chính xác",
+        "hiếm",
+        "vị, người"
+      ],
+      "c": 1,
+      "ex": "正 (chính) - đúng"
+    },
+    {
+      "word": "珍しい",
+      "romaji": "めずらしい",
+      "translation": "hiếm, hiếm có",
+      "q": "Từ 珍しい (めずらしい) có nghĩa là gì?",
+      "a": [
+        "đúng",
+        "hiếm, hiếm có",
+        "vị, người",
+        "bên kia"
+      ],
+      "c": 1,
+      "ex": "珍 (trân) - quý hiếm"
+    },
+    {
+      "word": "方",
+      "romaji": "かた",
+      "translation": "vị, người (kính trọng)",
+      "q": "Từ 方 (かた) có nghĩa là gì?",
+      "a": [
+        "hiếm",
+        "vị, người (kính trọng)",
+        "bên kia",
+        "đảo"
+      ],
+      "c": 1,
+      "ex": "方 (phương) - cách nói kính trọng của ひと"
+    },
+    {
+      "word": "向こう",
+      "romaji": "むこう",
+      "translation": "bên kia, phía đằng kia",
+      "q": "Từ 向こう (むこう) có nghĩa là gì?",
+      "a": [
+        "vị, người",
+        "bên kia, phía đằng kia",
+        "đảo",
+        "làng"
+      ],
+      "c": 1,
+      "ex": "向 (hướng) - hướng về"
+    },
+    {
+      "word": "島",
+      "romaji": "しま",
+      "translation": "đảo, hòn đảo",
+      "q": "Từ 島 (しま) có nghĩa là gì?",
+      "a": [
+        "bên kia",
+        "đảo, hòn đảo",
+        "làng",
+        "cảng"
+      ],
+      "c": 1,
+      "ex": "島 (đảo)"
+    },
+    {
+      "word": "港",
+      "romaji": "みなと",
+      "translation": "cảng, bến cảng",
+      "q": "Từ 港 (みなと) có nghĩa là gì?",
+      "a": [
+        "đảo",
+        "cảng, bến cảng",
+        "hàng xóm",
+        "mái nhà"
+      ],
+      "c": 1,
+      "ex": "港 (cảng)"
+    },
+    {
+      "word": "近所",
+      "romaji": "きんじょ",
+      "translation": "hàng xóm, khu vực lân cận",
+      "q": "Từ 近所 (きんじょ) có nghĩa là gì?",
+      "a": [
+        "cảng",
+        "hàng xóm, khu vực lân cận",
+        "mái nhà",
+        "nước ngoài"
+      ],
+      "c": 1,
+      "ex": "近 (cận) + 所 (sở)"
+    },
+    {
+      "word": "屋上",
+      "romaji": "おくじょう",
+      "translation": "mái nhà, nóc nhà",
+      "q": "Từ 屋上 (おくじょう) có nghĩa là gì?",
+      "a": [
+        "hàng xóm",
+        "mái nhà, nóc nhà",
+        "nước ngoài",
+        "leo núi"
+      ],
+      "c": 1,
+      "ex": "屋 (ốc) + 上 (thượng)"
+    },
+    {
+      "word": "海外",
+      "romaji": "かいがい",
+      "translation": "nước ngoài, hải ngoại",
+      "q": "Từ 海外 (かいがい) có nghĩa là gì?",
+      "a": [
+        "mái nhà",
+        "nước ngoài, hải ngoại",
+        "leo núi",
+        "cơ hội"
+      ],
+      "c": 1,
+      "ex": "海 (hải) + 外 (ngoại)"
+    },
+    {
+      "word": "山登り",
+      "romaji": "やまのぼり",
+      "translation": "leo núi",
+      "q": "Từ 山登り (やまのぼり) có nghĩa là gì?",
+      "a": [
+        "nước ngoài",
+        "leo núi",
+        "cơ hội",
+        "giấy phép"
+      ],
+      "c": 1,
+      "ex": "山 (sơn) + 登 (đăng)"
+    },
+    {
+      "word": "機会",
+      "romaji": "きかい",
+      "translation": "cơ hội",
+      "q": "Từ 機会 (きかい) có nghĩa là gì?",
+      "a": [
+        "leo núi",
+        "cơ hội",
+        "giấy phép",
+        "tròn"
+      ],
+      "c": 1,
+      "ex": "機 (cơ) + 会 (hội)"
+    },
+    {
+      "word": "許可",
+      "romaji": "きょか",
+      "translation": "giấy phép",
+      "q": "Từ 許可 (きょか) có nghĩa là gì?",
+      "a": [
+        "cơ hội",
+        "giấy phép",
+        "tròn, vòng tròn",
+        "phương pháp"
+      ],
+      "c": 1,
+      "ex": "許 (hửa) + 可 (khả)"
+    },
+    {
+      "word": "丸",
+      "romaji": "まる",
+      "translation": "tròn, vòng tròn",
+      "q": "Từ 丸 (まる) có nghĩa là gì?",
+      "a": [
+        "giấy phép",
+        "tròn, vòng tròn",
+        "phương pháp",
+        "thiết bị"
+      ],
+      "c": 1,
+      "ex": "丸 (hoàn)"
+    },
+    {
+      "word": "方法",
+      "romaji": "ほうほう",
+      "translation": "phương pháp",
+      "q": "Từ 方法 (ほうほう) có nghĩa là gì?",
+      "a": [
+        "tròn",
+        "phương pháp",
+        "thiết bị",
+        "lá"
+      ],
+      "c": 1,
+      "ex": "方 (phương) + 法 (pháp)"
+    },
+    {
+      "word": "設備",
+      "romaji": "せつび",
+      "translation": "thiết bị",
+      "q": "Từ 設備 (せつび) có nghĩa là gì?",
+      "a": [
+        "phương pháp",
+        "thiết bị",
+        "lá",
+        "bài hát"
+      ],
+      "c": 1,
+      "ex": "設 (thiết) + 備 (bị)"
+    },
+    {
+      "word": "葉",
+      "romaji": "は",
+      "translation": "lá",
+      "q": "Từ 葉 (は) có nghĩa là gì?",
+      "a": [
+        "thiết bị",
+        "lá",
+        "bài hát, bản nhạc",
+        "cần thiết"
+      ],
+      "c": 1,
+      "ex": "葉 (diệp)"
+    },
+    {
+      "word": "曲",
+      "romaji": "きょく",
+      "translation": "bài hát, bản nhạc",
+      "q": "Từ 曲 (きょく) có nghĩa là gì?",
+      "a": [
+        "lá",
+        "bài hát, bản nhạc",
+        "cần thiết",
+        "vòng tròn"
+      ],
+      "c": 1,
+      "ex": "曲 (khúc)"
+    },
+    {
+      "word": "必要な",
+      "romaji": "ひつよう",
+      "translation": "cần thiết",
+      "q": "Từ 必要[な] (ひつよう) có nghĩa là gì?",
+      "a": [
+        "bài hát",
+        "cần thiết",
+        "vòng tròn",
+        "phương pháp"
+      ],
+      "c": 1,
+      "ex": "必 (tất) + 要 (yếu)"
+    }
+  ]
+}

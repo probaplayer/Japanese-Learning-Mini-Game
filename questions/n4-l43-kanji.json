@@ -1,0 +1,248 @@
+{
+  "id": "n4-l43-kanji",
+  "name": "N4 Bài 43 - Từ vựng Kanji (đọc)",
+  "description": "Từ vựng có kanji Bài 43 Minna no Nihongo (N4). Đáp án chỉ hiện hiragana.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-14T01:37:33.882Z",
+  "updatedAt": "2026-08-14T01:38:38.729Z",
+  "questions": [
+    {
+      "word": "増えます",
+      "romaji": "ふえます",
+      "translation": "tăng",
+      "q": "Từ 増えます đọc là gì?",
+      "a": [
+        "ふえます",
+        "へります",
+        "あがります",
+        "さがります"
+      ],
+      "c": 0,
+      "ex": "tăng | 増 (tăng)"
+    },
+    {
+      "word": "減ります",
+      "romaji": "へります",
+      "translation": "giảm",
+      "q": "Từ 減ります đọc là gì?",
+      "a": [
+        "ふえます",
+        "あがります",
+        "さがります",
+        "へります"
+      ],
+      "c": 3,
+      "ex": "giảm | 減 (giảm)"
+    },
+    {
+      "word": "上がります",
+      "romaji": "あがります",
+      "translation": "lên (giá cả)",
+      "q": "Từ 上がります đọc là gì?",
+      "a": [
+        "へります",
+        "さがります",
+        "きれます",
+        "あがります"
+      ],
+      "c": 3,
+      "ex": "lên (giá) | 上 (thượng)"
+    },
+    {
+      "word": "下がります",
+      "romaji": "さがります",
+      "translation": "hạ (giá cả)",
+      "q": "Từ 下がります đọc là gì?",
+      "a": [
+        "あがります",
+        "きれます",
+        "おちます",
+        "さがります"
+      ],
+      "c": 3,
+      "ex": "hạ (giá) | 下 (hạ)"
+    },
+    {
+      "word": "切れます",
+      "romaji": "きれます",
+      "translation": "đứt (dây, chỉ)",
+      "q": "Từ 切れます đọc là gì?",
+      "a": [
+        "さがります",
+        "おちます",
+        "とれます",
+        "きれます"
+      ],
+      "c": 3,
+      "ex": "đứt dây | 切 (thiết)"
+    },
+    {
+      "word": "落ちます",
+      "romaji": "おちます",
+      "translation": "rơi, rớt xuống",
+      "q": "Từ 落ちます đọc là gì?",
+      "a": [
+        "じょうぶ",
+        "へん",
+        "しあわせ",
+        "おちます"
+      ],
+      "c": 3,
+      "ex": "rơi | 落 (lạc)"
+    },
+    {
+      "word": "丈夫な",
+      "romaji": "じょうぶ",
+      "translation": "chắc chắn, bền",
+      "q": "Từ 丈夫[な] đọc là gì?",
+      "a": [
+        "へん",
+        "しあわせ",
+        "だんぼう",
+        "じょうぶ"
+      ],
+      "c": 3,
+      "ex": "chắc chắn, bền | 丈夫 (trượng phụ)"
+    },
+    {
+      "word": "変な",
+      "romaji": "へん",
+      "translation": "kỳ lạ",
+      "q": "Từ 変[な] đọc là gì?",
+      "a": [
+        "しあわせ",
+        "だんぼう",
+        "れいぼう",
+        "へん"
+      ],
+      "c": 3,
+      "ex": "kỳ lạ | 変 (biến)"
+    },
+    {
+      "word": "幸せな",
+      "romaji": "しあわせ",
+      "translation": "hạnh phúc",
+      "q": "Từ 幸せ[な] đọc là gì?",
+      "a": [
+        "だんぼう",
+        "れいぼう",
+        "かいいん",
+        "しあわせ"
+      ],
+      "c": 3,
+      "ex": "hạnh phúc | 幸 (hạnh)"
+    },
+    {
+      "word": "火",
+      "romaji": "ひ",
+      "translation": "lửa",
+      "q": "Từ 火 đọc là gì?",
+      "a": [
+        "れいぼう",
+        "かいいん",
+        "てきとう",
+        "だんぼう"
+      ],
+      "c": 3,
+      "ex": "lửa | 火 (hỏa)"
+    },
+    {
+      "word": "暖房",
+      "romaji": "だんぼう",
+      "translation": "máy sưởi",
+      "q": "Từ 暖房 đọc là gì?",
+      "a": [
+        "かいいん",
+        "てきとう",
+        "ねんれい",
+        "れいぼう"
+      ],
+      "c": 3,
+      "ex": "máy sưởi | 暖房 (noãn phòng)"
+    },
+    {
+      "word": "冷房",
+      "romaji": "れいぼう",
+      "translation": "máy lạnh",
+      "q": "Từ 冷房 đọc là gì?",
+      "a": [
+        "てきとう",
+        "ねんれい",
+        "しゅうにゅう",
+        "かいいん"
+      ],
+      "c": 3,
+      "ex": "máy lạnh | 冷房 (lãnh phòng)"
+    },
+    {
+      "word": "今にも",
+      "romaji": "いまにも",
+      "translation": "ngay cả bây giờ, sắp sửa",
+      "q": "Từ 今にも đọc là gì?",
+      "a": [
+        "ねんれい",
+        "しゅうにゅう",
+        "ひ",
+        "てきとう"
+      ],
+      "c": 3,
+      "ex": "ngay cả bây giờ | 今 (kim)"
+    },
+    {
+      "word": "会員",
+      "romaji": "かいいん",
+      "translation": "hội viên",
+      "q": "Từ 会員 đọc là gì?",
+      "a": [
+        "しゅうにゅう",
+        "ひ",
+        "だんぼう",
+        "ねんれい"
+      ],
+      "c": 3,
+      "ex": "hội viên | 会 (hội) + 員 (viên)"
+    },
+    {
+      "word": "適当な",
+      "romaji": "てきとう",
+      "translation": "thích hợp, phù hợp",
+      "q": "Từ 適当[な] đọc là gì?",
+      "a": [
+        "ひ",
+        "だんぼう",
+        "いまにも",
+        "しゅうにゅう"
+      ],
+      "c": 3,
+      "ex": "thích hợp | 適当 (thích đương)"
+    },
+    {
+      "word": "年齢",
+      "romaji": "ねんれい",
+      "translation": "tuổi tác",
+      "q": "Từ 年齢 đọc là gì?",
+      "a": [
+        "だんぼう",
+        "いまにも",
+        "かいいん",
+        "ひ"
+      ],
+      "c": 3,
+      "ex": "tuổi tác | 年齢 (niên linh)"
+    },
+    {
+      "word": "収入",
+      "romaji": "しゅうにゅう",
+      "translation": "thu nhập",
+      "q": "Từ 収入 đọc là gì?",
+      "a": [
+        "いまにも",
+        "かいいん",
+        "しゅうにゅう",
+        "だんぼう"
+      ],
+      "c": 2,
+      "ex": "thu nhập | 収入 (thu nhập)"
+    }
+  ]
+}

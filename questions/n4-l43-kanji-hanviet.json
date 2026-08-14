@@ -1,0 +1,332 @@
+{
+  "id": "n4-l43-kanji-hanviet",
+  "name": "N4 Bài 43 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 43, hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-14T01:39:24.324Z",
+  "updatedAt": "2026-08-14T01:39:30.951Z",
+  "questions": [
+    {
+      "word": "増",
+      "romaji": "tăng",
+      "translation": "tăng thêm (増えます)",
+      "q": "Chữ 増 trong từ 増えます mang âm Hán Việt nào?",
+      "a": [
+        "TĂNG",
+        "GIẢM",
+        "THƯỢNG",
+        "HẠ"
+      ],
+      "c": 0,
+      "ex": "増えます: tăng"
+    },
+    {
+      "word": "減",
+      "romaji": "giảm",
+      "translation": "giảm đi (減ります)",
+      "q": "Chữ 減 trong từ 減ります mang âm Hán Việt nào?",
+      "a": [
+        "TĂNG",
+        "THƯỢNG",
+        "HẠ",
+        "GIẢM"
+      ],
+      "c": 3,
+      "ex": "減ります: giảm"
+    },
+    {
+      "word": "上",
+      "romaji": "thượng",
+      "translation": "lên (上がります)",
+      "q": "Chữ 上 trong từ 上がります mang âm Hán Việt nào?",
+      "a": [
+        "GIẢM",
+        "HẠ",
+        "THIẾT",
+        "THƯỢNG"
+      ],
+      "c": 3,
+      "ex": "上がります: lên giá"
+    },
+    {
+      "word": "下",
+      "romaji": "hạ",
+      "translation": "xuống (下がります)",
+      "q": "Chữ 下 trong từ 下がります mang âm Hán Việt nào?",
+      "a": [
+        "THƯỢNG",
+        "THIẾT",
+        "LẠC",
+        "HẠ"
+      ],
+      "c": 3,
+      "ex": "下がります: hạ giá"
+    },
+    {
+      "word": "切",
+      "romaji": "thiết",
+      "translation": "cắt, đứt (切れます)",
+      "q": "Chữ 切 trong từ 切れます mang âm Hán Việt nào?",
+      "a": [
+        "HẠ",
+        "LẠC",
+        "TRƯỢNG",
+        "THIẾT"
+      ],
+      "c": 3,
+      "ex": "切れます: đừt"
+    },
+    {
+      "word": "落",
+      "romaji": "lạc",
+      "translation": "rơi (落ちます)",
+      "q": "Chữ 落 trong từ 落ちます mang âm Hán Việt nào?",
+      "a": [
+        "THIẾT",
+        "TRƯỢNG",
+        "PHU",
+        "LẠC"
+      ],
+      "c": 3,
+      "ex": "切れます: đứt"
+    },
+    {
+      "word": "丈",
+      "romaji": "trượng",
+      "translation": "định lượng, trượng (丈夫)",
+      "q": "Chữ 丈 trong từ 丈夫 mang âm Hán Việt nào?",
+      "a": [
+        "LẠC",
+        "PHU",
+        "BIẾN",
+        "TRƯỢNG"
+      ],
+      "c": 3,
+      "ex": "丈夫: chắc chắn"
+    },
+    {
+      "word": "夫",
+      "romaji": "phu",
+      "translation": "người đàn ông (丈夫)",
+      "q": "Chữ 夫 trong từ 丈夫 mang âm Hán Việt nào?",
+      "a": [
+        "TRƯỢNG",
+        "BIẾN",
+        "HẠNH",
+        "PHU"
+      ],
+      "c": 3,
+      "ex": "丈夫: chắc chắn"
+    },
+    {
+      "word": "変",
+      "romaji": "biến",
+      "translation": "thay đổi, khác lạ (変)",
+      "q": "Chữ 変 mang âm Hán Việt nào?",
+      "a": [
+        "PHU",
+        "HẠNH",
+        "HỌA",
+        "BIẾN"
+      ],
+      "c": 3,
+      "ex": "変: kỳ lạ"
+    },
+    {
+      "word": "幸",
+      "romaji": "hạnh",
+      "translation": "hạnh phúc (幸)",
+      "q": "Chữ 幸 mang âm Hán Việt nào?",
+      "a": [
+        "BIẾN",
+        "HỌA",
+        "NOÃN",
+        "HẠNH"
+      ],
+      "c": 3,
+      "ex": "幸: hạnh phúc"
+    },
+    {
+      "word": "火",
+      "romaji": "hỏa",
+      "translation": "lửa (火)",
+      "q": "Chữ 火 mang âm Hán Việt nào?",
+      "a": [
+        "HẠNH",
+        "NOÃN",
+        "PHÒNG",
+        "HỌA"
+      ],
+      "c": 3,
+      "ex": "火: lửa"
+    },
+    {
+      "word": "暖",
+      "romaji": "noãn",
+      "translation": "ấm (暖房)",
+      "q": "Chữ 暖 trong từ 暖房 mang âm Hán Việt nào?",
+      "a": [
+        "HỌA",
+        "NOÃN",
+        "PHÒNG",
+        "LÃNH"
+      ],
+      "c": 1,
+      "ex": "暖房: máy sưởi"
+    },
+    {
+      "word": "房",
+      "romaji": "phòng",
+      "translation": "phòng (暖房/冷房)",
+      "q": "Chữ 房 trong từ 暖房 mang âm Hán Việt nào?",
+      "a": [
+        "NOÃN",
+        "PHÒNG",
+        "LÃNH",
+        "KIM"
+      ],
+      "c": 1,
+      "ex": "暖房 / 冷房: máy sưởi / máy lạnh"
+    },
+    {
+      "word": "冷",
+      "romaji": "lãnh",
+      "translation": "lạnh (冷房)",
+      "q": "Chữ 冷 trong từ 冷房 mang âm Hán Việt nào?",
+      "a": [
+        "PHÒNG",
+        "LÃNH",
+        "KIM",
+        "HỘI"
+      ],
+      "c": 1,
+      "ex": "冷房: máy lạnh"
+    },
+    {
+      "word": "今",
+      "romaji": "kim",
+      "translation": "hiện nay (今にも)",
+      "q": "Chữ 今 trong từ 今にも mang âm Hán Việt nào?",
+      "a": [
+        "LÃNH",
+        "KIM",
+        "HỘI",
+        "VIÊN"
+      ],
+      "c": 1,
+      "ex": "今にも: ngay cả bây giờ"
+    },
+    {
+      "word": "会",
+      "romaji": "hội",
+      "translation": "hội (会員)",
+      "q": "Chữ 会 trong từ 会員 mang âm Hán Việt nào?",
+      "a": [
+        "KIM",
+        "HỘI",
+        "VIÊN",
+        "THÍCH"
+      ],
+      "c": 1,
+      "ex": "会員: hội viên"
+    },
+    {
+      "word": "員",
+      "romaji": "viên",
+      "translation": "thành viên (会員)",
+      "q": "Chữ 員 trong từ 会員 mang âm Hán Việt nào?",
+      "a": [
+        "HỘI",
+        "VIÊN",
+        "THÍCH",
+        "ĐƯƠNG"
+      ],
+      "c": 1,
+      "ex": "会員: hội viên"
+    },
+    {
+      "word": "適",
+      "romaji": "thích",
+      "translation": "thích hợp (適当)",
+      "q": "Chữ 適 trong từ 適当 mang âm Hán Việt nào?",
+      "a": [
+        "VIÊN",
+        "THÍCH",
+        "ĐƯƠNG",
+        "NIÊN"
+      ],
+      "c": 1,
+      "ex": "適当: thích hợp"
+    },
+    {
+      "word": "当",
+      "romaji": "đương",
+      "translation": "đương, thích đáng (適当)",
+      "q": "Chữ 当 trong từ 適当 mang âm Hán Việt nào?",
+      "a": [
+        "THÍCH",
+        "ĐƯƠNG",
+        "NIÊN",
+        "LINH"
+      ],
+      "c": 1,
+      "ex": "適当: thích hợp"
+    },
+    {
+      "word": "年",
+      "romaji": "niên",
+      "translation": "năm, tuổi (年齢)",
+      "q": "Chữ 年 trong từ 年齢 mang âm Hán Việt nào?",
+      "a": [
+        "ĐƯƠNG",
+        "NIÊN",
+        "LINH",
+        "THU"
+      ],
+      "c": 1,
+      "ex": "年齢: tuổi tác"
+    },
+    {
+      "word": "齢",
+      "romaji": "linh",
+      "translation": "tuổi (年齢)",
+      "q": "Chữ 齢 trong từ 年齢 mang âm Hán Việt nào?",
+      "a": [
+        "NIÊN",
+        "LINH",
+        "THU",
+        "NHẬP"
+      ],
+      "c": 1,
+      "ex": "年齢: tuổi tác"
+    },
+    {
+      "word": "収",
+      "romaji": "thu",
+      "translation": "thu, thu hoạch (収入)",
+      "q": "Chữ 収 trong từ 収入 mang âm Hán Việt nào?",
+      "a": [
+        "LINH",
+        "THU",
+        "NHẬP",
+        "THỦY"
+      ],
+      "c": 1,
+      "ex": "収入: thu nhập"
+    },
+    {
+      "word": "入",
+      "romaji": "nhập",
+      "translation": "vào (収入)",
+      "q": "Chữ 入 trong từ 収入 mang âm Hán Việt nào?",
+      "a": [
+        "THU",
+        "NHẬP",
+        "THỦY",
+        "ĐỊA"
+      ],
+      "c": 1,
+      "ex": "収入: thu nhập"
+    }
+  ]
+}

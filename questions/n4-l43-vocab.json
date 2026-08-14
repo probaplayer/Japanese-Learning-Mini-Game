@@ -1,0 +1,346 @@
+{
+  "id": "n4-l43-vocab",
+  "name": "N4 Bài 43 - Từ vựng (nghĩa)",
+  "description": "Từ vựng Minna no Nihongo Bài 43 (N4). Câu hỏi hỏi nghĩa tiếng Việt của từ.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-13T07:33:49.575Z",
+  "updatedAt": "2026-08-14T01:36:50.682Z",
+  "questions": [
+    {
+      "word": "増えます",
+      "romaji": "ふえます",
+      "translation": "tăng",
+      "q": "Từ 増えます (ふえます) có nghĩa là gì?",
+      "a": [
+        "tăng",
+        "giảm",
+        "lên (giá)",
+        "hạ (giá)"
+      ],
+      "c": 0,
+      "ex": "増 (tăng) - tăng thêm"
+    },
+    {
+      "word": "減ります",
+      "romaji": "へります",
+      "translation": "giảm",
+      "q": "Từ 減ります (へります) có nghĩa là gì?",
+      "a": [
+        "tăng",
+        "giảm",
+        "lên (giá)",
+        "hạ (giá)"
+      ],
+      "c": 1,
+      "ex": "減 (giảm) - giảm đi"
+    },
+    {
+      "word": "上がります",
+      "romaji": "あがります",
+      "translation": "lên (giá cả)",
+      "q": "Từ 上がります (あがります) có nghĩa là gì?",
+      "a": [
+        "giảm",
+        "lên (giá cả)",
+        "hạ (giá cả)",
+        "đữt"
+      ],
+      "c": 1,
+      "ex": "上 (thượng) - lên"
+    },
+    {
+      "word": "下がります",
+      "romaji": "さがります",
+      "translation": "hạ (giá cả)",
+      "q": "Từ 下がります (さがります) có nghĩa là gì?",
+      "a": [
+        "lên (giá)",
+        "hạ (giá cả)",
+        "đữt",
+        "rơi"
+      ],
+      "c": 1,
+      "ex": "下 (hạ) - xuống"
+    },
+    {
+      "word": "切れます",
+      "romaji": "きれます",
+      "translation": "đữt",
+      "q": "Từ 切れます (きれます) có nghĩa là gì?",
+      "a": [
+        "hạ (giá)",
+        "đữt",
+        "rơi",
+        "tuột"
+      ],
+      "c": 1,
+      "ex": "切 (thiết) - cắt, đữt"
+    },
+    {
+      "word": "とれます",
+      "romaji": "とれます",
+      "translation": "tuột, tuột ra",
+      "q": "Từ とれます có nghĩa là gì?",
+      "a": [
+        "đữt",
+        "tuột, tuột ra",
+        "rơi",
+        "mất, hết"
+      ],
+      "c": 1,
+      "ex": "とれます - không có kanji phổ biến"
+    },
+    {
+      "word": "落ちます",
+      "romaji": "おちます",
+      "translation": "rơi, rớt xuống",
+      "q": "Từ 落ちます (おちます) có nghĩa là gì?",
+      "a": [
+        "tuột",
+        "rơi, rớt xuống",
+        "mất, hết",
+        "chắc chắn"
+      ],
+      "c": 1,
+      "ex": "落 (lạc) - rơi"
+    },
+    {
+      "word": "なくなります",
+      "romaji": "なくなります",
+      "translation": "mất, hết",
+      "q": "Từ なくなります có nghĩa là gì?",
+      "a": [
+        "rơi",
+        "mất, hết",
+        "chắc chắn",
+        "kỳ lạ"
+      ],
+      "c": 1,
+      "ex": "なくなります - mất đi (không còn)"
+    },
+    {
+      "word": "丈夫な",
+      "romaji": "じょうぶ",
+      "translation": "chắc chắn, bền",
+      "q": "Từ 丈夫[な] (じょうぶ) có nghĩa là gì?",
+      "a": [
+        "mất, hết",
+        "chắc chắn, bền",
+        "kỳ lạ",
+        "hạnh phúc"
+      ],
+      "c": 1,
+      "ex": "丈夫 (trượng phụ)"
+    },
+    {
+      "word": "変な",
+      "romaji": "へん",
+      "translation": "kỳ lạ",
+      "q": "Từ 変[な] (へん) có nghĩa là gì?",
+      "a": [
+        "chắc chắn",
+        "kỳ lạ",
+        "hạnh phúc",
+        "ngon"
+      ],
+      "c": 1,
+      "ex": "変 (biến) - khác lạ"
+    },
+    {
+      "word": "幸せな",
+      "romaji": "しあわせ",
+      "translation": "hạnh phúc",
+      "q": "Từ 幸せ[な] (しあわせ) có nghĩa là gì?",
+      "a": [
+        "kỳ lạ",
+        "hạnh phúc",
+        "ngon",
+        "dở"
+      ],
+      "c": 1,
+      "ex": "幸 (hạnh)"
+    },
+    {
+      "word": "うまい",
+      "romaji": "うまい",
+      "translation": "ngon",
+      "q": "Từ うまい có nghĩa là gì?",
+      "a": [
+        "hạnh phúc",
+        "ngon",
+        "dở",
+        "buồn chán"
+      ],
+      "c": 1,
+      "ex": "うまい - từ khẩu ngữ nghĩa là ngon"
+    },
+    {
+      "word": "まずい",
+      "romaji": "まずい",
+      "translation": "dở, không ngon",
+      "q": "Từ まずい có nghĩa là gì?",
+      "a": [
+        "ngon",
+        "dở, không ngon",
+        "buồn chán",
+        "xăng"
+      ],
+      "c": 1,
+      "ex": "まずい - từ khẩu ngữ nghĩa là dở"
+    },
+    {
+      "word": "つまらない",
+      "romaji": "つまらない",
+      "translation": "buồn chán, nhàm chán",
+      "q": "Từ つまらない có nghĩa là gì?",
+      "a": [
+        "dở",
+        "buồn chán, nhàm chán",
+        "xăng",
+        "lửa"
+      ],
+      "c": 1,
+      "ex": "つまらない - nhàm chán"
+    },
+    {
+      "word": "ガソリン",
+      "romaji": "がそりん",
+      "translation": "xăng",
+      "q": "Từ ガソリン có nghĩa là gì?",
+      "a": [
+        "buồn chán",
+        "xăng",
+        "lửa",
+        "máy sưởi"
+      ],
+      "c": 1,
+      "ex": "ガソリン (từ mượn tiếng Anh: gasoline)"
+    },
+    {
+      "word": "火",
+      "romaji": "ひ",
+      "translation": "lửa",
+      "q": "Từ 火 (ひ) có nghĩa là gì?",
+      "a": [
+        "xăng",
+        "lửa",
+        "máy sưởi",
+        "máy lạnh"
+      ],
+      "c": 1,
+      "ex": "火 (hỏa)"
+    },
+    {
+      "word": "暖房",
+      "romaji": "だんぼう",
+      "translation": "máy sưởi",
+      "q": "Từ 暖房 (だんぼう) có nghĩa là gì?",
+      "a": [
+        "lửa",
+        "máy sưởi",
+        "máy lạnh",
+        "sự nhạy cảm, có gu"
+      ],
+      "c": 1,
+      "ex": "暖房 (noãn phòng)"
+    },
+    {
+      "word": "冷房",
+      "romaji": "れいぼう",
+      "translation": "máy lạnh",
+      "q": "Từ 冷房 (れいぼう) có nghĩa là gì?",
+      "a": [
+        "máy sưởi",
+        "máy lạnh",
+        "sự nhạy cảm",
+        "ngay cả bây giờ"
+      ],
+      "c": 1,
+      "ex": "冷房 (lãnh phòng)"
+    },
+    {
+      "word": "センス",
+      "romaji": "せんす",
+      "translation": "sự nhạy cảm, có gu",
+      "q": "Từ センス có nghĩa là gì?",
+      "a": [
+        "máy lạnh",
+        "sự nhạy cảm, có gu",
+        "ngay cả bây giờ",
+        "hội viên"
+      ],
+      "c": 1,
+      "ex": "センス (từ mượn tiếng Anh: sense)"
+    },
+    {
+      "word": "今にも",
+      "romaji": "いまにも",
+      "translation": "ngay cả bây giờ, sắp sửa",
+      "q": "Từ 今にも (いまにも) có nghĩa là gì?",
+      "a": [
+        "sự nhạy cảm",
+        "ngay cả bây giờ, sắp sửa",
+        "hội viên",
+        "thích hợp"
+      ],
+      "c": 1,
+      "ex": "今 (kim) - hiện nay"
+    },
+    {
+      "word": "会員",
+      "romaji": "かいいん",
+      "translation": "hội viên",
+      "q": "Từ 会員 (かいいん) có nghĩa là gì?",
+      "a": [
+        "ngay cả bây giờ",
+        "hội viên",
+        "thích hợp",
+        "tuổi tác"
+      ],
+      "c": 1,
+      "ex": "会 (hội) + 員 (viên)"
+    },
+    {
+      "word": "適当な",
+      "romaji": "てきとう",
+      "translation": "thích hợp, phù hợp",
+      "q": "Từ 適当[な] (てきとう) có nghĩa là gì?",
+      "a": [
+        "hội viên",
+        "thích hợp, phù hợp",
+        "tuổi tác",
+        "thu nhập"
+      ],
+      "c": 1,
+      "ex": "適当 (thích đương)"
+    },
+    {
+      "word": "年齢",
+      "romaji": "ねんれい",
+      "translation": "tuổi tác",
+      "q": "Từ 年齢 (ねんれい) có nghĩa là gì?",
+      "a": [
+        "thích hợp",
+        "tuổi tác",
+        "thu nhập",
+        "vừa khít"
+      ],
+      "c": 1,
+      "ex": "年齢 (niên linh)"
+    },
+    {
+      "word": "収入",
+      "romaji": "しゅうにゅう",
+      "translation": "thu nhập",
+      "q": "Từ 収入 (しゅうにゅう) có nghĩa là gì?",
+      "a": [
+        "tuổi tác",
+        "thu nhập",
+        "vừa khít",
+        "tăng"
+      ],
+      "c": 1,
+      "ex": "収入 (thu nhập)"
+    }
+  ]
+}

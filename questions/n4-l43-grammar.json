@@ -1,0 +1,115 @@
+{
+  "id": "n4-l43-grammar",
+  "name": "N4 Bài 43 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 43 Minna no Nihongo: ~そうです (suy đoán từ bề ngoài, không phải そうです nghe nói), Vてきます (đi làm gì rồi về), N(địa điểm)へ行ってきます.",
+  "category": "grammar",
+  "createdAt": "2026-08-14T01:40:08.530Z",
+  "updatedAt": "2026-08-14T01:40:41.192Z",
+  "questions": [
+    {
+      "sentence": "雨が降りそうです",
+      "chunks": [
+        "雨",
+        "が",
+        "降りそうです"
+      ],
+      "translation": "Trời trông có vẻ sắp mưa",
+      "ex": "V(bỏ ます)+そうです: suy đoán dựa trên quan sát bằng mắt (không phải そうです nghe nói)"
+    },
+    {
+      "sentence": "この料理はおいしそうです",
+      "chunks": [
+        "この料理",
+        "は",
+        "おいしそうです"
+      ],
+      "translation": "Món này trông có vẻ ngon",
+      "ex": "Aい(bỏ い)+そうです: trông có vẻ dựa trên vẻ ngoài"
+    },
+    {
+      "sentence": "この問題は複雑そうです",
+      "chunks": [
+        "この問題",
+        "は",
+        "複雑そうです"
+      ],
+      "translation": "Vấn đề này trông có vẻ phức tạp",
+      "ex": "Aな(bỏ な)+そうです: trông có vẻ dựa trên vẻ ngoài"
+    },
+    {
+      "sentence": "ちょっとたばこを買ってきます",
+      "chunks": [
+        "ちょっと",
+        "たばこ",
+        "を",
+        "買ってきます"
+      ],
+      "translation": "Tôi đi mua thuốc lá một chút rồi về",
+      "ex": "Vて+きます: đi đến đâu làm gì rồi trở về"
+    },
+    {
+      "sentence": "郵便局へ行ってきます",
+      "chunks": [
+        "郵便局",
+        "へ",
+        "行ってきます"
+      ],
+      "translation": "Tôi đến bưu điện rồi về",
+      "ex": "N(địa điểm)へ行ってきます: đi đến 1 địa điểm nào đó rồi trở về"
+    },
+    {
+      "sentence": "スーパーでミルクを買ってきます",
+      "chunks": [
+        "スーパー",
+        "で",
+        "ミルク",
+        "を",
+        "買ってきます"
+      ],
+      "translation": "Tôi đến siêu thị mua sữa rồi về",
+      "ex": "N(địa điểm)で+Vてきます: địa điểm xảy ra hành động"
+    },
+    {
+      "sentence": "台所からコップを取ってきます",
+      "chunks": [
+        "台所",
+        "から",
+        "コップ",
+        "を",
+        "取ってきます"
+      ],
+      "translation": "Tôi đi lấy cái cốc từ nhà bếp rồi về",
+      "ex": "Nから+Vてきます: dùng から khi tiêu điểm là sự di chuyển của đồ vật"
+    },
+    {
+      "sentence": "その本は面白そうです",
+      "chunks": [
+        "その本",
+        "は",
+        "面白そうです"
+      ],
+      "translation": "Cuốn sách đó trông có vẻ thú vị",
+      "ex": "Aい(bỏ い)+そうです: trông có vẻ thú vị"
+    },
+    {
+      "sentence": "この機械は使いやすそうです",
+      "chunks": [
+        "この機械",
+        "は",
+        "使いやすそうです"
+      ],
+      "translation": "Cái máy này trông có vẻ dễ dùng",
+      "ex": "Aい(bỏ い)+そうです: trông có vẻ dễ dùng"
+    },
+    {
+      "sentence": "彼は元気そうです",
+      "chunks": [
+        "彼",
+        "は",
+        "元気そうです"
+      ],
+      "translation": "Anh ấy trông có vẻ khỏe",
+      "ex": "Aな(bỏ な)+そうです: trông có vẻ khỏe mạnh"
+    }
+  ]
+}

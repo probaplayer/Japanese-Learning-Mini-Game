@@ -1,0 +1,388 @@
+{
+  "id": "n4-l48-kanji-hanviet",
+  "name": "N4 Bài 48 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 48, hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-27T04:10:44.598Z",
+  "updatedAt": "2026-08-27T04:10:44.598Z",
+  "questions": [
+    {
+      "word": "降",
+      "romaji": "hàng",
+      "translation": "hạ xuống (降ろします)",
+      "q": "Chữ 降 trong từ 降ろします mang âm Hán Việt nào?",
+      "a": [
+        "HÀNG",
+        "GIỚI",
+        "THẾ",
+        "THOẠI"
+      ],
+      "c": 0,
+      "ex": "降ろします: cho xuống"
+    },
+    {
+      "word": "届",
+      "romaji": "giới",
+      "translation": "gửi tới (届けます)",
+      "q": "Chữ 届 trong từ 届けます mang âm Hán Việt nào?",
+      "a": [
+        "HÀNG",
+        "THẾ",
+        "THOẠI",
+        "GIỚI"
+      ],
+      "c": 3,
+      "ex": "届けます: gửi đến"
+    },
+    {
+      "word": "世",
+      "romaji": "thế",
+      "translation": "đời, cuộc sống (世話)",
+      "q": "Chữ 世 trong từ 世話 mang âm Hán Việt nào?",
+      "a": [
+        "GIỚI",
+        "THOẠI",
+        "HIỀM",
+        "THẾ"
+      ],
+      "c": 3,
+      "ex": "世話: chăm sóc"
+    },
+    {
+      "word": "話",
+      "romaji": "thoại",
+      "translation": "chuyện, lời nói (世話)",
+      "q": "Chữ 話 trong từ 世話 mang âm Hán Việt nào?",
+      "a": [
+        "THẾ",
+        "HIỀM",
+        "NGHIÊM",
+        "THOẠI"
+      ],
+      "c": 3,
+      "ex": "世話: chăm sóc"
+    },
+    {
+      "word": "嫌",
+      "romaji": "hiềm",
+      "translation": "ghét, không thích (嫌な)",
+      "q": "Chữ 嫌 mang âm Hán Việt nào?",
+      "a": [
+        "HIỀM",
+        "NGHIÊM",
+        "THỤC",
+        "THẾ"
+      ],
+      "c": 0,
+      "ex": "嫌な: không thích"
+    },
+    {
+      "word": "厳",
+      "romaji": "nghiêm",
+      "translation": "nghiêm khắc (厳しい)",
+      "q": "Chữ 厳 mang âm Hán Việt nào?",
+      "a": [
+        "NGHIÊM",
+        "THỤC",
+        "SINH",
+        "ĐỒ"
+      ],
+      "c": 0,
+      "ex": "厳しい: nghiêm khắc"
+    },
+    {
+      "word": "塾",
+      "romaji": "thục",
+      "translation": "cơ sở học thêm (塾)",
+      "q": "Chữ 塾 mang âm Hán Việt nào?",
+      "a": [
+        "THỤC",
+        "SINH",
+        "ĐỒ",
+        "GIẢ"
+      ],
+      "c": 0,
+      "ex": "塾: cơ sở học thêm"
+    },
+    {
+      "word": "生",
+      "romaji": "sinh",
+      "translation": "sinh, học trò (生徒)",
+      "q": "Chữ 生 trong từ 生徒 mang âm Hán Việt nào?",
+      "a": [
+        "SINH",
+        "ĐỒ",
+        "GIẢ",
+        "NHẬP"
+      ],
+      "c": 0,
+      "ex": "生徒: học sinh"
+    },
+    {
+      "word": "徒",
+      "romaji": "đồ",
+      "translation": "học trò (生徒)",
+      "q": "Chữ 徒 trong từ 生徒 mang âm Hán Việt nào?",
+      "a": [
+        "ĐỒ",
+        "GIẢ",
+        "NHẬP",
+        "QUÁN"
+      ],
+      "c": 0,
+      "ex": "生徒: học sinh"
+    },
+    {
+      "word": "者",
+      "romaji": "giả",
+      "translation": "người (者)",
+      "q": "Chữ 者 mang âm Hán Việt nào?",
+      "a": [
+        "GIẢ",
+        "NHẬP",
+        "QUÁN",
+        "TÁI"
+      ],
+      "c": 0,
+      "ex": "者: người"
+    },
+    {
+      "word": "入",
+      "romaji": "nhập",
+      "translation": "vào (入館)",
+      "q": "Chữ 入 trong từ 入館 mang âm Hán Việt nào?",
+      "a": [
+        "NHẬP",
+        "QUÁN",
+        "TÁI",
+        "QUỐC"
+      ],
+      "c": 0,
+      "ex": "入館: vào cửa"
+    },
+    {
+      "word": "館",
+      "romaji": "quán",
+      "translation": "tòa nhà, quán (入館)",
+      "q": "Chữ 館 trong từ 入館 mang âm Hán Việt nào?",
+      "a": [
+        "QUÁN",
+        "TÁI",
+        "QUỐC",
+        "TỰ"
+      ],
+      "c": 0,
+      "ex": "入館: vào cửa"
+    },
+    {
+      "word": "再",
+      "romaji": "tái",
+      "translation": "lại, lần nữa (再入国)",
+      "q": "Chữ 再 trong từ 再入国 mang âm Hán Việt nào?",
+      "a": [
+        "TÁI",
+        "QUỐC",
+        "TỰ",
+        "DO"
+      ],
+      "c": 0,
+      "ex": "再入国: tái nhập cảnh"
+    },
+    {
+      "word": "国",
+      "romaji": "quốc",
+      "translation": "nước (再入国)",
+      "q": "Chữ 国 trong từ 再入国 mang âm Hán Việt nào?",
+      "a": [
+        "QUỐC",
+        "TỰ",
+        "DO",
+        "GIAN"
+      ],
+      "c": 0,
+      "ex": "再入国: tái nhập cảnh"
+    },
+    {
+      "word": "由",
+      "romaji": "do",
+      "translation": "tự do (自由)",
+      "q": "Chữ 由 trong từ 自由 mang âm Hán Việt nào?",
+      "a": [
+        "TỰ",
+        "DO",
+        "GIAN",
+        "CỮU"
+      ],
+      "c": 1,
+      "ex": "自由: tự do"
+    },
+    {
+      "word": "間",
+      "romaji": "gian",
+      "translation": "khoảng (～間)",
+      "q": "Chữ 間 mang âm Hán Việt nào?",
+      "a": [
+        "DO",
+        "GIAN",
+        "CỮU",
+        "DOANH"
+      ],
+      "c": 1,
+      "ex": "～間: trong (khoảng thời gian)"
+    },
+    {
+      "word": "久",
+      "romaji": "cửa",
+      "translation": "lâu (久しぶり)",
+      "q": "Chữ 久 mang âm Hán Việt nào?",
+      "a": [
+        "GIAN",
+        "CỮU",
+        "DOANH",
+        "NGHIỆP"
+      ],
+      "c": 1,
+      "ex": "久しぶり: lâu rồi không gặp"
+    },
+    {
+      "word": "営",
+      "romaji": "doanh",
+      "translation": "kinh doanh (営業)",
+      "q": "Chữ 営 trong từ 営業 mang âm Hán Việt nào?",
+      "a": [
+        "CỮU",
+        "DOANH",
+        "NGHIỆP",
+        "CẤU"
+      ],
+      "c": 1,
+      "ex": "営業: kinh doanh"
+    },
+    {
+      "word": "業",
+      "romaji": "nghiệp",
+      "translation": "nghề nghiệp (営業)",
+      "q": "Chữ 業 trong từ 営業 mang âm Hán Việt nào?",
+      "a": [
+        "DOANH",
+        "NGHIỆP",
+        "CẤU",
+        "LẠC"
+      ],
+      "c": 1,
+      "ex": "営業: kinh doanh"
+    },
+    {
+      "word": "構",
+      "romaji": "cấu",
+      "translation": "bận tâm (構いません)",
+      "q": "Chữ 構 mang âm Hán Việt nào?",
+      "a": [
+        "NGHIỆP",
+        "CẤU",
+        "LẠC",
+        "THẾ"
+      ],
+      "c": 1,
+      "ex": "構いません: không sao"
+    },
+    {
+      "word": "楽",
+      "romaji": "lạc",
+      "translation": "vui (楽しみます)",
+      "q": "Chữ 楽 mang âm Hán Việt nào?",
+      "a": [
+        "CẤU",
+        "LẠC",
+        "THẾ",
+        "KỸ"
+      ],
+      "c": 1,
+      "ex": "楽しみます: vui thích"
+    },
+    {
+      "word": "紀",
+      "romaji": "kỷ",
+      "translation": "kỷ nguyên (世紀)",
+      "q": "Chữ 紀 trong từ 世紀 mang âm Hán Việt nào?",
+      "a": [
+        "LẠC",
+        "THẾ",
+        "KỸ",
+        "ĐẠI"
+      ],
+      "c": 2,
+      "ex": "世紀: thế kỷ"
+    },
+    {
+      "word": "代",
+      "romaji": "đại",
+      "translation": "thay thế (代わり)",
+      "q": "Chữ 代 mang âm Hán Việt nào?",
+      "a": [
+        "THẾ",
+        "KỸ",
+        "ĐẠI",
+        "CẠNH"
+      ],
+      "c": 2,
+      "ex": "代わりをします: thay thế"
+    },
+    {
+      "word": "競",
+      "romaji": "cạnh",
+      "translation": "tranh đua (競走)",
+      "q": "Chữ 競 trong từ 競走 mang âm Hán Việt nào?",
+      "a": [
+        "KỸ",
+        "ĐẠI",
+        "CẠNH",
+        "TẨU"
+      ],
+      "c": 2,
+      "ex": "競走します: chạy đua"
+    },
+    {
+      "word": "走",
+      "romaji": "tẩu",
+      "translation": "chạy (競走)",
+      "q": "Chữ 走 trong từ 競走 mang âm Hán Việt nào?",
+      "a": [
+        "ĐẠI",
+        "CẠNH",
+        "TẨU",
+        "NGHỆ"
+      ],
+      "c": 2,
+      "ex": "競走します: chạy đua"
+    },
+    {
+      "word": "芸",
+      "romaji": "nghệ",
+      "translation": "tài nghệ (芸)",
+      "q": "Chữ 芸 mang âm Hán Việt nào?",
+      "a": [
+        "CẠNH",
+        "TẨU",
+        "NGHỆ",
+        "MỸ"
+      ],
+      "c": 2,
+      "ex": "芸: tiết mục"
+    },
+    {
+      "word": "美",
+      "romaji": "mỹ",
+      "translation": "đẹp (美しい)",
+      "q": "Chữ 美 mang âm Hán Việt nào?",
+      "a": [
+        "TẨU",
+        "NGHỆ",
+        "MỸ",
+        "TƯ"
+      ],
+      "c": 2,
+      "ex": "美しい: đẹp"
+    }
+  ]
+}

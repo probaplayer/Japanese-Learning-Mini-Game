@@ -1,0 +1,127 @@
+{
+  "id": "n4-l48-grammar",
+  "name": "N4 Bài 48 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 48 Minna no Nihongo: Thể sai khiến (使役形 Vせます/させます - bắt/cho phép làm gì), ~させてください (xin phép làm gì), ~させていただけませんか (xin phép làm gì lịch sự).",
+  "category": "grammar",
+  "createdAt": "2026-08-27T04:11:22.831Z",
+  "updatedAt": "2026-08-27T04:11:22.831Z",
+  "questions": [
+    {
+      "sentence": "母は子供に野菜を食べさせます",
+      "chunks": [
+        "母",
+        "は",
+        "子供",
+        "に",
+        "野菜",
+        "を",
+        "食べさせます"
+      ],
+      "translation": "Mẹ bắt con ăn rau",
+      "ex": "Thể sai khiến (使役形): ば→ばせます, diễn tả bắt ai đó làm gì"
+    },
+    {
+      "sentence": "先生は学生に本を読ませます",
+      "chunks": [
+        "先生",
+        "は",
+        "学生",
+        "に",
+        "本",
+        "を",
+        "読ませます"
+      ],
+      "translation": "Thầy giáo cho học sinh đọc sách",
+      "ex": "Vむ→ませます (thể sai khiến nhóm I): thầy cho học sinh đọc sách"
+    },
+    {
+      "sentence": "部長は私に会議の資料を作らせました",
+      "chunks": [
+        "部長",
+        "は",
+        "私",
+        "に",
+        "会議の資料",
+        "を",
+        "作らせました"
+      ],
+      "translation": "Trưởng phòng bắt tôi làm tài liệu họp",
+      "ex": "Vる→させます (thể sai khiến nhóm II): trưởng phòng bắt tôi làm tài liệu"
+    },
+    {
+      "sentence": "子供を自由に遊ばせます",
+      "chunks": [
+        "子供",
+        "を",
+        "自由に",
+        "遊ばせます"
+      ],
+      "translation": "Cho con chơi tự do",
+      "ex": "Vば→ばせます: cho phép ai đó làm gì tự do"
+    },
+    {
+      "sentence": "すみませんが早退させてください",
+      "chunks": [
+        "すみませんが",
+        "早退させてください"
+      ],
+      "translation": "Xin lỗi, cho tôi về sớm",
+      "ex": "Vせて+ください: xin phép cho tôi làm gì"
+    },
+    {
+      "sentence": "あした休ませていただけませんか",
+      "chunks": [
+        "あした",
+        "休ませて",
+        "いただけませんか"
+      ],
+      "translation": "Ngày mai cho tôi nghỉ được không ạ?",
+      "ex": "Vせて+いただけませんか: xin phép cho tôi làm gì, lịch sự hơn"
+    },
+    {
+      "sentence": "ちょっと考えさせてください",
+      "chunks": [
+        "ちょっと",
+        "考えさせてください"
+      ],
+      "translation": "Xin cho tôi suy nghĩ một chút",
+      "ex": "Vせて+ください: xin cho tôi suy nghĩ"
+    },
+    {
+      "sentence": "私にその仕事をやらせてください",
+      "chunks": [
+        "私",
+        "に",
+        "その仕事",
+        "を",
+        "やらせてください"
+      ],
+      "translation": "Xin để tôi làm công việc đó",
+      "ex": "Vせて+ください: xin để tôi làm"
+    },
+    {
+      "sentence": "子供にピアノを習わせています",
+      "chunks": [
+        "子供",
+        "に",
+        "ピアノ",
+        "を",
+        "習わせています"
+      ],
+      "translation": "Tôi đang cho con học đàn piano",
+      "ex": "Vせる+ています: đang cho ai đó học/làm gì (hành động đang tiếp diễn)"
+    },
+    {
+      "sentence": "すみませんがここに車を止めさせてください",
+      "chunks": [
+        "すみませんが",
+        "ここに",
+        "車",
+        "を",
+        "止めさせてください"
+      ],
+      "translation": "Xin lỗi, cho tôi đậu xe ở đây",
+      "ex": "Vせて+ください: xin cho tôi đậu xe"
+    }
+  ]
+}

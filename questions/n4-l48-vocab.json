@@ -1,0 +1,318 @@
+{
+  "id": "n4-l48-vocab",
+  "name": "N4 Bài 48 - Từ vựng (nghĩa)",
+  "description": "Từ vựng Minna no Nihongo Bài 48 (N4). Câu hỏi hỏi nghĩa tiếng Việt của từ.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-27T04:08:32.557Z",
+  "updatedAt": "2026-08-27T04:08:54.711Z",
+  "questions": [
+    {
+      "word": "降ろします",
+      "romaji": "おろします",
+      "translation": "cho xuống, hạ xuống",
+      "q": "Từ 降ろします (おろします) có nghĩa là gì?",
+      "a": [
+        "cho xuống, hạ xuống",
+        "gửi đến, chuyển đến",
+        "chăm sóc",
+        "không thích, ngán"
+      ],
+      "c": 0,
+      "ex": "降 (hàng) - hạ xuống"
+    },
+    {
+      "word": "届けます",
+      "romaji": "とどけます",
+      "translation": "gửi đến, chuyển đến",
+      "q": "Từ 届けます (とどけます) có nghĩa là gì?",
+      "a": [
+        "cho xuống",
+        "gửi đến, chuyển đến",
+        "chăm sóc",
+        "không thích, ngán"
+      ],
+      "c": 1,
+      "ex": "届 (giới) - gửi tới"
+    },
+    {
+      "word": "世話をします",
+      "romaji": "せわをします",
+      "translation": "chăm sóc",
+      "q": "Từ 世話をします (せわをします) có nghĩa là gì?",
+      "a": [
+        "gửi đến",
+        "chăm sóc",
+        "không thích, ngán",
+        "nghiêm khắc"
+      ],
+      "c": 1,
+      "ex": "世話 (thế thoại)"
+    },
+    {
+      "word": "嫌な",
+      "romaji": "いや",
+      "translation": "không thích, ngán",
+      "q": "Từ 嫌[な] (いや) có nghĩa là gì?",
+      "a": [
+        "chăm sóc",
+        "không thích, ngán",
+        "nghiêm khắc, nghiêm ngặt",
+        "cơ sở học thêm"
+      ],
+      "c": 1,
+      "ex": "嫌 (hiềm) - ghét, không thích"
+    },
+    {
+      "word": "厳しい",
+      "romaji": "きびしい",
+      "translation": "nghiêm khắc, nghiêm ngặt",
+      "q": "Từ 厳しい (きびしい) có nghĩa là gì?",
+      "a": [
+        "không thích",
+        "nghiêm khắc, nghiêm ngặt",
+        "cơ sở học thêm",
+        "học sinh"
+      ],
+      "c": 1,
+      "ex": "厳 (nghiêm) - nghiêm khắc"
+    },
+    {
+      "word": "塾",
+      "romaji": "じゅく",
+      "translation": "cơ sở học thêm",
+      "q": "Từ 塾 đọc là じゅく, có nghĩa là gì?",
+      "a": [
+        "nghiêm khắc",
+        "cơ sở học thêm",
+        "học sinh",
+        "người"
+      ],
+      "c": 1,
+      "ex": "塾 (thục) - cơ sở học thêm"
+    },
+    {
+      "word": "生徒",
+      "romaji": "せいと",
+      "translation": "học sinh",
+      "q": "Từ 生徒 (せいと) có nghĩa là gì?",
+      "a": [
+        "cơ sở học thêm",
+        "học sinh",
+        "người",
+        "vào cửa"
+      ],
+      "c": 1,
+      "ex": "生徒 (sinh đồ)"
+    },
+    {
+      "word": "者",
+      "romaji": "もの",
+      "translation": "người (thân thuộc, cấp dưới)",
+      "q": "Từ 者 (もの) có nghĩa là gì?",
+      "a": [
+        "học sinh",
+        "người (thân thuộc, cấp dưới)",
+        "vào cửa",
+        "visa tái nhập cảnh"
+      ],
+      "c": 1,
+      "ex": "者 (giả) - người"
+    },
+    {
+      "word": "入館",
+      "romaji": "にゅうかん",
+      "translation": "vào cửa, nhập quán",
+      "q": "Từ 入館 (にゅうかん) có nghĩa là gì?",
+      "a": [
+        "người",
+        "vào cửa, nhập quán",
+        "visa tái nhập cảnh",
+        "một cách tự do"
+      ],
+      "c": 1,
+      "ex": "入 (nhập) + 館 (quán)"
+    },
+    {
+      "word": "再入国ビザ",
+      "romaji": "さいにゅうこくびざ",
+      "translation": "visa tái nhập cảnh",
+      "q": "Từ 再入国ビザ (さいにゅうこくびざ) có nghĩa là gì?",
+      "a": [
+        "vào cửa",
+        "visa tái nhập cảnh",
+        "một cách tự do",
+        "trong (khoảng thời gian)"
+      ],
+      "c": 1,
+      "ex": "再入国 (tái nhập quốc) + ビザ (visa)"
+    },
+    {
+      "word": "自由に",
+      "romaji": "じゆうに",
+      "translation": "một cách tự do",
+      "q": "Từ 自由に (じゆうに) có nghĩa là gì?",
+      "a": [
+        "visa tái nhập cảnh",
+        "một cách tự do",
+        "trong (khoảng thời gian)",
+        "lâu rồi không gặp"
+      ],
+      "c": 1,
+      "ex": "自由 (tự do)"
+    },
+    {
+      "word": "間",
+      "romaji": "かん",
+      "translation": "trong (khoảng thời gian)",
+      "q": "Từ ～間 (～かん) có nghĩa là gì?",
+      "a": [
+        "một cách tự do",
+        "trong (khoảng thời gian)",
+        "lâu rồi không gặp",
+        "kinh doanh, bán hàng"
+      ],
+      "c": 1,
+      "ex": "間 (gian)"
+    },
+    {
+      "word": "久しぶり",
+      "romaji": "ひさしぶり",
+      "translation": "lâu rồi không gặp",
+      "q": "Từ 久しぶり (ひさしぶり) có nghĩa là gì?",
+      "a": [
+        "trong (khoảng thời gian)",
+        "lâu rồi không gặp",
+        "kinh doanh, bán hàng",
+        "không sao, được thôi"
+      ],
+      "c": 1,
+      "ex": "久 (cửa) - lâu"
+    },
+    {
+      "word": "営業",
+      "romaji": "えいぎょう",
+      "translation": "kinh doanh, bán hàng",
+      "q": "Từ 営業 (えいぎょう) có nghĩa là gì?",
+      "a": [
+        "lâu rồi không gặp",
+        "kinh doanh, bán hàng",
+        "không sao, được thôi",
+        "vui thích"
+      ],
+      "c": 1,
+      "ex": "営 (doanh) + 業 (nghiệp)"
+    },
+    {
+      "word": "構いません",
+      "romaji": "かまいません",
+      "translation": "không sao, được thôi",
+      "q": "Từ 構いません (かまいません) có nghĩa là gì?",
+      "a": [
+        "kinh doanh",
+        "không sao, được thôi",
+        "vui thích",
+        "thế kỷ"
+      ],
+      "c": 1,
+      "ex": "構 (cấu) - bận tâm"
+    },
+    {
+      "word": "楽しみます",
+      "romaji": "たのしみます",
+      "translation": "vui thích",
+      "q": "Từ 楽しみます (たのしみます) có nghĩa là gì?",
+      "a": [
+        "không sao",
+        "vui thích",
+        "thế kỷ",
+        "thay thế"
+      ],
+      "c": 1,
+      "ex": "楽 (lạc) - vui"
+    },
+    {
+      "word": "世紀",
+      "romaji": "せいき",
+      "translation": "thế kỷ",
+      "q": "Từ 世紀 (せいき) có nghĩa là gì?",
+      "a": [
+        "vui thích",
+        "thế kỷ",
+        "thay thế",
+        "chạy đua"
+      ],
+      "c": 1,
+      "ex": "世紀 (thế kỷ)"
+    },
+    {
+      "word": "代わりをします",
+      "romaji": "かわりをします",
+      "translation": "thay thế",
+      "q": "Từ 代わりをします (かわりをします) có nghĩa là gì?",
+      "a": [
+        "thế kỷ",
+        "thay thế",
+        "chạy đua",
+        "tiết mục, tài nghệ"
+      ],
+      "c": 1,
+      "ex": "代 (đại) - thay"
+    },
+    {
+      "word": "競走します",
+      "romaji": "きょうそうします",
+      "translation": "chạy đua",
+      "q": "Từ 競走します (きょうそうします) có nghĩa là gì?",
+      "a": [
+        "thay thế",
+        "chạy đua",
+        "tiết mục, tài nghệ",
+        "đẹp"
+      ],
+      "c": 1,
+      "ex": "競 (cạnh) + 走 (tẩu)"
+    },
+    {
+      "word": "芸",
+      "romaji": "げい",
+      "translation": "tiết mục, tài nghệ",
+      "q": "Từ 芸 (げい) có nghĩa là gì?",
+      "a": [
+        "chạy đua",
+        "tiết mục, tài nghệ",
+        "đẹp",
+        "dáng hình"
+      ],
+      "c": 1,
+      "ex": "芸 (nghệ)"
+    },
+    {
+      "word": "美しい",
+      "romaji": "うつくしい",
+      "translation": "đẹp",
+      "q": "Từ 美しい (うつくしい) có nghĩa là gì?",
+      "a": [
+        "tiết mục",
+        "đẹp",
+        "dáng hình",
+        "trái tim, tâm hồn"
+      ],
+      "c": 1,
+      "ex": "美 (mỹ) - đẹp"
+    },
+    {
+      "word": "姿",
+      "romaji": "すがた",
+      "translation": "dáng hình, tư thế",
+      "q": "Từ 姿 (すがた) có nghĩa là gì?",
+      "a": [
+        "đẹp",
+        "dáng hình, tư thế",
+        "trái tim, tâm hồn",
+        "vốn dĩ"
+      ],
+      "c": 1,
+      "ex": "姿 (tư)"
+    }
+  ]
+}

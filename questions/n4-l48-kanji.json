@@ -1,0 +1,318 @@
+{
+  "id": "n4-l48-kanji",
+  "name": "N4 Bài 48 - Từ vựng Kanji (đọc)",
+  "description": "Từ vựng có kanji Bài 48 Minna no Nihongo (N4). Đáp án chỉ hiện hiragana.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-27T04:09:51.860Z",
+  "updatedAt": "2026-08-27T04:09:51.860Z",
+  "questions": [
+    {
+      "word": "降ろします",
+      "romaji": "おろします",
+      "translation": "cho xuống, hạ xuống",
+      "q": "Từ 降ろします đọc là gì?",
+      "a": [
+        "おろします",
+        "とどけます",
+        "せわをします",
+        "いや"
+      ],
+      "c": 0,
+      "ex": "cho xuống | 降 (hàng)"
+    },
+    {
+      "word": "届けます",
+      "romaji": "とどけます",
+      "translation": "gửi đến, chuyển đến",
+      "q": "Từ 届けます đọc là gì?",
+      "a": [
+        "おろします",
+        "せわをします",
+        "いや",
+        "とどけます"
+      ],
+      "c": 3,
+      "ex": "gửi đến | 届 (giới)"
+    },
+    {
+      "word": "世話をします",
+      "romaji": "せわをします",
+      "translation": "chăm sóc",
+      "q": "Từ 世話をします đọc là gì?",
+      "a": [
+        "とどけます",
+        "いや",
+        "きびしい",
+        "せわをします"
+      ],
+      "c": 3,
+      "ex": "chăm sóc | 世話 (thế thoại)"
+    },
+    {
+      "word": "嫌な",
+      "romaji": "いや",
+      "translation": "không thích, ngán",
+      "q": "Từ 嫌[な] đọc là gì?",
+      "a": [
+        "いや",
+        "きびしい",
+        "じゅく",
+        "せいと"
+      ],
+      "c": 0,
+      "ex": "không thích | 嫌 (hiềm)"
+    },
+    {
+      "word": "厳しい",
+      "romaji": "きびしい",
+      "translation": "nghiêm khắc, nghiêm ngặt",
+      "q": "Từ 厳しい đọc là gì?",
+      "a": [
+        "きびしい",
+        "じゅく",
+        "せいと",
+        "もの"
+      ],
+      "c": 0,
+      "ex": "nghiêm khắc | 厳 (nghiêm)"
+    },
+    {
+      "word": "塾",
+      "romaji": "じゅく",
+      "translation": "cơ sở học thêm",
+      "q": "Từ 塾 đọc là gì?",
+      "a": [
+        "じゅく",
+        "せいと",
+        "もの",
+        "にゅうかん"
+      ],
+      "c": 0,
+      "ex": "cơ sở học thêm | 塾 (thục)"
+    },
+    {
+      "word": "生徒",
+      "romaji": "せいと",
+      "translation": "học sinh",
+      "q": "Từ 生徒 đọc là gì?",
+      "a": [
+        "せいと",
+        "もの",
+        "にゅうかん",
+        "さいにゅうこくびざ"
+      ],
+      "c": 0,
+      "ex": "học sinh | 生徒 (sinh đồ)"
+    },
+    {
+      "word": "者",
+      "romaji": "もの",
+      "translation": "người (thân thuộc, cấp dưới)",
+      "q": "Từ 者 đọc là gì?",
+      "a": [
+        "もの",
+        "にゅうかん",
+        "さいにゅうこくびざ",
+        "じゆうに"
+      ],
+      "c": 0,
+      "ex": "người | 者 (giả)"
+    },
+    {
+      "word": "入館",
+      "romaji": "にゅうかん",
+      "translation": "vào cửa, nhập quán",
+      "q": "Từ 入館 đọc là gì?",
+      "a": [
+        "にゅうかん",
+        "さいにゅうこくびざ",
+        "じゆうに",
+        "かん"
+      ],
+      "c": 0,
+      "ex": "vào cửa | 入 (nhập) + 館 (quán)"
+    },
+    {
+      "word": "再入国ビザ",
+      "romaji": "さいにゅうこくびざ",
+      "translation": "visa tái nhập cảnh",
+      "q": "Từ 再入国ビザ đọc là gì?",
+      "a": [
+        "さいにゅうこくびざ",
+        "じゆうに",
+        "かん",
+        "ひさしぶり"
+      ],
+      "c": 0,
+      "ex": "visa tái nhập cảnh | 再入国 (tái nhập quốc) + ビザ"
+    },
+    {
+      "word": "自由に",
+      "romaji": "じゆうに",
+      "translation": "một cách tự do",
+      "q": "Từ 自由に đọc là gì?",
+      "a": [
+        "じゆうに",
+        "かん",
+        "ひさしぶり",
+        "えいぎょう"
+      ],
+      "c": 0,
+      "ex": "một cách tự do | 自由 (tự do)"
+    },
+    {
+      "word": "間",
+      "romaji": "かん",
+      "translation": "trong (khoảng thời gian)",
+      "q": "Từ ～間 đọc là gì?",
+      "a": [
+        "かん",
+        "ひさしぶり",
+        "えいぎょう",
+        "かまいません"
+      ],
+      "c": 0,
+      "ex": "trong (khoảng thời gian) | 間 (gian)"
+    },
+    {
+      "word": "久しぶり",
+      "romaji": "ひさしぶり",
+      "translation": "lâu rồi không gặp",
+      "q": "Từ 久しぶり đọc là gì?",
+      "a": [
+        "ひさしぶり",
+        "えいぎょう",
+        "かまいません",
+        "たのしみます"
+      ],
+      "c": 0,
+      "ex": "lâu rồi không gặp | 久 (cửa)"
+    },
+    {
+      "word": "営業",
+      "romaji": "えいぎょう",
+      "translation": "kinh doanh, bán hàng",
+      "q": "Từ 営業 đọc là gì?",
+      "a": [
+        "えいぎょう",
+        "かまいません",
+        "たのしみます",
+        "せいき"
+      ],
+      "c": 0,
+      "ex": "kinh doanh | 営 (doanh) + 業 (nghiệp)"
+    },
+    {
+      "word": "構いません",
+      "romaji": "かまいません",
+      "translation": "không sao, được thôi",
+      "q": "Từ 構いません đọc là gì?",
+      "a": [
+        "かまいません",
+        "たのしみます",
+        "せいき",
+        "かわりをします"
+      ],
+      "c": 0,
+      "ex": "không sao | 構 (cấu)"
+    },
+    {
+      "word": "楽しみます",
+      "romaji": "たのしみます",
+      "translation": "vui thích",
+      "q": "Từ 楽しみます đọc là gì?",
+      "a": [
+        "たのしみます",
+        "せいき",
+        "かわりをします",
+        "きょうそうします"
+      ],
+      "c": 0,
+      "ex": "vui thích | 楽 (lạc)"
+    },
+    {
+      "word": "世紀",
+      "romaji": "せいき",
+      "translation": "thế kỷ",
+      "q": "Từ 世紀 đọc là gì?",
+      "a": [
+        "せいき",
+        "かわりをします",
+        "きょうそうします",
+        "げい"
+      ],
+      "c": 0,
+      "ex": "thế kỷ | 世紀"
+    },
+    {
+      "word": "代わりをします",
+      "romaji": "かわりをします",
+      "translation": "thay thế",
+      "q": "Từ 代わりをします đọc là gì?",
+      "a": [
+        "かわりをします",
+        "きょうそうします",
+        "げい",
+        "うつくしい"
+      ],
+      "c": 0,
+      "ex": "thay thế | 代 (đại)"
+    },
+    {
+      "word": "競走します",
+      "romaji": "きょうそうします",
+      "translation": "chạy đua",
+      "q": "Từ 競走します đọc là gì?",
+      "a": [
+        "きょうそうします",
+        "げい",
+        "うつくしい",
+        "すがた"
+      ],
+      "c": 0,
+      "ex": "chạy đua | 競 (cạnh) + 走 (tẩu)"
+    },
+    {
+      "word": "芸",
+      "romaji": "げい",
+      "translation": "tiết mục, tài nghệ",
+      "q": "Từ 芸 đọc là gì?",
+      "a": [
+        "げい",
+        "うつくしい",
+        "すがた",
+        "おろします"
+      ],
+      "c": 0,
+      "ex": "tiết mục | 芸 (nghệ)"
+    },
+    {
+      "word": "美しい",
+      "romaji": "うつくしい",
+      "translation": "đẹp",
+      "q": "Từ 美しい đọc là gì?",
+      "a": [
+        "うつくしい",
+        "すがた",
+        "おろします",
+        "とどけます"
+      ],
+      "c": 0,
+      "ex": "đẹp | 美 (mỹ)"
+    },
+    {
+      "word": "姿",
+      "romaji": "すがた",
+      "translation": "dáng hình, tư thế",
+      "q": "Từ 姿 đọc là gì?",
+      "a": [
+        "すがた",
+        "おろします",
+        "とどけます",
+        "せわをします"
+      ],
+      "c": 0,
+      "ex": "dáng hình | 姿 (tư)"
+    }
+  ]
+}

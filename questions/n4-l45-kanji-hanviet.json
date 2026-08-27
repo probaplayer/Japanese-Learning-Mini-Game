@@ -1,0 +1,486 @@
+{
+  "id": "n4-l45-kanji-hanviet",
+  "name": "N4 Bài 45 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 45, hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-27T03:11:04.141Z",
+  "updatedAt": "2026-08-27T03:11:08.589Z",
+  "questions": [
+    {
+      "word": "謝",
+      "romaji": "tạ",
+      "translation": "xin lỗi (謝ります)",
+      "q": "Chữ 謝 trong từ 謝ります mang âm Hán Việt nào?",
+      "a": [
+        "TẠ",
+        "TAO",
+        "TÍN",
+        "DỤNG"
+      ],
+      "c": 0,
+      "ex": "謝ります: xin lỗi"
+    },
+    {
+      "word": "遭",
+      "romaji": "tao",
+      "translation": "gặp phải (遭います)",
+      "q": "Chữ 遭 trong từ 遭います mang âm Hán Việt nào?",
+      "a": [
+        "TẠ",
+        "TÍN",
+        "DỤNG",
+        "TAO"
+      ],
+      "c": 3,
+      "ex": "遭います: gặp (tai nạn)"
+    },
+    {
+      "word": "信",
+      "romaji": "tín",
+      "translation": "tin tưởng (信じます)",
+      "q": "Chữ 信 trong từ 信じます mang âm Hán Việt nào?",
+      "a": [
+        "TAO",
+        "DỤNG",
+        "Ý",
+        "TÍN"
+      ],
+      "c": 3,
+      "ex": "信じます: tin tưởng"
+    },
+    {
+      "word": "用",
+      "romaji": "dụng",
+      "translation": "dùng (用意)",
+      "q": "Chữ 用 trong từ 用意 mang âm Hán Việt nào?",
+      "a": [
+        "DỤNG",
+        "Ý",
+        "BẢO",
+        "TÍN"
+      ],
+      "c": 0,
+      "ex": "用意します: chuẩn bị"
+    },
+    {
+      "word": "意",
+      "romaji": "ý",
+      "translation": "ý định (用意)",
+      "q": "Chữ 意 trong từ 用意 mang âm Hán Việt nào?",
+      "a": [
+        "Ý",
+        "BẢO",
+        "CHỨNG",
+        "DỤNG"
+      ],
+      "c": 0,
+      "ex": "用意します: chuẩn bị"
+    },
+    {
+      "word": "保",
+      "romaji": "bảo",
+      "translation": "bảo đảm (保証書)",
+      "q": "Chữ 保 trong từ 保証書 mang âm Hán Việt nào?",
+      "a": [
+        "BẢO",
+        "CHỨNG",
+        "THƯ",
+        "Ý"
+      ],
+      "c": 0,
+      "ex": "保証書: giấy bảo hành"
+    },
+    {
+      "word": "証",
+      "romaji": "chứng",
+      "translation": "chứng nhận (保証書)",
+      "q": "Chữ 証 trong từ 保証書 mang âm Hán Việt nào?",
+      "a": [
+        "CHỨNG",
+        "THƯ",
+        "LÃNH",
+        "BẢO"
+      ],
+      "c": 0,
+      "ex": "保証書: giấy bảo hành"
+    },
+    {
+      "word": "書",
+      "romaji": "thư",
+      "translation": "giấy tờ, sách (保証書/領収書)",
+      "q": "Chữ 書 trong từ 保証書 mang âm Hán Việt nào?",
+      "a": [
+        "THƯ",
+        "LÃNH",
+        "THU",
+        "CHỨNG"
+      ],
+      "c": 0,
+      "ex": "保証書 / 領収書: giấy bảo hành / hóa đơn"
+    },
+    {
+      "word": "領",
+      "romaji": "lãnh",
+      "translation": "nhận (領収書)",
+      "q": "Chữ 領 trong từ 領収書 mang âm Hán Việt nào?",
+      "a": [
+        "LÃNH",
+        "THU",
+        "TẶNG",
+        "THƯ"
+      ],
+      "c": 0,
+      "ex": "領収書: hóa đơn"
+    },
+    {
+      "word": "収",
+      "romaji": "thu",
+      "translation": "thu, nhận (領収書)",
+      "q": "Chữ 収 trong từ 領収書 mang âm Hán Việt nào?",
+      "a": [
+        "THU",
+        "TẶNG",
+        "VẬT",
+        "LÃNH"
+      ],
+      "c": 0,
+      "ex": "領収書: hóa đơn"
+    },
+    {
+      "word": "贈",
+      "romaji": "tặng",
+      "translation": "tặng (贈り物)",
+      "q": "Chữ 贈 trong từ 贈り物 mang âm Hán Việt nào?",
+      "a": [
+        "TẶNG",
+        "VẬT",
+        "TRUNG",
+        "THU"
+      ],
+      "c": 0,
+      "ex": "贈り物: quà tặng"
+    },
+    {
+      "word": "物",
+      "romaji": "vật",
+      "translation": "đồ vật (贈り物)",
+      "q": "Chữ 物 trong từ 贈り物 mang âm Hán Việt nào?",
+      "a": [
+        "VẬT",
+        "TRUNG",
+        "CHỈ",
+        "TẶNG"
+      ],
+      "c": 0,
+      "ex": "贈り物: quà tặng"
+    },
+    {
+      "word": "中",
+      "romaji": "trung",
+      "translation": "giữa, trong (中止)",
+      "q": "Chữ 中 trong từ 中止 mang âm Hán Việt nào?",
+      "a": [
+        "TRUNG",
+        "CHỈ",
+        "ĐIỂM",
+        "VẬT"
+      ],
+      "c": 0,
+      "ex": "中止: dừng, đình chỉ"
+    },
+    {
+      "word": "止",
+      "romaji": "chỉ",
+      "translation": "dừng lại (中止)",
+      "q": "Chữ 止 trong từ 中止 mang âm Hán Việt nào?",
+      "a": [
+        "CHỈ",
+        "ĐIỂM",
+        "VIÊN",
+        "TRUNG"
+      ],
+      "c": 0,
+      "ex": "中止: dừng, đình chỉ"
+    },
+    {
+      "word": "點",
+      "romaji": "điểm",
+      "translation": "điểm (點)",
+      "q": "Chữ 點 mang âm Hán Việt nào?",
+      "a": [
+        "ĐIỂM",
+        "VIÊN",
+        "TRÁT",
+        "CHỈ"
+      ],
+      "c": 0,
+      "ex": "點: điểm"
+    },
+    {
+      "word": "円",
+      "romaji": "viên",
+      "translation": "đồng tiền Nhật (円)",
+      "q": "Chữ 円 trong từ 円札 mang âm Hán Việt nào?",
+      "a": [
+        "VIÊN",
+        "TRÁT",
+        "CẤP",
+        "ĐIỂM"
+      ],
+      "c": 0,
+      "ex": "円札: tờ tiền giấy"
+    },
+    {
+      "word": "札",
+      "romaji": "trát",
+      "translation": "tờ tiền, thẻ gỗ (札)",
+      "q": "Chữ 札 trong từ 円札 mang âm Hán Việt nào?",
+      "a": [
+        "TRÁT",
+        "CẤP",
+        "LẠC",
+        "VIÊN"
+      ],
+      "c": 0,
+      "ex": "円札: tờ tiền giấy"
+    },
+    {
+      "word": "急",
+      "romaji": "cấp",
+      "translation": "gấp gáp (急に)",
+      "q": "Chữ 急 mang âm Hán Việt nào?",
+      "a": [
+        "CẤP",
+        "LẠC",
+        "HỆ",
+        "TRÁT"
+      ],
+      "c": 0,
+      "ex": "急に: gấp, đột ngột"
+    },
+    {
+      "word": "楽",
+      "romaji": "lạc/nhạc",
+      "translation": "vui, âm nhạc (楽)",
+      "q": "Chữ 楽 mang âm Hán Việt nào?",
+      "a": [
+        "LẠC",
+        "HỆ",
+        "VIÊN",
+        "CẤP"
+      ],
+      "c": 0,
+      "ex": "楽しみにしています: mong đợi"
+    },
+    {
+      "word": "係",
+      "romaji": "hệ",
+      "translation": "bộ phận, phụ trách (係員)",
+      "q": "Chữ 係 trong từ 係員 mang âm Hán Việt nào?",
+      "a": [
+        "HỆ",
+        "VIÊN",
+        "VỊ",
+        "LẠC"
+      ],
+      "c": 0,
+      "ex": "係員: nhân viên"
+    },
+    {
+      "word": "員",
+      "romaji": "viên",
+      "translation": "nhân viên (係員)",
+      "q": "Chữ 員 trong từ 係員 mang âm Hán Việt nào?",
+      "a": [
+        "VIÊN",
+        "VỊ",
+        "ƯU",
+        "HỆ"
+      ],
+      "c": 0,
+      "ex": "係員: nhân viên"
+    },
+    {
+      "word": "位",
+      "romaji": "vị",
+      "translation": "vị trí, thứ hạng (位)",
+      "q": "Chữ 位 mang âm Hán Việt nào?",
+      "a": [
+        "VỊ",
+        "ƯU",
+        "THẮNG",
+        "VIÊN"
+      ],
+      "c": 0,
+      "ex": "―位: thứ –"
+    },
+    {
+      "word": "優",
+      "romaji": "ưu",
+      "translation": "ưu việt, xuất sắc (優勝)",
+      "q": "Chữ 優 trong từ 優勝 mang âm Hán Việt nào?",
+      "a": [
+        "ƯU",
+        "THẮNG",
+        "NÃO",
+        "VỊ"
+      ],
+      "c": 0,
+      "ex": "優勝します: vô địch"
+    },
+    {
+      "word": "勝",
+      "romaji": "thắng",
+      "translation": "thắng (優勝)",
+      "q": "Chữ 勝 trong từ 優勝 mang âm Hán Việt nào?",
+      "a": [
+        "THẮNG",
+        "NÃO",
+        "MỤC",
+        "ƯU"
+      ],
+      "c": 0,
+      "ex": "優勝します: vô địch"
+    },
+    {
+      "word": "悩",
+      "romaji": "não",
+      "translation": "lo lắng, phiền muộn (悩み)",
+      "q": "Chữ 悩 mang âm Hán Việt nào?",
+      "a": [
+        "NÃO",
+        "MỤC",
+        "GIÁC",
+        "THẮNG"
+      ],
+      "c": 0,
+      "ex": "悩み: điều lo nghĩ"
+    },
+    {
+      "word": "目",
+      "romaji": "mục",
+      "translation": "mắt (目覚まし)",
+      "q": "Chữ 目 trong từ 目覚まし mang âm Hán Việt nào?",
+      "a": [
+        "MỤC",
+        "GIÁC",
+        "MIÊN",
+        "NÃO"
+      ],
+      "c": 0,
+      "ex": "目覚まし: đồng hồ báo thức"
+    },
+    {
+      "word": "覚",
+      "romaji": "giác",
+      "translation": "tỉnh, nhận biết (目覚まし/目が覚めます)",
+      "q": "Chữ 覚 trong từ 目覚まし mang âm Hán Việt nào?",
+      "a": [
+        "GIÁC",
+        "MIÊN",
+        "ĐẠI",
+        "MỤC"
+      ],
+      "c": 0,
+      "ex": "目覚まし / 目が覚めます: đồng hồ báo thức / tỉnh giấc"
+    },
+    {
+      "word": "眠",
+      "romaji": "miên",
+      "translation": "ngủ (眠ります)",
+      "q": "Chữ 眠 mang âm Hán Việt nào?",
+      "a": [
+        "MIÊN",
+        "ĐẠI",
+        "HỌC",
+        "GIÁC"
+      ],
+      "c": 0,
+      "ex": "眠ります: ngủ"
+    },
+    {
+      "word": "大",
+      "romaji": "đại",
+      "translation": "lớn (大学生)",
+      "q": "Chữ 大 trong từ 大学生 mang âm Hán Việt nào?",
+      "a": [
+        "ĐẠI",
+        "HỌC",
+        "SINH",
+        "MIÊN"
+      ],
+      "c": 0,
+      "ex": "大学生: sinh viên đại học"
+    },
+    {
+      "word": "学",
+      "romaji": "học",
+      "translation": "học (大学生)",
+      "q": "Chữ 学 trong từ 大学生 mang âm Hán Việt nào?",
+      "a": [
+        "HỌC",
+        "SINH",
+        "HỒI",
+        "ĐẠI"
+      ],
+      "c": 0,
+      "ex": "大学生: sinh viên đại học"
+    },
+    {
+      "word": "生",
+      "romaji": "sinh",
+      "translation": "sinh, học sinh (大学生)",
+      "q": "Chữ 生 trong từ 大学生 mang âm Hán Việt nào?",
+      "a": [
+        "SINH",
+        "HỒI",
+        "ĐÁP",
+        "HỌC"
+      ],
+      "c": 0,
+      "ex": "大学生: sinh viên đại học"
+    },
+    {
+      "word": "回",
+      "romaji": "hồi",
+      "translation": "đáp lại (回答)",
+      "q": "Chữ 回 trong từ 回答 mang âm Hán Việt nào?",
+      "a": [
+        "HỒI",
+        "ĐÁP",
+        "MINH",
+        "SINH"
+      ],
+      "c": 0,
+      "ex": "回答: câu trả lời"
+    },
+    {
+      "word": "答",
+      "romaji": "đáp",
+      "translation": "trả lời (回答)",
+      "q": "Chữ 答 trong từ 回答 mang âm Hán Việt nào?",
+      "a": [
+        "ĐÁP",
+        "MINH",
+        "ĐIỆN",
+        "HỒI"
+      ],
+      "c": 0,
+      "ex": "回答: câu trả lời"
+    },
+    {
+      "word": "鳴",
+      "romaji": "minh",
+      "translation": "kêu, reo (鳴ります)",
+      "q": "Chữ 鳴 mang âm Hán Việt nào?",
+      "a": [
+        "MINH",
+        "ĐIỆN",
+        "THOẠI",
+        "ĐÁP"
+      ],
+      "c": 0,
+      "ex": "鳴ります: reo, kêu"
+    }
+  ]
+}

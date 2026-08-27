@@ -1,0 +1,346 @@
+{
+  "id": "n4-l45-vocab",
+  "name": "N4 Bài 45 - Từ vựng (nghĩa)",
+  "description": "Từ vựng Minna no Nihongo Bài 45 (N4). Câu hỏi hỏi nghĩa tiếng Việt của từ.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-27T03:08:59.119Z",
+  "updatedAt": "2026-08-27T03:08:59.119Z",
+  "questions": [
+    {
+      "word": "謝ります",
+      "romaji": "あやまります",
+      "translation": "xin lỗi, tạ lỗi",
+      "q": "Từ 謝ります (あやまります) có nghĩa là gì?",
+      "a": [
+        "xin lỗi, tạ lỗi",
+        "gặp (tai nạn)",
+        "tin, tin tưởng",
+        "chuẩn bị"
+      ],
+      "c": 0,
+      "ex": "謝 (tạ) - xin lỗi"
+    },
+    {
+      "word": "遭います",
+      "romaji": "あいます",
+      "translation": "gặp (tai nạn)",
+      "q": "Từ [事故に]遭います (あいます) có nghĩa là gì?",
+      "a": [
+        "xin lỗi",
+        "gặp (tai nạn)",
+        "tin, tin tưởng",
+        "chuẩn bị"
+      ],
+      "c": 1,
+      "ex": "遭 (tao) - gặp phải"
+    },
+    {
+      "word": "信じます",
+      "romaji": "しんじます",
+      "translation": "tin, tin tưởng",
+      "q": "Từ 信じます (しんじます) có nghĩa là gì?",
+      "a": [
+        "gặp (tai nạn)",
+        "tin, tin tưởng",
+        "chuẩn bị",
+        "hủy bỏ"
+      ],
+      "c": 1,
+      "ex": "信 (tín) - tin tưởng"
+    },
+    {
+      "word": "用意します",
+      "romaji": "よういします",
+      "translation": "chuẩn bị",
+      "q": "Từ 用意します (よういします) có nghĩa là gì?",
+      "a": [
+        "tin tưởng",
+        "chuẩn bị",
+        "hủy bỏ",
+        "giấy bảo hành"
+      ],
+      "c": 1,
+      "ex": "用意 (dụng ý)"
+    },
+    {
+      "word": "保証書",
+      "romaji": "ほしょうしょ",
+      "translation": "giấy bảo hành",
+      "q": "Từ 保証書 (ほしょうしょ) có nghĩa là gì?",
+      "a": [
+        "chuẩn bị",
+        "giấy bảo hành",
+        "hóa đơn",
+        "quà tặng"
+      ],
+      "c": 1,
+      "ex": "保証書 (bảo chứng thư)"
+    },
+    {
+      "word": "領収書",
+      "romaji": "りょうしゅうしょ",
+      "translation": "hóa đơn",
+      "q": "Từ 領収書 (りょうしゅうしょ) có nghĩa là gì?",
+      "a": [
+        "giấy bảo hành",
+        "hóa đơn",
+        "quà tặng",
+        "dừng, đình chỉ"
+      ],
+      "c": 1,
+      "ex": "領収書 (lãnh thu thư)"
+    },
+    {
+      "word": "贈り物",
+      "romaji": "おくりもの",
+      "translation": "quà tặng",
+      "q": "Từ 贈り物 (おくりもの) có nghĩa là gì?",
+      "a": [
+        "hóa đơn",
+        "quà tặng",
+        "dừng, đình chỉ",
+        "điểm"
+      ],
+      "c": 1,
+      "ex": "贈り物 (tặng vật)"
+    },
+    {
+      "word": "中止",
+      "romaji": "ちゅうし",
+      "translation": "dừng, đình chỉ",
+      "q": "Từ 中止 (ちゅうし) có nghĩa là gì?",
+      "a": [
+        "quà tặng",
+        "dừng, đình chỉ",
+        "điểm",
+        "tờ tiền giấy"
+      ],
+      "c": 1,
+      "ex": "中止 (trung chỉ)"
+    },
+    {
+      "word": "点",
+      "romaji": "てん",
+      "translation": "điểm",
+      "q": "Từ 点 (てん) có nghĩa là gì?",
+      "a": [
+        "dừng, đình chỉ",
+        "điểm",
+        "tờ tiền giấy",
+        "gấp"
+      ],
+      "c": 1,
+      "ex": "點 (điểm)"
+    },
+    {
+      "word": "札",
+      "romaji": "さつ",
+      "translation": "tờ tiền giấy",
+      "q": "Từ [-円]札 ([-えん]さつ) có nghĩa là gì?",
+      "a": [
+        "điểm",
+        "tờ tiền giấy",
+        "gấp",
+        "mong đợi"
+      ],
+      "c": 1,
+      "ex": "円 (viên) + 札 (trát)"
+    },
+    {
+      "word": "急に",
+      "romaji": "きゅうに",
+      "translation": "gấp, đột ngột",
+      "q": "Từ 急に (きゅうに) có nghĩa là gì?",
+      "a": [
+        "tờ tiền giấy",
+        "gấp, đột ngột",
+        "mong đợi",
+        "nhân viên"
+      ],
+      "c": 1,
+      "ex": "急 (cấp)"
+    },
+    {
+      "word": "楽しみにしています",
+      "romaji": "たのしみにしています",
+      "translation": "mong đợi, lấy làm vui",
+      "q": "Từ 楽しみにしています (たのしみにしています) có nghĩa là gì?",
+      "a": [
+        "gấp",
+        "mong đợi",
+        "nhân viên",
+        "thứ –, giải –"
+      ],
+      "c": 1,
+      "ex": "楽 (nhạc/lạc) - vui, mong chờ"
+    },
+    {
+      "word": "係員",
+      "romaji": "かかりいん",
+      "translation": "nhân viên, người phụ trách",
+      "q": "Từ 係員 (かかりいん) có nghĩa là gì?",
+      "a": [
+        "mong đợi",
+        "nhân viên",
+        "thứ –, giải –",
+        "vô địch"
+      ],
+      "c": 1,
+      "ex": "係 (hệ) + 員 (viên)"
+    },
+    {
+      "word": "―位",
+      "romaji": "い",
+      "translation": "thứ –, giải –",
+      "q": "Từ ―位 (―い) có nghĩa là gì?",
+      "a": [
+        "nhân viên",
+        "thứ –, giải –",
+        "vô địch",
+        "điều lo nghĩ"
+      ],
+      "c": 1,
+      "ex": "位 (vị)"
+    },
+    {
+      "word": "優勝します",
+      "romaji": "ゆうしょうします",
+      "translation": "vô địch, đoạt giải nhất",
+      "q": "Từ 優勝します (ゆうしょうします) có nghĩa là gì?",
+      "a": [
+        "thứ –",
+        "vô địch, đoạt giải nhất",
+        "điều lo nghĩ",
+        "đồng hồ báo thức"
+      ],
+      "c": 1,
+      "ex": "優勝 (ưu thắng)"
+    },
+    {
+      "word": "悩み",
+      "romaji": "なやみ",
+      "translation": "điều lo nghĩ, phiền muộn",
+      "q": "Từ 悩み (なやみ) có nghĩa là gì?",
+      "a": [
+        "vô địch",
+        "điều lo nghĩ, phiền muộn",
+        "đồng hồ báo thức",
+        "ngủ"
+      ],
+      "c": 1,
+      "ex": "悩 (não) - lo lắng"
+    },
+    {
+      "word": "目覚まし時計",
+      "romaji": "めざましどけい",
+      "translation": "đồng hồ báo thức",
+      "q": "Từ 目覚まし[時計] (めざまし[どけい]) có nghĩa là gì?",
+      "a": [
+        "điều lo nghĩ",
+        "đồng hồ báo thức",
+        "ngủ",
+        "tỉnh giấc"
+      ],
+      "c": 1,
+      "ex": "目覚まし (mục giác) + 時計 (thời kế)"
+    },
+    {
+      "word": "眠ります",
+      "romaji": "ねむります",
+      "translation": "ngủ",
+      "q": "Từ 眠ります (ねむります) có nghĩa là gì?",
+      "a": [
+        "đồng hồ báo thức",
+        "ngủ",
+        "tỉnh giấc",
+        "sinh viên đại học"
+      ],
+      "c": 1,
+      "ex": "眠 (miên) - ngủ"
+    },
+    {
+      "word": "目が覚めます",
+      "romaji": "めがさめます",
+      "translation": "tỉnh giấc",
+      "q": "Từ 目が覚めます (めがさめます) có nghĩa là gì?",
+      "a": [
+        "ngủ",
+        "tỉnh giấc",
+        "sinh viên đại học",
+        "câu trả lời"
+      ],
+      "c": 1,
+      "ex": "目 (mục) + 覚 (giác)"
+    },
+    {
+      "word": "大学生",
+      "romaji": "だいがくせい",
+      "translation": "sinh viên đại học",
+      "q": "Từ 大学生 (だいがくせい) có nghĩa là gì?",
+      "a": [
+        "tỉnh giấc",
+        "sinh viên đại học",
+        "câu trả lời",
+        "reo, kêu"
+      ],
+      "c": 1,
+      "ex": "大学 (đại học) + 生 (sinh)"
+    },
+    {
+      "word": "回答",
+      "romaji": "かいとう",
+      "translation": "câu trả lời, lời giải",
+      "q": "Từ 回答 (かいとう) có nghĩa là gì?",
+      "a": [
+        "sinh viên đại học",
+        "câu trả lời, lời giải",
+        "reo, kêu",
+        "điện thoại nhầm"
+      ],
+      "c": 1,
+      "ex": "回答 (hồi đáp)"
+    },
+    {
+      "word": "鳴ります",
+      "romaji": "なります",
+      "translation": "reo, kêu",
+      "q": "Từ 鳴ります (なります) có nghĩa là gì?",
+      "a": [
+        "câu trả lời",
+        "reo, kêu",
+        "điện thoại nhầm",
+        "hủy bỏ"
+      ],
+      "c": 1,
+      "ex": "鳴 (minh) - kêu"
+    },
+    {
+      "word": "まちがい電話",
+      "romaji": "まちがいでんわ",
+      "translation": "điện thoại gọi nhầm",
+      "q": "Từ まちがい電話 (まちがいでんわ) có nghĩa là gì?",
+      "a": [
+        "reo, kêu",
+        "điện thoại gọi nhầm",
+        "hủy bỏ",
+        "chuẩn bị"
+      ],
+      "c": 1,
+      "ex": "まちがい電話 (điện thoại nhầm)"
+    },
+    {
+      "word": "かかり",
+      "romaji": "かかり",
+      "translation": "nhân viên, người phụ trách",
+      "q": "Từ かかり có nghĩa là gì?",
+      "a": [
+        "điện thoại nhầm",
+        "nhân viên, người phụ trách",
+        "trại (cắm trại)",
+        "tay gạt"
+      ],
+      "c": 1,
+      "ex": "かかり - không có kanji phổ biến"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "id": "n4-l45-grammar",
+  "name": "N4 Bài 45 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 45 Minna no Nihongo: ~場合 (trường hợp, giống たら nhưng dùng cho việc không tốt/hiếm xảy ra), ~のに (thế mà, vậy mà - biểu thị bất ngờ/bất mãn).",
+  "category": "grammar",
+  "createdAt": "2026-08-27T03:12:40.100Z",
+  "updatedAt": "2026-08-27T03:12:40.100Z",
+  "questions": [
+    {
+      "sentence": "交通事故にあった場合はすぐ警察に連絡してください",
+      "chunks": [
+        "交通事故",
+        "に",
+        "あった場合は",
+        "すぐ",
+        "警察",
+        "に",
+        "連絡してください"
+      ],
+      "translation": "Trường hợp gặp tai nạn giao thông thì hãy nhanh chóng liên hệ cảnh sát",
+      "ex": "Vた+場合は: trường hợp gặp việc không may, hiếm xảy ra"
+    },
+    {
+      "sentence": "領収書をもらいたい場合は店の人に言ってください",
+      "chunks": [
+        "領収書",
+        "を",
+        "もらいたい場合は",
+        "店の人",
+        "に",
+        "言ってください"
+      ],
+      "translation": "Trường hợp muốn nhận hóa đơn thì hãy nói với nhân viên cửa hàng",
+      "ex": "Vたい+場合は: trường hợp muốn làm gì"
+    },
+    {
+      "sentence": "火事の場合はエレベーターを使わないでください",
+      "chunks": [
+        "火事の場合は",
+        "エレベーター",
+        "を",
+        "使わないでください"
+      ],
+      "translation": "Trường hợp hỏa hoạn xin đừng dùng thang máy",
+      "ex": "Nの+場合は: trường hợp xảy ra N (hiếm/không mong muốn)"
+    },
+    {
+      "sentence": "都合が悪い場合は連絡してください",
+      "chunks": [
+        "都合",
+        "が",
+        "悪い場合は",
+        "連絡してください"
+      ],
+      "translation": "Trường hợp bất tiện thì hãy liên lạc",
+      "ex": "Aい+場合は: trường hợp A xảy ra"
+    },
+    {
+      "sentence": "一生懸命練習して覚えたのに緊張しすぎて忘れてしまいました",
+      "chunks": [
+        "一生懸命練習して",
+        "覚えたのに",
+        "緊張しすぎて",
+        "忘れてしまいました"
+      ],
+      "translation": "Đã chăm chỉ luyện tập để nhớ, thế mà vì quá căng thẳng nên đã quên mất",
+      "ex": "Vた+のに: kết quả trái ngược với dự đoán, thể hiện bất ngờ/bất mãn"
+    },
+    {
+      "sentence": "猫なのにねずみが怖いです",
+      "chunks": [
+        "猫",
+        "なのに",
+        "ねずみ",
+        "が",
+        "怖いです"
+      ],
+      "translation": "Là mèo thế mà lại sợ chuột",
+      "ex": "Nな+のに: là N thế mà lại~"
+    },
+    {
+      "sentence": "たくさん勉強したのに試験に落ちました",
+      "chunks": [
+        "たくさん",
+        "勉強したのに",
+        "試験",
+        "に",
+        "落ちました"
+      ],
+      "translation": "Đã học rất nhiều thế mà vẫn trượt kỳ thi",
+      "ex": "Vた+のに: đã làm gì rồi, thế mà kết quả trái ngược"
+    },
+    {
+      "sentence": "今日は休みなのに会社に行かなければなりません",
+      "chunks": [
+        "今日",
+        "は",
+        "休みなのに",
+        "会社",
+        "に",
+        "行かなければなりません"
+      ],
+      "translation": "Hôm nay là ngày nghỉ thế mà tôi vẫn phải đi công ty",
+      "ex": "Nな+のに: hôm nay là ngày nghỉ thế mà vẫn phải đi làm"
+    },
+    {
+      "sentence": "天気がいいのに誰も外に出ません",
+      "chunks": [
+        "天気",
+        "がいいのに",
+        "誰も",
+        "外",
+        "に",
+        "出ません"
+      ],
+      "translation": "Trời đẹp thế mà không ai ra ngoài",
+      "ex": "Aい+のに: thời tiết đẹp thế mà không ai ra ngoài"
+    },
+    {
+      "sentence": "若いのにもう疲れています",
+      "chunks": [
+        "若いのに",
+        "もう",
+        "疲れています"
+      ],
+      "translation": "Còn trẻ thế mà đã mệt rồi",
+      "ex": "Aい+のに: còn trẻ thế mà đã mệt rồi"
+    }
+  ]
+}

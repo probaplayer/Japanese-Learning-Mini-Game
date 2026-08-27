@@ -1,0 +1,318 @@
+{
+  "id": "n4-l50-kanji",
+  "name": "N4 Bài 50 - Từ vựng Kanji (đọc)",
+  "description": "Từ vựng có kanji Bài 50 Minna no Nihongo (N4) - Bài cuối cùng. Đáp án chỉ hiện hiragana.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-27T08:45:11.124Z",
+  "updatedAt": "2026-08-27T08:45:11.124Z",
+  "questions": [
+    {
+      "word": "参ります",
+      "romaji": "まいります",
+      "translation": "đi, đến (khiêm nhường ngữ)",
+      "q": "Từ 参ります đọc là gì?",
+      "a": [
+        "まいります",
+        "もうします",
+        "はいけんします",
+        "ぞんじます"
+      ],
+      "c": 0,
+      "ex": "đi, đến (khiêm nhường ngữ) | 参 (tham)"
+    },
+    {
+      "word": "申します",
+      "romaji": "もうします",
+      "translation": "nói (khiêm tốn của いいます)",
+      "q": "Từ 申します đọc là gì?",
+      "a": [
+        "まいります",
+        "はいけんします",
+        "ぞんじます",
+        "もうします"
+      ],
+      "c": 3,
+      "ex": "nói (khiêm tốn) | 申 (thân)"
+    },
+    {
+      "word": "拝見します",
+      "romaji": "はいけんします",
+      "translation": "xem (khiêm tốn của みます)",
+      "q": "Từ 拝見します đọc là gì?",
+      "a": [
+        "はいけんします",
+        "ぞんじます",
+        "うかがいます",
+        "もうします"
+      ],
+      "c": 0,
+      "ex": "xem (khiêm tốn) | 拝 (bái) + 見 (kiến)"
+    },
+    {
+      "word": "存じます",
+      "romaji": "ぞんじます",
+      "translation": "biết (khiêm tốn của しります)",
+      "q": "Từ 存じます đọc là gì?",
+      "a": [
+        "ぞんじます",
+        "うかがいます",
+        "おめにかかります",
+        "はいけんします"
+      ],
+      "c": 0,
+      "ex": "biết (khiêm tốn) | 存 (tồn)"
+    },
+    {
+      "word": "伺います",
+      "romaji": "うかがいます",
+      "translation": "hỏi, nghe, hỏi thăm (khiêm tốn)",
+      "q": "Từ 伺います đọc là gì?",
+      "a": [
+        "うかがいます",
+        "おめにかかります",
+        "わたくし",
+        "ぞんじます"
+      ],
+      "c": 0,
+      "ex": "hỏi, nghe (khiêm tốn) | 伺 (tứ)"
+    },
+    {
+      "word": "お目にかかります",
+      "romaji": "おめにかかります",
+      "translation": "gặp (khiêm tốn của あいます)",
+      "q": "Từ お目にかかります đọc là gì?",
+      "a": [
+        "おめにかかります",
+        "わたくし",
+        "おたく",
+        "うかがいます"
+      ],
+      "c": 0,
+      "ex": "gặp (khiêm tốn) | 目 (mục)"
+    },
+    {
+      "word": "私",
+      "romaji": "わたくし",
+      "translation": "tôi (khiêm tốn của わたし)",
+      "q": "Từ 私 đọc là gì?",
+      "a": [
+        "わたくし",
+        "おたく",
+        "こうがい",
+        "おめにかかります"
+      ],
+      "c": 0,
+      "ex": "tôi (khiêm tốn) | 私 (tư)"
+    },
+    {
+      "word": "お宅",
+      "romaji": "おたく",
+      "translation": "nhà (của người khác, tôn kính)",
+      "q": "Từ お宅 đọc là gì?",
+      "a": [
+        "おたく",
+        "こうがい",
+        "さらいしゅう",
+        "わたくし"
+      ],
+      "c": 0,
+      "ex": "nhà (của người khác) | 宅 (trạch)"
+    },
+    {
+      "word": "郊外",
+      "romaji": "こうがい",
+      "translation": "ngoại ô",
+      "q": "Từ 郊外 đọc là gì?",
+      "a": [
+        "こうがい",
+        "さらいしゅう",
+        "さらいげつ",
+        "おたく"
+      ],
+      "c": 0,
+      "ex": "ngoại ô | 郊 (giao) + 外 (ngoại)"
+    },
+    {
+      "word": "再来週",
+      "romaji": "さらいしゅう",
+      "translation": "tuần tới nữa",
+      "q": "Từ 再来週 đọc là gì?",
+      "a": [
+        "さらいしゅう",
+        "さらいげつ",
+        "さらいねん",
+        "こうがい"
+      ],
+      "c": 0,
+      "ex": "tuần tới nữa | 再 (tái) + 来 (lai) + 週 (chu)"
+    },
+    {
+      "word": "再来月",
+      "romaji": "さらいげつ",
+      "translation": "tháng tới nữa",
+      "q": "Từ 再来月 đọc là gì?",
+      "a": [
+        "さらいげつ",
+        "さらいねん",
+        "はんとし",
+        "さらいしゅう"
+      ],
+      "c": 0,
+      "ex": "tháng tới nữa | 再 (tái) + 来 (lai) + 月 (nguyệt)"
+    },
+    {
+      "word": "再来年",
+      "romaji": "さらいねん",
+      "translation": "năm tới nữa",
+      "q": "Từ 再来年 đọc là gì?",
+      "a": [
+        "さらいねん",
+        "はんとし",
+        "さいしょに",
+        "さらいげつ"
+      ],
+      "c": 0,
+      "ex": "năm tới nữa | 再 (tái) + 来 (lai) + 年 (niên)"
+    },
+    {
+      "word": "半年",
+      "romaji": "はんとし",
+      "translation": "nửa năm",
+      "q": "Từ 半年 đọc là gì?",
+      "a": [
+        "はんとし",
+        "さいしょに",
+        "さいごに",
+        "さらいねん"
+      ],
+      "c": 0,
+      "ex": "nửa năm | 半 (bán) + 年 (niên)"
+    },
+    {
+      "word": "最初に",
+      "romaji": "さいしょに",
+      "translation": "trước hết, đầu tiên",
+      "q": "Từ 最初に đọc là gì?",
+      "a": [
+        "さいしょに",
+        "さいごに",
+        "きんちょうします",
+        "はんとし"
+      ],
+      "c": 0,
+      "ex": "trước hết | 最 (tối) + 初 (sơ)"
+    },
+    {
+      "word": "最後に",
+      "romaji": "さいごに",
+      "translation": "cuối cùng",
+      "q": "Từ 最後に đọc là gì?",
+      "a": [
+        "さいごに",
+        "きんちょうします",
+        "ほうそうします",
+        "さいしょに"
+      ],
+      "c": 0,
+      "ex": "cuối cùng | 最 (tối) + 後 (hậu)"
+    },
+    {
+      "word": "緊張します",
+      "romaji": "きんちょうします",
+      "translation": "căng thẳng, hồi hộp",
+      "q": "Từ 緊張します đọc là gì?",
+      "a": [
+        "きんちょうします",
+        "ほうそうします",
+        "しょうきん",
+        "さいごに"
+      ],
+      "c": 0,
+      "ex": "căng thẳng | 緊 (khẩn) + 張 (trương)"
+    },
+    {
+      "word": "放送します",
+      "romaji": "ほうそうします",
+      "translation": "phát thanh, phát hình",
+      "q": "Từ 放送します đọc là gì?",
+      "a": [
+        "ほうそうします",
+        "しょうきん",
+        "しぜん",
+        "きんちょうします"
+      ],
+      "c": 0,
+      "ex": "phát thanh | 放 (phóng) + 送 (tống)"
+    },
+    {
+      "word": "賞金",
+      "romaji": "しょうきん",
+      "translation": "tiền thưởng",
+      "q": "Từ 賞金 đọc là gì?",
+      "a": [
+        "しょうきん",
+        "しぜん",
+        "きょうりょくします",
+        "ほうそうします"
+      ],
+      "c": 0,
+      "ex": "tiền thưởng | 賞 (thưởng) + 金 (kim)"
+    },
+    {
+      "word": "自然",
+      "romaji": "しぜん",
+      "translation": "thiên nhiên",
+      "q": "Từ 自然 đọc là gì?",
+      "a": [
+        "しぜん",
+        "きょうりょくします",
+        "こころから",
+        "しょうきん"
+      ],
+      "c": 0,
+      "ex": "thiên nhiên | 自 (tự) + 然 (nhiên)"
+    },
+    {
+      "word": "協力します",
+      "romaji": "きょうりょくします",
+      "translation": "hiệp lực, cộng tác",
+      "q": "Từ 協力します đọc là gì?",
+      "a": [
+        "きょうりょくします",
+        "こころから",
+        "かんしゃします",
+        "しぜん"
+      ],
+      "c": 0,
+      "ex": "hiệp lực | 協 (hiệp) + 力 (lực)"
+    },
+    {
+      "word": "心から",
+      "romaji": "こころから",
+      "translation": "từ đáy lòng, thật lòng",
+      "q": "Từ 心から đọc là gì?",
+      "a": [
+        "こころから",
+        "かんしゃします",
+        "はいけい",
+        "きょうりょくします"
+      ],
+      "c": 0,
+      "ex": "từ đáy lòng | 心 (tâm)"
+    },
+    {
+      "word": "感謝します",
+      "romaji": "かんしゃします",
+      "translation": "cảm tạ, biết ơn",
+      "q": "Từ 感謝します đọc là gì?",
+      "a": [
+        "かんしゃします",
+        "はいけい",
+        "けいぐ",
+        "こころから"
+      ],
+      "c": 0,
+      "ex": "cảm tạ | 感 (cảm) + 謝 (tạ)"
+    }
+  ]
+}

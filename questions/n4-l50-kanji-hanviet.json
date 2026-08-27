@@ -1,0 +1,416 @@
+{
+  "id": "n4-l50-kanji-hanviet",
+  "name": "N4 Bài 50 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 50, hỏi âm Hán Việt của chữ đó. Bài cuối cùng của giáo trình N4!",
+  "category": "vocabulary",
+  "createdAt": "2026-08-27T08:46:18.215Z",
+  "updatedAt": "2026-08-27T08:47:07.450Z",
+  "questions": [
+    {
+      "word": "参",
+      "romaji": "tham",
+      "translation": "đi, đến (参ります)",
+      "q": "Chữ 参 trong từ 参ります mang âm Hán Việt nào?",
+      "a": [
+        "THAM",
+        "THÂN",
+        "BÁI",
+        "TỒN"
+      ],
+      "c": 0,
+      "ex": "参ります: đi, đến (khiêm nhường)"
+    },
+    {
+      "word": "申",
+      "romaji": "thân",
+      "translation": "nói (申します)",
+      "q": "Chữ 申 trong từ 申します mang âm Hán Việt nào?",
+      "a": [
+        "THAM",
+        "BÁI",
+        "TỒN",
+        "THÂN"
+      ],
+      "c": 3,
+      "ex": "申します: nói (khiêm tốn)"
+    },
+    {
+      "word": "拝",
+      "romaji": "bái",
+      "translation": "kính cẩn (拝見します)",
+      "q": "Chữ 拝 trong từ 拝見します mang âm Hán Việt nào?",
+      "a": [
+        "THÂN",
+        "TỒN",
+        "TỨ",
+        "BÁI"
+      ],
+      "c": 3,
+      "ex": "拝見します: xem (khiêm tốn)"
+    },
+    {
+      "word": "見",
+      "romaji": "kiến",
+      "translation": "nhìn, xem (拝見します)",
+      "q": "Chữ 見 trong từ 拝見します mang âm Hán Việt nào?",
+      "a": [
+        "TỒN",
+        "TỨ",
+        "KIẾN",
+        "BÁI"
+      ],
+      "c": 2,
+      "ex": "拝見します: xem (khiêm tốn)"
+    },
+    {
+      "word": "存",
+      "romaji": "tồn",
+      "translation": "biết, hiểu (存じます)",
+      "q": "Chữ 存 mang âm Hán Việt nào?",
+      "a": [
+        "TỨ",
+        "KIẾN",
+        "TỒN",
+        "MỤC"
+      ],
+      "c": 2,
+      "ex": "存じます: biết (khiêm tốn)"
+    },
+    {
+      "word": "伺",
+      "romaji": "tứ",
+      "translation": "hỏi, hầu (伺います)",
+      "q": "Chữ 伺 mang âm Hán Việt nào?",
+      "a": [
+        "KIẾN",
+        "TỒN",
+        "MỤC",
+        "TỨ"
+      ],
+      "c": 3,
+      "ex": "伺います: hỏi, nghe (khiêm tốn)"
+    },
+    {
+      "word": "目",
+      "romaji": "mục",
+      "translation": "mắt (お目にかかります)",
+      "q": "Chữ 目 trong từ お目にかかります mang âm Hán Việt nào?",
+      "a": [
+        "TỒN",
+        "MỤC",
+        "TỨ",
+        "TƯ"
+      ],
+      "c": 1,
+      "ex": "お目にかかります: gặp (khiêm tốn)"
+    },
+    {
+      "word": "私",
+      "romaji": "tư",
+      "translation": "tôi, riêng tư (私)",
+      "q": "Chữ 私 mang âm Hán Việt nào?",
+      "a": [
+        "MỤC",
+        "TỨ",
+        "TƯ",
+        "TRẠCH"
+      ],
+      "c": 2,
+      "ex": "私: tôi (khiêm tốn)"
+    },
+    {
+      "word": "宅",
+      "romaji": "trạch",
+      "translation": "nhà ở (お宅)",
+      "q": "Chữ 宅 mang âm Hán Việt nào?",
+      "a": [
+        "TƯ",
+        "TRẠCH",
+        "GIAO",
+        "NGOẠI"
+      ],
+      "c": 1,
+      "ex": "お宅: nhà (của người khác)"
+    },
+    {
+      "word": "郊",
+      "romaji": "giao",
+      "translation": "vùng ven (郊外)",
+      "q": "Chữ 郊 trong từ 郊外 mang âm Hán Việt nào?",
+      "a": [
+        "TRẠCH",
+        "GIAO",
+        "NGOẠI",
+        "TÁI"
+      ],
+      "c": 1,
+      "ex": "郊外: ngoại ô"
+    },
+    {
+      "word": "外",
+      "romaji": "ngoại",
+      "translation": "bên ngoài (郊外)",
+      "q": "Chữ 外 trong từ 郊外 mang âm Hán Việt nào?",
+      "a": [
+        "GIAO",
+        "NGOẠI",
+        "TÁI",
+        "LAI"
+      ],
+      "c": 1,
+      "ex": "郊外: ngoại ô"
+    },
+    {
+      "word": "再",
+      "romaji": "tái",
+      "translation": "lại, lần nữa (再来週)",
+      "q": "Chữ 再 trong từ 再来週 mang âm Hán Việt nào?",
+      "a": [
+        "NGOẠI",
+        "TÁI",
+        "LAI",
+        "CHU"
+      ],
+      "c": 1,
+      "ex": "再来週: tuần tới nữa"
+    },
+    {
+      "word": "来",
+      "romaji": "lai",
+      "translation": "đến, tới (再来週)",
+      "q": "Chữ 来 trong từ 再来週 mang âm Hán Việt nào?",
+      "a": [
+        "TÁI",
+        "LAI",
+        "CHU",
+        "NGUYỆT"
+      ],
+      "c": 1,
+      "ex": "再来週: tuần tới nữa"
+    },
+    {
+      "word": "週",
+      "romaji": "chu",
+      "translation": "tuần (再来週)",
+      "q": "Chữ 週 trong từ 再来週 mang âm Hán Việt nào?",
+      "a": [
+        "LAI",
+        "CHU",
+        "NGUYỆT",
+        "BÁN"
+      ],
+      "c": 1,
+      "ex": "再来週: tuần tới nữa"
+    },
+    {
+      "word": "半",
+      "romaji": "bán",
+      "translation": "nửa (半年)",
+      "q": "Chữ 半 trong từ 半年 mang âm Hán Việt nào?",
+      "a": [
+        "LẠI",
+        "CHU",
+        "NGUYỆT",
+        "BÁN"
+      ],
+      "c": 2,
+      "ex": "半年: nửa năm"
+    },
+    {
+      "word": "年",
+      "romaji": "niên",
+      "translation": "năm (半年)",
+      "q": "Chữ 年 trong từ 半年 mang âm Hán Việt nào?",
+      "a": [
+        "NGUYỆT",
+        "BÁN",
+        "NIÊN",
+        "TỐI"
+      ],
+      "c": 2,
+      "ex": "半年: nửa năm"
+    },
+    {
+      "word": "最",
+      "romaji": "tối",
+      "translation": "nhất (最初/最後)",
+      "q": "Chữ 最 trong từ 最初 mang âm Hán Việt nào?",
+      "a": [
+        "BÁN",
+        "NIÊN",
+        "TỐI",
+        "SƠ"
+      ],
+      "c": 2,
+      "ex": "最初に: trước hết"
+    },
+    {
+      "word": "初",
+      "romaji": "sơ",
+      "translation": "ban đầu (最初)",
+      "q": "Chữ 初 trong từ 最初 mang âm Hán Việt nào?",
+      "a": [
+        "NIÊN",
+        "TỐI",
+        "SƠ",
+        "HẬU"
+      ],
+      "c": 2,
+      "ex": "最初に: trước hết"
+    },
+    {
+      "word": "後",
+      "romaji": "hậu",
+      "translation": "sau (最後)",
+      "q": "Chữ 後 trong từ 最後 mang âm Hán Việt nào?",
+      "a": [
+        "TỐI",
+        "SƠ",
+        "HẬU",
+        "KHẨN"
+      ],
+      "c": 2,
+      "ex": "最後に: cuối cùng"
+    },
+    {
+      "word": "緊",
+      "romaji": "khẩn",
+      "translation": "khẩn cấp, căng (緊張)",
+      "q": "Chữ 緊 trong từ 緊張 mang âm Hán Việt nào?",
+      "a": [
+        "SƠ",
+        "HẬU",
+        "KHẨN",
+        "TRƯƠNG"
+      ],
+      "c": 2,
+      "ex": "緊張します: căng thẳng"
+    },
+    {
+      "word": "張",
+      "romaji": "trương",
+      "translation": "căng ra (緊張)",
+      "q": "Chữ 張 trong từ 緊張 mang âm Hán Việt nào?",
+      "a": [
+        "HẬU",
+        "KHẨN",
+        "TRƯƠNG",
+        "PHÓNG"
+      ],
+      "c": 2,
+      "ex": "緊張します: căng thẳng"
+    },
+    {
+      "word": "放",
+      "romaji": "phóng",
+      "translation": "phát ra (放送)",
+      "q": "Chữ 放 trong từ 放送 mang âm Hán Việt nào?",
+      "a": [
+        "TRƯƠNG",
+        "PHÓNG",
+        "TỐNG",
+        "THƯỞNG"
+      ],
+      "c": 2,
+      "ex": "放送します: phát thanh"
+    },
+    {
+      "word": "送",
+      "romaji": "tống",
+      "translation": "gửi đi (放送)",
+      "q": "Chữ 送 trong từ 放送 mang âm Hán Việt nào?",
+      "a": [
+        "PHÓNG",
+        "TỐNG",
+        "THƯỞNG",
+        "KIM"
+      ],
+      "c": 2,
+      "ex": "放送します: phát thanh"
+    },
+    {
+      "word": "賞",
+      "romaji": "thưởng",
+      "translation": "phần thưởng (賞金)",
+      "q": "Chữ 賞 trong từ 賞金 mang âm Hán Việt nào?",
+      "a": [
+        "TỐNG",
+        "THƯỞNG",
+        "KIM",
+        "HIỆP"
+      ],
+      "c": 2,
+      "ex": "賞金: tiền thưởng"
+    },
+    {
+      "word": "金",
+      "romaji": "kim",
+      "translation": "tiền, vàng (賞金)",
+      "q": "Chữ 金 trong từ 賞金 mang âm Hán Việt nào?",
+      "a": [
+        "THƯỞNG",
+        "KIM",
+        "HIỆP",
+        "LỰC"
+      ],
+      "c": 2,
+      "ex": "賞金: tiền thưởng"
+    },
+    {
+      "word": "協",
+      "romaji": "hiệp",
+      "translation": "hợp sức (協力)",
+      "q": "Chữ 協 trong từ 協力 mang âm Hán Việt nào?",
+      "a": [
+        "THƯỞNG",
+        "KIM",
+        "HIỆP",
+        "LỰC"
+      ],
+      "c": 2,
+      "ex": "協力します: hiệp lực"
+    },
+    {
+      "word": "力",
+      "romaji": "lực",
+      "translation": "sức (協力)",
+      "q": "Chữ 力 trong từ 協力 mang âm Hán Việt nào?",
+      "a": [
+        "KIM",
+        "HIỆP",
+        "LỰC",
+        "CẢM"
+      ],
+      "c": 2,
+      "ex": "協力します: hiệp lực"
+    },
+    {
+      "word": "感",
+      "romaji": "cảm",
+      "translation": "cảm động, cảm nhận (感謝)",
+      "q": "Chữ 感 trong từ 感謝 mang âm Hán Việt nào?",
+      "a": [
+        "HIỆP",
+        "LỰC",
+        "CẢM",
+        "TẠ"
+      ],
+      "c": 2,
+      "ex": "感謝します: cảm tạ"
+    },
+    {
+      "word": "謝",
+      "romaji": "tạ",
+      "translation": "tạ ơn (感謝)",
+      "q": "Chữ 謝 trong từ 感謝 mang âm Hán Việt nào?",
+      "a": [
+        "LỰC",
+        "CẢM",
+        "TẠ",
+        "ƯU"
+      ],
+      "c": 2,
+      "ex": "感謝します: cảm tạ"
+    }
+  ]
+}

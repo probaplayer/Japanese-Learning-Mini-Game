@@ -1,0 +1,118 @@
+{
+  "id": "n4-l50-grammar",
+  "name": "N4 Bài 50 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 50 Minna no Nihongo (Bài cuối cùng): Khiêm nhường ngữ (謙譲語) - động từ đặc biệt (参ります, 申します, いたします, 拝見します, 存じます, 伺います, お目にかかります), ~でございます/~ございます, お/ご+Vます+します (cấu trúc khiêm nhường ngữ).",
+  "category": "grammar",
+  "createdAt": "2026-08-27T08:47:44.911Z",
+  "updatedAt": "2026-08-27T08:47:44.911Z",
+  "questions": [
+    {
+      "sentence": "明日3時にまいります",
+      "chunks": [
+        "明日",
+        "3時",
+        "に",
+        "まいります"
+      ],
+      "translation": "Ngày mai tôi sẽ đến lúc 3 giờ ạ",
+      "ex": "まいります: khiêm nhường ngữ của いきます/きます"
+    },
+    {
+      "sentence": "これは私が作った作品でございます",
+      "chunks": [
+        "これ",
+        "は",
+        "私が作った",
+        "作品でございます"
+      ],
+      "translation": "Đây là tác phẩm do tôi làm ạ",
+      "ex": "N+でございます: dạng lịch sự của です"
+    },
+    {
+      "sentence": "田中と申します",
+      "chunks": [
+        "田中",
+        "と",
+        "申します"
+      ],
+      "translation": "Tôi tên là Tanaka ạ",
+      "ex": "申します: khiêm tốn của いいます, dùng khi tự giới thiệu"
+    },
+    {
+      "sentence": "私がご案内いたします",
+      "chunks": [
+        "私",
+        "が",
+        "ご案内",
+        "いたします"
+      ],
+      "translation": "Tôi xin hướng dẫn ạ",
+      "ex": "ご+Vます形+いたします: cấu trúc khiêm nhường ngữ"
+    },
+    {
+      "sentence": "先生の作品を拝見しました",
+      "chunks": [
+        "先生の作品",
+        "を",
+        "拝見しました"
+      ],
+      "translation": "Tôi đã xem tác phẩm của thầy ạ",
+      "ex": "拝見します: khiêm tốn của みます"
+    },
+    {
+      "sentence": "その話はよく存じております",
+      "chunks": [
+        "その話",
+        "は",
+        "よく",
+        "存じております"
+      ],
+      "translation": "Tôi biết rõ chuyện đó ạ",
+      "ex": "存じます: khiêm tốn của しります"
+    },
+    {
+      "sentence": "お荷物をお持ちします",
+      "chunks": [
+        "お荷物",
+        "を",
+        "お持ちします"
+      ],
+      "translation": "Tôi xin cầm hành lý giúp ạ",
+      "ex": "お+Vます形+します: cấu trúc khiêm nhường ngữ"
+    },
+    {
+      "sentence": "これは私が撮った写真でございます",
+      "chunks": [
+        "これ",
+        "は",
+        "私が撮った",
+        "写真でございます"
+      ],
+      "translation": "Đây là ảnh do tôi chụp ạ",
+      "ex": "N+でございます: dạng lịch sự của です"
+    },
+    {
+      "sentence": "先生に伺いたいことがあります",
+      "chunks": [
+        "先生",
+        "に",
+        "伺いたい",
+        "こと",
+        "が",
+        "あります"
+      ],
+      "translation": "Tôi có điều muốn hỏi thầy ạ",
+      "ex": "伺います: khiêm tốn của ききます"
+    },
+    {
+      "sentence": "お客様にお目にかかりました",
+      "chunks": [
+        "お客様",
+        "に",
+        "お目にかかりました"
+      ],
+      "translation": "Tôi đã gặp quý khách ạ",
+      "ex": "お目にかかります: khiêm tốn của あいます"
+    }
+  ]
+}

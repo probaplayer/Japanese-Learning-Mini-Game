@@ -1,0 +1,458 @@
+{
+  "id": "n4-l44-kanji-hanviet",
+  "name": "N4 Bài 44 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 44, hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-27T02:41:07.183Z",
+  "updatedAt": "2026-08-27T02:41:13.141Z",
+  "questions": [
+    {
+      "word": "泣",
+      "romaji": "khấp",
+      "translation": "khóc (泣きます)",
+      "q": "Chữ 泣 trong từ 泣きます mang âm Hán Việt nào?",
+      "a": [
+        "KHẤP",
+        "TIẾU",
+        "CÀN",
+        "HOẠT"
+      ],
+      "c": 0,
+      "ex": "泣きます: khóc"
+    },
+    {
+      "word": "笑",
+      "romaji": "tiếu",
+      "translation": "cười (笑います)",
+      "q": "Chữ 笑 trong từ 笑います mang âm Hán Việt nào?",
+      "a": [
+        "KHẤP",
+        "CÀN",
+        "HOẠT",
+        "TIẾU"
+      ],
+      "c": 3,
+      "ex": "笑います: cười"
+    },
+    {
+      "word": "乾",
+      "romaji": "càn",
+      "translation": "khô (乾きます)",
+      "q": "Chữ 乾 trong từ 乾きます mang âm Hán Việt nào?",
+      "a": [
+        "TIẾU",
+        "HOẠT",
+        "KHỞI",
+        "CÀN"
+      ],
+      "c": 3,
+      "ex": "乾きます: khô"
+    },
+    {
+      "word": "滑",
+      "romaji": "hoạt",
+      "translation": "trơn (滑ります)",
+      "q": "Chữ 滑 trong từ 滑ります mang âm Hán Việt nào?",
+      "a": [
+        "HOẠT",
+        "KHỞI",
+        "ĐIỀU",
+        "CÀN"
+      ],
+      "c": 0,
+      "ex": "滑ります: trượt, trơn"
+    },
+    {
+      "word": "起",
+      "romaji": "khởi",
+      "translation": "dậy, xảy ra (起きます)",
+      "q": "Chữ 起 trong từ 起きます mang âm Hán Việt nào?",
+      "a": [
+        "KHỞI",
+        "ĐIỀU",
+        "TIẾT",
+        "HOẠT"
+      ],
+      "c": 0,
+      "ex": "起きます: xảy ra (tai nạn)"
+    },
+    {
+      "word": "調",
+      "romaji": "điều",
+      "translation": "điều chỉnh (調節)",
+      "q": "Chữ 調 trong từ 調節 mang âm Hán Việt nào?",
+      "a": [
+        "ĐIỀU",
+        "TIẾT",
+        "ĐINH",
+        "KHỞI"
+      ],
+      "c": 0,
+      "ex": "調節します: điều tiết"
+    },
+    {
+      "word": "節",
+      "romaji": "tiết",
+      "translation": "tiết độ (調節)",
+      "q": "Chữ 節 trong từ 調節 mang âm Hán Việt nào?",
+      "a": [
+        "TIẾT",
+        "ĐINH",
+        "NINH",
+        "ĐIỀU"
+      ],
+      "c": 0,
+      "ex": "調節します: điều tiết"
+    },
+    {
+      "word": "丁",
+      "romaji": "đinh",
+      "translation": "đinh (丁寧)",
+      "q": "Chữ 丁 trong từ 丁寧 mang âm Hán Việt nào?",
+      "a": [
+        "ĐINH",
+        "NINH",
+        "TẾ",
+        "TIẾT"
+      ],
+      "c": 0,
+      "ex": "丁寧: lịch sự"
+    },
+    {
+      "word": "寧",
+      "romaji": "ninh",
+      "translation": "an ninh, cẩn thận (丁寧)",
+      "q": "Chữ 寧 trong từ 丁寧 mang âm Hán Việt nào?",
+      "a": [
+        "NINH",
+        "TẾ",
+        "NỒNG",
+        "ĐINH"
+      ],
+      "c": 0,
+      "ex": "丁寧: lịch sự"
+    },
+    {
+      "word": "細",
+      "romaji": "tế",
+      "translation": "nhỏ (細かい)",
+      "q": "Chữ 細 trong từ 細かい mang âm Hán Việt nào?",
+      "a": [
+        "TẾ",
+        "NỒNG",
+        "BẠC",
+        "NINH"
+      ],
+      "c": 0,
+      "ex": "細かい: nhỏ, chi tiết"
+    },
+    {
+      "word": "濃",
+      "romaji": "nồng",
+      "translation": "đậm (濃い)",
+      "q": "Chữ 濃 mang âm Hán Việt nào?",
+      "a": [
+        "NỒNG",
+        "BẠC",
+        "KHÔNG",
+        "TẾ"
+      ],
+      "c": 0,
+      "ex": "濃い: đậm, nồng"
+    },
+    {
+      "word": "薄",
+      "romaji": "bạc",
+      "translation": "nhạt, mỏng (薄い)",
+      "q": "Chữ 薄 mang âm Hán Việt nào?",
+      "a": [
+        "BẠC",
+        "KHÔNG",
+        "KHÍ",
+        "NỔNG"
+      ],
+      "c": 0,
+      "ex": "薄い: nhạt, loãng"
+    },
+    {
+      "word": "空",
+      "romaji": "không",
+      "translation": "không, trống (空気)",
+      "q": "Chữ 空 trong từ 空気 mang âm Hán Việt nào?",
+      "a": [
+        "KHÔNG",
+        "KHÍ",
+        "LỆ",
+        "BẠC"
+      ],
+      "c": 0,
+      "ex": "空気: không khí"
+    },
+    {
+      "word": "気",
+      "romaji": "khí",
+      "translation": "khí (空気)",
+      "q": "Chữ 気 trong từ 空気 mang âm Hán Việt nào?",
+      "a": [
+        "KHÍ",
+        "LỆ",
+        "HÒA",
+        "KHÔNG"
+      ],
+      "c": 0,
+      "ex": "空気: không khí"
+    },
+    {
+      "word": "涙",
+      "romaji": "lệ",
+      "translation": "nước mắt (涙)",
+      "q": "Chữ 涙 mang âm Hán Việt nào?",
+      "a": [
+        "LỆ",
+        "HÒA",
+        "THỰC",
+        "KHÍ"
+      ],
+      "c": 0,
+      "ex": "涙: nước mắt"
+    },
+    {
+      "word": "和",
+      "romaji": "hòa",
+      "translation": "Nhật Bản, hòa hợp (和食)",
+      "q": "Chữ 和 trong từ 和食 mang âm Hán Việt nào?",
+      "a": [
+        "HÒA",
+        "THỰC",
+        "DƯƠNG",
+        "LỆ"
+      ],
+      "c": 0,
+      "ex": "和食: món ăn Nhật"
+    },
+    {
+      "word": "食",
+      "romaji": "thực",
+      "translation": "ăn, thức ăn (和食/洋食)",
+      "q": "Chữ 食 trong từ 和食 mang âm Hán Việt nào?",
+      "a": [
+        "THỰC",
+        "DƯƠNG",
+        "LƯỢNG",
+        "HÒA"
+      ],
+      "c": 0,
+      "ex": "和食 / 洋食: món ăn Nhật / Âu"
+    },
+    {
+      "word": "洋",
+      "romaji": "dương",
+      "translation": "Tây Âu, đại dương (洋食)",
+      "q": "Chữ 洋 trong từ 洋食 mang âm Hán Việt nào?",
+      "a": [
+        "DƯƠNG",
+        "LƯỢNG",
+        "BỘI",
+        "THỰC"
+      ],
+      "c": 0,
+      "ex": "洋食: món ăn Âu Mỹ"
+    },
+    {
+      "word": "量",
+      "romaji": "lượng",
+      "translation": "lượng (量)",
+      "q": "Chữ 量 mang âm Hán Việt nào?",
+      "a": [
+        "LƯỢNG",
+        "BỘI",
+        "BÁN",
+        "DƯƠNG"
+      ],
+      "c": 0,
+      "ex": "量: lượng"
+    },
+    {
+      "word": "倍",
+      "romaji": "bội",
+      "translation": "lần, gấp đôi (倍)",
+      "q": "Chữ 倍 mang âm Hán Việt nào?",
+      "a": [
+        "BỘI",
+        "BÁN",
+        "PHÂN",
+        "LƯỢNG"
+      ],
+      "c": 0,
+      "ex": "倍: lần, gấp"
+    },
+    {
+      "word": "半",
+      "romaji": "bán",
+      "translation": "nửa (半分)",
+      "q": "Chữ 半 trong từ 半分 mang âm Hán Việt nào?",
+      "a": [
+        "BÁN",
+        "PHÂN",
+        "TẨY",
+        "BỘI"
+      ],
+      "c": 0,
+      "ex": "半分: một nửa"
+    },
+    {
+      "word": "分",
+      "romaji": "phân",
+      "translation": "phần (半分)",
+      "q": "Chữ 分 trong từ 半分 mang âm Hán Việt nào?",
+      "a": [
+        "PHÂN",
+        "TẨY",
+        "TRẠC",
+        "BÁN"
+      ],
+      "c": 0,
+      "ex": "半分: một nửa"
+    },
+    {
+      "word": "洗",
+      "romaji": "tẩy",
+      "translation": "giặt, rửa (洗濯物)",
+      "q": "Chữ 洗 trong từ 洗濯物 mang âm Hán Việt nào?",
+      "a": [
+        "TẨY",
+        "TRẠC",
+        "VẬT",
+        "PHÂN"
+      ],
+      "c": 0,
+      "ex": "洗濯物: đồ giặt"
+    },
+    {
+      "word": "濯",
+      "romaji": "trạc",
+      "translation": "giặt (洗濯物)",
+      "q": "Chữ 濯 trong từ 洗濯物 mang âm Hán Việt nào?",
+      "a": [
+        "TRẠC",
+        "VẬT",
+        "LÝ",
+        "TẨY"
+      ],
+      "c": 0,
+      "ex": "洗濯物: đồ giặt"
+    },
+    {
+      "word": "物",
+      "romaji": "vật",
+      "translation": "đồ vật (洗濯物)",
+      "q": "Chữ 物 trong từ 洗濯物 mang âm Hán Việt nào?",
+      "a": [
+        "VẬT",
+        "LÝ",
+        "DO",
+        "TRẠC"
+      ],
+      "c": 0,
+      "ex": "洗濯物: đồ giặt"
+    },
+    {
+      "word": "理",
+      "romaji": "lý",
+      "translation": "lý lẽ (理由)",
+      "q": "Chữ 理 trong từ 理由 mang âm Hán Việt nào?",
+      "a": [
+        "LÝ",
+        "DO",
+        "HIỀM",
+        "VẬT"
+      ],
+      "c": 0,
+      "ex": "理由: lý do"
+    },
+    {
+      "word": "由",
+      "romaji": "do",
+      "translation": "do, nguyên do (理由)",
+      "q": "Chữ 由 trong từ 理由 mang âm Hán Việt nào?",
+      "a": [
+        "DO",
+        "HIỀM",
+        "THUẬN",
+        "LÝ"
+      ],
+      "c": 0,
+      "ex": "理由: lý do"
+    },
+    {
+      "word": "嫌",
+      "romaji": "hiềm",
+      "translation": "ghét (嫌がります)",
+      "q": "Chữ 嫌 trong từ 嫌がります mang âm Hán Việt nào?",
+      "a": [
+        "HIỀM",
+        "THUẬN",
+        "TỰ",
+        "DO"
+      ],
+      "c": 0,
+      "ex": "嫌がります: ghét"
+    },
+    {
+      "word": "順",
+      "romaji": "thuận",
+      "translation": "thuận theo (順序)",
+      "q": "Chữ 順 trong từ 順序 mang âm Hán Việt nào?",
+      "a": [
+        "THUẬN",
+        "TỰ",
+        "BIỂU",
+        "HIỀM"
+      ],
+      "c": 0,
+      "ex": "順序: thứ tự"
+    },
+    {
+      "word": "序",
+      "romaji": "tự",
+      "translation": "thứ tự (順序)",
+      "q": "Chữ 序 trong từ 順序 mang âm Hán Việt nào?",
+      "a": [
+        "TỰ",
+        "BIỂU",
+        "HIỆN",
+        "THUẬN"
+      ],
+      "c": 0,
+      "ex": "順序: thứ tự"
+    },
+    {
+      "word": "表",
+      "romaji": "biểu",
+      "translation": "biểu lộ (表現)",
+      "q": "Chữ 表 trong từ 表現 mang âm Hán Việt nào?",
+      "a": [
+        "BIỂU",
+        "HIỆN",
+        "ĐÁP",
+        "TỰ"
+      ],
+      "c": 0,
+      "ex": "表現: cách diễn đạt"
+    },
+    {
+      "word": "現",
+      "romaji": "hiện",
+      "translation": "hiện ra (表現)",
+      "q": "Chữ 現 trong từ 表現 mang âm Hán Việt nào?",
+      "a": [
+        "HIỆN",
+        "ĐÁP",
+        "TIẾU",
+        "BIỂU"
+      ],
+      "c": 0,
+      "ex": "表現: cách diễn đạt"
+    }
+  ]
+}

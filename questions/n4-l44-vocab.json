@@ -1,0 +1,332 @@
+{
+  "id": "n4-l44-vocab",
+  "name": "N4 Bài 44 - Từ vựng (nghĩa)",
+  "description": "Từ vựng Minna no Nihongo Bài 44 (N4). Câu hỏi hỏi nghĩa tiếng Việt của từ.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-27T02:38:44.312Z",
+  "updatedAt": "2026-08-27T02:39:10.890Z",
+  "questions": [
+    {
+      "word": "泣きます",
+      "romaji": "なきます",
+      "translation": "khóc",
+      "q": "Từ 泣きます (なきます) có nghĩa là gì?",
+      "a": [
+        "khóc",
+        "cười",
+        "khô",
+        "ướt"
+      ],
+      "c": 0,
+      "ex": "泣 (khấp) - khóc"
+    },
+    {
+      "word": "笑います",
+      "romaji": "わらいます",
+      "translation": "cười",
+      "q": "Từ 笑います (わらいます) có nghĩa là gì?",
+      "a": [
+        "khóc",
+        "cười",
+        "khô",
+        "ướt"
+      ],
+      "c": 1,
+      "ex": "笑 (tiếu) - cười"
+    },
+    {
+      "word": "乾きます",
+      "romaji": "かわきます",
+      "translation": "khô",
+      "q": "Từ 乾きます (かわきます) có nghĩa là gì?",
+      "a": [
+        "cười",
+        "khô",
+        "ướt",
+        "trượt"
+      ],
+      "c": 1,
+      "ex": "乾 (càn) - khô"
+    },
+    {
+      "word": "ぬれます",
+      "romaji": "ぬれます",
+      "translation": "ướt",
+      "q": "Từ ぬれます có nghĩa là gì?",
+      "a": [
+        "khô",
+        "ướt",
+        "trượt",
+        "xảy ra (tai nạn)"
+      ],
+      "c": 1,
+      "ex": "ぬれます - không có kanji phổ biến"
+    },
+    {
+      "word": "滑ります",
+      "romaji": "すべります",
+      "translation": "trượt, trơn",
+      "q": "Từ 滑ります (すべります) có nghĩa là gì?",
+      "a": [
+        "ướt",
+        "trượt, trơn",
+        "xảy ra (tai nạn)",
+        "điều tiết, điều chỉnh"
+      ],
+      "c": 1,
+      "ex": "滑 (hoạt) - trơn"
+    },
+    {
+      "word": "起きます",
+      "romaji": "おきます",
+      "translation": "xảy ra (tai nạn)",
+      "q": "Từ [事故が]起きます (おきます) có nghĩa là gì?",
+      "a": [
+        "trượt",
+        "xảy ra (tai nạn)",
+        "điều tiết",
+        "an toàn"
+      ],
+      "c": 1,
+      "ex": "起 (khởi) - dậy lên, xảy ra"
+    },
+    {
+      "word": "調節します",
+      "romaji": "ちょうせつします",
+      "translation": "điều tiết, điều chỉnh",
+      "q": "Từ 調節します (ちょうせつします) có nghĩa là gì?",
+      "a": [
+        "xảy ra",
+        "điều tiết, điều chỉnh",
+        "an toàn",
+        "lịch sự"
+      ],
+      "c": 1,
+      "ex": "調節 (điều tiết)"
+    },
+    {
+      "word": "丁寧な",
+      "romaji": "ていねい",
+      "translation": "lịch sự, cẩn thận",
+      "q": "Từ 丁寧[な] (ていねい) có nghĩa là gì?",
+      "a": [
+        "điều tiết",
+        "an toàn",
+        "lịch sự, cẩn thận",
+        "nhỏ, chi tiết"
+      ],
+      "c": 2,
+      "ex": "丁寧 (đinh ninh)"
+    },
+    {
+      "word": "細かい",
+      "romaji": "こまかい",
+      "translation": "nhỏ, chi tiết",
+      "q": "Từ 細かい (こまかい) có nghĩa là gì?",
+      "a": [
+        "lịch sự",
+        "nhỏ, chi tiết",
+        "đậm",
+        "nhạt"
+      ],
+      "c": 1,
+      "ex": "細 (tế) - nhỏ"
+    },
+    {
+      "word": "濃い",
+      "romaji": "こい",
+      "translation": "đậm, nồng",
+      "q": "Từ 濃い (こい) có nghĩa là gì?",
+      "a": [
+        "nhỏ, chi tiết",
+        "đậm, nồng",
+        "nhạt",
+        "không khí"
+      ],
+      "c": 1,
+      "ex": "濃 (nồng) - đậm"
+    },
+    {
+      "word": "薄い",
+      "romaji": "うすい",
+      "translation": "nhạt, loãng",
+      "q": "Từ 薄い (うすい) trong câu về vị có nghĩa là gì?",
+      "a": [
+        "đậm",
+        "nhạt, loãng",
+        "không khí",
+        "nước mắt"
+      ],
+      "c": 1,
+      "ex": "薄 (bạc) - nhạt"
+    },
+    {
+      "word": "空気",
+      "romaji": "くうき",
+      "translation": "không khí",
+      "q": "Từ 空気 (くうき) có nghĩa là gì?",
+      "a": [
+        "nhạt",
+        "không khí",
+        "nước mắt",
+        "món ăn Nhật"
+      ],
+      "c": 1,
+      "ex": "空 (không) + 気 (khí)"
+    },
+    {
+      "word": "涙",
+      "romaji": "なみだ",
+      "translation": "nước mắt",
+      "q": "Từ 涙 (なみだ) có nghĩa là gì?",
+      "a": [
+        "không khí",
+        "nước mắt",
+        "món ăn Nhật",
+        "món ăn Âu"
+      ],
+      "c": 1,
+      "ex": "涙 - nước mắt"
+    },
+    {
+      "word": "和食",
+      "romaji": "わしょく",
+      "translation": "món ăn Nhật",
+      "q": "Từ 和食 (わしょく) có nghĩa là gì?",
+      "a": [
+        "nước mắt",
+        "món ăn Nhật",
+        "món ăn Âu",
+        "lượng"
+      ],
+      "c": 1,
+      "ex": "和 (hòa) + 食 (thực)"
+    },
+    {
+      "word": "洋食",
+      "romaji": "ようしょく",
+      "translation": "món ăn Âu Mỹ",
+      "q": "Từ 洋食 (ようしょく) có nghĩa là gì?",
+      "a": [
+        "món ăn Nhật",
+        "món ăn Âu Mỹ",
+        "lượng",
+        "lần, gấp"
+      ],
+      "c": 1,
+      "ex": "洋 (dương) + 食 (thực)"
+    },
+    {
+      "word": "量",
+      "romaji": "りょう",
+      "translation": "lượng",
+      "q": "Từ 量 (りょう) có nghĩa là gì?",
+      "a": [
+        "món ăn Âu",
+        "lượng",
+        "lần, gấp",
+        "một nửa"
+      ],
+      "c": 1,
+      "ex": "量 (lượng)"
+    },
+    {
+      "word": "倍",
+      "romaji": "ばい",
+      "translation": "lần, gấp (– bai)",
+      "q": "Từ 倍 (ばい) có nghĩa là gì?",
+      "a": [
+        "lượng",
+        "lần, gấp (– bai)",
+        "một nửa",
+        "đồ giặt"
+      ],
+      "c": 1,
+      "ex": "倍 (bội)"
+    },
+    {
+      "word": "半分",
+      "romaji": "はんぶん",
+      "translation": "một nửa",
+      "q": "Từ 半分 (はんぶん) có nghĩa là gì?",
+      "a": [
+        "lần, gấp",
+        "một nửa",
+        "đồ giặt",
+        "lý do"
+      ],
+      "c": 1,
+      "ex": "半 (bán) + 分 (phân)"
+    },
+    {
+      "word": "洗濯物",
+      "romaji": "せんたくもの",
+      "translation": "đồ giặt",
+      "q": "Từ 洗濯物 (せんたくもの) có nghĩa là gì?",
+      "a": [
+        "một nửa",
+        "đồ giặt",
+        "lý do",
+        "ghét"
+      ],
+      "c": 1,
+      "ex": "洗濯 (tẩy trạc) + 物 (vật)"
+    },
+    {
+      "word": "理由",
+      "romaji": "りゆう",
+      "translation": "lý do",
+      "q": "Từ 理由 (りゆう) có nghĩa là gì?",
+      "a": [
+        "đồ giặt",
+        "lý do",
+        "ghét",
+        "thứ tự"
+      ],
+      "c": 1,
+      "ex": "理 (lý) + 由 (do)"
+    },
+    {
+      "word": "嫌がります",
+      "romaji": "いやがります",
+      "translation": "ghét, không thích",
+      "q": "Từ 嫌がります (いやがります) có nghĩa là gì?",
+      "a": [
+        "lý do",
+        "ghét, không thích",
+        "thứ tự",
+        "cách diễn đạt"
+      ],
+      "c": 1,
+      "ex": "嫌 (hiềm) - ghét"
+    },
+    {
+      "word": "順序",
+      "romaji": "じゅんじょ",
+      "translation": "thứ tự",
+      "q": "Từ 順序 (じゅんじょ) có nghĩa là gì?",
+      "a": [
+        "ghét",
+        "thứ tự",
+        "cách diễn đạt",
+        "chia tay"
+      ],
+      "c": 1,
+      "ex": "順序 (thuận tự)"
+    },
+    {
+      "word": "表現",
+      "romaji": "ひょうげん",
+      "translation": "cách nói, cách diễn đạt",
+      "q": "Từ 表現 (ひょうげん) có nghĩa là gì?",
+      "a": [
+        "thứ tự",
+        "cách nói, cách diễn đạt",
+        "chia tay",
+        "khóc"
+      ],
+      "c": 1,
+      "ex": "表現 (biểu hiện)"
+    }
+  ]
+}

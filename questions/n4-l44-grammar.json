@@ -1,0 +1,111 @@
+{
+  "id": "n4-l44-grammar",
+  "name": "N4 Bài 44 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 44 Minna no Nihongo: ~すぎます (quá mức), ~やすいです/~にくいです (dễ/khó), Aい(bỏい)く/Aな(bỏな)に/Nに+します (làm biến đổi đối tượng), ~にします (quyết định chọn).",
+  "category": "grammar",
+  "createdAt": "2026-08-27T02:41:46.484Z",
+  "updatedAt": "2026-08-27T02:42:12.059Z",
+  "questions": [
+    {
+      "sentence": "このコーヒーは甘すぎます",
+      "chunks": [
+        "このコーヒー",
+        "は",
+        "甘すぎます"
+      ],
+      "translation": "Cà phê này quá ngọt",
+      "ex": "A/V(bỏ い/ます)+すぎます: quá mức, thường mang nghĩa tiêu cực"
+    },
+    {
+      "sentence": "漢字は覚えにくいです",
+      "chunks": [
+        "漢字",
+        "は",
+        "覚えにくいです"
+      ],
+      "translation": "Chữ Hán khó nhớ",
+      "ex": "V(bỏ ます)+にくいです: khó làm gì"
+    },
+    {
+      "sentence": "この本は読みやすいです",
+      "chunks": [
+        "この本",
+        "は",
+        "読みやすいです"
+      ],
+      "translation": "Cuốn sách này dễ đọc",
+      "ex": "V(bỏ ます)+やすいです: dễ làm gì"
+    },
+    {
+      "sentence": "音を大きくします",
+      "chunks": [
+        "音",
+        "を",
+        "大きくします"
+      ],
+      "translation": "Tôi vặn tiếng to hơn",
+      "ex": "Aい(bỏ い)+く+します: làm biến đổi đối tượng theo tính từ"
+    },
+    {
+      "sentence": "髪を短くします",
+      "chunks": [
+        "髪",
+        "を",
+        "短くします"
+      ],
+      "translation": "Tôi sẽ cắt tóc ngắn",
+      "ex": "Aい(bỏ い)+く+します: làm cho ngắn hơn"
+    },
+    {
+      "sentence": "部屋をきれいにします",
+      "chunks": [
+        "部屋",
+        "を",
+        "きれいにします"
+      ],
+      "translation": "Tôi dọn cho phòng sạch hơn",
+      "ex": "Aな(bỏ な)+に+します: làm biến đổi đối tượng theo tính từ đuôi な"
+    },
+    {
+      "sentence": "塩の量を半分にしました",
+      "chunks": [
+        "塩",
+        "の量",
+        "を",
+        "半分にしました"
+      ],
+      "translation": "Tôi đã giảm một nửa lượng muối",
+      "ex": "N+に+します: làm biến đổi đối tượng thành N"
+    },
+    {
+      "sentence": "会議はあしたにします",
+      "chunks": [
+        "会議",
+        "は",
+        "あしたにします"
+      ],
+      "translation": "Để họp sang ngày mai",
+      "ex": "N+にします: quyết định chọn N"
+    },
+    {
+      "sentence": "ばんごはんは寿司にします",
+      "chunks": [
+        "ばんごはん",
+        "は",
+        "寿司にします"
+      ],
+      "translation": "Bữa tối tôi chọn sushi",
+      "ex": "N+にします: quyết định chọn món ăn"
+    },
+    {
+      "sentence": "ホテルはどこにしますか",
+      "chunks": [
+        "ホテル",
+        "は",
+        "どこにしますか"
+      ],
+      "translation": "Bạn chọn khách sạn nào?",
+      "ex": "N+にしますか: hỏi chọn cái nào"
+    }
+  ]
+}

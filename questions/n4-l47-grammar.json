@@ -1,0 +1,123 @@
+{
+  "id": "n4-l47-grammar",
+  "name": "N4 Bài 47 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 47 Minna no Nihongo: ~そうです (nghe nói, truyền đạt thông tin nghe được), ~によると (theo như, nêu nguồn thông tin).",
+  "category": "grammar",
+  "createdAt": "2026-08-27T04:06:28.134Z",
+  "updatedAt": "2026-08-27T04:06:28.134Z",
+  "questions": [
+    {
+      "sentence": "天気予報によるとあしたはいい天気になるそうです",
+      "chunks": [
+        "天気予報によると",
+        "あした",
+        "は",
+        "いい天気になるそうです"
+      ],
+      "translation": "Theo dự báo thời tiết, nghe nói mai trời sẽ đẹp",
+      "ex": "Nによると+普通形+そうです: nghe nói theo nguồn thông tin nào đó"
+    },
+    {
+      "sentence": "田中さんは今年の12月にベトナムへ来るそうです",
+      "chunks": [
+        "田中さん",
+        "は",
+        "今年の12月に",
+        "ベトナム",
+        "へ",
+        "来るそうです"
+      ],
+      "translation": "Nghe nói anh Tanaka sẽ đến Việt Nam vào tháng 12 năm nay",
+      "ex": "普通形+そうです: nghe nói (truyền đạt thông tin nghe được)"
+    },
+    {
+      "sentence": "新聞によるとその会社はもうすぐつぶれるそうです",
+      "chunks": [
+        "新聞によると",
+        "その会社",
+        "は",
+        "もうすぐ",
+        "つぶれるそうです"
+      ],
+      "translation": "Theo báo, nghe nói công ty đó sắp phá sản",
+      "ex": "Nによると: theo nguồn tin là báo chí"
+    },
+    {
+      "sentence": "カリナさんは来月結婚するそうです",
+      "chunks": [
+        "カリナさん",
+        "は",
+        "来月",
+        "結婚するそうです"
+      ],
+      "translation": "Nghe nói chị Karina sẽ kết hôn vào tháng sau",
+      "ex": "V普通形+そうです: nghe nói sẽ làm gì"
+    },
+    {
+      "sentence": "山田さんの話によると事故の原因は雨だったそうです",
+      "chunks": [
+        "山田さんの話によると",
+        "事故の原因",
+        "は",
+        "雨だったそうです"
+      ],
+      "translation": "Theo lời anh Yamada, nghe nói nguyên nhân tai nạn là do mưa",
+      "ex": "Nによると: theo lời của ai đó"
+    },
+    {
+      "sentence": "ミラーさんは日本語が上手だそうです",
+      "chunks": [
+        "ミラーさん",
+        "は",
+        "日本語",
+        "が",
+        "上手だそうです"
+      ],
+      "translation": "Nghe nói anh Miller giỏi tiếng Nhật",
+      "ex": "Na普通形(だ)+そうです: nghe nói về tính từ đuôi な"
+    },
+    {
+      "sentence": "あの店の料理はおいしいそうです",
+      "chunks": [
+        "あの店の料理",
+        "は",
+        "おいしいそうです"
+      ],
+      "translation": "Nghe nói món ăn ở quán đó ngon",
+      "ex": "Aい普通形+そうです: nghe nói về tính từ đuôi い"
+    },
+    {
+      "sentence": "実験によるとこの薬はよく効くそうです",
+      "chunks": [
+        "実験によると",
+        "この薬",
+        "は",
+        "よく効くそうです"
+      ],
+      "translation": "Theo thí nghiệm, nghe nói thuốc này có hiệu quả tốt",
+      "ex": "Nによると: theo kết quả thí nghiệm"
+    },
+    {
+      "sentence": "発表によると人口はへっているそうです",
+      "chunks": [
+        "発表によると",
+        "人口",
+        "は",
+        "へっているそうです"
+      ],
+      "translation": "Theo báo cáo, nghe nói dân số đang giảm",
+      "ex": "Nによると: theo báo cáo"
+    },
+    {
+      "sentence": "天気予報によると台風が来るそうです",
+      "chunks": [
+        "天気予報によると",
+        "台風",
+        "が",
+        "来るそうです"
+      ],
+      "translation": "Theo dự báo thời tiết, nghe nói bão sẽ đến",
+      "ex": "Nによると: theo dự báo thời tiết"
+    }
+  ]
+}

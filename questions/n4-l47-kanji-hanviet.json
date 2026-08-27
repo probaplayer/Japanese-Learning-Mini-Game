@@ -1,0 +1,402 @@
+{
+  "id": "n4-l47-kanji-hanviet",
+  "name": "N4 Bài 47 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 47, hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-27T04:05:25.545Z",
+  "updatedAt": "2026-08-27T04:05:47.949Z",
+  "questions": [
+    {
+      "word": "集",
+      "romaji": "tập",
+      "translation": "tập hợp (集まります)",
+      "q": "Chữ 集 trong từ 集まります mang âm Hán Việt nào?",
+      "a": [
+        "TẬP",
+        "BIỆT",
+        "TRƯỢNG",
+        "SINH"
+      ],
+      "c": 0,
+      "ex": "集まります: tập trung"
+    },
+    {
+      "word": "別",
+      "romaji": "biệt",
+      "translation": "chia lìa (別れます)",
+      "q": "Chữ 別 trong từ 別れます mang âm Hán Việt nào?",
+      "a": [
+        "TẬP",
+        "TRƯờNG",
+        "SINH",
+        "BIỆT"
+      ],
+      "c": 3,
+      "ex": "別れます: chia tay"
+    },
+    {
+      "word": "長",
+      "romaji": "trường",
+      "translation": "dài, lâu (長生きします)",
+      "q": "Chữ 長 trong từ 長生きします mang âm Hán Việt nào?",
+      "a": [
+        "BIỆT",
+        "SINH",
+        "ÂM",
+        "TRƯỢNG"
+      ],
+      "c": 3,
+      "ex": "長生きします: sống lâu"
+    },
+    {
+      "word": "生",
+      "romaji": "sinh",
+      "translation": "sống (長生きします)",
+      "q": "Chữ 生 trong từ 長生きします mang âm Hán Việt nào?",
+      "a": [
+        "TRƯỢNG",
+        "ÂM",
+        "THANH",
+        "SINH"
+      ],
+      "c": 3,
+      "ex": "長生きします: sống lâu"
+    },
+    {
+      "word": "音",
+      "romaji": "âm",
+      "translation": "âm thanh (音がします)",
+      "q": "Chữ 音 trong từ 音がします mang âm Hán Việt nào?",
+      "a": [
+        "ÂM",
+        "THANH",
+        "VỊ",
+        "TẢN"
+      ],
+      "c": 0,
+      "ex": "音がします: có tiếng động"
+    },
+    {
+      "word": "声",
+      "romaji": "thanh",
+      "translation": "giọng nói (声がします)",
+      "q": "Chữ 声 trong từ 声がします mang âm Hán Việt nào?",
+      "a": [
+        "THANH",
+        "VỊ",
+        "TẢN",
+        "ÂM"
+      ],
+      "c": 0,
+      "ex": "声がします: có giọng nói"
+    },
+    {
+      "word": "味",
+      "romaji": "vị",
+      "translation": "mùi vị (味がします)",
+      "q": "Chữ 味 trong từ 味がします mang âm Hán Việt nào?",
+      "a": [
+        "VỊ",
+        "TẢN",
+        "ÂM",
+        "THANH"
+      ],
+      "c": 0,
+      "ex": "味がします: có vị"
+    },
+    {
+      "word": "傘",
+      "romaji": "tản",
+      "translation": "che dù (傘をさします)",
+      "q": "Chữ 傘 trong từ 傘をさします mang âm Hán Việt nào?",
+      "a": [
+        "TẢN",
+        "ÂM",
+        "THANH",
+        "VỊ"
+      ],
+      "c": 0,
+      "ex": "傘をさします: che ô"
+    },
+    {
+      "word": "酷",
+      "romaji": "khốc",
+      "translation": "trầm trọng (酷い)",
+      "q": "Chữ 酷 mang âm Hán Việt nào?",
+      "a": [
+        "KHỐC",
+        "BỐ",
+        "THIÊN",
+        "KHÍ"
+      ],
+      "c": 0,
+      "ex": "酷い: tồi tệ"
+    },
+    {
+      "word": "怖",
+      "romaji": "bố",
+      "translation": "sợ hãi (怖い)",
+      "q": "Chữ 怖 mang âm Hán Việt nào?",
+      "a": [
+        "BỐ",
+        "THIÊN",
+        "KHÍ",
+        "DỰ"
+      ],
+      "c": 0,
+      "ex": "怖い: sợ, khiếp"
+    },
+    {
+      "word": "天",
+      "romaji": "thiên",
+      "translation": "trời (天気)",
+      "q": "Chữ 天 trong từ 天気 mang âm Hán Việt nào?",
+      "a": [
+        "THIÊN",
+        "KHÍ",
+        "DỰ",
+        "BÁO"
+      ],
+      "c": 0,
+      "ex": "天気予報: dự báo thời tiết"
+    },
+    {
+      "word": "気",
+      "romaji": "khí",
+      "translation": "thời tiết (天気)",
+      "q": "Chữ 気 trong từ 天気 mang âm Hán Việt nào?",
+      "a": [
+        "KHÍ",
+        "DỰ",
+        "BÁO",
+        "PHÁT"
+      ],
+      "c": 0,
+      "ex": "天気予報: dự báo thời tiết"
+    },
+    {
+      "word": "予",
+      "romaji": "dự",
+      "translation": "dự liệu (予報)",
+      "q": "Chữ 予 trong từ 予報 mang âm Hán Việt nào?",
+      "a": [
+        "DỰ",
+        "BÁO",
+        "PHÁT",
+        "BIỂU"
+      ],
+      "c": 0,
+      "ex": "予報: dự báo"
+    },
+    {
+      "word": "報",
+      "romaji": "báo",
+      "translation": "báo cáo, thông báo (予報)",
+      "q": "Chữ 報 trong từ 予報 mang âm Hán Việt nào?",
+      "a": [
+        "BÁO",
+        "PHÁT",
+        "BIỂU",
+        "THỰC"
+      ],
+      "c": 0,
+      "ex": "予報 / 発表: dự báo / phát biểu"
+    },
+    {
+      "word": "発",
+      "romaji": "phát",
+      "translation": "phát ra (発表)",
+      "q": "Chữ 発 trong từ 発表 mang âm Hán Việt nào?",
+      "a": [
+        "PHÁT",
+        "BIỂU",
+        "THỰC",
+        "NGHIỆM"
+      ],
+      "c": 0,
+      "ex": "発表: phát biểu"
+    },
+    {
+      "word": "表",
+      "romaji": "biểu",
+      "translation": "thể hiện (発表)",
+      "q": "Chữ 表 trong từ 発表 mang âm Hán Việt nào?",
+      "a": [
+        "BIỂU",
+        "THỰC",
+        "NGHIỆM",
+        "NHÂN"
+      ],
+      "c": 0,
+      "ex": "発表: phát biểu"
+    },
+    {
+      "word": "実",
+      "romaji": "thực",
+      "translation": "thực tế (実験)",
+      "q": "Chữ 実 trong từ 実験 mang âm Hán Việt nào?",
+      "a": [
+        "THỰC",
+        "NGHIỆM",
+        "NHÂN",
+        "KHẨU"
+      ],
+      "c": 0,
+      "ex": "実験: thực nghiệm"
+    },
+    {
+      "word": "験",
+      "romaji": "nghiệm",
+      "translation": "thử nghiệm (実験)",
+      "q": "Chữ 験 trong từ 実験 mang âm Hán Việt nào?",
+      "a": [
+        "NGHIỆM",
+        "NHÂN",
+        "KHẨU",
+        "KHOA"
+      ],
+      "c": 0,
+      "ex": "実験: thực nghiệm"
+    },
+    {
+      "word": "人",
+      "romaji": "nhân",
+      "translation": "người (人口)",
+      "q": "Chữ 人 trong từ 人口 mang âm Hán Việt nào?",
+      "a": [
+        "NHÂN",
+        "KHẨU",
+        "KHOA",
+        "HỌC"
+      ],
+      "c": 0,
+      "ex": "人口: dân số"
+    },
+    {
+      "word": "口",
+      "romaji": "khẩu",
+      "translation": "miệng, người (人口)",
+      "q": "Chữ 口 trong từ 人口 mang âm Hán Việt nào?",
+      "a": [
+        "KHẨU",
+        "KHOA",
+        "HỌC",
+        "Y"
+      ],
+      "c": 0,
+      "ex": "人口: dân số"
+    },
+    {
+      "word": "科",
+      "romaji": "khoa",
+      "translation": "ngành (科学)",
+      "q": "Chữ 科 trong từ 科学 mang âm Hán Việt nào?",
+      "a": [
+        "KHOA",
+        "HỌC",
+        "Y",
+        "VĂN"
+      ],
+      "c": 0,
+      "ex": "科学: khoa học"
+    },
+    {
+      "word": "学",
+      "romaji": "học",
+      "translation": "học (科学/医学/文学)",
+      "q": "Chữ 学 trong từ 科学 mang âm Hán Việt nào?",
+      "a": [
+        "HỌC",
+        "Y",
+        "VĂN",
+        "TƯỞNG"
+      ],
+      "c": 0,
+      "ex": "科学 / 医学 / 文学: khoa học / y học / văn học"
+    },
+    {
+      "word": "医",
+      "romaji": "y",
+      "translation": "y học, chữa bệnh (医学)",
+      "q": "Chữ 医 trong từ 医学 mang âm Hán Việt nào?",
+      "a": [
+        "Y",
+        "VĂN",
+        "TƯỞNG",
+        "THỦ"
+      ],
+      "c": 0,
+      "ex": "医学: y học"
+    },
+    {
+      "word": "文",
+      "romaji": "văn",
+      "translation": "văn chương (文学)",
+      "q": "Chữ 文 trong từ 文学 mang âm Hán Việt nào?",
+      "a": [
+        "VĂN",
+        "TƯỞNG",
+        "THỦ",
+        "CỨU"
+      ],
+      "c": 0,
+      "ex": "文学: văn học"
+    },
+    {
+      "word": "相",
+      "romaji": "tướng",
+      "translation": "lẫn nhau (相手)",
+      "q": "Chữ 相 trong từ 相手 mang âm Hán Việt nào?",
+      "a": [
+        "TƯỞNG",
+        "THỦ",
+        "CỨU",
+        "CẤP"
+      ],
+      "c": 0,
+      "ex": "相手: đối tác"
+    },
+    {
+      "word": "手",
+      "romaji": "thủ",
+      "translation": "tay (相手)",
+      "q": "Chữ 手 trong từ 相手 mang âm Hán Việt nào?",
+      "a": [
+        "THỦ",
+        "CỨU",
+        "CẤP",
+        "XA"
+      ],
+      "c": 0,
+      "ex": "相手: đối tác"
+    },
+    {
+      "word": "救",
+      "romaji": "cứu",
+      "translation": "cứu giúp (救急)",
+      "q": "Chữ 救 trong từ 救急 mang âm Hán Việt nào?",
+      "a": [
+        "CỨU",
+        "CẤP",
+        "XA",
+        "THÀNH"
+      ],
+      "c": 0,
+      "ex": "救急車: xe cấp cứu"
+    },
+    {
+      "word": "急",
+      "romaji": "cấp",
+      "translation": "khẩn cấp (救急)",
+      "q": "Chữ 急 trong từ 救急 mang âm Hán Việt nào?",
+      "a": [
+        "CẤP",
+        "XA",
+        "THÀNH",
+        "TÁN"
+      ],
+      "c": 0,
+      "ex": "救急車: xe cấp cứu"
+    }
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "id": "n4-l47-vocab",
+  "name": "N4 Bài 47 - Từ vựng (nghĩa)",
+  "description": "Từ vựng Minna no Nihongo Bài 47 (N4). Câu hỏi hỏi nghĩa tiếng Việt của từ.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-27T04:03:39.955Z",
+  "updatedAt": "2026-08-27T04:03:39.955Z",
+  "questions": [
+    {
+      "word": "集まります",
+      "romaji": "あつまります",
+      "translation": "tập trung, tập hợp",
+      "q": "Từ [人が〜]集まります (あつまります) có nghĩa là gì?",
+      "a": [
+        "tập trung, tập hợp",
+        "chia tay",
+        "sống lâu",
+        "có tiếng động"
+      ],
+      "c": 0,
+      "ex": "集 (tập) - tập hợp"
+    },
+    {
+      "word": "別れます",
+      "romaji": "わかれます",
+      "translation": "chia tay",
+      "q": "Từ [人が〜]別れます (わかれます) có nghĩa là gì?",
+      "a": [
+        "tập trung",
+        "chia tay",
+        "sống lâu",
+        "có tiếng động"
+      ],
+      "c": 1,
+      "ex": "別 (biệt) - chia lìa"
+    },
+    {
+      "word": "長生きします",
+      "romaji": "ながいきします",
+      "translation": "sống lâu",
+      "q": "Từ 長生きします (ながいきします) có nghĩa là gì?",
+      "a": [
+        "chia tay",
+        "sống lâu",
+        "có tiếng động",
+        "có vị"
+      ],
+      "c": 1,
+      "ex": "長 (trường) + 生 (sinh)"
+    },
+    {
+      "word": "音がします",
+      "romaji": "おとがします",
+      "translation": "có tiếng động, nghe thấy âm thanh",
+      "q": "Từ [音が〜]します (おとがします) có nghĩa là gì?",
+      "a": [
+        "sống lâu",
+        "có tiếng động, nghe thấy âm thanh",
+        "có vị",
+        "có mùi"
+      ],
+      "c": 1,
+      "ex": "音 (âm) - âm thanh"
+    },
+    {
+      "word": "声がします",
+      "romaji": "こえがします",
+      "translation": "có giọng nói, nghe thấy tiếng",
+      "q": "Từ [声が〜]します (こえがします) có nghĩa là gì?",
+      "a": [
+        "có tiếng động",
+        "có giọng nói",
+        "có vị",
+        "có mùi"
+      ],
+      "c": 1,
+      "ex": "声 (thanh) - giọng nói"
+    },
+    {
+      "word": "味がします",
+      "romaji": "あじがします",
+      "translation": "có vị",
+      "q": "Từ [味が〜]します (あじがします) có nghĩa là gì?",
+      "a": [
+        "có giọng nói",
+        "có vị",
+        "có mùi",
+        "che (ô)"
+      ],
+      "c": 1,
+      "ex": "味 (vị) - mùi vị"
+    },
+    {
+      "word": "においがします",
+      "romaji": "においがします",
+      "translation": "có mùi",
+      "q": "Từ [においが〜]します có nghĩa là gì?",
+      "a": [
+        "có vị",
+        "có mùi",
+        "che (ô)",
+        "tồi tệ, xấu"
+      ],
+      "c": 1,
+      "ex": "におい - không có kanji phổ biến"
+    },
+    {
+      "word": "傘をさします",
+      "romaji": "かさをさします",
+      "translation": "che (ô)",
+      "q": "Từ [傘を〜]さします (かさをさします) có nghĩa là gì?",
+      "a": [
+        "có mùi",
+        "che (ô)",
+        "tồi tệ, xấu",
+        "sợ, khiếp"
+      ],
+      "c": 1,
+      "ex": "傘 (tản) - che dù"
+    },
+    {
+      "word": "酷い",
+      "romaji": "ひどい",
+      "translation": "tồi tệ, xấu kinh khủng",
+      "q": "Từ 酷い (ひどい) có nghĩa là gì?",
+      "a": [
+        "che ô",
+        "tồi tệ, xấu kinh khủng",
+        "sợ, khiếp",
+        "dự báo thời tiết"
+      ],
+      "c": 1,
+      "ex": "酷 (khốc) - trầm trọng"
+    },
+    {
+      "word": "怖い",
+      "romaji": "こわい",
+      "translation": "sợ, khiếp",
+      "q": "Từ 怖い (こわい) có nghĩa là gì?",
+      "a": [
+        "tồi tệ",
+        "sợ, khiếp",
+        "dự báo thời tiết",
+        "phát biểu"
+      ],
+      "c": 1,
+      "ex": "怖 (bố) - sợ hãi"
+    },
+    {
+      "word": "天気予報",
+      "romaji": "てんきよほう",
+      "translation": "dự báo thời tiết",
+      "q": "Từ 天気予報 (てんきよほう) có nghĩa là gì?",
+      "a": [
+        "sợ, khiếp",
+        "dự báo thời tiết",
+        "phát biểu, báo cáo",
+        "thực nghiệm, thí nghiệm"
+      ],
+      "c": 1,
+      "ex": "天気 (thiên khí) + 予報 (dự báo)"
+    },
+    {
+      "word": "発表",
+      "romaji": "はっぴょう",
+      "translation": "phát biểu, báo cáo",
+      "q": "Từ 発表 (はっぴょう) có nghĩa là gì?",
+      "a": [
+        "dự báo thời tiết",
+        "phát biểu, báo cáo",
+        "thực nghiệm, thí nghiệm",
+        "dân số"
+      ],
+      "c": 1,
+      "ex": "発 (phát) + 表 (biểu)"
+    },
+    {
+      "word": "実験",
+      "romaji": "じっけん",
+      "translation": "thực nghiệm, thí nghiệm",
+      "q": "Từ 実験 (じっけん) có nghĩa là gì?",
+      "a": [
+        "phát biểu",
+        "thực nghiệm, thí nghiệm",
+        "dân số",
+        "khoa học"
+      ],
+      "c": 1,
+      "ex": "実 (thực) + 験 (nghiệm)"
+    },
+    {
+      "word": "人口",
+      "romaji": "じんこう",
+      "translation": "dân số",
+      "q": "Từ 人口 (じんこう) có nghĩa là gì?",
+      "a": [
+        "thực nghiệm",
+        "dân số",
+        "khoa học",
+        "y học"
+      ],
+      "c": 1,
+      "ex": "人 (nhân) + 口 (khẩu)"
+    },
+    {
+      "word": "科学",
+      "romaji": "かがく",
+      "translation": "khoa học",
+      "q": "Từ 科学 (かがく) có nghĩa là gì?",
+      "a": [
+        "dân số",
+        "khoa học",
+        "y học",
+        "văn học"
+      ],
+      "c": 1,
+      "ex": "科 (khoa) + 学 (học)"
+    },
+    {
+      "word": "医学",
+      "romaji": "いがく",
+      "translation": "y học",
+      "q": "Từ 医学 (いがく) có nghĩa là gì?",
+      "a": [
+        "khoa học",
+        "y học",
+        "văn học",
+        "đối tác, đối phương"
+      ],
+      "c": 1,
+      "ex": "医 (y) + 学 (học)"
+    },
+    {
+      "word": "文学",
+      "romaji": "ぶんがく",
+      "translation": "văn học",
+      "q": "Từ 文学 (ぶんがく) có nghĩa là gì?",
+      "a": [
+        "y học",
+        "văn học",
+        "đối tác, đối phương",
+        "gặp gỡ làm quen"
+      ],
+      "c": 1,
+      "ex": "文 (văn) + 学 (học)"
+    },
+    {
+      "word": "相手",
+      "romaji": "あいて",
+      "translation": "đối tác, đối phương",
+      "q": "Từ 相手 (あいて) có nghĩa là gì?",
+      "a": [
+        "văn học",
+        "đối tác, đối phương",
+        "gặp gỡ làm quen",
+        "xe cảnh sát"
+      ],
+      "c": 1,
+      "ex": "相 (tướng) + 手 (thủ)"
+    },
+    {
+      "word": "知り合います",
+      "romaji": "しりあいます",
+      "translation": "gặp gỡ làm quen",
+      "q": "Từ 知り合います (しりあいます) có nghĩa là gì?",
+      "a": [
+        "đối tác",
+        "gặp gỡ làm quen",
+        "xe cảnh sát",
+        "xe cấp cứu"
+      ],
+      "c": 1,
+      "ex": "知 (tri) + 合 (hợp)"
+    },
+    {
+      "word": "パトカー",
+      "romaji": "ぱとかー",
+      "translation": "xe cảnh sát",
+      "q": "Từ パトカー có nghĩa là gì?",
+      "a": [
+        "gặp gỡ làm quen",
+        "xe cảnh sát",
+        "xe cấp cứu",
+        "tán thành, đồng ý"
+      ],
+      "c": 1,
+      "ex": "パトカー (từ mượn: patrol car)"
+    },
+    {
+      "word": "救急車",
+      "romaji": "きゅうきゅうしゃ",
+      "translation": "xe cấp cứu",
+      "q": "Từ 救急車 (きゅうきゅうしゃ) có nghĩa là gì?",
+      "a": [
+        "xe cảnh sát",
+        "xe cấp cứu",
+        "tán thành, đồng ý",
+        "sống lâu"
+      ],
+      "c": 1,
+      "ex": "救急 (cứu cấp) + 車 (xa)"
+    },
+    {
+      "word": "賛成",
+      "romaji": "さんせい",
+      "translation": "tán thành, đồng ý",
+      "q": "Từ 賛成 (さんせい) có nghĩa là gì?",
+      "a": [
+        "xe cấp cứu",
+        "tán thành, đồng ý",
+        "sống lâu",
+        "tập trung"
+      ],
+      "c": 1,
+      "ex": "賛 (tán) + 成 (thành)"
+    }
+  ]
+}

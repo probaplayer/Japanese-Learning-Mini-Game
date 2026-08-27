@@ -1,0 +1,402 @@
+{
+  "id": "n4-l46-kanji-hanviet",
+  "name": "N4 Bài 46 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 46, hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-27T04:00:24.069Z",
+  "updatedAt": "2026-08-27T04:00:24.069Z",
+  "questions": [
+    {
+      "word": "焼",
+      "romaji": "thiêu",
+      "translation": "nướng (焼きます)",
+      "q": "Chữ 焼 trong từ 焼きます mang âm Hán Việt nào?",
+      "a": [
+        "THIÊU",
+        "ĐỘ",
+        "QUY",
+        "LAI"
+      ],
+      "c": 0,
+      "ex": "焼きます: nướng"
+    },
+    {
+      "word": "渡",
+      "romaji": "độ",
+      "translation": "đưa qua (渡します)",
+      "q": "Chữ 渡 trong từ 渡します mang âm Hán Việt nào?",
+      "a": [
+        "THIÊU",
+        "QUY",
+        "LAI",
+        "ĐỘ"
+      ],
+      "c": 3,
+      "ex": "渡します: đưa cho"
+    },
+    {
+      "word": "帰",
+      "romaji": "quy",
+      "translation": "trở về (帰って来ます)",
+      "q": "Chữ 帰 trong từ 帰って来ます mang âm Hán Việt nào?",
+      "a": [
+        "ĐỘ",
+        "LAI",
+        "XUẤT",
+        "QUY"
+      ],
+      "c": 3,
+      "ex": "帰って来ます: về, trở lại"
+    },
+    {
+      "word": "来",
+      "romaji": "lai",
+      "translation": "đến (帰って来ます)",
+      "q": "Chữ 来 trong từ 帰って来ます mang âm Hán Việt nào?",
+      "a": [
+        "ĐỘ",
+        "XUẤT",
+        "LƯU",
+        "QUY"
+      ],
+      "c": 1,
+      "ex": "帰って来ます: về, trở lại"
+    },
+    {
+      "word": "出",
+      "romaji": "xuất",
+      "translation": "ra, xuất phát (出ます)",
+      "q": "Chữ 出 mang âm Hán Việt nào?",
+      "a": [
+        "XUẤT",
+        "LƯU",
+        "THỦ",
+        "TRẠCH"
+      ],
+      "c": 0,
+      "ex": "出ます: xuất phát"
+    },
+    {
+      "word": "留",
+      "romaji": "lưu",
+      "translation": "giữ lại (留守)",
+      "q": "Chữ 留 trong từ 留守 mang âm Hán Việt nào?",
+      "a": [
+        "LƯU",
+        "THỦ",
+        "TRẠCH",
+        "PHỐI"
+      ],
+      "c": 0,
+      "ex": "留守: đi vắng"
+    },
+    {
+      "word": "守",
+      "romaji": "thủ",
+      "translation": "giữ, trông (留守)",
+      "q": "Chữ 守 trong từ 留守 mang âm Hán Việt nào?",
+      "a": [
+        "THỦ",
+        "TRẠCH",
+        "PHỐI",
+        "TIỆN"
+      ],
+      "c": 0,
+      "ex": "留守: đi vắng"
+    },
+    {
+      "word": "宅",
+      "romaji": "trạch",
+      "translation": "nhà ở (宅配便)",
+      "q": "Chữ 宅 trong từ 宅配便 mang âm Hán Việt nào?",
+      "a": [
+        "TRẠCH",
+        "PHỐI",
+        "TIỆN",
+        "NGUYÊN"
+      ],
+      "c": 0,
+      "ex": "宅配便: dịch vụ chuyển đồ"
+    },
+    {
+      "word": "配",
+      "romaji": "phối",
+      "translation": "phân phối, giao (宅配便)",
+      "q": "Chữ 配 trong từ 宅配便 mang âm Hán Việt nào?",
+      "a": [
+        "PHỐI",
+        "TIỆN",
+        "NGUYÊN",
+        "NHÂN"
+      ],
+      "c": 0,
+      "ex": "宅配便: dịch vụ chuyển đồ"
+    },
+    {
+      "word": "便",
+      "romaji": "tiện",
+      "translation": "tiện lợi, chuyển phát (宅配便)",
+      "q": "Chữ 便 trong từ 宅配便 mang âm Hán Việt nào?",
+      "a": [
+        "TIỆN",
+        "NGUYÊN",
+        "NHÂN",
+        "CHÚ"
+      ],
+      "c": 0,
+      "ex": "宅配便: dịch vụ chuyển đồ"
+    },
+    {
+      "word": "原",
+      "romaji": "nguyên",
+      "translation": "gốc (原因)",
+      "q": "Chữ 原 trong từ 原因 mang âm Hán Việt nào?",
+      "a": [
+        "NGUYÊN",
+        "NHÂN",
+        "CHÚ",
+        "XẠ"
+      ],
+      "c": 0,
+      "ex": "原因: nguyên nhân"
+    },
+    {
+      "word": "因",
+      "romaji": "nhân",
+      "translation": "nguyên nhân (原因)",
+      "q": "Chữ 因 trong từ 原因 mang âm Hán Việt nào?",
+      "a": [
+        "NHÂN",
+        "CHÚ",
+        "XẠ",
+        "THỰC"
+      ],
+      "c": 0,
+      "ex": "原因: nguyên nhân"
+    },
+    {
+      "word": "注",
+      "romaji": "chú",
+      "translation": "rót vào (注射)",
+      "q": "Chữ 注 trong từ 注射 mang âm Hán Việt nào?",
+      "a": [
+        "CHÚ",
+        "XẠ",
+        "THỰC",
+        "DỤC"
+      ],
+      "c": 0,
+      "ex": "注射: tiêm"
+    },
+    {
+      "word": "射",
+      "romaji": "xạ",
+      "translation": "bắn, chiếu vào (注射)",
+      "q": "Chữ 射 trong từ 注射 mang âm Hán Việt nào?",
+      "a": [
+        "XẠ",
+        "THỰC",
+        "DỤC",
+        "SỞI"
+      ],
+      "c": 0,
+      "ex": "注射: tiêm"
+    },
+    {
+      "word": "食",
+      "romaji": "thực",
+      "translation": "ăn (食欲)",
+      "q": "Chữ 食 trong từ 食欲 mang âm Hán Việt nào?",
+      "a": [
+        "THỰC",
+        "DỤC",
+        "SỞI",
+        "SINH"
+      ],
+      "c": 0,
+      "ex": "食欲: cảm giác thèm ăn"
+    },
+    {
+      "word": "欲",
+      "romaji": "dục",
+      "translation": "ham muốn (食欲)",
+      "q": "Chữ 欲 trong từ 食欲 mang âm Hán Việt nào?",
+      "a": [
+        "DỤC",
+        "SỞI",
+        "SINH",
+        "ĐẠI"
+      ],
+      "c": 0,
+      "ex": "食欲: cảm giác thèm ăn"
+    },
+    {
+      "word": "所",
+      "romaji": "sở",
+      "translation": "nơi, chỗ (所)",
+      "q": "Chữ 所 mang âm Hán Việt nào?",
+      "a": [
+        "SỞI",
+        "SINH",
+        "ĐẠI",
+        "HIỆN"
+      ],
+      "c": 0,
+      "ex": "の所: quanh, xung quanh"
+    },
+    {
+      "word": "今",
+      "romaji": "kim",
+      "translation": "hiện nay (今)",
+      "q": "Chữ 今 trong từ たった今 mang âm Hán Việt nào?",
+      "a": [
+        "SINH",
+        "ĐẠI",
+        "HIỆN",
+        "KIM"
+      ],
+      "c": 3,
+      "ex": "たった今: vừa mới rồi"
+    },
+    {
+      "word": "具",
+      "romaji": "cụ",
+      "translation": "dụng cụ, đầy đủ (具合)",
+      "q": "Chữ 具 trong từ 具合 mang âm Hán Việt nào?",
+      "a": [
+        "ĐẠI",
+        "HIỆN",
+        "KIM",
+        "CỤ"
+      ],
+      "c": 3,
+      "ex": "具合: trạng thái, tình hình"
+    },
+    {
+      "word": "合",
+      "romaji": "hợp",
+      "translation": "hợp, kết hợp (具合)",
+      "q": "Chữ 合 trong từ 具合 mang âm Hán Việt nào?",
+      "a": [
+        "HIỆN",
+        "KIM",
+        "CỤ",
+        "HỢP"
+      ],
+      "c": 3,
+      "ex": "具合: trạng thái, tình hình"
+    },
+    {
+      "word": "向",
+      "romaji": "hướng",
+      "translation": "hướng về (向かいます)",
+      "q": "Chữ 向 trong từ 向かいます mang âm Hán Việt nào?",
+      "a": [
+        "KIM",
+        "CỤ",
+        "HỢP",
+        "HƯỚNG"
+      ],
+      "c": 3,
+      "ex": "向かいます: hướng đến"
+    },
+    {
+      "word": "待",
+      "romaji": "đãi",
+      "translation": "chờ đợi (待)",
+      "q": "Chữ 待 trong từ お待たせしました mang âm Hán Việt nào?",
+      "a": [
+        "CỤ",
+        "HỢP",
+        "HƯỚNG",
+        "ĐÃI"
+      ],
+      "c": 3,
+      "ex": "お待たせしました: xin lỗi vì để đợi"
+    },
+    {
+      "word": "知",
+      "romaji": "tri",
+      "translation": "biết (知識)",
+      "q": "Chữ 知 trong từ 知識 mang âm Hán Việt nào?",
+      "a": [
+        "HỢP",
+        "HƯỚNG",
+        "ĐÃI",
+        "TRI"
+      ],
+      "c": 3,
+      "ex": "知識: tri thức"
+    },
+    {
+      "word": "識",
+      "romaji": "thức",
+      "translation": "hiểu biết (知識)",
+      "q": "Chữ 識 trong từ 知識 mang âm Hán Việt nào?",
+      "a": [
+        "HƯỚNG",
+        "ĐÃI",
+        "TRI",
+        "THỨC"
+      ],
+      "c": 3,
+      "ex": "知識: tri thức"
+    },
+    {
+      "word": "宝",
+      "romaji": "bảo",
+      "translation": "quý báu (宝庫)",
+      "q": "Chữ 宝 trong từ 宝庫 mang âm Hán Việt nào?",
+      "a": [
+        "ĐÃI",
+        "TRI",
+        "THỨC",
+        "BẢO"
+      ],
+      "c": 3,
+      "ex": "宝庫: kho báu"
+    },
+    {
+      "word": "庫",
+      "romaji": "khố",
+      "translation": "kho (宝庫)",
+      "q": "Chữ 庫 trong từ 宝庫 mang âm Hán Việt nào?",
+      "a": [
+        "TRI",
+        "THỨC",
+        "BẢO",
+        "KHỐ"
+      ],
+      "c": 3,
+      "ex": "宝庫: kho báu"
+    },
+    {
+      "word": "入",
+      "romaji": "nhập",
+      "translation": "vào (手に入ります)",
+      "q": "Chữ 入 trong từ 手に入ります mang âm Hán Việt nào?",
+      "a": [
+        "THỨC",
+        "BẢO",
+        "KHỐ",
+        "NHẬP"
+      ],
+      "c": 3,
+      "ex": "手に入ります: lấy được"
+    },
+    {
+      "word": "例",
+      "romaji": "lệ",
+      "translation": "ví dụ (例えば)",
+      "q": "Chữ 例 trong từ 例えば mang âm Hán Việt nào?",
+      "a": [
+        "BẢO",
+        "KHỐ",
+        "NHẬP",
+        "LỆ"
+      ],
+      "c": 3,
+      "ex": "例えば: ví dụ"
+    }
+  ]
+}

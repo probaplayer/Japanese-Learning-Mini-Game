@@ -1,0 +1,346 @@
+{
+  "id": "n4-l46-vocab",
+  "name": "N4 Bài 46 - Từ vựng (nghĩa)",
+  "description": "Từ vựng Minna no Nihongo Bài 46 (N4). Câu hỏi hỏi nghĩa tiếng Việt của từ.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-27T03:57:36.695Z",
+  "updatedAt": "2026-08-27T03:57:36.695Z",
+  "questions": [
+    {
+      "word": "焼きます",
+      "romaji": "やきます",
+      "translation": "nướng, rán",
+      "q": "Từ 焼きます (やきます) có nghĩa là gì?",
+      "a": [
+        "nướng, rán",
+        "đưa cho, giao cho",
+        "về, trở lại",
+        "xuất phát"
+      ],
+      "c": 0,
+      "ex": "焼 (thiêu) - nướng"
+    },
+    {
+      "word": "渡します",
+      "romaji": "わたします",
+      "translation": "đưa cho, giao cho",
+      "q": "Từ 渡します (わたします) có nghĩa là gì?",
+      "a": [
+        "nướng",
+        "đưa cho, giao cho",
+        "về, trở lại",
+        "xuất phát"
+      ],
+      "c": 1,
+      "ex": "渡 (độ) - đưa qua"
+    },
+    {
+      "word": "帰って来ます",
+      "romaji": "かえってきます",
+      "translation": "về, trở lại",
+      "q": "Từ 帰って来ます (かえってきます) có nghĩa là gì?",
+      "a": [
+        "đưa cho",
+        "về, trở lại",
+        "xuất phát",
+        "đi vắng"
+      ],
+      "c": 1,
+      "ex": "帰 (quy) + 来 (lai)"
+    },
+    {
+      "word": "出ます",
+      "romaji": "でます",
+      "translation": "xuất phát, chạy (xe buýt)",
+      "q": "Từ [バスが〜]出ます (でます) có nghĩa là gì?",
+      "a": [
+        "về",
+        "xuất phát, chạy (xe buýt)",
+        "đi vắng",
+        "dịch vụ chuyển đồ"
+      ],
+      "c": 1,
+      "ex": "出 (xuất) - ra, xuất phát"
+    },
+    {
+      "word": "留守",
+      "romaji": "るす",
+      "translation": "đi vắng",
+      "q": "Từ 留守 (るす) có nghĩa là gì?",
+      "a": [
+        "xuất phát",
+        "đi vắng",
+        "dịch vụ chuyển đồ đến nhà",
+        "nguyên nhân"
+      ],
+      "c": 1,
+      "ex": "留 (lưu) + 守 (thủ)"
+    },
+    {
+      "word": "宅配便",
+      "romaji": "たくはいびん",
+      "translation": "dịch vụ chuyển đồ đến nhà",
+      "q": "Từ 宅配便 (たくはいびん) có nghĩa là gì?",
+      "a": [
+        "đi vắng",
+        "dịch vụ chuyển đồ đến nhà",
+        "nguyên nhân",
+        "tiêm"
+      ],
+      "c": 1,
+      "ex": "宅配便 (trạch phối tiện)"
+    },
+    {
+      "word": "原因",
+      "romaji": "げんいん",
+      "translation": "nguyên nhân",
+      "q": "Từ 原因 (げんいん) có nghĩa là gì?",
+      "a": [
+        "dịch vụ chuyển đồ",
+        "nguyên nhân",
+        "tiêm",
+        "cảm giác thèm ăn"
+      ],
+      "c": 1,
+      "ex": "原因 (nguyên nhân)"
+    },
+    {
+      "word": "注射",
+      "romaji": "ちゅうしゃ",
+      "translation": "tiêm",
+      "q": "Từ 注射 (ちゅうしゃ) có nghĩa là gì?",
+      "a": [
+        "nguyên nhân",
+        "tiêm",
+        "cảm giác thèm ăn",
+        "quanh, xung quanh"
+      ],
+      "c": 1,
+      "ex": "注 (chú) + 射 (xạ)"
+    },
+    {
+      "word": "食欲",
+      "romaji": "しょくよく",
+      "translation": "cảm giác thèm ăn, ngon miệng",
+      "q": "Từ 食欲 (しょくよく) có nghĩa là gì?",
+      "a": [
+        "tiêm",
+        "cảm giác thèm ăn, ngon miệng",
+        "quanh, xung quanh",
+        "vừa mới rồi"
+      ],
+      "c": 1,
+      "ex": "食 (thực) + 欲 (dục)"
+    },
+    {
+      "word": "の所",
+      "romaji": "のところ",
+      "translation": "quanh, xung quanh",
+      "q": "Từ の所 (のところ) có nghĩa là gì?",
+      "a": [
+        "cảm giác thèm ăn",
+        "quanh, xung quanh",
+        "vừa mới rồi",
+        "trạng thái, tình hình"
+      ],
+      "c": 1,
+      "ex": "所 (sở)"
+    },
+    {
+      "word": "たった今",
+      "romaji": "たったいま",
+      "translation": "vừa mới rồi",
+      "q": "Từ たった今 (たったいま) có nghĩa là gì?",
+      "a": [
+        "quanh",
+        "vừa mới rồi",
+        "trạng thái, tình hình",
+        "hướng đến"
+      ],
+      "c": 1,
+      "ex": "今 (kim) - hiện nay"
+    },
+    {
+      "word": "具合",
+      "romaji": "ぐあい",
+      "translation": "trạng thái, tình hình",
+      "q": "Từ 具合 (ぐあい) có nghĩa là gì?",
+      "a": [
+        "vừa mới rồi",
+        "trạng thái, tình hình",
+        "hướng đến",
+        "xin lỗi vì để đợi"
+      ],
+      "c": 1,
+      "ex": "具合 (cụ hợp)"
+    },
+    {
+      "word": "向かいます",
+      "romaji": "むかいます",
+      "translation": "hướng đến, trên đường đến",
+      "q": "Từ 向かいます (むかいます) có nghĩa là gì?",
+      "a": [
+        "trạng thái",
+        "hướng đến, trên đường đến",
+        "xin lỗi vì để đợi",
+        "tri thức"
+      ],
+      "c": 1,
+      "ex": "向 (hướng) - hướng về"
+    },
+    {
+      "word": "お待たせしました",
+      "romaji": "おまたせしました",
+      "translation": "xin lỗi vì để đợi",
+      "q": "Từ お待たせしました (おまたせしました) có nghĩa là gì?",
+      "a": [
+        "hướng đến",
+        "xin lỗi vì để đợi",
+        "tri thức",
+        "kho báu"
+      ],
+      "c": 1,
+      "ex": "待 (đãi) - chờ đợi"
+    },
+    {
+      "word": "知識",
+      "romaji": "ちしき",
+      "translation": "tri thức, kiến thức",
+      "q": "Từ 知識 (ちしき) có nghĩa là gì?",
+      "a": [
+        "xin lỗi vì để đợi",
+        "tri thức, kiến thức",
+        "kho báu",
+        "lấy được, thu thập được"
+      ],
+      "c": 1,
+      "ex": "知識 (tri thức)"
+    },
+    {
+      "word": "宝庫",
+      "romaji": "ほうこ",
+      "translation": "kho báu",
+      "q": "Từ 宝庫 (ほうこ) có nghĩa là gì?",
+      "a": [
+        "tri thức",
+        "kho báu",
+        "lấy được, thu thập được",
+        "ví dụ"
+      ],
+      "c": 1,
+      "ex": "宝庫 (bảo khố)"
+    },
+    {
+      "word": "手に入ります",
+      "romaji": "てにはいります",
+      "translation": "lấy được, thu thập được",
+      "q": "Từ 手に入ります (てにはいります) có nghĩa là gì?",
+      "a": [
+        "kho báu",
+        "lấy được, thu thập được",
+        "ví dụ",
+        "một bộ phận"
+      ],
+      "c": 1,
+      "ex": "手 (thủ) + 入ります (nhập)"
+    },
+    {
+      "word": "例えば",
+      "romaji": "たとえば",
+      "translation": "ví dụ, chẳng hạn",
+      "q": "Từ 例えば (たとえば) có nghĩa là gì?",
+      "a": [
+        "lấy được",
+        "ví dụ, chẳng hạn",
+        "một bộ phận",
+        "nhập"
+      ],
+      "c": 1,
+      "ex": "例 (lệ)"
+    },
+    {
+      "word": "一部分",
+      "romaji": "いちぶぶん",
+      "translation": "một bộ phận",
+      "q": "Từ 一部分 (いちぶぶん) có nghĩa là gì?",
+      "a": [
+        "ví dụ",
+        "một bộ phận",
+        "nhập",
+        "giây"
+      ],
+      "c": 1,
+      "ex": "一 (nhất) + 部分 (bộ phận)"
+    },
+    {
+      "word": "入力します",
+      "romaji": "にゅうりょくします",
+      "translation": "nhập, nhập liệu",
+      "q": "Từ 入力します (にゅうりょくします) có nghĩa là gì?",
+      "a": [
+        "một bộ phận",
+        "nhập, nhập liệu",
+        "giây",
+        "được xuất bản"
+      ],
+      "c": 1,
+      "ex": "入力 (nhập lực)"
+    },
+    {
+      "word": "秒",
+      "romaji": "びょう",
+      "translation": "giây",
+      "q": "Từ 秒 (びょう) có nghĩa là gì?",
+      "a": [
+        "nhập liệu",
+        "giây",
+        "được xuất bản",
+        "tờ rơi"
+      ],
+      "c": 1,
+      "ex": "秒 (miếu)"
+    },
+    {
+      "word": "出ます",
+      "romaji": "でます",
+      "translation": "được xuất bản (sách)",
+      "q": "Từ [本が〜]出ます (でます) có nghĩa là gì?",
+      "a": [
+        "giây",
+        "được xuất bản (sách)",
+        "tờ rơi",
+        "bếp ga"
+      ],
+      "c": 1,
+      "ex": "本 (bản) - 出ます mang nghĩa xuất bản"
+    },
+    {
+      "word": "パンフレット",
+      "romaji": "ぱんふれっと",
+      "translation": "tờ rơi, tờ quảng cáo",
+      "q": "Từ パンフレット có nghĩa là gì?",
+      "a": [
+        "được xuất bản",
+        "tờ rơi, tờ quảng cáo",
+        "bếp ga",
+        "khán giả"
+      ],
+      "c": 1,
+      "ex": "パンフレット (từ mượn tiếng Anh: pamphlet)"
+    },
+    {
+      "word": "ガスレンジ",
+      "romaji": "がすれんじ",
+      "translation": "bếp ga",
+      "q": "Từ ガスレンジ có nghĩa là gì?",
+      "a": [
+        "tờ rơi",
+        "bếp ga",
+        "khán giả",
+        "đầu đĩa stereo"
+      ],
+      "c": 1,
+      "ex": "ガスレンジ (từ mượn: gas range)"
+    }
+  ]
+}

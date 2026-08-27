@@ -1,0 +1,116 @@
+{
+  "id": "n4-l46-grammar",
+  "name": "N4 Bài 46 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 46 Minna no Nihongo: ~ところです (Vるところ sắp làm, Vているところ đang làm, Vたところ vừa làm xong), ~たばかり (vừa mới, cảm giác chủ quan), ~はず (chắc chắn là).",
+  "category": "grammar",
+  "createdAt": "2026-08-27T04:01:08.457Z",
+  "updatedAt": "2026-08-27T04:01:21.651Z",
+  "questions": [
+    {
+      "sentence": "今から昼ごはんを食べるところです",
+      "chunks": [
+        "今から",
+        "昼ごはん",
+        "を",
+        "食べるところです"
+      ],
+      "translation": "Bây giờ tôi sắp ăn cơm trưa",
+      "ex": "Vる+ところです: thời điểm ngay trước khi hành động xảy ra, thường đi với これから"
+    },
+    {
+      "sentence": "今コピーをしているところです",
+      "chunks": [
+        "今",
+        "コピー",
+        "を",
+        "しているところです"
+      ],
+      "translation": "Bây giờ tôi đang photo",
+      "ex": "Vている+ところです: thời điểm hành động đang diễn ra, thường đi với 今"
+    },
+    {
+      "sentence": "たった今仕事が終わったところです",
+      "chunks": [
+        "たった今",
+        "仕事",
+        "が",
+        "終わったところです"
+      ],
+      "translation": "Công việc vừa mới xong",
+      "ex": "Vた+ところです: thời điểm ngay sau khi hành động vừa kết thúc, thường đi với たった今"
+    },
+    {
+      "sentence": "去年結婚したばかりです",
+      "chunks": [
+        "去年",
+        "結婚したばかりです"
+      ],
+      "translation": "Vừa mới kết hôn năm ngoái",
+      "ex": "Vた+ばかり: cảm giác vừa mới xảy ra, không liên quan tới thời gian thực tế"
+    },
+    {
+      "sentence": "結婚したばかりなのに離婚しました",
+      "chunks": [
+        "結婚したばかりなのに",
+        "離婚しました"
+      ],
+      "translation": "Vừa mới kết hôn thế mà đã ly hôn",
+      "ex": "Vたばかり+なのに: vừa mới làm gì thế mà đã~, bày tỏ sự nuối tiếc"
+    },
+    {
+      "sentence": "美術を勉強していますから絵が上手なはずです",
+      "chunks": [
+        "美術",
+        "を",
+        "勉強していますから",
+        "絵",
+        "が",
+        "上手なはずです"
+      ],
+      "translation": "Vì học mỹ thuật nên chắc chắn là giỏi vẽ",
+      "ex": "普通形+はずです: chắc chắn là, dựa trên căn cứ nào đó"
+    },
+    {
+      "sentence": "書類は速達で出しましたからあした着くはずです",
+      "chunks": [
+        "書類",
+        "は",
+        "速達で",
+        "出しましたから",
+        "あした",
+        "着くはずです"
+      ],
+      "translation": "Tài liệu gửi chuyển phát nhanh nên chắc chắn mai sẽ tới",
+      "ex": "普通形+はずです: suy luận từ điều kiện đã nêu"
+    },
+    {
+      "sentence": "これから出かけるところです",
+      "chunks": [
+        "これから",
+        "出かけるところです"
+      ],
+      "translation": "Bây giờ tôi sắp ra ngoài",
+      "ex": "Vる+ところです: sắp làm gì, nhấn mạnh thời điểm trước hành động"
+    },
+    {
+      "sentence": "今シャワーを浴びているところです",
+      "chunks": [
+        "今",
+        "シャワー",
+        "を",
+        "浴びているところです"
+      ],
+      "translation": "Bây giờ tôi đang tắm",
+      "ex": "Vている+ところです: đang làm gì"
+    },
+    {
+      "sentence": "さっき焼いたばかりですよ",
+      "chunks": [
+        "さっき",
+        "焼いたばかりですよ"
+      ],
+      "translation": "Vừa mới nướng xong đấy",
+      "ex": "Vた+ばかりですよ: vừa mới nướng xong đấy"
+    }
+  ]
+}

@@ -1,0 +1,346 @@
+{
+  "id": "n4-l49-vocab",
+  "name": "N4 Bài 49 - Từ vựng (nghĩa)",
+  "description": "Từ vựng Minna no Nihongo Bài 49 (N4). Câu hỏi hỏi nghĩa tiếng Việt của từ.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-27T04:23:23.977Z",
+  "updatedAt": "2026-08-27T04:24:00.087Z",
+  "questions": [
+    {
+      "word": "勤めます",
+      "romaji": "つとめます",
+      "translation": "làm việc (công ty~)",
+      "q": "Từ [会社に～]勤めます (つとめます) có nghĩa là gì?",
+      "a": [
+        "làm việc (công ty~)",
+        "nghỉ ngơi",
+        "ngồi xuống",
+        "trải qua (thời gian)"
+      ],
+      "c": 0,
+      "ex": "勤 (cần) - làm việc"
+    },
+    {
+      "word": "休みます",
+      "romaji": "やすみます",
+      "translation": "nghỉ ngơi",
+      "q": "Từ 休みます (やすみます) có nghĩa là gì?",
+      "a": [
+        "làm việc",
+        "nghỉ ngơi",
+        "ngồi xuống",
+        "trải qua (thời gian)"
+      ],
+      "c": 1,
+      "ex": "休 (hưu) - nghỉ"
+    },
+    {
+      "word": "掛けます",
+      "romaji": "かけます",
+      "translation": "ngồi xuống (ghế)",
+      "q": "Từ 掛けます (かけます) trong câu về ghế có nghĩa là gì?",
+      "a": [
+        "nghỉ ngơi",
+        "ngồi xuống (ghế)",
+        "trải qua (thời gian)",
+        "ghé vào"
+      ],
+      "c": 1,
+      "ex": "掛 (quải) - ngồi, treo"
+    },
+    {
+      "word": "過ごします",
+      "romaji": "すごします",
+      "translation": "trải qua (thời gian)",
+      "q": "Từ 過ごします (すごします) có nghĩa là gì?",
+      "a": [
+        "ngồi xuống",
+        "trải qua (thời gian)",
+        "ghé vào",
+        "ăn, uống (tôn kính ngữ)"
+      ],
+      "c": 1,
+      "ex": "過 (quá) - qua"
+    },
+    {
+      "word": "寄ります",
+      "romaji": "よります",
+      "translation": "ghé vào (ngân hàng)",
+      "q": "Từ 寄ります (よります) trong câu về ngân hàng có nghĩa là gì?",
+      "a": [
+        "trải qua",
+        "ghé vào (ngân hàng)",
+        "ăn, uống (tôn kính ngữ)",
+        "xem, nhìn (tôn kính ngữ)"
+      ],
+      "c": 1,
+      "ex": "寄 (ký) - ghé qua"
+    },
+    {
+      "word": "召し上がります",
+      "romaji": "めしあがります",
+      "translation": "ăn, uống (tôn kính ngữ của たべます/のみます)",
+      "q": "Từ 召し上がります (めしあがります) có nghĩa là gì?",
+      "a": [
+        "ghé vào",
+        "ăn, uống (tôn kính ngữ của たべます/のみます)",
+        "xem, nhìn (tôn kính ngữ)",
+        "gạt tàn thuốc"
+      ],
+      "c": 1,
+      "ex": "召 (triệu) + 上 (thượng)"
+    },
+    {
+      "word": "ご覧になります",
+      "romaji": "ごらんになります",
+      "translation": "xem, nhìn (tôn kính ngữ của みます)",
+      "q": "Từ ご覧になります (ごらんになります) có nghĩa là gì?",
+      "a": [
+        "ăn, uống",
+        "xem, nhìn (tôn kính ngữ của みます)",
+        "gạt tàn thuốc",
+        "nhà trọ, nhà nghỉ"
+      ],
+      "c": 1,
+      "ex": "覧 (lãm) - xem"
+    },
+    {
+      "word": "灰皿",
+      "romaji": "はいざら",
+      "translation": "gạt tàn thuốc",
+      "q": "Từ 灰皿 (はいざら) có nghĩa là gì?",
+      "a": [
+        "xem, nhìn",
+        "gạt tàn thuốc",
+        "nhà trọ, nhà nghỉ",
+        "hội trường"
+      ],
+      "c": 1,
+      "ex": "灰 (hôi) + 皿 (mãnh)"
+    },
+    {
+      "word": "旅館",
+      "romaji": "りょかん",
+      "translation": "nhà trọ, nhà nghỉ",
+      "q": "Từ 旅館 (りょかん) có nghĩa là gì?",
+      "a": [
+        "gạt tàn thuốc",
+        "nhà trọ, nhà nghỉ",
+        "hội trường",
+        "thương mại, mậu dịch"
+      ],
+      "c": 1,
+      "ex": "旅 (lữ) + 館 (quán)"
+    },
+    {
+      "word": "会場",
+      "romaji": "かいじょう",
+      "translation": "hội trường",
+      "q": "Từ 会場 (かいじょう) có nghĩa là gì?",
+      "a": [
+        "nhà trọ",
+        "hội trường",
+        "thương mại, mậu dịch",
+        "ngài (tôn kính)"
+      ],
+      "c": 1,
+      "ex": "会 (hội) + 場 (trường)"
+    },
+    {
+      "word": "貿易",
+      "romaji": "ぼうえき",
+      "translation": "thương mại, mậu dịch",
+      "q": "Từ 貿易 (ぼうえき) có nghĩa là gì?",
+      "a": [
+        "hội trường",
+        "thương mại, mậu dịch",
+        "ngài (tôn kính)",
+        "trên đường về"
+      ],
+      "c": 1,
+      "ex": "貿 (mậu) + 易 (dịch)"
+    },
+    {
+      "word": "～様",
+      "romaji": "さま",
+      "translation": "ngài (dạng tôn kính của さん)",
+      "q": "Từ ～様 (～さま) có nghĩa là gì?",
+      "a": [
+        "thương mại",
+        "ngài (dạng tôn kính của さん)",
+        "trên đường về",
+        "xin đừng ngại"
+      ],
+      "c": 1,
+      "ex": "様 (dạng)"
+    },
+    {
+      "word": "帰りに",
+      "romaji": "かえりに",
+      "translation": "trên đường về, ở lượt về",
+      "q": "Từ 帰りに (かえりに) có nghĩa là gì?",
+      "a": [
+        "ngài",
+        "trên đường về, ở lượt về",
+        "xin đừng ngại",
+        "phát sốt"
+      ],
+      "c": 1,
+      "ex": "帰 (quy) - trở về"
+    },
+    {
+      "word": "遠慮なく",
+      "romaji": "えんりょなく",
+      "translation": "xin đừng ngại",
+      "q": "Từ 遠慮なく (えんりょなく) có nghĩa là gì?",
+      "a": [
+        "trên đường về",
+        "xin đừng ngại",
+        "phát sốt",
+        "xin chào (khiêm tốn)"
+      ],
+      "c": 1,
+      "ex": "遠 (viễn) + 慮 (lự)"
+    },
+    {
+      "word": "出します",
+      "romaji": "だします",
+      "translation": "phát sốt",
+      "q": "Từ 出します (だします) trong câu về nhiệt độ cơ thể có nghĩa là gì?",
+      "a": [
+        "xin đừng ngại",
+        "phát sốt",
+        "xin chào (khiêm tốn)",
+        "giảng viên"
+      ],
+      "c": 1,
+      "ex": "出 (xuất) - phát ra"
+    },
+    {
+      "word": "失礼いたします",
+      "romaji": "しつれいいたします",
+      "translation": "xin chào (dạng khiêm tốn)",
+      "q": "Từ 失礼いたします (しつれいいたします) có nghĩa là gì?",
+      "a": [
+        "phát sốt",
+        "xin chào (dạng khiêm tốn của しつれいします)",
+        "giảng viên",
+        "tác phẩm"
+      ],
+      "c": 1,
+      "ex": "失礼 (thất lễ)"
+    },
+    {
+      "word": "講師",
+      "romaji": "こうし",
+      "translation": "giảng viên, báo cáo viên",
+      "q": "Từ 講師 (こうし) có nghĩa là gì?",
+      "a": [
+        "xin chào",
+        "giảng viên, báo cáo viên",
+        "tác phẩm",
+        "được giải thưởng"
+      ],
+      "c": 1,
+      "ex": "講 (giảng) + 師 (sư)"
+    },
+    {
+      "word": "作品",
+      "romaji": "さくひん",
+      "translation": "tác phẩm",
+      "q": "Từ 作品 (さくひん) có nghĩa là gì?",
+      "a": [
+        "giảng viên",
+        "tác phẩm",
+        "được giải thưởng",
+        "mang tính toàn cầu"
+      ],
+      "c": 1,
+      "ex": "作 (tác) + 品 (phẩm)"
+    },
+    {
+      "word": "受賞します",
+      "romaji": "じゅしょうします",
+      "translation": "được giải thưởng",
+      "q": "Từ 受賞します (じゅしょうします) có nghĩa là gì?",
+      "a": [
+        "tác phẩm",
+        "được giải thưởng",
+        "mang tính toàn cầu",
+        "tác giả"
+      ],
+      "c": 1,
+      "ex": "受 (thọ) + 賞 (thưởng)"
+    },
+    {
+      "word": "世界的に",
+      "romaji": "せかいてきに",
+      "translation": "mang tính toàn cầu",
+      "q": "Từ 世界的に (せかいてきに) có nghĩa là gì?",
+      "a": [
+        "được giải thưởng",
+        "mang tính toàn cầu",
+        "tác giả",
+        "trưởng nam"
+      ],
+      "c": 1,
+      "ex": "世界 (thế giới) + 的 (đích)"
+    },
+    {
+      "word": "作家",
+      "romaji": "さっか",
+      "translation": "tác giả",
+      "q": "Từ 作家 (さっか) có nghĩa là gì?",
+      "a": [
+        "mang tính toàn cầu",
+        "tác giả",
+        "trưởng nam",
+        "khuyết tật"
+      ],
+      "c": 1,
+      "ex": "作 (tác) + 家 (gia)"
+    },
+    {
+      "word": "長男",
+      "romaji": "ちょうなん",
+      "translation": "trưởng nam",
+      "q": "Từ 長男 (ちょうなん) có nghĩa là gì?",
+      "a": [
+        "tác giả",
+        "trưởng nam",
+        "khuyết tật",
+        "sáng tác nhạc"
+      ],
+      "c": 1,
+      "ex": "長 (trưởng) + 男 (nam)"
+    },
+    {
+      "word": "障害",
+      "romaji": "しょうがい",
+      "translation": "khuyết tật, khiếm khuyết",
+      "q": "Từ 障害 (しょうがい) có nghĩa là gì?",
+      "a": [
+        "trưởng nam",
+        "khuyết tật, khiếm khuyết",
+        "sáng tác nhạc",
+        "hoạt động"
+      ],
+      "c": 1,
+      "ex": "障 (chướng) + 害 (hại)"
+    },
+    {
+      "word": "作曲",
+      "romaji": "さっきょく",
+      "translation": "sáng tác nhạc",
+      "q": "Từ 作曲 (さっきょく) có nghĩa là gì?",
+      "a": [
+        "khuyết tật",
+        "sáng tác nhạc",
+        "hoạt động",
+        "có (tôn kính ngữ)"
+      ],
+      "c": 1,
+      "ex": "作 (tác) + 曲 (khúc)"
+    }
+  ]
+}

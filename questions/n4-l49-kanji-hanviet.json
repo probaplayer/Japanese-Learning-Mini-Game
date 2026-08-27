@@ -1,0 +1,374 @@
+{
+  "id": "n4-l49-kanji-hanviet",
+  "name": "N4 Bài 49 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 49, hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-27T04:26:01.975Z",
+  "updatedAt": "2026-08-27T04:26:24.801Z",
+  "questions": [
+    {
+      "word": "勤",
+      "romaji": "cần",
+      "translation": "làm việc chăm chỉ (勤めます)",
+      "q": "Chữ 勤 trong từ 勤めます mang âm Hán Việt nào?",
+      "a": [
+        "CẦN",
+        "HƯU",
+        "QUẢI",
+        "QUÁ"
+      ],
+      "c": 0,
+      "ex": "勤めます: làm việc"
+    },
+    {
+      "word": "休",
+      "romaji": "hưu",
+      "translation": "nghỉ (休みます)",
+      "q": "Chữ 休 trong từ 休みます mang âm Hán Việt nào?",
+      "a": [
+        "CẦN",
+        "QUẢI",
+        "QUÁ",
+        "HƯU"
+      ],
+      "c": 3,
+      "ex": "休みます: nghỉ ngơi"
+    },
+    {
+      "word": "掛",
+      "romaji": "quải",
+      "translation": "treo, ngồi (掛けます)",
+      "q": "Chữ 掛 trong từ 掛けます mang âm Hán Việt nào?",
+      "a": [
+        "HƯU",
+        "QUÁ",
+        "KÝ",
+        "QUẢI"
+      ],
+      "c": 3,
+      "ex": "掛けます: ngồi xuống"
+    },
+    {
+      "word": "過",
+      "romaji": "quá",
+      "translation": "qua (過ごします)",
+      "q": "Chữ 過 trong từ 過ごします mang âm Hán Việt nào?",
+      "a": [
+        "QUẢI",
+        "KÝ",
+        "TRIỆU",
+        "QUÁ"
+      ],
+      "c": 3,
+      "ex": "過ごします: trải qua"
+    },
+    {
+      "word": "寄",
+      "romaji": "ký",
+      "translation": "ghé qua (寄ります)",
+      "q": "Chữ 寄 trong từ 寄ります mang âm Hán Việt nào?",
+      "a": [
+        "KÝ",
+        "TRIỆU",
+        "THƯỢNG",
+        "QUÁ"
+      ],
+      "c": 0,
+      "ex": "寄ります: ghé vào"
+    },
+    {
+      "word": "召",
+      "romaji": "triệu",
+      "translation": "mời, gọi (召し上がります)",
+      "q": "Chữ 召 trong từ 召し上がります mang âm Hán Việt nào?",
+      "a": [
+        "TRIỆU",
+        "THƯỢNG",
+        "LÃM",
+        "KÝ"
+      ],
+      "c": 0,
+      "ex": "召し上がります: ăn, uống (tôn kính)"
+    },
+    {
+      "word": "上",
+      "romaji": "thượng",
+      "translation": "lên (召し上がります)",
+      "q": "Chữ 上 trong từ 召し上がります mang âm Hán Việt nào?",
+      "a": [
+        "THƯỢNG",
+        "LÃM",
+        "HÔI",
+        "MÃNH"
+      ],
+      "c": 0,
+      "ex": "召し上がります: ăn, uống (tôn kính)"
+    },
+    {
+      "word": "覧",
+      "romaji": "lãm",
+      "translation": "xem (ご覧になります)",
+      "q": "Chữ 覧 trong từ ご覧になります mang âm Hán Việt nào?",
+      "a": [
+        "LÃM",
+        "HÔI",
+        "MÃNH",
+        "LỮA"
+      ],
+      "c": 0,
+      "ex": "ご覧になります: xem, nhìn (tôn kính)"
+    },
+    {
+      "word": "灰",
+      "romaji": "hôi",
+      "translation": "tro (灰皿)",
+      "q": "Chữ 灰 trong từ 灰皿 mang âm Hán Việt nào?",
+      "a": [
+        "HÔI",
+        "MÃNH",
+        "LỮA",
+        "QUÁN"
+      ],
+      "c": 0,
+      "ex": "灰皿: gạt tàn thuốc"
+    },
+    {
+      "word": "皿",
+      "romaji": "mãnh",
+      "translation": "cái đĩa (灰皿)",
+      "q": "Chữ 皿 trong từ 灰皿 mang âm Hán Việt nào?",
+      "a": [
+        "MÃNH",
+        "LỮA",
+        "QUÁN",
+        "HỘI"
+      ],
+      "c": 0,
+      "ex": "灰皿: gạt tàn thuốc"
+    },
+    {
+      "word": "旅",
+      "romaji": "lữa",
+      "translation": "đi xa, lữ hành (旅館)",
+      "q": "Chữ 旅 trong từ 旅館 mang âm Hán Việt nào?",
+      "a": [
+        "LỮA",
+        "QUÁN",
+        "HỘI",
+        "TRƯỜNG"
+      ],
+      "c": 0,
+      "ex": "旅館: nhà trọ"
+    },
+    {
+      "word": "館",
+      "romaji": "quán",
+      "translation": "tòa nhà (旅館)",
+      "q": "Chữ 館 trong từ 旅館 mang âm Hán Việt nào?",
+      "a": [
+        "QUÁN",
+        "HỘI",
+        "TRƯỜNG",
+        "MẬU"
+      ],
+      "c": 0,
+      "ex": "旅館 / 入館: nhà trọ / vào cửa"
+    },
+    {
+      "word": "会",
+      "romaji": "hội",
+      "translation": "cuộc họp, hội (会場)",
+      "q": "Chữ 会 trong từ 会場 mang âm Hán Việt nào?",
+      "a": [
+        "HỘI",
+        "TRƯỜNG",
+        "MẬU",
+        "DỊCH"
+      ],
+      "c": 0,
+      "ex": "会場: hội trường"
+    },
+    {
+      "word": "場",
+      "romaji": "trường",
+      "translation": "sân, nơi (会場)",
+      "q": "Chữ 場 trong từ 会場 mang âm Hán Việt nào?",
+      "a": [
+        "TRƯỜNG",
+        "MẬU",
+        "DỊCH",
+        "DẠNG"
+      ],
+      "c": 0,
+      "ex": "会場: hội trường"
+    },
+    {
+      "word": "貿",
+      "romaji": "mậu",
+      "translation": "buôn bán (貿易)",
+      "q": "Chữ 貿 trong từ 貿易 mang âm Hán Việt nào?",
+      "a": [
+        "MẬU",
+        "DỊCH",
+        "DẠNG",
+        "QUY"
+      ],
+      "c": 0,
+      "ex": "貿易: thương mại"
+    },
+    {
+      "word": "易",
+      "romaji": "dịch",
+      "translation": "trao đổi (貿易)",
+      "q": "Chữ 易 trong từ 貿易 mang âm Hán Việt nào?",
+      "a": [
+        "DỊCH",
+        "DẠNG",
+        "QUY",
+        "VIỄN"
+      ],
+      "c": 0,
+      "ex": "貿易: thương mại"
+    },
+    {
+      "word": "様",
+      "romaji": "dạng",
+      "translation": "dạng, ngài (様)",
+      "q": "Chữ 様 mang âm Hán Việt nào?",
+      "a": [
+        "DẠNG",
+        "QUY",
+        "VIỄN",
+        "LỰ"
+      ],
+      "c": 0,
+      "ex": "様: ngài (tôn kính)"
+    },
+    {
+      "word": "帰",
+      "romaji": "quy",
+      "translation": "trở về (帰りに)",
+      "q": "Chữ 帰 trong từ 帰りに mang âm Hán Việt nào?",
+      "a": [
+        "QUY",
+        "VIỄN",
+        "LỰ",
+        "THẤT"
+      ],
+      "c": 0,
+      "ex": "帰りに: trên đường về"
+    },
+    {
+      "word": "遠",
+      "romaji": "viễn",
+      "translation": "xa (遠慮)",
+      "q": "Chữ 遠 trong từ 遠慮 mang âm Hán Việt nào?",
+      "a": [
+        "VIỄN",
+        "LỰ",
+        "THẤT",
+        "LỄ"
+      ],
+      "c": 0,
+      "ex": "遠慮なく: xin đừng ngại"
+    },
+    {
+      "word": "慮",
+      "romaji": "lự",
+      "translation": "lo lắng, e ngại (遠慮)",
+      "q": "Chữ 慮 trong từ 遠慮 mang âm Hán Việt nào?",
+      "a": [
+        "LỰ",
+        "THẤT",
+        "LỄ",
+        "GIẢNG"
+      ],
+      "c": 0,
+      "ex": "遠慮なく: xin đừng ngại"
+    },
+    {
+      "word": "失",
+      "romaji": "thất",
+      "translation": "mất, sai sót (失礼)",
+      "q": "Chữ 失 trong từ 失礼 mang âm Hán Việt nào?",
+      "a": [
+        "THẤT",
+        "LỄ",
+        "GIẢNG",
+        "SƯ"
+      ],
+      "c": 0,
+      "ex": "失礼: xin chào (khiêm tốn)"
+    },
+    {
+      "word": "礼",
+      "romaji": "lễ",
+      "translation": "lễ phép (失礼)",
+      "q": "Chữ 礼 trong từ 失礼 mang âm Hán Việt nào?",
+      "a": [
+        "LỄ",
+        "GIẢNG",
+        "SƯ",
+        "TÁC"
+      ],
+      "c": 0,
+      "ex": "失礼: xin chào (khiêm tốn)"
+    },
+    {
+      "word": "講",
+      "romaji": "giảng",
+      "translation": "giảng dạy (講師)",
+      "q": "Chữ 講 trong từ 講師 mang âm Hán Việt nào?",
+      "a": [
+        "GIẢNG",
+        "SƯ",
+        "TÁC",
+        "PHẨM"
+      ],
+      "c": 0,
+      "ex": "講師: giảng viên"
+    },
+    {
+      "word": "師",
+      "romaji": "sư",
+      "translation": "thầy, người dạy (講師)",
+      "q": "Chữ 師 trong từ 講師 mang âm Hán Việt nào?",
+      "a": [
+        "SƯ",
+        "TÁC",
+        "PHẨM",
+        "THỌ"
+      ],
+      "c": 0,
+      "ex": "講師: giảng viên"
+    },
+    {
+      "word": "作",
+      "romaji": "tác",
+      "translation": "làm, sáng tác (作品)",
+      "q": "Chữ 作 trong từ 作品 mang âm Hán Việt nào?",
+      "a": [
+        "TÁC",
+        "PHẨM",
+        "THỌ",
+        "THƯỞNG"
+      ],
+      "c": 0,
+      "ex": "作品: tác phẩm"
+    },
+    {
+      "word": "品",
+      "romaji": "phẩm",
+      "translation": "sản phẩm (作品)",
+      "q": "Chữ 品 trong từ 作品 mang âm Hán Việt nào?",
+      "a": [
+        "PHẨM",
+        "THỌ",
+        "THƯỞNG",
+        "GIỚI"
+      ],
+      "c": 0,
+      "ex": "作品: tác phẩm"
+    }
+  ]
+}

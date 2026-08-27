@@ -1,0 +1,117 @@
+{
+  "id": "n4-l49-grammar",
+  "name": "N4 Bài 49 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 49 Minna no Nihongo: Tôn kính ngữ (尊敬語) - động từ đặc biệt (いらっしゃいます, 召し上がります, おっしゃいます, ご覧になります), thể bị động dùng làm tôn kính ngữ (Vれます/られます), お+Vます+になります, お/ご+Vます+ください.",
+  "category": "grammar",
+  "createdAt": "2026-08-27T04:26:58.242Z",
+  "updatedAt": "2026-08-27T04:27:06.544Z",
+  "questions": [
+    {
+      "sentence": "社長は今いらっしゃいますか",
+      "chunks": [
+        "社長",
+        "は",
+        "今",
+        "いらっしゃいますか"
+      ],
+      "translation": "Giám đốc có ở đây bây giờ không ạ?",
+      "ex": "いらっしゃいます: tôn kính ngữ của います/いきます/きます"
+    },
+    {
+      "sentence": "どうぞ召し上がってください",
+      "chunks": [
+        "どうぞ",
+        "召し上がってください"
+      ],
+      "translation": "Xin mời ngài dùng bữa",
+      "ex": "召し上がります: tôn kính ngữ của たべます/のみます"
+    },
+    {
+      "sentence": "先生は何とおっしゃいましたか",
+      "chunks": [
+        "先生",
+        "は",
+        "何と",
+        "おっしゃいましたか"
+      ],
+      "translation": "Thầy đã nói gì ạ?",
+      "ex": "おっしゃいます: tôn kính ngữ của いいます"
+    },
+    {
+      "sentence": "部長はもうこの資料をご覧になりましたか",
+      "chunks": [
+        "部長",
+        "は",
+        "もう",
+        "この資料",
+        "を",
+        "ご覧になりましたか"
+      ],
+      "translation": "Trưởng phòng đã xem tài liệu này chưa ạ?",
+      "ex": "ご覧になります: tôn kính ngữ của みます"
+    },
+    {
+      "sentence": "社長は先週から出張していらっしゃいます",
+      "chunks": [
+        "社長",
+        "は",
+        "先週から",
+        "出張して",
+        "いらっしゃいます"
+      ],
+      "translation": "Giám đốc đã đi công tác từ tuần trước",
+      "ex": "Vて+いらっしゃいます: tôn kính ngữ của Vています"
+    },
+    {
+      "sentence": "先生は明日来られますか",
+      "chunks": [
+        "先生",
+        "は",
+        "明日",
+        "来られますか"
+      ],
+      "translation": "Ngày mai thầy có đến không ạ?",
+      "ex": "Vる→られます: thể bị động dùng làm tôn kính ngữ"
+    },
+    {
+      "sentence": "何時にお帰りになりますか",
+      "chunks": [
+        "何時",
+        "に",
+        "お帰りになりますか"
+      ],
+      "translation": "Mấy giờ ngài về ạ?",
+      "ex": "お+Vます形+になります: cấu trúc tôn kính ngữ"
+    },
+    {
+      "sentence": "どうぞお座りください",
+      "chunks": [
+        "どうぞ",
+        "お座りください"
+      ],
+      "translation": "Xin mời ngồi",
+      "ex": "お+Vます形+ください: xin mời làm gì (tôn kính)"
+    },
+    {
+      "sentence": "こちらでお待ちください",
+      "chunks": [
+        "こちらで",
+        "お待ちください"
+      ],
+      "translation": "Xin đợi ở đây",
+      "ex": "お+Vます形+ください: xin đợi (tôn kính)"
+    },
+    {
+      "sentence": "先生がこの本をお書きになりました",
+      "chunks": [
+        "先生",
+        "が",
+        "この本",
+        "を",
+        "お書きになりました"
+      ],
+      "translation": "Thầy đã viết cuốn sách này",
+      "ex": "お+Vます形+になります: thầy đã viết cuốn sách này"
+    }
+  ]
+}

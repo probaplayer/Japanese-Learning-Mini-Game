@@ -1,6 +1,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+const UNASSIGNED_ROADMAP_ID = 'unassigned';
+const UNASSIGNED_ROADMAP_NAME = 'Chưa phân loại';
+
 const QUESTION_FIELDS = ['word', 'romaji', 'translation', 'q', 'a', 'c', 'ex', 'aTranslation'];
 const GRAMMAR_QUESTION_FIELDS = ['sentence', 'chunks', 'translation', 'ex'];
 
@@ -221,6 +224,61 @@ export function createQuestionsRepo(baseDir) {
     writeManifest(manifest);
   }
 
+  function listRoadmaps() {
+    const manifest = readManifest();
+    return Array.isArray(manifest.roadmaps) ? manifest.roadmaps : [];
+  }
+
+  function findRoadmap(manifest, id) {
+    const roadmaps = Array.isArray(manifest.roadmaps) ? manifest.roadmaps : [];
+    return roadmaps.find(r => r.id === id);
+  }
+
+  function createRoadmap({ id, name }) {
+    const manifest = readManifest();
+    if (!Array.isArray(manifest.roadmaps)) manifest.roadmaps = [];
+    const roadmapId = id ? slugify(id) : slugify(name);
+    if (!roadmapId) throw new Error('Could not derive a valid id from the provided name/id');
+    if (findRoadmap(manifest, roadmapId)) throw new Error(`Roadmap id already exists: ${roadmapId}`);
+    const entry = { id: roadmapId, name };
+    manifest.roadmaps.push(entry);
+    writeManifest(manifest);
+    return entry;
+  }
+
+  function renameRoadmap(id, name) {
+    const manifest = readManifest();
+    const entry = findRoadmap(manifest, id);
+    if (!entry) throw new Error(`Roadmap not found: ${id}`);
+    entry.name = name;
+    writeManifest(manifest);
+    return entry;
+  }
+
+  function deleteRoadmap(id) {
+    const manifest = readManifest();
+    const entry = findRoadmap(manifest, id);
+    if (!entry) throw new Error(`Roadmap not found: ${id}`);
+
+    const assignedSets = manifest.sets.filter(s => s.roadmapId === id);
+    if (assignedSets.length > 0) {
+      if (id === UNASSIGNED_ROADMAP_ID) {
+        throw new Error(`Cannot delete roadmap "${id}": still assigned to ${assignedSets.length} question set(s)`);
+      }
+      if (!findRoadmap(manifest, UNASSIGNED_ROADMAP_ID)) {
+        manifest.roadmaps.push({ id: UNASSIGNED_ROADMAP_ID, name: UNASSIGNED_ROADMAP_NAME });
+      }
+      const now = new Date().toISOString();
+      assignedSets.forEach(s => {
+        s.roadmapId = UNASSIGNED_ROADMAP_ID;
+        s.updatedAt = now;
+      });
+    }
+
+    manifest.roadmaps = manifest.roadmaps.filter(r => r.id !== id);
+    writeManifest(manifest);
+  }
+
   function searchQuestions(keyword, setId, limit = 50) {
     const needle = keyword.toLowerCase();
     const manifest = readManifest();
@@ -292,6 +350,10 @@ export function createQuestionsRepo(baseDir) {
     updateQuestion,
     deleteQuestion,
     searchQuestions,
-    patchQuestion
+    patchQuestion,
+    listRoadmaps,
+    createRoadmap,
+    renameRoadmap,
+    deleteRoadmap
   };
 }

@@ -170,6 +170,30 @@ async function main() {
   assert.deepStrictEqual(grammarQuestionAfterPatch.chunks, ['私', 'は', '先生', 'です']);
   assert.strictEqual(grammarQuestionAfterPatch.translation, 'Tôi là học sinh');
 
+  const listedRoadmaps = await client.callTool({ name: 'list_roadmaps', arguments: {} });
+  assert.deepStrictEqual(JSON.parse(listedRoadmaps.content[0].text), []);
+
+  const createdRoadmap = await client.callTool({ name: 'create_roadmap', arguments: { name: 'N3 Path' } });
+  assert.deepStrictEqual(JSON.parse(createdRoadmap.content[0].text), { id: 'n3-path', name: 'N3 Path' });
+
+  const renamedRoadmap = await client.callTool({ name: 'rename_roadmap', arguments: { id: 'n3-path', name: 'N3 Path (Renamed)' } });
+  assert.strictEqual(JSON.parse(renamedRoadmap.content[0].text).name, 'N3 Path (Renamed)');
+
+  await client.callTool({
+    name: 'create_question_set',
+    arguments: { id: 'n3-set', name: 'N3 Set', roadmapId: 'n3-path', questions: [] }
+  });
+
+  const deletedRoadmap = await client.callTool({ name: 'delete_roadmap', arguments: { id: 'n3-path' } });
+  assert.deepStrictEqual(JSON.parse(deletedRoadmap.content[0].text), { deleted: 'n3-path' });
+
+  const roadmapsAfterDelete = await client.callTool({ name: 'list_roadmaps', arguments: {} });
+  assert.deepStrictEqual(JSON.parse(roadmapsAfterDelete.content[0].text), [{ id: 'unassigned', name: 'Chưa phân loại' }]);
+
+  const n3SetAfterDelete = await client.callTool({ name: 'list_question_sets', arguments: {} });
+  const n3SetEntry = JSON.parse(n3SetAfterDelete.content[0].text).find(s => s.id === 'n3-set');
+  assert.strictEqual(n3SetEntry.roadmapId, 'unassigned');
+
   await client.close();
   fs.rmSync(questionsDir, { recursive: true, force: true });
   console.log('mcp server smoke test passed');

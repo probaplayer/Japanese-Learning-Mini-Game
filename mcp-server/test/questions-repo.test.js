@@ -478,6 +478,128 @@ function testAddQuestionValidatesAgainstSetsOwnCategory() {
   assert.throws(() => repo.addQuestion('demo-grammar', sampleQuestion), /sentence/);
 }
 
+function testListRoadmapsReturnsEmptyArrayWhenNoneConfigured() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  assert.deepStrictEqual(repo.listRoadmaps(), []);
+}
+
+function testCreateRoadmapAddsEntryAndDerivesIdFromName() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  const created = repo.createRoadmap({ name: 'N3 Path' });
+  assert.strictEqual(created.id, 'n3-path');
+  assert.strictEqual(created.name, 'N3 Path');
+  assert.deepStrictEqual(repo.listRoadmaps(), [{ id: 'n3-path', name: 'N3 Path' }]);
+}
+
+function testCreateRoadmapAcceptsExplicitId() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  const created = repo.createRoadmap({ id: 'custom-id', name: 'N3 Path' });
+  assert.strictEqual(created.id, 'custom-id');
+}
+
+function testCreateRoadmapRejectsDuplicateId() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createRoadmap({ name: 'N3 Path' });
+  assert.throws(() => repo.createRoadmap({ id: 'n3-path', name: 'N3 Path Again' }), /already exists/);
+}
+
+function testRenameRoadmapUpdatesName() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createRoadmap({ id: 'n3-path', name: 'N3 Path' });
+
+  const renamed = repo.renameRoadmap('n3-path', 'N3 Path (Renamed)');
+  assert.strictEqual(renamed.name, 'N3 Path (Renamed)');
+  assert.strictEqual(repo.listRoadmaps()[0].name, 'N3 Path (Renamed)');
+}
+
+function testRenameRoadmapErrorsOnUnknownId() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  assert.throws(() => repo.renameRoadmap('nope', 'New Name'), /Roadmap not found: nope/);
+}
+
+function testDeleteRoadmapRemovesEntryWhenNoSetsAssigned() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createRoadmap({ id: 'n3-path', name: 'N3 Path' });
+
+  repo.deleteRoadmap('n3-path');
+  assert.deepStrictEqual(repo.listRoadmaps(), []);
+}
+
+function testDeleteRoadmapErrorsOnUnknownId() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  assert.throws(() => repo.deleteRoadmap('nope'), /Roadmap not found: nope/);
+}
+
+function testDeleteRoadmapReassignsAssignedSetsToUnassignedFallback() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createRoadmap({ id: 'n3-path', name: 'N3 Path' });
+  repo.createQuestionSet({ id: 'demo', name: 'Demo', roadmapId: 'n3-path' });
+
+  repo.deleteRoadmap('n3-path');
+
+  const roadmapIds = repo.listRoadmaps().map(r => r.id);
+  assert.deepStrictEqual(roadmapIds, ['unassigned']);
+  const entry = repo.listQuestionSets().find(s => s.id === 'demo');
+  assert.strictEqual(entry.roadmapId, 'unassigned');
+}
+
+function testDeleteRoadmapCreatesUnassignedFallbackIfMissing() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createRoadmap({ id: 'n3-path', name: 'N3 Path' });
+  repo.createQuestionSet({ id: 'demo', name: 'Demo', roadmapId: 'n3-path' });
+
+  repo.deleteRoadmap('n3-path');
+
+  const fallback = repo.listRoadmaps().find(r => r.id === 'unassigned');
+  assert.ok(fallback, 'expected an "unassigned" fallback roadmap to be created');
+  assert.strictEqual(fallback.name, 'Chưa phân loại');
+}
+
+function testDeleteRoadmapDoesNotDuplicateFallbackIfAlreadyPresent() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createRoadmap({ id: 'unassigned', name: 'Chưa phân loại' });
+  repo.createRoadmap({ id: 'n3-path', name: 'N3 Path' });
+  repo.createQuestionSet({ id: 'demo', name: 'Demo', roadmapId: 'n3-path' });
+
+  repo.deleteRoadmap('n3-path');
+
+  const roadmapIds = repo.listRoadmaps().map(r => r.id);
+  assert.deepStrictEqual(roadmapIds, ['unassigned']);
+}
+
+function testDeleteRoadmapBlocksDeletingUnassignedFallbackWhileInUse() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createRoadmap({ id: 'unassigned', name: 'Chưa phân loại' });
+  repo.createQuestionSet({ id: 'demo', name: 'Demo', roadmapId: 'unassigned' });
+
+  assert.throws(() => repo.deleteRoadmap('unassigned'), /still assigned/);
+}
+
+testListRoadmapsReturnsEmptyArrayWhenNoneConfigured();
+testCreateRoadmapAddsEntryAndDerivesIdFromName();
+testCreateRoadmapAcceptsExplicitId();
+testCreateRoadmapRejectsDuplicateId();
+testRenameRoadmapUpdatesName();
+testRenameRoadmapErrorsOnUnknownId();
+testDeleteRoadmapRemovesEntryWhenNoSetsAssigned();
+testDeleteRoadmapErrorsOnUnknownId();
+testDeleteRoadmapReassignsAssignedSetsToUnassignedFallback();
+testDeleteRoadmapCreatesUnassignedFallbackIfMissing();
+testDeleteRoadmapDoesNotDuplicateFallbackIfAlreadyPresent();
+testDeleteRoadmapBlocksDeletingUnassignedFallbackWhileInUse();
+
 testValidateQuestionAcceptsWellFormedQuestion();
 testValidateQuestionRejectsWrongAnswerCount();
 testValidateQuestionRejectsOutOfRangeCorrectIndex();

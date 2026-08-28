@@ -179,6 +179,45 @@ server.registerTool(
 );
 
 server.registerTool(
+  'list_roadmaps',
+  { title: 'List roadmaps', description: 'List all roadmaps with id and name' },
+  guarded(() => repo.listRoadmaps())
+);
+
+server.registerTool(
+  'create_roadmap',
+  {
+    title: 'Create roadmap',
+    description: 'Create a new roadmap and register it in the manifest',
+    inputSchema: { id: z.string().optional(), name: z.string().min(1) }
+  },
+  guarded((args) => repo.createRoadmap(args))
+);
+
+server.registerTool(
+  'rename_roadmap',
+  {
+    title: 'Rename roadmap',
+    description: 'Update the display name of an existing roadmap',
+    inputSchema: { id: z.string(), name: z.string().min(1) }
+  },
+  guarded(({ id, name }) => repo.renameRoadmap(id, name))
+);
+
+server.registerTool(
+  'delete_roadmap',
+  {
+    title: 'Delete roadmap',
+    description: 'Delete a roadmap from the manifest. Any question set still assigned to it is reassigned to the "unassigned" fallback roadmap (created automatically if missing).',
+    inputSchema: { id: z.string() }
+  },
+  guarded(({ id }) => {
+    repo.deleteRoadmap(id);
+    return { deleted: id };
+  })
+);
+
+server.registerTool(
   'publish',
   {
     title: 'Publish question sets',

@@ -1,0 +1,318 @@
+{
+  "id": "n3-l2-kanji",
+  "name": "N3 Bài 2 - Từ vựng Kanji (đọc)",
+  "description": "Từ vựng có kanji Bài 2 N3 (Chuukyuu I). Đáp án chỉ hiện hiragana.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-28T06:34:31.427Z",
+  "updatedAt": "2026-08-28T06:34:31.427Z",
+  "questions": [
+    {
+      "word": "四角い",
+      "romaji": "しかくい",
+      "translation": "hình vuông, vuông vắn",
+      "q": "Từ 四角い đọc là gì?",
+      "a": [
+        "しかくい",
+        "せいかく",
+        "にがて",
+        "まぎらわしい"
+      ],
+      "c": 0,
+      "ex": "hình vuông | 四 (tứ) + 角 (giác)"
+    },
+    {
+      "word": "正確な",
+      "romaji": "せいかく",
+      "translation": "chính xác",
+      "q": "Từ 正確[な] đọc là gì?",
+      "a": [
+        "しかくい",
+        "にがて",
+        "まぎらわしい",
+        "せいかく"
+      ],
+      "c": 3,
+      "ex": "chính xác | 正 (chính) + 確 (xác thực)"
+    },
+    {
+      "word": "苦手な",
+      "romaji": "にがて",
+      "translation": "không giỏi, ngại",
+      "q": "Từ 苦手[な] đọc là gì?",
+      "a": [
+        "にがて",
+        "まぎらわしい",
+        "あたり",
+        "せいかく"
+      ],
+      "c": 0,
+      "ex": "không giỏi, ngại | 苦 (khổ) + 手 (thủ)"
+    },
+    {
+      "word": "紛らわしい",
+      "romaji": "まぎらわしい",
+      "translation": "dễ nhầm lẫn",
+      "q": "Từ 紛らわしい đọc là gì?",
+      "a": [
+        "まぎらわしい",
+        "あたり",
+        "うちゅうじん",
+        "にがて"
+      ],
+      "c": 0,
+      "ex": "dễ nhầm lẫn | 紛 (phân)"
+    },
+    {
+      "word": "辺り",
+      "romaji": "あたり",
+      "translation": "xung quanh, khu vực",
+      "q": "Từ 辺り đọc là gì?",
+      "a": [
+        "あたり",
+        "うちゅうじん",
+        "うで",
+        "まぎらわしい"
+      ],
+      "c": 0,
+      "ex": "xung quanh | 辺 (biên)"
+    },
+    {
+      "word": "宇宙人",
+      "romaji": "うちゅうじん",
+      "translation": "người ngoài hành tinh",
+      "q": "Từ 宇宙人 đọc là gì?",
+      "a": [
+        "うちゅうじん",
+        "うで",
+        "えいよう",
+        "あたり"
+      ],
+      "c": 0,
+      "ex": "người ngoài hành tinh | 宇宙 (vũ trụ) + 人 (nhân)"
+    },
+    {
+      "word": "腕",
+      "romaji": "うで",
+      "translation": "cánh tay",
+      "q": "Từ 腕 đọc là gì?",
+      "a": [
+        "うで",
+        "えいよう",
+        "がいらいご",
+        "うちゅうじん"
+      ],
+      "c": 0,
+      "ex": "cánh tay | 腕 (oạn)"
+    },
+    {
+      "word": "栄養",
+      "romaji": "えいよう",
+      "translation": "dinh dưỡng",
+      "q": "Từ 栄養 đọc là gì?",
+      "a": [
+        "えいよう",
+        "がいらいご",
+        "かんきょう",
+        "うで"
+      ],
+      "c": 0,
+      "ex": "dinh dưỡng | 栄 (vinh) + 養 (dưỡng)"
+    },
+    {
+      "word": "外来語",
+      "romaji": "がいらいご",
+      "translation": "từ ngoại lai",
+      "q": "Từ 外来語 đọc là gì?",
+      "a": [
+        "がいらいご",
+        "かんきょう",
+        "きじ",
+        "えいよう"
+      ],
+      "c": 0,
+      "ex": "từ ngoại lai | 外来 (ngoại lai) + 語 (ngữ)"
+    },
+    {
+      "word": "環境",
+      "romaji": "かんきょう",
+      "translation": "môi trường",
+      "q": "Từ 環境 đọc là gì?",
+      "a": [
+        "かんきょう",
+        "きじ",
+        "きゅうじつ",
+        "がいらいご"
+      ],
+      "c": 0,
+      "ex": "môi trường | 環 (hoàn) + 境 (cảnh)"
+    },
+    {
+      "word": "記事",
+      "romaji": "きじ",
+      "translation": "bài báo",
+      "q": "Từ 記事 đọc là gì?",
+      "a": [
+        "きじ",
+        "きゅうじつ",
+        "けっか",
+        "かんきょう"
+      ],
+      "c": 0,
+      "ex": "bài báo | 記 (ký) + 事 (sự)"
+    },
+    {
+      "word": "休日",
+      "romaji": "きゅうじつ",
+      "translation": "ngày nghỉ",
+      "q": "Từ 休日 đọc là gì?",
+      "a": [
+        "きゅうじつ",
+        "けっか",
+        "こうじ",
+        "きじ"
+      ],
+      "c": 0,
+      "ex": "ngày nghỉ | 休 (hưu) + 日 (nhật)"
+    },
+    {
+      "word": "結果",
+      "romaji": "けっか",
+      "translation": "kết quả",
+      "q": "Từ 結果 đọc là gì?",
+      "a": [
+        "けっか",
+        "こうじ",
+        "じけん",
+        "きゅうじつ"
+      ],
+      "c": 0,
+      "ex": "kết quả | 結 (kết) + 果 (quả)"
+    },
+    {
+      "word": "工事",
+      "romaji": "こうじ",
+      "translation": "thi công, công trình",
+      "q": "Từ 工事 đọc là gì?",
+      "a": [
+        "こうじ",
+        "じけん",
+        "だんすい",
+        "けっか"
+      ],
+      "c": 0,
+      "ex": "thi công | 工 (công) + 事 (sự)"
+    },
+    {
+      "word": "事件",
+      "romaji": "じけん",
+      "translation": "vụ việc, sự kiện",
+      "q": "Từ 事件 đọc là gì?",
+      "a": [
+        "じけん",
+        "だんすい",
+        "ばあい",
+        "こうじ"
+      ],
+      "c": 0,
+      "ex": "vụ việc | 事 (sự) + 件 (kiện)"
+    },
+    {
+      "word": "断水",
+      "romaji": "だんすい",
+      "translation": "cắt nước",
+      "q": "Từ 断水 đọc là gì?",
+      "a": [
+        "だんすい",
+        "ばあい",
+        "ひっしゃ",
+        "じけん"
+      ],
+      "c": 0,
+      "ex": "cắt nước | 断 (đoạn) + 水 (thủy)"
+    },
+    {
+      "word": "場合",
+      "romaji": "ばあい",
+      "translation": "trường hợp",
+      "q": "Từ 場合 đọc là gì?",
+      "a": [
+        "ばあい",
+        "ひっしゃ",
+        "ひつよう",
+        "だんすい"
+      ],
+      "c": 0,
+      "ex": "trường hợp | 場 (trường) + 合 (hợp)"
+    },
+    {
+      "word": "筆者",
+      "romaji": "ひっしゃ",
+      "translation": "tác giả (bài viết)",
+      "q": "Từ 筆者 đọc là gì?",
+      "a": [
+        "ひっしゃ",
+        "ひつよう",
+        "ぶんしょう",
+        "ばあい"
+      ],
+      "c": 0,
+      "ex": "tác giả | 筆 (bút) + 者 (giả)"
+    },
+    {
+      "word": "必要",
+      "romaji": "ひつよう",
+      "translation": "cần thiết",
+      "q": "Từ 必要 đọc là gì?",
+      "a": [
+        "ひつよう",
+        "ぶんしょう",
+        "ほんもの",
+        "ひっしゃ"
+      ],
+      "c": 0,
+      "ex": "cần thiết | 必 (tất) + 要 (yếu)"
+    },
+    {
+      "word": "文章",
+      "romaji": "ぶんしょう",
+      "translation": "văn chương, đoạn văn",
+      "q": "Từ 文章 đọc là gì?",
+      "a": [
+        "ぶんしょう",
+        "ほんもの",
+        "ゆうじん",
+        "ひつよう"
+      ],
+      "c": 0,
+      "ex": "văn chương | 文 (văn) + 章 (chương)"
+    },
+    {
+      "word": "本物",
+      "romaji": "ほんもの",
+      "translation": "đồ thật",
+      "q": "Từ 本物 đọc là gì?",
+      "a": [
+        "ほんもの",
+        "ゆうじん",
+        "しかくい",
+        "ぶんしょう"
+      ],
+      "c": 0,
+      "ex": "đồ thật | 本 (bản) + 物 (vật)"
+    },
+    {
+      "word": "友人",
+      "romaji": "ゆうじん",
+      "translation": "bạn bè",
+      "q": "Từ 友人 đọc là gì?",
+      "a": [
+        "ゆうじん",
+        "しかくい",
+        "せいかく",
+        "ほんもの"
+      ],
+      "c": 0,
+      "ex": "bạn bè | 友 (hữu) + 人 (nhân)"
+    }
+  ]
+}

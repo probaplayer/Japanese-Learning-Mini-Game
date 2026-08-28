@@ -1,0 +1,346 @@
+{
+  "id": "n3-l2-vocab",
+  "name": "N3 Bài 2 - Từ vựng (nghĩa)",
+  "description": "Từ vựng Minna no Nihongo Chuukyuu I Bài 2 (N3). Câu hỏi hỏi nghĩa tiếng Việt của từ.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-28T06:33:37.606Z",
+  "updatedAt": "2026-08-28T06:33:37.606Z",
+  "questions": [
+    {
+      "word": "四角い",
+      "romaji": "しかくい",
+      "translation": "hình vuông, vuông vắn",
+      "q": "Từ 四角い (しかくい) có nghĩa là gì?",
+      "a": [
+        "hình vuông, vuông vắn",
+        "chính xác",
+        "hoàn toàn không, vô lý",
+        "không giỏi, ngại"
+      ],
+      "c": 0,
+      "ex": "四 (tứ) + 角 (giác)"
+    },
+    {
+      "word": "正確な",
+      "romaji": "せいかく",
+      "translation": "chính xác",
+      "q": "Từ 正確[な] (せいかく) có nghĩa là gì?",
+      "a": [
+        "hình vuông",
+        "chính xác",
+        "hoàn toàn không, vô lý",
+        "không giỏi, ngại"
+      ],
+      "c": 1,
+      "ex": "正 (chính) + 確 (xác thực)"
+    },
+    {
+      "word": "とんでもない",
+      "romaji": "とんでもない",
+      "translation": "hoàn toàn không, vô lý",
+      "q": "Từ とんでもない có nghĩa là gì?",
+      "a": [
+        "chính xác",
+        "hoàn toàn không, vô lý",
+        "không giỏi, ngại",
+        "dễ nhầm lẫn"
+      ],
+      "c": 1,
+      "ex": "とんでもない - không có kanji phổ biến"
+    },
+    {
+      "word": "苦手な",
+      "romaji": "にがて",
+      "translation": "không giỏi, ngại (tính cách/sở trường)",
+      "q": "Từ 苦手[な] (にがて) có nghĩa là gì?",
+      "a": [
+        "hoàn toàn không",
+        "không giỏi, ngại (tính cách/sở trường)",
+        "dễ nhầm lẫn",
+        "xung quanh, khu vực"
+      ],
+      "c": 1,
+      "ex": "苦 (khổ) + 手 (thủ)"
+    },
+    {
+      "word": "紛らわしい",
+      "romaji": "まぎらわしい",
+      "translation": "dễ nhầm lẫn",
+      "q": "Từ 紛らわしい (まぎらわしい) có nghĩa là gì?",
+      "a": [
+        "không giỏi",
+        "dễ nhầm lẫn",
+        "xung quanh, khu vực",
+        "người ngoài hành tinh"
+      ],
+      "c": 1,
+      "ex": "紛 (phân) - rối"
+    },
+    {
+      "word": "辺り",
+      "romaji": "あたり",
+      "translation": "xung quanh, khu vực",
+      "q": "Từ 辺り (あたり) có nghĩa là gì?",
+      "a": [
+        "dễ nhầm lẫn",
+        "xung quanh, khu vực",
+        "người ngoài hành tinh",
+        "cánh tay"
+      ],
+      "c": 1,
+      "ex": "辺 (biên)"
+    },
+    {
+      "word": "宇宙人",
+      "romaji": "うちゅうじん",
+      "translation": "người ngoài hành tinh",
+      "q": "Từ 宇宙人 (うちゅうじん) có nghĩa là gì?",
+      "a": [
+        "xung quanh",
+        "người ngoài hành tinh",
+        "cánh tay",
+        "tin đồn"
+      ],
+      "c": 1,
+      "ex": "宇宙 (vũ trụ) + 人 (nhân)"
+    },
+    {
+      "word": "腕",
+      "romaji": "うで",
+      "translation": "cánh tay",
+      "q": "Từ 腕 (うで) có nghĩa là gì?",
+      "a": [
+        "người ngoài hành tinh",
+        "cánh tay",
+        "tin đồn",
+        "dinh dưỡng"
+      ],
+      "c": 1,
+      "ex": "腕 (oạn)"
+    },
+    {
+      "word": "うわさ",
+      "romaji": "うわさ",
+      "translation": "tin đồn",
+      "q": "Từ うわさ có nghĩa là gì?",
+      "a": [
+        "cánh tay",
+        "tin đồn",
+        "dinh dưỡng",
+        "từ ngoại lai"
+      ],
+      "c": 1,
+      "ex": "うわさ - không có kanji phổ biến"
+    },
+    {
+      "word": "栄養",
+      "romaji": "えいよう",
+      "translation": "dinh dưỡng",
+      "q": "Từ 栄養 (えいよう) có nghĩa là gì?",
+      "a": [
+        "tin đồn",
+        "dinh dưỡng",
+        "từ ngoại lai",
+        "môi trường"
+      ],
+      "c": 1,
+      "ex": "栄 (vinh) + 養 (dưỡng)"
+    },
+    {
+      "word": "外来語",
+      "romaji": "がいらいご",
+      "translation": "từ ngoại lai",
+      "q": "Từ 外来語 (がいらいご) có nghĩa là gì?",
+      "a": [
+        "dinh dưỡng",
+        "từ ngoại lai",
+        "môi trường",
+        "bài báo"
+      ],
+      "c": 1,
+      "ex": "外来 (ngoại lai) + 語 (ngữ)"
+    },
+    {
+      "word": "環境",
+      "romaji": "かんきょう",
+      "translation": "môi trường",
+      "q": "Từ 環境 (かんきょう) có nghĩa là gì?",
+      "a": [
+        "từ ngoại lai",
+        "môi trường",
+        "bài báo",
+        "ngày nghỉ"
+      ],
+      "c": 1,
+      "ex": "環 (hoàn) + 境 (cảnh)"
+    },
+    {
+      "word": "記事",
+      "romaji": "きじ",
+      "translation": "bài báo",
+      "q": "Từ 記事 (きじ) có nghĩa là gì?",
+      "a": [
+        "môi trường",
+        "bài báo",
+        "ngày nghỉ",
+        "kết quả"
+      ],
+      "c": 1,
+      "ex": "記 (ký) + 事 (sự)"
+    },
+    {
+      "word": "休日",
+      "romaji": "きゅうじつ",
+      "translation": "ngày nghỉ",
+      "q": "Từ 休日 (きゅうじつ) có nghĩa là gì?",
+      "a": [
+        "bài báo",
+        "ngày nghỉ",
+        "kết quả",
+        "thi công, công trình"
+      ],
+      "c": 1,
+      "ex": "休 (hưu) + 日 (nhật)"
+    },
+    {
+      "word": "結果",
+      "romaji": "けっか",
+      "translation": "kết quả",
+      "q": "Từ 結果 (けっか) có nghĩa là gì?",
+      "a": [
+        "ngày nghỉ",
+        "kết quả",
+        "thi công, công trình",
+        "vụ việc, sự kiện"
+      ],
+      "c": 1,
+      "ex": "結 (kết) + 果 (quả)"
+    },
+    {
+      "word": "工事",
+      "romaji": "こうじ",
+      "translation": "thi công, công trình",
+      "q": "Từ 工事 (こうじ) có nghĩa là gì?",
+      "a": [
+        "kết quả",
+        "thi công, công trình",
+        "vụ việc, sự kiện",
+        "cắt nước"
+      ],
+      "c": 1,
+      "ex": "工 (công) + 事 (sự)"
+    },
+    {
+      "word": "事件",
+      "romaji": "じけん",
+      "translation": "vụ việc, sự kiện",
+      "q": "Từ 事件 (じけん) có nghĩa là gì?",
+      "a": [
+        "thi công",
+        "vụ việc, sự kiện",
+        "cắt nước",
+        "trường hợp"
+      ],
+      "c": 1,
+      "ex": "事 (sự) + 件 (kiện)"
+    },
+    {
+      "word": "断水",
+      "romaji": "だんすい",
+      "translation": "cắt nước",
+      "q": "Từ 断水 (だんすい) có nghĩa là gì?",
+      "a": [
+        "vụ việc",
+        "cắt nước",
+        "trường hợp",
+        "tác giả"
+      ],
+      "c": 1,
+      "ex": "断 (đoạn) + 水 (thủy)"
+    },
+    {
+      "word": "場合",
+      "romaji": "ばあい",
+      "translation": "trường hợp",
+      "q": "Từ 場合 (ばあい) có nghĩa là gì?",
+      "a": [
+        "cắt nước",
+        "trường hợp",
+        "tác giả",
+        "cần thiết"
+      ],
+      "c": 1,
+      "ex": "場 (trường) + 合 (hợp)"
+    },
+    {
+      "word": "筆者",
+      "romaji": "ひっしゃ",
+      "translation": "tác giả (bài viết)",
+      "q": "Từ 筆者 (ひっしゃ) có nghĩa là gì?",
+      "a": [
+        "trường hợp",
+        "tác giả (bài viết)",
+        "cần thiết",
+        "văn chương, đoạn văn"
+      ],
+      "c": 1,
+      "ex": "筆 (bút) + 者 (giả)"
+    },
+    {
+      "word": "必要",
+      "romaji": "ひつよう",
+      "translation": "cần thiết",
+      "q": "Từ 必要 (ひつよう) có nghĩa là gì?",
+      "a": [
+        "tác giả",
+        "cần thiết",
+        "văn chương, đoạn văn",
+        "đồ thật"
+      ],
+      "c": 1,
+      "ex": "必 (tất) + 要 (yếu)"
+    },
+    {
+      "word": "文章",
+      "romaji": "ぶんしょう",
+      "translation": "văn chương, đoạn văn",
+      "q": "Từ 文章 (ぶんしょう) có nghĩa là gì?",
+      "a": [
+        "cần thiết",
+        "văn chương, đoạn văn",
+        "đồ thật",
+        "bạn bè"
+      ],
+      "c": 1,
+      "ex": "文 (văn) + 章 (chương)"
+    },
+    {
+      "word": "本物",
+      "romaji": "ほんもの",
+      "translation": "đồ thật",
+      "q": "Từ 本物 (ほんもの) có nghĩa là gì?",
+      "a": [
+        "văn chương",
+        "đồ thật",
+        "bạn bè",
+        "chiếc điều khiển"
+      ],
+      "c": 1,
+      "ex": "本 (bản) + 物 (vật)"
+    },
+    {
+      "word": "友人",
+      "romaji": "ゆうじん",
+      "translation": "bạn bè",
+      "q": "Từ 友人 (ゆうじん) có nghĩa là gì?",
+      "a": [
+        "đồ thật",
+        "bạn bè",
+        "chiếc điều khiển",
+        "dễ nhầm lẫn"
+      ],
+      "c": 1,
+      "ex": "友 (hữu) + 人 (nhân)"
+    }
+  ]
+}

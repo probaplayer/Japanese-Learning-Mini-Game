@@ -1,0 +1,458 @@
+{
+  "id": "n3-l2-kanji-hanviet",
+  "name": "N3 Bài 2 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 2 (N3), hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-28T06:36:03.986Z",
+  "updatedAt": "2026-08-28T06:37:00.767Z",
+  "questions": [
+    {
+      "word": "四",
+      "romaji": "tứ",
+      "translation": "bốn (四角い)",
+      "q": "Chữ 四 trong từ 四角い mang âm Hán Việt nào?",
+      "a": [
+        "TỨ",
+        "GIÁC",
+        "CHÍNH",
+        "XÁC"
+      ],
+      "c": 0,
+      "ex": "四角い: hình vuông"
+    },
+    {
+      "word": "角",
+      "romaji": "giác",
+      "translation": "góc (四角い)",
+      "q": "Chữ 角 trong từ 四角い mang âm Hán Việt nào?",
+      "a": [
+        "TỨ",
+        "CHÍNH",
+        "XÁC",
+        "GIÁC"
+      ],
+      "c": 3,
+      "ex": "四角い: hình vuông"
+    },
+    {
+      "word": "正",
+      "romaji": "chính",
+      "translation": "đúng (正確)",
+      "q": "Chữ 正 trong từ 正確 mang âm Hán Việt nào?",
+      "a": [
+        "GIÁC",
+        "CHÍNH",
+        "XÁC",
+        "KHỔ"
+      ],
+      "c": 1,
+      "ex": "正確な: chính xác"
+    },
+    {
+      "word": "確",
+      "romaji": "xác",
+      "translation": "xác thực (正確)",
+      "q": "Chữ 確 trong từ 正確 mang âm Hán Việt nào?",
+      "a": [
+        "CHÍNH",
+        "XÁC",
+        "KHỔ",
+        "THỦ"
+      ],
+      "c": 1,
+      "ex": "正確な: chính xác"
+    },
+    {
+      "word": "苦",
+      "romaji": "khổ",
+      "translation": "khổ (苦手)",
+      "q": "Chữ 苦 trong từ 苦手 mang âm Hán Việt nào?",
+      "a": [
+        "XÁC",
+        "KHỔ",
+        "THỦ",
+        "PHÂN"
+      ],
+      "c": 1,
+      "ex": "苦手な: không giỏi, ngại"
+    },
+    {
+      "word": "手",
+      "romaji": "thủ",
+      "translation": "tay, sở trường (苦手)",
+      "q": "Chữ 手 trong từ 苦手 mang âm Hán Việt nào?",
+      "a": [
+        "KHỔ",
+        "THỦ",
+        "PHÂN",
+        "BIÊN"
+      ],
+      "c": 1,
+      "ex": "苦手な: không giỏi, ngại"
+    },
+    {
+      "word": "紛",
+      "romaji": "phân",
+      "translation": "lẫn, rối (紛らわしい)",
+      "q": "Chữ 紛 trong từ 紛らわしい mang âm Hán Việt nào?",
+      "a": [
+        "THỦ",
+        "PHÂN",
+        "BIÊN",
+        "VŨ"
+      ],
+      "c": 1,
+      "ex": "紛らわしい: dễ nhầm lẫn"
+    },
+    {
+      "word": "辺",
+      "romaji": "biên",
+      "translation": "bên, vùng (辺り)",
+      "q": "Chữ 辺 mang âm Hán Việt nào?",
+      "a": [
+        "PHÂN",
+        "BIÊN",
+        "VŨ",
+        "TRỤ"
+      ],
+      "c": 1,
+      "ex": "辺り: xung quanh"
+    },
+    {
+      "word": "宇",
+      "romaji": "vũ",
+      "translation": "không gian (宇宙)",
+      "q": "Chữ 宇 trong từ 宇宙人 mang âm Hán Việt nào?",
+      "a": [
+        "BIÊN",
+        "VŨ",
+        "TRỤ",
+        "NHÂN"
+      ],
+      "c": 1,
+      "ex": "宇宙人: người ngoài hành tinh"
+    },
+    {
+      "word": "宙",
+      "romaji": "trụ",
+      "translation": "vũ trụ (宙)",
+      "q": "Chữ 宙 trong từ 宇宙人 mang âm Hán Việt nào?",
+      "a": [
+        "VŨ",
+        "TRỤ",
+        "NHÂN",
+        "VINH"
+      ],
+      "c": 1,
+      "ex": "宇宙人: người ngoài hành tinh"
+    },
+    {
+      "word": "人",
+      "romaji": "nhân",
+      "translation": "người (宇宙人)",
+      "q": "Chữ 人 trong từ 宇宙人 mang âm Hán Việt nào?",
+      "a": [
+        "TRỤ",
+        "NHÂN",
+        "VINH",
+        "DƯỠNG"
+      ],
+      "c": 1,
+      "ex": "宇宙人: người ngoài hành tinh"
+    },
+    {
+      "word": "栄",
+      "romaji": "vinh",
+      "translation": "vinh, phát triển (栄養)",
+      "q": "Chữ 栄 trong từ 栄養 mang âm Hán Việt nào?",
+      "a": [
+        "NHÂN",
+        "VINH",
+        "DƯỠNG",
+        "NGOẠI"
+      ],
+      "c": 1,
+      "ex": "栄養: dinh dưỡng"
+    },
+    {
+      "word": "養",
+      "romaji": "dưỡng",
+      "translation": "nuôi dưỡng (栄養)",
+      "q": "Chữ 養 trong từ 栄養 mang âm Hán Việt nào?",
+      "a": [
+        "VINH",
+        "DƯỠNG",
+        "NGOẠI",
+        "LAI"
+      ],
+      "c": 1,
+      "ex": "栄養: dinh dưỡng"
+    },
+    {
+      "word": "外",
+      "romaji": "ngoại",
+      "translation": "bên ngoài (外来語)",
+      "q": "Chữ 外 trong từ 外来語 mang âm Hán Việt nào?",
+      "a": [
+        "DƯỠNG",
+        "NGOẠI",
+        "LAI",
+        "NGỮ"
+      ],
+      "c": 1,
+      "ex": "外来語: từ ngoại lai"
+    },
+    {
+      "word": "来",
+      "romaji": "lai",
+      "translation": "đến (外来語)",
+      "q": "Chữ 来 trong từ 外来語 mang âm Hán Việt nào?",
+      "a": [
+        "NGOẠI",
+        "LAI",
+        "NGỮ",
+        "HOÀN"
+      ],
+      "c": 1,
+      "ex": "外来語: từ ngoại lai"
+    },
+    {
+      "word": "語",
+      "romaji": "ngữ",
+      "translation": "ngôn ngữ (外来語)",
+      "q": "Chữ 語 trong từ 外来語 mang âm Hán Việt nào?",
+      "a": [
+        "LAI",
+        "NGỮ",
+        "HOÀN",
+        "CẢNH"
+      ],
+      "c": 1,
+      "ex": "外来語: từ ngoại lai"
+    },
+    {
+      "word": "環",
+      "romaji": "hoàn",
+      "translation": "vòng quanh (環境)",
+      "q": "Chữ 環 trong từ 環境 mang âm Hán Việt nào?",
+      "a": [
+        "NGỮ",
+        "HOÀN",
+        "CẢNH",
+        "KÝ"
+      ],
+      "c": 1,
+      "ex": "環境: môi trường"
+    },
+    {
+      "word": "境",
+      "romaji": "cảnh",
+      "translation": "khung cảnh, môi trường (環境)",
+      "q": "Chữ 境 trong từ 環境 mang âm Hán Việt nào?",
+      "a": [
+        "HOÀN",
+        "CẢNH",
+        "KÝ",
+        "SỰ"
+      ],
+      "c": 1,
+      "ex": "環境: môi trường"
+    },
+    {
+      "word": "記",
+      "romaji": "ký",
+      "translation": "ghi chép (記事)",
+      "q": "Chữ 記 trong từ 記事 mang âm Hán Việt nào?",
+      "a": [
+        "CẢNH",
+        "KÝ",
+        "SỰ",
+        "HƯU"
+      ],
+      "c": 1,
+      "ex": "記事: bài báo"
+    },
+    {
+      "word": "事",
+      "romaji": "sự",
+      "translation": "việc (記事)",
+      "q": "Chữ 事 trong từ 記事 mang âm Hán Việt nào?",
+      "a": [
+        "KÝ",
+        "SỰ",
+        "HƯU",
+        "HƯU"
+      ],
+      "c": 1,
+      "ex": "記事: bài báo"
+    },
+    {
+      "word": "休",
+      "romaji": "hưu",
+      "translation": "nghỉ (休日)",
+      "q": "Chữ 休 trong từ 休日 mang âm Hán Việt nào?",
+      "a": [
+        "SỰ",
+        "HƯU",
+        "NHẬT",
+        "HƯU"
+      ],
+      "c": 1,
+      "ex": "休日: ngày nghỉ"
+    },
+    {
+      "word": "日",
+      "romaji": "nhật",
+      "translation": "ngày (休日)",
+      "q": "Chữ 日 trong từ 休日 mang âm Hán Việt nào?",
+      "a": [
+        "HƯU",
+        "NHẬT",
+        "HƯU",
+        "KẾT"
+      ],
+      "c": 1,
+      "ex": "休日: ngày nghỉ"
+    },
+    {
+      "word": "結",
+      "romaji": "kết",
+      "translation": "kết (結果)",
+      "q": "Chữ 結 trong từ 結果 mang âm Hán Việt nào?",
+      "a": [
+        "NHẬT",
+        "HƯU",
+        "KẾT",
+        "QUẢ"
+      ],
+      "c": 2,
+      "ex": "結果: kết quả"
+    },
+    {
+      "word": "果",
+      "romaji": "quả",
+      "translation": "quả (結果)",
+      "q": "Chữ 果 trong từ 結果 mang âm Hán Việt nào?",
+      "a": [
+        "HƯU",
+        "KẾT",
+        "QUẢ",
+        "CÔNG"
+      ],
+      "c": 2,
+      "ex": "結果: kết quả"
+    },
+    {
+      "word": "工",
+      "romaji": "công",
+      "translation": "công việc (工事)",
+      "q": "Chữ 工 trong từ 工事 mang âm Hán Việt nào?",
+      "a": [
+        "KẾT",
+        "QUẢ",
+        "CÔNG",
+        "KIỆN"
+      ],
+      "c": 2,
+      "ex": "工事: thi công"
+    },
+    {
+      "word": "件",
+      "romaji": "kiện",
+      "translation": "việc, kiện (事件)",
+      "q": "Chữ 件 trong từ 事件 mang âm Hán Việt nào?",
+      "a": [
+        "QUẢ",
+        "CÔNG",
+        "KIỆN",
+        "ĐOẠN"
+      ],
+      "c": 2,
+      "ex": "事件: vụ việc"
+    },
+    {
+      "word": "断",
+      "romaji": "đoạn",
+      "translation": "cắt đứt (断水)",
+      "q": "Chữ 断 trong từ 断水 mang âm Hán Việt nào?",
+      "a": [
+        "CÔNG",
+        "KIỆN",
+        "ĐOẠN",
+        "THỦY"
+      ],
+      "c": 2,
+      "ex": "断水: cắt nước"
+    },
+    {
+      "word": "水",
+      "romaji": "thủy",
+      "translation": "nước (断水)",
+      "q": "Chữ 水 trong từ 断水 mang âm Hán Việt nào?",
+      "a": [
+        "KIỆN",
+        "ĐOẠN",
+        "THỦY",
+        "TRƯỜNG"
+      ],
+      "c": 2,
+      "ex": "断水: cắt nước"
+    },
+    {
+      "word": "場",
+      "romaji": "trường",
+      "translation": "nơi, trường hợp (場合)",
+      "q": "Chữ 場 trong từ 場合 mang âm Hán Việt nào?",
+      "a": [
+        "ĐOẠN",
+        "THỦY",
+        "TRƯỜNG",
+        "HỢP"
+      ],
+      "c": 2,
+      "ex": "場合: trường hợp"
+    },
+    {
+      "word": "合",
+      "romaji": "hợp",
+      "translation": "hợp (場合)",
+      "q": "Chữ 合 trong từ 場合 mang âm Hán Việt nào?",
+      "a": [
+        "THỦY",
+        "TRƯỜNG",
+        "HỢP",
+        "BÚT"
+      ],
+      "c": 2,
+      "ex": "場合: trường hợp"
+    },
+    {
+      "word": "筆",
+      "romaji": "bút",
+      "translation": "viết, bút (筆者)",
+      "q": "Chữ 筆 trong từ 筆者 mang âm Hán Việt nào?",
+      "a": [
+        "TRƯỜNG",
+        "HỢP",
+        "BÚT",
+        "GIẢ"
+      ],
+      "c": 2,
+      "ex": "筆者: tác giả"
+    },
+    {
+      "word": "者",
+      "romaji": "giả",
+      "translation": "người (筆者)",
+      "q": "Chữ 者 trong từ 筆者 mang âm Hán Việt nào?",
+      "a": [
+        "HỢP",
+        "BÚT",
+        "GIẢ",
+        "TẤT"
+      ],
+      "c": 2,
+      "ex": "筆者: tác giả"
+    }
+  ]
+}

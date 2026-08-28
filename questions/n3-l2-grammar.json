@@ -1,0 +1,135 @@
+{
+  "id": "n3-l2-grammar",
+  "name": "N3 Bài 2 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 2 N3 (Chuukyuu I): ~たら/~た (kết quả sau khi làm gì), ~というのは~のことだ/ということだ (giải thích nghĩa), ~というN, ~ように言う/注意する/伝える/頼む (truyền đạt lời), ~みたいだ/みたいな/みたいに.",
+  "category": "grammar",
+  "createdAt": "2026-08-28T06:40:24.849Z",
+  "updatedAt": "2026-08-28T06:41:17.961Z",
+  "questions": [
+    {
+      "sentence": "窓を拭いたら部屋が明るくなりました",
+      "chunks": [
+        "窓",
+        "を",
+        "拭いたら",
+        "部屋",
+        "が",
+        "明るくなりました"
+      ],
+      "translation": "Lau cửa sổ xong thì phòng sáng lên",
+      "ex": "Vたら+Vた: kết quả X xảy ra sau khi làm Y, Y không phải động từ ý chí"
+    },
+    {
+      "sentence": "家に帰ったらベッドで猫が寝ていました",
+      "chunks": [
+        "家",
+        "に",
+        "帰ったら",
+        "ベッド",
+        "で",
+        "猫",
+        "が",
+        "寝ていました"
+      ],
+      "translation": "Về nhà thì thấy con mèo đang ngủ trên giường",
+      "ex": "Vたら+Vていました: phát hiện ngẫu nhiên sau khi làm gì"
+    },
+    {
+      "sentence": "外来語というのは日本語になった外国語のことです",
+      "chunks": [
+        "外来語というのは",
+        "日本語",
+        "に",
+        "なった",
+        "外国語のことです"
+      ],
+      "translation": "Từ ngoại lai là từ nước ngoài đã trở thành tiếng Nhật",
+      "ex": "Nというのは+のことです: giải thích ý nghĩa của một từ"
+    },
+    {
+      "sentence": "オタクというのは特別好きなものがある人のことです",
+      "chunks": [
+        "オタクというのは",
+        "特別好きなもの",
+        "がある",
+        "人のことです"
+      ],
+      "translation": "Otaku là người có thứ gì đó đặc biệt yêu thích",
+      "ex": "Nというのは+のことです: giải thích ý nghĩa"
+    },
+    {
+      "sentence": "彼は会社を辞めるという話を聞きました",
+      "chunks": [
+        "彼",
+        "は",
+        "会社",
+        "を",
+        "辞めるという話",
+        "を",
+        "聞きました"
+      ],
+      "translation": "Tôi nghe được tin anh ấy sẽ nghỉ việc",
+      "ex": "普通形+という+N: N2 (danh từ thông thường) diễn giải nội dung"
+    },
+    {
+      "sentence": "3億円が盗まれる事件が起きました",
+      "chunks": [
+        "3億円",
+        "が",
+        "盗まれる事件",
+        "が",
+        "起きました"
+      ],
+      "translation": "Đã xảy ra vụ việc 3 trăm triệu yên bị trộm",
+      "ex": "普通形+という+N: diễn giải nội dung sự kiện"
+    },
+    {
+      "sentence": "先生にレポートを出すように言われました",
+      "chunks": [
+        "先生",
+        "に",
+        "レポート",
+        "を",
+        "出すように",
+        "言われました"
+      ],
+      "translation": "Tôi được thầy bảo phải nộp báo cáo",
+      "ex": "Vる+ように+言われます: được ai đó yêu cầu làm gì"
+    },
+    {
+      "sentence": "母に卵を買ってくるように頼まれました",
+      "chunks": [
+        "母",
+        "に",
+        "卵",
+        "を",
+        "買ってくるように",
+        "頼まれました"
+      ],
+      "translation": "Tôi được mẹ nhờ mua trứng về",
+      "ex": "Vる+ように+頼まれます: được ai đó nhờ làm gì"
+    },
+    {
+      "sentence": "この建物は学校みたいです",
+      "chunks": [
+        "この建物",
+        "は",
+        "学校みたいです"
+      ],
+      "translation": "Tòa nhà này giống như trường học",
+      "ex": "N+みたいです: giống như N, khẩu ngữ hơn ようです"
+    },
+    {
+      "sentence": "パンダみたいな犬がいます",
+      "chunks": [
+        "パンダ",
+        "みたいな",
+        "犬",
+        "が",
+        "います"
+      ],
+      "translation": "Có con chó giống như gấu trúc",
+      "ex": "N+みたいな+N2: N2 giống như N"
+    }
+  ]
+}

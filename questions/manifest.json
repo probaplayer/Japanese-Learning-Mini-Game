@@ -115,6 +115,10 @@
     {
       "id": "n3-l1-path",
       "name": "N3 Bài 1"
+    },
+    {
+      "id": "n3-l2-path",
+      "name": "N3 Bài 2"
     }
   ],
   "sets": [
@@ -1338,6 +1342,50 @@
       "questionCount": 10,
       "updatedAt": "2026-08-28T02:01:39.927Z",
       "roadmapId": "n3-l1-path"
+    },
+    {
+      "id": "n3-l2-vocab",
+      "file": "n3-l2-vocab.json",
+      "name": "N3 Bài 2 - Từ vựng (nghĩa)",
+      "category": "vocabulary",
+      "order": 13,
+      "level": "N3",
+      "questionCount": 24,
+      "updatedAt": "2026-08-28T06:33:37.606Z",
+      "roadmapId": "n3-l2-path"
+    },
+    {
+      "id": "n3-l2-kanji",
+      "file": "n3-l2-kanji.json",
+      "name": "N3 Bài 2 - Từ vựng Kanji (đọc)",
+      "category": "vocabulary",
+      "order": 14,
+      "level": "N3",
+      "questionCount": 22,
+      "updatedAt": "2026-08-28T06:34:31.427Z",
+      "roadmapId": "n3-l2-path"
+    },
+    {
+      "id": "n3-l2-kanji-hanviet",
+      "file": "n3-l2-kanji-hanviet.json",
+      "name": "N3 Bài 2 - Hán Việt từng Kanji",
+      "category": "vocabulary",
+      "order": 15,
+      "level": "N3",
+      "questionCount": 32,
+      "updatedAt": "2026-08-28T06:37:00.767Z",
+      "roadmapId": "n3-l2-path"
+    },
+    {
+      "id": "n3-l2-grammar",
+      "file": "n3-l2-grammar.json",
+      "name": "N3 Bài 2 - Ngữ pháp",
+      "category": "grammar",
+      "order": 16,
+      "level": "N3",
+      "questionCount": 10,
+      "updatedAt": "2026-08-28T06:41:17.961Z",
+      "roadmapId": "n3-l2-path"
     }
   ]
 }

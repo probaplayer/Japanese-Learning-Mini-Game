@@ -107,6 +107,10 @@
     {
       "id": "unassigned",
       "name": "Chưa phân loại"
+    },
+    {
+      "id": "n5-l1-path",
+      "name": "N5 Bài 1"
     }
   ],
   "sets": [
@@ -1242,6 +1246,50 @@
       "questionCount": 10,
       "updatedAt": "2026-08-28T01:45:47.311Z",
       "roadmapId": "n4-l50-path"
+    },
+    {
+      "id": "n5-l1-vocab",
+      "file": "n5-l1-vocab.json",
+      "name": "N5 Bài 1 - Từ vựng (nghĩa)",
+      "category": "vocabulary",
+      "order": 5,
+      "level": "N5",
+      "questionCount": 24,
+      "updatedAt": "2026-08-28T01:50:51.948Z",
+      "roadmapId": "n5-l1-path"
+    },
+    {
+      "id": "n5-l1-kanji",
+      "file": "n5-l1-kanji.json",
+      "name": "N5 Bài 1 - Từ vựng Kanji (đọc)",
+      "category": "vocabulary",
+      "order": 6,
+      "level": "N5",
+      "questionCount": 19,
+      "updatedAt": "2026-08-28T01:51:39.834Z",
+      "roadmapId": "n5-l1-path"
+    },
+    {
+      "id": "n5-l1-kanji-hanviet",
+      "file": "n5-l1-kanji-hanviet.json",
+      "name": "N5 Bài 1 - Hán Việt từng Kanji",
+      "category": "vocabulary",
+      "order": 7,
+      "level": "N5",
+      "questionCount": 29,
+      "updatedAt": "2026-08-28T01:52:39.251Z",
+      "roadmapId": "n5-l1-path"
+    },
+    {
+      "id": "n5-l1-grammar",
+      "file": "n5-l1-grammar.json",
+      "name": "N5 Bài 1 - Ngữ pháp",
+      "category": "grammar",
+      "order": 8,
+      "level": "N5",
+      "questionCount": 10,
+      "updatedAt": "2026-08-28T01:53:17.145Z",
+      "roadmapId": "n5-l1-path"
     }
   ]
 }

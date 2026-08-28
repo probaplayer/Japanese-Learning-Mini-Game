@@ -1,0 +1,416 @@
+{
+  "id": "n5-l1-kanji-hanviet",
+  "name": "N5 Bài 1 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 1, hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-28T01:52:39.251Z",
+  "updatedAt": "2026-08-28T01:52:39.251Z",
+  "questions": [
+    {
+      "word": "私",
+      "romaji": "tư",
+      "translation": "tôi (私)",
+      "q": "Chữ 私 mang âm Hán Việt nào?",
+      "a": [
+        "TƯ",
+        "NHÂN",
+        "PHƯƠNG",
+        "TIÊN"
+      ],
+      "c": 0,
+      "ex": "私: tôi"
+    },
+    {
+      "word": "人",
+      "romaji": "nhân",
+      "translation": "người (あの人)",
+      "q": "Chữ 人 trong từ あの人 mang âm Hán Việt nào?",
+      "a": [
+        "TƯ",
+        "NHÂN",
+        "TIÊN",
+        "SINH"
+      ],
+      "c": 1,
+      "ex": "あの人: người đó"
+    },
+    {
+      "word": "方",
+      "romaji": "phương",
+      "translation": "dạng lịch sự của 人 (あの方)",
+      "q": "Chữ 方 trong từ あの方 mang âm Hán Việt nào?",
+      "a": [
+        "NHÂN",
+        "PHƯƠNG",
+        "TIÊN",
+        "SINH"
+      ],
+      "c": 1,
+      "ex": "あの方: người đó (lịch sự)"
+    },
+    {
+      "word": "先",
+      "romaji": "tiên",
+      "translation": "trước (先生)",
+      "q": "Chữ 先 trong từ 先生 mang âm Hán Việt nào?",
+      "a": [
+        "PHƯƠNG",
+        "TIÊN",
+        "SINH",
+        "GIÁO"
+      ],
+      "c": 1,
+      "ex": "先生: giáo viên"
+    },
+    {
+      "word": "生",
+      "romaji": "sinh",
+      "translation": "sinh (先生/学生)",
+      "q": "Chữ 生 trong từ 先生 mang âm Hán Việt nào?",
+      "a": [
+        "TIÊN",
+        "SINH",
+        "GIÁO",
+        "SƯ"
+      ],
+      "c": 1,
+      "ex": "先生 / 学生: giáo viên / sinh viên"
+    },
+    {
+      "word": "教",
+      "romaji": "giáo",
+      "translation": "dạy (教師)",
+      "q": "Chữ 教 trong từ 教師 mang âm Hán Việt nào?",
+      "a": [
+        "SINH",
+        "GIÁO",
+        "SƯ",
+        "HỌC"
+      ],
+      "c": 1,
+      "ex": "教師: giáo viên"
+    },
+    {
+      "word": "師",
+      "romaji": "sư",
+      "translation": "thầy (教師)",
+      "q": "Chữ 師 trong từ 教師 mang âm Hán Việt nào?",
+      "a": [
+        "GIÁO",
+        "SƯ",
+        "HỌC",
+        "HỘI"
+      ],
+      "c": 1,
+      "ex": "教師: giáo viên"
+    },
+    {
+      "word": "学",
+      "romaji": "học",
+      "translation": "học (学生)",
+      "q": "Chữ 学 trong từ 学生 mang âm Hán Việt nào?",
+      "a": [
+        "SƯ",
+        "HỌC",
+        "HỘI",
+        "XÃ"
+      ],
+      "c": 1,
+      "ex": "学生: sinh viên"
+    },
+    {
+      "word": "会",
+      "romaji": "hội",
+      "translation": "hội (会社員)",
+      "q": "Chữ 会 trong từ 会社員 mang âm Hán Việt nào?",
+      "a": [
+        "HỌC",
+        "HỘI",
+        "XÃ",
+        "VIÊN"
+      ],
+      "c": 1,
+      "ex": "会社員: nhân viên công ty"
+    },
+    {
+      "word": "社",
+      "romaji": "xã",
+      "translation": "công ty (社員)",
+      "q": "Chữ 社 trong từ 社員 mang âm Hán Việt nào?",
+      "a": [
+        "HỘI",
+        "XÃ",
+        "VIÊN",
+        "NGÂN"
+      ],
+      "c": 1,
+      "ex": "会社員 / 社員: nhân viên công ty"
+    },
+    {
+      "word": "員",
+      "romaji": "viên",
+      "translation": "nhân viên (社員/銀行員)",
+      "q": "Chữ 員 trong từ 社員 mang âm Hán Việt nào?",
+      "a": [
+        "XÃ",
+        "VIÊN",
+        "NGÂN",
+        "HÀNH"
+      ],
+      "c": 1,
+      "ex": "社員 / 銀行員: nhân viên"
+    },
+    {
+      "word": "銀",
+      "romaji": "ngân",
+      "translation": "bạc, ngân hàng (銀行員)",
+      "q": "Chữ 銀 trong từ 銀行員 mang âm Hán Việt nào?",
+      "a": [
+        "VIÊN",
+        "NGÂN",
+        "HÀNH",
+        "Y"
+      ],
+      "c": 1,
+      "ex": "銀行員: nhân viên ngân hàng"
+    },
+    {
+      "word": "行",
+      "romaji": "hành",
+      "translation": "đi, ngân hàng (銀行)",
+      "q": "Chữ 行 trong từ 銀行員 mang âm Hán Việt nào?",
+      "a": [
+        "NGÂN",
+        "HÀNH",
+        "Y",
+        "GIẢ"
+      ],
+      "c": 1,
+      "ex": "銀行員: nhân viên ngân hàng"
+    },
+    {
+      "word": "医",
+      "romaji": "y",
+      "translation": "y học (医者)",
+      "q": "Chữ 医 trong từ 医者 mang âm Hán Việt nào?",
+      "a": [
+        "HÀNH",
+        "Y",
+        "GIẢ",
+        "NGHIÊN"
+      ],
+      "c": 1,
+      "ex": "医者: bác sĩ"
+    },
+    {
+      "word": "者",
+      "romaji": "giả",
+      "translation": "người (医者/研究者)",
+      "q": "Chữ 者 trong từ 医者 mang âm Hán Việt nào?",
+      "a": [
+        "Y",
+        "GIẢ",
+        "NGHIÊN",
+        "CỨU"
+      ],
+      "c": 1,
+      "ex": "医者 / 研究者: bác sĩ / nhà nghiên cứu"
+    },
+    {
+      "word": "研",
+      "romaji": "nghiên",
+      "translation": "nghiên cứu (研究)",
+      "q": "Chữ 研 trong từ 研究者 mang âm Hán Việt nào?",
+      "a": [
+        "GIẢ",
+        "NGHIÊN",
+        "CỨU",
+        "ĐẠI"
+      ],
+      "c": 1,
+      "ex": "研究者: nhà nghiên cứu"
+    },
+    {
+      "word": "究",
+      "romaji": "cứu",
+      "translation": "tìm tòi (研究)",
+      "q": "Chữ 究 trong từ 研究者 mang âm Hán Việt nào?",
+      "a": [
+        "NGHIÊN",
+        "CỨU",
+        "ĐẠI",
+        "BỆNH"
+      ],
+      "c": 1,
+      "ex": "研究者: nhà nghiên cứu"
+    },
+    {
+      "word": "大",
+      "romaji": "đại",
+      "translation": "lớn (大学)",
+      "q": "Chữ 大 trong từ 大学 mang âm Hán Việt nào?",
+      "a": [
+        "CỨU",
+        "ĐẠI",
+        "BỆNH",
+        "VIỆN"
+      ],
+      "c": 1,
+      "ex": "大学: trường đại học"
+    },
+    {
+      "word": "病",
+      "romaji": "bệnh",
+      "translation": "bệnh (病院)",
+      "q": "Chữ 病 trong từ 病院 mang âm Hán Việt nào?",
+      "a": [
+        "ĐẠI",
+        "BỆNH",
+        "VIỆN",
+        "ĐIỆN"
+      ],
+      "c": 1,
+      "ex": "病院: bệnh viện"
+    },
+    {
+      "word": "院",
+      "romaji": "viện",
+      "translation": "viện (病院)",
+      "q": "Chữ 院 trong từ 病院 mang âm Hán Việt nào?",
+      "a": [
+        "BỆNH",
+        "VIỆN",
+        "ĐIỆN",
+        "KHÍ"
+      ],
+      "c": 1,
+      "ex": "病院: bệnh viện"
+    },
+    {
+      "word": "電",
+      "romaji": "điện",
+      "translation": "điện (電気)",
+      "q": "Chữ 電 trong từ 電気 mang âm Hán Việt nào?",
+      "a": [
+        "VIỆN",
+        "ĐIỆN",
+        "KHÍ",
+        "THUỶ"
+      ],
+      "c": 1,
+      "ex": "電気: điện"
+    },
+    {
+      "word": "気",
+      "romaji": "khí",
+      "translation": "không khí, đặc tính (電気)",
+      "q": "Chữ 気 trong từ 電気 mang âm Hán Việt nào?",
+      "a": [
+        "ĐIỆN",
+        "KHÍ",
+        "THUỶ",
+        "TUẾ"
+      ],
+      "c": 1,
+      "ex": "電気: điện"
+    },
+    {
+      "word": "誰",
+      "romaji": "thuỳ",
+      "translation": "ai (誰)",
+      "q": "Chữ 誰 mang âm Hán Việt nào?",
+      "a": [
+        "KHÍ",
+        "THUỶ",
+        "TUẾ",
+        "HÀ"
+      ],
+      "c": 1,
+      "ex": "誰: ai"
+    },
+    {
+      "word": "歳",
+      "romaji": "tuế",
+      "translation": "tuổi (何歳)",
+      "q": "Chữ 歳 trong từ 何歳 mang âm Hán Việt nào?",
+      "a": [
+        "THUỶ",
+        "TUẾ",
+        "HÀ",
+        "THẤT"
+      ],
+      "c": 1,
+      "ex": "何歳: mấy tuổi"
+    },
+    {
+      "word": "何",
+      "romaji": "hà",
+      "translation": "nào, bao nhiêu (何歳)",
+      "q": "Chữ 何 trong từ 何歳 mang âm Hán Việt nào?",
+      "a": [
+        "TUẾ",
+        "HÀ",
+        "THẤT",
+        "LỄ"
+      ],
+      "c": 1,
+      "ex": "何歳: mấy tuổi"
+    },
+    {
+      "word": "失",
+      "romaji": "thất",
+      "translation": "mất (失礼)",
+      "q": "Chữ 失 trong từ 失礼 mang âm Hán Việt nào?",
+      "a": [
+        "HÀ",
+        "THẤT",
+        "LỄ",
+        "DANH"
+      ],
+      "c": 1,
+      "ex": "失礼ですが: xin lỗi nhưng"
+    },
+    {
+      "word": "礼",
+      "romaji": "lễ",
+      "translation": "lễ phép (失礼)",
+      "q": "Chữ 礼 trong từ 失礼 mang âm Hán Việt nào?",
+      "a": [
+        "THẤT",
+        "LỄ",
+        "DANH",
+        "TIỀN"
+      ],
+      "c": 1,
+      "ex": "失礼ですが: xin lỗi nhưng"
+    },
+    {
+      "word": "名",
+      "romaji": "danh",
+      "translation": "tên (お名前)",
+      "q": "Chữ 名 trong từ お名前 mang âm Hán Việt nào?",
+      "a": [
+        "LỄ",
+        "DANH",
+        "TIỀN",
+        "PHƯƠNG"
+      ],
+      "c": 1,
+      "ex": "お名前は: tên là gì"
+    },
+    {
+      "word": "前",
+      "romaji": "tiền",
+      "translation": "trước (お名前)",
+      "q": "Chữ 前 trong từ お名前 mang âm Hán Việt nào?",
+      "a": [
+        "DANH",
+        "TIỀN",
+        "PHƯƠNG",
+        "ĐẠI"
+      ],
+      "c": 1,
+      "ex": "お名前は: tên là gì"
+    }
+  ]
+}

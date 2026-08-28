@@ -1,0 +1,276 @@
+{
+  "id": "n5-l1-kanji",
+  "name": "N5 Bài 1 - Từ vựng Kanji (đọc)",
+  "description": "Từ vựng có kanji Bài 1 Minna no Nihongo (N5). Đáp án chỉ hiện hiragana.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-28T01:51:39.834Z",
+  "updatedAt": "2026-08-28T01:51:39.834Z",
+  "questions": [
+    {
+      "word": "私",
+      "romaji": "わたし",
+      "translation": "tôi",
+      "q": "Từ 私 đọc là gì?",
+      "a": [
+        "わたし",
+        "わたしたち",
+        "あのひと",
+        "あのかた"
+      ],
+      "c": 0,
+      "ex": "tôi | 私 (tư)"
+    },
+    {
+      "word": "私たち",
+      "romaji": "わたしたち",
+      "translation": "chúng tôi",
+      "q": "Từ 私たち đọc là gì?",
+      "a": [
+        "わたし",
+        "あのひと",
+        "あのかた",
+        "わたしたち"
+      ],
+      "c": 3,
+      "ex": "chúng tôi | 私 (tư) + 達 (đạt)"
+    },
+    {
+      "word": "あの人",
+      "romaji": "あのひと",
+      "translation": "người đó",
+      "q": "Từ あの人 đọc là gì?",
+      "a": [
+        "あのひと",
+        "あのかた",
+        "せんせい",
+        "きょうし"
+      ],
+      "c": 0,
+      "ex": "người đó | 人 (nhân)"
+    },
+    {
+      "word": "あの方",
+      "romaji": "あのかた",
+      "translation": "người đó (cách nói lịch sự)",
+      "q": "Từ あの方 đọc là gì?",
+      "a": [
+        "あのかた",
+        "せんせい",
+        "きょうし",
+        "がくせい"
+      ],
+      "c": 0,
+      "ex": "người đó (lịch sự) | 方 (phương)"
+    },
+    {
+      "word": "先生",
+      "romaji": "せんせい",
+      "translation": "giáo viên, người hướng dẫn",
+      "q": "Từ 先生 đọc là gì?",
+      "a": [
+        "せんせい",
+        "きょうし",
+        "がくせい",
+        "かいしゃいん"
+      ],
+      "c": 0,
+      "ex": "giáo viên | 先 (tiên) + 生 (sinh)"
+    },
+    {
+      "word": "教師",
+      "romaji": "きょうし",
+      "translation": "giáo viên (dùng chỉ nghề nghiệp)",
+      "q": "Từ 教師 đọc là gì?",
+      "a": [
+        "きょうし",
+        "がくせい",
+        "かいしゃいん",
+        "しゃいん"
+      ],
+      "c": 0,
+      "ex": "giáo viên (nghề nghiệp) | 教 (giáo) + 師 (sư)"
+    },
+    {
+      "word": "学生",
+      "romaji": "がくせい",
+      "translation": "sinh viên",
+      "q": "Từ 学生 đọc là gì?",
+      "a": [
+        "がくせい",
+        "かいしゃいん",
+        "しゃいん",
+        "ぎんこういん"
+      ],
+      "c": 0,
+      "ex": "sinh viên | 学 (học) + 生 (sinh)"
+    },
+    {
+      "word": "会社員",
+      "romaji": "かいしゃいん",
+      "translation": "nhân viên công ty",
+      "q": "Từ 会社員 đọc là gì?",
+      "a": [
+        "かいしゃいん",
+        "しゃいん",
+        "ぎんこういん",
+        "いしゃ"
+      ],
+      "c": 0,
+      "ex": "nhân viên công ty | 会 (hội) + 社 (xã) + 員 (viên)"
+    },
+    {
+      "word": "社員",
+      "romaji": "しゃいん",
+      "translation": "nhân viên (của công ty)",
+      "q": "Từ 社員 đọc là gì?",
+      "a": [
+        "しゃいん",
+        "ぎんこういん",
+        "いしゃ",
+        "けんきゅうしゃ"
+      ],
+      "c": 0,
+      "ex": "nhân viên (công ty) | 社 (xã) + 員 (viên)"
+    },
+    {
+      "word": "銀行員",
+      "romaji": "ぎんこういん",
+      "translation": "nhân viên ngân hàng",
+      "q": "Từ 銀行員 đọc là gì?",
+      "a": [
+        "ぎんこういん",
+        "いしゃ",
+        "けんきゅうしゃ",
+        "だいがく"
+      ],
+      "c": 0,
+      "ex": "nhân viên ngân hàng | 銀 (ngân) + 行 (hành) + 員 (viên)"
+    },
+    {
+      "word": "医者",
+      "romaji": "いしゃ",
+      "translation": "bác sĩ",
+      "q": "Từ 医者 đọc là gì?",
+      "a": [
+        "いしゃ",
+        "けんきゅうしゃ",
+        "だいがく",
+        "びょういん"
+      ],
+      "c": 0,
+      "ex": "bác sĩ | 医 (y) + 者 (giả)"
+    },
+    {
+      "word": "研究者",
+      "romaji": "けんきゅうしゃ",
+      "translation": "nhà nghiên cứu, học giả",
+      "q": "Từ 研究者 đọc là gì?",
+      "a": [
+        "けんきゅうしゃ",
+        "だいがく",
+        "びょういん",
+        "でんき"
+      ],
+      "c": 0,
+      "ex": "nhà nghiên cứu | 研 (nghiên) + 究 (cứu) + 者 (giả)"
+    },
+    {
+      "word": "大学",
+      "romaji": "だいがく",
+      "translation": "trường đại học",
+      "q": "Từ 大学 đọc là gì?",
+      "a": [
+        "だいがく",
+        "びょういん",
+        "でんき",
+        "だれ"
+      ],
+      "c": 0,
+      "ex": "trường đại học | 大 (đại) + 学 (học)"
+    },
+    {
+      "word": "病院",
+      "romaji": "びょういん",
+      "translation": "bệnh viện",
+      "q": "Từ 病院 đọc là gì?",
+      "a": [
+        "びょういん",
+        "でんき",
+        "だれ",
+        "なんさい"
+      ],
+      "c": 0,
+      "ex": "bệnh viện | 病 (bệnh) + 院 (viện)"
+    },
+    {
+      "word": "電気",
+      "romaji": "でんき",
+      "translation": "điện, đèn điện",
+      "q": "Từ 電気 đọc là gì?",
+      "a": [
+        "でんき",
+        "だれ",
+        "なんさい",
+        "おなまえ"
+      ],
+      "c": 0,
+      "ex": "điện | 電 (điện) + 気 (khí)"
+    },
+    {
+      "word": "誰",
+      "romaji": "だれ",
+      "translation": "ai",
+      "q": "Từ 誰 đọc là gì?",
+      "a": [
+        "だれ",
+        "なんさい",
+        "おなまえ",
+        "しつれい"
+      ],
+      "c": 0,
+      "ex": "ai | 誰 (thuỳ)"
+    },
+    {
+      "word": "何歳",
+      "romaji": "なんさい",
+      "translation": "mấy tuổi",
+      "q": "Từ 何歳 đọc là gì?",
+      "a": [
+        "なんさい",
+        "おなまえ",
+        "しつれい",
+        "さい"
+      ],
+      "c": 0,
+      "ex": "mấy tuổi | 何 (hà) + 歳 (tuế)"
+    },
+    {
+      "word": "失礼ですが",
+      "romaji": "しつれいですが",
+      "translation": "xin lỗi nhưng",
+      "q": "Từ 失礼ですが đọc là gì?",
+      "a": [
+        "おなまえ",
+        "しつれい",
+        "さい",
+        "しゃいん"
+      ],
+      "c": 1,
+      "ex": "xin lỗi nhưng | 失 (thất) + 礼 (lễ)"
+    },
+    {
+      "word": "お名前は",
+      "romaji": "おなまえ",
+      "translation": "tên là gì",
+      "q": "Từ お名前は đọc là gì?",
+      "a": [
+        "さい",
+        "しゃいん",
+        "おなまえ",
+        "ひょういん"
+      ],
+      "c": 2,
+      "ex": "tên là gì | 名 (danh) + 前 (tiền)"
+    }
+  ]
+}

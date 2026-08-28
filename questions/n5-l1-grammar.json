@@ -1,0 +1,115 @@
+{
+  "id": "n5-l1-grammar",
+  "name": "N5 Bài 1 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 1 Minna no Nihongo: N1はN2です (là), N1はN2じゃありません (phủ định), Sか (câu hỏi), Nも (cũng), N1のN2 (sở hữu).",
+  "category": "grammar",
+  "createdAt": "2026-08-28T01:53:17.145Z",
+  "updatedAt": "2026-08-28T01:53:17.145Z",
+  "questions": [
+    {
+      "sentence": "わたしはマイク・ミラーです",
+      "chunks": [
+        "わたし",
+        "は",
+        "マイク・ミラーです"
+      ],
+      "translation": "Tôi là Mike Miller",
+      "ex": "N1はN2です: は nêu chủ đề, です khẳng định lịch sự ở thì hiện tại"
+    },
+    {
+      "sentence": "わたしはエンジニアです",
+      "chunks": [
+        "わたし",
+        "は",
+        "エンジニアです"
+      ],
+      "translation": "Tôi là kỹ sư",
+      "ex": "N1はN2です: giới thiệu nghề nghiệp bản thân"
+    },
+    {
+      "sentence": "サントスさんは学生じゃありません",
+      "chunks": [
+        "サントスさん",
+        "は",
+        "学生",
+        "じゃありません"
+      ],
+      "translation": "Anh Santos không phải là học sinh",
+      "ex": "N1はN2じゃありません: dạng phủ định của です, dùng trong hội thoại hàng ngày"
+    },
+    {
+      "sentence": "ミラーさんはアメリカ人ですか",
+      "chunks": [
+        "ミラーさん",
+        "は",
+        "アメリカ人",
+        "ですか"
+      ],
+      "translation": "Anh Miller có phải người Mỹ không?",
+      "ex": "Sか: thêm か vào cuối câu để tạo câu hỏi, trật tự từ không đổi"
+    },
+    {
+      "sentence": "あの方はどなたですか",
+      "chunks": [
+        "あの方",
+        "は",
+        "どなたですか"
+      ],
+      "translation": "Vị đó là ai ạ?",
+      "ex": "Sか với từ để hỏi: câu hỏi thay thế phần muốn hỏi, thêm か ở cuối"
+    },
+    {
+      "sentence": "グプタさんも会社員です",
+      "chunks": [
+        "グプタさん",
+        "も",
+        "会社員です"
+      ],
+      "translation": "Anh Gupta cũng là nhân viên công ty",
+      "ex": "Nも: thêm も thay cho は khi nói về chủ đề giống chủ đề trước đó"
+    },
+    {
+      "sentence": "ミラーさんはIMCの社員です",
+      "chunks": [
+        "ミラーさん",
+        "は",
+        "IMCの",
+        "社員です"
+      ],
+      "translation": "Anh Miller là nhân viên của IMC",
+      "ex": "N1のN2: の nối 2 danh từ, N1 là tổ chức mà N2 thuộc về"
+    },
+    {
+      "sentence": "あの方はミラーさんです",
+      "chunks": [
+        "あの方",
+        "は",
+        "ミラーさんです"
+      ],
+      "translation": "Vị đó là anh Miller",
+      "ex": "N1はN2です: trả lời câu hỏi định danh ai đó là ai"
+    },
+    {
+      "sentence": "ミラーさんは先生ですか",
+      "chunks": [
+        "ミラーさん",
+        "は",
+        "先生",
+        "ですか"
+      ],
+      "translation": "Anh Miller có phải giáo viên không?",
+      "ex": "Sか: câu hỏi đúng/sai"
+    },
+    {
+      "sentence": "サントスさんは何歳ですか",
+      "chunks": [
+        "サントスさん",
+        "は",
+        "何歳",
+        "ですか"
+      ],
+      "translation": "Anh Santos bao nhiêu tuổi?",
+      "ex": "何歳ですか: câu hỏi tuổi"
+    }
+  ]
+}

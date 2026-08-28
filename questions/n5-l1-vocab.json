@@ -1,0 +1,346 @@
+{
+  "id": "n5-l1-vocab",
+  "name": "N5 Bài 1 - Từ vựng (nghĩa)",
+  "description": "Từ vựng Minna no Nihongo Bài 1 (N5). Câu hỏi hỏi nghĩa tiếng Việt của từ.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-28T01:50:44.275Z",
+  "updatedAt": "2026-08-28T01:50:51.948Z",
+  "questions": [
+    {
+      "word": "私",
+      "romaji": "わたし",
+      "translation": "tôi",
+      "q": "Từ 私 (わたし) có nghĩa là gì?",
+      "a": [
+        "tôi",
+        "chúng tôi",
+        "bạn",
+        "người đó"
+      ],
+      "c": 0,
+      "ex": "私 (tư) - tôi"
+    },
+    {
+      "word": "私たち",
+      "romaji": "わたしたち",
+      "translation": "chúng tôi",
+      "q": "Từ 私たち (わたしたち) có nghĩa là gì?",
+      "a": [
+        "tôi",
+        "chúng tôi",
+        "bạn",
+        "người đó"
+      ],
+      "c": 1,
+      "ex": "私 (tư) + 達 (đạt) - số nhiều"
+    },
+    {
+      "word": "あなた",
+      "romaji": "あなた",
+      "translation": "bạn (dùng gọi người đối diện)",
+      "q": "Từ あなた có nghĩa là gì?",
+      "a": [
+        "chúng tôi",
+        "bạn (dùng gọi người đối diện)",
+        "người đó",
+        "người đó (lịch sự)"
+      ],
+      "c": 1,
+      "ex": "あなた - không có kanji phổ biến"
+    },
+    {
+      "word": "あの人",
+      "romaji": "あのひと",
+      "translation": "người đó",
+      "q": "Từ あの人 (あのひと) có nghĩa là gì?",
+      "a": [
+        "bạn",
+        "người đó",
+        "người đó (lịch sự)",
+        "mọi người"
+      ],
+      "c": 1,
+      "ex": "人 (nhân) - người"
+    },
+    {
+      "word": "あの方",
+      "romaji": "あのかた",
+      "translation": "người đó (cách nói lịch sự)",
+      "q": "Từ あの方 (あのかた) có nghĩa là gì?",
+      "a": [
+        "người đó",
+        "người đó (cách nói lịch sự)",
+        "mọi người",
+        "giáo viên"
+      ],
+      "c": 1,
+      "ex": "方 (phương) - dạng lịch sự của 人"
+    },
+    {
+      "word": "みなさん",
+      "romaji": "みなさん",
+      "translation": "mọi người, tất cả các bạn",
+      "q": "Từ みなさん có nghĩa là gì?",
+      "a": [
+        "người đó (lịch sự)",
+        "mọi người, tất cả các bạn",
+        "giáo viên",
+        "sinh viên"
+      ],
+      "c": 1,
+      "ex": "みなさん - không có kanji phổ biến"
+    },
+    {
+      "word": "~さん",
+      "romaji": "san",
+      "translation": "Ông/Bà (hậu tố kính ngữ sau tên)",
+      "q": "Hậu tố ~さん có nghĩa là gì?",
+      "a": [
+        "mọi người",
+        "Ông/Bà (hậu tố kính ngữ sau tên)",
+        "giáo viên",
+        "sinh viên"
+      ],
+      "c": 1,
+      "ex": "~さん - hậu tố kính ngữ"
+    },
+    {
+      "word": "先生",
+      "romaji": "せんせい",
+      "translation": "giáo viên, người hướng dẫn",
+      "q": "Từ 先生 (せんせい) có nghĩa là gì?",
+      "a": [
+        "hậu tố kính ngữ",
+        "giáo viên, người hướng dẫn",
+        "sinh viên",
+        "nhân viên công ty"
+      ],
+      "c": 1,
+      "ex": "先 (tiên) + 生 (sinh)"
+    },
+    {
+      "word": "教師",
+      "romaji": "きょうし",
+      "translation": "giáo viên (dùng chỉ nghề nghiệp)",
+      "q": "Từ 教師 (きょうし) có nghĩa là gì?",
+      "a": [
+        "giáo viên",
+        "giáo viên (dùng chỉ nghề nghiệp)",
+        "sinh viên",
+        "nhân viên công ty"
+      ],
+      "c": 1,
+      "ex": "教 (giáo) + 師 (sư)"
+    },
+    {
+      "word": "学生",
+      "romaji": "がくせい",
+      "translation": "sinh viên",
+      "q": "Từ 学生 (がくせい) có nghĩa là gì?",
+      "a": [
+        "giáo viên",
+        "sinh viên",
+        "nhân viên công ty",
+        "nhân viên ngân hàng"
+      ],
+      "c": 1,
+      "ex": "学 (học) + 生 (sinh)"
+    },
+    {
+      "word": "会社員",
+      "romaji": "かいしゃいん",
+      "translation": "nhân viên công ty",
+      "q": "Từ 会社員 (かいしゃいん) có nghĩa là gì?",
+      "a": [
+        "sinh viên",
+        "nhân viên công ty",
+        "nhân viên ngân hàng",
+        "bác sĩ"
+      ],
+      "c": 1,
+      "ex": "会 (hội) + 社 (xã) + 員 (viên)"
+    },
+    {
+      "word": "社員",
+      "romaji": "しゃいん",
+      "translation": "nhân viên (của công ty, dùng với tên công ty)",
+      "q": "Từ 社員 (しゃいん) có nghĩa là gì?",
+      "a": [
+        "nhân viên công ty",
+        "nhân viên (của công ty, dùng với tên công ty)",
+        "nhân viên ngân hàng",
+        "bác sĩ"
+      ],
+      "c": 1,
+      "ex": "社 (xã) + 員 (viên)"
+    },
+    {
+      "word": "銀行員",
+      "romaji": "ぎんこういん",
+      "translation": "nhân viên ngân hàng",
+      "q": "Từ 銀行員 (ぎんこういん) có nghĩa là gì?",
+      "a": [
+        "nhân viên",
+        "nhân viên ngân hàng",
+        "bác sĩ",
+        "nhà nghiên cứu"
+      ],
+      "c": 1,
+      "ex": "銀 (ngân) + 行 (hành) + 員 (viên)"
+    },
+    {
+      "word": "医者",
+      "romaji": "いしゃ",
+      "translation": "bác sĩ",
+      "q": "Từ 医者 (いしゃ) có nghĩa là gì?",
+      "a": [
+        "nhân viên ngân hàng",
+        "bác sĩ",
+        "nhà nghiên cứu, học giả",
+        "kỹ sư"
+      ],
+      "c": 1,
+      "ex": "医 (y) + 者 (giả)"
+    },
+    {
+      "word": "研究者",
+      "romaji": "けんきゅうしゃ",
+      "translation": "nhà nghiên cứu, học giả",
+      "q": "Từ 研究者 (けんきゅうしゃ) có nghĩa là gì?",
+      "a": [
+        "bác sĩ",
+        "nhà nghiên cứu, học giả",
+        "kỹ sư",
+        "trường đại học"
+      ],
+      "c": 1,
+      "ex": "研 (nghiên) + 究 (cứu) + 者 (giả)"
+    },
+    {
+      "word": "エンジニア",
+      "romaji": "えんじにあ",
+      "translation": "kỹ sư",
+      "q": "Từ エンジニア có nghĩa là gì?",
+      "a": [
+        "nhà nghiên cứu",
+        "kỹ sư",
+        "trường đại học",
+        "bệnh viện"
+      ],
+      "c": 1,
+      "ex": "エンジニア (từ mượn tiếng Anh: engineer)"
+    },
+    {
+      "word": "大学",
+      "romaji": "だいがく",
+      "translation": "trường đại học",
+      "q": "Từ 大学 (だいがく) có nghĩa là gì?",
+      "a": [
+        "kỹ sư",
+        "trường đại học",
+        "bệnh viện",
+        "điện, đèn điện"
+      ],
+      "c": 1,
+      "ex": "大 (đại) + 学 (học)"
+    },
+    {
+      "word": "病院",
+      "romaji": "びょういん",
+      "translation": "bệnh viện",
+      "q": "Từ 病院 (びょういん) có nghĩa là gì?",
+      "a": [
+        "trường đại học",
+        "bệnh viện",
+        "điện, đèn điện",
+        "ai"
+      ],
+      "c": 1,
+      "ex": "病 (bệnh) + 院 (viện)"
+    },
+    {
+      "word": "電気",
+      "romaji": "でんき",
+      "translation": "điện, đèn điện",
+      "q": "Từ 電気 (でんき) có nghĩa là gì?",
+      "a": [
+        "bệnh viện",
+        "điện, đèn điện",
+        "ai",
+        "tuổi"
+      ],
+      "c": 1,
+      "ex": "電 (điện) + 気 (khí)"
+    },
+    {
+      "word": "誰",
+      "romaji": "だれ",
+      "translation": "ai",
+      "q": "Từ 誰 (だれ) có nghĩa là gì?",
+      "a": [
+        "điện",
+        "ai",
+        "tuổi",
+        "mấy tuổi"
+      ],
+      "c": 1,
+      "ex": "誰 (thuỳ)"
+    },
+    {
+      "word": "~歳",
+      "romaji": "sai",
+      "translation": "tuổi (hậu tố sau số)",
+      "q": "Hậu tố ~歳 (さい) có nghĩa là gì?",
+      "a": [
+        "ai",
+        "tuổi (hậu tố sau số)",
+        "mấy tuổi",
+        "xin lỗi nhưng"
+      ],
+      "c": 1,
+      "ex": "歳 (tuế)"
+    },
+    {
+      "word": "何歳",
+      "romaji": "なんさい",
+      "translation": "mấy tuổi",
+      "q": "Từ 何歳 (なんさい) có nghĩa là gì?",
+      "a": [
+        "tuổi",
+        "mấy tuổi",
+        "xin lỗi nhưng",
+        "tên là gì"
+      ],
+      "c": 1,
+      "ex": "何 (hà) + 歳 (tuế)"
+    },
+    {
+      "word": "失礼ですが",
+      "romaji": "しつれいですが",
+      "translation": "xin lỗi nhưng (mở đầu câu hỏi)",
+      "q": "Từ 失礼ですが (しつれいですが) có nghĩa là gì?",
+      "a": [
+        "mấy tuổi",
+        "xin lỗi nhưng (mở đầu câu hỏi)",
+        "tên là gì",
+        "rất vui được gặp bạn"
+      ],
+      "c": 1,
+      "ex": "失 (thất) + 礼 (lễ)"
+    },
+    {
+      "word": "お名前は",
+      "romaji": "おなまえは",
+      "translation": "tên là gì (hỏi tên lịch sự)",
+      "q": "Từ お名前は (おなまえは) có nghĩa là gì?",
+      "a": [
+        "xin lỗi nhưng",
+        "tên là gì (hỏi tên lịch sự)",
+        "rất vui được gặp bạn",
+        "rất mong được giúp đỡ"
+      ],
+      "c": 1,
+      "ex": "名 (danh) + 前 (tiền)"
+    }
+  ]
+}

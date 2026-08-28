@@ -1,0 +1,416 @@
+{
+  "id": "n3-l1-kanji-hanviet",
+  "name": "N3 Bài 1 - Hán Việt từng Kanji",
+  "description": "Mỗi câu hiển thị 1 chữ Hán trong từ vựng Bài 1 (N3), hỏi âm Hán Việt của chữ đó.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-28T02:00:51.608Z",
+  "updatedAt": "2026-08-28T02:00:51.608Z",
+  "questions": [
+    {
+      "word": "明",
+      "romaji": "minh",
+      "translation": "sáng (明るい)",
+      "q": "Chữ 明 trong từ 明るい mang âm Hán Việt nào?",
+      "a": [
+        "MINH",
+        "KHOÁI",
+        "THÍCH",
+        "THANH"
+      ],
+      "c": 0,
+      "ex": "明るい: vui vẻ, cởi mở"
+    },
+    {
+      "word": "快",
+      "romaji": "khoái",
+      "translation": "vui, thoải mái (快適)",
+      "q": "Chữ 快 trong từ 快適 mang âm Hán Việt nào?",
+      "a": [
+        "MINH",
+        "THÍCH",
+        "THANH",
+        "KHOÁI"
+      ],
+      "c": 3,
+      "ex": "快適な: thoải mái"
+    },
+    {
+      "word": "適",
+      "romaji": "thích",
+      "translation": "thích hợp (快適)",
+      "q": "Chữ 適 trong từ 快適 mang âm Hán Việt nào?",
+      "a": [
+        "THÍCH",
+        "THANH",
+        "KHIẾT",
+        "KHOÁI"
+      ],
+      "c": 0,
+      "ex": "快適な: thoải mái"
+    },
+    {
+      "word": "清",
+      "romaji": "thanh",
+      "translation": "trong sạch (清潔)",
+      "q": "Chữ 清 trong từ 清潔 mang âm Hán Việt nào?",
+      "a": [
+        "THANH",
+        "KHIẾT",
+        "KHOÁI",
+        "TRUYỀN"
+      ],
+      "c": 0,
+      "ex": "清潔な: sạch sẽ"
+    },
+    {
+      "word": "潔",
+      "romaji": "khiết",
+      "translation": "sạch (清潔)",
+      "q": "Chữ 潔 trong từ 清潔 mang âm Hán Việt nào?",
+      "a": [
+        "KHIẾT",
+        "KHOÁI",
+        "TRUYỀN",
+        "THỐNG"
+      ],
+      "c": 0,
+      "ex": "清潔な: sạch sẽ"
+    },
+    {
+      "word": "伝",
+      "romaji": "truyền",
+      "translation": "truyền lại (伝統的)",
+      "q": "Chữ 伝 trong từ 伝統的 mang âm Hán Việt nào?",
+      "a": [
+        "KHOÁI",
+        "TRUYỀN",
+        "THỐNG",
+        "ĐÍCH"
+      ],
+      "c": 1,
+      "ex": "伝統的な: mang tính truyền thống"
+    },
+    {
+      "word": "統",
+      "romaji": "thống",
+      "translation": "hệ thống (伝統的)",
+      "q": "Chữ 統 trong từ 伝統的 mang âm Hán Việt nào?",
+      "a": [
+        "TRUYỀN",
+        "THỐNG",
+        "ĐÍCH",
+        "LẬP"
+      ],
+      "c": 1,
+      "ex": "伝統的な: mang tính truyền thống"
+    },
+    {
+      "word": "的",
+      "romaji": "đích",
+      "translation": "tính chất (伝統的)",
+      "q": "Chữ 的 trong từ 伝統的 mang âm Hán Việt nào?",
+      "a": [
+        "THỐNG",
+        "ĐÍCH",
+        "LẬP",
+        "PHÁI"
+      ],
+      "c": 1,
+      "ex": "伝統的な: mang tính truyền thống"
+    },
+    {
+      "word": "立",
+      "romaji": "lập",
+      "translation": "đứng (立派)",
+      "q": "Chữ 立 trong từ 立派 mang âm Hán Việt nào?",
+      "a": [
+        "ĐÍCH",
+        "LẬP",
+        "PHÁI",
+        "NHẤT"
+      ],
+      "c": 1,
+      "ex": "立派な: tuyệt vời"
+    },
+    {
+      "word": "派",
+      "romaji": "phái",
+      "translation": "dỏng, phái (立派)",
+      "q": "Chữ 派 trong từ 立派 mang âm Hán Việt nào?",
+      "a": [
+        "LẬP",
+        "PHÁI",
+        "NHẤT",
+        "HỘ"
+      ],
+      "c": 1,
+      "ex": "立派な: tuyệt vời"
+    },
+    {
+      "word": "一",
+      "romaji": "nhất",
+      "translation": "một (一戸建て)",
+      "q": "Chữ 一 trong từ 一戸建て mang âm Hán Việt nào?",
+      "a": [
+        "PHÁI",
+        "NHẤT",
+        "HỘ",
+        "KIẾN"
+      ],
+      "c": 1,
+      "ex": "一戸建て: nhà riêng biệt"
+    },
+    {
+      "word": "戸",
+      "romaji": "hộ",
+      "translation": "hộ gia đình (一戸建て)",
+      "q": "Chữ 戸 trong từ 一戸建て mang âm Hán Việt nào?",
+      "a": [
+        "NHẤT",
+        "HỘ",
+        "KIẾN",
+        "MỆNH"
+      ],
+      "c": 1,
+      "ex": "一戸建て: nhà riêng biệt"
+    },
+    {
+      "word": "建",
+      "romaji": "kiến",
+      "translation": "xây dựng (一戸建て)",
+      "q": "Chữ 建 trong từ 一戸建て mang âm Hán Việt nào?",
+      "a": [
+        "HỘ",
+        "KIẾN",
+        "MỆNH",
+        "CƯ"
+      ],
+      "c": 1,
+      "ex": "一戸建て: nhà riêng biệt"
+    },
+    {
+      "word": "命",
+      "romaji": "mệnh",
+      "translation": "mạng sống (命)",
+      "q": "Chữ 命 mang âm Hán Việt nào?",
+      "a": [
+        "KIẾN",
+        "MỆNH",
+        "CƯ",
+        "GIAN"
+      ],
+      "c": 1,
+      "ex": "命: mạng sống"
+    },
+    {
+      "word": "居",
+      "romaji": "cư",
+      "translation": "ở, cư trú (居間)",
+      "q": "Chữ 居 trong từ 居間 mang âm Hán Việt nào?",
+      "a": [
+        "MỆNH",
+        "CƯ",
+        "GIAN",
+        "LỄ"
+      ],
+      "c": 1,
+      "ex": "居間: phòng khách"
+    },
+    {
+      "word": "間",
+      "romaji": "gian",
+      "translation": "khoảng (居間/客間)",
+      "q": "Chữ 間 trong từ 居間 mang âm Hán Việt nào?",
+      "a": [
+        "CƯ",
+        "GIAN",
+        "LỄ",
+        "HỘI"
+      ],
+      "c": 1,
+      "ex": "居間 / 客間: phòng khách / phòng tiếp khách"
+    },
+    {
+      "word": "礼",
+      "romaji": "lễ",
+      "translation": "lễ phép, cảm ơn (お礼)",
+      "q": "Chữ 礼 trong từ お礼 mang âm Hán Việt nào?",
+      "a": [
+        "GIAN",
+        "LỄ",
+        "HỘI",
+        "QUÁN"
+      ],
+      "c": 1,
+      "ex": "お礼: lời cảm ơn"
+    },
+    {
+      "word": "会",
+      "romaji": "hội",
+      "translation": "hội (会館)",
+      "q": "Chữ 会 trong từ 会館 mang âm Hán Việt nào?",
+      "a": [
+        "LỄ",
+        "HỘI",
+        "QUÁN",
+        "GIA"
+      ],
+      "c": 1,
+      "ex": "会館: hội quán"
+    },
+    {
+      "word": "館",
+      "romaji": "quán",
+      "translation": "tòa nhà (会館)",
+      "q": "Chữ 館 trong từ 会館 mang âm Hán Việt nào?",
+      "a": [
+        "HỘI",
+        "QUÁN",
+        "GIA",
+        "SỰ"
+      ],
+      "c": 1,
+      "ex": "会館: hội quán"
+    },
+    {
+      "word": "家",
+      "romaji": "gia",
+      "translation": "nhà (家事)",
+      "q": "Chữ 家 trong từ 家事 mang âm Hán Việt nào?",
+      "a": [
+        "QUÁN",
+        "GIA",
+        "SỰ",
+        "KHÁCH"
+      ],
+      "c": 1,
+      "ex": "家事: việc nhà"
+    },
+    {
+      "word": "事",
+      "romaji": "sự",
+      "translation": "việc (家事)",
+      "q": "Chữ 事 trong từ 家事 mang âm Hán Việt nào?",
+      "a": [
+        "GIA",
+        "SỰ",
+        "KHÁCH",
+        "KHUYẾT"
+      ],
+      "c": 1,
+      "ex": "家事: việc nhà"
+    },
+    {
+      "word": "客",
+      "romaji": "khách",
+      "translation": "khách (客間)",
+      "q": "Chữ 客 trong từ 客間 mang âm Hán Việt nào?",
+      "a": [
+        "SỰ",
+        "KHÁCH",
+        "KHUYẾT",
+        "ĐIỂM"
+      ],
+      "c": 1,
+      "ex": "客間: phòng tiếp khách"
+    },
+    {
+      "word": "欠",
+      "romaji": "khuyết",
+      "translation": "thiếu (欠点)",
+      "q": "Chữ 欠 trong từ 欠点 mang âm Hán Việt nào?",
+      "a": [
+        "KHÁCH",
+        "KHUYẾT",
+        "ĐIỂM",
+        "GIAO"
+      ],
+      "c": 1,
+      "ex": "欠点: khuyết điểm"
+    },
+    {
+      "word": "點",
+      "romaji": "điểm",
+      "translation": "điểm (欠点)",
+      "q": "Chữ 點 trong từ 欠点 mang âm Hán Việt nào?",
+      "a": [
+        "KHUYẾT",
+        "ĐIỂM",
+        "GIAO",
+        "LƯU"
+      ],
+      "c": 1,
+      "ex": "欠点: khuyết điểm"
+    },
+    {
+      "word": "交",
+      "romaji": "giao",
+      "translation": "trao đổi (交流)",
+      "q": "Chữ 交 trong từ 交流 mang âm Hán Việt nào?",
+      "a": [
+        "ĐIỂM",
+        "GIAO",
+        "LƯU",
+        "TÁC"
+      ],
+      "c": 1,
+      "ex": "交流: giao lưu"
+    },
+    {
+      "word": "流",
+      "romaji": "lưu",
+      "translation": "dòng chảy (交流)",
+      "q": "Chữ 流 trong từ 交流 mang âm Hán Việt nào?",
+      "a": [
+        "GIAO",
+        "LƯU",
+        "TÁC",
+        "TỌA"
+      ],
+      "c": 1,
+      "ex": "交流: giao lưu"
+    },
+    {
+      "word": "作",
+      "romaji": "tác",
+      "translation": "sáng tác (作家)",
+      "q": "Chữ 作 trong từ 作家 mang âm Hán Việt nào?",
+      "a": [
+        "LƯU",
+        "TÁC",
+        "TỌA",
+        "TY"
+      ],
+      "c": 1,
+      "ex": "作家: nhà văn"
+    },
+    {
+      "word": "座",
+      "romaji": "tọa",
+      "translation": "ngồi (座布団)",
+      "q": "Chữ 座 trong từ 座布団 mang âm Hán Việt nào?",
+      "a": [
+        "TÁC",
+        "TỌA",
+        "TY",
+        "THẮNG"
+      ],
+      "c": 1,
+      "ex": "座布団: đệm ngồi"
+    },
+    {
+      "word": "司",
+      "romaji": "ty",
+      "translation": "quản lý (司会)",
+      "q": "Chữ 司 trong từ 司会 mang âm Hán Việt nào?",
+      "a": [
+        "TỌA",
+        "TY",
+        "THẮNG",
+        "THỌ"
+      ],
+      "c": 1,
+      "ex": "司会: người dẫn chương trình"
+    }
+  ]
+}

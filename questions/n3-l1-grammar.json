@@ -1,0 +1,119 @@
+{
+  "id": "n3-l1-grammar",
+  "name": "N3 Bài 1 - Ngữ pháp",
+  "description": "Ngữ pháp Bài 1 N3 (Chuukyuu I): ~ていただけないでしょうか/~てもらえないでしょうか (nhờ vả lịch sự cao), ~ていただけませんか/~てもらえませんか, ~のようだ/~のような/~のように (giống như), ~ことは/~ことが/~ことを.",
+  "category": "grammar",
+  "createdAt": "2026-08-28T02:01:39.927Z",
+  "updatedAt": "2026-08-28T02:01:39.927Z",
+  "questions": [
+    {
+      "sentence": "資料を貸していただけないでしょうか",
+      "chunks": [
+        "資料",
+        "を",
+        "貸していただけないでしょうか"
+      ],
+      "translation": "Anh có thể cho tôi mượn tài liệu được không ạ?",
+      "ex": "Vていただけないでしょうか: cách nhờ vả lịch sự nhất trong 4 cách"
+    },
+    {
+      "sentence": "道を教えていただけないでしょうか",
+      "chunks": [
+        "道",
+        "を",
+        "教えていただけないでしょうか"
+      ],
+      "translation": "Anh có thể chỉ đường giúp tôi được không ạ?",
+      "ex": "Vていただけないでしょうか: xin ai đó làm gì cho mình, rất lịch sự"
+    },
+    {
+      "sentence": "コピーしてもらえないでしょうか",
+      "chunks": [
+        "コピーして",
+        "もらえないでしょうか"
+      ],
+      "translation": "Bạn có thể photo giúp tôi được không?",
+      "ex": "Vてもらえないでしょうか: nhờ vả lịch sự, mức độ thấp hơn ていただけないでしょうか một chút"
+    },
+    {
+      "sentence": "引き受けてもらえないでしょうか",
+      "chunks": [
+        "引き受けて",
+        "もらえないでしょうか"
+      ],
+      "translation": "Bạn có thể nhận giúp việc này được không?",
+      "ex": "Vてもらえないでしょうか: nhờ ai đó nhận giúp việc gì"
+    },
+    {
+      "sentence": "ちょっと手伝ってもらえませんか",
+      "chunks": [
+        "ちょっと",
+        "手伝って",
+        "もらえませんか"
+      ],
+      "translation": "Bạn có thể giúp tôi một chút được không?",
+      "ex": "Vてもらえませんか: cách nhờ vả thông thường, mức độ lịch sự vừa phải"
+    },
+    {
+      "sentence": "あの病院はきれいでホテルのようです",
+      "chunks": [
+        "あの病院",
+        "は",
+        "きれいで",
+        "ホテルのようです"
+      ],
+      "translation": "Bệnh viện đó sạch đẹp giống như khách sạn",
+      "ex": "Nのようです: giống như N, so sánh cái gì đó với N"
+    },
+    {
+      "sentence": "母は元気で明るくて太陽のような人です",
+      "chunks": [
+        "母",
+        "は",
+        "元気で",
+        "明るくて",
+        "太陽のような",
+        "人です"
+      ],
+      "translation": "Mẹ tôi khỏe mạnh, vui vẻ, giống như mặt trời",
+      "ex": "NのようなN2: N2 giống như N, làm định ngữ cho danh từ tiếp theo"
+    },
+    {
+      "sentence": "彼はまるで子どものように泣きました",
+      "chunks": [
+        "彼",
+        "は",
+        "まるで",
+        "子どものように",
+        "泣きました"
+      ],
+      "translation": "Anh ấy đã khóc giống như một đứa trẻ",
+      "ex": "Nのように+V: làm gì giống như N, bổ nghĩa cho động từ"
+    },
+    {
+      "sentence": "日本語を話すことは面白いです",
+      "chunks": [
+        "日本語",
+        "を",
+        "話すことは",
+        "面白いです"
+      ],
+      "translation": "Việc nói tiếng Nhật rất thú vị",
+      "ex": "Vる+ことは: danh từ hóa động từ làm chủ đề của câu"
+    },
+    {
+      "sentence": "私はサッカーをすることが好きです",
+      "chunks": [
+        "私",
+        "は",
+        "サッカー",
+        "を",
+        "すること",
+        "が",
+        "好きです"
+      ],
+      "translation": "Tôi thích việc chơi bóng đá",
+      "ex": "Vる+ことが+好きです: danh từ hóa động từ, diễn tả sở thích"
+    }
+  ]
+}

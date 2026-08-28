@@ -1,0 +1,332 @@
+{
+  "id": "n3-l1-vocab",
+  "name": "N3 Bài 1 - Từ vựng (nghĩa)",
+  "description": "Từ vựng Minna no Nihongo Chuukyuu I Bài 1 (N3). Câu hỏi hỏi nghĩa tiếng Việt của từ.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-28T01:58:52.182Z",
+  "updatedAt": "2026-08-28T01:58:52.182Z",
+  "questions": [
+    {
+      "word": "明るい",
+      "romaji": "あかるい",
+      "translation": "vui vẻ, cởi mở (tính cách)",
+      "q": "Từ [性格が]明るい (あかるい) có nghĩa là gì?",
+      "a": [
+        "vui vẻ, cởi mở (tính cách)",
+        "thoải mái, dễ chịu",
+        "sạch sẽ",
+        "mang tính truyền thống"
+      ],
+      "c": 0,
+      "ex": "明 (minh) - sáng"
+    },
+    {
+      "word": "快適な",
+      "romaji": "かいてき",
+      "translation": "thoải mái, dễ chịu",
+      "q": "Từ 快適[な] (かいてき) có nghĩa là gì?",
+      "a": [
+        "vui vẻ",
+        "thoải mái, dễ chịu",
+        "sạch sẽ",
+        "mang tính truyền thống"
+      ],
+      "c": 1,
+      "ex": "快 (khoái) + 適 (thích)"
+    },
+    {
+      "word": "清潔な",
+      "romaji": "せいけつ",
+      "translation": "sạch sẽ",
+      "q": "Từ 清潔[な] (せいけつ) có nghĩa là gì?",
+      "a": [
+        "thoải mái",
+        "sạch sẽ",
+        "mang tính truyền thống",
+        "tuyệt vời, hoành tráng"
+      ],
+      "c": 1,
+      "ex": "清 (thanh) + 潔 (khiết)"
+    },
+    {
+      "word": "伝統的な",
+      "romaji": "でんとうてき",
+      "translation": "mang tính truyền thống",
+      "q": "Từ 伝統的[な] (でんとうてき) có nghĩa là gì?",
+      "a": [
+        "sạch sẽ",
+        "mang tính truyền thống",
+        "tuyệt vời, hoành tráng",
+        "nhà riêng biệt"
+      ],
+      "c": 1,
+      "ex": "伝 (truyền) + 統 (thống) + 的 (đích)"
+    },
+    {
+      "word": "立派な",
+      "romaji": "りっぱ",
+      "translation": "tuyệt vời, hoành tráng, lịch sự",
+      "q": "Từ 立派[な] (りっぱ) có nghĩa là gì?",
+      "a": [
+        "mang tính truyền thống",
+        "tuyệt vời, hoành tráng, lịch sự",
+        "nhà riêng biệt",
+        "mạng sống, sinh mạng"
+      ],
+      "c": 1,
+      "ex": "立 (lập) + 派 (phái)"
+    },
+    {
+      "word": "一戸建て",
+      "romaji": "いっこだて",
+      "translation": "nhà riêng biệt (không chung cư)",
+      "q": "Từ 一戸建て (いっこだて) có nghĩa là gì?",
+      "a": [
+        "tuyệt vời",
+        "nhà riêng biệt",
+        "mạng sống, sinh mạng",
+        "phòng khách"
+      ],
+      "c": 1,
+      "ex": "一 (nhất) + 戸 (hộ) + 建 (kiến)"
+    },
+    {
+      "word": "命",
+      "romaji": "いのち",
+      "translation": "mạng sống, sinh mạng",
+      "q": "Từ 命 (いのち) có nghĩa là gì?",
+      "a": [
+        "nhà riêng biệt",
+        "mạng sống, sinh mạng",
+        "phòng khách",
+        "lời cảm ơn"
+      ],
+      "c": 1,
+      "ex": "命 (mệnh)"
+    },
+    {
+      "word": "居間",
+      "romaji": "いま",
+      "translation": "phòng khách (trong nhà)",
+      "q": "Từ 居間 (いま) có nghĩa là gì?",
+      "a": [
+        "mạng sống",
+        "phòng khách (trong nhà)",
+        "lời cảm ơn",
+        "hội quán"
+      ],
+      "c": 1,
+      "ex": "居 (cư) + 間 (gian)"
+    },
+    {
+      "word": "お礼",
+      "romaji": "おれい",
+      "translation": "lời cảm ơn",
+      "q": "Từ お礼 (おれい) có nghĩa là gì?",
+      "a": [
+        "phòng khách",
+        "lời cảm ơn",
+        "hội quán",
+        "việc nhà"
+      ],
+      "c": 1,
+      "ex": "お礼 (lễ)"
+    },
+    {
+      "word": "会館",
+      "romaji": "かいかん",
+      "translation": "hội quán",
+      "q": "Từ 会館 (かいかん) có nghĩa là gì?",
+      "a": [
+        "lời cảm ơn",
+        "hội quán",
+        "việc nhà",
+        "phòng tiếp khách"
+      ],
+      "c": 1,
+      "ex": "会 (hội) + 館 (quán)"
+    },
+    {
+      "word": "家事",
+      "romaji": "かじ",
+      "translation": "việc nhà",
+      "q": "Từ 家事 (かじ) có nghĩa là gì?",
+      "a": [
+        "hội quán",
+        "việc nhà",
+        "phòng tiếp khách",
+        "khuyết điểm"
+      ],
+      "c": 1,
+      "ex": "家 (gia) + 事 (sự)"
+    },
+    {
+      "word": "客間",
+      "romaji": "きゃくま",
+      "translation": "phòng tiếp khách",
+      "q": "Từ 客間 (きゃくま) có nghĩa là gì?",
+      "a": [
+        "việc nhà",
+        "phòng tiếp khách",
+        "khuyết điểm",
+        "giao lưu"
+      ],
+      "c": 1,
+      "ex": "客 (khách) + 間 (gian)"
+    },
+    {
+      "word": "欠点",
+      "romaji": "けってん",
+      "translation": "khuyết điểm",
+      "q": "Từ 欠点 (けってん) có nghĩa là gì?",
+      "a": [
+        "phòng tiếp khách",
+        "khuyết điểm",
+        "giao lưu",
+        "nhà văn"
+      ],
+      "c": 1,
+      "ex": "欠 (khuyết) + 點 (điểm)"
+    },
+    {
+      "word": "交流",
+      "romaji": "こうりゅう",
+      "translation": "giao lưu",
+      "q": "Từ 交流 (こうりゅう) có nghĩa là gì?",
+      "a": [
+        "khuyết điểm",
+        "giao lưu",
+        "nhà văn",
+        "đệm ngồi"
+      ],
+      "c": 1,
+      "ex": "交 (giao) + 流 (lưu)"
+    },
+    {
+      "word": "作家",
+      "romaji": "さっか",
+      "translation": "nhà văn",
+      "q": "Từ 作家 (さっか) có nghĩa là gì?",
+      "a": [
+        "giao lưu",
+        "nhà văn",
+        "đệm ngồi",
+        "người dẫn chương trình"
+      ],
+      "c": 1,
+      "ex": "作 (tác) + 家 (gia)"
+    },
+    {
+      "word": "座布団",
+      "romaji": "ざぶとん",
+      "translation": "đệm ngồi (kiểu Nhật)",
+      "q": "Từ 座布団 (ざぶとん) có nghĩa là gì?",
+      "a": [
+        "nhà văn",
+        "đệm ngồi (kiểu Nhật)",
+        "người dẫn chương trình",
+        "phòng làm việc"
+      ],
+      "c": 1,
+      "ex": "座 (tọa) + 布 (bố) + 団 (đoàn)"
+    },
+    {
+      "word": "司会",
+      "romaji": "しかい",
+      "translation": "người dẫn chương trình",
+      "q": "Từ 司会 (しかい) có nghĩa là gì?",
+      "a": [
+        "đệm ngồi",
+        "người dẫn chương trình",
+        "phòng làm việc",
+        "độ ẩm"
+      ],
+      "c": 1,
+      "ex": "司 (ty) + 会 (hội)"
+    },
+    {
+      "word": "仕事部屋",
+      "romaji": "しごとべや",
+      "translation": "phòng làm việc",
+      "q": "Từ 仕事部屋 (しごとべや) có nghĩa là gì?",
+      "a": [
+        "người dẫn chương trình",
+        "phòng làm việc",
+        "độ ẩm",
+        "thị dân, công dân"
+      ],
+      "c": 1,
+      "ex": "仕 (sĩ) + 事 (sự) + 部屋 (bộ phòng)"
+    },
+    {
+      "word": "湿気",
+      "romaji": "しっけ",
+      "translation": "độ ẩm",
+      "q": "Từ 湿気 (しっけ) có nghĩa là gì?",
+      "a": [
+        "phòng làm việc",
+        "độ ẩm",
+        "thị dân, công dân",
+        "hội quán thị dân, nhà văn hóa"
+      ],
+      "c": 1,
+      "ex": "湿 (thấp) + 気 (khí)"
+    },
+    {
+      "word": "市民",
+      "romaji": "しみん",
+      "translation": "thị dân, công dân",
+      "q": "Từ 市民 (しみん) có nghĩa là gì?",
+      "a": [
+        "độ ẩm",
+        "thị dân, công dân",
+        "hội quán thị dân, nhà văn hóa",
+        "học bổng"
+      ],
+      "c": 1,
+      "ex": "市 (thị) + 民 (dân)"
+    },
+    {
+      "word": "市民会館",
+      "romaji": "しみんかいかん",
+      "translation": "hội quán thị dân, nhà văn hóa",
+      "q": "Từ 市民会館 (しみんかいかん) có nghĩa là gì?",
+      "a": [
+        "thị dân",
+        "hội quán thị dân, nhà văn hóa",
+        "học bổng",
+        "học sinh tiểu học"
+      ],
+      "c": 1,
+      "ex": "市民 (thị dân) + 会館 (hội quán)"
+    },
+    {
+      "word": "奨学金",
+      "romaji": "しょうがくきん",
+      "translation": "học bổng",
+      "q": "Từ 奨学金 (しょうがくきん) có nghĩa là gì?",
+      "a": [
+        "hội quán thị dân",
+        "học bổng",
+        "học sinh tiểu học",
+        "vui vẻ, cởi mở"
+      ],
+      "c": 1,
+      "ex": "奨 (khướng) + 学 (học) + 金 (kim)"
+    },
+    {
+      "word": "小学生",
+      "romaji": "しょうがくせい",
+      "translation": "học sinh tiểu học",
+      "q": "Từ 小学生 (しょうがくせい) có nghĩa là gì?",
+      "a": [
+        "học bổng",
+        "học sinh tiểu học",
+        "vui vẻ, cởi mở",
+        "thoải mái, dễ chịu"
+      ],
+      "c": 1,
+      "ex": "小 (tiểu) + 学生 (học sinh)"
+    }
+  ]
+}

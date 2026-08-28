@@ -1,0 +1,332 @@
+{
+  "id": "n3-l1-kanji",
+  "name": "N3 Bài 1 - Từ vựng Kanji (đọc)",
+  "description": "Từ vựng có kanji Bài 1 N3 (Chuukyuu I). Đáp án chỉ hiện hiragana.",
+  "category": "vocabulary",
+  "createdAt": "2026-08-28T01:59:53.439Z",
+  "updatedAt": "2026-08-28T01:59:53.439Z",
+  "questions": [
+    {
+      "word": "明るい",
+      "romaji": "あかるい",
+      "translation": "vui vẻ, cởi mở (tính cách)",
+      "q": "Từ [性格が]明るい đọc là gì?",
+      "a": [
+        "あかるい",
+        "かいてき",
+        "せいけつ",
+        "でんとうてき"
+      ],
+      "c": 0,
+      "ex": "vui vẻ, cởi mở | 明 (minh)"
+    },
+    {
+      "word": "快適な",
+      "romaji": "かいてき",
+      "translation": "thoải mái, dễ chịu",
+      "q": "Từ 快適[な] đọc là gì?",
+      "a": [
+        "あかるい",
+        "せいけつ",
+        "でんとうてき",
+        "かいてき"
+      ],
+      "c": 3,
+      "ex": "thoải mái, dễ chịu | 快 (khoái) + 適 (thích)"
+    },
+    {
+      "word": "清潔な",
+      "romaji": "せいけつ",
+      "translation": "sạch sẽ",
+      "q": "Từ 清潔[な] đọc là gì?",
+      "a": [
+        "かいてき",
+        "でんとうてき",
+        "りっぱ",
+        "せいけつ"
+      ],
+      "c": 3,
+      "ex": "sạch sẽ | 清 (thanh) + 潔 (khiết)"
+    },
+    {
+      "word": "伝統的な",
+      "romaji": "でんとうてき",
+      "translation": "mang tính truyền thống",
+      "q": "Từ 伝統的[な] đọc là gì?",
+      "a": [
+        "でんとうてき",
+        "りっぱ",
+        "いっこだて",
+        "せいけつ"
+      ],
+      "c": 0,
+      "ex": "mang tính truyền thống | 伝 (truyền) + 統 (thống) + 的 (đích)"
+    },
+    {
+      "word": "立派な",
+      "romaji": "りっぱ",
+      "translation": "tuyệt vời, hoành tráng, lịch sự",
+      "q": "Từ 立派[な] đọc là gì?",
+      "a": [
+        "りっぱ",
+        "いっこだて",
+        "いのち",
+        "でんとうてき"
+      ],
+      "c": 0,
+      "ex": "tuyệt vời, hoành tráng | 立 (lập) + 派 (phái)"
+    },
+    {
+      "word": "一戸建て",
+      "romaji": "いっこだて",
+      "translation": "nhà riêng biệt",
+      "q": "Từ 一戸建て đọc là gì?",
+      "a": [
+        "いっこだて",
+        "いのち",
+        "いま",
+        "りっぱ"
+      ],
+      "c": 0,
+      "ex": "nhà riêng biệt | 一 (nhất) + 戸 (hộ) + 建 (kiến)"
+    },
+    {
+      "word": "命",
+      "romaji": "いのち",
+      "translation": "mạng sống, sinh mạng",
+      "q": "Từ 命 đọc là gì?",
+      "a": [
+        "いのち",
+        "いま",
+        "おれい",
+        "いっこだて"
+      ],
+      "c": 0,
+      "ex": "mạng sống | 命 (mệnh)"
+    },
+    {
+      "word": "居間",
+      "romaji": "いま",
+      "translation": "phòng khách (trong nhà)",
+      "q": "Từ 居間 đọc là gì?",
+      "a": [
+        "いま",
+        "おれい",
+        "かいかん",
+        "いのち"
+      ],
+      "c": 0,
+      "ex": "phòng khách | 居 (cư) + 間 (gian)"
+    },
+    {
+      "word": "お礼",
+      "romaji": "おれい",
+      "translation": "lời cảm ơn",
+      "q": "Từ お礼 đọc là gì?",
+      "a": [
+        "おれい",
+        "かいかん",
+        "かじ",
+        "いま"
+      ],
+      "c": 0,
+      "ex": "lời cảm ơn | お礼 (lễ)"
+    },
+    {
+      "word": "会館",
+      "romaji": "かいかん",
+      "translation": "hội quán",
+      "q": "Từ 会館 đọc là gì?",
+      "a": [
+        "かいかん",
+        "かじ",
+        "きゃくま",
+        "おれい"
+      ],
+      "c": 0,
+      "ex": "hội quán | 会 (hội) + 館 (quán)"
+    },
+    {
+      "word": "家事",
+      "romaji": "かじ",
+      "translation": "việc nhà",
+      "q": "Từ 家事 đọc là gì?",
+      "a": [
+        "かじ",
+        "きゃくま",
+        "けってん",
+        "かいかん"
+      ],
+      "c": 0,
+      "ex": "việc nhà | 家 (gia) + 事 (sự)"
+    },
+    {
+      "word": "客間",
+      "romaji": "きゃくま",
+      "translation": "phòng tiếp khách",
+      "q": "Từ 客間 đọc là gì?",
+      "a": [
+        "きゃくま",
+        "けってん",
+        "こうりゅう",
+        "かじ"
+      ],
+      "c": 0,
+      "ex": "phòng tiếp khách | 客 (khách) + 間 (gian)"
+    },
+    {
+      "word": "欠点",
+      "romaji": "けってん",
+      "translation": "khuyết điểm",
+      "q": "Từ 欠点 đọc là gì?",
+      "a": [
+        "けってん",
+        "こうりゅう",
+        "さっか",
+        "きゃくま"
+      ],
+      "c": 0,
+      "ex": "khuyết điểm | 欠 (khuyết) + 點 (điểm)"
+    },
+    {
+      "word": "交流",
+      "romaji": "こうりゅう",
+      "translation": "giao lưu",
+      "q": "Từ 交流 đọc là gì?",
+      "a": [
+        "こうりゅう",
+        "さっか",
+        "ざぶとん",
+        "けってん"
+      ],
+      "c": 0,
+      "ex": "giao lưu | 交 (giao) + 流 (lưu)"
+    },
+    {
+      "word": "作家",
+      "romaji": "さっか",
+      "translation": "nhà văn",
+      "q": "Từ 作家 đọc là gì?",
+      "a": [
+        "さっか",
+        "ざぶとん",
+        "しかい",
+        "こうりゅう"
+      ],
+      "c": 0,
+      "ex": "nhà văn | 作 (tác) + 家 (gia)"
+    },
+    {
+      "word": "座布団",
+      "romaji": "ざぶとん",
+      "translation": "đệm ngồi (kiểu Nhật)",
+      "q": "Từ 座布団 đọc là gì?",
+      "a": [
+        "ざぶとん",
+        "しかい",
+        "しごとべや",
+        "さっか"
+      ],
+      "c": 0,
+      "ex": "đệm ngồi | 座 (tọa) + 布 (bố) + 団 (đoàn)"
+    },
+    {
+      "word": "司会",
+      "romaji": "しかい",
+      "translation": "người dẫn chương trình",
+      "q": "Từ 司会 đọc là gì?",
+      "a": [
+        "しかい",
+        "しごとべや",
+        "しっけ",
+        "ざぶとん"
+      ],
+      "c": 0,
+      "ex": "người dẫn chương trình | 司 (ty) + 会 (hội)"
+    },
+    {
+      "word": "仕事部屋",
+      "romaji": "しごとべや",
+      "translation": "phòng làm việc",
+      "q": "Từ 仕事部屋 đọc là gì?",
+      "a": [
+        "しごとべや",
+        "しっけ",
+        "しみん",
+        "しかい"
+      ],
+      "c": 0,
+      "ex": "phòng làm việc | 仕 (sĩ) + 事 (sự) + 部屋 (bộ phòng)"
+    },
+    {
+      "word": "湿気",
+      "romaji": "しっけ",
+      "translation": "độ ẩm",
+      "q": "Từ 湿気 đọc là gì?",
+      "a": [
+        "しっけ",
+        "しみん",
+        "しみんかいかん",
+        "しごとべや"
+      ],
+      "c": 0,
+      "ex": "độ ẩm | 湿 (thấp) + 気 (khí)"
+    },
+    {
+      "word": "市民",
+      "romaji": "しみん",
+      "translation": "thị dân, công dân",
+      "q": "Từ 市民 đọc là gì?",
+      "a": [
+        "しみん",
+        "しみんかいかん",
+        "しょうがくきん",
+        "しっけ"
+      ],
+      "c": 0,
+      "ex": "thị dân | 市 (thị) + 民 (dân)"
+    },
+    {
+      "word": "市民会館",
+      "romaji": "しみんかいかん",
+      "translation": "hội quán thị dân, nhà văn hóa",
+      "q": "Từ 市民会館 đọc là gì?",
+      "a": [
+        "しみんかいかん",
+        "しょうがくきん",
+        "しょうがくせい",
+        "しみん"
+      ],
+      "c": 0,
+      "ex": "hội quán thị dân | 市民 (thị dân) + 会館 (hội quán)"
+    },
+    {
+      "word": "奨学金",
+      "romaji": "しょうがくきん",
+      "translation": "học bổng",
+      "q": "Từ 奨学金 đọc là gì?",
+      "a": [
+        "しょうがくきん",
+        "しょうがくせい",
+        "あかるい",
+        "しみんかいかん"
+      ],
+      "c": 0,
+      "ex": "học bổng | 奨 (khướng) + 学 (học) + 金 (kim)"
+    },
+    {
+      "word": "小学生",
+      "romaji": "しょうがくせい",
+      "translation": "học sinh tiểu học",
+      "q": "Từ 小学生 đọc là gì?",
+      "a": [
+        "しょうがくせい",
+        "あかるい",
+        "かいてき",
+        "しょうがくきん"
+      ],
+      "c": 0,
+      "ex": "học sinh tiểu học | 小 (tiểu) + 学生 (học sinh)"
+    }
+  ]
+}

@@ -4,6 +4,7 @@
 
 const roadmapQuestionsCache = new Map();
 let activeLibraryRoadmapId = null;
+let activeLibraryPackageId = null;
 let roadmapProgressCache = new Map();
 
 function computeSetProgress(setId, questionsArr) {
@@ -151,16 +152,30 @@ function refreshLibraryRoadmapPreview() {
 }
 
 async function renderLibraryRoadmapsTab() {
+  const packageChipsEl = document.getElementById('library-package-chips');
   const chipsEl = document.getElementById('library-roadmap-chips');
   const container = document.getElementById('library-roadmap-preview');
   if (!container) return;
-  activeLibraryRoadmapId = pickDefaultRoadmapId(activeLibraryRoadmapId);
-  if (!activeLibraryRoadmapId) {
+
+  activeLibraryPackageId = pickDefaultWorldMapPackageId(activeLibraryPackageId);
+  if (!activeLibraryPackageId) {
+    if (packageChipsEl) packageChipsEl.innerHTML = '';
     if (chipsEl) chipsEl.innerHTML = '';
-    container.innerHTML = '<div class="roadmap-loading">No roadmaps configured yet.</div>';
+    container.innerHTML = '<div class="roadmap-loading">No packages configured yet.</div>';
     return;
   }
-  if (chipsEl) chipsEl.innerHTML = renderRoadmapChipsHtml(roadmapDefinitions, activeLibraryRoadmapId, 'selectLibraryRoadmap');
+  if (packageChipsEl) packageChipsEl.innerHTML = renderRoadmapChipsHtml(packageDefinitions, activeLibraryPackageId, 'selectLibraryPackage');
+
+  const roadmapsInPackage = getRoadmapsForPackage(activeLibraryPackageId);
+  if (!activeLibraryRoadmapId || !roadmapsInPackage.some(r => r.id === activeLibraryRoadmapId)) {
+    activeLibraryRoadmapId = roadmapsInPackage.length > 0 ? roadmapsInPackage[0].id : null;
+  }
+  if (!activeLibraryRoadmapId) {
+    if (chipsEl) chipsEl.innerHTML = '';
+    container.innerHTML = '<div class="roadmap-loading">No roadmaps in this package yet.</div>';
+    return;
+  }
+  if (chipsEl) chipsEl.innerHTML = renderRoadmapChipsHtml(roadmapsInPackage, activeLibraryRoadmapId, 'selectLibraryRoadmap');
   container.innerHTML = '<div class="roadmap-loading">Loading roadmap…</div>';
   try {
     const sets = getSetsForRoadmap(activeLibraryRoadmapId);
@@ -170,6 +185,12 @@ async function renderLibraryRoadmapsTab() {
     console.error('Failed to render library roadmaps tab:', e);
     container.innerHTML = '<div class="roadmap-loading">❌ Failed to load the roadmap. Please try again.</div>';
   }
+}
+
+function selectLibraryPackage(id) {
+  activeLibraryPackageId = id;
+  activeLibraryRoadmapId = null;
+  renderLibraryRoadmapsTab();
 }
 
 function selectLibraryRoadmap(id) {

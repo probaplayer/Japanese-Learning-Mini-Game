@@ -387,7 +387,7 @@ function writeComplete() {
     const elapsed = (Date.now() - gameStartTime) / 60000;
     recordPlayTime(elapsed);
   }
-  setTimeout(() => showScreen('screen-menu'), 800);
+  setTimeout(() => showScreen('screen-play'), 800);
 }
 
 function updateWriteHUD() {

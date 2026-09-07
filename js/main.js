@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   applyScanlinesVisibility();
   updateAnimationBodyClass();
 
-  updateMenuUI();
+  updatePlayUI();
   showScreen('screen-worldmap');
 });
 
@@ -129,36 +129,36 @@ function showScreen(id) {
     refreshQuestionSetUI();
     selectLibraryTab('sets');
   }
-  if (id === 'screen-menu') {
-    updateMenuUI();
+  if (id === 'screen-play') {
+    updatePlayUI();
     const nav = document.querySelector('.main-nav');
     if (nav) {
-      nav.classList.remove('menu-nav-animate');
-      requestAnimationFrame(() => nav.classList.add('menu-nav-animate'));
+      nav.classList.remove('play-nav-animate');
+      requestAnimationFrame(() => nav.classList.add('play-nav-animate'));
     }
   }
   if (id === 'screen-settings') renderSettingsScreen();
   if (id === 'screen-stats') renderStatsScreen();
-  if (id === 'screen-worldmap') { updateMenuUI(); renderWorldMap(); }
+  if (id === 'screen-worldmap') { updatePlayUI(); renderWorldMap(); }
 }
 
 /* ══════════════════════════════════════════════
-   MENU UI
+   PLAY UI
 ══════════════════════════════════════════════ */
-function updateMenuUI() {
+function updatePlayUI() {
 
-  document.getElementById('menu-hp').style.width = `${Math.max(0, playerHP)}%`;
-  document.getElementById('menu-exp').style.width = `${Math.min(100, (playerEXP / getXpForLevel(playerLevel)) * 100)}%`;
-  const levelEl = document.getElementById('menu-level');
+  document.getElementById('hud-hp').style.width = `${Math.max(0, playerHP)}%`;
+  document.getElementById('hud-exp').style.width = `${Math.min(100, (playerEXP / getXpForLevel(playerLevel)) * 100)}%`;
+  const levelEl = document.getElementById('hud-level');
   if (levelEl) levelEl.textContent = playerLevel;
-  document.getElementById('menu-combo').textContent = playerCombo;
+  document.getElementById('play-combo').textContent = playerCombo;
   document.getElementById('data-count').textContent = `${questions.length} loaded questions`;
-  const streakEl = document.getElementById('menu-streak');
+  const streakEl = document.getElementById('hud-streak');
   if (streakEl) streakEl.textContent = dailyStreak.currentStreak;
 
   const activeMeta = questionSets.find(s => s.id === activeSetId);
   const visibleGames = getVisibleGamesForCategory(activeMeta ? activeMeta.category : undefined);
-  document.querySelectorAll('.menu-btn[data-game]').forEach(btn => {
+  document.querySelectorAll('.play-btn[data-game]').forEach(btn => {
     btn.classList.toggle('hidden', !visibleGames.includes(btn.dataset.game));
   });
 }
@@ -292,7 +292,7 @@ function exitGame() {
   }
   saveToStorage();
   document.getElementById('modal-gameover').classList.add('hidden');
-  showScreen('screen-menu');
+  showScreen('screen-play');
 }
 
 let gameStartTime = null;

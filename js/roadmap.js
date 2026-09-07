@@ -95,7 +95,7 @@ function launchRoadmapNode(nodeEl, id) {
   const avatarEl = document.querySelector('#worldmap-track .roadmap-avatar');
   if (avatarEl) avatarEl.classList.add('roadmap-avatar-launch');
   switchQuestionSet(id);
-  setTimeout(() => showScreen('screen-menu'), 300);
+  setTimeout(() => showScreen('screen-play'), 300);
 }
 
 async function renderLibrarySetsTab() {

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/animations.css">
-  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/play.css">
   <link rel="stylesheet" href="css/roadmap.css">
   <link rel="stylesheet" href="css/game-quiz.css">
   <link rel="stylesheet" href="css/game-listen.css">
@@ -31,58 +31,56 @@
 
   <!-- =================== SCREENS =================== -->
 
-  <!-- MAIN MENU -->
-  <div id="screen-menu" class="screen">
-    <div class="menu-container">
+  <!-- PLAY (choose a game mode for the active set) -->
+  <div id="screen-play" class="screen">
+    <div class="play-container">
+      <div class="game-hud">
+        <button class="hud-back" onclick="showScreen('screen-worldmap')">◀</button>
+      </div>
       <div class="title-block">
         <div class="title-jp">日本語</div>
         <div class="title-en">QUEST</div>
         <div class="title-sub">JAPANESE LEARNING MINI-GAMES</div>
       </div>
 
-      <div class="menu-btn-container scrollbar-hide">
+      <div class="play-btn-container scrollbar-hide">
         <nav class="main-nav">
-          <button class="menu-btn btn-roadmap" onclick="showScreen('screen-worldmap')">
-            <span class="btn-icon">🗺️</span>
-            <span class="btn-text">WORLD MAP<br><small>Your learning journey</small></span>
-            <span class="btn-arrow">▶</span>
-          </button>
-          <button class="menu-btn btn-quiz" data-game="quiz" onclick="startGame('quiz')">
+          <button class="play-btn btn-quiz" data-game="quiz" onclick="startGame('quiz')">
             <span class="btn-icon">📝</span>
             <span class="btn-text">QUIZ<br><small>Multiple Choice</small></span>
             <span class="btn-arrow">▶</span>
           </button>
-          <button class="menu-btn btn-listen" data-game="listen" onclick="startGame('listen')">
+          <button class="play-btn btn-listen" data-game="listen" onclick="startGame('listen')">
             <span class="btn-icon">🎧</span>
             <span class="btn-text">LISTENING QUIZ<br><small>Hear and choose</small></span>
             <span class="btn-arrow">▶</span>
           </button>
-          <button class="menu-btn btn-type" data-game="type" onclick="startGame('type')">
+          <button class="play-btn btn-type" data-game="type" onclick="startGame('type')">
             <span class="btn-icon">⌨</span>
             <span class="btn-text">FALLING WORDS<br><small>Typing Challenge</small></span>
             <span class="btn-arrow">▶</span>
           </button>
-          <button class="menu-btn btn-match" data-game="match" onclick="startGame('match')">
+          <button class="play-btn btn-match" data-game="match" onclick="startGame('match')">
             <span class="btn-icon">🧩</span>
             <span class="btn-text">MATCH<br><small>Pair Cards</small></span>
             <span class="btn-arrow">▶</span>
           </button>
-          <button class="menu-btn btn-flash" data-game="flash" onclick="startGame('flash')">
+          <button class="play-btn btn-flash" data-game="flash" onclick="startGame('flash')">
             <span class="btn-icon">🃏</span>
             <span class="btn-text">FLASHCARD<br><small>Flip Cards</small></span>
             <span class="btn-arrow">▶</span>
           </button>
-          <button class="menu-btn btn-write" data-game="write" onclick="startGame('write')">
+          <button class="play-btn btn-write" data-game="write" onclick="startGame('write')">
             <span class="btn-icon">✍️</span>
             <span class="btn-text">WRITING PRACTICE<br><small>Type Japanese</small></span>
             <span class="btn-arrow">▶</span>
           </button>
-          <button class="menu-btn btn-grammar" data-game="grammar" onclick="startGame('grammar')">
+          <button class="play-btn btn-grammar" data-game="grammar" onclick="startGame('grammar')">
             <span class="btn-icon">🧩</span>
             <span class="btn-text">SENTENCE BUILDER<br><small>Arrange the grammar</small></span>
             <span class="btn-arrow">▶</span>
           </button>
-          <button class="menu-btn btn-data" onclick="showScreen('screen-library')">
+          <button class="play-btn btn-data" onclick="showScreen('screen-library')">
             <span class="btn-icon">📚</span>
             <span class="btn-text">LIBRARY<br><small>Choose a set</small></span>
             <span class="btn-arrow">▶</span>
@@ -90,8 +88,8 @@
         </nav>
       </div>
 
-      <div class="menu-footer">
-        <span id="data-count">0 câu hỏi đã nạp</span> &nbsp;|&nbsp; COMBO: <span id="menu-combo">0</span>x
+      <div class="play-footer">
+        <span id="data-count">0 câu hỏi đã nạp</span> &nbsp;|&nbsp; COMBO: <span id="play-combo">0</span>x
       </div>
     </div>
   </div>
@@ -99,7 +97,10 @@
   <!-- LIBRARY -->
   <div id="screen-library" class="screen screen-data">
     <div class="panel">
-      <h2 class="panel-title">📚 LIBRARY</h2>
+      <div class="game-hud">
+        <button class="hud-back" onclick="showScreen('screen-play')">◀</button>
+        <div class="hud-title">📚 LIBRARY</div>
+      </div>
       <div class="library-tabs">
         <button id="library-tab-btn-sets" class="library-tab-btn library-tab-active" onclick="selectLibraryTab('sets')">Sets</button>
         <button id="library-tab-btn-roadmaps" class="library-tab-btn" onclick="selectLibraryTab('roadmaps')">Roadmaps</button>
@@ -127,7 +128,6 @@
         <div id="library-roadmap-chips" class="roadmap-tabs"></div>
         <div class="roadmap-track roadmap-track-mini" id="library-roadmap-preview"></div>
       </div>
-      <button class="back-btn" onclick="showScreen('screen-menu')">◀ BACK TO MENU</button>
     </div>
   </div>
 
@@ -148,7 +148,7 @@
         <div class="worldmap-quick-actions">
           <button class="back-btn" onclick="showScreen('screen-stats')">📊 STATS</button>
           <button class="back-btn" onclick="showScreen('screen-settings')">⚙️ SETTINGS</button>
-          <button class="back-btn" onclick="showScreen('screen-menu')">☰ MENU</button>
+          <button class="back-btn" onclick="showScreen('screen-play')">▶ PLAY</button>
         </div>
         <div class="title-block">
           <div class="title-jp">日本語</div>
@@ -158,19 +158,19 @@
         <div class="worldmap-hud" id="worldmap-hud">
           <div class="stat-row">
             <span class="stat-label">🔰 LVL</span>
-            <span class="stat-val" id="menu-level">1</span>
+            <span class="stat-val" id="hud-level">1</span>
           </div>
           <div class="stat-row">
             <span class="stat-label">❤ HP</span>
-            <div class="bar-track"><div class="bar-fill hp-fill" id="menu-hp"></div></div>
+            <div class="bar-track"><div class="bar-fill hp-fill" id="hud-hp"></div></div>
           </div>
           <div class="stat-row">
             <span class="stat-label">⭐ EXP</span>
-            <div class="bar-track"><div class="bar-fill exp-fill" id="menu-exp"></div></div>
+            <div class="bar-track"><div class="bar-fill exp-fill" id="hud-exp"></div></div>
           </div>
           <div class="stat-row">
             <span class="stat-label">🔥 Streak</span>
-            <span class="stat-val" id="menu-streak">0</span>
+            <span class="stat-val" id="hud-streak">0</span>
           </div>
         </div>
         <div class="roadmap-tabs" id="worldmap-package-chips"></div>
@@ -207,7 +207,10 @@
   <!-- SETTINGS -->
   <div id="screen-settings" class="screen screen-settings">
     <div class="panel">
-      <h2 class="panel-title">⚙️ SETTINGS</h2>
+      <div class="game-hud">
+        <button class="hud-back" onclick="showScreen('screen-worldmap')">◀</button>
+        <div class="hud-title">⚙️ SETTINGS</div>
+      </div>
       <div class="settings-group">
         <div class="setting-block">
           <h3>Game 1 + 5 - QUIZ / LISTEN</h3>
@@ -389,15 +392,17 @@
       <div class="btn-row" style="justify-content: center; margin-top: 12px;">
         <button class="action-btn btn-secondary" onclick="resetSettingsToDefault()">🔄 Reset Settings to Default</button>
       </div>
-      <button class="back-btn" onclick="showScreen('screen-worldmap')">◀ BACK TO WORLD MAP</button>
     </div>
   </div>
 
   <!-- STATS / PROGRESS TRACKING -->
   <div id="screen-stats" class="screen">
     <div class="panel panel-stats">
-      <h2 class="panel-title">📊 LEARNING STATS</h2>
-      
+      <div class="game-hud">
+        <button class="hud-back" onclick="showScreen('screen-worldmap')">◀</button>
+        <div class="hud-title">📊 LEARNING STATS</div>
+      </div>
+
       <div class="stats-section">
         <h3 class="stats-section-title">📈 Overview</h3>
         <div id="stats-summary"></div>
@@ -417,8 +422,6 @@
         <h3 class="stats-section-title">📝 Session History</h3>
         <div id="stats-history"></div>
       </div>
-
-      <button class="back-btn" onclick="showScreen('screen-worldmap')">◀ BACK TO WORLD MAP</button>
     </div>
   </div>
 
@@ -452,7 +455,7 @@
         <div class="go-title">GAME OVER</div>
         <div class="go-score">Score: <span id="listen-go-score">0</span></div>
         <button class="action-btn" onclick="restartListen()">▶ RESTART</button>
-        <button class="action-btn btn-secondary" onclick="exitGame()">◀ MENU</button>
+        <button class="action-btn btn-secondary" onclick="exitGame()">◀ PLAY</button>
       </div>
     </div>
   </div>
@@ -661,7 +664,7 @@
         <div class="go-title">GAME OVER</div>
         <div class="go-score">Score: <span id="grammar-go-score">0</span></div>
         <button class="action-btn" onclick="restartGrammar()">▶ RESTART</button>
-        <button class="action-btn btn-secondary" onclick="exitGame()">◀ MENU</button>
+        <button class="action-btn btn-secondary" onclick="exitGame()">◀ PLAY</button>
       </div>
     </div>
   </div>
@@ -725,7 +728,7 @@
       <div class="go-title">GAME OVER</div>
       <div class="go-score">Score: <span id="go-score">0</span></div>
       <button class="action-btn" id="btn-restart">▶ RESTART</button>
-      <button class="action-btn btn-secondary" onclick="exitGame()">◀ MENU</button>
+      <button class="action-btn btn-secondary" onclick="exitGame()">◀ PLAY</button>
     </div>
   </div>
 

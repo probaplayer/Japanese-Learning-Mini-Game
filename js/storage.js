@@ -50,7 +50,7 @@ async function switchQuestionSet(id) {
   saveActiveSetId();
   if (typeof initQuestionStats === 'function') initQuestionStats(questions);
   refreshQuestionSetUI();
-  updateMenuUI();
+  updatePlayUI();
 }
 
 function getActiveQuestionSet() {

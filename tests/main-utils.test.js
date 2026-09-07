@@ -49,7 +49,7 @@ function createContext(randomValues = []) {
         return elements[id];
       },
       querySelectorAll(selector) {
-        if (selector === '.menu-btn[data-game]') {
+        if (selector === '.play-btn[data-game]') {
           return Object.values(elements).filter(el => el.dataset && el.dataset.game);
         }
         return [];
@@ -64,7 +64,7 @@ function createContext(randomValues = []) {
 ${source}
 this.escapeHtml = escapeHtml;
 this.shuffle = shuffle;
-this.updateMenuUI = updateMenuUI;
+this.updatePlayUI = updatePlayUI;
 this.setQuestionSets = (value) => { questionSets = value; };
 this.setActiveSetId = (value) => { activeSetId = value; };`,
     context
@@ -94,54 +94,54 @@ function testShuffleMutatesAndReturnsSameArrayWithFisherYatesSwaps() {
   assert.deepStrictEqual(result, ['c', 'd', 'b', 'a']);
 }
 
-function createMenuButtonElement(game) {
+function createPlayButtonElement(game) {
   const el = createElement(`btn-${game}`);
   el.dataset = { game };
   return el;
 }
 
-function testUpdateMenuUIHidesGamesNotCompatibleWithActiveCategory() {
+function testUpdatePlayUIHidesGamesNotCompatibleWithActiveCategory() {
   const context = createContext();
-  context.elements['menu-hp'] = createElement('menu-hp');
-  context.elements['menu-exp'] = createElement('menu-exp');
-  context.elements['menu-level'] = createElement('menu-level');
-  context.elements['menu-combo'] = createElement('menu-combo');
+  context.elements['hud-hp'] = createElement('hud-hp');
+  context.elements['hud-exp'] = createElement('hud-exp');
+  context.elements['hud-level'] = createElement('hud-level');
+  context.elements['play-combo'] = createElement('play-combo');
   context.elements['data-count'] = createElement('data-count');
-  context.elements['menu-streak'] = createElement('menu-streak');
+  context.elements['hud-streak'] = createElement('hud-streak');
   ['quiz', 'listen', 'type', 'match', 'flash', 'write', 'grammar'].forEach(game => {
-    context.elements[`btn-${game}`] = createMenuButtonElement(game);
+    context.elements[`btn-${game}`] = createPlayButtonElement(game);
   });
 
   context.setQuestionSets([{ id: 'set-a', category: 'grammar' }]);
   context.setActiveSetId('set-a');
-  context.updateMenuUI();
+  context.updatePlayUI();
 
   assert.strictEqual(context.elements['btn-quiz'].classList.contains('hidden'), true);
   assert.strictEqual(context.elements['btn-grammar'].classList.contains('hidden'), false);
 
   context.setQuestionSets([{ id: 'set-b', category: 'vocabulary' }]);
   context.setActiveSetId('set-b');
-  context.updateMenuUI();
+  context.updatePlayUI();
 
   assert.strictEqual(context.elements['btn-quiz'].classList.contains('hidden'), false);
   assert.strictEqual(context.elements['btn-grammar'].classList.contains('hidden'), true);
 }
 
-function testUpdateMenuUIShowsAllVocabGamesWhenNoActiveSetCategoryKnown() {
+function testUpdatePlayUIShowsAllVocabGamesWhenNoActiveSetCategoryKnown() {
   const context = createContext();
-  context.elements['menu-hp'] = createElement('menu-hp');
-  context.elements['menu-exp'] = createElement('menu-exp');
-  context.elements['menu-level'] = createElement('menu-level');
-  context.elements['menu-combo'] = createElement('menu-combo');
+  context.elements['hud-hp'] = createElement('hud-hp');
+  context.elements['hud-exp'] = createElement('hud-exp');
+  context.elements['hud-level'] = createElement('hud-level');
+  context.elements['play-combo'] = createElement('play-combo');
   context.elements['data-count'] = createElement('data-count');
-  context.elements['menu-streak'] = createElement('menu-streak');
+  context.elements['hud-streak'] = createElement('hud-streak');
   ['quiz', 'grammar'].forEach(game => {
-    context.elements[`btn-${game}`] = createMenuButtonElement(game);
+    context.elements[`btn-${game}`] = createPlayButtonElement(game);
   });
 
   context.setQuestionSets([]);
   context.setActiveSetId(null);
-  context.updateMenuUI();
+  context.updatePlayUI();
 
   assert.strictEqual(context.elements['btn-quiz'].classList.contains('hidden'), false);
   assert.strictEqual(context.elements['btn-grammar'].classList.contains('hidden'), true);
@@ -149,7 +149,7 @@ function testUpdateMenuUIShowsAllVocabGamesWhenNoActiveSetCategoryKnown() {
 
 testEscapeHtmlHandlesUnsafeAndEmptyValues();
 testShuffleMutatesAndReturnsSameArrayWithFisherYatesSwaps();
-testUpdateMenuUIHidesGamesNotCompatibleWithActiveCategory();
-testUpdateMenuUIShowsAllVocabGamesWhenNoActiveSetCategoryKnown();
+testUpdatePlayUIHidesGamesNotCompatibleWithActiveCategory();
+testUpdatePlayUIShowsAllVocabGamesWhenNoActiveSetCategoryKnown();
 
 console.log('main-utils tests passed');

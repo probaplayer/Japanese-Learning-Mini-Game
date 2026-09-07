@@ -141,7 +141,7 @@ function endMatchByTime() {
   renderMatchBoard();
   
   if (settings.disableGameOver) {
-    showScreen('screen-menu');
+    showScreen('screen-play');
   } else {
     showToast("⏱ Time's up!", 'err');
     setTimeout(() => {

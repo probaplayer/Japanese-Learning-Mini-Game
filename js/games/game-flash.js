@@ -180,7 +180,7 @@ function flashComplete() {
     const elapsed = (Date.now() - gameStartTime) / 60000;
     recordPlayTime(elapsed);
   }
-  setTimeout(() => showScreen('screen-menu'), 1000);
+  setTimeout(() => showScreen('screen-play'), 1000);
 }
 
 function updateFlashHUD() {

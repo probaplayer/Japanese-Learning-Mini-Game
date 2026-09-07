@@ -255,7 +255,7 @@ function resetPlayerProgress() {
   localStorage.removeItem('jq_streak_date');
   
   saveToStorage();
-  updateMenuUI();
+  updatePlayUI();
   showToast('💀 All progress has been reset!', 'err');
 }
 

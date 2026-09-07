@@ -341,7 +341,7 @@ function handleEmptyGameDeck(gameType) {
     showToast('No questions available right now. Try another mode or come back later.', 'info');
   }
   if (typeof showScreen === 'function') {
-    showScreen('screen-menu');
+    showScreen('screen-play');
   }
   return true;
 }

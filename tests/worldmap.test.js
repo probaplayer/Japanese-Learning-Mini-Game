@@ -263,7 +263,7 @@ function testBuildContinueQuestCardHtmlShowsSetAndZoneName() {
   const html = context.buildContinueQuestCardHtml({ id: 'a', name: 'Set A' }, 'Bài 1');
   assert.ok(html.includes('Set A'));
   assert.ok(html.includes('Bài 1'));
-  assert.ok(html.includes("showScreen('screen-menu')"));
+  assert.ok(html.includes("showScreen('screen-play')"));
 }
 
 function testBuildContinueQuestCardHtmlShowsEmptyStateWhenNoActiveSet() {

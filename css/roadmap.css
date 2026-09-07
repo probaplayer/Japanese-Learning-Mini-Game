@@ -141,6 +141,17 @@
 .roadmap-track-mini .roadmap-node-meta { font-size: 10px; }
 
 /* ─── World Map ──────────────────────────────────── */
+/* HUD Bars (Level/HP/EXP/Streak, shown in .worldmap-hud) */
+.stat-row { display: flex; align-items: center; gap: 10px; }
+.stat-row.level-row { justify-content: space-between; }
+.stat-row.level-row .stat-label, .stat-row.level-row .stat-val { width: auto; }
+.stat-label { font-family: var(--font-px); font-size: 7px; color: var(--text-dim); width: 50px; flex-shrink: 0; }
+.stat-val { font-family: var(--font-px); font-size: 7px; color: var(--text); width: 36px; text-align: right; flex-shrink: 0; }
+.bar-track { flex: 1; height: 10px; background: rgba(255,255,255,.07); border-radius: 2px; overflow: hidden; border: 1px solid var(--border); }
+.bar-fill { height: 100%; transition: width .5s ease; border-radius: 2px; }
+.hp-fill { background: linear-gradient(90deg, #c0392b, var(--accent)); box-shadow: var(--glow-r); }
+.exp-fill { background: linear-gradient(90deg, #b7950b, var(--accent2)); box-shadow: var(--glow-y); }
+
 .worldmap-hud {
   width: 100%;
   display: flex;
@@ -303,6 +314,9 @@
 .worldmap-quick-actions { display: flex; flex-wrap: wrap; gap: 8px; align-self: flex-start; }
 
 @media (min-width: 1024px) {
+  .stat-label { font-size: 10.5px; width: 75px; }
+  .stat-val { font-size: 10.5px; width: 54px; }
+  .bar-track { height: 15px; }
   .worldmap-hud { font-size: 10.5px; padding: 15px 24px; }
   .worldmap-continue-quest-zone { font-size: 12px; }
   .worldmap-continue-quest-name { font-size: 19.5px; }

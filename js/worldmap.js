@@ -110,7 +110,7 @@ function buildContinueQuestCardHtml(activeMeta, roadmapName) {
       <span class="worldmap-continue-quest-zone">${escapeHtml(roadmapName || 'Unassigned')}</span>
       <span class="worldmap-continue-quest-name">${escapeHtml(activeMeta.name)}</span>
     </div>
-    <button class="action-btn btn-green worldmap-continue-quest-btn" onclick="showScreen('screen-menu')">▶ CONTINUE</button>`;
+    <button class="action-btn btn-green worldmap-continue-quest-btn" onclick="showScreen('screen-play')">▶ CONTINUE</button>`;
 }
 
 async function renderWorldMap() {

@@ -30,10 +30,10 @@
 
 body.animations-disabled .screen { transition: none; opacity: 1; }
 body.animations-disabled .screen.screen-transitioning { animation: none !important; }
-body.animations-disabled .main-nav.menu-nav-animate .menu-btn { animation: none !important; opacity: 1; }
+body.animations-disabled .main-nav.play-nav-animate .play-btn { animation: none !important; opacity: 1; }
 body.animations-disabled .tile-card,
 body.animations-disabled .action-btn,
-body.animations-disabled .menu-btn,
+body.animations-disabled .play-btn,
 body.animations-disabled .choice-btn { transition: none; animation: none !important; }
 body.animations-disabled .roadmap-node { animation: none !important; transition: none; }
 body.animations-disabled .roadmap-avatar { animation: none !important; }
@@ -41,9 +41,9 @@ body.animations-disabled .roadmap-node-played::after { animation: none !importan
 body.animations-disabled .roadmap-avatar.roadmap-avatar-launch { animation: none !important; }
 
 /* Buttons */
-.action-btn, .menu-btn, .choice-btn { transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; }
-.action-btn:hover, .menu-btn:hover, .choice-btn:hover { transform: scale(1.05); box-shadow: var(--glow-b); }
-.action-btn:active, .menu-btn:active, .choice-btn:active { transform: scale(0.98); }
+.action-btn, .play-btn, .choice-btn { transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; }
+.action-btn:hover, .play-btn:hover, .choice-btn:hover { transform: scale(1.05); box-shadow: var(--glow-b); }
+.action-btn:active, .play-btn:active, .choice-btn:active { transform: scale(0.98); }
 
 .action-btn {
   padding: 12px 18px;
@@ -72,14 +72,14 @@ body.animations-disabled .roadmap-avatar.roadmap-avatar-launch { animation: none
   .action-btn { padding: 18px 27px; font-size: 13.5px; }
   .btn-sm { padding: 9px 15px; font-size: 10.5px; }
   .btn-row { gap: 12px; }
-  .menu-container { max-width: 1050px; gap: 36px; padding-top: 22px; }
+  .play-container { max-width: 1050px; gap: 36px; padding-top: 22px; }
   .title-jp { font-size: clamp(90px, 14vw, 150px); }
   .title-en { font-size: clamp(36px, 7vw, 78px); letter-spacing: 9px; margin-top: -9px; }
   .title-sub { font-size: 12px; letter-spacing: 3px; margin-top: 6px; }
 }
 
-/* Menu */
-.menu-container {
+/* Play */
+.play-container {
   width: 100%; max-width: 1000px;
   display: flex; flex-direction: column; align-items: center;
   height: 100%; min-height: 0;

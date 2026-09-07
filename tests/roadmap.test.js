@@ -100,7 +100,7 @@ function testRenderStarStringPadsToThreeCharacters() {
   assert.strictEqual(context.renderStarString(3), '★★★');
 }
 
-function testGetSetsForRoadmapFiltersAndSortsDescending() {
+function testGetSetsForRoadmapFiltersAndSortsAscending() {
   const context = createContext();
   context.setQuestionSets([
     { id: 'a', roadmapId: 'p1', order: 1 },
@@ -108,7 +108,7 @@ function testGetSetsForRoadmapFiltersAndSortsDescending() {
     { id: 'c', roadmapId: 'p1', order: 3 }
   ]);
   const result = context.getSetsForRoadmap('p1');
-  assert.deepStrictEqual(result.map(s => s.id), ['c', 'a']);
+  assert.deepStrictEqual(result.map(s => s.id), ['a', 'c']);
 }
 
 function testBuildRoadmapNodesHtmlHighlightsMatchingSetAndEmbedsClickHandler() {
@@ -153,7 +153,7 @@ testComputeSetProgressIgnoresMetaKey();
 testComputeSetProgressReturnsZeroForUnattemptedQuestions();
 testStarsForProgressThresholds();
 testRenderStarStringPadsToThreeCharacters();
-testGetSetsForRoadmapFiltersAndSortsDescending();
+testGetSetsForRoadmapFiltersAndSortsAscending();
 testBuildRoadmapNodesHtmlHighlightsMatchingSetAndEmbedsClickHandler();
 testBuildRoadmapNodesHtmlCompactModeOmitsZigzagStaggerAndAvatarButKeepsHighlight();
 testRenderRoadmapChipsHtmlMarksSelectedChipActive();

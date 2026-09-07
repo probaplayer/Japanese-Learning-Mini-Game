@@ -45,7 +45,7 @@ async function getRoadmapQuestionsForSet(meta) {
 }
 
 function getSetsForRoadmap(roadmapId) {
-  return questionSets.filter(s => s.roadmapId === roadmapId).sort((a, b) => (b.order ?? 0) - (a.order ?? 0));
+  return questionSets.filter(s => s.roadmapId === roadmapId).sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
 }
 
 async function computeRoadmapProgress(setsForRoadmap) {

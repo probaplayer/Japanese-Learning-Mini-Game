@@ -697,6 +697,29 @@ function testRenamePackageErrorsOnUnknownId() {
   assert.throws(() => repo.renamePackage('nope', 'New Name'), /Package not found: nope/);
 }
 
+function testUpdatePackageMetadataPersistsOrder() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createPackage({ id: 'n3', name: 'N3' });
+
+  const updated = repo.updatePackageMetadata('n3', { order: 5 });
+  assert.strictEqual(updated.order, 5);
+  assert.strictEqual(repo.listPackages()[0].order, 5);
+}
+
+function testUpdatePackageMetadataErrorsOnUnknownId() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  assert.throws(() => repo.updatePackageMetadata('nope', { order: 1 }), /Package not found: nope/);
+}
+
+function testUpdatePackageMetadataRejectsNonIntegerOrder() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createPackage({ id: 'n3', name: 'N3' });
+  assert.throws(() => repo.updatePackageMetadata('n3', { order: 1.5 }), /order must be an integer/);
+}
+
 function testDeletePackageRemovesEntryWhenNoRoadmapsAssigned() {
   const dir = makeTempQuestionsDir();
   const repo = createQuestionsRepo(dir);
@@ -786,6 +809,9 @@ testCreatePackageAcceptsExplicitIdAndOrder();
 testCreatePackageRejectsDuplicateId();
 testRenamePackageUpdatesName();
 testRenamePackageErrorsOnUnknownId();
+testUpdatePackageMetadataPersistsOrder();
+testUpdatePackageMetadataErrorsOnUnknownId();
+testUpdatePackageMetadataRejectsNonIntegerOrder();
 testDeletePackageRemovesEntryWhenNoRoadmapsAssigned();
 testDeletePackageErrorsOnUnknownId();
 testDeletePackageReassignsAssignedRoadmapsToUnassignedFallback();

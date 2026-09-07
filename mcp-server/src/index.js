@@ -263,6 +263,16 @@ server.registerTool(
 );
 
 server.registerTool(
+  'update_package_metadata',
+  {
+    title: 'Update package metadata',
+    description: 'Update the order of an existing package in the manifest. Omit the field to leave it unchanged.',
+    inputSchema: { id: z.string(), order: z.number().int().optional() }
+  },
+  guarded(({ id, order }) => repo.updatePackageMetadata(id, { order }))
+);
+
+server.registerTool(
   'delete_package',
   {
     title: 'Delete package',

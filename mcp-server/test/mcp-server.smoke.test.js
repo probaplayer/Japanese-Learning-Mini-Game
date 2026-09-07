@@ -203,6 +203,9 @@ async function main() {
   const renamedPackage = await client.callTool({ name: 'rename_package', arguments: { id: 'n3', name: 'N3 (Renamed)' } });
   assert.strictEqual(JSON.parse(renamedPackage.content[0].text).name, 'N3 (Renamed)');
 
+  const updatedPackageMetadata = await client.callTool({ name: 'update_package_metadata', arguments: { id: 'n3', order: 4 } });
+  assert.strictEqual(JSON.parse(updatedPackageMetadata.content[0].text).order, 4);
+
   const createdRoadmapWithPackage = await client.callTool({
     name: 'create_roadmap',
     arguments: { id: 'n3-path-2', name: 'N3 Path 2', packageId: 'n3', order: 1 }

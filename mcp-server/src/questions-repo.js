@@ -351,6 +351,20 @@ export function createQuestionsRepo(baseDir) {
     return entry;
   }
 
+  function updatePackageMetadata(id, { order } = {}) {
+    const manifest = readManifest();
+    const entry = findPackage(manifest, id);
+    if (!entry) throw new Error(`Package not found: ${id}`);
+
+    if (order !== undefined) {
+      if (!Number.isInteger(order)) throw new Error('order must be an integer');
+      entry.order = order;
+    }
+
+    writeManifest(manifest);
+    return entry;
+  }
+
   function deletePackage(id) {
     const manifest = readManifest();
     const entry = findPackage(manifest, id);
@@ -453,6 +467,7 @@ export function createQuestionsRepo(baseDir) {
     listPackages,
     createPackage,
     renamePackage,
+    updatePackageMetadata,
     deletePackage
   };
 }

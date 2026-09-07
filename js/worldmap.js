@@ -5,6 +5,8 @@
 let activeWorldMapPackageId = null;
 let expandedZoneIds = new Set();
 let worldMapIndexOpen = false;
+let selectedIndexRoadmapId = null;
+let selectedIndexSetId = null;
 
 function getRoadmapsForPackage(packageId) {
   return roadmapDefinitions
@@ -72,7 +74,7 @@ function buildWorldMapIndexEntries() {
   }));
 }
 
-function buildWorldMapIndexHtml(entries, query) {
+function buildWorldMapIndexHtml(entries, query, selectedRoadmapId, selectedSetId) {
   const needle = query.trim().toLowerCase();
   const filtered = entries
     .map(entry => {
@@ -86,11 +88,17 @@ function buildWorldMapIndexHtml(entries, query) {
     return '<div class="roadmap-loading">No results.</div>';
   }
 
-  return filtered.map(entry => `
+  return filtered.map(entry => {
+    const roadmapActiveClass = !selectedSetId && entry.roadmapId === selectedRoadmapId ? 'worldmap-index-item-active' : '';
+    return `
     <div class="worldmap-index-group">
-      <button class="worldmap-index-roadmap" onclick="navigateWorldMapIndex('${escapeHtml(entry.roadmapId)}')">${escapeHtml(entry.roadmapName)}</button>
-      ${entry.sets.map(s => `<button class="worldmap-index-set" onclick="navigateWorldMapIndex('${escapeHtml(entry.roadmapId)}', '${escapeHtml(s.id)}')">${escapeHtml(s.name)}</button>`).join('')}
-    </div>`).join('');
+      <button class="worldmap-index-roadmap ${roadmapActiveClass}" onclick="navigateWorldMapIndex('${escapeHtml(entry.roadmapId)}')">${escapeHtml(entry.roadmapName)}</button>
+      ${entry.sets.map(s => {
+        const setActiveClass = s.id === selectedSetId ? 'worldmap-index-item-active' : '';
+        return `<button class="worldmap-index-set ${setActiveClass}" onclick="navigateWorldMapIndex('${escapeHtml(entry.roadmapId)}', '${escapeHtml(s.id)}')">${escapeHtml(s.name)}</button>`;
+      }).join('')}
+    </div>`;
+  }).join('');
 }
 
 function buildContinueQuestCardHtml(activeMeta, roadmapName) {
@@ -169,7 +177,7 @@ async function selectWorldMapPackage(id) {
 function filterWorldMapIndex(query) {
   const listEl = document.getElementById('worldmap-index-list');
   if (!listEl) return;
-  listEl.innerHTML = buildWorldMapIndexHtml(buildWorldMapIndexEntries(), query);
+  listEl.innerHTML = buildWorldMapIndexHtml(buildWorldMapIndexEntries(), query, selectedIndexRoadmapId, selectedIndexSetId);
 }
 
 function toggleWorldMapIndex(forceState) {
@@ -187,6 +195,11 @@ function closeWorldMapIndex() {
 async function navigateWorldMapIndex(roadmapId, setId) {
   const roadmap = roadmapDefinitions.find(r => r.id === roadmapId);
   if (!roadmap) return;
+
+  selectedIndexRoadmapId = roadmapId;
+  selectedIndexSetId = setId || null;
+  const searchInput = document.getElementById('worldmap-index-search');
+  filterWorldMapIndex(searchInput ? searchInput.value : '');
 
   if (roadmap.packageId !== activeWorldMapPackageId) {
     activeWorldMapPackageId = roadmap.packageId;

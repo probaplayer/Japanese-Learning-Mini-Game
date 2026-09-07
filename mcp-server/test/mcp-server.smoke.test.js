@@ -225,7 +225,7 @@ async function main() {
   assert.deepStrictEqual(JSON.parse(deletedPackage.content[0].text), { deleted: 'n3' });
 
   const packagesAfterDelete = await client.callTool({ name: 'list_packages', arguments: {} });
-  assert.deepStrictEqual(JSON.parse(packagesAfterDelete.content[0].text), [{ id: 'unassigned', name: 'Chưa phân loại' }]);
+  assert.deepStrictEqual(JSON.parse(packagesAfterDelete.content[0].text), [{ id: 'unassigned', name: 'Unknown' }]);
 
   const n3Path2AfterDelete = await client.callTool({ name: 'list_roadmaps', arguments: {} });
   const n3Path2Entry = JSON.parse(n3Path2AfterDelete.content[0].text).find(r => r.id === 'n3-path-2');

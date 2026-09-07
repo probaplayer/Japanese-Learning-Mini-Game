@@ -4,7 +4,7 @@ import path from 'node:path';
 const UNASSIGNED_ROADMAP_ID = 'unassigned';
 const UNASSIGNED_ROADMAP_NAME = 'Chưa phân loại';
 const UNASSIGNED_PACKAGE_ID = 'unassigned';
-const UNASSIGNED_PACKAGE_NAME = 'Chưa phân loại';
+const UNASSIGNED_PACKAGE_NAME = 'Unknown';
 
 const QUESTION_FIELDS = ['word', 'romaji', 'translation', 'q', 'a', 'c', 'ex', 'aTranslation'];
 const GRAMMAR_QUESTION_FIELDS = ['sentence', 'chunks', 'translation', 'ex'];

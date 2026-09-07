@@ -759,13 +759,13 @@ function testDeletePackageCreatesUnassignedFallbackIfMissing() {
 
   const fallback = repo.listPackages().find(p => p.id === 'unassigned');
   assert.ok(fallback, 'expected an "unassigned" fallback package to be created');
-  assert.strictEqual(fallback.name, 'Chưa phân loại');
+  assert.strictEqual(fallback.name, 'Unknown');
 }
 
 function testDeletePackageDoesNotDuplicateFallbackIfAlreadyPresent() {
   const dir = makeTempQuestionsDir();
   const repo = createQuestionsRepo(dir);
-  repo.createPackage({ id: 'unassigned', name: 'Chưa phân loại' });
+  repo.createPackage({ id: 'unassigned', name: 'Unknown' });
   repo.createPackage({ id: 'n3', name: 'N3' });
   repo.createRoadmap({ id: 'n3-path', name: 'N3 Path', packageId: 'n3' });
 
@@ -778,7 +778,7 @@ function testDeletePackageDoesNotDuplicateFallbackIfAlreadyPresent() {
 function testDeletePackageBlocksDeletingUnassignedFallbackWhileInUse() {
   const dir = makeTempQuestionsDir();
   const repo = createQuestionsRepo(dir);
-  repo.createPackage({ id: 'unassigned', name: 'Chưa phân loại' });
+  repo.createPackage({ id: 'unassigned', name: 'Unknown' });
   repo.createRoadmap({ id: 'n3-path', name: 'N3 Path', packageId: 'unassigned' });
 
   assert.throws(() => repo.deletePackage('unassigned'), /still assigned/);

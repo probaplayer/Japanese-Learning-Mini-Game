@@ -218,6 +218,36 @@ function testBuildWorldMapIndexHtmlFiltersBySetNameKeepingOnlyMatchingSets() {
   assert.ok(!html.includes('N4 Bài 26 - Từ vựng'));
 }
 
+function testBuildWorldMapIndexHtmlHighlightsSelectedRoadmap() {
+  const context = createContext();
+  const entries = [
+    { roadmapId: 'r1', roadmapName: 'N4 Bài 26', sets: [{ id: 'a', name: 'N4 Bài 26 - Từ vựng' }] },
+    { roadmapId: 'r2', roadmapName: 'N3 Bài 1', sets: [{ id: 'c', name: 'N3 Bài 1 - Từ vựng' }] }
+  ];
+  const html = context.buildWorldMapIndexHtml(entries, '', 'r1', null);
+  const r1Match = html.match(/<button class="worldmap-index-roadmap ([^"]*)" onclick="navigateWorldMapIndex\('r1'\)">/);
+  const r2Match = html.match(/<button class="worldmap-index-roadmap ([^"]*)" onclick="navigateWorldMapIndex\('r2'\)">/);
+  assert.ok(r1Match && r1Match[1].includes('worldmap-index-item-active'));
+  assert.ok(r2Match && !r2Match[1].includes('worldmap-index-item-active'));
+}
+
+function testBuildWorldMapIndexHtmlHighlightsSelectedSetNotItsRoadmap() {
+  const context = createContext();
+  const entries = [
+    { roadmapId: 'r1', roadmapName: 'N4 Bài 26', sets: [
+      { id: 'a', name: 'N4 Bài 26 - Từ vựng' },
+      { id: 'b', name: 'N4 Bài 26 - Ngữ pháp' }
+    ] }
+  ];
+  const html = context.buildWorldMapIndexHtml(entries, '', 'r1', 'b');
+  const roadmapMatch = html.match(/<button class="worldmap-index-roadmap ([^"]*)" onclick="navigateWorldMapIndex\('r1'\)">/);
+  const setBMatch = html.match(/<button class="worldmap-index-set ([^"]*)" onclick="navigateWorldMapIndex\('r1', 'b'\)">/);
+  const setAMatch = html.match(/<button class="worldmap-index-set ([^"]*)" onclick="navigateWorldMapIndex\('r1', 'a'\)">/);
+  assert.ok(roadmapMatch && !roadmapMatch[1].includes('worldmap-index-item-active'));
+  assert.ok(setBMatch && setBMatch[1].includes('worldmap-index-item-active'));
+  assert.ok(setAMatch && !setAMatch[1].includes('worldmap-index-item-active'));
+}
+
 function testBuildWorldMapIndexHtmlShowsNoResultsMessageWhenNothingMatches() {
   const context = createContext();
   const entries = [
@@ -259,6 +289,8 @@ testBuildWorldMapIndexEntriesGroupsSetsByRoadmap();
 testBuildWorldMapIndexHtmlShowsEverythingWhenQueryEmpty();
 testBuildWorldMapIndexHtmlFiltersByRoadmapNameCaseInsensitive();
 testBuildWorldMapIndexHtmlFiltersBySetNameKeepingOnlyMatchingSets();
+testBuildWorldMapIndexHtmlHighlightsSelectedRoadmap();
+testBuildWorldMapIndexHtmlHighlightsSelectedSetNotItsRoadmap();
 testBuildWorldMapIndexHtmlShowsNoResultsMessageWhenNothingMatches();
 testBuildContinueQuestCardHtmlShowsSetAndZoneName();
 testBuildContinueQuestCardHtmlShowsEmptyStateWhenNoActiveSet();

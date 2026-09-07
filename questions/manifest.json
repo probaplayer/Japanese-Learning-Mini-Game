@@ -3,7 +3,7 @@
     { "id": "n5", "name": "N5", "order": 1 },
     { "id": "n4", "name": "N4", "order": 2 },
     { "id": "n3", "name": "N3", "order": 3 },
-    { "id": "unassigned", "name": "Chưa phân loại", "order": 99 }
+    { "id": "unassigned", "name": "Unknown", "order": 99 }
   ],
   "roadmaps": [
     {

@@ -82,16 +82,6 @@
             <span class="btn-text">SENTENCE BUILDER<br><small>Arrange the grammar</small></span>
             <span class="btn-arrow">▶</span>
           </button>
-          <button class="menu-btn btn-stats" onclick="showScreen('screen-stats')">
-            <span class="btn-icon">📊</span>
-            <span class="btn-text">LEARNING STATS<br><small>Progress tracking</small></span>
-            <span class="btn-arrow">▶</span>
-          </button>
-          <button class="menu-btn btn-settings" onclick="showScreen('screen-settings')">
-            <span class="btn-icon">⚙️</span>
-            <span class="btn-text">SETTINGS<br><small>Settings</small></span>
-            <span class="btn-arrow">▶</span>
-          </button>
           <button class="menu-btn btn-data" onclick="showScreen('screen-library')">
             <span class="btn-icon">📚</span>
             <span class="btn-text">LIBRARY<br><small>Choose a set</small></span>
@@ -181,7 +171,11 @@
         <div class="roadmap-tabs" id="worldmap-package-chips"></div>
         <div class="worldmap-continue-quest" id="worldmap-continue-quest"></div>
         <div class="roadmap-track" id="worldmap-track"></div>
-        <button class="back-btn" onclick="showScreen('screen-menu')">☰ MENU</button>
+        <div class="worldmap-footer-actions">
+          <button class="back-btn" onclick="showScreen('screen-stats')">📊 STATS</button>
+          <button class="back-btn" onclick="showScreen('screen-settings')">⚙️ SETTINGS</button>
+          <button class="back-btn" onclick="showScreen('screen-menu')">☰ MENU</button>
+        </div>
       </div>
     </div>
   </div>
@@ -395,7 +389,7 @@
       <div class="btn-row" style="justify-content: center; margin-top: 12px;">
         <button class="action-btn btn-secondary" onclick="resetSettingsToDefault()">🔄 Reset Settings to Default</button>
       </div>
-      <button class="back-btn" onclick="showScreen('screen-menu')">◀ BACK TO MENU</button>
+      <button class="back-btn" onclick="showScreen('screen-worldmap')">◀ BACK TO WORLD MAP</button>
     </div>
   </div>
 
@@ -423,8 +417,8 @@
         <h3 class="stats-section-title">📝 Session History</h3>
         <div id="stats-history"></div>
       </div>
-      
-      <button class="back-btn" onclick="showScreen('screen-menu')">◀ BACK TO MENU</button>
+
+      <button class="back-btn" onclick="showScreen('screen-worldmap')">◀ BACK TO WORLD MAP</button>
     </div>
   </div>
 

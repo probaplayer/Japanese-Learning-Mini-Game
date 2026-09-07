@@ -87,6 +87,25 @@ function testEverySetRoadmapIdReferencesAKnownRoadmap() {
   });
 }
 
+function testEveryPackageHasUniqueIdAndNonEmptyName() {
+  const manifest = JSON.parse(fs.readFileSync(path.join(questionsDir, 'manifest.json'), 'utf8'));
+  const packages = manifest.packages || [];
+  const ids = packages.map(p => p.id);
+  assert.strictEqual(new Set(ids).size, ids.length, 'package ids must be unique');
+  packages.forEach(p => {
+    assert.ok(typeof p.name === 'string' && p.name.length > 0, `${p.id}.name must be a non-empty string`);
+  });
+}
+
+function testEveryRoadmapPackageIdReferencesAKnownPackage() {
+  const manifest = JSON.parse(fs.readFileSync(path.join(questionsDir, 'manifest.json'), 'utf8'));
+  const packageIds = new Set((manifest.packages || []).map(p => p.id));
+  (manifest.roadmaps || []).forEach(entry => {
+    if (entry.packageId === undefined) return;
+    assert.ok(packageIds.has(entry.packageId), `${entry.id}.packageId "${entry.packageId}" must reference a known package`);
+  });
+}
+
 function testGrammarQuestionsHaveChunksMatchingSentence() {
   const manifest = JSON.parse(fs.readFileSync(path.join(questionsDir, 'manifest.json'), 'utf8'));
   manifest.sets.filter(entry => entry.category === 'grammar').forEach(entry => {
@@ -107,5 +126,7 @@ testEveryManifestEntryHasAKnownCategory();
 testGrammarQuestionsHaveChunksMatchingSentence();
 testEveryManifestEntryHasUniqueOrderWithinItsRoadmapAndNonEmptyLevel();
 testEverySetRoadmapIdReferencesAKnownRoadmap();
+testEveryPackageHasUniqueIdAndNonEmptyName();
+testEveryRoadmapPackageIdReferencesAKnownPackage();
 
 console.log('questions data tests passed');

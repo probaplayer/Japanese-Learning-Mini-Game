@@ -1,124 +1,190 @@
 {
+  "packages": [
+    { "id": "n5", "name": "N5", "order": 1 },
+    { "id": "n4", "name": "N4", "order": 2 },
+    { "id": "n3", "name": "N3", "order": 3 },
+    { "id": "unassigned", "name": "Chưa phân loại", "order": 99 }
+  ],
   "roadmaps": [
     {
       "id": "n5-path",
-      "name": "N5 Path"
+      "name": "N5 Path",
+      "packageId": "n5",
+      "order": 1
     },
     {
       "id": "n4-l26-path",
-      "name": "N4 Bài 26"
+      "name": "N4 Bài 26",
+      "packageId": "n4",
+      "order": 1
     },
     {
       "id": "n4-l27-path",
-      "name": "N4 Bài 27"
+      "name": "N4 Bài 27",
+      "packageId": "n4",
+      "order": 2
     },
     {
       "id": "n4-l28-path",
-      "name": "N4 Bài 28"
+      "name": "N4 Bài 28",
+      "packageId": "n4",
+      "order": 3
     },
     {
       "id": "n4-l29-path",
-      "name": "N4 Bài 29"
+      "name": "N4 Bài 29",
+      "packageId": "n4",
+      "order": 4
     },
     {
       "id": "n4-l30-path",
-      "name": "N4 Bài 30"
+      "name": "N4 Bài 30",
+      "packageId": "n4",
+      "order": 5
     },
     {
       "id": "n4-l31-path",
-      "name": "N4 Bài 31"
+      "name": "N4 Bài 31",
+      "packageId": "n4",
+      "order": 6
     },
     {
       "id": "n4-l32-path",
-      "name": "N4 Bài 32"
+      "name": "N4 Bài 32",
+      "packageId": "n4",
+      "order": 7
     },
     {
       "id": "n4-l33-path",
-      "name": "N4 Bài 33"
+      "name": "N4 Bài 33",
+      "packageId": "n4",
+      "order": 8
     },
     {
       "id": "n4-l34-path",
-      "name": "N4 Bài 34"
+      "name": "N4 Bài 34",
+      "packageId": "n4",
+      "order": 9
     },
     {
       "id": "n4-l35-path",
-      "name": "N4 Bài 35"
+      "name": "N4 Bài 35",
+      "packageId": "n4",
+      "order": 10
     },
     {
       "id": "n4-l36-path",
-      "name": "N4 Bài 36"
+      "name": "N4 Bài 36",
+      "packageId": "n4",
+      "order": 11
     },
     {
       "id": "n4-l37-path",
-      "name": "N4 Bài 37"
+      "name": "N4 Bài 37",
+      "packageId": "n4",
+      "order": 12
     },
     {
       "id": "n4-l38-path",
-      "name": "N4 Bài 38"
+      "name": "N4 Bài 38",
+      "packageId": "n4",
+      "order": 13
     },
     {
       "id": "n4-l39-path",
-      "name": "N4 Bài 39"
+      "name": "N4 Bài 39",
+      "packageId": "n4",
+      "order": 14
     },
     {
       "id": "n4-l40-path",
-      "name": "N4 Bài 40"
+      "name": "N4 Bài 40",
+      "packageId": "n4",
+      "order": 15
     },
     {
       "id": "n4-l41-path",
-      "name": "N4 Bài 41"
+      "name": "N4 Bài 41",
+      "packageId": "n4",
+      "order": 16
     },
     {
       "id": "n4-l42-path",
-      "name": "N4 Bài 42"
+      "name": "N4 Bài 42",
+      "packageId": "n4",
+      "order": 17
     },
     {
       "id": "n4-l43-path",
-      "name": "N4 Bài 43"
+      "name": "N4 Bài 43",
+      "packageId": "n4",
+      "order": 18
     },
     {
       "id": "n4-l44-path",
-      "name": "N4 Bài 44"
+      "name": "N4 Bài 44",
+      "packageId": "n4",
+      "order": 19
     },
     {
       "id": "n4-l45-path",
-      "name": "N4 Bài 45"
+      "name": "N4 Bài 45",
+      "packageId": "n4",
+      "order": 20
     },
     {
       "id": "n4-l46-path",
-      "name": "N4 Bài 46"
+      "name": "N4 Bài 46",
+      "packageId": "n4",
+      "order": 21
     },
     {
       "id": "n4-l47-path",
-      "name": "N4 Bài 47"
+      "name": "N4 Bài 47",
+      "packageId": "n4",
+      "order": 22
     },
     {
       "id": "n4-l48-path",
-      "name": "N4 Bài 48"
+      "name": "N4 Bài 48",
+      "packageId": "n4",
+      "order": 23
     },
     {
       "id": "n4-l49-path",
-      "name": "N4 Bài 49"
+      "name": "N4 Bài 49",
+      "packageId": "n4",
+      "order": 24
     },
     {
       "id": "n4-l50-path",
-      "name": "N4 Bài 50"
+      "name": "N4 Bài 50",
+      "packageId": "n4",
+      "order": 25
     },
     {
       "id": "unassigned",
-      "name": "Chưa phân loại"
+      "name": "Chưa phân loại",
+      "packageId": "unassigned",
+      "order": 1
     },
     {
       "id": "n5-l1-path",
-      "name": "N5 Bài 1"
+      "name": "N5 Bài 1",
+      "packageId": "n5",
+      "order": 2
     },
     {
       "id": "n3-l1-path",
-      "name": "N3 Bài 1"
+      "name": "N3 Bài 1",
+      "packageId": "n3",
+      "order": 1
     },
     {
       "id": "n3-l2-path",
-      "name": "N3 Bài 2"
+      "name": "N3 Bài 2",
+      "packageId": "n3",
+      "order": 2
     }
   ],
   "sets": [

@@ -3,7 +3,6 @@
 // ================================================
 
 const roadmapQuestionsCache = new Map();
-let activeRoadmapTabId = null;
 let activeLibraryRoadmapId = null;
 let roadmapProgressCache = new Map();
 
@@ -97,49 +96,6 @@ function pickDefaultRoadmapId(fallbackId) {
     return activeMeta.roadmapId;
   }
   return roadmapDefinitions.length > 0 ? roadmapDefinitions[0].id : null;
-}
-
-async function renderRoadmap() {
-  const tabsEl = document.getElementById('roadmap-tabs');
-  const track = document.getElementById('roadmap-track');
-  if (!track) return;
-  track.innerHTML = '<div class="roadmap-loading">Loading roadmap…</div>';
-  if (tabsEl) tabsEl.innerHTML = '';
-
-  try {
-    activeRoadmapTabId = pickDefaultRoadmapId(null);
-    if (!activeRoadmapTabId) {
-      track.innerHTML = '<div class="roadmap-loading">No roadmaps configured yet.</div>';
-      return;
-    }
-    if (tabsEl) tabsEl.innerHTML = renderRoadmapChipsHtml(roadmapDefinitions, activeRoadmapTabId, 'selectRoadmapTab');
-
-    roadmapProgressCache = await computeRoadmapProgress(questionSets);
-    renderRoadmapTrack();
-  } catch (e) {
-    console.error('Failed to render roadmap:', e);
-    track.innerHTML = '<div class="roadmap-loading">❌ Failed to load the roadmap. Please try again.</div>';
-    if (typeof showToast === 'function') showToast('❌ Failed to load roadmap', 'err');
-  }
-}
-
-function renderRoadmapTrack() {
-  const track = document.getElementById('roadmap-track');
-  if (!track) return;
-  const sets = getSetsForRoadmap(activeRoadmapTabId);
-  track.innerHTML = buildRoadmapNodesHtml(sets, roadmapProgressCache, { highlightSetId: activeSetId, compact: false, clickHandler: 'launchRoadmapNode' });
-
-  requestAnimationFrame(() => {
-    const activeEl = track.querySelector(`.roadmap-node[data-set-id="${activeSetId}"]`) || track.querySelector('.roadmap-node:last-child');
-    if (activeEl) activeEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  });
-}
-
-function selectRoadmapTab(id) {
-  activeRoadmapTabId = id;
-  const tabsEl = document.getElementById('roadmap-tabs');
-  if (tabsEl) tabsEl.innerHTML = renderRoadmapChipsHtml(roadmapDefinitions, activeRoadmapTabId, 'selectRoadmapTab');
-  renderRoadmapTrack();
 }
 
 function launchRoadmapNode(nodeEl, id) {

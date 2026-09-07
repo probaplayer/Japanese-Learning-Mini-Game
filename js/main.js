@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   updateAnimationBodyClass();
 
   updateMenuUI();
-  showScreen('screen-menu');
+  showScreen('screen-worldmap');
 });
 
 /* ══════════════════════════════════════════════
@@ -139,7 +139,7 @@ function showScreen(id) {
   }
   if (id === 'screen-settings') renderSettingsScreen();
   if (id === 'screen-stats') renderStatsScreen();
-  if (id === 'screen-roadmap') renderRoadmap();
+  if (id === 'screen-worldmap') { updateMenuUI(); renderWorldMap(); }
 }
 
 /* ══════════════════════════════════════════════

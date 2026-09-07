@@ -139,3 +139,62 @@
 .roadmap-track-mini .roadmap-node-icon { font-size: 16px; }
 .roadmap-track-mini .roadmap-node-name { font-size: 13px; }
 .roadmap-track-mini .roadmap-node-meta { font-size: 10px; }
+
+/* ─── World Map ──────────────────────────────────── */
+.worldmap-hud {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 16px;
+  background: var(--panel);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  font-family: var(--font-px);
+  font-size: 8px;
+  color: var(--text-dim);
+}
+.worldmap-hud .stat-row { flex: 1 1 140px; gap: 6px; }
+.worldmap-hud .bar-track { height: 8px; }
+
+.worldmap-continue-quest {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--panel);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+.worldmap-continue-quest-info { display: flex; flex-direction: column; gap: 4px; }
+.worldmap-continue-quest-zone { font-family: var(--font-px); font-size: 9px; color: var(--text-dim); }
+.worldmap-continue-quest-name { font-family: var(--font-jp); font-size: 15px; font-weight: 700; }
+.worldmap-continue-quest-btn { flex-shrink: 0; }
+
+.worldmap-zone { display: flex; flex-direction: column; gap: 20px; margin-bottom: 12px; }
+.worldmap-zone-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  background: var(--panel);
+  border: 2px solid var(--border);
+  border-left-width: 5px;
+  border-radius: var(--radius);
+}
+.worldmap-zone-name { font-family: var(--font-jp); font-size: 13px; font-weight: 700; }
+.worldmap-zone-progress { font-family: var(--font-px); font-size: 9px; color: var(--text-dim); }
+.worldmap-zone-complete .worldmap-zone-header { border-left-color: var(--accent3); box-shadow: var(--glow-g); }
+.worldmap-zone-active .worldmap-zone-header { border-left-color: var(--accent2); }
+.worldmap-zone-untouched .worldmap-zone-header { border-left-color: var(--border); }
+
+@media (min-width: 1024px) {
+  .worldmap-hud { font-size: 10.5px; padding: 15px 24px; }
+  .worldmap-continue-quest-zone { font-size: 12px; }
+  .worldmap-continue-quest-name { font-size: 19.5px; }
+  .worldmap-zone-name { font-size: 16.5px; }
+  .worldmap-zone-progress { font-size: 12px; }
+}

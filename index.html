@@ -40,33 +40,11 @@
         <div class="title-sub">JAPANESE LEARNING MINI-GAMES</div>
       </div>
 
-      <div class="hp-exp-bar">
-        <div class="stat-row">
-          <span class="stat-label">❤ HP</span>
-          <div class="bar-track"><div class="bar-fill hp-fill" id="menu-hp"></div></div>
-
-        </div>
-
-        <div class="stat-row">
-          <span class="stat-label">⭐ EXP</span>
-          <div class="bar-track"><div class="bar-fill exp-fill" id="menu-exp"></div></div>
-
-        </div>
-        <div class="stat-row level-row">
-          <span class="stat-label">🔰 LVL</span>
-          <span class="stat-val" id="menu-level">1</span>
-        </div>
-        <div class="stat-row level-row">
-          <span class="stat-label">🔥 Streak</span>
-          <span class="stat-val" id="menu-streak">0</span>
-        </div>
-      </div>
-
       <div class="menu-btn-container scrollbar-hide">
         <nav class="main-nav">
-          <button class="menu-btn btn-roadmap" onclick="showScreen('screen-roadmap')">
-            <span class="btn-icon">🌌</span>
-            <span class="btn-text">ROADMAP<br><small>Your learning journey</small></span>
+          <button class="menu-btn btn-roadmap" onclick="showScreen('screen-worldmap')">
+            <span class="btn-icon">🗺️</span>
+            <span class="btn-text">WORLD MAP<br><small>Your learning journey</small></span>
             <span class="btn-arrow">▶</span>
           </button>
           <button class="menu-btn btn-quiz" data-game="quiz" onclick="startGame('quiz')">
@@ -162,13 +140,32 @@
     </div>
   </div>
 
-  <!-- ROADMAP -->
-  <div id="screen-roadmap" class="screen screen-roadmap">
+  <!-- WORLD MAP -->
+  <div id="screen-worldmap" class="screen screen-roadmap">
     <div class="panel roadmap-panel">
-      <h2 class="panel-title">🌌 ROADMAP</h2>
-      <div class="roadmap-tabs" id="roadmap-tabs"></div>
-      <div class="roadmap-track" id="roadmap-track"></div>
-      <button class="back-btn" onclick="showScreen('screen-menu')">◀ BACK TO MENU</button>
+      <h2 class="panel-title">🗺️ WORLD MAP</h2>
+      <div class="worldmap-hud" id="worldmap-hud">
+        <div class="stat-row">
+          <span class="stat-label">🔰 LVL</span>
+          <span class="stat-val" id="menu-level">1</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">❤ HP</span>
+          <div class="bar-track"><div class="bar-fill hp-fill" id="menu-hp"></div></div>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">⭐ EXP</span>
+          <div class="bar-track"><div class="bar-fill exp-fill" id="menu-exp"></div></div>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">🔥 Streak</span>
+          <span class="stat-val" id="menu-streak">0</span>
+        </div>
+      </div>
+      <div class="roadmap-tabs" id="worldmap-package-chips"></div>
+      <div class="worldmap-continue-quest" id="worldmap-continue-quest"></div>
+      <div class="roadmap-track" id="worldmap-track"></div>
+      <button class="back-btn" onclick="showScreen('screen-menu')">☰ MENU</button>
     </div>
   </div>
 
@@ -733,6 +730,7 @@
   <script src="js/game-utils.js"></script>
   <script src="js/storage.js"></script>
   <script src="js/roadmap.js"></script>
+  <script src="js/worldmap.js"></script>
   <script src="js/settings.js"></script>
   <!-- Game modules -->
   <script src="js/games/game-listen.js"></script>

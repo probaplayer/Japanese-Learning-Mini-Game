@@ -27,6 +27,7 @@ async function initQuestionSets() {
   const manifest = await fetchQuestionsManifest();
   questionSets = manifest.sets;
   roadmapDefinitions = Array.isArray(manifest.roadmaps) ? manifest.roadmaps : [];
+  packageDefinitions = Array.isArray(manifest.packages) ? manifest.packages : [];
   if (questionSets.length === 0) {
     questions = [];
     activeSetId = null;

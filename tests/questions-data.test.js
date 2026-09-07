@@ -52,14 +52,30 @@ function testEveryManifestEntryHasAKnownCategory() {
   });
 }
 
-function testEveryManifestEntryHasUniqueOrderAndNonEmptyLevel() {
+function testEveryManifestEntryHasUniqueOrderWithinItsRoadmapAndNonEmptyLevel() {
   const manifest = JSON.parse(fs.readFileSync(path.join(questionsDir, 'manifest.json'), 'utf8'));
-  const orders = manifest.sets.map(entry => entry.order);
   manifest.sets.forEach(entry => {
     assert.ok(Number.isInteger(entry.order), `${entry.id}.order must be an integer`);
     assert.ok(typeof entry.level === 'string' && entry.level.length > 0, `${entry.id}.level must be a non-empty string`);
   });
-  assert.strictEqual(new Set(orders).size, orders.length, 'manifest entry "order" values must be unique');
+
+  // "order" is only ever compared within one roadmap's own set of question
+  // sets (getSetsForRoadmap sorts by order after filtering by roadmapId), so
+  // uniqueness only needs to hold per roadmapId group, not across the whole
+  // manifest — each lesson's own 4 sets legitimately reuse order 1-4.
+  const ordersByGroup = {};
+  manifest.sets.forEach(entry => {
+    const groupKey = entry.roadmapId || '(none)';
+    ordersByGroup[groupKey] = ordersByGroup[groupKey] || [];
+    ordersByGroup[groupKey].push(entry.order);
+  });
+  Object.entries(ordersByGroup).forEach(([groupKey, orders]) => {
+    assert.strictEqual(
+      new Set(orders).size,
+      orders.length,
+      `manifest entry "order" values must be unique within roadmap "${groupKey}"`
+    );
+  });
 }
 
 function testEverySetRoadmapIdReferencesAKnownRoadmap() {
@@ -89,7 +105,7 @@ testEachManifestEntryMatchesItsFile();
 testEveryQuestionHasRequiredShape();
 testEveryManifestEntryHasAKnownCategory();
 testGrammarQuestionsHaveChunksMatchingSentence();
-testEveryManifestEntryHasUniqueOrderAndNonEmptyLevel();
+testEveryManifestEntryHasUniqueOrderWithinItsRoadmapAndNonEmptyLevel();
 testEverySetRoadmapIdReferencesAKnownRoadmap();
 
 console.log('questions data tests passed');

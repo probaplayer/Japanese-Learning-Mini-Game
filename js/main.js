@@ -5,6 +5,7 @@
 let questions = [];
 let questionSets = [];
 let roadmapDefinitions = [];
+let packageDefinitions = [];
 let activeSetId = null;
 let playerHP = 100;
 let playerEXP = 0;
@@ -65,7 +66,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   updateAnimationBodyClass();
 
   updateMenuUI();
-  showScreen('screen-menu');
+  showScreen('screen-worldmap');
 });
 
 /* ══════════════════════════════════════════════
@@ -138,7 +139,7 @@ function showScreen(id) {
   }
   if (id === 'screen-settings') renderSettingsScreen();
   if (id === 'screen-stats') renderStatsScreen();
-  if (id === 'screen-roadmap') renderRoadmap();
+  if (id === 'screen-worldmap') { updateMenuUI(); renderWorldMap(); }
 }
 
 /* ══════════════════════════════════════════════

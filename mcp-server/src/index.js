@@ -189,7 +189,12 @@ server.registerTool(
   {
     title: 'Create roadmap',
     description: 'Create a new roadmap and register it in the manifest',
-    inputSchema: { id: z.string().optional(), name: z.string().min(1) }
+    inputSchema: {
+      id: z.string().optional(),
+      name: z.string().min(1),
+      packageId: z.string().optional(),
+      order: z.number().int().optional()
+    }
   },
   guarded((args) => repo.createRoadmap(args))
 );
@@ -213,6 +218,59 @@ server.registerTool(
   },
   guarded(({ id }) => {
     repo.deleteRoadmap(id);
+    return { deleted: id };
+  })
+);
+
+server.registerTool(
+  'update_roadmap_metadata',
+  {
+    title: 'Update roadmap metadata',
+    description: 'Update the packageId or order of an existing roadmap in the manifest. Pass packageId: null to remove the roadmap from its package; omit a field to leave it unchanged.',
+    inputSchema: {
+      id: z.string(),
+      packageId: z.string().nullable().optional(),
+      order: z.number().int().optional()
+    }
+  },
+  guarded(({ id, packageId, order }) => repo.updateRoadmapMetadata(id, { packageId, order }))
+);
+
+server.registerTool(
+  'list_packages',
+  { title: 'List packages', description: 'List all packages with id and name' },
+  guarded(() => repo.listPackages())
+);
+
+server.registerTool(
+  'create_package',
+  {
+    title: 'Create package',
+    description: 'Create a new package and register it in the manifest',
+    inputSchema: { id: z.string().optional(), name: z.string().min(1), order: z.number().int().optional() }
+  },
+  guarded((args) => repo.createPackage(args))
+);
+
+server.registerTool(
+  'rename_package',
+  {
+    title: 'Rename package',
+    description: 'Update the display name of an existing package',
+    inputSchema: { id: z.string(), name: z.string().min(1) }
+  },
+  guarded(({ id, name }) => repo.renamePackage(id, name))
+);
+
+server.registerTool(
+  'delete_package',
+  {
+    title: 'Delete package',
+    description: 'Delete a package from the manifest. Any roadmap still assigned to it is reassigned to the "unassigned" fallback package (created automatically if missing).',
+    inputSchema: { id: z.string() }
+  },
+  guarded(({ id }) => {
+    repo.deletePackage(id);
     return { deleted: id };
   })
 );

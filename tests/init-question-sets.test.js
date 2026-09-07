@@ -55,7 +55,7 @@ ${gameUtilsSource}
 ${storageSource}
 this.runInitQuestionSets = initQuestionSets;
 this.runSwitchQuestionSet = switchQuestionSet;
-this.getState = () => ({ questions, questionSets, activeSetId, roadmapDefinitions });`,
+this.getState = () => ({ questions, questionSets, activeSetId, roadmapDefinitions, packageDefinitions });`,
     context
   );
   context.store = store;
@@ -128,6 +128,24 @@ async function testRoadmapDefinitionsPopulateFromManifest() {
   assert.deepStrictEqual(state.roadmapDefinitions, [{ id: 'demo-path', name: 'Demo Path' }]);
 }
 
+async function testPackageDefinitionsDefaultsToEmptyArrayWhenManifestOmitsIt() {
+  const context = createContext(RESPONSES);
+  await context.runInitQuestionSets();
+  const state = context.getState();
+  assert.deepStrictEqual(Array.from(state.packageDefinitions), []);
+}
+
+async function testPackageDefinitionsPopulateFromManifest() {
+  const responsesWithPackages = {
+    ...RESPONSES,
+    'questions/manifest.json': { ...MANIFEST, packages: [{ id: 'n5', name: 'N5' }] }
+  };
+  const context = createContext(responsesWithPackages);
+  await context.runInitQuestionSets();
+  const state = context.getState();
+  assert.deepStrictEqual(state.packageDefinitions, [{ id: 'n5', name: 'N5' }]);
+}
+
 (async () => {
   await testLoadsFirstSetWhenNoStoredActiveId();
   await testRespectsStoredActiveId();
@@ -135,5 +153,7 @@ async function testRoadmapDefinitionsPopulateFromManifest() {
   await testSwitchQuestionSetUpdatesStateAndPersistsPointer();
   await testRoadmapDefinitionsDefaultsToEmptyArrayWhenManifestOmitsIt();
   await testRoadmapDefinitionsPopulateFromManifest();
+  await testPackageDefinitionsDefaultsToEmptyArrayWhenManifestOmitsIt();
+  await testPackageDefinitionsPopulateFromManifest();
   console.log('init question sets tests passed');
 })();

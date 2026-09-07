@@ -587,6 +587,180 @@ function testDeleteRoadmapBlocksDeletingUnassignedFallbackWhileInUse() {
   assert.throws(() => repo.deleteRoadmap('unassigned'), /still assigned/);
 }
 
+function testCreateRoadmapPersistsValidPackageIdAndOrder() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createPackage({ id: 'n3', name: 'N3' });
+
+  const created = repo.createRoadmap({ id: 'n3-path', name: 'N3 Path', packageId: 'n3', order: 1 });
+  assert.strictEqual(created.packageId, 'n3');
+  assert.strictEqual(created.order, 1);
+}
+
+function testCreateRoadmapRejectsUnknownPackageId() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  assert.throws(
+    () => repo.createRoadmap({ name: 'N3 Path', packageId: 'nope' }),
+    /Unknown packageId: nope/
+  );
+}
+
+function testCreateRoadmapLeavesPackageIdUnsetWhenOmitted() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  const created = repo.createRoadmap({ name: 'N3 Path' });
+  assert.strictEqual('packageId' in created, false);
+}
+
+function testUpdateRoadmapMetadataPersistsPackageIdAndOrder() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createPackage({ id: 'n3', name: 'N3' });
+  repo.createRoadmap({ id: 'n3-path', name: 'N3 Path' });
+
+  const updated = repo.updateRoadmapMetadata('n3-path', { packageId: 'n3', order: 5 });
+  assert.strictEqual(updated.packageId, 'n3');
+  assert.strictEqual(updated.order, 5);
+  assert.strictEqual(repo.listRoadmaps()[0].packageId, 'n3');
+}
+
+function testUpdateRoadmapMetadataRejectsUnknownPackageId() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createRoadmap({ id: 'n3-path', name: 'N3 Path' });
+  assert.throws(
+    () => repo.updateRoadmapMetadata('n3-path', { packageId: 'nope' }),
+    /Unknown packageId: nope/
+  );
+}
+
+function testUpdateRoadmapMetadataClearsPackageIdWithNull() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createPackage({ id: 'n3', name: 'N3' });
+  repo.createRoadmap({ id: 'n3-path', name: 'N3 Path', packageId: 'n3' });
+
+  const updated = repo.updateRoadmapMetadata('n3-path', { packageId: null });
+  assert.strictEqual('packageId' in updated, false);
+}
+
+function testUpdateRoadmapMetadataErrorsOnUnknownRoadmapId() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  assert.throws(() => repo.updateRoadmapMetadata('nope', { order: 1 }), /Roadmap not found: nope/);
+}
+
+function testListPackagesReturnsEmptyArrayWhenNoneConfigured() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  assert.deepStrictEqual(repo.listPackages(), []);
+}
+
+function testCreatePackageAddsEntryAndDerivesIdFromName() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  const created = repo.createPackage({ name: 'N3' });
+  assert.strictEqual(created.id, 'n3');
+  assert.strictEqual(created.name, 'N3');
+  assert.deepStrictEqual(repo.listPackages(), [{ id: 'n3', name: 'N3' }]);
+}
+
+function testCreatePackageAcceptsExplicitIdAndOrder() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  const created = repo.createPackage({ id: 'custom-id', name: 'N3', order: 3 });
+  assert.strictEqual(created.id, 'custom-id');
+  assert.strictEqual(created.order, 3);
+}
+
+function testCreatePackageRejectsDuplicateId() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createPackage({ name: 'N3' });
+  assert.throws(() => repo.createPackage({ id: 'n3', name: 'N3 Again' }), /already exists/);
+}
+
+function testRenamePackageUpdatesName() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createPackage({ id: 'n3', name: 'N3' });
+
+  const renamed = repo.renamePackage('n3', 'N3 (Renamed)');
+  assert.strictEqual(renamed.name, 'N3 (Renamed)');
+  assert.strictEqual(repo.listPackages()[0].name, 'N3 (Renamed)');
+}
+
+function testRenamePackageErrorsOnUnknownId() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  assert.throws(() => repo.renamePackage('nope', 'New Name'), /Package not found: nope/);
+}
+
+function testDeletePackageRemovesEntryWhenNoRoadmapsAssigned() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createPackage({ id: 'n3', name: 'N3' });
+
+  repo.deletePackage('n3');
+  assert.deepStrictEqual(repo.listPackages(), []);
+}
+
+function testDeletePackageErrorsOnUnknownId() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  assert.throws(() => repo.deletePackage('nope'), /Package not found: nope/);
+}
+
+function testDeletePackageReassignsAssignedRoadmapsToUnassignedFallback() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createPackage({ id: 'n3', name: 'N3' });
+  repo.createRoadmap({ id: 'n3-path', name: 'N3 Path', packageId: 'n3' });
+
+  repo.deletePackage('n3');
+
+  const packageIds = repo.listPackages().map(p => p.id);
+  assert.deepStrictEqual(packageIds, ['unassigned']);
+  const entry = repo.listRoadmaps().find(r => r.id === 'n3-path');
+  assert.strictEqual(entry.packageId, 'unassigned');
+}
+
+function testDeletePackageCreatesUnassignedFallbackIfMissing() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createPackage({ id: 'n3', name: 'N3' });
+  repo.createRoadmap({ id: 'n3-path', name: 'N3 Path', packageId: 'n3' });
+
+  repo.deletePackage('n3');
+
+  const fallback = repo.listPackages().find(p => p.id === 'unassigned');
+  assert.ok(fallback, 'expected an "unassigned" fallback package to be created');
+  assert.strictEqual(fallback.name, 'Chưa phân loại');
+}
+
+function testDeletePackageDoesNotDuplicateFallbackIfAlreadyPresent() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createPackage({ id: 'unassigned', name: 'Chưa phân loại' });
+  repo.createPackage({ id: 'n3', name: 'N3' });
+  repo.createRoadmap({ id: 'n3-path', name: 'N3 Path', packageId: 'n3' });
+
+  repo.deletePackage('n3');
+
+  const packageIds = repo.listPackages().map(p => p.id);
+  assert.deepStrictEqual(packageIds, ['unassigned']);
+}
+
+function testDeletePackageBlocksDeletingUnassignedFallbackWhileInUse() {
+  const dir = makeTempQuestionsDir();
+  const repo = createQuestionsRepo(dir);
+  repo.createPackage({ id: 'unassigned', name: 'Chưa phân loại' });
+  repo.createRoadmap({ id: 'n3-path', name: 'N3 Path', packageId: 'unassigned' });
+
+  assert.throws(() => repo.deletePackage('unassigned'), /still assigned/);
+}
+
 testListRoadmapsReturnsEmptyArrayWhenNoneConfigured();
 testCreateRoadmapAddsEntryAndDerivesIdFromName();
 testCreateRoadmapAcceptsExplicitId();
@@ -599,6 +773,25 @@ testDeleteRoadmapReassignsAssignedSetsToUnassignedFallback();
 testDeleteRoadmapCreatesUnassignedFallbackIfMissing();
 testDeleteRoadmapDoesNotDuplicateFallbackIfAlreadyPresent();
 testDeleteRoadmapBlocksDeletingUnassignedFallbackWhileInUse();
+testCreateRoadmapPersistsValidPackageIdAndOrder();
+testCreateRoadmapRejectsUnknownPackageId();
+testCreateRoadmapLeavesPackageIdUnsetWhenOmitted();
+testUpdateRoadmapMetadataPersistsPackageIdAndOrder();
+testUpdateRoadmapMetadataRejectsUnknownPackageId();
+testUpdateRoadmapMetadataClearsPackageIdWithNull();
+testUpdateRoadmapMetadataErrorsOnUnknownRoadmapId();
+testListPackagesReturnsEmptyArrayWhenNoneConfigured();
+testCreatePackageAddsEntryAndDerivesIdFromName();
+testCreatePackageAcceptsExplicitIdAndOrder();
+testCreatePackageRejectsDuplicateId();
+testRenamePackageUpdatesName();
+testRenamePackageErrorsOnUnknownId();
+testDeletePackageRemovesEntryWhenNoRoadmapsAssigned();
+testDeletePackageErrorsOnUnknownId();
+testDeletePackageReassignsAssignedRoadmapsToUnassignedFallback();
+testDeletePackageCreatesUnassignedFallbackIfMissing();
+testDeletePackageDoesNotDuplicateFallbackIfAlreadyPresent();
+testDeletePackageBlocksDeletingUnassignedFallbackWhileInUse();
 
 testValidateQuestionAcceptsWellFormedQuestion();
 testValidateQuestionRejectsWrongAnswerCount();

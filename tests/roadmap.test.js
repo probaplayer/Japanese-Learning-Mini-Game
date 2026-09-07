@@ -140,10 +140,10 @@ function testRenderRoadmapChipsHtmlMarksSelectedChipActive() {
   const html = context.renderRoadmapChipsHtml(
     [{ id: 'n5-path', name: 'N5 Path' }, { id: 'n4-path', name: 'N4 Path' }],
     'n4-path',
-    'selectRoadmapTab'
+    'selectWorldMapPackage'
   );
-  const n5ChipMatch = html.match(/<button class="roadmap-tab ([^"]*)" onclick="selectRoadmapTab\('n5-path'\)">/);
-  const n4ChipMatch = html.match(/<button class="roadmap-tab ([^"]*)" onclick="selectRoadmapTab\('n4-path'\)">/);
+  const n5ChipMatch = html.match(/<button class="roadmap-tab ([^"]*)" onclick="selectWorldMapPackage\('n5-path'\)">/);
+  const n4ChipMatch = html.match(/<button class="roadmap-tab ([^"]*)" onclick="selectWorldMapPackage\('n4-path'\)">/);
   assert.ok(n5ChipMatch && !n5ChipMatch[1].includes('roadmap-tab-active'));
   assert.ok(n4ChipMatch && n4ChipMatch[1].includes('roadmap-tab-active'));
 }

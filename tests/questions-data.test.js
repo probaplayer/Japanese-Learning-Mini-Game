@@ -52,14 +52,30 @@ function testEveryManifestEntryHasAKnownCategory() {
   });
 }
 
-function testEveryManifestEntryHasUniqueOrderAndNonEmptyLevel() {
+function testEveryManifestEntryHasUniqueOrderWithinItsRoadmapAndNonEmptyLevel() {
   const manifest = JSON.parse(fs.readFileSync(path.join(questionsDir, 'manifest.json'), 'utf8'));
-  const orders = manifest.sets.map(entry => entry.order);
   manifest.sets.forEach(entry => {
     assert.ok(Number.isInteger(entry.order), `${entry.id}.order must be an integer`);
     assert.ok(typeof entry.level === 'string' && entry.level.length > 0, `${entry.id}.level must be a non-empty string`);
   });
-  assert.strictEqual(new Set(orders).size, orders.length, 'manifest entry "order" values must be unique');
+
+  // "order" is only ever compared within one roadmap's own set of question
+  // sets (getSetsForRoadmap sorts by order after filtering by roadmapId), so
+  // uniqueness only needs to hold per roadmapId group, not across the whole
+  // manifest — each lesson's own 4 sets legitimately reuse order 1-4.
+  const ordersByGroup = {};
+  manifest.sets.forEach(entry => {
+    const groupKey = entry.roadmapId || '(none)';
+    ordersByGroup[groupKey] = ordersByGroup[groupKey] || [];
+    ordersByGroup[groupKey].push(entry.order);
+  });
+  Object.entries(ordersByGroup).forEach(([groupKey, orders]) => {
+    assert.strictEqual(
+      new Set(orders).size,
+      orders.length,
+      `manifest entry "order" values must be unique within roadmap "${groupKey}"`
+    );
+  });
 }
 
 function testEverySetRoadmapIdReferencesAKnownRoadmap() {
@@ -68,6 +84,35 @@ function testEverySetRoadmapIdReferencesAKnownRoadmap() {
   manifest.sets.forEach(entry => {
     if (entry.roadmapId === undefined) return;
     assert.ok(roadmapIds.has(entry.roadmapId), `${entry.id}.roadmapId "${entry.roadmapId}" must reference a known roadmap`);
+  });
+}
+
+function testEveryPackageHasUniqueIdAndNonEmptyName() {
+  const manifest = JSON.parse(fs.readFileSync(path.join(questionsDir, 'manifest.json'), 'utf8'));
+  const packages = manifest.packages || [];
+  const ids = packages.map(p => p.id);
+  assert.strictEqual(new Set(ids).size, ids.length, 'package ids must be unique');
+  packages.forEach(p => {
+    assert.ok(typeof p.name === 'string' && p.name.length > 0, `${p.id}.name must be a non-empty string`);
+  });
+}
+
+function testEveryRoadmapPackageIdReferencesAKnownPackage() {
+  const manifest = JSON.parse(fs.readFileSync(path.join(questionsDir, 'manifest.json'), 'utf8'));
+  const packageIds = new Set((manifest.packages || []).map(p => p.id));
+  (manifest.roadmaps || []).forEach(entry => {
+    if (entry.packageId === undefined) return;
+    assert.ok(packageIds.has(entry.packageId), `${entry.id}.packageId "${entry.packageId}" must reference a known package`);
+  });
+}
+
+function testEveryRoadmapHasAPackageId() {
+  const manifest = JSON.parse(fs.readFileSync(path.join(questionsDir, 'manifest.json'), 'utf8'));
+  (manifest.roadmaps || []).forEach(entry => {
+    assert.ok(
+      typeof entry.packageId === 'string' && entry.packageId.length > 0,
+      `${entry.id}.packageId must be set so this roadmap appears in the World Map and Library's Roadmaps tab`
+    );
   });
 }
 
@@ -89,7 +134,10 @@ testEachManifestEntryMatchesItsFile();
 testEveryQuestionHasRequiredShape();
 testEveryManifestEntryHasAKnownCategory();
 testGrammarQuestionsHaveChunksMatchingSentence();
-testEveryManifestEntryHasUniqueOrderAndNonEmptyLevel();
+testEveryManifestEntryHasUniqueOrderWithinItsRoadmapAndNonEmptyLevel();
 testEverySetRoadmapIdReferencesAKnownRoadmap();
+testEveryPackageHasUniqueIdAndNonEmptyName();
+testEveryRoadmapPackageIdReferencesAKnownPackage();
+testEveryRoadmapHasAPackageId();
 
 console.log('questions data tests passed');

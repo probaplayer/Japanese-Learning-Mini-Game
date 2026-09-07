@@ -3,8 +3,8 @@
 // ================================================
 
 const roadmapQuestionsCache = new Map();
-let activeRoadmapTabId = null;
 let activeLibraryRoadmapId = null;
+let activeLibraryPackageId = null;
 let roadmapProgressCache = new Map();
 
 function computeSetProgress(setId, questionsArr) {
@@ -90,61 +90,9 @@ function renderRoadmapChipsHtml(definitions, selectedId, onSelectFnName) {
   }).join('');
 }
 
-function pickDefaultRoadmapId(fallbackId) {
-  if (fallbackId && roadmapDefinitions.some(d => d.id === fallbackId)) return fallbackId;
-  const activeMeta = questionSets.find(s => s.id === activeSetId);
-  if (activeMeta && activeMeta.roadmapId && roadmapDefinitions.some(d => d.id === activeMeta.roadmapId)) {
-    return activeMeta.roadmapId;
-  }
-  return roadmapDefinitions.length > 0 ? roadmapDefinitions[0].id : null;
-}
-
-async function renderRoadmap() {
-  const tabsEl = document.getElementById('roadmap-tabs');
-  const track = document.getElementById('roadmap-track');
-  if (!track) return;
-  track.innerHTML = '<div class="roadmap-loading">Loading roadmap…</div>';
-  if (tabsEl) tabsEl.innerHTML = '';
-
-  try {
-    activeRoadmapTabId = pickDefaultRoadmapId(null);
-    if (!activeRoadmapTabId) {
-      track.innerHTML = '<div class="roadmap-loading">No roadmaps configured yet.</div>';
-      return;
-    }
-    if (tabsEl) tabsEl.innerHTML = renderRoadmapChipsHtml(roadmapDefinitions, activeRoadmapTabId, 'selectRoadmapTab');
-
-    roadmapProgressCache = await computeRoadmapProgress(questionSets);
-    renderRoadmapTrack();
-  } catch (e) {
-    console.error('Failed to render roadmap:', e);
-    track.innerHTML = '<div class="roadmap-loading">❌ Failed to load the roadmap. Please try again.</div>';
-    if (typeof showToast === 'function') showToast('❌ Failed to load roadmap', 'err');
-  }
-}
-
-function renderRoadmapTrack() {
-  const track = document.getElementById('roadmap-track');
-  if (!track) return;
-  const sets = getSetsForRoadmap(activeRoadmapTabId);
-  track.innerHTML = buildRoadmapNodesHtml(sets, roadmapProgressCache, { highlightSetId: activeSetId, compact: false, clickHandler: 'launchRoadmapNode' });
-
-  requestAnimationFrame(() => {
-    const activeEl = track.querySelector(`.roadmap-node[data-set-id="${activeSetId}"]`) || track.querySelector('.roadmap-node:last-child');
-    if (activeEl) activeEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  });
-}
-
-function selectRoadmapTab(id) {
-  activeRoadmapTabId = id;
-  const tabsEl = document.getElementById('roadmap-tabs');
-  if (tabsEl) tabsEl.innerHTML = renderRoadmapChipsHtml(roadmapDefinitions, activeRoadmapTabId, 'selectRoadmapTab');
-  renderRoadmapTrack();
-}
-
 function launchRoadmapNode(nodeEl, id) {
   if (nodeEl) nodeEl.classList.add('roadmap-node-launch');
-  const avatarEl = document.querySelector('#roadmap-track .roadmap-avatar');
+  const avatarEl = document.querySelector('#worldmap-track .roadmap-avatar');
   if (avatarEl) avatarEl.classList.add('roadmap-avatar-launch');
   switchQuestionSet(id);
   setTimeout(() => showScreen('screen-menu'), 300);
@@ -195,16 +143,30 @@ function refreshLibraryRoadmapPreview() {
 }
 
 async function renderLibraryRoadmapsTab() {
+  const packageChipsEl = document.getElementById('library-package-chips');
   const chipsEl = document.getElementById('library-roadmap-chips');
   const container = document.getElementById('library-roadmap-preview');
   if (!container) return;
-  activeLibraryRoadmapId = pickDefaultRoadmapId(activeLibraryRoadmapId);
-  if (!activeLibraryRoadmapId) {
+
+  activeLibraryPackageId = pickDefaultWorldMapPackageId(activeLibraryPackageId);
+  if (!activeLibraryPackageId) {
+    if (packageChipsEl) packageChipsEl.innerHTML = '';
     if (chipsEl) chipsEl.innerHTML = '';
-    container.innerHTML = '<div class="roadmap-loading">No roadmaps configured yet.</div>';
+    container.innerHTML = '<div class="roadmap-loading">No packages configured yet.</div>';
     return;
   }
-  if (chipsEl) chipsEl.innerHTML = renderRoadmapChipsHtml(roadmapDefinitions, activeLibraryRoadmapId, 'selectLibraryRoadmap');
+  if (packageChipsEl) packageChipsEl.innerHTML = renderRoadmapChipsHtml(sortedPackageDefinitions(), activeLibraryPackageId, 'selectLibraryPackage');
+
+  const roadmapsInPackage = getRoadmapsForPackage(activeLibraryPackageId);
+  if (!activeLibraryRoadmapId || !roadmapsInPackage.some(r => r.id === activeLibraryRoadmapId)) {
+    activeLibraryRoadmapId = roadmapsInPackage.length > 0 ? roadmapsInPackage[0].id : null;
+  }
+  if (!activeLibraryRoadmapId) {
+    if (chipsEl) chipsEl.innerHTML = '';
+    container.innerHTML = '<div class="roadmap-loading">No roadmaps in this package yet.</div>';
+    return;
+  }
+  if (chipsEl) chipsEl.innerHTML = renderRoadmapChipsHtml(roadmapsInPackage, activeLibraryRoadmapId, 'selectLibraryRoadmap');
   container.innerHTML = '<div class="roadmap-loading">Loading roadmap…</div>';
   try {
     const sets = getSetsForRoadmap(activeLibraryRoadmapId);
@@ -214,6 +176,12 @@ async function renderLibraryRoadmapsTab() {
     console.error('Failed to render library roadmaps tab:', e);
     container.innerHTML = '<div class="roadmap-loading">❌ Failed to load the roadmap. Please try again.</div>';
   }
+}
+
+function selectLibraryPackage(id) {
+  activeLibraryPackageId = id;
+  activeLibraryRoadmapId = null;
+  renderLibraryRoadmapsTab();
 }
 
 function selectLibraryRoadmap(id) {

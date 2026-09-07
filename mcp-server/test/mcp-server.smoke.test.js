@@ -194,6 +194,40 @@ async function main() {
   const n3SetEntry = JSON.parse(n3SetAfterDelete.content[0].text).find(s => s.id === 'n3-set');
   assert.strictEqual(n3SetEntry.roadmapId, 'unassigned');
 
+  const listedPackages = await client.callTool({ name: 'list_packages', arguments: {} });
+  assert.deepStrictEqual(JSON.parse(listedPackages.content[0].text), []);
+
+  const createdPackage = await client.callTool({ name: 'create_package', arguments: { name: 'N3', order: 1 } });
+  assert.deepStrictEqual(JSON.parse(createdPackage.content[0].text), { id: 'n3', name: 'N3', order: 1 });
+
+  const renamedPackage = await client.callTool({ name: 'rename_package', arguments: { id: 'n3', name: 'N3 (Renamed)' } });
+  assert.strictEqual(JSON.parse(renamedPackage.content[0].text).name, 'N3 (Renamed)');
+
+  const createdRoadmapWithPackage = await client.callTool({
+    name: 'create_roadmap',
+    arguments: { id: 'n3-path-2', name: 'N3 Path 2', packageId: 'n3', order: 1 }
+  });
+  assert.deepStrictEqual(
+    JSON.parse(createdRoadmapWithPackage.content[0].text),
+    { id: 'n3-path-2', name: 'N3 Path 2', packageId: 'n3', order: 1 }
+  );
+
+  const updatedRoadmapMetadata = await client.callTool({
+    name: 'update_roadmap_metadata',
+    arguments: { id: 'n3-path-2', order: 2 }
+  });
+  assert.strictEqual(JSON.parse(updatedRoadmapMetadata.content[0].text).order, 2);
+
+  const deletedPackage = await client.callTool({ name: 'delete_package', arguments: { id: 'n3' } });
+  assert.deepStrictEqual(JSON.parse(deletedPackage.content[0].text), { deleted: 'n3' });
+
+  const packagesAfterDelete = await client.callTool({ name: 'list_packages', arguments: {} });
+  assert.deepStrictEqual(JSON.parse(packagesAfterDelete.content[0].text), [{ id: 'unassigned', name: 'Chưa phân loại' }]);
+
+  const n3Path2AfterDelete = await client.callTool({ name: 'list_roadmaps', arguments: {} });
+  const n3Path2Entry = JSON.parse(n3Path2AfterDelete.content[0].text).find(r => r.id === 'n3-path-2');
+  assert.strictEqual(n3Path2Entry.packageId, 'unassigned');
+
   await client.close();
   fs.rmSync(questionsDir, { recursive: true, force: true });
   console.log('mcp server smoke test passed');

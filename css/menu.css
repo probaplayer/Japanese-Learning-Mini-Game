@@ -3,14 +3,6 @@
    ================================================ */
 
 /* HUD Bars */
-.hp-exp-bar {
-  width: 100%;
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 12px 16px;
-  display: flex; flex-direction: column; gap: 8px;
-}
 .stat-row { display: flex; align-items: center; gap: 10px; }
 .stat-row.level-row { justify-content: space-between; }
 .stat-row.level-row .stat-label, .stat-row.level-row .stat-val { width: auto; }
@@ -75,7 +67,6 @@
 
 /* Desktop 150% scale */
 @media (min-width: 1024px) {
-  .hp-exp-bar { padding: 18px 24px; gap: 12px; }
   .stat-label { font-size: 10.5px; width: 75px; }
   .stat-val { font-size: 10.5px; width: 54px; }
   .bar-track { height: 15px; }

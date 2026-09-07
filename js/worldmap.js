@@ -10,6 +10,10 @@ function getRoadmapsForPackage(packageId) {
     .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
 }
 
+function sortedPackageDefinitions() {
+  return [...packageDefinitions].sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+}
+
 function pickDefaultWorldMapPackageId(fallbackId) {
   if (fallbackId && packageDefinitions.some(p => p.id === fallbackId)) return fallbackId;
   const activeMeta = questionSets.find(s => s.id === activeSetId);
@@ -17,8 +21,17 @@ function pickDefaultWorldMapPackageId(fallbackId) {
   if (activeRoadmap && activeRoadmap.packageId && packageDefinitions.some(p => p.id === activeRoadmap.packageId)) {
     return activeRoadmap.packageId;
   }
-  const sorted = [...packageDefinitions].sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+  const sorted = sortedPackageDefinitions();
   return sorted.length > 0 ? sorted[0].id : null;
+}
+
+async function loadWorldMapPackageProgress(packageId) {
+  const setsToLoad = getRoadmapsForPackage(packageId)
+    .flatMap(r => getSetsForRoadmap(r.id))
+    .filter(s => !roadmapProgressCache.has(s.id));
+  if (setsToLoad.length === 0) return;
+  const freshProgress = await computeRoadmapProgress(setsToLoad);
+  freshProgress.forEach((value, key) => roadmapProgressCache.set(key, value));
 }
 
 function buildWorldMapZonesHtml(roadmapsForPackage, progressById, highlightSetId) {
@@ -66,14 +79,14 @@ async function renderWorldMap() {
   if (chipsEl) chipsEl.innerHTML = '';
 
   try {
-    roadmapProgressCache = await computeRoadmapProgress(questionSets);
     activeWorldMapPackageId = pickDefaultWorldMapPackageId(activeWorldMapPackageId);
     if (!activeWorldMapPackageId) {
       track.innerHTML = '<div class="roadmap-loading">No packages configured yet.</div>';
       return;
     }
-    if (chipsEl) chipsEl.innerHTML = renderRoadmapChipsHtml(packageDefinitions, activeWorldMapPackageId, 'selectWorldMapPackage');
+    if (chipsEl) chipsEl.innerHTML = renderRoadmapChipsHtml(sortedPackageDefinitions(), activeWorldMapPackageId, 'selectWorldMapPackage');
     renderContinueQuestCard();
+    await loadWorldMapPackageProgress(activeWorldMapPackageId);
     renderWorldMapZones();
   } catch (e) {
     console.error('Failed to render world map:', e);
@@ -88,15 +101,18 @@ function renderWorldMapZones() {
   track.innerHTML = buildWorldMapZonesHtml(getRoadmapsForPackage(activeWorldMapPackageId), roadmapProgressCache, activeSetId);
 
   requestAnimationFrame(() => {
-    const activeEl = track.querySelector(`.roadmap-node[data-set-id="${activeSetId}"]`) || track.querySelector('.roadmap-node:last-child');
+    const activeEl = track.querySelector(`.roadmap-node[data-set-id="${activeSetId}"]`) || track.querySelector('.worldmap-zone:last-child .roadmap-node:last-child');
     if (activeEl) activeEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
   });
 }
 
-function selectWorldMapPackage(id) {
+async function selectWorldMapPackage(id) {
   activeWorldMapPackageId = id;
   const chipsEl = document.getElementById('worldmap-package-chips');
-  if (chipsEl) chipsEl.innerHTML = renderRoadmapChipsHtml(packageDefinitions, activeWorldMapPackageId, 'selectWorldMapPackage');
+  if (chipsEl) chipsEl.innerHTML = renderRoadmapChipsHtml(sortedPackageDefinitions(), activeWorldMapPackageId, 'selectWorldMapPackage');
+  const track = document.getElementById('worldmap-track');
+  if (track) track.innerHTML = '<div class="roadmap-loading">Loading world map…</div>';
+  await loadWorldMapPackageProgress(activeWorldMapPackageId);
   renderWorldMapZones();
 }
 

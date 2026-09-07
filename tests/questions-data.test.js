@@ -106,6 +106,16 @@ function testEveryRoadmapPackageIdReferencesAKnownPackage() {
   });
 }
 
+function testEveryRoadmapHasAPackageId() {
+  const manifest = JSON.parse(fs.readFileSync(path.join(questionsDir, 'manifest.json'), 'utf8'));
+  (manifest.roadmaps || []).forEach(entry => {
+    assert.ok(
+      typeof entry.packageId === 'string' && entry.packageId.length > 0,
+      `${entry.id}.packageId must be set so this roadmap appears in the World Map and Library's Roadmaps tab`
+    );
+  });
+}
+
 function testGrammarQuestionsHaveChunksMatchingSentence() {
   const manifest = JSON.parse(fs.readFileSync(path.join(questionsDir, 'manifest.json'), 'utf8'));
   manifest.sets.filter(entry => entry.category === 'grammar').forEach(entry => {
@@ -128,5 +138,6 @@ testEveryManifestEntryHasUniqueOrderWithinItsRoadmapAndNonEmptyLevel();
 testEverySetRoadmapIdReferencesAKnownRoadmap();
 testEveryPackageHasUniqueIdAndNonEmptyName();
 testEveryRoadmapPackageIdReferencesAKnownPackage();
+testEveryRoadmapHasAPackageId();
 
 console.log('questions data tests passed');

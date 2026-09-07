@@ -90,15 +90,6 @@ function renderRoadmapChipsHtml(definitions, selectedId, onSelectFnName) {
   }).join('');
 }
 
-function pickDefaultRoadmapId(fallbackId) {
-  if (fallbackId && roadmapDefinitions.some(d => d.id === fallbackId)) return fallbackId;
-  const activeMeta = questionSets.find(s => s.id === activeSetId);
-  if (activeMeta && activeMeta.roadmapId && roadmapDefinitions.some(d => d.id === activeMeta.roadmapId)) {
-    return activeMeta.roadmapId;
-  }
-  return roadmapDefinitions.length > 0 ? roadmapDefinitions[0].id : null;
-}
-
 function launchRoadmapNode(nodeEl, id) {
   if (nodeEl) nodeEl.classList.add('roadmap-node-launch');
   const avatarEl = document.querySelector('#worldmap-track .roadmap-avatar');
@@ -164,7 +155,7 @@ async function renderLibraryRoadmapsTab() {
     container.innerHTML = '<div class="roadmap-loading">No packages configured yet.</div>';
     return;
   }
-  if (packageChipsEl) packageChipsEl.innerHTML = renderRoadmapChipsHtml(packageDefinitions, activeLibraryPackageId, 'selectLibraryPackage');
+  if (packageChipsEl) packageChipsEl.innerHTML = renderRoadmapChipsHtml(sortedPackageDefinitions(), activeLibraryPackageId, 'selectLibraryPackage');
 
   const roadmapsInPackage = getRoadmapsForPackage(activeLibraryPackageId);
   if (!activeLibraryRoadmapId || !roadmapsInPackage.some(r => r.id === activeLibraryRoadmapId)) {

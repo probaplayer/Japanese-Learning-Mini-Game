@@ -143,34 +143,46 @@
 
   <!-- WORLD MAP -->
   <div id="screen-worldmap" class="screen screen-roadmap active">
-    <div class="panel roadmap-panel">
-      <div class="title-block">
-        <div class="title-jp">日本語</div>
-        <div class="title-en">QUEST</div>
-        <div class="title-sub">JAPANESE LEARNING MINI-GAMES</div>
+    <div class="worldmap-layout">
+      <button class="worldmap-index-toggle" id="worldmap-index-toggle" onclick="toggleWorldMapIndex()">📖 INDEX</button>
+      <div class="worldmap-index-backdrop" id="worldmap-index-backdrop" onclick="toggleWorldMapIndex(false)"></div>
+      <aside class="worldmap-index" id="worldmap-index">
+        <div class="worldmap-index-header">
+          <span>📖 INDEX</span>
+          <button class="worldmap-index-close" onclick="toggleWorldMapIndex(false)">✕</button>
+        </div>
+        <input type="text" class="worldmap-index-search" id="worldmap-index-search" placeholder="Search roadmap or set…" oninput="filterWorldMapIndex(this.value)">
+        <div class="worldmap-index-list" id="worldmap-index-list"></div>
+      </aside>
+      <div class="panel roadmap-panel">
+        <div class="title-block">
+          <div class="title-jp">日本語</div>
+          <div class="title-en">QUEST</div>
+          <div class="title-sub">JAPANESE LEARNING MINI-GAMES</div>
+        </div>
+        <div class="worldmap-hud" id="worldmap-hud">
+          <div class="stat-row">
+            <span class="stat-label">🔰 LVL</span>
+            <span class="stat-val" id="menu-level">1</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">❤ HP</span>
+            <div class="bar-track"><div class="bar-fill hp-fill" id="menu-hp"></div></div>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">⭐ EXP</span>
+            <div class="bar-track"><div class="bar-fill exp-fill" id="menu-exp"></div></div>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">🔥 Streak</span>
+            <span class="stat-val" id="menu-streak">0</span>
+          </div>
+        </div>
+        <div class="roadmap-tabs" id="worldmap-package-chips"></div>
+        <div class="worldmap-continue-quest" id="worldmap-continue-quest"></div>
+        <div class="roadmap-track" id="worldmap-track"></div>
+        <button class="back-btn" onclick="showScreen('screen-menu')">☰ MENU</button>
       </div>
-      <div class="worldmap-hud" id="worldmap-hud">
-        <div class="stat-row">
-          <span class="stat-label">🔰 LVL</span>
-          <span class="stat-val" id="menu-level">1</span>
-        </div>
-        <div class="stat-row">
-          <span class="stat-label">❤ HP</span>
-          <div class="bar-track"><div class="bar-fill hp-fill" id="menu-hp"></div></div>
-        </div>
-        <div class="stat-row">
-          <span class="stat-label">⭐ EXP</span>
-          <div class="bar-track"><div class="bar-fill exp-fill" id="menu-exp"></div></div>
-        </div>
-        <div class="stat-row">
-          <span class="stat-label">🔥 Streak</span>
-          <span class="stat-val" id="menu-streak">0</span>
-        </div>
-      </div>
-      <div class="roadmap-tabs" id="worldmap-package-chips"></div>
-      <div class="worldmap-continue-quest" id="worldmap-continue-quest"></div>
-      <div class="roadmap-track" id="worldmap-track"></div>
-      <button class="back-btn" onclick="showScreen('screen-menu')">☰ MENU</button>
     </div>
   </div>
 

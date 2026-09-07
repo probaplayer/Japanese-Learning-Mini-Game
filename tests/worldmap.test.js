@@ -40,7 +40,9 @@ this.setActiveSetId = (value) => { activeSetId = value; };
 this.getRoadmapsForPackage = getRoadmapsForPackage;
 this.pickDefaultWorldMapPackageId = pickDefaultWorldMapPackageId;
 this.buildWorldMapZonesHtml = buildWorldMapZonesHtml;
-this.buildContinueQuestCardHtml = buildContinueQuestCardHtml;`,
+this.buildContinueQuestCardHtml = buildContinueQuestCardHtml;
+this.buildWorldMapIndexEntries = buildWorldMapIndexEntries;
+this.buildWorldMapIndexHtml = buildWorldMapIndexHtml;`,
     context
   );
   return context;
@@ -128,6 +130,104 @@ function testBuildWorldMapZonesHtmlMarksZoneUntouchedWhenNothingPlayed() {
   assert.ok(html.includes('0/1'));
 }
 
+function testBuildWorldMapZonesHtmlMarksZoneCollapsedWhenNotExpanded() {
+  const context = createContext();
+  context.setRoadmapDefinitions([{ id: 'r1', name: 'Bài 1', packageId: 'n4', order: 1 }]);
+  context.setQuestionSets([{ id: 'a', roadmapId: 'r1', name: 'Set A', category: 'vocabulary', questionCount: 5, order: 1 }]);
+  const html = context.buildWorldMapZonesHtml(context.getRoadmapsForPackage('n4'), new Map(), null, new Set());
+  assert.ok(html.includes('worldmap-zone-collapsed'));
+}
+
+function testBuildWorldMapZonesHtmlMarksZoneExpandedWhenInExpandedSet() {
+  const context = createContext();
+  context.setRoadmapDefinitions([{ id: 'r1', name: 'Bài 1', packageId: 'n4', order: 1 }]);
+  context.setQuestionSets([{ id: 'a', roadmapId: 'r1', name: 'Set A', category: 'vocabulary', questionCount: 5, order: 1 }]);
+  const html = context.buildWorldMapZonesHtml(context.getRoadmapsForPackage('n4'), new Map(), null, new Set(['r1']));
+  assert.ok(!html.includes('worldmap-zone-collapsed'));
+}
+
+function testBuildWorldMapZonesHtmlDefaultsToCollapsedWhenExpandedSetOmitted() {
+  const context = createContext();
+  context.setRoadmapDefinitions([{ id: 'r1', name: 'Bài 1', packageId: 'n4', order: 1 }]);
+  context.setQuestionSets([{ id: 'a', roadmapId: 'r1', name: 'Set A', category: 'vocabulary', questionCount: 5, order: 1 }]);
+  const html = context.buildWorldMapZonesHtml(context.getRoadmapsForPackage('n4'), new Map(), null);
+  assert.ok(html.includes('worldmap-zone-collapsed'));
+}
+
+function testBuildWorldMapZonesHtmlAlwaysIncludesNodeMarkupRegardlessOfCollapsedState() {
+  const context = createContext();
+  context.setRoadmapDefinitions([{ id: 'r1', name: 'Bài 1', packageId: 'n4', order: 1 }]);
+  context.setQuestionSets([{ id: 'a', roadmapId: 'r1', name: 'Set A', category: 'vocabulary', questionCount: 5, order: 1 }]);
+  const html = context.buildWorldMapZonesHtml(context.getRoadmapsForPackage('n4'), new Map(), null, new Set());
+  assert.ok(html.includes('Set A'));
+}
+
+function testBuildWorldMapIndexEntriesGroupsSetsByRoadmap() {
+  const context = createContext();
+  context.setRoadmapDefinitions([
+    { id: 'r1', name: 'N4 Bài 26', packageId: 'n4', order: 1 },
+    { id: 'r2', name: 'N3 Bài 1', packageId: 'n3', order: 1 }
+  ]);
+  context.setQuestionSets([
+    { id: 'a', roadmapId: 'r1', name: 'N4 Bài 26 - Từ vựng', order: 1 },
+    { id: 'b', roadmapId: 'r1', name: 'N4 Bài 26 - Ngữ pháp', order: 2 },
+    { id: 'c', roadmapId: 'r2', name: 'N3 Bài 1 - Từ vựng', order: 1 }
+  ]);
+  const entries = context.buildWorldMapIndexEntries();
+  assert.strictEqual(entries.length, 2);
+  const r1Entry = entries.find(e => e.roadmapId === 'r1');
+  assert.strictEqual(r1Entry.roadmapName, 'N4 Bài 26');
+  assert.deepStrictEqual(r1Entry.sets.map(s => s.id).sort(), ['a', 'b']);
+}
+
+function testBuildWorldMapIndexHtmlShowsEverythingWhenQueryEmpty() {
+  const context = createContext();
+  const entries = [
+    { roadmapId: 'r1', roadmapName: 'N4 Bài 26', sets: [{ id: 'a', name: 'N4 Bài 26 - Từ vựng' }] },
+    { roadmapId: 'r2', roadmapName: 'N3 Bài 1', sets: [{ id: 'c', name: 'N3 Bài 1 - Từ vựng' }] }
+  ];
+  const html = context.buildWorldMapIndexHtml(entries, '');
+  assert.ok(html.includes('N4 Bài 26'));
+  assert.ok(html.includes('N3 Bài 1'));
+  assert.ok(html.includes('N4 Bài 26 - Từ vựng'));
+  assert.ok(html.includes('N3 Bài 1 - Từ vựng'));
+}
+
+function testBuildWorldMapIndexHtmlFiltersByRoadmapNameCaseInsensitive() {
+  const context = createContext();
+  const entries = [
+    { roadmapId: 'r1', roadmapName: 'N4 Bài 26', sets: [{ id: 'a', name: 'N4 Bài 26 - Từ vựng' }] },
+    { roadmapId: 'r2', roadmapName: 'N3 Bài 1', sets: [{ id: 'c', name: 'N3 Bài 1 - Từ vựng' }] }
+  ];
+  const html = context.buildWorldMapIndexHtml(entries, 'bài 26');
+  assert.ok(html.includes('N4 Bài 26'));
+  assert.ok(!html.includes('N3 Bài 1'));
+}
+
+function testBuildWorldMapIndexHtmlFiltersBySetNameKeepingOnlyMatchingSets() {
+  const context = createContext();
+  const entries = [
+    { roadmapId: 'r1', roadmapName: 'N4 Bài 26', sets: [
+      { id: 'a', name: 'N4 Bài 26 - Từ vựng' },
+      { id: 'b', name: 'N4 Bài 26 - Ngữ pháp' }
+    ] }
+  ];
+  const html = context.buildWorldMapIndexHtml(entries, 'ngữ pháp');
+  assert.ok(html.includes('N4 Bài 26'));
+  assert.ok(html.includes('N4 Bài 26 - Ngữ pháp'));
+  assert.ok(!html.includes('N4 Bài 26 - Từ vựng'));
+}
+
+function testBuildWorldMapIndexHtmlShowsNoResultsMessageWhenNothingMatches() {
+  const context = createContext();
+  const entries = [
+    { roadmapId: 'r1', roadmapName: 'N4 Bài 26', sets: [{ id: 'a', name: 'N4 Bài 26 - Từ vựng' }] }
+  ];
+  const html = context.buildWorldMapIndexHtml(entries, 'zzz-no-match');
+  assert.ok(!html.includes('N4 Bài 26'));
+  assert.ok(html.toLowerCase().includes('no results'));
+}
+
 function testBuildContinueQuestCardHtmlShowsSetAndZoneName() {
   const context = createContext();
   const html = context.buildContinueQuestCardHtml({ id: 'a', name: 'Set A' }, 'Bài 1');
@@ -151,6 +251,15 @@ testPickDefaultWorldMapPackageIdReturnsNullWhenNoPackages();
 testBuildWorldMapZonesHtmlRendersOneZonePerRoadmapWithProgressSummary();
 testBuildWorldMapZonesHtmlMarksZoneCompleteWhenAllSetsMastered();
 testBuildWorldMapZonesHtmlMarksZoneUntouchedWhenNothingPlayed();
+testBuildWorldMapZonesHtmlMarksZoneCollapsedWhenNotExpanded();
+testBuildWorldMapZonesHtmlMarksZoneExpandedWhenInExpandedSet();
+testBuildWorldMapZonesHtmlDefaultsToCollapsedWhenExpandedSetOmitted();
+testBuildWorldMapZonesHtmlAlwaysIncludesNodeMarkupRegardlessOfCollapsedState();
+testBuildWorldMapIndexEntriesGroupsSetsByRoadmap();
+testBuildWorldMapIndexHtmlShowsEverythingWhenQueryEmpty();
+testBuildWorldMapIndexHtmlFiltersByRoadmapNameCaseInsensitive();
+testBuildWorldMapIndexHtmlFiltersBySetNameKeepingOnlyMatchingSets();
+testBuildWorldMapIndexHtmlShowsNoResultsMessageWhenNothingMatches();
 testBuildContinueQuestCardHtmlShowsSetAndZoneName();
 testBuildContinueQuestCardHtmlShowsEmptyStateWhenNoActiveSet();
 

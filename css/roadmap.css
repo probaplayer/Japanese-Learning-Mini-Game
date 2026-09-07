@@ -300,7 +300,7 @@
   text-shadow: var(--glow-y);
 }
 
-.worldmap-footer-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.worldmap-quick-actions { display: flex; flex-wrap: wrap; gap: 8px; align-self: flex-start; }
 
 @media (min-width: 1024px) {
   .worldmap-hud { font-size: 10.5px; padding: 15px 24px; }
@@ -319,7 +319,7 @@
     left: auto; bottom: auto;
     width: 260px;
     max-width: none;
-    max-height: calc(100vh - 20px);
+    max-height: calc(100vh - 40px);
     border: 2px solid var(--border);
     border-radius: var(--radius);
     transform: none;

@@ -3,6 +3,8 @@ import path from 'node:path';
 
 const UNASSIGNED_ROADMAP_ID = 'unassigned';
 const UNASSIGNED_ROADMAP_NAME = 'Chưa phân loại';
+const UNASSIGNED_PACKAGE_ID = 'unassigned';
+const UNASSIGNED_PACKAGE_NAME = 'Chưa phân loại';
 
 const QUESTION_FIELDS = ['word', 'romaji', 'translation', 'q', 'a', 'c', 'ex', 'aTranslation'];
 const GRAMMAR_QUESTION_FIELDS = ['sentence', 'chunks', 'translation', 'ex'];
@@ -70,6 +72,13 @@ function assertKnownRoadmapId(manifest, roadmapId) {
   const knownRoadmaps = Array.isArray(manifest.roadmaps) ? manifest.roadmaps : [];
   if (!knownRoadmaps.some(r => r.id === roadmapId)) {
     throw new Error(`Unknown roadmapId: ${roadmapId}. Known roadmaps: ${knownRoadmaps.map(r => r.id).join(', ') || '(none)'}`);
+  }
+}
+
+function assertKnownPackageId(manifest, packageId) {
+  const knownPackages = Array.isArray(manifest.packages) ? manifest.packages : [];
+  if (!knownPackages.some(p => p.id === packageId)) {
+    throw new Error(`Unknown packageId: ${packageId}. Known packages: ${knownPackages.map(p => p.id).join(', ') || '(none)'}`);
   }
 }
 
@@ -234,13 +243,19 @@ export function createQuestionsRepo(baseDir) {
     return roadmaps.find(r => r.id === id);
   }
 
-  function createRoadmap({ id, name }) {
+  function createRoadmap({ id, name, packageId, order }) {
     const manifest = readManifest();
     if (!Array.isArray(manifest.roadmaps)) manifest.roadmaps = [];
     const roadmapId = id ? slugify(id) : slugify(name);
     if (!roadmapId) throw new Error('Could not derive a valid id from the provided name/id');
     if (findRoadmap(manifest, roadmapId)) throw new Error(`Roadmap id already exists: ${roadmapId}`);
+    if (packageId !== undefined) assertKnownPackageId(manifest, packageId);
     const entry = { id: roadmapId, name };
+    if (packageId !== undefined) entry.packageId = packageId;
+    if (order !== undefined) {
+      if (!Number.isInteger(order)) throw new Error('order must be an integer');
+      entry.order = order;
+    }
     manifest.roadmaps.push(entry);
     writeManifest(manifest);
     return entry;
@@ -276,6 +291,85 @@ export function createQuestionsRepo(baseDir) {
     }
 
     manifest.roadmaps = manifest.roadmaps.filter(r => r.id !== id);
+    writeManifest(manifest);
+  }
+
+  function updateRoadmapMetadata(id, { packageId, order } = {}) {
+    const manifest = readManifest();
+    const entry = findRoadmap(manifest, id);
+    if (!entry) throw new Error(`Roadmap not found: ${id}`);
+
+    if (packageId !== undefined) {
+      if (packageId === null) {
+        delete entry.packageId;
+      } else {
+        assertKnownPackageId(manifest, packageId);
+        entry.packageId = packageId;
+      }
+    }
+    if (order !== undefined) {
+      if (!Number.isInteger(order)) throw new Error('order must be an integer');
+      entry.order = order;
+    }
+
+    writeManifest(manifest);
+    return entry;
+  }
+
+  function findPackage(manifest, id) {
+    const packages = Array.isArray(manifest.packages) ? manifest.packages : [];
+    return packages.find(p => p.id === id);
+  }
+
+  function listPackages() {
+    const manifest = readManifest();
+    return Array.isArray(manifest.packages) ? manifest.packages : [];
+  }
+
+  function createPackage({ id, name, order }) {
+    const manifest = readManifest();
+    if (!Array.isArray(manifest.packages)) manifest.packages = [];
+    const packageId = id ? slugify(id) : slugify(name);
+    if (!packageId) throw new Error('Could not derive a valid id from the provided name/id');
+    if (findPackage(manifest, packageId)) throw new Error(`Package id already exists: ${packageId}`);
+    const entry = { id: packageId, name };
+    if (order !== undefined) {
+      if (!Number.isInteger(order)) throw new Error('order must be an integer');
+      entry.order = order;
+    }
+    manifest.packages.push(entry);
+    writeManifest(manifest);
+    return entry;
+  }
+
+  function renamePackage(id, name) {
+    const manifest = readManifest();
+    const entry = findPackage(manifest, id);
+    if (!entry) throw new Error(`Package not found: ${id}`);
+    entry.name = name;
+    writeManifest(manifest);
+    return entry;
+  }
+
+  function deletePackage(id) {
+    const manifest = readManifest();
+    const entry = findPackage(manifest, id);
+    if (!entry) throw new Error(`Package not found: ${id}`);
+
+    const assignedRoadmaps = (manifest.roadmaps || []).filter(r => r.packageId === id);
+    if (assignedRoadmaps.length > 0) {
+      if (id === UNASSIGNED_PACKAGE_ID) {
+        throw new Error(`Cannot delete package "${id}": still assigned to ${assignedRoadmaps.length} roadmap(s)`);
+      }
+      if (!findPackage(manifest, UNASSIGNED_PACKAGE_ID)) {
+        manifest.packages.push({ id: UNASSIGNED_PACKAGE_ID, name: UNASSIGNED_PACKAGE_NAME });
+      }
+      assignedRoadmaps.forEach(r => {
+        r.packageId = UNASSIGNED_PACKAGE_ID;
+      });
+    }
+
+    manifest.packages = manifest.packages.filter(p => p.id !== id);
     writeManifest(manifest);
   }
 
@@ -354,6 +448,11 @@ export function createQuestionsRepo(baseDir) {
     listRoadmaps,
     createRoadmap,
     renameRoadmap,
-    deleteRoadmap
+    deleteRoadmap,
+    updateRoadmapMetadata,
+    listPackages,
+    createPackage,
+    renamePackage,
+    deletePackage
   };
 }

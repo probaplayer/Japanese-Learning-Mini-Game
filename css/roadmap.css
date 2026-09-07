@@ -125,6 +125,9 @@
 /* ─── Highlighted Node ────────────────────────────── */
 .roadmap-node-highlighted { border-color: var(--accent2); box-shadow: var(--glow-y); }
 
+/* ─── Index-Selected Node/Zone (picked from the World Map index) ── */
+.roadmap-node-index-selected { border-color: var(--accent5); box-shadow: var(--glow-p); }
+
 /* ─── Mini Roadmap (Library previews) ────────────── */
 .roadmap-track-mini { gap: 14px; padding: 10px 0; }
 .roadmap-track-mini .roadmap-node {
@@ -205,6 +208,7 @@
 .worldmap-zone-collapsed .worldmap-zone-toggle { transform: rotate(-90deg); }
 .worldmap-zone-collapsed .roadmap-node { display: none; }
 .worldmap-zone-complete .worldmap-zone-header { border-left-color: var(--accent3); box-shadow: var(--glow-g); }
+.worldmap-zone-index-selected .worldmap-zone-header { border-left-color: var(--accent5); box-shadow: var(--glow-p); }
 .worldmap-zone-active .worldmap-zone-header { border-left-color: var(--accent2); }
 .worldmap-zone-untouched .worldmap-zone-header { border-left-color: var(--border); }
 

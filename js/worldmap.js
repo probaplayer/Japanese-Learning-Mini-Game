@@ -38,7 +38,7 @@ async function loadWorldMapPackageProgress(packageId) {
   freshProgress.forEach((value, key) => roadmapProgressCache.set(key, value));
 }
 
-function buildWorldMapZonesHtml(roadmapsForPackage, progressById, highlightSetId, expandedIds = new Set()) {
+function buildWorldMapZonesHtml(roadmapsForPackage, progressById, highlightSetId, expandedIds = new Set(), indexSelectedRoadmapId, indexSelectedSetId) {
   return roadmapsForPackage.map(roadmap => {
     const setsForRoadmap = getSetsForRoadmap(roadmap.id);
     const totalCount = setsForRoadmap.length;
@@ -53,14 +53,15 @@ function buildWorldMapZonesHtml(roadmapsForPackage, progressById, highlightSetId
       ? 'worldmap-zone-complete'
       : anyPlayed ? 'worldmap-zone-active' : 'worldmap-zone-untouched';
     const collapsedClass = expandedIds.has(roadmap.id) ? '' : 'worldmap-zone-collapsed';
+    const indexSelectedZoneClass = !indexSelectedSetId && roadmap.id === indexSelectedRoadmapId ? 'worldmap-zone-index-selected' : '';
     return `
-      <section class="worldmap-zone ${stateClass} ${collapsedClass}" data-roadmap-id="${escapeHtml(roadmap.id)}">
+      <section class="worldmap-zone ${stateClass} ${collapsedClass} ${indexSelectedZoneClass}" data-roadmap-id="${escapeHtml(roadmap.id)}">
         <header class="worldmap-zone-header" onclick="toggleWorldMapZone('${escapeHtml(roadmap.id)}')">
           <span class="worldmap-zone-name">${escapeHtml(roadmap.name)}</span>
           <span class="worldmap-zone-progress">${masteredCount}/${totalCount}</span>
           <span class="worldmap-zone-toggle" aria-hidden="true">▾</span>
         </header>
-        ${buildRoadmapNodesHtml(setsForRoadmap, progressById, { highlightSetId, compact: false, clickHandler: 'launchRoadmapNode' })}
+        ${buildRoadmapNodesHtml(setsForRoadmap, progressById, { highlightSetId, compact: false, clickHandler: 'launchRoadmapNode', indexSelectedSetId })}
       </section>`;
   }).join('');
 }
@@ -145,7 +146,7 @@ async function renderWorldMap() {
 function renderWorldMapZones() {
   const track = document.getElementById('worldmap-track');
   if (!track) return;
-  track.innerHTML = buildWorldMapZonesHtml(getRoadmapsForPackage(activeWorldMapPackageId), roadmapProgressCache, activeSetId, expandedZoneIds);
+  track.innerHTML = buildWorldMapZonesHtml(getRoadmapsForPackage(activeWorldMapPackageId), roadmapProgressCache, activeSetId, expandedZoneIds, selectedIndexRoadmapId, selectedIndexSetId);
 }
 
 function scrollWorldMapToActiveNode() {

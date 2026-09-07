@@ -162,6 +162,33 @@ function testBuildWorldMapZonesHtmlAlwaysIncludesNodeMarkupRegardlessOfCollapsed
   assert.ok(html.includes('Set A'));
 }
 
+function testBuildWorldMapZonesHtmlMarksIndexSelectedZoneWhenNoSpecificSetSelected() {
+  const context = createContext();
+  context.setRoadmapDefinitions([
+    { id: 'r1', name: 'Bài 1', packageId: 'n4', order: 1 },
+    { id: 'r2', name: 'Bài 2', packageId: 'n4', order: 2 }
+  ]);
+  context.setQuestionSets([
+    { id: 'a', roadmapId: 'r1', name: 'Set A', category: 'vocabulary', questionCount: 5, order: 1 },
+    { id: 'c', roadmapId: 'r2', name: 'Set C', category: 'vocabulary', questionCount: 5, order: 1 }
+  ]);
+  const html = context.buildWorldMapZonesHtml(context.getRoadmapsForPackage('n4'), new Map(), null, new Set(), 'r1', null);
+  const r1Match = html.match(/<section class="worldmap-zone ([^"]*)" data-roadmap-id="r1">/);
+  const r2Match = html.match(/<section class="worldmap-zone ([^"]*)" data-roadmap-id="r2">/);
+  assert.ok(r1Match && r1Match[1].includes('worldmap-zone-index-selected'));
+  assert.ok(r2Match && !r2Match[1].includes('worldmap-zone-index-selected'));
+}
+
+function testBuildWorldMapZonesHtmlDoesNotMarkZoneIndexSelectedWhenASpecificSetIsSelected() {
+  const context = createContext();
+  context.setRoadmapDefinitions([{ id: 'r1', name: 'Bài 1', packageId: 'n4', order: 1 }]);
+  context.setQuestionSets([{ id: 'a', roadmapId: 'r1', name: 'Set A', category: 'vocabulary', questionCount: 5, order: 1 }]);
+  const html = context.buildWorldMapZonesHtml(context.getRoadmapsForPackage('n4'), new Map(), null, new Set(), 'r1', 'a');
+  const r1Match = html.match(/<section class="worldmap-zone ([^"]*)" data-roadmap-id="r1">/);
+  assert.ok(r1Match && !r1Match[1].includes('worldmap-zone-index-selected'));
+  assert.ok(html.includes('roadmap-node-index-selected'));
+}
+
 function testBuildWorldMapIndexEntriesGroupsSetsByRoadmap() {
   const context = createContext();
   context.setRoadmapDefinitions([
@@ -285,6 +312,8 @@ testBuildWorldMapZonesHtmlMarksZoneCollapsedWhenNotExpanded();
 testBuildWorldMapZonesHtmlMarksZoneExpandedWhenInExpandedSet();
 testBuildWorldMapZonesHtmlDefaultsToCollapsedWhenExpandedSetOmitted();
 testBuildWorldMapZonesHtmlAlwaysIncludesNodeMarkupRegardlessOfCollapsedState();
+testBuildWorldMapZonesHtmlMarksIndexSelectedZoneWhenNoSpecificSetSelected();
+testBuildWorldMapZonesHtmlDoesNotMarkZoneIndexSelectedWhenASpecificSetIsSelected();
 testBuildWorldMapIndexEntriesGroupsSetsByRoadmap();
 testBuildWorldMapIndexHtmlShowsEverythingWhenQueryEmpty();
 testBuildWorldMapIndexHtmlFiltersByRoadmapNameCaseInsensitive();

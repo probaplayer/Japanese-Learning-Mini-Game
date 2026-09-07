@@ -135,6 +135,35 @@ function testBuildRoadmapNodesHtmlCompactModeOmitsZigzagStaggerAndAvatarButKeeps
   assert.ok(html.includes("selectRoadmapNodeInPlace(this, 'a')"));
 }
 
+function testBuildRoadmapNodesHtmlMarksIndexSelectedSetDistinctFromHighlight() {
+  const context = createContext();
+  const sets = [
+    { id: 'a', name: 'Set A', category: 'vocabulary', questionCount: 5, order: 1 },
+    { id: 'b', name: 'Set B', category: 'vocabulary', questionCount: 5, order: 2 }
+  ];
+  const progressById = new Map([
+    ['a', { progress: { total: 0 }, stars: 0 }],
+    ['b', { progress: { total: 0 }, stars: 0 }]
+  ]);
+  const html = context.buildRoadmapNodesHtml(sets, progressById, {
+    highlightSetId: 'a', compact: false, clickHandler: 'launchRoadmapNode', indexSelectedSetId: 'b'
+  });
+  const aMatch = html.match(/<button class="roadmap-node ([^"]*)" style="--i:0" data-set-id="a"/);
+  const bMatch = html.match(/<button class="roadmap-node ([^"]*)" style="--i:1" data-set-id="b"/);
+  assert.ok(aMatch && aMatch[1].includes('roadmap-node-highlighted'));
+  assert.ok(aMatch && !aMatch[1].includes('roadmap-node-index-selected'));
+  assert.ok(bMatch && bMatch[1].includes('roadmap-node-index-selected'));
+  assert.ok(bMatch && !bMatch[1].includes('roadmap-node-highlighted'));
+}
+
+function testBuildRoadmapNodesHtmlOmitsIndexSelectedClassWhenNotProvided() {
+  const context = createContext();
+  const sets = [{ id: 'a', name: 'Set A', category: 'vocabulary', questionCount: 5, order: 1 }];
+  const progressById = new Map([['a', { progress: { total: 0 }, stars: 0 }]]);
+  const html = context.buildRoadmapNodesHtml(sets, progressById, { highlightSetId: null, compact: false, clickHandler: 'launchRoadmapNode' });
+  assert.ok(!html.includes('roadmap-node-index-selected'));
+}
+
 function testRenderRoadmapChipsHtmlMarksSelectedChipActive() {
   const context = createContext();
   const html = context.renderRoadmapChipsHtml(
@@ -156,6 +185,8 @@ testRenderStarStringPadsToThreeCharacters();
 testGetSetsForRoadmapFiltersAndSortsAscending();
 testBuildRoadmapNodesHtmlHighlightsMatchingSetAndEmbedsClickHandler();
 testBuildRoadmapNodesHtmlCompactModeOmitsZigzagStaggerAndAvatarButKeepsHighlight();
+testBuildRoadmapNodesHtmlMarksIndexSelectedSetDistinctFromHighlight();
+testBuildRoadmapNodesHtmlOmitsIndexSelectedClassWhenNotProvided();
 testRenderRoadmapChipsHtmlMarksSelectedChipActive();
 
 console.log('roadmap tests passed');

@@ -21,6 +21,7 @@
   --glow-y:    0 0 12px rgba(255,214,10,.7);
   --glow-g:    0 0 12px rgba(48,209,88,.7);
   --glow-b:    0 0 12px rgba(10,132,255,.7);
+  --glow-p:    0 0 12px rgba(191,90,242,.7);
   --glow-accent: 0 0 20px var(--accent-glow);
   --accent-glow: rgba(255, 45, 85, 0.5);
   --font-px:   'Press Start 2P', monospace;

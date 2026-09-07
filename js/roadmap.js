@@ -58,7 +58,7 @@ async function computeRoadmapProgress(setsForRoadmap) {
   return progressById;
 }
 
-function buildRoadmapNodesHtml(setsForRoadmap, progressById, { highlightSetId, compact, clickHandler }) {
+function buildRoadmapNodesHtml(setsForRoadmap, progressById, { highlightSetId, compact, clickHandler, indexSelectedSetId }) {
   let html = '';
   setsForRoadmap.forEach((meta, i) => {
     const entry = progressById.get(meta.id) || { progress: { total: 0 }, stars: 0 };
@@ -67,11 +67,12 @@ function buildRoadmapNodesHtml(setsForRoadmap, progressById, { highlightSetId, c
     const playedClass = progress.total > 0 ? 'roadmap-node-played' : '';
     const isHighlighted = meta.id === highlightSetId;
     const highlightClass = isHighlighted ? 'roadmap-node-highlighted' : '';
+    const indexSelectedClass = meta.id === indexSelectedSetId ? 'roadmap-node-index-selected' : '';
     const showAvatar = isHighlighted && !compact;
     const categoryIcon = meta.category === 'grammar' ? '🧩' : '📖';
     const styleAttr = compact ? '' : ` style="--i:${i}"`;
     html += `
-      <button class="roadmap-node ${side} ${playedClass} ${highlightClass}"${styleAttr} data-set-id="${escapeHtml(meta.id)}" onclick="${clickHandler}(this, '${escapeHtml(meta.id)}')">
+      <button class="roadmap-node ${side} ${playedClass} ${highlightClass} ${indexSelectedClass}"${styleAttr} data-set-id="${escapeHtml(meta.id)}" onclick="${clickHandler}(this, '${escapeHtml(meta.id)}')">
         ${showAvatar ? '<span class="roadmap-avatar" aria-hidden="true">🚀</span>' : ''}
         <span class="roadmap-node-icon">${categoryIcon}</span>
         <span class="roadmap-node-body">
